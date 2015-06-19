@@ -1,4 +1,4 @@
-<?php 
+<?php
 /*
  * THIS IS THE OTHER FUNC... SOCIAL MEDIA FUNCTION
  **/
@@ -6,23 +6,29 @@ function powen_customizer_social_media_array() {
     // ADD THE SOCIAL SITES
     // store social site names in array
     $powen_social_sites = array('twitter', 'facebook', 'google-plus', 'flickr', 'pinterest', 'youtube', 'vimeo', 'tumblr', 'dribbble', 'rss', 'linkedin', 'instagram');
-  
+
     return $powen_social_sites;
     }
     // NEEDED FOR FONTAWESOME
     // takes user input from the customizer and outputs linked social media icons
     function powen_social_media_icons() {
-  
+
     $powen_social_sites = powen_customizer_social_media_array();
-  
+
+    /**
+     * Hold an array of all active social urls entered by the user.
+     * @var array
+     */
+    $active_sites = array();
+
     // any inputs that aren't empty are stored in $active_sites array
     foreach($powen_social_sites as $powen_social_site) {
         if( strlen( get_theme_mod( $powen_social_site ) ) > 0 ) {
             $active_sites[] = $powen_social_site;
         }
     }
-  
-  
+
+
     // CREATE THE OUTPUT
     // for each active social site, add it as a list item
     if($active_sites) {
