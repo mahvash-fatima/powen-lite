@@ -1,0 +1,112 @@
+.entry-footer {
+	letter-spacing: 1px;
+	.post-share {
+		font-size: 0.6em;
+	}
+}
+
+.featured-img img {
+	display: block;
+}
+
+.site-main {
+	.entry-date {
+		padding-right: 10px;
+	}
+}
+.content-area {
+	.post-comment {
+		background: red;
+	}
+	.comments-title {
+		text-align: center;
+	}
+}
+.posted-on, .byline {
+	padding: 10px;
+}
+.comment-body {
+	img {
+		border-radius: 100%;
+	}
+	.says {
+		display: none;
+	}
+	.fn {
+		display: block;
+	}
+	.comment-author img {
+		float: left;
+		margin-right: 10px;
+	}
+	.comment-metadata {
+		padding-bottom: 10px;
+	}
+	.reply {
+		text-align: right;
+	}
+}
+.comment-respond .logged-in-as a {
+	font-weight: bold;
+}
+//Pagination
+.pagination {
+overflow: hidden;
+clear:both;
+position:relative;
+font-size:11px;
+}
+.pagination span {
+display:block;
+float:left;
+margin: 2px 2px 2px 0;
+text-decoration:none;
+padding: 10px;
+border-radius: 3px;
+background: #ffffff;
+}
+.pagination .current {
+width: 55px;
+height: 47px;
+border-radius: 3px;
+text-align: center;
+}
+.pagination a {
+	display: block;
+	float: left;
+	margin: 2px 2px 2px 0;
+	text-decoration: none;
+	padding: 10px;
+	width: 55px;
+	height: 47px;
+	border-radius: 3px;
+	text-align: center;
+	background: #ffffff;
+}
+.pagination a, .pagination span {
+  color: #999999;
+  border: 1px solid #999999; 
+}
+
+.pagination .page-previous, .pagination .page-next, .pagination .page-last {
+	padding: 10px;
+	width: 75px;
+	height: 47px;
+}
+
+//breadcrumbs
+.breadcrumbs{
+    list-style:none;
+    overflow:hidden;
+    background: #fff;
+    margin: 0;
+}
+  
+.breadcrumbs li{
+    display:inline-block;
+    margin-right: 1px;
+    padding: 10px;
+}
+.continue-reading {
+	text-align: right;
+}

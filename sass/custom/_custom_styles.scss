@@ -1,0 +1,467 @@
+* {
+	box-sizing: border-box;
+	word-wrap: break-word;
+}
+
+body {
+	@include body();
+}
+
+@include links();
+
+blockquote {
+	padding: $default_gutter;
+	font-size: 20*$px;
+	@include blockquote();
+}
+
+// Overridden from lists.scss
+ul, ol {
+	padding: 0;
+	margin: 0 0 $phi*1em $phi*1em;
+}
+
+.sticky {
+	position: relative;
+}
+
+@include htags();
+
+// content of layout/content-sidebar pasted here for easier modification
+
+.content-area {
+	float: left;
+	margin: 0 (-$size__site-sidebar) 0 0;
+	width: $size__site-main;
+}
+
+.pagination {
+	padding: $phi * 1em;
+}
+
+.site-main {
+	margin: 0 $size__site-sidebar 0 0;
+}
+
+.site-content .widget-area {
+	float: right;
+	overflow: hidden;
+	width: $size__site-sidebar;
+}
+
+.powen-wrapper {
+	padding-top: $phi * 1em;
+	padding-bottom: $phi * 1em;
+	max-width: total_site_width();
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.widget-container {
+	padding: $phi * 1em;
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+// **-----
+// CUSTOM STYLES
+// **-----
+
+// Header
+.site-header {
+	width: 100%;
+	background-color: #fff;
+}
+
+.site-branding {
+	padding-left: $phi * 1rem;
+	padding-right: $phi * 1rem;
+	padding-top: $phi * 3rem;
+	padding-bottom: $phi * 3rem;
+	text-align: center;
+}
+
+h1.site-title {
+	font-weight: 700;
+}
+
+.site-title, .site-description {
+	margin: 0;
+	line-height: 4rem;
+	vertical-align: bottom;
+}
+
+//Navigation
+
+#site-navigation .menu-header-menu-container, #main-nav {
+	display: none;
+}
+#site-navigation .menu {
+	display: none;
+}
+
+// Content
+.site-content {
+	max-width: total_site_width();
+	margin: 42px auto;
+}
+
+//**** Posts & pages 
+
+// (hentry class covers both) plus their internal elements
+.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
+	padding-left: $post_l_padding;
+	padding-right: $post_r_padding;
+	margin: 0 0 0 0;
+
+	@include main_panel();
+}
+
+.article-hentry {
+	@include sticky_post();
+}
+
+.post-thumbnail {
+	margin-top: $default_gutter;
+	margin-right: -$post_r_padding;
+	margin-bottom: $default_gutter;
+	margin-left: -$post_l_padding;
+	img {
+		min-width: 100%;
+		vertical-align: bottom;
+	}
+	@include post_thumbnail();
+}
+
+// Centers category headers
+.page-header .page-title {
+	text-align: center;
+}
+
+//**** Individual post styling
+
+.entry-content {
+	a img {
+		// prevent gap below linked image
+		vertical-align: bottom;
+	}
+}
+
+// Center the post's title
+.entry-header {
+	text-align: center;
+	overflow: hidden;
+}
+
+.entry-title {
+	margin-top: 0;
+	margin-bottom: $post_t_padding;
+}
+
+.entry-meta {
+	display: inline-block;
+	font-weight: 300;
+	margin-bottom: $default_gutter;
+	font-size: 14px;
+	margin-bottom: $default_gutter;
+	@include entry_meta();
+}
+
+.continue_btn {
+	text-align: center;
+}
+
+.entry-content {
+	a.more-link {
+		font-size: 18*$px;
+		font-weight: 700;
+		display: inline-block;
+		padding: 1em $phi * 1em;
+		margin: 2em 0 .5em 0;
+		
+		@include more_link();
+	}
+}
+
+.entry-footer {
+	margin: $post_b_padding 0 $post_b_padding / $phi 0;
+	line-height: 3em;
+	text-align: center;
+	span {
+		margin: 0 0.618em;
+		padding: 0 0.618em;
+		display: inline-block;
+	}
+	@include entry_footer();
+}
+
+.comment-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	.comment {
+		padding: $default_gutter;
+		@include comment();
+	}
+}
+
+//**** Widgets
+
+.widget {
+	padding-left: $widget_l_padding;
+	padding-right: $widget_r_padding;
+	padding-top: $widget_t_padding;
+	padding-bottom: $widget_b_padding;
+	margin-left: $default_gutter;
+	margin-bottom: $default_gutter;
+
+	@include sub_panel();
+}
+
+.widget ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	li {
+		&.page_item_has_children, &.menu-item-has-children {
+			padding-bottom: 0;
+			border: none;
+		}
+
+		// Prevent excessive, layout breaking nesting indentation levels
+		li li li {
+			padding-left: 0;
+		}
+	}
+	.children li:first-of-type, .sub-menu li:first-of-type {
+		margin-top: 1em;
+	}
+
+}
+
+.top-container {
+	border-bottom: 1px solid #f2f2f2;
+	padding-bottom: $phi * 1em;
+	overflow: hidden;
+	ul {
+		padding: 0;
+		margin: 0;
+		padding: 10px;
+		display: inline-block;
+		float: left;
+	    li {
+			display: inline-block;
+		a {
+			padding: 2px;
+		}
+		}
+	}
+
+	.search-form {
+		float: right;
+		display: inline-block;
+		padding: 10px;
+		.search-field {
+			padding: 0;
+			text-indent: 10px;
+			border: 1px solid;
+		}
+		.search-submit {
+			display: none;
+		}
+	}
+}
+
+.top-most-nav, .main-navigation, .powen-nav {
+	display: inline-block;
+	float: left;
+}
+.powen-nav {
+	padding: 10px;
+}
+.top-most-nav, .main-navigation {
+	padding-right: 10px;
+}
+
+input.search-field {
+	box-sizing: border-box;
+	width: auto;
+}
+
+// Footer
+
+.site-footer {
+	width: 100%;
+	overflow: hidden;
+}
+
+.footer_widgets .widget {
+	background: transparent;
+	float: left;
+	margin: 0 1% 0 0;
+	width: 24%;
+	padding: 1%;
+}
+
+//colors
+.footer_widgets {
+	background: #222222;
+	color: #808080;
+	a {
+		color: #cccccc;
+	}
+}
+.site-info {
+	text-align: center;
+	background: #000000;
+	color: #404040;
+	a {
+		color: #666666;
+	}
+}
+
+//**** Responsive layout adjustments
+
+@media (max-width: total_site_width()) {
+
+	// Output headings at smaller size
+	@include htags(0.7);
+
+	// redeclare variables to be smaller
+	$default_h_padding: $phi * $phi * 1rem;
+	$default_v_padding: $default_h_padding;
+
+	// Posts and widgets horizontal padding
+	$post_l_padding: $default_h_padding;
+	$post_r_padding: $post_l_padding;
+
+	// Posts and widgets vertical padding
+	$post_t_padding: $default_h_padding / $phi;
+	$post_b_padding: $post_t_padding;
+
+	.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
+		padding-left: $post_l_padding;
+		padding-right: $post_r_padding;
+		padding-top: $post_t_padding;
+		padding-bottom: $post_b_padding;
+	}
+
+	.post-thumbnail {
+		margin-top: $default_gutter;
+		margin-right: -$post_r_padding;
+		margin-bottom: $default_gutter;
+		margin-left: -$post_l_padding;
+	}
+
+	.entry-title {
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 900*$px) {
+
+	// Single col layout
+	#primary, #secondary {
+		overflow: hidden;
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+
+	#primary .site-main {
+		margin: 0;
+	}
+
+	.widget {
+		margin-left: 0;
+		margin-bottom: $default_gutter;
+	}
+	
+	.flexslider .powen-slider-content {
+		visibility: visible;
+		opacity: 1;
+	}
+	.flexslider .powen-slider-content p, .flexslider .powen-slider-content h2{
+		visibility: visible;
+		opacity: 1;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		width: 100%;
+	}
+	.flexslider .flex-control-nav {
+		display: none;
+	}
+}
+
+@media (max-width: 600*$px) {
+
+	@include htags(0.5);
+
+	.top-container {
+		.search-form {
+		display: block;
+		float: left;
+		}
+	}
+	.social-media-icons, .powen-nav {
+		display: block;
+		float: left;
+	}
+}
+
+@media (max-width: 400*$px) {
+
+	@include htags(0.4);
+
+	// redeclare variables to be smaller
+	$default_h_padding: $phi * 1rem;
+	$default_v_padding: $default_h_padding;
+
+	// Posts and widgets horizontal padding
+	$post_l_padding: $default_h_padding;
+	$post_r_padding: $post_l_padding;
+	$widget_l_padding: $default_h_padding;
+	$widget_r_padding: $widget_l_padding;
+
+	// Posts and widgets vertical padding
+	$post_t_padding: $default_h_padding / $phi;
+	$post_b_padding: $post_t_padding;
+	$widget_t_padding: $default_h_padding;
+	$widget_b_padding: $widget_t_padding;
+
+	.hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
+		padding-left: $post_l_padding;
+		padding-right: $post_r_padding;
+		padding-top: $post_t_padding;
+		padding-bottom: $post_b_padding;
+	}
+
+	.post-thumbnail {
+		margin-top: $default_gutter;
+		margin-right: -$post_r_padding;
+		margin-bottom: $default_gutter;
+		margin-left: -$post_l_padding;
+	}
+
+	.entry-title {
+		margin-bottom: $post_t_padding;
+	}
+
+	.widget {
+		padding-left: $widget_l_padding;
+		padding-right: $widget_r_padding;
+		padding-top: $widget_t_padding;
+		padding-bottom: $widget_b_padding;
+	}
+	
+	.flexslider {
+		@include htags(0.6);
+	}
+
+	button, input[type="button"], input[type="reset"], input[type="submit"] {
+		display: none;
+	}
+}

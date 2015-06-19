@@ -1,0 +1,206 @@
+/*------------------
+FontAwesome 
+---------------------*/
+	//PRIMARY ICONS
+	.posted-on:before,
+	.comments-link:before,
+	.edit-link:before,
+	.nav-previous a:before,
+	.flex-direction-nav li .flex-prev:before,
+	.flex-direction-nav li .flex-next:before,
+	.nav-next a:after,	
+	.author:before,
+	.content-area .hentry .entry-date:after,
+	.cat-links:before,
+	.comment-metadata time:before,
+	.continue-reading:after,
+	//SECONDARY ICONS
+	.widget_recent_comments li:before,
+	.widget_recent_comments li>a:before,
+	.widget_archive li:before,
+	.widget_recent_entries li:before,
+	.widget_categories li:before,
+	.widget_meta li:before,
+	.widget_pages li:before,
+	.powen-wrapper .recent-comment-people:before,
+	.menu-long-menu-container li:before,
+	.widget_recent_entries li:before,
+	.powen-border-line,
+	.footer-scroll:before
+{
+font-family: 'FontAwesome';
+src: url('../font-awesome-4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0');
+src: url('../font-awesome-4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+.fa {
+display: inline-block;
+font: normal normal normal 14px/1 FontAwesome;
+font-size: inherit;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+transform: translate(0, 0);
+} 
+
+/**---------------
+Write your code here
+--------------------**/
+
+//PRIMARY ICONS
+
+//Date
+.posted-on:before {
+	content: "\f017";
+	padding: 5px;
+	font-size: 1em;
+}
+//Comment
+.comments-link:before {
+	content: "\f0e6";
+	padding: 5px;
+}
+//Edit
+.edit-link:before {
+	content: "\f044";
+	padding: 5px;
+}
+//Older posts
+.nav-previous a:before {
+	content: "\f100";
+	margin: 0 3px;
+}
+//Previous
+.flex-direction-nav li .flex-prev:before {
+	content: "\f100";
+	font-size: 1.5em;
+	color: #ffffff;
+}
+//Next
+.flex-direction-nav li .flex-next:before {
+	content: "\f101";
+	font-size: 1.5em;
+	color: #ffffff;
+}
+//Newer posts
+.nav-next a:after {
+	content: "\f101";
+	margin: 0 3px;
+}
+.author:before {
+	content: "\f007";
+	font-size: 1em;
+	padding: 5px;
+}
+.cat-links:before {
+	content: "\f02c";
+	padding: 5px;
+}
+.comment-metadata time:before {
+	content: "\f017";
+	padding: 5px;
+}
+.continue-reading:after {
+	content: "\f178";
+	padding: 10px;
+}
+
+
+//SECONDARY ICONS
+
+//Recent Comments
+.widget_recent_comments li:before {
+	content: "\f007";
+	padding-right: 10px;
+	color: #cccccc;
+}
+.widget_recent_comments li>a:before {
+	content: "\f075";
+	display: none;
+}
+//Archive
+.widget_archive li:before {
+	content: "\f111";
+	color: #cccccc;
+	font-size: 0.1em;
+	margin-right: 2em;
+}
+.widget_recent_entries li:before {
+	content: "\f111";
+	color: #cccccc;
+	font-size: 0.1em;
+	margin-right: 2em;
+}
+//Categories
+.widget_categories li:before {
+	content: "\f111";
+	color: #cccccc;
+	font-size: 0.1em;
+	margin-right: 2em;
+}
+//Meta
+.widget_meta li:before {
+	content: "\f111";
+	color: #cccccc;
+	font-size: 0.1em;
+	margin-right: 2em;
+}
+.widget_pages li:before {
+	content: "\f111";
+	color: #cccccc;
+	font-size: 0.1em;
+	margin-right: 2em;
+}
+.powen-wrapper .recent-comment-people:before {
+	content: "\f007";
+	font-size: 2.50em;
+	color: #454545;
+	background: #2F2F2F;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 10px;
+	border-radius: 50%;
+}
+.menu-long-menu-container li:before {
+	content: "\f111";
+	color: #cccccc;
+	font-size: 0.1em;
+	margin-right: 2em;
+}
+
+//RECENT WIDGETS
+.widget_recent_entries li:before {
+	content: "\f111";
+	color: #cccccc;
+	font-size: 0.1em;
+	margin-right: 2em;
+}
+
+// widget-title
+.powen-border-line{
+   content: '';
+   display: block;
+   width: 60px;
+   height: 1px;
+   margin: 15px auto 23px;
+}
+
+
+//Back To Top
+.footer-scroll:before {
+	content: "\f106";
+	background: rgba(0, 0, 0, 0.46);
+	margin: 0;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	width: 40px;
+	text-align: center;
+	height: 35px;
+	z-index: 100;
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+	text-shadow: 0px 4px 0px #fff;
+}

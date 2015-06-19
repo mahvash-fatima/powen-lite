@@ -1,0 +1,248 @@
+// **-----
+// STRUCTURE
+// **-----
+
+$phi: 1.618;
+
+$base_font_size: 16;
+$px: ( 1 / $base_font_size ) * 1rem;
+
+
+// Post and widget column settings
+$readable_width: 70rem;
+$default_gutter: $phi * 1rem;
+// 0.3 means sidebar will be 30% width
+$small_col: 0.3;
+
+
+// DEFAULT _S "STRUCTURE" VARS 
+$size__site-main: 100%;
+$size__site-sidebar: percentage($small_col);
+// /end
+
+
+// Padding settings
+$default_h_padding: $phi * $phi * $phi * 1rem;
+$default_v_padding: $default_h_padding;
+
+// Posts and widgets horizontal padding
+$post_l_padding: $default_h_padding;
+$post_r_padding: $post_l_padding;
+$widget_l_padding: $default_h_padding / $phi;
+$widget_r_padding: $widget_l_padding;
+
+// Posts and widgets vertical padding
+$post_t_padding: $default_h_padding / $phi;
+$post_b_padding: $post_t_padding;
+$widget_t_padding: $default_h_padding / $phi;
+$widget_b_padding: $widget_t_padding;
+
+
+
+@function total_site_width() {
+	// Figure out how many overall rems wide the posts should be, allowing for a readability optimized width on text plus left and right padding
+	$total_post_width_rem: $readable_width + $post_l_padding + $post_r_padding;
+
+	// Figure out how many rems wide the widgets should be in order to have a golden ratio relationship with the posts
+	$sidebar_width_rem: (( $total_post_width_rem / (1-$small_col) ) + $widget_l_padding + $widget_r_padding) * $small_col;
+
+	// Add the two together in order to determine how many rems wide the total site wrapper should be
+  @return $total_post_width_rem + $sidebar_width_rem + $default_gutter;
+  // @return $total_post_width_rem;
+}
+
+/*------------
+*Typography
+------------*/
+
+// DEFAULT _S "TYPOGRAPHY" VARS
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: $phi*1em;
+$font__line-height-pre: $phi*1em;
+// /end
+
+$htag_lineheight: 1.313em;
+$htag_weight: 400;
+
+// H tag font sizes 1 through 6
+$htag_sizes: 3, 2.25, 1.5, 1.313, 1.125, 1;
+
+// H tag vertical margins 1 through 6
+$htag_vmargins: 0.563, 0.625, 1.313, 1.313, 1.313, 0.75;
+
+@mixin htags( $factor: 1 ){
+	h1, h2, h3, h4, h5, h6 {
+		line-height: $htag_lineheight;
+		font-weight: $htag_weight;
+	}
+	@for $i from 1 through 6 {
+		h#{$i} {
+			$value: nth($htag_sizes, $i);
+			$size: if( ($value * $factor) < 1, 1, $value * $factor );
+			font-size: $size * 1em;
+			margin: ( nth($htag_vmargins, $i) * 1em ) 0;
+		}
+	}
+	// Set H1 widget titles default size
+	.widget-title {
+		$default: nth($htag_sizes, 4);
+		$size: if( ($default * $factor) < 1, 1, $default * $factor );
+		font-size: $size * 1.5em;
+		text-align: center;
+	}
+	//Set H1 site title default size
+	.site-branding .site-title {
+		$default: nth($htag_sizes, 4);
+		$size: if( ($default * $factor) > 1, 1, $default * $factor );
+		font-size: $size * 3em;
+	}
+	//Set H2 site description default size
+	.site-branding .site-description {
+		$default: nth($htag_sizes, 4);
+		$size: if( ($default * $factor) > 1, 1, $default * $factor );
+		font-size: $size * 1.5em;
+	}
+}
+
+//---------------THEME COLORS-------------	
+$color_link_date_default:						#aaaaaa;
+$color_text_on_dark_background_default:		    #ffffff;
+$color__powen-slider-content-background: 				rgba(0,0,0,0.3);
+$color_border_default:    						#f2f2f2;
+$color_site_navigation_background:				#ffffff;
+
+$color_primary_background:				        #ffffff;
+$color_secondary_background:					#ffffff;
+$color__background-body: 						#f5f5f5;
+
+$color__link_htag: 								#404040;
+$color_text_primary: 							#565656;
+$color_text_secondary: 							#565656;
+
+
+//Footer Colors
+$color__footer_background:      				#cccccc;
+$color__footer_widgets_background: 			 	#f2f2f2;
+
+
+// DEFAULT _S "COLORS" VARS
+
+$color__background-screen: 						#f1f1f1;
+$color__background-hr: 							#ccc;
+$color__background-pre: 						#eee;
+$color__background-ins: 						#fff9c0;
+$color__text-screen: 							#21759b;
+$color__text-input: 							#666;
+$color__text-input-focus: 						#111;
+$color__link_htag_visited: 						$color__link_htag;
+$color__border-input: 							#ccc;
+$color__border-abbr: 							#666;
+
+// /end
+
+
+// Mixins to apply coloring
+
+@mixin body(){
+	background-color: $color__background-body;
+}
+
+@mixin links(){
+	a {
+		text-decoration: none;
+	}
+}
+
+@mixin blockquote(){
+	background-color: $color_secondary_background;
+	color: $color_text_secondary;
+	a, a:visited, a:active {
+		color: inherit;
+	}
+}
+
+@mixin main_panel(){
+	background-color: $color_primary_background;
+}
+
+@mixin sub_panel(){
+	background-color: $color_secondary_background;
+	color: $color_text_secondary;
+	// a, a:visited, a:active {
+	// 	color: inherit;
+	// }
+}
+
+@mixin entry_meta(){
+	a, a:visited, a:active {
+		color: inherit;
+	}
+}
+
+@mixin entry_footer(){
+	border-top: 2*$px solid $color__background-body;
+}
+
+@mixin comment(){
+	background-color: rgba(221, 193, 174, 0.05);
+	border: 1*$px solid rgba(108, 67, 38, 0.05);
+}
+
+@mixin sticky_post(){
+	margin-bottom: 50px;
+}
+
+@mixin site_footer(){
+	a {
+		color: darken($color__link_htag, 5%);
+	}
+}
+
+@mixin post_thumbnail(){
+	border-top: 10 * $px solid $color__link_htag;
+	border-bottom: 10 * $px solid $color__link_htag;
+}
+
+@mixin more_link(){
+	background: none;
+	border-top: 3*$px solid saturate(lighten($color__link_htag, 45%), 10%);
+	border-bottom: 3*$px solid saturate(lighten($color__link_htag, 45%), 10%);
+	color: $color__link_htag;
+}
+
+// Top Most Menu coloring
+
+@mixin child_menu_expanded(){
+	background-color: darken(saturate($color_secondary_background, 5%), 1%);
+	border-bottom: 0;
+}
+
+@mixin child_menu_item(){
+	a, a:link, a:visited {
+		border: 0;
+		border-top: 2*$px solid $color__top-most-menu-border;
+	}
+	a:hover {
+	background-color: $color__top-most-menu-background-hover;
+	color: $color_theme_default;
+	}
+}
+
+@mixin compact_menu_item(){
+	&:hover {
+		border-bottom-color: transparent;
+		background-color: darken(saturate($color_secondary_background, 5%), 1%);
+	}
+}
+
+@mixin child_menu_compact(){
+	background-color: darken(saturate($color_secondary_background, 7%), 2%);
+}
+
+@mixin child_menu_compact_item(){
+	&:hover {
+		border-bottom-color: transparent;
+		background-color: darken(saturate($color_secondary_background, 8%),3%);
+	}
+}

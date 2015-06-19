@@ -1,0 +1,175 @@
+.widget {
+	margin: 0 0 1.5em;
+	select {
+		max-width: 100%;
+	}
+}
+.widget-area, .footer_widgets  {
+	button,
+	  input[type="button"],
+	  input[type="reset"],
+	  input[type="submit"] {
+	    display: none;
+	}
+}
+.widget-area ul {
+	list-style: none;
+}
+//widget_tag_cloud
+.widget_tag_cloud {
+	a {
+		font-size: 10px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		padding: 2px 8px 2px;
+		margin-right: 5px;
+		margin-bottom: 8px;
+		display: inline-block;
+		border: 1px dotted;
+	}
+}
+
+//widget_archive
+.widget_archive li a {
+	background: none;
+}
+
+//widget_search
+.widget_search, .widget_calendar, .widget_tag_cloud {
+	padding: 0 $phi * 1rem;
+}
+
+//widget_text
+.widget_text {
+	overflow: hidden;
+}
+
+//widget_rss
+.widget_rss {
+	li {
+		margin-bottom: 10px;
+		a {
+			display: block;
+			font-weight: bold;
+		}
+	}
+}
+.rss-date {
+	display: block;
+}
+.rssSummary {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.widget-area li {
+	border-bottom: 1px dashed;
+	padding: 10px 0;
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+.widget_calendar caption, .current-date, .pagination .current {
+  color: #ffffff;
+}
+
+// FOOTER STYLE
+
+/* floats */
+.quarter,
+.one-third,
+.two-thirds,
+.half {
+    float: left;
+}
+
+/* widths */
+.one-third {
+    width: 32%;
+}
+.two-thirds {
+    width: 65.5%;
+}
+.quarter {
+    width: 23.5%;
+}
+.three-quarters {
+    width: 74.5%;
+}
+.half {
+    width: 48%;
+}
+
+/* margins  */
+.one-third {
+    margin: 0 0.5%;
+}
+.quarter,
+.two-thirds {
+    margin: 0 0.5%;
+}
+.left,
+.quarter.left,
+.one-third.left {
+    margin: 0 1% 0 0;
+    float: left;
+}
+.right,
+.quarter.right,
+.one-third.right {
+    margin: 0 0 0 1%;
+    float: right;
+}
+.half.left {
+    width: 48%;
+    margin: 0 2% 0 0;
+}
+.half.right {
+    width: 48%;
+    margin: 0 0 0 2%;
+}
+.two-thirds.left {
+    margin: 0 1% 0 0;
+}
+.two-thirds.right {
+    margin: 0 0 0 1%;
+    float: right;
+}
+
+/* media queries for larger screens such as small tablets in landscape or large tablets in portrait */
+@media screen and ( max-width: 780px ) {
+     
+    /* only the .quarter layout class is relevant here - all other classes will have full width */
+    .quarter {
+        width: 48%;
+    }
+    .quarter.left {
+        margin-right: 2%;
+    }
+    .quarter.right {
+        margin-left: 2%;
+    }
+    footer .third.quarter.widget-area {
+        clear: both;
+    }
+}
+ 
+/* media queries for small screens in landscape mode (or similar) */
+@media screen and ( max-width: 600px ) {
+     
+    /* width sizing all full width in small screens */
+    .quarter,
+    .one-third,
+    .half,
+    .two-thirds,
+    .three-quarters,
+    .full-width {
+        width: 100%;
+        margin: 0;
+    }
+    /* padding adjustments */
+    .widget-area {
+        padding: 0 0 10px 0;
+    }
+}
