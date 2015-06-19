@@ -10,6 +10,7 @@
 			this.navAnimation();
 			this.skipLinkFocusFix();
 			this.commonClass();
+			console.log("dsjfldsjfkls");
 		},
 
 		//mMenu
@@ -52,9 +53,9 @@
     		            $icon.on('.back-to-top').fadeOut(duration);
     		        }
 			});
-		
+
 			$icon.on( 'click' , function () {
-				  $("body,html").animate( { scrollTop: 0 }, 600); 
+				  $("body,html").animate( { scrollTop: 0 }, 600);
 				  return false;
 			});
 		},

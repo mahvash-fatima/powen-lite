@@ -64,7 +64,7 @@ function powen_enqueue_scripts(){
 	/*===============
          REGISTER
 	=================*/
-	
+
 	//Mmenu
 	wp_register_script( 'powen-mobile-menu', POWEN_URI . '/js/vendor-js/jquery.mmenu.min.all.js', array('jquery'), POWEN_VERSION, true );
 
@@ -82,11 +82,11 @@ function powen_enqueue_scripts(){
 	wp_enqueue_script( 'powen-modernizr', POWEN_URI . '/js/vendor-js/modernizr.js' );
 
 	//REM
-	
+
 	// [if lt IE 9]
 	wp_enqueue_script( 'powen-REM-unit-polyfill', POWEN_URI . '/js/vendor-js/rem.js' ,false,false,true );
 	// [endif]
-	
+
 	//mMenu
 	wp_enqueue_script('powen-mobile-menu');
 

@@ -1252,7 +1252,7 @@ h6 {
 .powen-wrapper {
   padding-top: 1.618em;
   padding-bottom: 1.618em;
-  max-width: 115.2910430629rem;
+  max-width: 115.29104rem;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -1306,14 +1306,14 @@ h1.site-title {
 
 /* line 106, sass/custom/_custom_styles.scss */
 .site-content {
-  max-width: 115.2910430629rem;
+  max-width: 115.29104rem;
   margin: 42px auto;
 }
 
 /* line 114, sass/custom/_custom_styles.scss */
 .article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
-  padding-left: 4.235801032rem;
-  padding-right: 4.235801032rem;
+  padding-left: 4.2358rem;
+  padding-right: 4.2358rem;
   margin: 0 0 0 0;
   background-color: #ffffff;
 }
@@ -1326,9 +1326,9 @@ h1.site-title {
 /* line 126, sass/custom/_custom_styles.scss */
 .post-thumbnail {
   margin-top: 1.618rem;
-  margin-right: -4.235801032rem;
+  margin-right: -4.2358rem;
   margin-bottom: 1.618rem;
-  margin-left: -4.235801032rem;
+  margin-left: -4.2358rem;
   border-top: 0.625rem solid #404040;
   border-bottom: 0.625rem solid #404040;
 }
@@ -1357,7 +1357,7 @@ h1.site-title {
 /* line 158, sass/custom/_custom_styles.scss */
 .entry-title {
   margin-top: 0;
-  margin-bottom: 2.617924rem;
+  margin-bottom: 2.61792rem;
 }
 
 /* line 163, sass/custom/_custom_styles.scss */
@@ -1393,7 +1393,7 @@ h1.site-title {
 
 /* line 188, sass/custom/_custom_styles.scss */
 .entry-footer {
-  margin: 2.617924rem 0 1.618rem 0;
+  margin: 2.61792rem 0 1.618rem 0;
   line-height: 3em;
   text-align: center;
   border-top: 0.125rem solid #f5f5f5;
@@ -1420,10 +1420,10 @@ h1.site-title {
 
 /* line 212, sass/custom/_custom_styles.scss */
 .widget {
-  padding-left: 2.617924rem;
-  padding-right: 2.617924rem;
-  padding-top: 2.617924rem;
-  padding-bottom: 2.617924rem;
+  padding-left: 2.61792rem;
+  padding-right: 2.61792rem;
+  padding-top: 2.61792rem;
+  padding-bottom: 2.61792rem;
   margin-left: 1.618rem;
   margin-bottom: 1.618rem;
   background-color: #ffffff;
@@ -1547,7 +1547,7 @@ input.search-field {
   color: #666666;
 }
 
-@media (max-width: 115.2910430629rem) {
+@media (max-width: 115.29104rem) {
   /* line 75, sass/custom/_custom_vars_mixins.scss */
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.313em;
@@ -1608,8 +1608,8 @@ input.search-field {
 
   /* line 344, sass/custom/_custom_styles.scss */
   .article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
-    padding-left: 2.617924rem;
-    padding-right: 2.617924rem;
+    padding-left: 2.61792rem;
+    padding-right: 2.61792rem;
     padding-top: 1.618rem;
     padding-bottom: 1.618rem;
   }
@@ -1617,9 +1617,9 @@ input.search-field {
   /* line 351, sass/custom/_custom_styles.scss */
   .post-thumbnail {
     margin-top: 1.618rem;
-    margin-right: -2.617924rem;
+    margin-right: -2.61792rem;
     margin-bottom: 1.618rem;
-    margin-left: -2.617924rem;
+    margin-left: -2.61792rem;
   }
 
   /* line 358, sass/custom/_custom_styles.scss */
@@ -1885,7 +1885,7 @@ input.search-field {
 13.0 Font awesome
 --------------------------------------------------------------*/
 /*------------------
-FontAwesome 
+FontAwesome
 ---------------------*/
 /* line 5, sass/custom/_font_awesome.scss */
 .posted-on:before,
@@ -1913,13 +1913,11 @@ FontAwesome
 .powen-border-line,
 .footer-scroll:before {
   font-family: 'FontAwesome';
-  src: url("../font-awesome-4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
-  src: url("../font-awesome-4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-/* line 37, sass/custom/_font_awesome.scss */
+/* line 35, sass/custom/_font_awesome.scss */
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -1933,90 +1931,90 @@ FontAwesome
 /**---------------
 Write your code here
 --------------------**/
-/* line 54, sass/custom/_font_awesome.scss */
+/* line 52, sass/custom/_font_awesome.scss */
 .posted-on:before {
   content: "\f017";
   padding: 5px;
   font-size: 1em;
 }
 
-/* line 60, sass/custom/_font_awesome.scss */
+/* line 58, sass/custom/_font_awesome.scss */
 .comments-link:before {
   content: "\f0e6";
   padding: 5px;
 }
 
-/* line 65, sass/custom/_font_awesome.scss */
+/* line 63, sass/custom/_font_awesome.scss */
 .edit-link:before {
   content: "\f044";
   padding: 5px;
 }
 
-/* line 70, sass/custom/_font_awesome.scss */
+/* line 68, sass/custom/_font_awesome.scss */
 .nav-previous a:before {
   content: "\f100";
   margin: 0 3px;
 }
 
-/* line 75, sass/custom/_font_awesome.scss */
+/* line 73, sass/custom/_font_awesome.scss */
 .flex-direction-nav li .flex-prev:before {
   content: "\f100";
   font-size: 1.5em;
   color: #ffffff;
 }
 
-/* line 81, sass/custom/_font_awesome.scss */
+/* line 79, sass/custom/_font_awesome.scss */
 .flex-direction-nav li .flex-next:before {
   content: "\f101";
   font-size: 1.5em;
   color: #ffffff;
 }
 
-/* line 87, sass/custom/_font_awesome.scss */
+/* line 85, sass/custom/_font_awesome.scss */
 .nav-next a:after {
   content: "\f101";
   margin: 0 3px;
 }
 
-/* line 91, sass/custom/_font_awesome.scss */
+/* line 89, sass/custom/_font_awesome.scss */
 .author:before {
   content: "\f007";
   font-size: 1em;
   padding: 5px;
 }
 
-/* line 96, sass/custom/_font_awesome.scss */
+/* line 94, sass/custom/_font_awesome.scss */
 .cat-links:before {
   content: "\f02c";
   padding: 5px;
 }
 
-/* line 100, sass/custom/_font_awesome.scss */
+/* line 98, sass/custom/_font_awesome.scss */
 .comment-metadata time:before {
   content: "\f017";
   padding: 5px;
 }
 
-/* line 104, sass/custom/_font_awesome.scss */
+/* line 102, sass/custom/_font_awesome.scss */
 .continue-reading:after {
   content: "\f178";
   padding: 10px;
 }
 
-/* line 113, sass/custom/_font_awesome.scss */
+/* line 111, sass/custom/_font_awesome.scss */
 .widget_recent_comments li:before {
   content: "\f007";
   padding-right: 10px;
   color: #cccccc;
 }
 
-/* line 118, sass/custom/_font_awesome.scss */
+/* line 116, sass/custom/_font_awesome.scss */
 .widget_recent_comments li > a:before {
   content: "\f075";
   display: none;
 }
 
-/* line 123, sass/custom/_font_awesome.scss */
+/* line 121, sass/custom/_font_awesome.scss */
 .widget_archive li:before {
   content: "\f111";
   color: #cccccc;
@@ -2024,7 +2022,7 @@ Write your code here
   margin-right: 2em;
 }
 
-/* line 129, sass/custom/_font_awesome.scss */
+/* line 127, sass/custom/_font_awesome.scss */
 .widget_recent_entries li:before {
   content: "\f111";
   color: #cccccc;
@@ -2032,7 +2030,7 @@ Write your code here
   margin-right: 2em;
 }
 
-/* line 136, sass/custom/_font_awesome.scss */
+/* line 134, sass/custom/_font_awesome.scss */
 .widget_categories li:before {
   content: "\f111";
   color: #cccccc;
@@ -2040,7 +2038,7 @@ Write your code here
   margin-right: 2em;
 }
 
-/* line 143, sass/custom/_font_awesome.scss */
+/* line 141, sass/custom/_font_awesome.scss */
 .widget_meta li:before {
   content: "\f111";
   color: #cccccc;
@@ -2048,7 +2046,7 @@ Write your code here
   margin-right: 2em;
 }
 
-/* line 149, sass/custom/_font_awesome.scss */
+/* line 147, sass/custom/_font_awesome.scss */
 .widget_pages li:before {
   content: "\f111";
   color: #cccccc;
@@ -2056,7 +2054,7 @@ Write your code here
   margin-right: 2em;
 }
 
-/* line 155, sass/custom/_font_awesome.scss */
+/* line 153, sass/custom/_font_awesome.scss */
 .powen-wrapper .recent-comment-people:before {
   content: "\f007";
   font-size: 2.50em;
@@ -2068,7 +2066,7 @@ Write your code here
   border-radius: 50%;
 }
 
-/* line 165, sass/custom/_font_awesome.scss */
+/* line 163, sass/custom/_font_awesome.scss */
 .menu-long-menu-container li:before {
   content: "\f111";
   color: #cccccc;
@@ -2076,7 +2074,7 @@ Write your code here
   margin-right: 2em;
 }
 
-/* line 173, sass/custom/_font_awesome.scss */
+/* line 171, sass/custom/_font_awesome.scss */
 .widget_recent_entries li:before {
   content: "\f111";
   color: #cccccc;
@@ -2084,7 +2082,7 @@ Write your code here
   margin-right: 2em;
 }
 
-/* line 181, sass/custom/_font_awesome.scss */
+/* line 179, sass/custom/_font_awesome.scss */
 .powen-border-line {
   content: '';
   display: block;
@@ -2093,7 +2091,7 @@ Write your code here
   margin: 15px auto 23px;
 }
 
-/* line 191, sass/custom/_font_awesome.scss */
+/* line 189, sass/custom/_font_awesome.scss */
 .footer-scroll:before {
   content: "\f106";
   background: rgba(0, 0, 0, 0.46);
