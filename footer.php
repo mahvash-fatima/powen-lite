@@ -10,7 +10,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="footer_widgets">
-			<div class="powen-wrapper">
+			<div class="powen-wrapper pwoen">
 
 				<?php
 				    /* The footer widget area is triggered if any of the areas
