@@ -436,10 +436,26 @@ textarea {
 /* line 1, sass/navigation/_links.scss */
 a {
   color: #404040;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
 }
-/* line 4, sass/navigation/_links.scss */
+/* line 7, sass/navigation/_links.scss */
 a:focus {
   color: #404040;
+}
+
+/* line 12, sass/navigation/_links.scss */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.pagination a,
+.widget-area .tagcloud a {
+  color: #fff;
 }
 
 /*--------------------------------------------------------------

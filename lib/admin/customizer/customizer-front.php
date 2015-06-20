@@ -30,6 +30,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 
 	public static function custom_css()
 	{
+		self::create_color_scheme();
 	    self::generate_css( 'body', 'font-family', 'theme_font', '"', '"' );
 	    self::generate_css('.site-title a', 'color', 'header_textcolor', '');
 	    self::generate_css('.site-description', 'color', 'header_taglinecolor');
@@ -43,6 +44,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 	    self::generate_css('.site-info', 'background-color', 'footer_bottom_background_color');
 	    self::powen_title_layout();
 	    self::powen_logo_placement();
+	    self::powen_sidebar_layout();
 	}
 
 	/**
@@ -129,22 +131,47 @@ class Powen_Customizer_Front extends Powen_Customizer
 	  }
 	}
 
-	public static function powen_colors_array() {
-		
+	public static function powen_sidebar_layout() {
+
+		$sidebar_position = powen_mod('sidebar_position');
+
+		if($sidebar_position === 'left') {
+			echo ".site-content .widget-area {float: {$sidebar_position}; overflow: hidden;  width: 30%;}";
+			echo ".content-area {float: right; margin: 0 0 0 -30%; width: 100%; }";
+			echo ".site-main {margin: 0 0 0 32%;}";
+		}
+
+		if($sidebar_position === 'right') {
+			echo ".site-content .widget-area {float: {$sidebar_position}; overflow: hidden; width: 30%;}";
+			echo ".content-area {float: left; margin: 0 -30% 0 0; width: 100%; }";
+			echo ".site-main {margin: 0 30% 0 0;}";
+		}
+
+		if($sidebar_position === 'no-sidebar') {
+			echo ".site-content {width: 100%; float: none;}";
+			echo ".site-content .widget-area {display: none;}";
+			echo ".site-main {margin: 0;}";
+		}
+
+	}
+
+
+	public static function create_color_scheme() {
+
 		//=====================
 		//THEME COLOR
 		//=====================
 
 		//color
-		$powen_theme_color = array (
-			'.powen-slider-content-icon-before', 
+		$color_selectors = array (
+			'.powen-slider-content-icon-before',
 			'.powen-slider-content-icon-after',
-			'.continue-reading:after', 
-			'.cat-links:before', 
-			'.comments-link:before', 
-			'.edit-link:before', 
-			'.author:before', 
-			'.posted-on:before', 
+			'.continue-reading:after',
+			'.cat-links:before',
+			'.comments-link:before',
+			'.edit-link:before',
+			'.author:before',
+			'.posted-on:before',
 			'.comment-metadata time:before',
 			'input[type="text"]:focus',
 			'input[type="email"]:focus',
@@ -152,13 +179,12 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'input[type="password"]:focus',
 			'input[type="search"]:focus',
 			'textarea:focus',
-
 		);
 		//background
-		$powen_theme_background_color = array(
-			'.widget_calendar caption', 
-			'.current-date', 
-			'.powen-border-line', 
+		$background_color_selectors = array(
+			'.widget_calendar caption',
+			'.current-date',
+			'.powen-border-line',
 			'.pagination .current',
 			'button',
 			'input[type="button"]',
@@ -171,7 +197,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 		);
 
 		//border color
-		$powen_theme_border_color = array(
+		$border_color_selectors = array(
 			'a:hover, a:active',
 			'input[type="text"]',
 			'input[type="email"]',
@@ -180,20 +206,23 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'input[type="search"]',
 			'textarea',
 			'.pagination .current',
-			'.pagination a:hover', 
+			'.pagination a:hover',
 			'.widget-area .tagcloud a:hover',
 		);
 
+		self::generate_css( $color_selectors, 'color', 'theme_color' );
+		self::generate_css( $background_color_selectors, 'background', 'theme_color' );
+		self::generate_css( $border_color_selectors, 'border-color', 'theme_color' );
 
 		//=====================
 		//LINK COLOR( ON HOVER )
 		//=====================
 
 		//color (on hover)
-		$powen_theme_hover_color = array( 'a:hover', 'a:active' );
+		$color_hover_selectors = array( 'a:hover', 'a:active' );
 
-		//button color (on hover) following colors should be "WHITE"
-		$powen_button_color = array(  
+		//background should change on hover.
+		$background_color_hover_selectors = array(
 			'button:hover',
 			'input[type="button"]:hover',
 			'input[type="reset"]:hover',
@@ -202,151 +231,22 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'input[type="button"]:hover',
 			'input[type="reset"]:hover',
 			'input[type="submit"]:hover',
-			'.pagination a:hover', 
+			'.pagination a:hover',
 			'.widget-area .tagcloud a:hover'
 		);
 
 		// border color (on hover)
-		$powen_theme_border_color_hover = array(
-			'pagination a:hover', 
+		$border_color_hover_selectors = array(
+			'pagination a:hover',
 			'.widget-area .tagcloud a:hover',
 		);
 
-		//=====================
-		//BODY BACKGROUND COLOR
-		//=====================
-		$powen_background_color = array( 'body' );
+		self::generate_css( $color_hover_selectors, 'color', 'hover_link_color' );
+		self::generate_css( $background_color_hover_selectors, 'background', 'hover_link_color' );
+		self::generate_css( $border_color_hover_selectors, 'border-color', 'hover_link_color' );
 
-		//=============
-		//HEADER COLORS
-		//=============
-		
-		//background color
-		$powen_header_background_color = array( '.site-header' );
-
-		//color
-		$powen_header_title_color = array( '.site-title a' );
-
-		//color
-		$powen_header_tagline_color = array( '.site-description' );
-
-		//=============
-		//FOOTER COLORS
-		//=============
-		
-		//background color
-		$powen_widgets_background_color = array( '.footer_widgets' );
-
-		//color
-		$powen_widgets_text_color = array( '.footer_widgets' );
-
-		//color
-		$powen_widgets_link_color = array( '.footer_widgets a' );
-
-		//background
-		$powen_bottom_background_color = array( '.site-info' );
-
-		//color
-		$powen_bottom_text_color = array( '.site-info' );
 
 	}
 
 }
 new Powen_Customizer_Front();
-
-
-
-function powen_customize_colors() {
-
-  /****************************************
-  styling
-  ****************************************/
-  ?>
-  <style>
-
-      /*
-      MAIN COLOR STYLING
-       */
-      button,
-      input[type="button"],
-      input[type="reset"],
-      input[type="submit"] {
-        background-color: <?php echo $main_color; ?>;
-        color: #ffffff;
-      }
-
-      input[type="text"]:focus,
-      input[type="email"]:focus,
-      input[type="url"]:focus,
-      input[type="password"]:focus,
-      input[type="search"]:focus,
-      textarea:focus {
-        color: <?php echo $main_color; ?>;
-      }
-
-      input[type="text"],
-      input[type="email"],
-      input[type="url"],
-      input[type="password"],
-      input[type="search"],
-      textarea {
-        border: 2px solid <?php echo $main_color; ?>;
-      }
-
-      .powen-slider-content-icon-before, .powen-slider-content-icon-after, .continue-reading:after, .cat-links:before, .comments-link:before, .edit-link:before, .author:before, .posted-on:before, .comment-metadata time:before{
-        color:  <?php echo $main_color; ?>;
-      }
-      .widget_calendar caption, .current-date, .powen-border-line, .pagination .current {
-        background: <?php echo $main_color; ?>;
-      }
-      .pagination .current {
-        border: 1px solid <?php echo $main_color; ?>;
-      }
-
-
-
-      /*
-      LINK COLOR( ON HOVER )
-       */
-
-      button:hover,
-      input[type="button"]:hover,
-      input[type="reset"]:hover,
-      input[type="submit"]:hover {
-        background: <?php echo $hover_link_color; ?>;
-        color: #ffffff;
-      }
-
-      a:hover, a:active {
-        color: <?php echo $hover_link_color; ?>;
-        -o-transition: .3s;
-        -ms-transition: .3s;
-        -moz-transition: .3s;
-        -webkit-transition: .3s;
-      }
-      .pagination a:hover, .widget-area .tagcloud a:hover {
-        background: <?php echo $hover_link_color; ?>;
-        color: #ffffff;
-        text-decoration: none;
-        border: 1px solid <?php echo $hover_link_color; ?>;
-        -o-transition: .3s;
-        -ms-transition: .3s;
-        -moz-transition: .3s;
-        -webkit-transition: .3s;
-      }
-      a:hover, a:active, #site-navigation li a:hover {
-          text-decoration: underline;
-      }
-      .site-title a:hover {
-        text-decoration: none;
-      }
-  </style>
-
-  <?php }
-
-  function powen_custom_css_output() {
-      echo '<style type="text/css" id="custom-theme-css">' .
-      get_theme_mod( 'custom_theme_css', '' ) . '</style>';
-  }
-  add_action( 'wp_head', 'powen_custom_css_output');
-

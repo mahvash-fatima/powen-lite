@@ -10,7 +10,6 @@
 			this.navAnimation();
 			this.skipLinkFocusFix();
 			this.commonClass();
-			console.log("dsjfldsjfkls");
 		},
 
 		//mMenu
