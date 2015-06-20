@@ -129,6 +129,128 @@ class Powen_Customizer_Front extends Powen_Customizer
 	  }
 	}
 
+	public static function powen_colors_array() {
+		
+		//=====================
+		//THEME COLOR
+		//=====================
+
+		//color
+		$powen_theme_color = array (
+			'.powen-slider-content-icon-before', 
+			'.powen-slider-content-icon-after',
+			'.continue-reading:after', 
+			'.cat-links:before', 
+			'.comments-link:before', 
+			'.edit-link:before', 
+			'.author:before', 
+			'.posted-on:before', 
+			'.comment-metadata time:before',
+			'input[type="text"]:focus',
+			'input[type="email"]:focus',
+			'input[type="url"]:focus',
+			'input[type="password"]:focus',
+			'input[type="search"]:focus',
+			'textarea:focus',
+
+		);
+		//background
+		$powen_theme_background_color = array(
+			'.widget_calendar caption', 
+			'.current-date', 
+			'.powen-border-line', 
+			'.pagination .current',
+			'button',
+			'input[type="button"]',
+			'input[type="reset"]',
+			'input[type="submit"]',
+			'button:hover',
+			'input[type="button"]:hover',
+			'input[type="reset"]:hover',
+			'input[type="submit"]:hover',
+		);
+
+		//border color
+		$powen_theme_border_color = array(
+			'a:hover, a:active',
+			'input[type="text"]',
+			'input[type="email"]',
+			'input[type="url"]',
+			'input[type="password"]',
+			'input[type="search"]',
+			'textarea',
+			'.pagination .current',
+			'.pagination a:hover', 
+			'.widget-area .tagcloud a:hover',
+		);
+
+
+		//=====================
+		//LINK COLOR( ON HOVER )
+		//=====================
+
+		//color (on hover)
+		$powen_theme_hover_color = array( 'a:hover', 'a:active' );
+
+		//button color (on hover) following colors should be "WHITE"
+		$powen_button_color = array(  
+			'button:hover',
+			'input[type="button"]:hover',
+			'input[type="reset"]:hover',
+			'input[type="submit"]:hover',
+			'button:hover',
+			'input[type="button"]:hover',
+			'input[type="reset"]:hover',
+			'input[type="submit"]:hover',
+			'.pagination a:hover', 
+			'.widget-area .tagcloud a:hover'
+		);
+
+		// border color (on hover)
+		$powen_theme_border_color_hover = array(
+			'pagination a:hover', 
+			'.widget-area .tagcloud a:hover',
+		);
+
+		//=====================
+		//BODY BACKGROUND COLOR
+		//=====================
+		$powen_background_color = array( 'body' );
+
+		//=============
+		//HEADER COLORS
+		//=============
+		
+		//background color
+		$powen_header_background_color = array( '.site-header' );
+
+		//color
+		$powen_header_title_color = array( '.site-title a' );
+
+		//color
+		$powen_header_tagline_color = array( '.site-description' );
+
+		//=============
+		//FOOTER COLORS
+		//=============
+		
+		//background color
+		$powen_widgets_background_color = array( '.footer_widgets' );
+
+		//color
+		$powen_widgets_text_color = array( '.footer_widgets' );
+
+		//color
+		$powen_widgets_link_color = array( '.footer_widgets a' );
+
+		//background
+		$powen_bottom_background_color = array( '.site-info' );
+
+		//color
+		$powen_bottom_text_color = array( '.site-info' );
+
+	}
+
 }
 new Powen_Customizer_Front();
 
