@@ -2,7 +2,7 @@
 
 function powen_sidebar_layout() {
 
-	$sidebar_position = get_theme_mod('powen_sidebar_position');
+	$sidebar_position = powen_mod('sidebar_position');
 
 	if($sidebar_position === 'left') {
 		echo "<style>";
@@ -11,7 +11,7 @@ function powen_sidebar_layout() {
 		echo ".site-main {margin: 0 0 0 32%;}";
 		echo "</style>";
 	}
-	
+
 	if($sidebar_position === 'right') {
 		echo "<style>";
 		echo ".site-content .widget-area {float: $sidebar_position; overflow: hidden; width: 30%;}";

@@ -32,16 +32,16 @@
 			</div>
 
 			<nav id="main-nav">
-				<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'menu_class'=>'powen-wrapper', 'menu_id' => 'main_nav') ); ?>	
+				<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'menu_class'=>'powen-wrapper', 'menu_id' => 'main_nav') ); ?>
 			</nav>
 
 			<div class="site-branding">
-				<?php if ( get_theme_mod( 'powen_upload_logo' ) ) : ?>
-				    
+				<?php if ( powen_mod( 'upload_logo' ) ) : ?>
+
 				    <div id="logo" class='site-logo'>
-				        <a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( get_theme_mod( 'powen_upload_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
+				        <a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( powen_mod( 'upload_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
 				    </div>
-				
+
 				<?php else : ?>
 
 			    	<div id="title-tagline" class="title-description">

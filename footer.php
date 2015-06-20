@@ -107,19 +107,22 @@
 	</div><!-- #footer_widgets -->
 
 	<div class="site-info">
+			<div class="powen-wrapper">
 
-		<div class="powen-wrapper">
-			<?php if( get_theme_mod( 'powen_hide_copyright' ) == '') { ?>
-			    <?php _e(date('Y')); ?><a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
-			        <?php echo get_theme_mod( 'powen_copyright_textbox', '@copyright'); ?>
+			    <?php esc_attr_e('(C)', 'powen'); ?><?php _e(date('Y')); ?><a href="<?php echo esc_url(home_url('/')); ?>" class="powen-copyright" title="<?php echo esc_attr(get_bloginfo('name', 'display'), 'powen'); ?>">
+			        <?php echo powen_mod( 'powen_copyright_textbox'); ?>
 			    </a>
-			<?php } // end if ?>
-			<span class="sep"> | </span>
 
-			<?php printf( __( '%1$s by %2$s .', 'powen' ), get_theme_mod('powen_website_name', 'Powen'), '<a href= '.esc_url(get_theme_mod('powen_author_uri')).' rel="designer">'.get_theme_mod('powen_author_name').'</a>' ); ?>
+				<span class="sep"> | </span>
 
-		</div><!-- powen-wrapper -->
-	</div><!-- site-info -->
+				<?php
+					$footerUrl    = __('Supernova Themes', 'powen');
+					$footerUrlEsc = esc_url('http://supernovathemes.com');
+				?>
+				<?php printf( __( '%1$s by %2$s.', 'powen' ), 'Powen', '<a href= '.$footerUrlEsc.' class="powen-site" rel="designer">'.$footerUrl.'</a>' ); ?>
+
+			</div><!-- powen-wrapper -->
+		</div><!-- site-info -->
 
 	</footer><!-- #colophon -->
 
