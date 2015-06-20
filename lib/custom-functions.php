@@ -5,6 +5,7 @@
  * @package Powen
  */
 
+
 function powen_mod( $key , $default = false ) {
 	$powen_cus = get_theme_mod('powen_cus' );
 	return isset($powen_cus[$key]) && $powen_cus[$key] ? $powen_cus[$key] : $default;
