@@ -319,6 +319,13 @@ class Powen_Customizer {
 
 new Powen_Customizer();
 
+/**
+ * Used for sanitizing radio or select options in customizer
+ * @param  mixed $input  user input
+ * @param  mixed $setting choices provied to the user.
+ * @return mixed  output after sanitization
+ * @since Powen 1.1.3
+ */
 function powen_sanitize_choices( $input, $setting ) {
   global $wp_customize;
 
