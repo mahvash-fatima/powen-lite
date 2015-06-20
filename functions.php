@@ -35,11 +35,6 @@ add_filter( 'powen_show_pages', '__return_false' );
 
 
 /**
- * Sidebar Layout
- */
-require_once POWEN_DR . '/lib/sidebar-layout.php';
-
-/**
  * Breadcrumb
  */
 require_once POWEN_DR . '/lib/breadcrumb.php';

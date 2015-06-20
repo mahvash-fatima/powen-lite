@@ -7,7 +7,7 @@
 
 
 function powen_mod( $key , $default = false ) {
-	$powen_cus = get_theme_mod('powen_cus' );
+	$powen_cus = get_theme_mod('powen_mod' );
 	return isset($powen_cus[$key]) && $powen_cus[$key] ? $powen_cus[$key] : $default;
 }
 /**
