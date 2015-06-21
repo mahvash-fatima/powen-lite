@@ -189,7 +189,7 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting('powen_mod[theme_font]', array(
-          'default'           => 'Courier New',
+          'default'           => 'Open Sans',
           'sanitize_callback' => 'powen_sanitize_choices',
           'transport'         => 'postMessage',
           'capability'        => 'edit_theme_options',

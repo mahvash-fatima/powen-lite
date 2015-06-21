@@ -25,7 +25,7 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="powen-wrapper clear">
 
-			<div id="top-most-container" class="top-container sticky">
+			<div id="top-most-container" class="top-container">
 				<?php get_template_part( 'template-parts/top-most' ); ?>
 				<?php powen_social_media_icons(); ?>
 				<?php get_search_form(); ?>
