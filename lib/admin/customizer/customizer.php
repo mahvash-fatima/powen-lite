@@ -41,7 +41,7 @@ class Powen_Customizer {
               'default'           => '',
               'sanitize_callback' => 'esc_url_raw',
               'capability'        => 'edit_theme_options',
-              'type'              => 'theme_mod',
+  
           ));
 
           $wp_customize->add_control( "powen_mod[{$powen_social_site}]" , array(
@@ -67,7 +67,6 @@ class Powen_Customizer {
           'default'           => 'left',
           'sanitize_callback' => 'powen_sanitize_choices',
           'capability'        => 'edit_theme_options',
-          'type'              => 'theme_mod',
 
       ) );
 
@@ -91,7 +90,6 @@ class Powen_Customizer {
           'default'           => '@copyright',
           'sanitize_callback' => 'sanitize_text_field',
           'capability'        => 'edit_theme_options',
-          'type'              => 'theme_mod',
       ) );
 
       $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[copyright_textbox]', array(
@@ -165,7 +163,6 @@ class Powen_Customizer {
           $wp_customize->add_setting(
               $theme_color['slug'], array(
                   'default'           => $theme_color['default'],
-                  'type'              => 'theme_mod',
                   'sanitize_callback' => 'sanitize_hex_color',
                   'capability'        => 'edit_theme_options',
               )
@@ -192,11 +189,10 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting('powen_mod[theme_font]', array(
-          'default'           => 'times',
+          'default'           => 'Courier New',
           'sanitize_callback' => 'powen_sanitize_choices',
           'transport'         => 'postMessage',
           'capability'        => 'edit_theme_options',
-          'type'              => 'theme_mod',
       ) );
 
       $wp_customize->add_control('powen_mod[theme_font]', array(
@@ -208,6 +204,7 @@ class Powen_Customizer {
               'sansserif' => 'sans-serif',
               'serif'     => 'serif',
               'courier'   => 'Courier New',
+              'open-sans' => 'Open Sans',
       ) ) );
 
 
@@ -226,7 +223,6 @@ class Powen_Customizer {
           'default'           => 'center',
           'capability'        => 'edit_theme_options',
           'sanitize_callback' => 'powen_sanitize_choices',
-          'type'              => 'theme_mod',
       ) );
 
       $wp_customize->add_control( 'powen_mod[header_text_placement]', array(
@@ -246,7 +242,6 @@ class Powen_Customizer {
           'default'           => 'left',
           'sanitize_callback' => 'powen_sanitize_choices',
           'capability'        => 'edit_theme_options',
-          'type'              => 'theme_mod',
 
       ) );
 
@@ -266,7 +261,6 @@ class Powen_Customizer {
           'default'           => '',
           'sanitize_callback' => 'esc_url_raw',
           'capability'        => 'edit_theme_options',
-          'type'              => 'theme_mod',
 
       ));
 
@@ -282,7 +276,7 @@ class Powen_Customizer {
             'default'           => '',
             'sanitize_callback' => 'esc_url_raw',
             'capability'        => 'edit_theme_options',
-            'type'              => 'theme_mod',
+
         ) );
 
         $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'powen_mod[upload_logo]', array(

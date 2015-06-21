@@ -3,7 +3,6 @@ a {
 	transition: 0.5s;
 	-webkit-transition:0.5s;
 	-moz-transition:0.5s;
-
 	&:focus {
 		color: $color__link_htag;
 	}
@@ -15,9 +14,11 @@ input[type="reset"],
 input[type="submit"],
 input[type="button"],
 input[type="reset"],
-input[type="submit"],
-.pagination a,
-.widget-area .tagcloud a
+input[type="submit"]
 {
-	color:#fff;
+	color:#ffffff;
+}
+.pagination a:hover,
+.widget-area .tagcloud a:hover {
+	color: #ffffff;
 }

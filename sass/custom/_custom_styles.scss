@@ -123,6 +123,13 @@ h1.site-title {
 	@include sticky_post();
 }
 
+.featured-img {
+	@include main_panel();
+	img {
+	margin: 0 auto;
+	}
+}
+
 .post-thumbnail {
 	margin-top: $default_gutter;
 	margin-right: -$post_r_padding;
@@ -242,7 +249,6 @@ h1.site-title {
 }
 
 .top-container {
-	border-bottom: 1px solid #f2f2f2;
 	padding-bottom: $phi * 1em;
 	overflow: hidden;
 	ul {
@@ -253,6 +259,7 @@ h1.site-title {
 		float: left;
 	    li {
 			display: inline-block;
+			padding: 0 5px;
 		a {
 			padding: 2px;
 		}
@@ -399,17 +406,11 @@ input.search-field {
 @media (max-width: 600*$px) {
 
 	@include htags(0.5);
+	
+	.top-container .social-media-icons {
+		display: none;
+	}
 
-	.top-container {
-		.search-form {
-		display: block;
-		float: left;
-		}
-	}
-	.social-media-icons, .powen-nav {
-		display: block;
-		float: left;
-	}
 }
 
 @media (max-width: 400*$px) {
@@ -463,5 +464,8 @@ input.search-field {
 
 	button, input[type="button"], input[type="reset"], input[type="submit"] {
 		display: none;
+	}
+	.top-container .search-form input {
+		width: 80px;
 	}
 }

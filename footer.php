@@ -49,7 +49,7 @@
 			<div class="powen-wrapper">
 
 			    <?php esc_attr_e('(C)', 'powen'); ?><?php _e(date('Y')); ?><a href="<?php echo esc_url(home_url('/')); ?>" class="powen-copyright" title="<?php echo esc_attr(get_bloginfo('name', 'display'), 'powen'); ?>">
-			        <?php echo powen_mod( 'copyright_textbox'); ?>
+			        <?php echo esc_attr( powen_mod( 'copyright_textbox', 'Copyright'), 'powen' ); ?>
 			    </a>
 
 				<span class="sep"> | </span>

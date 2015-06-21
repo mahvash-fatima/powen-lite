@@ -23,8 +23,12 @@
 	                sFont = 'Courier New, Courier';
 	                break;
 
+	            case 'open-sans':
+	                sFont = 'Open Sans';
+	                break;
+	                
 	            default:
-	                sFont = 'Courier New, Courier';
+	                sFont = 'Open Sans';
 	                break;
 
 	        }

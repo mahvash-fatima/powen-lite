@@ -33,8 +33,6 @@ get_header(); ?>
 
 <?php get_sidebar(); ?>
 
-<?php powen_sidebar_layout(); ?>
-
 	</div><!-- #content -->
 	
 		<div class="clearfix"></div>

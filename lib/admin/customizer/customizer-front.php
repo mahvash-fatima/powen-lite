@@ -31,7 +31,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 	public static function custom_css()
 	{
 		self::create_color_scheme();
-	    self::generate_css( 'body', 'font-family', 'theme_font', '"', '"' );
+	    self::generate_css( 'body', 'font-family', 'theme_font', '"', '"', "Open Sans" );
 	    self::generate_css('.site-title a', 'color', 'header_textcolor', '');
 	    self::generate_css('.site-description', 'color', 'header_taglinecolor');
 	    self::generate_css('body', 'background-color', 'background_color', '');
@@ -205,14 +205,19 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'input[type="password"]',
 			'input[type="search"]',
 			'textarea',
+			'input[type="text"]:focus',
+			'input[type="email"]:focus',
+			'input[type="url"]:focus',
+			'input[type="password"]:focus',
+			'input[type="search"]:focus',
 			'.pagination .current',
 			'.pagination a:hover',
 			'.widget-area .tagcloud a:hover',
 		);
 
-		self::generate_css( $color_selectors, 'color', 'theme_color' );
-		self::generate_css( $background_color_selectors, 'background', 'theme_color' );
-		self::generate_css( $border_color_selectors, 'border-color', 'theme_color' );
+		self::generate_css( $color_selectors, 'color', 'theme_color', false, false, '#6897bb' );
+		self::generate_css( $background_color_selectors, 'background', 'theme_color', false, false, '#6897bb' );
+		self::generate_css( $border_color_selectors, 'border-color', 'theme_color', false, false, '#6897bb' );
 
 		//=====================
 		//LINK COLOR( ON HOVER )
@@ -241,9 +246,9 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'.widget-area .tagcloud a:hover',
 		);
 
-		self::generate_css( $color_hover_selectors, 'color', 'hover_link_color' );
-		self::generate_css( $background_color_hover_selectors, 'background', 'hover_link_color' );
-		self::generate_css( $border_color_hover_selectors, 'border-color', 'hover_link_color' );
+		self::generate_css( $color_hover_selectors, 'color', 'hover_link_color', false, false, '#fa8072' );
+		self::generate_css( $background_color_hover_selectors, 'background', 'hover_link_color', false, false, '#fa8072' );
+		self::generate_css( $border_color_hover_selectors, 'border-color', 'hover_link_color', false, false, '#fa8072' );
 
 
 	}

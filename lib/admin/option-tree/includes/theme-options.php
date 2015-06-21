@@ -2,12 +2,12 @@
 /**
  * Initialize the custom theme options.
  */
-add_action( 'init', 'custom_theme_options' );
+add_action( 'init', 'powen_custom_theme_options' );
 
 /**
  * Build the custom settings & update OptionTree.
  */
-function custom_theme_options() {
+function powen_custom_theme_options() {
   
   /* OptionTree is not loaded yet, or this is not an admin request */
   if ( ! function_exists( 'powen_settings_id' ) || ! is_admin() )
@@ -16,13 +16,13 @@ function custom_theme_options() {
   /**
    * Get a copy of the saved settings array. 
    */
-  $saved_settings = get_option( powen_settings_id(), array() );
+  $powen_saved_settings = get_option( powen_settings_id(), array() );
   
   /**
    * Custom settings array that will eventually be 
    * passes to the OptionTree Settings API Class.
    */
-  $custom_settings = array( 
+  $powen_custom_settings = array( 
     'contextual_help' => array( 
       'sidebar'       => ''
     ),
@@ -52,11 +52,11 @@ function custom_theme_options() {
   );
   
   /* allow settings to be filtered before saving */
-  $custom_settings = apply_filters( powen_settings_id() . '_args', $custom_settings );
+  $powen_custom_settings = apply_filters( powen_settings_id() . '_args', $powen_custom_settings );
   
   /* settings are not the same update the DB */
-  if ( $saved_settings !== $custom_settings ) {
-    update_option( powen_settings_id(), $custom_settings ); 
+  if ( $powen_saved_settings !== $powen_custom_settings ) {
+    update_option( powen_settings_id(), $powen_custom_settings ); 
   }
   
   /* Lets OptionTree know the UI Builder is being overridden */
