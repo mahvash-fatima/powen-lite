@@ -43,65 +43,48 @@ $powen_default_slides =  array(
             )
          );
 
+$slides = get_theme_mod( 'powen_slides', $powen_default_slides );
 
-	$slides = powen_get_option( 'powen_slider_settings' , $powen_default_slides );
-
- ?>
-
-<?php if( powen_options('show-slider') || ! isset($powen_options['show-slider']) ){ ?>
+?>
 
 <div id="powen-main-slider" class="clear">
 	<section id="slider" class="flexslider">
 		<ul class='slides'>
-			<?php
-				if( ! empty($slides) ){
-					foreach ( $slides as $slide ) {
-
-						$slideLink		  = esc_url_raw($slide['link']);
-						$slideImage		  = esc_url_raw($slide['image']);
-						$slideTitle 	  = esc_attr(__($slide['title'], 'powen'));
-						$slideDescription = esc_attr(__($slide['description'], 'powen'));
-
-						echo "<li>";
-						echo "<a href='{$slideLink}'>";
-						echo 	"<img src='{$slideImage}' alt='image'>";
-						echo 	"<div class='powen-slider-content animated slideInUp'>";
-						echo 		"<h2>{$slideTitle}</h2>";
-						echo 		"<p>{$slideDescription}</p>";
-						echo 	"</div>";
-						echo 	"</a>";
-						echo "</li>";
-					}
-				}
-			?>
+		 
+		<?php if( is_array( $slides ) ) : foreach ( $slides as $slide ) : ?>
+			
+			<li>
+				<a href='<?php echo esc_url_raw( $slide['link'] ); ?>'>
+					<img src='<?php echo esc_url_raw( $slide['image'] ); ?>' alt='image'>
+					<div class='powen-slider-content animated slideInUp'>
+						<h2><?php echo sanitize_text_field(__( $slide['title'], 'powen') ); ?></h2>
+						<p><?php echo sanitize_text_field(__( $slide['description'], 'powen' ) ); ?></p>
+					</div>
+				</a>
+			</li>
+		
+		<?php endforeach; endif; ?>	
+		
 		</ul>
 	</section>
 
 	<section id="carousel" class="flexslider">
 		<ul class='slides'>
-			<?php
-				if( ! empty($slides) ){
-					foreach ( $slides as $slide ) {
 
-						$slideLink		  = esc_url_raw($slide['link']);
-						$slideImage		  = esc_url_raw($slide['image']);
-						$slideTitle 	  = esc_attr(__($slide['title'], 'powen'));
-						$slideDescription = esc_attr(__($slide['description'], 'powen'));
+			<?php if( is_array( $slides ) ) : foreach ( $slides as $slide ) : ?>
+		
+				<li>
+					<a href='<?php echo esc_url_raw( $slide['link'] ); ?>'>
+						<img src='<?php echo esc_url_raw( $slide['image'] ); ?>' alt='image'>
+						<div class='powen-slider-content animated slideInUp'>
+							<h2><?php echo sanitize_text_field(__( $slide['title'], 'powen' ) ); ?></h2>
+							<p><?php echo sanitize_text_field(__( $slide['description'], 'powen' ) ); ?></p>
+						</div>
+					</a>
+				</li>
 
-						echo "<li>";
-						echo "<a href='{$slideLink}'>";
-						echo 	"<img src='{$slideImage}' alt='image'>";
-						echo 	"<div class='powen-slider-content animated slideInUp'>";
-						echo 		"<h2>{$slideTitle}</h2>";
-						echo 		"<p>{$slideDescription}</p>";
-						echo 	"</div>";
-						echo 	"</a>";
-						echo "</li>";
-					}
-				}
-			?>
+			<?php endforeach; endif; ?>	
+		
 		</ul>
 	</section>
 </div>
-<?php } ?>
-

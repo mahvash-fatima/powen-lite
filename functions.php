@@ -22,17 +22,11 @@ if( ! defined( 'POWEN_IMAGES' )) define( 'POWEN_IMAGES'	, POWEN_URI .'/images/' 
           FILE INCLUDES
 ===============================*/
 
-require_once POWEN_ADMIN_DR . 'option-tree/ot-loader.php';
-require_once POWEN_ADMIN_DR . 'option-tree/includes/theme-options.php';
+/**
+ * Customizer
+ */
 require_once POWEN_ADMIN_DR . 'customizer/customizer.php';
 require_once POWEN_ADMIN_DR . 'customizer/customizer-front.php';
-
-/**
- * Required: set 'powen_theme_mode' filter to true.
- */
-add_filter( 'powen_theme_mode', '__return_true' );
-add_filter( 'powen_show_pages', '__return_false' );
-
 
 /**
  * Breadcrumb

@@ -9,20 +9,6 @@
           ACTIONS
 ===============================*/
 
-function powen_user_scripts(){ 
-
-  echo "<script>";
-  echo powen_options( 'opt-ace-editor-js' );
-  echo "</script>";
-
-  echo "<style>";
-  echo powen_options('opt-ace-editor-css');
-  echo "</style>";
-
-}
-
-add_action( 'wp_head', 'powen_user_scripts' );
-
 //Removing the post format meta box
 add_action('after_setup_theme', 'powen_remove_formats', 100);
 

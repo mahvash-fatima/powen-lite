@@ -23,10 +23,6 @@ LICENSE
 	Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
 	License - http://fontawesome.io/license ( Font: SIL OFL 1.1, CSS: MIT License )
 
--Option Tree
-	Option Tree by @valendesigns - https://github.com/valendesigns/option-tree - @option-tree
-	License - https://github.com/valendesigns/option-tree/blob/master/license.txt ( GPLv3 License )
-
 -Animate
 	Animate by @daneden - https://github.com/daneden/animate.css - @animate.css
 	License - http://opensource.org/licenses/MIT ( MIT License )

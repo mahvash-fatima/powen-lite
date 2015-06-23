@@ -24,17 +24,33 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="powen-wrapper clear">
-
-			<div id="top-most-container" class="top-container">
+			
+			<?php  
+			/*
+			 * Navigation
+			 */
+			?>
+			<nav id="top-most-container" class="top-container">
+				<!-- Top most menu -->
 				<?php get_template_part( 'template-parts/top-most' ); ?>
-				<?php powen_social_media_icons(); ?>
-				<?php get_search_form(); ?>
-			</div>
 
+				<!-- Social Media Icon -->
+				<?php powen_social_media_icons(); ?>
+
+				<!-- Search -->
+				<?php get_search_form(); ?>
+			</nav>
+			
+			<!-- Main menu -->
 			<nav id="main-nav">
 				<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'menu_class'=>'powen-wrapper', 'menu_id' => 'main_nav') ); ?>
 			</nav>
-
+			
+			<?php  
+			/*
+			 * Site branding
+			 */
+			?>
 			<div class="site-branding">
 				<?php if ( powen_mod( 'upload_logo' ) ) : ?>
 

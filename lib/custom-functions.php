@@ -38,5 +38,3 @@ function powen_options( $key1, $key2 = false ){
 	}
 
 }
-
-

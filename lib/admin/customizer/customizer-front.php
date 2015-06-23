@@ -164,8 +164,6 @@ class Powen_Customizer_Front extends Powen_Customizer
 
 		//color
 		$color_selectors = array (
-			'.powen-slider-content-icon-before',
-			'.powen-slider-content-icon-after',
 			'.continue-reading:after',
 			'.cat-links:before',
 			'.comments-link:before',
@@ -178,7 +176,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'input[type="url"]:focus',
 			'input[type="password"]:focus',
 			'input[type="search"]:focus',
-			'textarea:focus',
+			'textarea:focus'
 		);
 		//background
 		$background_color_selectors = array(
@@ -199,20 +197,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 		//border color
 		$border_color_selectors = array(
 			'a:hover, a:active',
-			'input[type="text"]',
-			'input[type="email"]',
-			'input[type="url"]',
-			'input[type="password"]',
-			'input[type="search"]',
-			'textarea',
-			'input[type="text"]:focus',
-			'input[type="email"]:focus',
-			'input[type="url"]:focus',
-			'input[type="password"]:focus',
-			'input[type="search"]:focus',
-			'.pagination .current',
-			'.pagination a:hover',
-			'.widget-area .tagcloud a:hover',
+			'.search-form .search-field'
 		);
 
 		self::generate_css( $color_selectors, 'color', 'theme_color', false, false, '#6897bb' );
@@ -235,15 +220,13 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'button:hover',
 			'input[type="button"]:hover',
 			'input[type="reset"]:hover',
-			'input[type="submit"]:hover',
-			'.pagination a:hover',
-			'.widget-area .tagcloud a:hover'
+			'input[type="submit"]:hover'
 		);
 
 		// border color (on hover)
 		$border_color_hover_selectors = array(
 			'pagination a:hover',
-			'.widget-area .tagcloud a:hover',
+			'.widget-area .tagcloud a:hover'
 		);
 
 		self::generate_css( $color_hover_selectors, 'color', 'hover_link_color', false, false, '#fa8072' );
