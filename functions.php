@@ -34,11 +34,6 @@ require_once POWEN_ADMIN_DR . 'customizer/customizer-front.php';
 require_once POWEN_DR . '/lib/breadcrumb.php';
 
 /**
- * Pagination
- */
-require_once POWEN_DR . '/lib/pagination.php';
-
-/**
  * Contains Custom functions used througout the theme
  */
 

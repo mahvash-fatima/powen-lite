@@ -890,7 +890,7 @@ input[type="submit"] {
 }
 
 /* line 94, sass/site/primary/_posts-and-pages.scss */
-.pagination .page-previous, .pagination .page-next, .pagination .page-last {
+.pagination .prev, .pagination .next, .pagination .last {
   padding: 10px;
   width: 75px;
   height: 47px;
@@ -2308,7 +2308,7 @@ Write your code here
 }
 
 /* line 94, sass/site/primary/_posts-and-pages.scss */
-.pagination .page-previous, .pagination .page-next, .pagination .page-last {
+.pagination .prev, .pagination .next, .pagination .last {
   padding: 10px;
   width: 75px;
   height: 47px;

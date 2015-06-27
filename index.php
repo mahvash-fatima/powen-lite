@@ -41,15 +41,10 @@ get_header(); ?>
 					?>
 
 				<?php endwhile; ?>
-				
-				<?php 
-				/*
-				 * Pagination
-				 */
-					if ( function_exists( "powen_pagination" ) ) {
-				    	powen_pagination();
-					} 
-				?>
+			
+			<div class="pagination">
+				<?php echo paginate_links(); ?>
+			</div>
 
 			<!-- To reset custom loop -->
 			<?php wp_reset_postdata(); ?>
