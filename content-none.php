@@ -9,9 +9,9 @@
 ?>
 <div class="article-hentry">
 <section class="no-results not-found">
-	
+
 		<header class="page-header">
-			<h1 class="page-title"><?php _e( 'Nothing Found', 'powen' ); ?></h1>
+			<h2 class="page-title"><?php _e( 'Nothing Found', 'powen' ); ?></h2>
 		</header><!-- .page-header -->
 
 		<div class="page-content">

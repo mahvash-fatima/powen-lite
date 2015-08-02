@@ -27,6 +27,7 @@ if( ! defined( 'POWEN_IMAGES' )) define( 'POWEN_IMAGES'	, POWEN_URI .'/images/' 
  */
 require_once POWEN_ADMIN_DR . 'customizer/customizer.php';
 require_once POWEN_ADMIN_DR . 'customizer/customizer-front.php';
+require_once POWEN_DR . '/lib/social-widget.php';
 
 /**
  * Breadcrumb

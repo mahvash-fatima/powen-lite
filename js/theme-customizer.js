@@ -26,7 +26,7 @@
 	            case 'open-sans':
 	                sFont = 'Open Sans';
 	                break;
-	                
+
 	            default:
 	                sFont = 'Open Sans';
 	                break;

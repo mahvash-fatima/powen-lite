@@ -13,11 +13,12 @@
 
 get_header(); ?>
 
-<?php 
+<?php
 /*
  *Slider
  */
 	get_template_part( 'template-parts/banner' );
+	get_template_part( 'template-parts/recent-post' );
 ?>
 
 <div id="content" class="site-content clear">
@@ -41,10 +42,15 @@ get_header(); ?>
 					?>
 
 				<?php endwhile; ?>
-			
-			<div class="pagination">
-				<?php echo paginate_links(); ?>
-			</div>
+
+				<?php
+				/*
+				 * Pagination
+				 */
+
+				    powen_pagination();
+
+				?>
 
 			<!-- To reset custom loop -->
 			<?php wp_reset_postdata(); ?>

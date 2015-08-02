@@ -18,7 +18,7 @@ blockquote {
 // Overridden from lists.scss
 ul, ol {
 	padding: 0;
-	margin: 0 0 $phi*1em $phi*1em;
+	margin: rem-calc(0 0 10 10);
 }
 
 .sticky {
@@ -36,7 +36,7 @@ ul, ol {
 }
 
 .pagination {
-	padding: $phi * 1em;
+	padding: rem-calc(10);
 }
 
 .site-main {
@@ -50,15 +50,15 @@ ul, ol {
 }
 
 .powen-wrapper {
-	padding-top: $phi * 1em;
-	padding-bottom: $phi * 1em;
+	padding-top: rem-calc(10);
+	padding-bottom: rem-calc(10);
 	max-width: total_site_width();
 	margin: 0 auto;
 	overflow: hidden;
 }
 
 .widget-container {
-	padding: $phi * 1em;
+	padding: rem-calc(10);
 	ul {
 		margin: 0;
 		padding: 0;
@@ -76,10 +76,10 @@ ul, ol {
 }
 
 .site-branding {
-	padding-left: $phi * 1rem;
-	padding-right: $phi * 1rem;
-	padding-top: $phi * 3rem;
-	padding-bottom: $phi * 3rem;
+	padding-left: rem-calc(10);
+	padding-right: rem-calc(10);
+	padding-top: rem-calc(30);
+	padding-bottom: rem-calc(30);
 	text-align: center;
 }
 
@@ -89,7 +89,7 @@ h1.site-title {
 
 .site-title, .site-description {
 	margin: 0;
-	line-height: 4rem;
+	line-height: rem-calc(4);
 	vertical-align: bottom;
 }
 
@@ -105,10 +105,10 @@ h1.site-title {
 // Content
 .site-content {
 	max-width: total_site_width();
-	margin: 42px auto;
+	margin: $phi * 1rem auto;
 }
 
-//**** Posts & pages 
+//**** Posts & pages
 
 // (hentry class covers both) plus their internal elements
 .article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
@@ -171,7 +171,7 @@ h1.site-title {
 	display: inline-block;
 	font-weight: 300;
 	margin-bottom: $default_gutter;
-	font-size: 14px;
+	font-size: $phi * 1rem;
 	margin-bottom: $default_gutter;
 	@include entry_meta();
 }
@@ -185,9 +185,9 @@ h1.site-title {
 		font-size: 18*$px;
 		font-weight: 700;
 		display: inline-block;
-		padding: 1em $phi * 1em;
+		padding: 1em rem-calc(10);
 		margin: 2em 0 .5em 0;
-		
+
 		@include more_link();
 	}
 }
@@ -249,30 +249,26 @@ h1.site-title {
 }
 
 .top-container {
-	padding-bottom: $phi * 1em;
 	overflow: hidden;
+	padding: $phi * 0.5rem 0;
 	ul {
-		padding: 0;
 		margin: 0;
-		padding: 10px;
-		display: inline-block;
-		float: left;
-	    li {
-			display: inline-block;
-			padding: 0 5px;
-		a {
-			padding: 2px;
-		}
-		}
+		    li {
+				display: inline-block;
+				padding: 0 $phi * 0.1rem;
+				a {
+					padding: $phi * 0.5rem;
+				}
+			}
 	}
 
 	.search-form {
-		float: right;
-		display: inline-block;
-		padding: 10px;
+		text-align: right;
+		display: block;
+		padding: $phi * 0.5rem;
 		.search-field {
 			padding: 0;
-			text-indent: 10px;
+			text-indent: $phi * 0.5rem;
 			border: 1px solid;
 		}
 		.search-submit {
@@ -281,15 +277,22 @@ h1.site-title {
 	}
 }
 
-.top-most-nav, .main-navigation, .powen-nav {
-	display: inline-block;
-	float: left;
-}
 .powen-nav {
-	padding: 10px;
+	display: block;
+	text-align: left;
+	width: 100%;
+	padding: $phi * 0.5rem;
+}
+.social-media-icons {
+	width: 100%;
+	display: block;
+	text-align: right;
+	overflow: hidden;
+	padding: $phi * 0.5rem 0;
 }
 .top-most-nav, .main-navigation {
 	padding-right: 10px;
+	display: inline-block;
 }
 
 input.search-field {
@@ -385,7 +388,7 @@ input.search-field {
 		margin-left: 0;
 		margin-bottom: $default_gutter;
 	}
-	
+
 	.flexslider .powen-slider-content {
 		visibility: visible;
 		opacity: 1;
@@ -406,8 +409,8 @@ input.search-field {
 @media (max-width: 600*$px) {
 
 	@include htags(0.5);
-	
-	.top-container .social-media-icons {
+
+	.flexslider .flex-direction-nav .flex-next, .flexslider .flex-direction-nav .flex-prev {
 		display: none;
 	}
 
@@ -457,15 +460,12 @@ input.search-field {
 		padding-top: $widget_t_padding;
 		padding-bottom: $widget_b_padding;
 	}
-	
+
 	.flexslider {
 		@include htags(0.6);
 	}
 
 	button, input[type="button"], input[type="reset"], input[type="submit"] {
 		display: none;
-	}
-	.top-container .search-form input {
-		width: 80px;
 	}
 }

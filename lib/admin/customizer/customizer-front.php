@@ -17,7 +17,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 	  //Handle Favicon
 	  $favicon_url = powen_mod('theme_favicon');
 	  if($favicon_url){
-	    echo '<link rel="shortcut icon" type="image" href="'.esc_url($favicon_url).'">';
+	    echo '<link rel="shortcut icon" type="image" href="'.apply_filters('powen_theme_favicon_url', esc_url($favicon_url) ).'">';
 	  }
 	  ?>
 	  <!--Customizer CSS-->
@@ -163,7 +163,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 		//=====================
 
 		//color
-		$color_selectors = array (
+		$color_selectors = apply_filters('powen_create_color_scheme_array', array (
 			'.continue-reading:after',
 			'.cat-links:before',
 			'.comments-link:before',
@@ -177,13 +177,14 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'input[type="password"]:focus',
 			'input[type="search"]:focus',
 			'textarea:focus'
-		);
+		) );
 		//background
-		$background_color_selectors = array(
+		$background_color_selectors = apply_filters('powen_background_color_selectors_array', array(
 			'.widget_calendar caption',
 			'.current-date',
 			'.powen-border-line',
-			'.pagination .current',
+			'.powen-pagination .current',
+			'.powen-latest-post-tag',
 			'button',
 			'input[type="button"]',
 			'input[type="reset"]',
@@ -192,13 +193,12 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'input[type="button"]:hover',
 			'input[type="reset"]:hover',
 			'input[type="submit"]:hover',
-		);
+		) );
 
 		//border color
-		$border_color_selectors = array(
+		$border_color_selectors = apply_filters('powen_border_color_selectors_array', array(
 			'a:hover, a:active',
-			'.search-form .search-field'
-		);
+		) );
 
 		self::generate_css( $color_selectors, 'color', 'theme_color', false, false, '#6897bb' );
 		self::generate_css( $background_color_selectors, 'background', 'theme_color', false, false, '#6897bb' );
@@ -209,10 +209,10 @@ class Powen_Customizer_Front extends Powen_Customizer
 		//=====================
 
 		//color (on hover)
-		$color_hover_selectors = array( 'a:hover', 'a:active' );
+		$color_hover_selectors = apply_filters('powen_color_hover_selectors_array', array( 'a:hover', 'a:active' ) );
 
 		//background should change on hover.
-		$background_color_hover_selectors = array(
+		$background_color_hover_selectors = apply_filters('powen_background_color_hover_selectors_array', array(
 			'button:hover',
 			'input[type="button"]:hover',
 			'input[type="reset"]:hover',
@@ -221,13 +221,13 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'input[type="button"]:hover',
 			'input[type="reset"]:hover',
 			'input[type="submit"]:hover'
-		);
+		) );
 
 		// border color (on hover)
-		$border_color_hover_selectors = array(
-			'pagination a:hover',
+		$border_color_hover_selectors = apply_filters('powen_border_color_hover_selectors_array', array(
+			'powen-pagination a:hover',
 			'.widget-area .tagcloud a:hover'
-		);
+		) );
 
 		self::generate_css( $color_hover_selectors, 'color', 'hover_link_color', false, false, '#fa8072' );
 		self::generate_css( $background_color_hover_selectors, 'background', 'hover_link_color', false, false, '#fa8072' );

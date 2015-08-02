@@ -24,48 +24,54 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="powen-wrapper clear">
-			
-			<?php  
+
+			<?php
 			/*
 			 * Navigation
 			 */
 			?>
+
 			<nav id="top-most-container" class="top-container">
+
 				<!-- Top most menu -->
 				<?php get_template_part( 'template-parts/top-most' ); ?>
+
+				<!-- Search -->
+				<?php get_search_form(); ?>
 
 				<!-- Social Media Icon -->
 				<?php powen_social_media_icons(); ?>
 
-				<!-- Search -->
-				<?php get_search_form(); ?>
 			</nav>
-			
+
+
 			<!-- Main menu -->
 			<nav id="main-nav">
 				<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'menu_class'=>'powen-wrapper', 'menu_id' => 'main_nav') ); ?>
 			</nav>
-			
-			<?php  
+
+			<?php
 			/*
 			 * Site branding
 			 */
 			?>
 			<div class="site-branding">
+
 				<?php if ( powen_mod( 'upload_logo' ) ) : ?>
 
 				    <div id="logo" class='site-logo'>
-				        <a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( powen_mod( 'upload_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
+				        <a href='<?php echo apply_filter('powen_site_logo_url', esc_url( home_url( '/' ) ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( powen_mod( 'upload_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
 				    </div>
 
 				<?php else : ?>
 
 			    	<div id="title-tagline" class="title-description">
-			        	<h1 class='site-title'><a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a></h1>
+			        	<h1 class='site-title'><a href='<?php echo apply_filters('powen_site_tiltle_url', esc_url( home_url( '/' ) ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a></h1>
 			        	<h2 class='site-description'><?php bloginfo( 'description' ); ?></h2>
 			    	</div>
 
 				<?php endif; ?>
+
 			</div>
 
 		</div>

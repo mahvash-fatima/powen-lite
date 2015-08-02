@@ -10,17 +10,17 @@
 	<div class="featured-img">
 		<a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark" >
 		<!-- Featured Images -->
-		<?php if ( has_post_thumbnail() ) 
+		<?php if ( has_post_thumbnail() )
 		{
 			the_post_thumbnail();
-		} 
+		}
 		?>
 		</a>
 	</div>
-	
+
 	<div class="article-hentry">
 	<header class="entry-header">
-		<?php esc_attr( the_title( '<h1 class="entry-title">', '</h1>' ) ); ?>
+		<?php esc_attr( the_title( '<h2 class="entry-title">', '</h2>' ) ); ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

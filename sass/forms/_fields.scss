@@ -34,13 +34,13 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-	padding: 8px 20px;
+	padding: rem-calc(10 20);
 	border: 2px solid;
 }
 
 textarea {
 	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
-	padding-left: 3px;
+	padding-left: rem-calc(3);
 	vertical-align: top; /* Improves readability and alignment in all browsers */
 	width: 100%;
 }

@@ -7,7 +7,7 @@
 function powen_customizer_social_media_array()
 {
     // store social site names in array
-    return array('twitter', 'facebook', 'google-plus', 'flickr', 'pinterest', 'youtube', 'vimeo', 'tumblr', 'dribbble', 'rss', 'linkedin', 'instagram');
+    return apply_filters( 'powen_customizer_social_media_icons_array', array('phone', 'twitter', 'facebook', 'google-plus', 'flickr', 'pinterest', 'youtube', 'vimeo', 'tumblr', 'dribbble', 'rss', 'linkedin', 'instagram', 'stumbleupon', 'skype', 'vine', 'yahoo', 'digg', 'drupal', 'soundcloud', 'flickr', 'delicious', 'instagram', 'whatsapp') );
 }
 
 /**
@@ -22,7 +22,7 @@ function powen_social_media_icons()
      * Hold an array of all active social urls entered by the user.
      * @var array
      */
-    $active_sites = array();
+    $active_sites = apply_filters('powen_active_sites_array', array() );
 
     // any inputs that aren't empty are stored in $active_sites array
     foreach( $powen_social_sites as $powen_social_site) {
