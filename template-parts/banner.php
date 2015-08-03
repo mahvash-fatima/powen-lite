@@ -43,7 +43,7 @@ $powen_default_slides =  apply_filters('powen_default_slides_array', array(
             )
          ) );
 
-$slides = apply_filters('powen_theme_mod_slides', get_theme_mod( 'powen_slides', $powen_default_slides ) );
+$slides = get_theme_mod( 'powen_slides', $powen_default_slides );
 
 ?>
 
@@ -54,11 +54,11 @@ $slides = apply_filters('powen_theme_mod_slides', get_theme_mod( 'powen_slides',
 		<?php if( is_array( $slides ) ) : foreach ( $slides as $slide ) : ?>
 
 			<li>
-				<a href='<?php echo apply_filters('powen_slide_url', esc_url( $slide['link'] ) ); ?>'>
-					<img src='<?php echo apply_filters('powen_slide_image', esc_url( $slide['image'] ) ); ?>' alt='image'>
+				<a href='<?php echo esc_url( $slide['link'] ); ?>'>
+					<img src='<?php echo esc_url( $slide['image'] ); ?>' alt='image'>
 					<div class='powen-slider-content animated slideInUp'>
-						<h3><?php echo apply_filters('powen_slide_title', esc_attr( $slide['title'] ) ); ?></h3>
-						<p><?php echo apply_filters('powen_slide_description', esc_attr( $slide['description'] ) ); ?></p>
+						<h3><?php echo esc_attr( $slide['title'] ); ?></h3>
+						<p><?php echo esc_attr( $slide['description'] ); ?></p>
 					</div>
 				</a>
 			</li>
@@ -77,8 +77,8 @@ $slides = apply_filters('powen_theme_mod_slides', get_theme_mod( 'powen_slides',
 					<a href='<?php echo esc_url( $slide['link'] ); ?>'>
 						<img src='<?php echo esc_url( $slide['image'] ); ?>' alt='image'>
 						<div class='powen-slider-content animated slideInUp'>
-							<h3><?php echo apply_filters('powen_slide_title', esc_attr( $slide['title'] ) ); ?></h3>
-							<p><?php echo apply_filters('powen_slide_description', esc_attr( $slide['description'] ) ); ?></p>
+							<h3><?php echo esc_attr( $slide['title'] ); ?></h3>
+							<p><?php echo esc_attr( $slide['description'] ); ?></p>
 						</div>
 					</a>
 				</li>

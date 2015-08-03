@@ -159,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  margin-bottom: 1.5em;
+  margin-bottom: 0.875rem;
 }
 
 b, strong {
@@ -171,18 +171,18 @@ dfn, cite, em, i {
 }
 
 blockquote {
-  margin: 0 1.5em;
+  margin: 0 0.875rem;
 }
 
 address {
-  margin: 0 0 1.5em;
+  margin: 0 0 0.875rem;
 }
 
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 15px;
-  font-size: 1.5rem;
+  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 1.618rem;
   margin-bottom: 1.6em;
   max-width: 100%;
@@ -191,8 +191,8 @@ pre {
 }
 
 code, kbd, tt, var {
-  font-size: 15px;
-  font-size: 1.5rem;
+  font-size: 12px;
+  font-size: 1.2rem;
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
@@ -358,8 +358,9 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-  padding: 0.625rem 1.25rem;
-  border: 2px solid;
+  border: 1px solid #cccccc;
+  text-indent: 0.3125rem;
+  height: 2.5rem;
 }
 
 textarea {
@@ -503,11 +504,10 @@ input[type="submit"] {
 }
 
 .widget_tag_cloud a {
-  font-size: 0.625rem;
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
-  padding: 0.1875rem;
-  margin: 0.625rem 0.3125rem;
+  padding: 0.3125rem 0.625rem;
+  margin: 0.1875rem 0.0625rem;
   display: inline-block;
   border: 1px dotted;
 }
@@ -521,10 +521,6 @@ input[type="submit"] {
 
 .widget_search, .widget_calendar, .widget_tag_cloud {
   padding: 0 0.625rem;
-}
-
-.search-form .search-field {
-  border: 1px solid #ccc;
 }
 
 .widget_text {
@@ -558,10 +554,6 @@ input[type="submit"] {
 
 .widget_calendar caption, .widget_calendar .current-date, .powen-pagination .current {
   color: #ffffff;
-}
-
-.footer_widgets .widget_powen_social_widget li {
-  border: 1px dotted;
 }
 
 /* floats */
@@ -643,18 +635,22 @@ input[type="submit"] {
 }
 .widget_powen_social_widget ul li {
   float: left;
-  border: 1px dotted;
-  height: 3.75rem;
-  width: 3.125rem;
-  padding: 0.75rem;
-  border-radius: 2px;
-  margin: 0.125rem;
+  border-bottom: none;
+  padding: 0;
+  margin: 0.0625rem;
 }
-.widget_powen_social_widget ul li:last-child {
-  border-bottom: 1px dotted;
+.widget_powen_social_widget ul li a {
+  padding: 0.625rem 1.25rem;
+  text-align: center;
+  display: inline-block;
+  width: 3.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.1875rem;
 }
-.widget_powen_social_widget ul a {
-  padding: 0.0625rem;
+
+#monster-widget-placeholder-8 {
+  width: 100%;
+  padding: 1.618rem;
 }
 
 /* media queries for larger screens such as small tablets in landscape or large tablets in portrait */
@@ -701,14 +697,11 @@ input[type="submit"] {
 10.1 Posts and pages
 --------------------------------------------------------------*/
 .powen-most-recent-post {
-  background: #ffffff;
-  padding: 1.25rem;
   position: relative;
-  padding-top: 3.125rem;
 }
-.powen-most-recent-post img {
-  margin: 0 auto;
-  overflow: hidden;
+
+.powen-recent-article {
+  padding-top: 2.61792rem;
 }
 
 .powen-latest-post-tag {
@@ -716,7 +709,7 @@ input[type="submit"] {
   top: 0;
   right: 0;
   color: #fff;
-  padding: 0.625rem 1.875rem;
+  padding: 0.5rem 2.5rem;
 }
 
 .entry-footer {
@@ -726,12 +719,7 @@ input[type="submit"] {
   font-size: 0.875rem;
 }
 
-.featured-img img {
-  display: block;
-  overflow: hidden;
-}
-
-.site-main .entry-date {
+.entry-date {
   padding-right: 0.3125rem;
 }
 
@@ -770,65 +758,31 @@ input[type="submit"] {
   font-weight: bold;
 }
 
-.powen-pagination {
-  overflow: hidden;
-  clear: both;
-  position: relative;
-  font-size: 0.6875rem;
-}
-
-.powen-pagination span {
-  display: block;
-  float: left;
-  margin: 0.3125rem 0.3125rem 0.3125rem 0;
-  text-decoration: none;
-  padding: 0.3125rem;
-  border-radius: 0.1875rem;
-  background: #ffffff;
-}
-
 .powen-pagination .current {
-  width: 3.125rem;
-  height: 3.125rem;
-  border-radius: 0.1875rem;
-  text-align: center;
+  padding: 0.9375rem 1.5625rem;
+  display: inline-block;
 }
-
 .powen-pagination a {
-  display: block;
-  float: left;
-  margin: 0.3125rem 0.3125rem 0.3125rem 0;
-  text-decoration: none;
-  padding: 0.3125rem;
-  width: 3.125rem;
-  height: 3.125rem;
-  border-radius: 0.1875rem;
-  text-align: center;
+  padding: 0.9375rem 1.5625rem;
   background: #ffffff;
+  display: inline-block;
 }
-.powen-pagination a:hover {
-  border: 0.0625rem solid;
-}
-
-.powen-pagination a, .powen-pagination span {
-  color: #999999;
-  border: 0.0625rem solid #999999;
-}
-
-.powen-pagination .page-previous, .powen-pagination .page-next, .powen-pagination .page-last {
-  padding: 0.3125rem;
-  width: 4.375rem;
-  height: 3.125rem;
-}
-
-.powen-pagination .next, .powen-pagination .prev {
-  width: 4.375rem;
-  height: 3.125rem;
-}
-
 .powen-pagination .dots {
-  background: none;
-  border: none;
+  padding: 0.9375rem 1.5625rem;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.powen-pagination .current, .powen-pagination a {
+  border: 0.0625rem solid #cccccc;
+  border-radius: 3px;
+}
+
+.powen-pagination .next, .powen-pagination .prev, .powen-pagination .last {
+  padding: 0.9375rem 1.875rem;
+  background: #ffffff;
+  border-radius: 0.1875rem;
+  border: 0.0625rem solid #cccccc;
 }
 
 .breadcrumbs {
@@ -1092,27 +1046,27 @@ h2 {
 }
 
 h3 {
-  font-size: 2.25rem;
-  margin-bottom: 1.313rem;
-}
-
-h4 {
   font-size: 1.5rem;
   margin-bottom: 1.313rem;
 }
 
-h5 {
+h4 {
   font-size: 1.313rem;
   margin-bottom: 1.313rem;
 }
 
-h6 {
+h5 {
   font-size: 1.125rem;
+  margin-bottom: 1.313rem;
+}
+
+h6 {
+  font-size: 1rem;
   margin-bottom: 0.75rem;
 }
 
 .widget-title {
-  font-size: 2.25rem;
+  font-size: 1.9695rem;
   text-align: center;
 }
 
@@ -1145,15 +1099,16 @@ h6 {
 }
 
 .powen-wrapper {
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-  max-width: 115.29104rem;
+  max-width: 70.3125rem;
   margin: 0 auto;
+}
+
+.footer_widgets {
   overflow: hidden;
 }
 
 .widget-container {
-  padding: 0.625rem;
+  padding: 1.618rem;
 }
 .widget-container ul {
   margin: 0;
@@ -1179,7 +1134,7 @@ h1.site-title {
 
 .site-title, .site-description {
   margin: 0;
-  line-height: 0.25rem;
+  line-height: 3.125rem;
   vertical-align: bottom;
 }
 
@@ -1192,19 +1147,33 @@ h1.site-title {
 }
 
 .site-content {
-  max-width: 115.29104rem;
+  max-width: 70.3125rem;
   margin: 1.618rem auto;
 }
 
-.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
+.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation, .powen-most-recent-post {
   padding-left: 4.2358rem;
   padding-right: 4.2358rem;
-  margin: 0 0 0 0;
+  padding-bottom: 2.61792rem;
+  padding-top: 2.61792rem;
+  margin: 0;
   background-color: #ffffff;
 }
 
-.article-hentry {
+.article-hentry, .powen-most-recent-post {
   margin: 0 0 1.618rem 0;
+}
+
+.site-info, .footer_widgets {
+  padding: 1.618rem 0;
+}
+
+.powen-recent-post {
+  margin-top: 1.618rem;
+}
+
+.powen-pagination {
+  margin-bottom: 1.618rem;
 }
 
 .featured-img {
@@ -1212,6 +1181,7 @@ h1.site-title {
 }
 .featured-img img {
   margin: 0 auto;
+  display: block;
 }
 
 .post-thumbnail {
@@ -1240,17 +1210,10 @@ h1.site-title {
   overflow: hidden;
 }
 
-.entry-title {
-  margin-top: 0;
-  margin-bottom: 2.61792rem;
-}
-
 .entry-meta {
   display: inline-block;
   font-weight: 300;
-  margin-bottom: 1.618rem;
-  font-size: 1.618rem;
-  margin-bottom: 1.618rem;
+  font-size: 0.875rem;
 }
 .entry-meta a, .entry-meta a:visited, .entry-meta a:active {
   color: inherit;
@@ -1319,42 +1282,50 @@ h1.site-title {
   padding-left: 0;
 }
 .widget ul .children li:first-of-type, .widget ul .sub-menu li:first-of-type {
-  margin-top: 1em;
+  margin-top: 0.0625rem;
 }
 
 .top-container {
   overflow: hidden;
-  padding: 0.809rem 0;
+  padding: 0.3125rem 0;
 }
-.top-container ul {
+.top-container .social-media-icons {
   margin: 0;
 }
-.top-container ul li {
+.top-container .social-media-icons li {
+  margin: 0.0625rem;
   display: inline-block;
-  padding: 0 0.1618rem;
 }
-.top-container ul li a {
-  padding: 0.809rem;
+.top-container .social-media-icons li a {
+  padding: 0.3125rem 0.625rem;
+  width: 2.0625rem;
+  display: block;
+  text-align: center;
 }
 .top-container .search-form {
   text-align: right;
   display: block;
-  padding: 0.809rem;
-}
-.top-container .search-form .search-field {
-  padding: 0;
-  text-indent: 0.809rem;
-  border: 1px solid;
 }
 .top-container .search-form .search-submit {
   display: none;
+}
+.top-container .search-form input[type="text"],
+.top-container .search-form input[type="email"],
+.top-container .search-form input[type="url"],
+.top-container .search-form input[type="password"],
+.top-container .search-form input[type="search"] {
+  height: auto;
+}
+
+.widget_search input {
+  width: 100%;
 }
 
 .powen-nav {
   display: block;
   text-align: left;
   width: 100%;
-  padding: 0.809rem;
+  padding: 0.3125rem 0;
 }
 
 .social-media-icons {
@@ -1362,17 +1333,12 @@ h1.site-title {
   display: block;
   text-align: right;
   overflow: hidden;
-  padding: 0.809rem 0;
+  padding: 0.3125rem 0;
 }
 
 .top-most-nav, .main-navigation {
   padding-right: 10px;
   display: inline-block;
-}
-
-input.search-field {
-  box-sizing: border-box;
-  width: auto;
 }
 
 .site-footer {
@@ -1405,7 +1371,7 @@ input.search-field {
   color: #666666;
 }
 
-@media (max-width: 115.29104rem) {
+@media (max-width: 70.3125rem) {
   h1, h2, h3, h4, h5, h6 {
     line-height: 3.125rem;
     font-weight: 400;
@@ -1422,12 +1388,12 @@ input.search-field {
   }
 
   h3 {
-    font-size: 1.575rem;
+    font-size: 1.05rem;
     margin-bottom: 1.313rem;
   }
 
   h4 {
-    font-size: 1.05rem;
+    font-size: 1rem;
     margin-bottom: 1.313rem;
   }
 
@@ -1442,16 +1408,16 @@ input.search-field {
   }
 
   .widget-title {
-    font-size: 1.575rem;
+    font-size: 1.5rem;
     text-align: center;
   }
 
   .site-branding .site-title {
-    font-size: 3rem;
+    font-size: 2.7573rem;
   }
 
   .site-branding .site-description {
-    font-size: 1.5rem;
+    font-size: 1.37865rem;
   }
 
   .article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
@@ -1466,10 +1432,6 @@ input.search-field {
     margin-right: -2.61792rem;
     margin-bottom: 1.618rem;
     margin-left: -2.61792rem;
-  }
-
-  .entry-title {
-    margin-bottom: 0;
   }
 }
 @media (max-width: 56.25rem) {
@@ -1487,6 +1449,11 @@ input.search-field {
   .widget {
     margin-left: 0;
     margin-bottom: 1.618rem;
+    margin-top: 1.618rem;
+  }
+
+  .widget-area .widget {
+    margin-right: 0;
   }
 
   .flexslider .powen-slider-content {
@@ -1524,7 +1491,7 @@ input.search-field {
   }
 
   h3 {
-    font-size: 1.125rem;
+    font-size: 1rem;
     margin-bottom: 1.313rem;
   }
 
@@ -1549,11 +1516,11 @@ input.search-field {
   }
 
   .site-branding .site-title {
-    font-size: 2.25rem;
+    font-size: 1.9695rem;
   }
 
   .site-branding .site-description {
-    font-size: 1.125rem;
+    font-size: 0.98475rem;
   }
 
   .flexslider .flex-direction-nav .flex-next, .flexslider .flex-direction-nav .flex-prev {
@@ -1602,36 +1569,29 @@ input.search-field {
   }
 
   .site-branding .site-title {
-    font-size: 1.8rem;
+    font-size: 1.5756rem;
   }
 
   .site-branding .site-description {
-    font-size: 0.9rem;
+    font-size: 0.7878rem;
   }
 
   .hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
-    padding-left: 1.618rem;
-    padding-right: 1.618rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-left: 0.0625rem;
+    padding-right: 0.0625rem;
+    padding-top: 0.03863rem;
+    padding-bottom: 0.03863rem;
   }
 
   .post-thumbnail {
     margin-top: 1.618rem;
-    margin-right: -1.618rem;
+    margin-right: -0.0625rem;
     margin-bottom: 1.618rem;
-    margin-left: -1.618rem;
+    margin-left: -0.0625rem;
   }
 
   .entry-title {
-    margin-bottom: 1rem;
-  }
-
-  .widget {
-    padding-left: 1.618rem;
-    padding-right: 1.618rem;
-    padding-top: 1.618rem;
-    padding-bottom: 1.618rem;
+    margin-bottom: 0.03863rem;
   }
 
   .flexslider h1, .flexslider h2, .flexslider h3, .flexslider h4, .flexslider h5, .flexslider h6 {
@@ -1647,7 +1607,7 @@ input.search-field {
     margin-bottom: 0.625rem;
   }
   .flexslider h3 {
-    font-size: 1.35rem;
+    font-size: 1rem;
     margin-bottom: 1.313rem;
   }
   .flexslider h4 {
@@ -1667,10 +1627,10 @@ input.search-field {
     text-align: center;
   }
   .flexslider .site-branding .site-title {
-    font-size: 2.7rem;
+    font-size: 2.3634rem;
   }
   .flexslider .site-branding .site-description {
-    font-size: 1.35rem;
+    font-size: 1.1817rem;
   }
 
   button, input[type="button"], input[type="reset"], input[type="submit"] {
@@ -1728,7 +1688,6 @@ Write your code here
 .posted-on:before {
   content: "\f017";
   padding: 0.3125rem;
-  font-size: 1.25rem;
 }
 
 .comments-link:before {
@@ -1748,13 +1707,11 @@ Write your code here
 
 .flex-direction-nav li .flex-prev:before {
   content: "\f100";
-  font-size: 0.9375rem;
   color: #ffffff;
 }
 
 .flex-direction-nav li .flex-next:before {
   content: "\f101";
-  font-size: 0.9375rem;
   color: #ffffff;
 }
 
@@ -1765,7 +1722,6 @@ Write your code here
 
 .author:before {
   content: "\f007";
-  font-size: 1.25rem;
   padding: 0.3125rem;
 }
 
@@ -1798,41 +1754,35 @@ Write your code here
 .widget_archive li:before {
   content: "\f105";
   color: #cccccc;
-  font-size: 1.25rem;
-  margin-right: 1.25rem;
+  margin-right: 0.3125rem;
 }
 
 .widget_recent_entries li:before {
   content: "\f105";
   color: #cccccc;
-  font-size: 1.25rem;
-  margin-right: 1.25rem;
+  margin-right: 0.3125rem;
 }
 
 .widget_categories li:before {
   content: "\f105";
   color: #cccccc;
-  font-size: 1.25rem;
-  margin-right: 1.25rem;
+  margin-right: 0.3125rem;
 }
 
 .widget_meta li:before {
   content: "\f105";
   color: #cccccc;
-  font-size: 1.25rem;
-  margin-right: 1.25rem;
+  margin-right: 0.3125rem;
 }
 
 .widget_pages li:before {
   content: "\f105";
   color: #cccccc;
-  font-size: 1.25rem;
-  margin-right: 1.25rem;
+  margin-right: 0.3125rem;
 }
 
 .powen-wrapper .recent-comment-people:before {
   content: "\f007";
-  font-size: 1.5625rem;
   color: #454545;
   background: #2F2F2F;
   padding-right: 0.625rem;
@@ -1844,14 +1794,12 @@ Write your code here
 .menu-long-menu-container li:before {
   content: "\f105";
   color: #cccccc;
-  font-size: 1.25rem;
-  margin-right: 1.25rem;
+  margin-right: 0.3125rem;
 }
 
 .widget_recent_entries li:before {
   content: "\f105";
   color: #cccccc;
-  font-size: 1.25rem;
   margin-right: 0.625rem;
 }
 
@@ -1860,7 +1808,7 @@ Write your code here
   display: block;
   width: 3.75rem;
   height: 0.0625rem;
-  margin: 15px auto 25px;
+  margin: 1.5625rem auto 1.5625rem;
 }
 
 .footer-scroll:before {

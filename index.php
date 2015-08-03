@@ -19,6 +19,8 @@ get_header(); ?>
  */
 	get_template_part( 'template-parts/banner' );
 	get_template_part( 'template-parts/recent-post' );
+	do_action( 'powen_homepage_extras' );
+
 ?>
 
 <div id="content" class="site-content clear">

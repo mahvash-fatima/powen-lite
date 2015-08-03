@@ -34,8 +34,9 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-	padding: rem-calc(10 20);
-	border: 2px solid;
+	border: 1px solid $color_border;
+	text-indent: rem-calc(5);
+	height: rem-calc(40);
 }
 
 textarea {

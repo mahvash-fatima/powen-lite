@@ -1,4 +1,4 @@
-<?php
+		<?php
 
 class Powen_Customizer_Front extends Powen_Customizer
 {
@@ -17,7 +17,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 	  //Handle Favicon
 	  $favicon_url = powen_mod('theme_favicon');
 	  if($favicon_url){
-	    echo '<link rel="shortcut icon" type="image" href="'.apply_filters('powen_theme_favicon_url', esc_url($favicon_url) ).'">';
+	    echo '<link rel="shortcut icon" type="image" href="'.esc_url($favicon_url).'">';
 	  }
 	  ?>
 	  <!--Customizer CSS-->
@@ -137,8 +137,9 @@ class Powen_Customizer_Front extends Powen_Customizer
 
 		if($sidebar_position === 'left') {
 			echo ".site-content .widget-area {float: {$sidebar_position}; overflow: hidden;  width: 30%;}";
+			echo ".widget {margin-right: 2.61792rem; margin-left: 0;}";
 			echo ".content-area {float: right; margin: 0 0 0 -30%; width: 100%; }";
-			echo ".site-main {margin: 0 0 0 32%;}";
+			echo ".site-main {margin: 0 0 0 30%;}";
 		}
 
 		if($sidebar_position === 'right') {
@@ -154,7 +155,6 @@ class Powen_Customizer_Front extends Powen_Customizer
 		}
 
 	}
-
 
 	public static function create_color_scheme() {
 
@@ -198,6 +198,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 		//border color
 		$border_color_selectors = apply_filters('powen_border_color_selectors_array', array(
 			'a:hover, a:active',
+			'.powen-pagination .current',
 		) );
 
 		self::generate_css( $color_selectors, 'color', 'theme_color', false, false, '#6897bb' );
@@ -225,8 +226,12 @@ class Powen_Customizer_Front extends Powen_Customizer
 
 		// border color (on hover)
 		$border_color_hover_selectors = apply_filters('powen_border_color_hover_selectors_array', array(
-			'powen-pagination a:hover',
-			'.widget-area .tagcloud a:hover'
+			'.widget-area .tagcloud a:hover',
+			'.powen-pagination a:hover',
+			'.powen-pagination .next:hover',
+			'.powen-pagination .prev:hover',
+			'.powen-pagination .last:hover',
+			'.widget_powen_social_widget ul li a:hover'
 		) );
 
 		self::generate_css( $color_hover_selectors, 'color', 'hover_link_color', false, false, '#fa8072' );

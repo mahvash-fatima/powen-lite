@@ -1,12 +1,9 @@
 .powen-most-recent-post {
-	background: #ffffff;
-	padding: rem-calc(20);
 	position: relative;
-	padding-top: rem-calc(50);
-	img {
-		margin: 0 auto;
-		overflow: hidden;
-	}
+}
+
+.powen-recent-article {
+	padding-top: $post_t_padding;
 }
 
 .powen-latest-post-tag {
@@ -14,7 +11,7 @@
 	top: 0;
 	right: 0;
 	color: #fff;
-	padding: rem-calc(10 30);
+	padding: rem-calc(8 40);
 }
 
 .entry-footer {
@@ -24,16 +21,10 @@
 	}
 }
 
-.featured-img img {
-	display: block;
-	overflow: hidden;
+.entry-date {
+	padding-right: rem-calc(5);
 }
 
-.site-main {
-	.entry-date {
-		padding-right: rem-calc(5);
-	}
-}
 .content-area {
 	.post-comment {
 		background: red;
@@ -72,60 +63,33 @@
 
 //powen-pagination
 .powen-pagination {
-	overflow: hidden;
-	clear:both;
-	position:relative;
-	font-size: rem-calc(11);
-}
-.powen-pagination span {
-	display:block;
-	float:left;
-	margin: rem-calc(5 5 5 0);
-	text-decoration:none;
-	padding: rem-calc(5);
-	border-radius: rem-calc(3);
-	background: #ffffff;
-}
-.powen-pagination .current {
-	width: rem-calc(50);
-	height: rem-calc(50);
-	border-radius: rem-calc(3);
-	text-align: center;
-}
-.powen-pagination a {
-	display: block;
-	float: left;
-	margin: rem-calc(5 5 5 0);
-	text-decoration: none;
-	padding: rem-calc(5);
-	width: rem-calc(50);
-	height: rem-calc(50);
-	border-radius: rem-calc(3);
-	text-align: center;
-	background: #ffffff;
-	&:hover {
-		border: rem-calc(1) solid;
+	.current {
+		padding: rem-calc(15 25);
+		display: inline-block;
 	}
-}
-.powen-pagination a, .powen-pagination span {
-  color: #999999;
-  border: rem-calc(1) solid #999999;
+	a {
+		padding: rem-calc(15 25);
+		background: #ffffff;
+		display: inline-block;
+	}
+	.dots {
+		padding: rem-calc(15 25);
+		border-radius: 3px;
+		display: inline-block;
+	}
+
 }
 
-.powen-pagination .page-previous, .powen-pagination .page-next, .powen-pagination .page-last {
-	padding: rem-calc(5);
-	width: rem-calc(70);
-	height: rem-calc(50);
+.powen-pagination .current, .powen-pagination a {
+	border: rem-calc(1) solid $color_border;
+	border-radius: 3px;
 }
 
-.powen-pagination .next, .powen-pagination .prev {
-	width: rem-calc(70);
-	height: rem-calc(50);
-}
-
-.powen-pagination .dots {
-	background: none;
-	border: none;
+.powen-pagination .next, .powen-pagination .prev, .powen-pagination .last {
+	padding: rem-calc(15 30);
+	background: #ffffff;
+	border-radius: rem-calc(3);
+	border: rem-calc(1) solid $color_border;
 }
 
 //breadcrumbs

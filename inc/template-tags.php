@@ -20,15 +20,15 @@ function powen_posts_navigation() {
 	}
 	?>
 	<nav class="navigation posts-navigation" role="navigation">
-		<h2 class="screen-reader-text"><?php echo apply_filters('powen_posts_navigation_text', __( 'Posts navigation', 'powen' ) ); ?></h2>
+		<h2 class="screen-reader-text"><?php echo __( 'Posts navigation', 'powen' ); ?></h2>
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php apply_filters('powen_older_posts_nav_previous', next_posts_link( __( 'Older posts', 'powen' ) ) ); ?></div>
+			<div class="nav-previous"><?php next_posts_link( __( 'Older posts', 'powen' ) ); ?></div>
 			<?php endif; ?>
 
 			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php apply_filters('powen_newer_posts_nav_next', previous_posts_link( __( 'Newer posts', 'powen' ) ) ); ?></div>
+			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts', 'powen' ) ); ?></div>
 			<?php endif; ?>
 
 		</div><!-- .nav-links -->
@@ -53,7 +53,7 @@ function powen_the_post_navigation() {
 	}
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h2 class="screen-reader-text"><?php apply_filters('powen_screen_reader_text_post_nav', __( 'Post navigation', 'powen' ) ); ?></h2>
+		<h2 class="screen-reader-text"><?php __( 'Post navigation', 'powen' ); ?></h2>
 		<div class="nav-links">
 			<?php
 				previous_post_link( '<div class="nav-previous">%link</div>', '%title' );

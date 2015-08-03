@@ -67,7 +67,7 @@ $htag_lineheight: rem-calc(50);
 $htag_weight: 400;
 
 // H tag font sizes 1 through 6
-$htag_sizes: 4, 3, 2.25, 1.5, 1.313, 1.125;
+$htag_sizes: 4, 3, 1.5, 1.313, 1.125, 1;
 
 // H tag vertical margins 1 through 6
 $htag_vmargins: 0.563, 0.625, 1.313, 1.313, 1.313, 0.75;
@@ -110,8 +110,9 @@ $htag_vmargins: 0.563, 0.625, 1.313, 1.313, 1.313, 0.75;
 //---------------THEME COLORS-------------
 $color_link_date_default:						#aaaaaa;
 $color_text_on_dark_background_default:		    #ffffff;
-$color__powen-slider-content-background: 				rgba(0,0,0,0.3);
+$color__powen-slider-content-background: 		rgba(0,0,0,0.3);
 $color_border_default:    						#f2f2f2;
+$color_border:									#cccccc;
 $color_site_navigation_background:				#ffffff;
 
 $color_primary_background:				        #ffffff;
@@ -192,7 +193,7 @@ $color__border-abbr: 							#666;
 }
 
 @mixin sticky_post(){
-	margin: 0 0 $phi * 1rem 0;
+	margin: 0 0 $default_gutter 0;
 }
 
 @mixin site_footer(){

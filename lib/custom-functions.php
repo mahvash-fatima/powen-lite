@@ -8,7 +8,7 @@
 
 function powen_mod( $key , $default = false )
 {
-	$powen_mod = apply_filters('powen_theme_mod', get_theme_mod('powen_mod' ) );
+	$powen_mod = get_theme_mod('powen_mod' );
 	$saved_value = isset($powen_mod[$key]) && $powen_mod[$key] ? $powen_mod[$key] : $default;
 
 	$keys_to_be_escaped = apply_filters('powen_key_to_be_escaped_array', array(

@@ -18,11 +18,10 @@
 //widget_tag_cloud
 .widget_tag_cloud {
 	a {
-		font-size: rem-calc(10);
 		letter-spacing: rem-calc(1);
 		text-transform: uppercase;
-		padding: rem-calc(3);
-		margin: rem-calc(10 5);
+		padding: rem-calc(5 10);
+		margin: rem-calc(3 1);
 		display: inline-block;
 		border: 1px dotted;
         &:hover {
@@ -39,10 +38,6 @@
 //widget_search
 .widget_search, .widget_calendar, .widget_tag_cloud {
 	padding: rem-calc(0 10);
-}
-
-.search-form .search-field {
-    border: 1px solid #ccc;
 }
 
 //widget_text
@@ -81,9 +76,6 @@
 }
 
 // FOOTER STYLE
-.footer_widgets .widget_powen_social_widget li {
-    border: 1px dotted;
-}
 
 
 /* floats */
@@ -154,19 +146,24 @@
     padding: 0;
     li {
         float: left;
-        border: 1px dotted;
-        height: rem-calc(60);
-        width: rem-calc(50);
-        padding: rem-calc(12);
-        border-radius: 2px;
-        margin: rem-calc(2);
-        &:last-child {
-            border-bottom: 1px dotted;
+        border-bottom: none;
+        padding: 0;
+        margin: rem-calc(1);
+        a {
+            padding: rem-calc(10 20);
+            text-align: center;
+            display: inline-block;
+            width: rem-calc(56);
+            border: 1px solid #ccc;
+            border-radius: rem-calc(3);
         }
     }
-    a {
-        padding: rem-calc(1);
-    }
+
+}
+
+#monster-widget-placeholder-8 {
+    width: 100%;
+    padding: $default_gutter;
 }
 
 /* media queries for larger screens such as small tablets in landscape or large tablets in portrait */

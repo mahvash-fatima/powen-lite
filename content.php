@@ -29,7 +29,15 @@
 	<div class="entry-content">
 		<?php
 			/* translators: %s: Name of current post */
-			the_excerpt();
+			if(powen_mod('content_length') == 'excerpt') {
+				the_excerpt();
+			}
+			elseif(powen_mod('content_length') == 'full') {
+				the_content();
+			}
+			elseif (powen_mod('content_length') == '') {
+				the_excerpt();
+			}
 		?>
 
 		<?php
@@ -40,7 +48,7 @@
 		?>
 
 	<!-- Continue reading -->
-	<div class="continue-reading"><a href="<?php esc_url( the_permalink() ); ?>"><?php _e('Continue Reading', 'powen') ?></a></div>
+	<div class="continue-reading"><a href="<?php esc_url( the_permalink() ); ?>"><?php echo __(powen_mod( 'read_more_textbox', 'Continue Reading')); ?></a></div>
 
 	</div><!-- .entry-content -->
 

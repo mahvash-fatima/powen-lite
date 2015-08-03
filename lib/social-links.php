@@ -22,7 +22,7 @@ function powen_social_media_icons()
      * Hold an array of all active social urls entered by the user.
      * @var array
      */
-    $active_sites = apply_filters('powen_active_sites_array', array() );
+    $active_sites = array();
 
     // any inputs that aren't empty are stored in $active_sites array
     foreach( $powen_social_sites as $powen_social_site) {

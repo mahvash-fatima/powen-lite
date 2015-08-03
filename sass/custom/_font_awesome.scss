@@ -52,7 +52,6 @@ Write your code here
 .posted-on:before {
 	content: "\f017";
 	padding: rem-calc(5);
-	font-size: rem-calc(20);
 }
 //Comment
 .comments-link:before {
@@ -72,13 +71,11 @@ Write your code here
 //Previous
 .flex-direction-nav li .flex-prev:before {
 	content: "\f100";
-	font-size: rem-calc(15);
 	color: #ffffff;
 }
 //Next
 .flex-direction-nav li .flex-next:before {
 	content: "\f101";
-	font-size: rem-calc(15);
 	color: #ffffff;
 }
 //Newer posts
@@ -88,7 +85,6 @@ Write your code here
 }
 .author:before {
 	content: "\f007";
-	font-size: rem-calc(20);
 	padding: rem-calc(5);
 }
 .cat-links:before {
@@ -121,38 +117,32 @@ Write your code here
 .widget_archive li:before {
 	content: "\f105";
 	color: #cccccc;
-	font-size: rem-calc(20);
-	margin-right: rem-calc(20);
+	margin-right: rem-calc(5);
 }
 .widget_recent_entries li:before {
 	content: "\f105";
 	color: #cccccc;
-	font-size: rem-calc(20);
-	margin-right: rem-calc(20);
+	margin-right: rem-calc(5);
 }
 //Categories
 .widget_categories li:before {
 	content: "\f105";
 	color: #cccccc;
-	font-size: rem-calc(20);
-	margin-right: rem-calc(20);
+	margin-right: rem-calc(5);
 }
 //Meta
 .widget_meta li:before {
 	content: "\f105";
 	color: #cccccc;
-	font-size: rem-calc(20);
-	margin-right: rem-calc(20);
+	margin-right: rem-calc(5);
 }
 .widget_pages li:before {
 	content: "\f105";
 	color: #cccccc;
-	font-size: rem-calc(20);
-	margin-right: rem-calc(20);
+	margin-right: rem-calc(5);
 }
 .powen-wrapper .recent-comment-people:before {
 	content: "\f007";
-	font-size: rem-calc(25);
 	color: #454545;
 	background: #2F2F2F;
 	padding-right: rem-calc(10);
@@ -163,15 +153,13 @@ Write your code here
 .menu-long-menu-container li:before {
 	content: "\f105";
 	color: #cccccc;
-	font-size: rem-calc(20);
-	margin-right: rem-calc(20);
+	margin-right: rem-calc(5);
 }
 
 //RECENT WIDGETS
 .widget_recent_entries li:before {
 	content: "\f105";
 	color: #cccccc;
-	font-size: rem-calc(20);
 	margin-right: rem-calc(10);
 }
 
@@ -181,7 +169,7 @@ Write your code here
    display: block;
    width: rem-calc(60);
    height: rem-calc(1);
-   margin: 15px auto 25px;
+   margin: rem-calc(25) auto rem-calc(25);
 }
 
 

@@ -25,6 +25,8 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="powen-wrapper clear">
 
+		<?php do_action( 'powen_header_top_extras' ); ?>
+
 			<?php
 			/*
 			 * Navigation
@@ -41,6 +43,8 @@
 
 				<!-- Social Media Icon -->
 				<?php powen_social_media_icons(); ?>
+
+				<?php do_action( 'powen_header_top_most_extras' ); ?>
 
 			</nav>
 
@@ -60,7 +64,8 @@
 				<?php if ( powen_mod( 'upload_logo' ) ) : ?>
 
 				    <div id="logo" class='site-logo'>
-				        <a href='<?php echo apply_filter('powen_site_logo_url', esc_url( home_url( '/' ) ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( powen_mod( 'upload_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
+				        <a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( powen_mod( 'upload_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
+				        <h2 class='site-description'><?php bloginfo( 'description' ); ?></h2>
 				    </div>
 
 				<?php else : ?>
@@ -72,7 +77,11 @@
 
 				<?php endif; ?>
 
-			</div>
+				<?php do_action( 'powen_header_site_branding_extras' ); ?>
+
+			</div><!-- site-branding -->
+
+		<?php do_action( 'powen_header_bottom_extras' ); ?>
 
 		</div>
 	</header>

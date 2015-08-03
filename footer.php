@@ -42,7 +42,7 @@
 		    	    </div><!-- .fourth .widget-area -->
 		    	    <?php } ?>
 		    	</aside><!-- #fatfooter -->
-		    <?php endif; ?>
+		    	<?php endif; ?>
 		    </div><!-- .powen-wrapper -->
 	</div><!-- #footer_widgets -->
 

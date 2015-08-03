@@ -27,7 +27,7 @@ class Powen_Social_Widget extends WP_Widget {
 	public function widget( $args, $instance ) {
 		echo $args['before_widget'];
 		if ( ! empty( $instance['title'] ) ) {
-			echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ). $args['after_title'];
+			echo $args['before_title'] . apply_filters( 'powen_widget_title', $instance['title'] ). $args['after_title'];
 		}
 		powen_social_media_icons();
 		echo $args['after_widget'];
@@ -58,7 +58,7 @@ class Powen_Social_Widget extends WP_Widget {
 	 * @return array Updated safe values to be saved.
 	 */
 	public function update( $new_instance, $old_instance ) {
-		$instance = apply_filters( 'powen_instance_array', array() );
+		$instance = array();
 		$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
 
 		return $instance;

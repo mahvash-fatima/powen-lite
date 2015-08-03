@@ -117,12 +117,6 @@
 		} );
 	} );
 
-	wp.customize( 'powen_display_header', function( value ) {
-	    value.bind( function( newval ) {
-	        false === newval ? $( '#masthead' ).hide() : $( '#masthead' ).show();
-	    } );
-	} );
-
 } )( jQuery );
 
 // As you can see from the example above, a single basic handler looks like this:

@@ -50,15 +50,16 @@ ul, ol {
 }
 
 .powen-wrapper {
-	padding-top: rem-calc(10);
-	padding-bottom: rem-calc(10);
-	max-width: total_site_width();
+	max-width: rem-calc(1125);
 	margin: 0 auto;
+}
+
+.footer_widgets {
 	overflow: hidden;
 }
 
 .widget-container {
-	padding: rem-calc(10);
+	padding: $default_gutter;
 	ul {
 		margin: 0;
 		padding: 0;
@@ -89,7 +90,7 @@ h1.site-title {
 
 .site-title, .site-description {
 	margin: 0;
-	line-height: rem-calc(4);
+	line-height: rem-calc(50);
 	vertical-align: bottom;
 }
 
@@ -104,29 +105,44 @@ h1.site-title {
 
 // Content
 .site-content {
-	max-width: total_site_width();
-	margin: $phi * 1rem auto;
+	max-width: rem-calc(1125);
+	margin: $default_gutter auto;
 }
 
 //**** Posts & pages
 
 // (hentry class covers both) plus their internal elements
-.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
+.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation, .powen-most-recent-post {
 	padding-left: $post_l_padding;
 	padding-right: $post_r_padding;
-	margin: 0 0 0 0;
+	padding-bottom: $post_b_padding;
+	padding-top: $post_t_padding;
+	margin: 0;
 
 	@include main_panel();
 }
 
-.article-hentry {
+.article-hentry, .powen-most-recent-post {
 	@include sticky_post();
+}
+
+.site-info, .footer_widgets {
+	padding: $default_gutter 0;
+}
+
+.powen-recent-post {
+	margin-top: $default_gutter;
+}
+
+.powen-pagination {
+	margin-bottom: $default_gutter;
 }
 
 .featured-img {
 	@include main_panel();
 	img {
 	margin: 0 auto;
+	display: block;
 	}
 }
 
@@ -162,17 +178,10 @@ h1.site-title {
 	overflow: hidden;
 }
 
-.entry-title {
-	margin-top: 0;
-	margin-bottom: $post_t_padding;
-}
-
 .entry-meta {
 	display: inline-block;
 	font-weight: 300;
-	margin-bottom: $default_gutter;
-	font-size: $phi * 1rem;
-	margin-bottom: $default_gutter;
+	font-size: rem-calc(14);
 	@include entry_meta();
 }
 
@@ -243,61 +252,64 @@ h1.site-title {
 		}
 	}
 	.children li:first-of-type, .sub-menu li:first-of-type {
-		margin-top: 1em;
+		margin-top: rem-calc(1);
 	}
 
 }
 
 .top-container {
 	overflow: hidden;
-	padding: $phi * 0.5rem 0;
-	ul {
+	padding: rem-calc(5) 0;
+	.social-media-icons {
 		margin: 0;
-		    li {
-				display: inline-block;
-				padding: 0 $phi * 0.1rem;
-				a {
-					padding: $phi * 0.5rem;
-				}
+	    li {
+			margin: rem-calc(1);
+			display: inline-block;
+			a {
+				padding: rem-calc(5 10);
+				width: rem-calc(33);
+				display: block;
+				text-align: center;
 			}
+		}
 	}
 
 	.search-form {
 		text-align: right;
 		display: block;
-		padding: $phi * 0.5rem;
-		.search-field {
-			padding: 0;
-			text-indent: $phi * 0.5rem;
-			border: 1px solid;
-		}
 		.search-submit {
 			display: none;
 		}
+		input[type="text"],
+		input[type="email"],
+		input[type="url"],
+		input[type="password"],
+		input[type="search"] {
+			height: auto;
+		}
 	}
+}
+
+.widget_search input {
+	width: 100%;
 }
 
 .powen-nav {
 	display: block;
 	text-align: left;
 	width: 100%;
-	padding: $phi * 0.5rem;
+	padding: rem-calc(5) 0;
 }
 .social-media-icons {
 	width: 100%;
 	display: block;
 	text-align: right;
 	overflow: hidden;
-	padding: $phi * 0.5rem 0;
+	padding: rem-calc(5) 0;
 }
 .top-most-nav, .main-navigation {
 	padding-right: 10px;
 	display: inline-block;
-}
-
-input.search-field {
-	box-sizing: border-box;
-	width: auto;
 }
 
 // Footer
@@ -334,7 +346,7 @@ input.search-field {
 
 //**** Responsive layout adjustments
 
-@media (max-width: total_site_width()) {
+@media (max-width: rem-calc(1125)) {
 
 	// Output headings at smaller size
 	@include htags(0.7);
@@ -365,9 +377,6 @@ input.search-field {
 		margin-left: -$post_l_padding;
 	}
 
-	.entry-title {
-		margin-bottom: 0;
-	}
 }
 
 @media (max-width: 900*$px) {
@@ -387,6 +396,10 @@ input.search-field {
 	.widget {
 		margin-left: 0;
 		margin-bottom: $default_gutter;
+		margin-top: $default_gutter;
+	}
+	.widget-area .widget {
+		margin-right: 0;
 	}
 
 	.flexslider .powen-slider-content {
@@ -421,7 +434,7 @@ input.search-field {
 	@include htags(0.4);
 
 	// redeclare variables to be smaller
-	$default_h_padding: $phi * 1rem;
+	$default_h_padding: rem-calc(1);
 	$default_v_padding: $default_h_padding;
 
 	// Posts and widgets horizontal padding
@@ -452,13 +465,6 @@ input.search-field {
 
 	.entry-title {
 		margin-bottom: $post_t_padding;
-	}
-
-	.widget {
-		padding-left: $widget_l_padding;
-		padding-right: $widget_r_padding;
-		padding-top: $widget_t_padding;
-		padding-bottom: $widget_b_padding;
 	}
 
 	.flexslider {
