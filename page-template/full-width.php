@@ -10,9 +10,9 @@
 ?>
 <?php get_header(); ?>
 
-<div id="content" class="site-content">	
-	<div id="full-width" class="full-width-content-area">
-		
+<div id="content" class="site-content">
+	<div id="full-width" class="powen-full-width-content-area">
+
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -20,7 +20,7 @@
 
 			<?php endwhile; // end of the loop. ?>
 
-		
+
 	</div><!-- full-width -->
 </div><!-- content -->
 <?php get_footer(); ?>

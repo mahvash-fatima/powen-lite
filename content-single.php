@@ -5,7 +5,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="featured-img">
+	<div class="powen-featured-img">
 		<a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark" >
 		<!-- Featured Images -->
 		<?php if ( has_post_thumbnail() )

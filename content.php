@@ -4,7 +4,7 @@
  */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="featured-img">
+	<div class="powen-featured-img">
 		<a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark" >
 		<!-- Featured Images -->
 		<?php if ( has_post_thumbnail() )
@@ -48,7 +48,7 @@
 		?>
 
 	<!-- Continue reading -->
-	<div class="continue-reading"><a href="<?php esc_url( the_permalink() ); ?>"><?php echo __(powen_mod( 'read_more_textbox', 'Continue Reading')); ?></a></div>
+	<div class="powen-continue-reading"><a href="<?php esc_url( the_permalink() ); ?>"><?php echo __(powen_mod( 'read_more_textbox', 'Continue Reading')); ?></a></div>
 
 	</div><!-- .entry-content -->
 

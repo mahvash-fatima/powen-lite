@@ -13,7 +13,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
-			<div class="featured-img">
+			<div class="powen-featured-img">
 				<a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark" >
 				<!-- Featured Images -->
 				<?php if ( has_post_thumbnail() )
@@ -46,7 +46,7 @@ get_header(); ?>
 			<?php endwhile; ?>
 
 			<!-- Continue reading -->
-			<div class="continue-reading"><a href="<?php esc_url(the_permalink()); ?>"><?php _e('Continue Reading', 'powen') ?></a></div>
+			<div class="powen-continue-reading"><a href="<?php esc_url(the_permalink()); ?>"><?php _e('Continue Reading', 'powen') ?></a></div>
 
 			<?php the_posts_navigation(); ?>
 

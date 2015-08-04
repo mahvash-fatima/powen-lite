@@ -118,14 +118,14 @@ class Powen_Customizer_Front extends Powen_Customizer
 	  if( $powen_logo_position ) {
 	      switch ( $powen_logo_position ) {
 	          case 'left':
-	              echo '.site-branding .site-logo{ text-align: left; }';
+	              echo '.site-branding .powen-site-logo{ text-align: left; }';
 	              break;
 	          case 'right':
-	              echo '.site-branding .site-logo{ text-align: right; }';
+	              echo '.site-branding .powen-site-logo{ text-align: right; }';
 	              break;
 	          case 'center':
 	              echo '.site-branding{ text-align: center; }';
-	              echo '.site-branding .site-logo{ float: none; margin-left: auto; margin-right: auto; }';
+	              echo '.site-branding .powen-site-logo{ float: none; margin-left: auto; margin-right: auto; }';
 	              break;
 	      }
 	  }
@@ -164,7 +164,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 
 		//color
 		$color_selectors = apply_filters('powen_create_color_scheme_array', array (
-			'.continue-reading:after',
+			'.powen-continue-reading:after',
 			'.cat-links:before',
 			'.comments-link:before',
 			'.edit-link:before',

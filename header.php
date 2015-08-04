@@ -33,16 +33,22 @@
 			 */
 			?>
 
-			<nav id="top-most-container" class="top-container">
+			<nav id="top-most-container" class="powen-top-container">
 
 				<!-- Top most menu -->
 				<?php get_template_part( 'template-parts/top-most' ); ?>
 
 				<!-- Search -->
-				<?php get_search_form(); ?>
+				<div class="powen-search-box-top">
+					<?php get_search_form(); ?>
+					<?php do_action('powen_header_top_container_extras' ); ?>
+				</div>
 
 				<!-- Social Media Icon -->
+				<div class="powen-social_media_container">
 				<?php powen_social_media_icons(); ?>
+				<?php do_action('powen_header_social_container_extras' ); ?>
+				</div>
 
 				<?php do_action( 'powen_header_top_most_extras' ); ?>
 
@@ -63,14 +69,14 @@
 
 				<?php if ( powen_mod( 'upload_logo' ) ) : ?>
 
-				    <div id="logo" class='site-logo'>
+				    <div id="logo" class='powen-site-logo'>
 				        <a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( powen_mod( 'upload_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
 				        <h2 class='site-description'><?php bloginfo( 'description' ); ?></h2>
 				    </div>
 
 				<?php else : ?>
 
-			    	<div id="title-tagline" class="title-description">
+			    	<div id="title-tagline" class="powen-title-description">
 			        	<h1 class='site-title'><a href='<?php echo apply_filters('powen_site_tiltle_url', esc_url( home_url( '/' ) ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a></h1>
 			        	<h2 class='site-description'><?php bloginfo( 'description' ); ?></h2>
 			    	</div>

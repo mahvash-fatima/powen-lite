@@ -13,7 +13,7 @@ FontAwesome
 	.content-area .hentry .entry-date:after,
 	.cat-links:before,
 	.comment-metadata time:before,
-	.continue-reading:after,
+	.powen-continue-reading:after,
 	//SECONDARY ICONS
 	.widget_recent_comments li:before,
 	.widget_recent_comments li>a:before,
@@ -95,7 +95,7 @@ Write your code here
 	content: "\f017";
 	padding: rem-calc(5);
 }
-.continue-reading:after {
+.powen-continue-reading:after {
 	content: "\f178";
 	padding: rem-calc(5);
 }

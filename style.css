@@ -704,12 +704,16 @@ input[type="submit"] {
   padding-top: 2.61792rem;
 }
 
+.powen-continue-reading {
+  margin: 2.61792rem 0 1.618rem 0;
+}
+
 .powen-latest-post-tag {
   position: absolute;
   top: 0;
   right: 0;
   color: #fff;
-  padding: 0.5rem 2.5rem;
+  padding: 0.625rem 3.125rem;
 }
 
 .entry-footer {
@@ -798,7 +802,7 @@ input[type="submit"] {
   padding: 0.3125rem;
 }
 
-.continue-reading {
+.powen-continue-reading {
   text-align: right;
 }
 
@@ -1121,10 +1125,8 @@ h6 {
 }
 
 .site-branding {
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
-  padding-top: 1.875rem;
-  padding-bottom: 1.875rem;
+  padding-top: 1.618rem;
+  padding-bottom: 1.618rem;
   text-align: center;
 }
 
@@ -1176,10 +1178,10 @@ h1.site-title {
   margin-bottom: 1.618rem;
 }
 
-.featured-img {
+.powen-featured-img {
   background-color: #ffffff;
 }
-.featured-img img {
+.powen-featured-img img {
   margin: 0 auto;
   display: block;
 }
@@ -1227,7 +1229,7 @@ h1.site-title {
   font-size: 1.125rem;
   font-weight: 700;
   display: inline-block;
-  padding: 1em 0.625rem;
+  padding: 0.625rem;
   margin: 2em 0 .5em 0;
   background: none;
   border-top: 0.1875rem solid #baabab;
@@ -1242,8 +1244,8 @@ h1.site-title {
   border-top: 0.125rem solid #f5f5f5;
 }
 .entry-footer span {
-  margin: 0 0.618em;
-  padding: 0 0.618em;
+  margin: 0.3125rem;
+  padding: 0.3125rem;
   display: inline-block;
 }
 
@@ -1285,36 +1287,38 @@ h1.site-title {
   margin-top: 0.0625rem;
 }
 
-.top-container {
+.powen-top-container {
   overflow: hidden;
-  padding: 0.3125rem 0;
+  padding: 1.618rem 0;
 }
-.top-container .social-media-icons {
+.powen-top-container .powen-social-media-icons {
   margin: 0;
 }
-.top-container .social-media-icons li {
+.powen-top-container .powen-social-media-icons li {
   margin: 0.0625rem;
   display: inline-block;
 }
-.top-container .social-media-icons li a {
+.powen-top-container .powen-social-media-icons li a {
   padding: 0.3125rem 0.625rem;
   width: 2.0625rem;
   display: block;
   text-align: center;
 }
-.top-container .search-form {
+.powen-top-container .search-form {
   text-align: right;
-  display: block;
 }
-.top-container .search-form .search-submit {
+.powen-top-container .search-form .search-submit {
   display: none;
 }
-.top-container .search-form input[type="text"],
-.top-container .search-form input[type="email"],
-.top-container .search-form input[type="url"],
-.top-container .search-form input[type="password"],
-.top-container .search-form input[type="search"] {
+.powen-top-container .search-form input[type="text"],
+.powen-top-container .search-form input[type="email"],
+.powen-top-container .search-form input[type="url"],
+.powen-top-container .search-form input[type="password"],
+.powen-top-container .search-form input[type="search"] {
   height: auto;
+}
+.powen-top-container .powen-search-box-top, .powen-top-container .powen-social_media_container {
+  padding: 0.809rem 0;
 }
 
 .widget_search input {
@@ -1325,18 +1329,16 @@ h1.site-title {
   display: block;
   text-align: left;
   width: 100%;
-  padding: 0.3125rem 0;
+  padding: 0.809rem 0;
 }
 
-.social-media-icons {
+.powen-social-media-icons {
   width: 100%;
-  display: block;
   text-align: right;
   overflow: hidden;
-  padding: 0.3125rem 0;
 }
 
-.top-most-nav, .main-navigation {
+.powen-top-most-nav, .powen-main-navigation {
   padding-right: 10px;
   display: inline-block;
 }
@@ -1420,7 +1422,7 @@ h1.site-title {
     font-size: 1.37865rem;
   }
 
-  .article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
+  .article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation, .powen-most-recent-post {
     padding-left: 2.61792rem;
     padding-right: 2.61792rem;
     padding-top: 1.618rem;
@@ -1576,22 +1578,26 @@ h1.site-title {
     font-size: 0.7878rem;
   }
 
-  .hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
-    padding-left: 0.0625rem;
-    padding-right: 0.0625rem;
-    padding-top: 0.03863rem;
-    padding-bottom: 0.03863rem;
+  .article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
+    padding-left: 1.618rem;
+    padding-right: 1.618rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .powen-recent-article {
+    padding-top: 1rem;
   }
 
   .post-thumbnail {
     margin-top: 1.618rem;
-    margin-right: -0.0625rem;
+    margin-right: -1.618rem;
     margin-bottom: 1.618rem;
-    margin-left: -0.0625rem;
+    margin-left: -1.618rem;
   }
 
   .entry-title {
-    margin-bottom: 0.03863rem;
+    margin-bottom: 1rem;
   }
 
   .flexslider h1, .flexslider h2, .flexslider h3, .flexslider h4, .flexslider h5, .flexslider h6 {
@@ -1654,7 +1660,7 @@ FontAwesome
 .content-area .hentry .entry-date:after,
 .cat-links:before,
 .comment-metadata time:before,
-.continue-reading:after,
+.powen-continue-reading:after,
 .widget_recent_comments li:before,
 .widget_recent_comments li > a:before,
 .widget_archive li:before,
@@ -1735,7 +1741,7 @@ Write your code here
   padding: 0.3125rem;
 }
 
-.continue-reading:after {
+.powen-continue-reading:after {
   content: "\f178";
   padding: 0.3125rem;
 }

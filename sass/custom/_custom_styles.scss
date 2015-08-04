@@ -77,10 +77,8 @@ ul, ol {
 }
 
 .site-branding {
-	padding-left: rem-calc(10);
-	padding-right: rem-calc(10);
-	padding-top: rem-calc(30);
-	padding-bottom: rem-calc(30);
+	padding-top: $default_gutter;
+	padding-bottom: $default_gutter;
 	text-align: center;
 }
 
@@ -138,7 +136,7 @@ h1.site-title {
 	margin-bottom: $default_gutter;
 }
 
-.featured-img {
+.powen-featured-img {
 	@include main_panel();
 	img {
 	margin: 0 auto;
@@ -194,7 +192,7 @@ h1.site-title {
 		font-size: 18*$px;
 		font-weight: 700;
 		display: inline-block;
-		padding: 1em rem-calc(10);
+		padding: rem-calc(10);
 		margin: 2em 0 .5em 0;
 
 		@include more_link();
@@ -206,8 +204,8 @@ h1.site-title {
 	line-height: 3em;
 	text-align: center;
 	span {
-		margin: 0 0.618em;
-		padding: 0 0.618em;
+		margin: rem-calc(5);
+		padding: rem-calc(5);
 		display: inline-block;
 	}
 	@include entry_footer();
@@ -257,10 +255,10 @@ h1.site-title {
 
 }
 
-.top-container {
+.powen-top-container {
 	overflow: hidden;
-	padding: rem-calc(5) 0;
-	.social-media-icons {
+	padding: $default_gutter 0;
+	.powen-social-media-icons {
 		margin: 0;
 	    li {
 			margin: rem-calc(1);
@@ -276,7 +274,6 @@ h1.site-title {
 
 	.search-form {
 		text-align: right;
-		display: block;
 		.search-submit {
 			display: none;
 		}
@@ -288,6 +285,9 @@ h1.site-title {
 			height: auto;
 		}
 	}
+	.powen-search-box-top, .powen-social_media_container {
+		padding: $default_gutter/2 0;
+	}
 }
 
 .widget_search input {
@@ -298,16 +298,14 @@ h1.site-title {
 	display: block;
 	text-align: left;
 	width: 100%;
-	padding: rem-calc(5) 0;
+	padding: $default_gutter/2 0;
 }
-.social-media-icons {
+.powen-social-media-icons {
 	width: 100%;
-	display: block;
 	text-align: right;
 	overflow: hidden;
-	padding: rem-calc(5) 0;
 }
-.top-most-nav, .main-navigation {
+.powen-top-most-nav, .powen-main-navigation {
 	padding-right: 10px;
 	display: inline-block;
 }
@@ -363,7 +361,7 @@ h1.site-title {
 	$post_t_padding: $default_h_padding / $phi;
 	$post_b_padding: $post_t_padding;
 
-	.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
+	.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation, .powen-most-recent-post {
 		padding-left: $post_l_padding;
 		padding-right: $post_r_padding;
 		padding-top: $post_t_padding;
@@ -379,7 +377,7 @@ h1.site-title {
 
 }
 
-@media (max-width: 900*$px) {
+@media (max-width: rem-calc(900)) {
 
 	// Single col layout
 	#primary, #secondary {
@@ -419,7 +417,7 @@ h1.site-title {
 	}
 }
 
-@media (max-width: 600*$px) {
+@media (max-width: rem-calc(600)) {
 
 	@include htags(0.5);
 
@@ -429,12 +427,12 @@ h1.site-title {
 
 }
 
-@media (max-width: 400*$px) {
+@media (max-width: rem-calc(400)) {
 
 	@include htags(0.4);
 
 	// redeclare variables to be smaller
-	$default_h_padding: rem-calc(1);
+	$default_h_padding: $phi * 1rem;
 	$default_v_padding: $default_h_padding;
 
 	// Posts and widgets horizontal padding
@@ -449,11 +447,15 @@ h1.site-title {
 	$widget_t_padding: $default_h_padding;
 	$widget_b_padding: $widget_t_padding;
 
-	.hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
+	.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
 		padding-left: $post_l_padding;
 		padding-right: $post_r_padding;
 		padding-top: $post_t_padding;
 		padding-bottom: $post_b_padding;
+	}
+
+	.powen-recent-article {
+		padding-top: $post_t_padding;
 	}
 
 	.post-thumbnail {

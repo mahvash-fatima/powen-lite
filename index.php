@@ -34,6 +34,14 @@ get_header(); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php
+
+					if($Wp_query->$current_post === 1 && get_query_var('paged', 1) == 1 ) {
+						continue;
+					}
+
+					?>
+
+					<?php
 						/* Include the Post-Format-specific template for the content.
 						 * If you want to override this in a child theme, then include a file
 						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
