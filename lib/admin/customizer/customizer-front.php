@@ -176,7 +176,9 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'input[type="url"]:focus',
 			'input[type="password"]:focus',
 			'input[type="search"]:focus',
-			'textarea:focus'
+			'textarea:focus',
+			'.flex-direction-nav li .flex-prev:before',
+			'.flex-direction-nav li .flex-next:before',
 		) );
 		//background
 		$background_color_selectors = apply_filters('powen_background_color_selectors_array', array(

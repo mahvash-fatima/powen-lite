@@ -154,6 +154,7 @@ h1.site-title {
 	img {
 	margin: 0 auto;
 	display: block;
+	width: 100%;
 	}
 }
 
@@ -327,6 +328,7 @@ h1.site-title {
 
 .powen-search-box-top .search-form {
 	padding: 0 rem-calc(10);
+	position: relative;
 }
 
 // Footer

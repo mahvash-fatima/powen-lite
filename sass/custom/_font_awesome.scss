@@ -1,6 +1,10 @@
 /*------------------
 FontAwesome
 ---------------------*/
+	//HEADER
+	.powen-top-most-nav .mm:before,
+	.powen-main-navigation .m:before,
+	.powen-search-box-top .search-form label:after,
 	//PRIMARY ICONS
 	.posted-on:before,
 	.comments-link:before,
@@ -46,6 +50,22 @@ transform: translate(0, 0);
 /**---------------
 Write your code here
 --------------------**/
+
+//HEADER
+.powen-top-most-nav .mm:before, .powen-main-navigation .m:before {
+	content: "\f0c9";
+	padding: rem-calc(5);
+	font-size: 1.25em;
+}
+
+.powen-search-box-top .search-form label:after {
+	content: "\f002";
+	position: absolute;
+	right: rem-calc(13);
+	top: rem-calc(1);
+	color: #cccccc;
+	background-color: #ffffff;
+}
 
 //PRIMARY ICONS
 

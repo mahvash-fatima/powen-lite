@@ -82,7 +82,6 @@ class Powen_Customizer {
       ===============================*/
 
       $wp_customize->add_setting( 'powen_mod[menu_one_title_textbox]', array(
-          'default'           => 'Menu 1',
           'sanitize_callback' => 'sanitize_text_field',
           'capability'        => 'edit_theme_options',
       ) );
@@ -98,13 +97,12 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_control( new WP_Customize_Control ( $wp_customize, 'powen_mod[hide_menu_one]', array(
-              'type'    => 'checkbox',
-              'label'   => 'Hide',
-              'section' => 'nav',
+          'type'    => 'checkbox',
+          'label'   => 'Hide',
+          'section' => 'nav',
       ) ) );
 
       $wp_customize->add_setting( 'powen_mod[menu_two_title_textbox]', array(
-          'default'           => 'Menu 2',
           'sanitize_callback' => 'sanitize_text_field',
           'capability'        => 'edit_theme_options',
       ) );
