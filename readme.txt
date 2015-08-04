@@ -3,7 +3,7 @@ LICENSE
 
 - This theme, like WordPress, is licensed under the GPL.
 
-- REM unit polyfill - 
+- REM unit polyfill -
 	REM-unit-polyfill by @chuckcarpenter - https://github.com/chuckcarpenter/REM-unit-polyfill - @REM-unit-polyfill
 	License - http://chuckcarpenter.mit-license.org/ ( MIT License )
 
@@ -32,7 +32,7 @@ LICENSE
 	License - https://github.com/Automattic/_s/commit/60d249b7c31733181e2d213784110f221a26ecc0 ( GPLv2 License )
 
 
-IMAGE SIZE 
+IMAGE SIZE
 ==========
 
 -97*64pixels
@@ -41,29 +41,41 @@ IMAGE SIZE
 IMAGE LINK
 ==========
 
--slide1.jpg 
-	@Link - http://pixabay.com/en/musician-rockstar-band-music-rock-664432/ - @pixabay
+-slide1.jpg
+	@Link - https://pixabay.com/en/book-read-relax-lilac-bank-old-759873/ - @pixabay
 	License - https://creativecommons.org/publicdomain/zero/1.0/deed.en ( CC0 1.0 Universal (CC0 1.0) )
-	
--slide2.jpg 
-	@Link - http://pixabay.com/en/woman-photo-taking-picture-642118/ - @pixabay
+
+-slide2.jpg
+	@Link - https://pixabay.com/en/happy-couple-young-people-family-692725/ - @pixabay
 	License - https://creativecommons.org/publicdomain/zero/1.0/deed.en ( CC0 1.0 Universal (CC0 1.0) )
-	
--slide3.jpg 
-	@Link - http://pixabay.com/en/young-girl-woman-long-hair-690958/ - @pixabay
+
+-slide3.jpg
+	@Link - https://pixabay.com/en/blonde-girl-young-woman-person-768681/ - @pixabay
 	License - https://creativecommons.org/publicdomain/zero/1.0/deed.en ( CC0 1.0 Universal (CC0 1.0) )
-	
--slide4.jpg 
-	@Link - http://pixabay.com/en/leather-shoes-boots-tie-laces-691609/ - @pixabay
+
+-slide4.jpg
+	@Link - https://pixabay.com/en/girls-friends-friendship-young-685778/ - @pixabay
 	License - https://creativecommons.org/publicdomain/zero/1.0/deed.en ( CC0 1.0 Universal (CC0 1.0) )
-	
--slide5.jpg 
-	@Link - http://pixabay.com/en/musician-rockstar-band-music-rock-664432/ - @pixabay
+
+-slide5.jpg
+	@Link - https://pixabay.com/en/bride-bouquet-wedding-white-woman-845727/ - @pixabay
 	License - https://creativecommons.org/publicdomain/zero/1.0/deed.en ( CC0 1.0 Universal (CC0 1.0) )
-	
+
+-slide6.jpg
+	@Link - https://pixabay.com/en/meal-food-decorative-restaurant-731422/ - @pixabay
+	License - https://creativecommons.org/publicdomain/zero/1.0/deed.en ( CC0 1.0 Universal (CC0 1.0) )
+
+-slide7.jpg
+	@Link - https://pixabay.com/en/fashion-girl-woman-female-model-821506/ - @pixabay
+	License - https://creativecommons.org/publicdomain/zero/1.0/deed.en ( CC0 1.0 Universal (CC0 1.0) )
+
+-slide8.jpg
+	@Link - https://pixabay.com/en/pier-wooden-planks-shore-water-336599/ - @pixabay
+	License - https://creativecommons.org/publicdomain/zero/1.0/deed.en ( CC0 1.0 Universal (CC0 1.0) )
+
 DEMO URL
 ========
-	
+
 	@Link - http://www.supernovathemes.com/powen/
 
 

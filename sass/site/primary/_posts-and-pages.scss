@@ -15,7 +15,9 @@
 	top: 0;
 	right: 0;
 	color: #fff;
-	padding: rem-calc(10 50);
+	span {
+		padding: rem-calc(10 30);
+	}
 }
 
 .entry-footer {

@@ -37,6 +37,7 @@ input[type="search"] {
 	border: 1px solid $color_border;
 	text-indent: rem-calc(5);
 	height: rem-calc(40);
+	letter-spacing: rem-calc(1);
 }
 
 textarea {

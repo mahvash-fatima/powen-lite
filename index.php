@@ -11,34 +11,58 @@
  * @package powen
  */
 
+$first_post_id = false;
+
 get_header(); ?>
 
-<?php
-/*
- *Slider
- */
-	get_template_part( 'template-parts/banner' );
-	get_template_part( 'template-parts/recent-post' );
-	do_action( 'powen_homepage_extras' );
+<?php get_template_part( 'template-parts/banner' ); ?><!-- Slider -->
 
-?>
+<?php if( get_query_var( 'paged' ) === 0 ) { ?>
+	<div id="powen-latest-post" class="powen-recent-post">
+		<div class="powen-wrapper">
+
+		<?php
+
+			$args = apply_filters('powen_recent_post_arguments_array', array(
+				'author'         => 1,
+				'posts_per_page' => 1,
+				'post_status'    => 'publish',
+			) );
+
+			$query = new WP_Query( $args );
+
+			if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();
+
+			get_template_part( 'template-parts/recent-post' );
+
+			$first_post_id = get_the_ID();
+
+		?>
+
+			<?php endwhile; else : ?>
+
+			<p><?php echo __( 'Sorry, no posts matched your criteria.' ); ?></p>
+
+			<?php endif; wp_reset_postdata(); ?>
+
+		</div><!-- powen-wrapper -->
+	</div><!-- powen-recent-post -->
+
+			<?php } ?>
+
+	<?php do_action( 'powen_homepage_extras' ); ?>
 
 <div id="content" class="site-content clear">
-
-		<div id="primary" class="content-area">
-			<main id="main" class="site-main" role="main">
-
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 			<?php if ( have_posts() ) : ?>
-
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php
-
-					if($Wp_query->$current_post === 1 && get_query_var('paged', 1) == 1 ) {
+					if( get_the_ID() === $first_post_id ) {
 						continue;
 					}
-
 					?>
 
 					<?php
@@ -53,26 +77,20 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 
-				<?php
-				/*
-				 * Pagination
-				 */
+				<?php powen_pagination(); ?><!-- Pagination -->
 
-				    powen_pagination();
+				<!-- To reset custom loop -->
+				<?php wp_reset_postdata(); ?>
 
-				?>
-
-			<!-- To reset custom loop -->
-			<?php wp_reset_postdata(); ?>
-
-			<?php else : ?>
+					<?php else : ?>
 
 				<?php get_template_part( 'content', 'none' ); ?>
 
-			<?php endif; ?>
+					<?php endif; ?>
 
-			</main><!-- #main -->
-		</div><!-- #primary -->
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
 <?php get_sidebar(); ?>
 
 </div><!-- #content -->

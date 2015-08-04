@@ -71,8 +71,12 @@
 	}
 }
 
-.widget_calendar caption, .widget_calendar .current-date, .powen-pagination .current {
+.widget_calendar caption, .powen-pagination .current {
   color: #ffffff;
+}
+
+.widget_calendar .current-date a {
+    color: #ffffff;
 }
 
 // FOOTER STYLE

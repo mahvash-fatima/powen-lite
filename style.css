@@ -361,6 +361,7 @@ input[type="search"] {
   border: 1px solid #cccccc;
   text-indent: 0.3125rem;
   height: 2.5rem;
+  letter-spacing: 0.0625rem;
 }
 
 textarea {
@@ -552,7 +553,11 @@ input[type="submit"] {
   border-bottom: none;
 }
 
-.widget_calendar caption, .widget_calendar .current-date, .powen-pagination .current {
+.widget_calendar caption, .powen-pagination .current {
+  color: #ffffff;
+}
+
+.widget_calendar .current-date a {
   color: #ffffff;
 }
 
@@ -713,7 +718,9 @@ input[type="submit"] {
   top: 0;
   right: 0;
   color: #fff;
-  padding: 0.625rem 3.125rem;
+}
+.powen-latest-post-tag span {
+  padding: 0.625rem 1.875rem;
 }
 
 .entry-footer {
@@ -1035,17 +1042,17 @@ ul, ol {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 3.125rem;
+  line-height: 2.5rem;
   font-weight: 400;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 0.563rem;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 0.625rem;
 }
 
@@ -1117,6 +1124,19 @@ h6 {
 .widget-container ul {
   margin: 0;
   padding: 0;
+}
+
+.flexslider h6 {
+  line-height: 1.5;
+  color: #fff;
+  margin: 0.625rem 0;
+  font-size: 0.875rem;
+}
+
+.flexslider p {
+  font-size: 0.6875rem;
+  line-height: 1.5;
+  margin-bottom: 1.875rem;
 }
 
 .site-header {
@@ -1329,6 +1349,8 @@ h1.site-title {
   display: block;
   text-align: left;
   width: 100%;
+}
+.powen-nav a {
   padding: 0.809rem 0;
 }
 
@@ -1339,8 +1361,12 @@ h1.site-title {
 }
 
 .powen-top-most-nav, .powen-main-navigation {
-  padding-right: 10px;
+  padding: 0 0.625rem;
   display: inline-block;
+}
+
+.powen-search-box-top .search-form {
+  padding: 0 0.625rem;
 }
 
 .site-footer {
@@ -1375,17 +1401,17 @@ h1.site-title {
 
 @media (max-width: 70.3125rem) {
   h1, h2, h3, h4, h5, h6 {
-    line-height: 3.125rem;
+    line-height: 2.5rem;
     font-weight: 400;
   }
 
   h1 {
-    font-size: 2.8rem;
+    font-size: 2.1rem;
     margin-bottom: 0.563rem;
   }
 
   h2 {
-    font-size: 2.1rem;
+    font-size: 1.75rem;
     margin-bottom: 0.625rem;
   }
 
@@ -1463,13 +1489,14 @@ h1.site-title {
     opacity: 1;
   }
 
-  .flexslider .powen-slider-content p, .flexslider .powen-slider-content h2 {
+  .flexslider .powen-slider-content p, .flexslider .powen-slider-content h6 {
     visibility: visible;
     opacity: 1;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     width: 100%;
+    margin: 0.3125rem 0;
   }
 
   .flexslider .flex-control-nav {
@@ -1478,17 +1505,17 @@ h1.site-title {
 }
 @media (max-width: 37.5rem) {
   h1, h2, h3, h4, h5, h6 {
-    line-height: 3.125rem;
+    line-height: 2.5rem;
     font-weight: 400;
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 0.563rem;
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-bottom: 0.625rem;
   }
 
@@ -1531,17 +1558,17 @@ h1.site-title {
 }
 @media (max-width: 25rem) {
   h1, h2, h3, h4, h5, h6 {
-    line-height: 3.125rem;
+    line-height: 2.5rem;
     font-weight: 400;
   }
 
   h1 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     margin-bottom: 0.563rem;
   }
 
   h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 0.625rem;
   }
 
@@ -1601,15 +1628,15 @@ h1.site-title {
   }
 
   .flexslider h1, .flexslider h2, .flexslider h3, .flexslider h4, .flexslider h5, .flexslider h6 {
-    line-height: 3.125rem;
+    line-height: 2.5rem;
     font-weight: 400;
   }
   .flexslider h1 {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     margin-bottom: 0.563rem;
   }
   .flexslider h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 0.625rem;
   }
   .flexslider h3 {
@@ -1637,6 +1664,10 @@ h1.site-title {
   }
   .flexslider .site-branding .site-description {
     font-size: 1.1817rem;
+  }
+
+  .flexslider h6 {
+    line-height: 1;
   }
 
   button, input[type="button"], input[type="reset"], input[type="submit"] {
@@ -1671,7 +1702,8 @@ FontAwesome
 .powen-wrapper .recent-comment-people:before,
 .menu-long-menu-container li:before,
 .widget_recent_entries li:before,
-.powen-border-line,
+.entry-header:after,
+.widget-title:after,
 .footer-scroll:before {
   font-family: 'FontAwesome';
   font-weight: normal;
@@ -1809,7 +1841,7 @@ Write your code here
   margin-right: 0.625rem;
 }
 
-.powen-border-line {
+.entry-header:after, .widget-title:after {
   content: '';
   display: block;
   width: 3.75rem;
@@ -1822,7 +1854,7 @@ Write your code here
   background: rgba(0, 0, 0, 0.46);
   margin: 0;
   position: fixed;
-  bottom: 3.125rem;
+  bottom: 6.25rem;
   right: 3.125rem;
   width: 2.5rem;
   text-align: center;

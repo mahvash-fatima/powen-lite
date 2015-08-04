@@ -182,7 +182,8 @@ class Powen_Customizer_Front extends Powen_Customizer
 		$background_color_selectors = apply_filters('powen_background_color_selectors_array', array(
 			'.widget_calendar caption',
 			'.current-date',
-			'.powen-border-line',
+			'.entry-header:after',
+			'.widget-title:after',
 			'.powen-pagination .current',
 			'.powen-latest-post-tag',
 			'button',
@@ -201,9 +202,9 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'.powen-pagination .current',
 		) );
 
-		self::generate_css( $color_selectors, 'color', 'theme_color', false, false, '#6897bb' );
-		self::generate_css( $background_color_selectors, 'background', 'theme_color', false, false, '#6897bb' );
-		self::generate_css( $border_color_selectors, 'border-color', 'theme_color', false, false, '#6897bb' );
+		self::generate_css( $color_selectors, 'color', 'theme_color', false, false, '#daa520' );
+		self::generate_css( $background_color_selectors, 'background', 'theme_color', false, false, '#daa520' );
+		self::generate_css( $border_color_selectors, 'border-color', 'theme_color', false, false, '#daa520' );
 
 		//=====================
 		//LINK COLOR( ON HOVER )
@@ -234,9 +235,9 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'.widget_powen_social_widget ul li a:hover'
 		) );
 
-		self::generate_css( $color_hover_selectors, 'color', 'hover_link_color', false, false, '#fa8072' );
-		self::generate_css( $background_color_hover_selectors, 'background', 'hover_link_color', false, false, '#fa8072' );
-		self::generate_css( $border_color_hover_selectors, 'border-color', 'hover_link_color', false, false, '#fa8072' );
+		self::generate_css( $color_hover_selectors, 'color', 'hover_link_color', false, false, '#dd9933' );
+		self::generate_css( $background_color_hover_selectors, 'background', 'hover_link_color', false, false, '#dd9933' );
+		self::generate_css( $border_color_hover_selectors, 'border-color', 'hover_link_color', false, false, '#dd9933' );
 
 
 	}

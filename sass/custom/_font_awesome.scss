@@ -25,7 +25,8 @@ FontAwesome
 	.powen-wrapper .recent-comment-people:before,
 	.menu-long-menu-container li:before,
 	.widget_recent_entries li:before,
-	.powen-border-line,
+	.entry-header:after,
+	.widget-title:after,
 	.footer-scroll:before
 {
 font-family: 'FontAwesome';
@@ -164,7 +165,7 @@ Write your code here
 }
 
 // widget-title
-.powen-border-line{
+.entry-header:after, .widget-title:after {
    content: '';
    display: block;
    width: rem-calc(60);
@@ -179,7 +180,7 @@ Write your code here
 	background: rgba(0, 0, 0, 0.46);
 	margin: 0;
 	position: fixed;
-	bottom: rem-calc(50);
+	bottom: rem-calc(100);
 	right: rem-calc(50);
 	width: rem-calc(40);
 	text-align: center;

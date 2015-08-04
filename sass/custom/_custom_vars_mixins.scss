@@ -63,11 +63,11 @@ $font__line-height-body: $phi*1rem;
 $font__line-height-pre: $phi*1rem;
 // /end
 
-$htag_lineheight: rem-calc(50);
+$htag_lineheight: rem-calc(40);
 $htag_weight: 400;
 
 // H tag font sizes 1 through 6
-$htag_sizes: 4, 3, 1.5, 1.313, 1.125, 1;
+$htag_sizes: 3, 2.5, 1.5, 1.313, 1.125, 1;
 
 // H tag vertical margins 1 through 6
 $htag_vmargins: 0.563, 0.625, 1.313, 1.313, 1.313, 0.75;

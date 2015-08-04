@@ -78,3 +78,34 @@ if( ! function_exists( 'powen_pagination' ) )
 		echo "</nav>";
 	}
 }
+
+if( ! function_exists( 'powen_content' ) )
+{
+	function powen_content()
+	{
+		if(powen_mod('content_length') == 'full') {
+			the_content();
+		}
+		else{
+			the_excerpt();
+		}
+	}
+}
+
+if( ! function_exists( 'powen_hide_posted_on' ) ) {
+
+	function powen_hide_posted_on()
+	{
+
+		if( powen_mod('hide_date_author') == '' ) { ?>
+
+			<div class="entry-meta">
+			<?php powen_posted_on(); ?>
+			</div>
+
+			<?php
+		}
+
+	}
+
+}

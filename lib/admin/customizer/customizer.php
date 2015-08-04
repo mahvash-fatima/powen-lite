@@ -21,14 +21,48 @@ class Powen_Customizer {
    * @param WP_Customize_Manager $wp_customize Customizer object.
    */
   public static function register ( $wp_customize ) {
+
       /*==============================
-        READ MORE TEXT
+        CONTENT
       ===============================*/
 
-      $wp_customize->add_section( 'powen_read_more_text_section' , array(
-          'title'      =>  __( 'Read More Text', 'powen' ),
+      $wp_customize->add_section( 'powen_content_section' , array(
+          'title'      =>  __( 'Content', 'powen' ),
           'capability' => 'edit_theme_options',
       ) );
+
+      //HIDE DATE & AUTHOR NAME IN POST
+
+      $wp_customize->add_setting( 'powen_mod[hide_date_author]', array(
+          'capability' => 'edit_theme_options',
+      ) );
+
+      $wp_customize->add_control( new WP_Customize_Control ( $wp_customize, 'powen_mod[hide_date_author]', array(
+              'label'       => 'Hide The Author & Date',
+              'type'        => 'checkbox',
+              'section'     => 'powen_content_section',
+      ) ) );
+
+      //Excerpt & Full content
+
+      $wp_customize->add_setting( 'powen_mod[content_length]', array(
+          'default'  => 'excerpt',
+          'sanitize_callback' => 'powen_sanitize_choices',
+          'capability'        => 'edit_theme_options',
+      ) );
+
+      $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[content_length]', array(
+          'label'         =>   __( 'Content Length', 'powen' ),
+          'type'          =>  'radio',
+          'choices'       =>  array(
+            'excerpt' => __( 'Excerpt', 'powen' ),
+            'full'    => __( 'Full', 'powen' ),
+          ),
+          'section'       =>  'powen_content_section',
+          'settings'      =>  'powen_mod[content_length]',
+      ) ) );
+
+      // READ MORE TEXT
 
       $wp_customize->add_setting( 'powen_mod[read_more_textbox]', array(
           'default'           => __('Continue Reading'),
@@ -37,35 +71,11 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[read_more_textbox]', array(
-          'label'         => __( 'Read More', 'powen' ),
-          'section'       => 'powen_read_more_text_section',
+          'label'         => __( 'Read More Text', 'powen' ),
+          'section'       => 'powen_content_section',
           'settings'      => 'powen_mod[read_more_textbox]',
       ) ) );
 
-      /*==============================
-        FULL CONTENT OR EXCERPT
-      ===============================*/
-
-      $wp_customize->add_section( 'powen_content_length_section' , array(
-          'title'      =>  __( 'Content Length', 'powen' ),
-          'capability' => 'edit_theme_options',
-      ) );
-
-      $wp_customize->add_setting( 'powen_mod[content_length]', array(
-          'sanitize_callback' => 'powen_sanitize_choices',
-          'capability'        => 'edit_theme_options',
-      ) );
-
-      $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[content_length]', array(
-          'label'         =>   __( 'Content', 'powen' ),
-          'type'          =>  'radio',
-          'choices'       =>  array(
-            'excerpt'        => __( 'Excerpt', 'powen' ),
-            'full'       => __( 'Full', 'powen' ),
-          ),
-          'section'       =>  'powen_content_length_section',
-          'settings'      =>  'powen_mod[content_length]',
-      ) ) );
 
       /*==============================
               MENU TITLES NAV SECTION
@@ -78,19 +88,18 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[menu_one_title_textbox]', array(
-          'label'         => __( 'Title Menu 1', 'powen' ),
+          'label'         => __( 'Top Most Menu Title', 'powen' ),
           'section'       => 'nav',
           'settings'      => 'powen_mod[menu_one_title_textbox]',
       ) ) );
 
       $wp_customize->add_setting( 'powen_mod[hide_menu_one]', array(
-          'label'         => __('Hide Menu 1'),
           'capability'    => 'edit_theme_options',
       ) );
 
       $wp_customize->add_control( new WP_Customize_Control ( $wp_customize, 'powen_mod[hide_menu_one]', array(
-              'type' => 'checkbox',
-              'label' => 'Hide Menu 1',
+              'type'    => 'checkbox',
+              'label'   => 'Hide',
               'section' => 'nav',
       ) ) );
 
@@ -101,19 +110,18 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[menu_two_title_textbox]', array(
-          'label'         => __( 'Title Menu 2', 'powen' ),
+          'label'         => __( 'Main Menu Title', 'powen' ),
           'section'       => 'nav',
           'settings'      => 'powen_mod[menu_two_title_textbox]',
       ) ) );
 
       $wp_customize->add_setting( 'powen_mod[hide_menu_two]', array(
-          'label'         => __('Hide Menu 2'),
           'capability'    => 'edit_theme_options',
       ) );
 
       $wp_customize->add_control( new WP_Customize_Control ( $wp_customize, 'powen_mod[hide_menu_two]', array(
               'type' => 'checkbox',
-              'label' => 'Hide Menu 2',
+              'label' => 'Hide',
               'section' => 'nav',
       ) ) );
 
@@ -210,7 +218,7 @@ class Powen_Customizer {
           'description'    => __( 'Make slides', 'powen' ),
       ) );
 
-      for ( $i=1; $i <= apply_filters( 'powen_increase_slides', '15' ); $i++ ) {
+      for ( $i=1; $i <= apply_filters( 'powen_increase_slides', '20' ); $i++ ) {
 
       $wp_customize->add_section( 'powen_slider_section_' . $i, array(
           'priority'       => 10,
@@ -269,7 +277,7 @@ class Powen_Customizer {
           'priority' => 10,
           'section'  => 'powen_slider_section_' . $i,
           'label'    => __( 'Image', 'powen' ),
-          'description' => __( '(minimum size 640 x 426)' ),
+          'description' => __( '(Minimum image size 337 x 225)' ),
           'settings' => 'powen_slides['.$i.'][image]',
       ) ) );
 
@@ -293,12 +301,12 @@ class Powen_Customizer {
             array(
                       'slug'    =>'powen_mod[header_textcolor]',
                       'default' => '#000',
-                      'label'   => __( 'Header Title Color', 'powen' )
+                      'label'   => __( 'Site Title Color', 'powen' )
                   ),
             array(
                       'slug'    =>'powen_mod[header_taglinecolor]',
                       'default' => '#222222',
-                      'label'   => __( 'Header Tagline Color', 'powen' )
+                      'label'   => __( 'Site Tagline Color', 'powen' )
                   ),
             array(
                       'slug'    =>'powen_mod[header_background]',
@@ -404,18 +412,11 @@ class Powen_Customizer {
           ),
       ) );
 
-
       /*==============================
               LOGO & FAVICON
       ===============================*/
 
       //Upload logo
-
-      $wp_customize->add_section('powen_logo_section', array(
-          'title'       => __( 'Logo & Favicon', 'powen' ),
-          'description' => __( 'Upload your site logo. It will replace the site title and description in the header', 'powen' ),
-          'capability'  => 'edit_theme_options',
-      ) );
 
       $wp_customize->add_setting( 'powen_mod[upload_logo]', array(
           'default'           => '',
@@ -426,9 +427,10 @@ class Powen_Customizer {
 
       $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'powen_mod[upload_logo]', array(
           'label'    => __( 'Upload logo', 'powen' ),
-          'section'  => 'powen_logo_section',
+          'section'  => 'title_tagline',
           'settings' => 'powen_mod[upload_logo]',
       ) ) );
+
 
       //Logo placement
       $wp_customize->add_setting( 'powen_mod[logo_placement]', array(
@@ -441,7 +443,7 @@ class Powen_Customizer {
       $wp_customize->add_control( 'powen_mod[logo_placement]', array(
           'type'          => 'radio',
           'label'         => __('Logo placement', 'powen'),
-          'section'       => 'powen_logo_section',
+          'section'       => 'title_tagline',
           'settings'      => 'powen_mod[logo_placement]',
           'choices'       => array(
               'left'      => __( 'left', 'powen' ),
@@ -459,7 +461,7 @@ class Powen_Customizer {
 
       $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'powen_mod[theme_favicon]', array(
           'label'         => __( 'Upload Favicon', 'powen' ),
-          'section'       => 'powen_logo_section',
+          'section'       => 'title_tagline',
           'settings'      => 'powen_mod[theme_favicon]',
       ) ) );
 

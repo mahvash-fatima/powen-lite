@@ -66,6 +66,19 @@ ul, ol {
 	}
 }
 
+//Slider
+.flexslider h6 {
+	line-height: 1.5;
+	color: #fff;
+	margin: rem-calc(10 0);
+	font-size: rem-calc(14);
+}
+.flexslider p {
+	font-size: rem-calc(11);
+	line-height: 1.5;
+	margin-bottom: rem-calc(30);
+}
+
 // **-----
 // CUSTOM STYLES
 // **-----
@@ -298,7 +311,9 @@ h1.site-title {
 	display: block;
 	text-align: left;
 	width: 100%;
-	padding: $default_gutter/2 0;
+	a {
+		padding: $default_gutter/2 0;
+	}
 }
 .powen-social-media-icons {
 	width: 100%;
@@ -306,8 +321,12 @@ h1.site-title {
 	overflow: hidden;
 }
 .powen-top-most-nav, .powen-main-navigation {
-	padding-right: 10px;
+	padding: 0 rem-calc(10);
 	display: inline-block;
+}
+
+.powen-search-box-top .search-form {
+	padding: 0 rem-calc(10);
 }
 
 // Footer
@@ -404,13 +423,14 @@ h1.site-title {
 		visibility: visible;
 		opacity: 1;
 	}
-	.flexslider .powen-slider-content p, .flexslider .powen-slider-content h2{
+	.flexslider .powen-slider-content p, .flexslider .powen-slider-content h6{
 		visibility: visible;
 		opacity: 1;
 		text-overflow: ellipsis;
 		white-space: nowrap;
 		overflow: hidden;
 		width: 100%;
+		margin: rem-calc(5 0);
 	}
 	.flexslider .flex-control-nav {
 		display: none;
@@ -424,7 +444,6 @@ h1.site-title {
 	.flexslider .flex-direction-nav .flex-next, .flexslider .flex-direction-nav .flex-prev {
 		display: none;
 	}
-
 }
 
 @media (max-width: rem-calc(400)) {
@@ -471,6 +490,9 @@ h1.site-title {
 
 	.flexslider {
 		@include htags(0.6);
+	}
+	.flexslider h6 {
+		line-height: 1;
 	}
 
 	button, input[type="button"], input[type="reset"], input[type="submit"] {

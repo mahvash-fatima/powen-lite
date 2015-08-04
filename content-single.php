@@ -19,9 +19,9 @@
 	<header class="entry-header">
 		<?php esc_attr( the_title( '<h2 class="entry-title">', '</h2>' ) ); ?>
 
-		<div class="entry-meta">
-			<?php powen_posted_on(); ?>
-		</div><!-- .entry-meta -->
+
+			<?php powen_hide_posted_on(); ?>
+
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
