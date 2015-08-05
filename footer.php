@@ -51,7 +51,7 @@
 			<div class="powen-footer-site-info">
 
 			    <?php echo apply_filters( 'powen_copyright_date_text', esc_attr( '(C)', 'powen' ) ); ?><?php echo apply_filters( 'powen_footer_copyright_date', __( date('Y') ) ); ?><a href="<?php echo apply_filters( 'powen_copyright_text_url', esc_url( home_url('/') ) ); ?>" class="powen-copyright" title="<?php echo apply_filters( 'powen_copyright_text', esc_attr( get_bloginfo('name', 'display') ) ); ?>">
-			        <?php echo esc_textarea( powen_mod( 'copyright_textbox', 'Copyright'), 'powen' ); ?>
+			        <?php echo esc_textarea( powen_mod( 'copyright_textbox' ), 'powen' ); ?>
 			    </a>
 
 				<span class="sep"><?php echo apply_filters( 'powen_footer_site_info_pipe',  ' |'  ); ?></span>

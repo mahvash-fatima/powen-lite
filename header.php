@@ -45,10 +45,8 @@
 				</div>
 
 				<!-- Social Media Icon -->
-				<div class="powen-social_media_container">
 				<?php powen_social_media_icons(); ?>
 				<?php do_action('powen_header_social_container_extras' ); ?>
-				</div>
 
 				<?php do_action( 'powen_header_top_most_extras' ); ?>
 

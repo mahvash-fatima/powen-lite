@@ -179,7 +179,6 @@ class Powen_Customizer {
       foreach($powen_social_sites as $powen_social_site)
       {
           $wp_customize->add_setting( "powen_mod[{$powen_social_site}]", array(
-              'default'           => '',
               'sanitize_callback' => 'esc_url_raw',
               'capability'        => 'edit_theme_options',
           ) );
@@ -244,7 +243,6 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting( 'powen_slides['.$i.'][title]', array(
-          'default'           => '',
           'sanitize_callback' => 'sanitize_text_field',
           'capability'        => 'edit_theme_options',
       ) );
@@ -257,7 +255,6 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting( 'powen_slides['.$i.'][description]', array(
-          'default'           => '',
           'sanitize_callback' => 'sanitize_text_field',
           'capability'        => 'edit_theme_options',
       ) );
@@ -270,7 +267,6 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting( 'powen_slides['.$i.'][link]', array(
-          'default'           => '',
           'sanitize_callback' => 'esc_url_raw',
           'capability'        => 'edit_theme_options',
       ) );
@@ -283,7 +279,6 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting( 'powen_slides['.$i.'][image]', array(
-          'default'           => '',
           'sanitize_callback' => 'esc_url_raw',
           'capability'        => 'edit_theme_options',
       ) );
@@ -305,7 +300,7 @@ class Powen_Customizer {
       $theme_colors = apply_filters('powen_theme_colors_array', array(
             array(
                       'slug'    =>'powen_mod[theme_color]',
-                      'default' => '#6897bb',
+                      'default' => '#daa520',
                       'label'   => __( 'Theme Color', 'powen' )
                   ),
             array(
@@ -434,7 +429,6 @@ class Powen_Customizer {
       //Upload logo
 
       $wp_customize->add_setting( 'powen_mod[upload_logo]', array(
-          'default'           => '',
           'sanitize_callback' => 'esc_url_raw',
           'capability'        => 'edit_theme_options',
 
@@ -468,7 +462,6 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting('powen_mod[theme_favicon]', array(
-          'default'           => '',
           'sanitize_callback' => 'esc_url_raw',
           'capability'        => 'edit_theme_options',
 

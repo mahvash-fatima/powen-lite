@@ -1158,8 +1158,6 @@ h1.site-title {
 }
 
 .site-title, .site-description {
-  margin: 0;
-  line-height: 3.125rem;
   vertical-align: bottom;
 }
 
@@ -1350,9 +1348,7 @@ h1.site-title {
 }
 
 .powen-nav {
-  display: block;
-  text-align: left;
-  width: 100%;
+  display: inline-block;
 }
 .powen-nav a {
   padding: 0.809rem 0;
@@ -1372,6 +1368,10 @@ h1.site-title {
   color: #666666;
 }
 
+.powen-search-box-top {
+  display: inline-block;
+  float: right;
+}
 .powen-search-box-top .search-form {
   padding: 0 0.625rem;
   position: relative;

@@ -100,8 +100,6 @@ h1.site-title {
 }
 
 .site-title, .site-description {
-	margin: 0;
-	line-height: rem-calc(50);
 	vertical-align: bottom;
 }
 
@@ -309,9 +307,7 @@ h1.site-title {
 }
 
 .powen-nav {
-	display: block;
-	text-align: left;
-	width: 100%;
+	display: inline-block;
 	a {
 		padding: $default_gutter/2 0;
 	}
@@ -322,16 +318,20 @@ h1.site-title {
 	overflow: hidden;
 }
 .powen-top-most-nav, .powen-main-navigation {
-	padding: 0 rem-calc(10);
+	padding: rem-calc(0 10);
 	display: inline-block;
 	a {
 		color: #666666;
 	}
 }
 
-.powen-search-box-top .search-form {
-	padding: 0 rem-calc(10);
-	position: relative;
+.powen-search-box-top {
+	display: inline-block;
+	float: right;
+	.search-form {
+		padding: rem-calc(0 10);
+		position: relative;
+	}
 }
 
 // Footer

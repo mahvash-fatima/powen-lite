@@ -213,7 +213,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 		//=====================
 
 		//color (on hover)
-		$color_hover_selectors = apply_filters('powen_color_hover_selectors_array', array( 'a:hover', 'a:active' ) );
+		$color_hover_selectors = apply_filters('powen_color_hover_selectors_array', array( 'a:hover', 'a:active', ) );
 
 		//background should change on hover.
 		$background_color_hover_selectors = apply_filters('powen_background_color_hover_selectors_array', array(
@@ -224,7 +224,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'button:hover',
 			'input[type="button"]:hover',
 			'input[type="reset"]:hover',
-			'input[type="submit"]:hover'
+			'input[type="submit"]:hover',
 		) );
 
 		// border color (on hover)
@@ -234,7 +234,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'.powen-pagination .next:hover',
 			'.powen-pagination .prev:hover',
 			'.powen-pagination .last:hover',
-			'.widget_powen_social_widget ul li a:hover'
+			'.widget_powen_social_widget ul li a:hover',
 		) );
 
 		self::generate_css( $color_hover_selectors, 'color', 'hover_link_color', false, false, '#dd9933' );

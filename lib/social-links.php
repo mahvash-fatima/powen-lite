@@ -35,6 +35,7 @@ function powen_social_media_icons()
 
     // CREATE THE OUTPUT for each active social site, add it as a list item
     if( $active_sites ) { ?>
+    <div class="powen-social-media-container">
         <ul class='powen-social-media-icons'>
             <?php foreach ($active_sites as $site => $site_url ) : ?>
             <li>
@@ -48,6 +49,7 @@ function powen_social_media_icons()
             </li>
             <?php endforeach; ?>
         </ul>
+    </div>
         <?php
     }
 }
