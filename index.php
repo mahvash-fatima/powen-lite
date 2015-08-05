@@ -41,7 +41,7 @@ get_header(); ?>
 
 			<?php endwhile; else : ?>
 
-			<p><?php echo __( 'Sorry, no posts matched your criteria.' ); ?></p>
+			<p><?php echo __( 'Sorry, no posts matched your criteria.', 'powen' ); ?></p>
 
 			<?php endif; wp_reset_postdata(); ?>
 
