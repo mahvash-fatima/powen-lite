@@ -19,9 +19,10 @@
 		<?php esc_attr( the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ) ); ?>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
-
-			<?php powen_hide_posted_on(); ?>
-
+		<div class="entry-meta">
+			<?php powen_posted_on(); ?>
+			<?php powen_the_author(); ?>
+		</div>
 		<?php endif; ?>
 
 	</header><!-- .entry-header -->

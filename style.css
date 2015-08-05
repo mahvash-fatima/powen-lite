@@ -1368,6 +1368,9 @@ h1.site-title {
   padding: 0 0.625rem;
   display: inline-block;
 }
+.powen-top-most-nav a, .powen-main-navigation a {
+  color: #666666;
+}
 
 .powen-search-box-top .search-form {
   padding: 0 0.625rem;
@@ -1735,6 +1738,7 @@ Write your code here
   content: "\f0c9";
   padding: 0.3125rem;
   font-size: 1.25em;
+  vertical-align: bottom;
 }
 
 .powen-search-box-top .search-form label:after {

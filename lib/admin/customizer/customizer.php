@@ -31,14 +31,26 @@ class Powen_Customizer {
           'capability' => 'edit_theme_options',
       ) );
 
-      //HIDE DATE & AUTHOR NAME IN POST
+      //Hide author
 
-      $wp_customize->add_setting( 'powen_mod[hide_date_author]', array(
+      $wp_customize->add_setting( 'powen_mod[hide_author]', array(
           'capability' => 'edit_theme_options',
       ) );
 
-      $wp_customize->add_control( new WP_Customize_Control ( $wp_customize, 'powen_mod[hide_date_author]', array(
-              'label'       => 'Hide The Author & Date',
+      $wp_customize->add_control( new WP_Customize_Control ( $wp_customize, 'powen_mod[hide_author]', array(
+              'label'       => __('Hide The Author of The Post', 'powen'),
+              'type'        => 'checkbox',
+              'section'     => 'powen_content_section',
+      ) ) );
+
+      //Hide date
+
+      $wp_customize->add_setting( 'powen_mod[hide_date]', array(
+          'capability' => 'edit_theme_options',
+      ) );
+
+      $wp_customize->add_control( new WP_Customize_Control ( $wp_customize, 'powen_mod[hide_date]', array(
+              'label'       => __('Hide The Date of The Post', 'powen'),
               'type'        => 'checkbox',
               'section'     => 'powen_content_section',
       ) ) );
@@ -52,7 +64,7 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[content_length]', array(
-          'label'         =>   __( 'Content Length', 'powen' ),
+          'label'         =>   __( 'Post Content Length', 'powen' ),
           'type'          =>  'radio',
           'choices'       =>  array(
             'excerpt' => __( 'Excerpt', 'powen' ),
@@ -76,6 +88,33 @@ class Powen_Customizer {
           'settings'      => 'powen_mod[read_more_textbox]',
       ) ) );
 
+      //COPYRIGHT TEXT
+
+      $wp_customize->add_setting( 'powen_mod[copyright_textbox]', array(
+          'default'           => __( '@copyright', 'powen' ),
+          'sanitize_callback' => 'sanitize_text_field',
+          'capability'        => 'edit_theme_options',
+      ) );
+
+      $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[copyright_textbox]', array(
+          'label'         => __( 'Copyright Text', 'powen' ),
+          'section'       => 'powen_content_section',
+          'settings'      => 'powen_mod[copyright_textbox]',
+      ) ) );
+
+      //Change Theme Author's Name
+
+      $wp_customize->add_setting( 'powen_mod[theme_author]', array(
+          'default'           => __( 'Supernova Themes', 'powen' ),
+          'sanitize_callback' => 'sanitize_text_field',
+          'capability'        => 'edit_theme_options',
+      ) );
+
+      $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[theme_author]', array(
+          'label'         => __( "Author's Name", 'powen' ),
+          'section'       => 'powen_content_section',
+          'settings'      => 'powen_mod[theme_author]',
+      ) ) );
 
       /*==============================
               MENU TITLES NAV SECTION
@@ -143,7 +182,6 @@ class Powen_Customizer {
               'default'           => '',
               'sanitize_callback' => 'esc_url_raw',
               'capability'        => 'edit_theme_options',
-
           ) );
 
           $wp_customize->add_control( "powen_mod[{$powen_social_site}]" , array(
@@ -182,27 +220,6 @@ class Powen_Customizer {
           'section'       =>  'powen_sidebar_layout_section',
           'settings'      =>  'powen_mod[sidebar_position]',
 
-      ) ) );
-
-      /*==============================
-                COPYRIGHT TEXT
-      ===============================*/
-
-      $wp_customize->add_section( 'powen_copyright_text_section' , array(
-          'title'      =>  __( 'Copyright Text', 'powen' ),
-          'capability' => 'edit_theme_options',
-      ) );
-
-      $wp_customize->add_setting( 'powen_mod[copyright_textbox]', array(
-          'default'           => '@copyright',
-          'sanitize_callback' => 'sanitize_text_field',
-          'capability'        => 'edit_theme_options',
-      ) );
-
-      $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[copyright_textbox]', array(
-          'label'         => __( 'Copyright Text', 'powen' ),
-          'section'       => 'powen_copyright_text_section',
-          'settings'      => 'powen_mod[copyright_textbox]',
       ) ) );
 
       /*==============================

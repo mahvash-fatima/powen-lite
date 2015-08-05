@@ -58,7 +58,7 @@
 
 				<?php
 					$footerUrl = esc_url( 'http://supernovathemes.com' );
-					printf( __( '%1$s by %2$s.', 'powen' ), 'Powen', '<a href= '.apply_filters( 'powen_theme_url', $footerUrl ).' class="powen-site" rel="designer">'.apply_filters( 'powen_theme_website_name', 'Supernova Themes' ).'</a>' );
+					printf( __( '%1$s by %2$s.', 'powen' ), 'Powen', '<a href= '.apply_filters( 'powen_theme_url', $footerUrl ).' class="powen-site" rel="designer">'.powen_mod('theme_author', 'Supernova Themes').'</a>' );
 				?>
 
 				<?php do_action( 'powen_footer_bottom_extras' ); ?>

@@ -324,6 +324,9 @@ h1.site-title {
 .powen-top-most-nav, .powen-main-navigation {
 	padding: 0 rem-calc(10);
 	display: inline-block;
+	a {
+		color: #666666;
+	}
 }
 
 .powen-search-box-top .search-form {

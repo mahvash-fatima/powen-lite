@@ -91,21 +91,3 @@ if( ! function_exists( 'powen_content' ) )
 		}
 	}
 }
-
-if( ! function_exists( 'powen_hide_posted_on' ) ) {
-
-	function powen_hide_posted_on()
-	{
-
-		if( powen_mod('hide_date_author') == '' ) { ?>
-
-			<div class="entry-meta">
-			<?php powen_posted_on(); ?>
-			</div>
-
-			<?php
-		}
-
-	}
-
-}

@@ -4,6 +4,7 @@
  * Social media items
  * @return array social sites array
  */
+
 function powen_customizer_social_media_array()
 {
     // store social site names in array

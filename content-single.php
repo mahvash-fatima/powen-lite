@@ -20,7 +20,8 @@
 		<?php esc_attr( the_title( '<h2 class="entry-title">', '</h2>' ) ); ?>
 
 
-			<?php powen_hide_posted_on(); ?>
+			<?php powen_posted_on(); ?>
+			<?php powen_the_author(); ?>
 
 	</header><!-- .entry-header -->
 

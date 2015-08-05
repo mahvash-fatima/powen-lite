@@ -15,7 +15,8 @@
 
 			<?php if ( 'post' == get_post_type() ) : ?>
 
-				<?php powen_hide_posted_on(); ?>
+				<?php powen_posted_on(); ?>
+				<?php powen_the_author(); ?>
 
 			<?php endif; ?>
 		</header><!-- .entry-header -->
