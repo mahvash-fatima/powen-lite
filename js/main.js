@@ -24,7 +24,11 @@
 		//Main Menu
 		mainMenu: function(){
 			var $mainNav = $('#main-nav');
-			$mainNav.mmenu({}, {clone: true}).on( 'opened.mm', function() {
+			$mainNav.mmenu({
+				offCanvas: {
+				               position  : "right",
+				            }
+			 }, {clone: true}).on( 'opened.mm', function() {
 				$mainNav.trigger("open.mm");
 			});
 		},

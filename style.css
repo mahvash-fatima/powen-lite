@@ -1354,7 +1354,7 @@ h1.site-title {
   padding: 0.809rem 0;
 }
 
-.powen-social-media-icons {
+.powen-social-media-container {
   width: 100%;
   text-align: right;
   overflow: hidden;
@@ -1819,31 +1819,31 @@ Write your code here
 .widget_archive li:before {
   content: "\f105";
   color: #cccccc;
-  margin-right: 0.3125rem;
+  margin-right: 0.9375rem;
 }
 
 .widget_recent_entries li:before {
   content: "\f105";
   color: #cccccc;
-  margin-right: 0.3125rem;
+  margin-right: 0.9375rem;
 }
 
 .widget_categories li:before {
   content: "\f105";
   color: #cccccc;
-  margin-right: 0.3125rem;
+  margin-right: 0.9375rem;
 }
 
 .widget_meta li:before {
   content: "\f105";
   color: #cccccc;
-  margin-right: 0.3125rem;
+  margin-right: 0.9375rem;
 }
 
 .widget_pages li:before {
   content: "\f105";
   color: #cccccc;
-  margin-right: 0.3125rem;
+  margin-right: 0.9375rem;
 }
 
 .powen-wrapper .recent-comment-people:before {
@@ -1859,13 +1859,13 @@ Write your code here
 .menu-long-menu-container li:before {
   content: "\f105";
   color: #cccccc;
-  margin-right: 0.3125rem;
+  margin-right: 0.9375rem;
 }
 
 .widget_recent_entries li:before {
   content: "\f105";
   color: #cccccc;
-  margin-right: 0.625rem;
+  margin-right: 0.9375rem;
 }
 
 .entry-header:after, .widget-title:after {
