@@ -11,3 +11,4 @@ Gruntfile.js
 *.rb
 *.log
 *.json
+style.css.map
