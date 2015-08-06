@@ -15,8 +15,6 @@ $first_post_id = false;
 
 get_header(); ?>
 
-<?php get_template_part( 'template-parts/banner' ); ?><!-- Slider -->
-
 <?php if( get_query_var( 'paged' ) === 0 ) { ?>
 	<div id="powen-latest-post" class="powen-recent-post">
 		<div class="powen-wrapper">
