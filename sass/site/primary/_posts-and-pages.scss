@@ -105,6 +105,8 @@
     overflow:hidden;
     background: #fff;
     margin: 0;
+    padding: $default_gutter;
+    text-align: right;
 }
 
 .breadcrumbs li{

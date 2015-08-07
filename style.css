@@ -231,6 +231,10 @@ big {
   font-size: 125%;
 }
 
+.reply {
+  padding: 1.618rem;
+}
+
 /*--------------------------------------------------------------
 3.0 Elements
 --------------------------------------------------------------*/
@@ -804,6 +808,8 @@ input[type="submit"] {
   overflow: hidden;
   background: #fff;
   margin: 0;
+  padding: 1.618rem;
+  text-align: right;
 }
 
 .breadcrumbs li {
@@ -1174,7 +1180,7 @@ h1.site-title {
   margin: 1.618rem auto;
 }
 
-.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation, .powen-most-recent-post {
+.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
   padding-left: 4.2358rem;
   padding-right: 4.2358rem;
   padding-bottom: 2.61792rem;
@@ -1183,16 +1189,12 @@ h1.site-title {
   background-color: #ffffff;
 }
 
-.article-hentry, .powen-most-recent-post {
+.article-hentry {
   margin: 0 0 1.618rem 0;
 }
 
 .site-info, .footer_widgets {
   padding: 1.618rem 0;
-}
-
-.powen-recent-post {
-  margin-top: 1.618rem;
 }
 
 .powen-pagination {
@@ -1456,7 +1458,7 @@ h1.site-title {
     font-size: 1.37865rem;
   }
 
-  .article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation, .powen-most-recent-post {
+  .article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
     padding-left: 2.61792rem;
     padding-right: 2.61792rem;
     padding-top: 1.618rem;
@@ -1470,6 +1472,10 @@ h1.site-title {
     margin-left: -2.61792rem;
   }
 }
+.powen-most-recent-post {
+  margin-top: 2.61792rem;
+}
+
 @media (max-width: 56.25rem) {
   #primary, #secondary {
     overflow: hidden;

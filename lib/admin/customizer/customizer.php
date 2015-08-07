@@ -205,7 +205,7 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting( 'powen_mod[sidebar_position]', array(
-          'default'           => 'left',
+          'default'           => 'right',
           'sanitize_callback' => 'powen_sanitize_choices',
           'capability'        => 'edit_theme_options',
       ) );
@@ -233,17 +233,18 @@ class Powen_Customizer {
           'description' => __( 'Make slides', 'powen' ),
       ) );
 
-      for ( $i=1; $i <= apply_filters( 'powen_increase_slides', '20' ); $i++ ) {
+      for ( $i=0; $i <= apply_filters( 'powen_increase_slides', '19' ); $i++ ) {
 
       $wp_customize->add_section( 'powen_slider_section_' . $i, array(
           'priority'    => 10,
           'capability'  => 'edit_theme_options',
-          'title'       => sprintf( __( 'Slide %s' , 'powen' ), $i ),
+          'title'       => sprintf( __( 'Slide %s' , 'powen' ), $i+1 ),
           'description' => __( 'Add slide', 'powen' ),
           'panel'       => 'powen_slider_pannel',
       ) );
 
       $wp_customize->add_setting( 'powen_slides['.$i.'][title]', array(
+          'default'           => sprintf( __( 'Demo Post %s' , 'powen' ), $i+1 ),
           'sanitize_callback' => 'sanitize_text_field',
           'capability'        => 'edit_theme_options',
       ) );
@@ -256,6 +257,7 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting( 'powen_slides['.$i.'][description]', array(
+          'default'           => __('Description', 'powen'),
           'sanitize_callback' => 'sanitize_text_field',
           'capability'        => 'edit_theme_options',
       ) );
@@ -268,6 +270,7 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting( 'powen_slides['.$i.'][link]', array(
+          'link'              => '/',
           'sanitize_callback' => 'esc_url_raw',
           'capability'        => 'edit_theme_options',
       ) );
@@ -280,6 +283,7 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting( 'powen_slides['.$i.'][image]', array(
+          'default'           => get_template_directory_uri() . '/images/slides/slide5.jpg',
           'sanitize_callback' => 'esc_url_raw',
           'capability'        => 'edit_theme_options',
       ) );
@@ -306,7 +310,7 @@ class Powen_Customizer {
                   ),
             array(
                       'slug'    =>'powen_mod[hover_link_color]',
-                      'default' => '#fa8072',
+                      'default' => '#dd9933',
                       'label'   => __( 'Link Color (on hover)', 'powen' )
                   ),
             array(
