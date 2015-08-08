@@ -46,9 +46,12 @@ get_header(); ?>
 		</div><!-- powen-wrapper -->
 	</div><!-- powen-recent-post -->
 
-			<?php } ?>
+	<?php do_action( 'powen_after_first_home_post' ); ?>
 
-	<?php do_action( 'powen_homepage_extras' ); ?>
+<?php } ?>
+
+
+<?php do_action( 'powen_before_content' ); ?>
 
 <div id="content" class="site-content clear">
 	<div id="primary" class="content-area">

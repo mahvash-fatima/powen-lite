@@ -69,3 +69,14 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 	}
 	add_action( 'wp_head', 'powen_render_title' );
 endif;
+
+add_action( 'powen_files_load' , 'powen_load_extras' );
+function powen_load_extras()
+{
+	$file = POWEN_DR . '/pro/powen-pro.php';
+
+	if (file_exists($file)) {
+		define( 'POWEN_PRO', true );
+	    require_once $file;
+	}
+}

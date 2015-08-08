@@ -23,6 +23,8 @@ get_header(); ?>
 
 				<?php get_template_part( 'content', 'single' ); ?>
 
+				<?php do_action( 'powen_after_single_post' ); ?>
+
 				<!-- Post Navigation -->
 				<?php
 					if ( function_exists( "powen_the_post_navigation" ) ) {

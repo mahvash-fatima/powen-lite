@@ -25,13 +25,9 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="powen-wrapper clear">
 
-		<?php do_action( 'powen_header_top_extras' ); ?>
+		<?php do_action( 'powen_header_top_most' ); ?>
 
-			<?php
-			/*
-			 * Navigation
-			 */
-			?>
+			<?php //Navigation ?>
 
 			<nav id="top-most-container" class="powen-top-container">
 
@@ -58,11 +54,7 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'menu_class'=>'powen-wrapper', 'menu_id' => 'main_nav') ); ?>
 			</nav>
 
-			<?php
-			/*
-			 * Site branding
-			 */
-			?>
+			<?php do_action( 'powen_before_site_branding' ); ?>
 			<div class="site-branding">
 
 				<?php if ( powen_mod( 'upload_logo' ) ) : ?>
@@ -81,11 +73,9 @@
 
 				<?php endif; ?>
 
-				<?php do_action( 'powen_header_site_branding_extras' ); ?>
-
 			</div><!-- site-branding -->
 
-		<?php do_action( 'powen_header_bottom_extras' ); ?>
+		<?php do_action( 'powen_after_site_branding' ); ?>
 
 		</div>
 	</header>
@@ -93,5 +83,6 @@
 	<?php
 		if ( is_home() || is_front_page() ) {
 		   get_template_part( 'template-parts/banner' );
+		   do_action( 'powen_after_slider' );
 		}
 	?>

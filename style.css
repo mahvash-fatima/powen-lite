@@ -39,7 +39,6 @@ Powen Lite WordPress theme is licensed under the GPL.
 /*--------------------------------------------------------------
 1.0 Reset
 --------------------------------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -229,10 +228,6 @@ small {
 
 big {
   font-size: 125%;
-}
-
-.reply {
-  padding: 1.618rem;
 }
 
 /*--------------------------------------------------------------
@@ -808,7 +803,7 @@ input[type="submit"] {
   overflow: hidden;
   background: #fff;
   margin: 0;
-  padding: 1.618rem;
+  padding: 1.618rem 1.618rem 0.809rem;
   text-align: right;
 }
 
@@ -1180,7 +1175,7 @@ h1.site-title {
   margin: 1.618rem auto;
 }
 
-.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
+.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation, .powen-most-recent-post {
   padding-left: 4.2358rem;
   padding-right: 4.2358rem;
   padding-bottom: 2.61792rem;
@@ -1189,12 +1184,16 @@ h1.site-title {
   background-color: #ffffff;
 }
 
-.article-hentry {
+.article-hentry, .powen-most-recent-post {
   margin: 0 0 1.618rem 0;
 }
 
 .site-info, .footer_widgets {
   padding: 1.618rem 0;
+}
+
+.powen-recent-post {
+  margin-top: 1.618rem;
 }
 
 .powen-pagination {
@@ -1458,7 +1457,7 @@ h1.site-title {
     font-size: 1.37865rem;
   }
 
-  .article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
+  .article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation, .powen-most-recent-post {
     padding-left: 2.61792rem;
     padding-right: 2.61792rem;
     padding-top: 1.618rem;
@@ -1472,10 +1471,6 @@ h1.site-title {
     margin-left: -2.61792rem;
   }
 }
-.powen-most-recent-post {
-  margin-top: 2.61792rem;
-}
-
 @media (max-width: 56.25rem) {
   #primary, #secondary {
     overflow: hidden;

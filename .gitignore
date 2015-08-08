@@ -6,9 +6,9 @@ npm-debug.log
 .DS_Store
 *.sublime-project
 *.sublime-workspace
+pro
 /nbproject/private/
 Gruntfile.js
 *.rb
 *.log
 *.json
-style.css.map

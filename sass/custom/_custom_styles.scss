@@ -121,7 +121,7 @@ h1.site-title {
 //**** Posts & pages
 
 // (hentry class covers both) plus their internal elements
-.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
+.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation, .powen-most-recent-post {
 	padding-left: $post_l_padding;
 	padding-right: $post_r_padding;
 	padding-bottom: $post_b_padding;
@@ -131,12 +131,16 @@ h1.site-title {
 	@include main_panel();
 }
 
-.article-hentry {
+.article-hentry, .powen-most-recent-post {
 	@include sticky_post();
 }
 
 .site-info, .footer_widgets {
 	padding: $default_gutter 0;
+}
+
+.powen-recent-post {
+	margin-top: $default_gutter;
 }
 
 .powen-pagination {
@@ -381,7 +385,7 @@ h1.site-title {
 	$post_t_padding: $default_h_padding / $phi;
 	$post_b_padding: $post_t_padding;
 
-	.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
+	.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation, .powen-most-recent-post {
 		padding-left: $post_l_padding;
 		padding-right: $post_r_padding;
 		padding-top: $post_t_padding;
@@ -395,10 +399,6 @@ h1.site-title {
 		margin-left: -$post_l_padding;
 	}
 
-}
-
-.powen-most-recent-post {
-	margin-top: $post_t_padding;
 }
 
 @media (max-width: rem-calc(900)) {

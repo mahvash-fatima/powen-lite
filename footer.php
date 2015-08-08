@@ -7,9 +7,10 @@
  * @package powen
  */
 ?>
+	<?php do_action( 'powen_above_footer' ); ?>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-	<?php do_action( 'powen_footer_top_extras' ); ?>
+	<?php do_action( 'powen_footer_begins' ); ?>
 	<div id="footer-widgets" class="footer_widgets">
 			<div class="powen-wrapper">
 				<?php if( is_active_sidebar( 'first-footer-widget-area' )
@@ -41,6 +42,7 @@
 		    	        <?php dynamic_sidebar( 'fourth-footer-widget-area' ); ?>
 		    	    </div><!-- .fourth .widget-area -->
 		    	    <?php } ?>
+		    	    <?php do_action( 'powen_footer_widgets' ); ?>
 		    	</aside><!-- #fatfooter -->
 		    	<?php endif; ?>
 		    </div><!-- .powen-wrapper -->
@@ -49,7 +51,7 @@
 	<div id="site-info" class="site-info">
 		<div class="powen-wrapper">
 			<div class="powen-footer-site-info">
-
+				<?php do_action( 'powen_footer_site_info_begins' ); ?>
 			    <?php echo apply_filters( 'powen_copyright_date_text', esc_attr( '(C)', 'powen' ) ); ?><?php echo apply_filters( 'powen_footer_copyright_date', __( date('Y') ) ); ?><a href="<?php echo apply_filters( 'powen_copyright_text_url', esc_url( home_url('/') ) ); ?>" class="powen-copyright" title="<?php echo apply_filters( 'powen_copyright_text', esc_attr( get_bloginfo('name', 'display') ) ); ?>">
 			        <?php echo esc_textarea( powen_mod( 'copyright_textbox' ), 'powen' ); ?>
 			    </a>
@@ -61,13 +63,17 @@
 					printf( __( '%1$s by %2$s.', 'powen' ), 'Powen', '<a href= '.apply_filters( 'powen_theme_url', $footerUrl ).' class="powen-site" rel="designer">'.powen_mod('theme_author', 'Supernova Themes').'</a>' );
 				?>
 
-				<?php do_action( 'powen_footer_bottom_extras' ); ?>
+				<?php do_action( 'powen_footer_site_info_ends' ); ?>
 
 			</div>
 		</div><!-- powen-wrapper -->
 	</div><!-- site-info -->
 
+	<?php do_action( 'powen_footer_ends' ); ?>
+
 	</footer><!-- #colophon -->
+
+	<?php do_action( 'powen_after_footer' ); ?>
 
 <!-- back to top -->
 <div id="scroll-bar" class="footer-scroll"></div>
