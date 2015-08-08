@@ -164,6 +164,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 
 		//color
 		$color_selectors = apply_filters('powen_create_color_scheme_array', array (
+			'p a',
 			'.powen-continue-reading:after',
 			'.cat-links:before',
 			'.comments-link:before',
