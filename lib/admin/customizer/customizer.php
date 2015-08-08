@@ -205,7 +205,7 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting( 'powen_mod[sidebar_position]', array(
-          'default'           => 'left',
+          'default'           => 'right',
           'sanitize_callback' => 'powen_sanitize_choices',
           'capability'        => 'edit_theme_options',
       ) );
