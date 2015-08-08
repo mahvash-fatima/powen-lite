@@ -233,12 +233,12 @@ class Powen_Customizer {
           'description' => __( 'Make slides', 'powen' ),
       ) );
 
-      for ( $i=1; $i <= apply_filters( 'powen_increase_slides', '20' ); $i++ ) {
+      for ( $i=0; $i <= apply_filters( 'powen_increase_slides', 19 ); $i++ ) {
 
       $wp_customize->add_section( 'powen_slider_section_' . $i, array(
           'priority'    => 10,
           'capability'  => 'edit_theme_options',
-          'title'       => sprintf( __( 'Slide %s' , 'powen' ), $i ),
+          'title'       => sprintf( __( 'Slide %s' , 'powen' ), $i+1 ),
           'description' => __( 'Add slide', 'powen' ),
           'panel'       => 'powen_slider_pannel',
       ) );
