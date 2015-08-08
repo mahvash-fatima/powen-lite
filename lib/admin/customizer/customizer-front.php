@@ -214,7 +214,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 		//=====================
 
 		//color (on hover)
-		$color_hover_selectors = apply_filters('powen_color_hover_selectors_array', array( 'a:hover', 'a:active', ) );
+		$color_hover_selectors = apply_filters('powen_color_hover_selectors_array', array( 'a:hover', 'a:active', '.breadcrumbs li a:hover', 'p a:hover') );
 
 		//background should change on hover.
 		$background_color_hover_selectors = apply_filters('powen_background_color_hover_selectors_array', array(
