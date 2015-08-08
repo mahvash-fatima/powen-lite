@@ -54,7 +54,7 @@ ul, ol {
 	margin: 0 auto;
 }
 
-.footer_widgets {
+.powen-footer-widgets {
 	overflow: hidden;
 }
 
@@ -121,7 +121,7 @@ h1.site-title {
 //**** Posts & pages
 
 // (hentry class covers both) plus their internal elements
-.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation, .powen-most-recent-post {
+.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
 	padding-left: $post_l_padding;
 	padding-right: $post_r_padding;
 	padding-bottom: $post_b_padding;
@@ -131,11 +131,15 @@ h1.site-title {
 	@include main_panel();
 }
 
-.article-hentry, .powen-most-recent-post {
+.powen-most-recent-post {
+	margin-top: $post_t_padding;
+}
+
+.article-hentry {
 	@include sticky_post();
 }
 
-.site-info, .footer_widgets {
+.site-info, .powen-footer-widgets {
 	padding: $default_gutter 0;
 }
 
@@ -231,6 +235,10 @@ h1.site-title {
 		padding: $default_gutter;
 		@include comment();
 	}
+}
+
+.comment-respond .form-allowed-tags {
+	display: none;
 }
 
 //**** Widgets
@@ -341,7 +349,7 @@ h1.site-title {
 	overflow: hidden;
 }
 
-.footer_widgets .widget {
+.powen-footer-widgets .widget {
 	background: transparent;
 	float: left;
 	margin: 0 1% 0 0;
@@ -350,7 +358,7 @@ h1.site-title {
 }
 
 //colors
-.footer_widgets {
+.powen-footer-widgets {
 	background: #222222;
 	color: #808080;
 	a {
@@ -385,7 +393,7 @@ h1.site-title {
 	$post_t_padding: $default_h_padding / $phi;
 	$post_b_padding: $post_t_padding;
 
-	.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation, .powen-most-recent-post {
+	.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
 		padding-left: $post_l_padding;
 		padding-right: $post_r_padding;
 		padding-top: $post_t_padding;

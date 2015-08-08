@@ -16,7 +16,8 @@
 	right: 0;
 	color: #fff;
 	span {
-		padding: rem-calc(10 30);
+		padding: rem-calc(0 20);
+		display: inline-block;
 	}
 }
 
@@ -105,7 +106,7 @@
     overflow:hidden;
     background: #fff;
     margin: 0;
-    padding: $default_gutter $default_gutter $default_gutter/2;
+    padding: $default_gutter;
     text-align: right;
 }
 

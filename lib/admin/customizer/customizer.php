@@ -244,6 +244,7 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting( 'powen_slides['.$i.'][title]', array(
+          'default'           => sprintf( __( 'Demo Post %s' , 'powen' ), $i+1 ),
           'sanitize_callback' => 'sanitize_text_field',
           'capability'        => 'edit_theme_options',
       ) );
@@ -256,6 +257,7 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting( 'powen_slides['.$i.'][description]', array(
+          'default'           => __('Description', 'powen'),
           'sanitize_callback' => 'sanitize_text_field',
           'capability'        => 'edit_theme_options',
       ) );
@@ -268,6 +270,7 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting( 'powen_slides['.$i.'][link]', array(
+          'default'           => esc_url(home_url( '/' )),
           'sanitize_callback' => 'esc_url_raw',
           'capability'        => 'edit_theme_options',
       ) );
@@ -280,6 +283,7 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting( 'powen_slides['.$i.'][image]', array(
+          'default'           => esc_url(get_template_directory_uri() . '/images/slides/slide1.jpg'),
           'sanitize_callback' => 'esc_url_raw',
           'capability'        => 'edit_theme_options',
       ) );
@@ -325,18 +329,18 @@ class Powen_Customizer {
                       'label'   => __( 'Header Background Color', 'powen' )
                   ),
             array(
-                      'slug'    =>'powen_mod[footer_widgets_background]',
+                      'slug'    =>'powen_mod[powen-footer-widgets_background]',
                       'default' => '#222222',
                       'label'   => __( 'Footer widgets background color', 'powen' )
                   ),
             array(
-                      'slug'    =>'powen_mod[footer_widgets_textcolor]',
+                      'slug'    =>'powen_mod[powen-footer-widgets_textcolor]',
                       'default' => '#808080',
                       'label'   => __( 'Footer widgets text color', 'powen' )
                   ),
 
             array(
-                      'slug'    =>'powen_mod[footer_widgets_linkcolor]',
+                      'slug'    =>'powen_mod[powen-footer-widgets_linkcolor]',
                       'default' => '#cccccc',
                       'label'   => __( 'Footer widgets link color', 'powen' )
                   ),

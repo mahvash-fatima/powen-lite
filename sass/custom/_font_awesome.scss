@@ -10,8 +10,6 @@ FontAwesome
 	.comments-link:before,
 	.edit-link:before,
 	.nav-previous a:before,
-	.flex-direction-nav li .flex-prev:before,
-	.flex-direction-nav li .flex-next:before,
 	.nav-next a:after,
 	.author:before,
 	.content-area .hentry .entry-date:after,
@@ -89,16 +87,6 @@ Write your code here
 .nav-previous a:before {
 	content: "\f100";
 	margin: rem-calc(0 5);
-}
-//Previous
-.flex-direction-nav li .flex-prev:before {
-	content: "\f100";
-	color: #ffffff;
-}
-//Next
-.flex-direction-nav li .flex-next:before {
-	content: "\f101";
-	color: #ffffff;
 }
 //Newer posts
 .nav-next a:after {

@@ -81,21 +81,21 @@
 		} );
 	} );
 
-	wp.customize( 'powen_mod[footer_widgets_background]', function( value ) {
+	wp.customize( 'powen_mod[powen-footer-widgets_background]', function( value ) {
 		value.bind( function( newval ) {
-			$('.footer_widgets').css('background-color', newval );
+			$('.powen-footer-widgets').css('background-color', newval );
 		} );
 	} );
 
-	wp.customize( 'powen_mod[footer_widgets_textcolor]', function( value ) {
+	wp.customize( 'powen_mod[powen-footer-widgets_textcolor]', function( value ) {
 		value.bind( function( newval ) {
-			$('.footer_widgets').css('color', newval );
+			$('.powen-footer-widgets').css('color', newval );
 		} );
 	} );
 
-	wp.customize( 'powen_mod[footer_widgets_linkcolor]', function( value ) {
+	wp.customize( 'powen_mod[powen-footer-widgets_linkcolor]', function( value ) {
 		value.bind( function( newval ) {
-			$('.footer_widgets a').css('color', newval );
+			$('.powen-footer-widgets a').css('color', newval );
 		} );
 	} );
 

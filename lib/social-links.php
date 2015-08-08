@@ -27,7 +27,7 @@ function powen_social_media_icons()
 
     // any inputs that aren't empty are stored in $active_sites array
     foreach( $powen_social_sites as $key => $powen_social_site) {
-        $social_url = ( $key < 6 ) ? powen_mod( $powen_social_site , "http://{$powen_social_site}.com" ) : powen_mod( $powen_social_site );
+        $social_url = powen_mod( $powen_social_site );
         if( trim($social_url) ) {
             $active_sites[$powen_social_site] = $social_url;
         }

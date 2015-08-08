@@ -94,7 +94,6 @@
 		},
 
 		commonClass : function() {
-			$(".widget_calendar #today").addClass('current-date');
 			$(".powen-slider-content p").prepend("<i class='powen-slider-content-icon-before'></i>");
 			$(".powen-slider-content p").append("<i class='powen-slider-content-icon-after'></i>");
 		},

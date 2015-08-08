@@ -11,42 +11,40 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	<?php do_action( 'powen_footer_begins' ); ?>
-	<div id="footer-widgets" class="footer_widgets">
-			<div class="powen-wrapper">
-				<?php if( is_active_sidebar( 'first-footer-widget-area' )
-						  || is_active_sidebar( 'second-footer-widget-area' )
-						  || is_active_sidebar( 'third-footer-widget-area' )
-						  || is_active_sidebar( 'fourth-footer-widget-area' )
-						): ?>
-		    	<aside class="powen-footer-widgets-parts" role="complementary">
-		    		<?php if (is_active_sidebar( 'first-footer-widget-area' )){ ?>
-		    	    <div class="first quarter left widget-area">
-		    	        <?php dynamic_sidebar( 'first-footer-widget-area' ); ?>
-		    	    </div><!-- .first .widget-area -->
-		    	    <?php } ?>
+		<?php if( is_active_sidebar( 'first-footer-widget-area' )
+				  || is_active_sidebar( 'second-footer-widget-area' )
+				  || is_active_sidebar( 'third-footer-widget-area' )
+				  || is_active_sidebar( 'fourth-footer-widget-area' )
+				): ?>
+    	<aside id="powen-footer-widgets" class="powen-footer-widgets" role="complementary">
+    		<div class="powen-wrapper">
+	    		<?php if (is_active_sidebar( 'first-footer-widget-area' )){ ?>
+	    	    <div class="first quarter left widget-area">
+	    	        <?php dynamic_sidebar( 'first-footer-widget-area' ); ?>
+	    	    </div><!-- .first .widget-area -->
+	    	    <?php } ?>
 
-					<?php if (is_active_sidebar( 'second-footer-widget-area' )){ ?>
-		    	    <div class="second quarter widget-area">
-		    	        <?php dynamic_sidebar( 'second-footer-widget-area' ); ?>
-		    	    </div><!-- .second .widget-area -->
-					<?php } ?>
+				<?php if (is_active_sidebar( 'second-footer-widget-area' )){ ?>
+	    	    <div class="second quarter widget-area">
+	    	        <?php dynamic_sidebar( 'second-footer-widget-area' ); ?>
+	    	    </div><!-- .second .widget-area -->
+				<?php } ?>
 
-					<?php if (is_active_sidebar( 'third-footer-widget-area' )){ ?>
-		    	    <div class="third quarter widget-area">
-		    	        <?php dynamic_sidebar( 'third-footer-widget-area' ); ?>
-		    	    </div><!-- .third .widget-area -->
-					<?php } ?>
+				<?php if (is_active_sidebar( 'third-footer-widget-area' )){ ?>
+	    	    <div class="third quarter widget-area">
+	    	        <?php dynamic_sidebar( 'third-footer-widget-area' ); ?>
+	    	    </div><!-- .third .widget-area -->
+				<?php } ?>
 
-					<?php if (is_active_sidebar( 'fourth-footer-widget-area' )){ ?>
-		    	    <div class="fourth quarter right widget-area">
-		    	        <?php dynamic_sidebar( 'fourth-footer-widget-area' ); ?>
-		    	    </div><!-- .fourth .widget-area -->
-		    	    <?php } ?>
-		    	    <?php do_action( 'powen_footer_widgets' ); ?>
-		    	</aside><!-- #fatfooter -->
-		    	<?php endif; ?>
-		    </div><!-- .powen-wrapper -->
-	</div><!-- #footer_widgets -->
+				<?php if (is_active_sidebar( 'fourth-footer-widget-area' )){ ?>
+	    	    <div class="fourth quarter right widget-area">
+	    	        <?php dynamic_sidebar( 'fourth-footer-widget-area' ); ?>
+	    	    </div><!-- .fourth .widget-area -->
+	    	    <?php } ?>
+	    	    <?php do_action( 'powen_powen-footer-widgets' ); ?>
+    	    </div><!-- .powen-wrapper -->
+    	</aside><!-- #fatfooter -->
+    	<?php endif; ?>
 
 	<div id="site-info" class="site-info">
 		<div class="powen-wrapper">

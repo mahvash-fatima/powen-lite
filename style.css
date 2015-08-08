@@ -4,7 +4,7 @@ Theme URI: http://supernovathemes.com/powen-theme/
 Author: Mahvash Fatima
 Author URI: http://supernovathemes.com
 Description: Powen Lite has been specially designed for blogging websites however due to its clean design and plenty of customization options, it can easily be customized for any purpose.
-Version: 1.1.6
+Version: 1.1.7
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: powen
@@ -228,6 +228,10 @@ small {
 
 big {
   font-size: 125%;
+}
+
+.reply {
+  padding: 1.618rem;
 }
 
 /*--------------------------------------------------------------
@@ -492,10 +496,10 @@ input[type="submit"] {
 .widget-area button,
 .widget-area input[type="button"],
 .widget-area input[type="reset"],
-.widget-area input[type="submit"], .footer_widgets button,
-.footer_widgets input[type="button"],
-.footer_widgets input[type="reset"],
-.footer_widgets input[type="submit"] {
+.widget-area input[type="submit"], .powen-footer-widgets button,
+.powen-footer-widgets input[type="button"],
+.powen-footer-widgets input[type="reset"],
+.powen-footer-widgets input[type="submit"] {
   display: none;
 }
 
@@ -719,7 +723,8 @@ input[type="submit"] {
   color: #fff;
 }
 .powen-latest-post-tag span {
-  padding: 0.625rem 1.875rem;
+  padding: 0 1.25rem;
+  display: inline-block;
 }
 
 .entry-footer {
@@ -803,7 +808,7 @@ input[type="submit"] {
   overflow: hidden;
   background: #fff;
   margin: 0;
-  padding: 1.618rem 1.618rem 0.809rem;
+  padding: 1.618rem;
   text-align: right;
 }
 
@@ -1118,7 +1123,7 @@ h6 {
   margin: 0 auto;
 }
 
-.footer_widgets {
+.powen-footer-widgets {
   overflow: hidden;
 }
 
@@ -1175,7 +1180,7 @@ h1.site-title {
   margin: 1.618rem auto;
 }
 
-.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation, .powen-most-recent-post {
+.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
   padding-left: 4.2358rem;
   padding-right: 4.2358rem;
   padding-bottom: 2.61792rem;
@@ -1184,11 +1189,15 @@ h1.site-title {
   background-color: #ffffff;
 }
 
-.article-hentry, .powen-most-recent-post {
+.powen-most-recent-post {
+  margin-top: 2.61792rem;
+}
+
+.article-hentry {
   margin: 0 0 1.618rem 0;
 }
 
-.site-info, .footer_widgets {
+.site-info, .powen-footer-widgets {
   padding: 1.618rem 0;
 }
 
@@ -1281,6 +1290,10 @@ h1.site-title {
   padding: 1.618rem;
   background-color: rgba(221, 193, 174, 0.05);
   border: 0.0625rem solid rgba(108, 67, 38, 0.05);
+}
+
+.comment-respond .form-allowed-tags {
+  display: none;
 }
 
 .widget {
@@ -1383,7 +1396,7 @@ h1.site-title {
   overflow: hidden;
 }
 
-.footer_widgets .widget {
+.powen-footer-widgets .widget {
   background: transparent;
   float: left;
   margin: 0 1% 0 0;
@@ -1391,11 +1404,11 @@ h1.site-title {
   padding: 1%;
 }
 
-.footer_widgets {
+.powen-footer-widgets {
   background: #222222;
   color: #808080;
 }
-.footer_widgets a {
+.powen-footer-widgets a {
   color: #cccccc;
 }
 
@@ -1457,7 +1470,7 @@ h1.site-title {
     font-size: 1.37865rem;
   }
 
-  .article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation, .powen-most-recent-post {
+  .article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
     padding-left: 2.61792rem;
     padding-right: 2.61792rem;
     padding-top: 1.618rem;
@@ -1696,8 +1709,6 @@ FontAwesome
 .comments-link:before,
 .edit-link:before,
 .nav-previous a:before,
-.flex-direction-nav li .flex-prev:before,
-.flex-direction-nav li .flex-next:before,
 .nav-next a:after,
 .author:before,
 .content-area .hentry .entry-date:after,
@@ -1769,16 +1780,6 @@ Write your code here
 .nav-previous a:before {
   content: "\f100";
   margin: 0 0.3125rem;
-}
-
-.flex-direction-nav li .flex-prev:before {
-  content: "\f100";
-  color: #ffffff;
-}
-
-.flex-direction-nav li .flex-next:before {
-  content: "\f101";
-  color: #ffffff;
 }
 
 .nav-next a:after {

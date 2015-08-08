@@ -36,9 +36,9 @@ class Powen_Customizer_Front extends Powen_Customizer
 	    self::generate_css('.site-description', 'color', 'header_taglinecolor');
 	    self::generate_css('body', 'background-color', 'background_color', '');
 	    self::generate_css('.site-header', 'background-color', 'header_background');
-	    self::generate_css('.footer_widgets', 'background-color', 'footer_widgets_background');
-	    self::generate_css('.footer_widgets', 'color', 'footer_widgets_textcolor');
-	    self::generate_css('.footer_widgets a', 'color', 'footer_widgets_linkcolor');
+	    self::generate_css('.powen-footer-widgets', 'background-color', 'powen-footer-widgets_background');
+	    self::generate_css('.powen-footer-widgets', 'color', 'powen-footer-widgets_textcolor');
+	    self::generate_css('.powen-footer-widgets a', 'color', 'powen-footer-widgets_linkcolor');
 	    self::generate_css('.site-info a', 'color', 'footer_bottom_textcolor');
 	    self::generate_css('.site-info', 'color', 'footer_bottom_textcolor');
 	    self::generate_css('.site-info', 'background-color', 'footer_bottom_background_color');
