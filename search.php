@@ -45,10 +45,9 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<!-- Continue reading -->
-			<div class="powen-continue-reading"><a href="<?php esc_url(the_permalink()); ?>"><?php _e('Continue Reading', 'powen') ?></a></div>
+			<?php do_action( 'powen_before_pagination' ); ?>
 
-			<?php the_posts_navigation(); ?>
+			<?php powen_pagination(); ?>
 
 		<?php else : ?>
 

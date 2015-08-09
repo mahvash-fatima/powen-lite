@@ -1,5 +1,7 @@
 (function($){
 
+	"use strict";
+
 	window.Powen = {
 
 		init: function(){

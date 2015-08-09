@@ -39,10 +39,6 @@
 				'after'  => '</div>',
 			) );
 		?>
-
-	<!-- Continue reading -->
-	<div class="powen-continue-reading"><a href="<?php esc_url( the_permalink() ); ?>"><?php echo __(powen_mod( 'read_more_textbox', 'Continue Reading')); ?></a></div>
-
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
