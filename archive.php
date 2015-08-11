@@ -35,7 +35,8 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 
-				<?php the_posts_navigation(); ?>
+				<?php do_action( 'powen_before_pagination' ); ?>
+				<?php powen_pagination(); ?>
 
 			<?php else : ?>
 

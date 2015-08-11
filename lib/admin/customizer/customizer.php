@@ -22,6 +22,8 @@ class Powen_Customizer {
    */
   public static function register ( $wp_customize ) {
 
+      do_action('powen_customize_extras');
+
       /*==============================
         CONTENT
       ===============================*/

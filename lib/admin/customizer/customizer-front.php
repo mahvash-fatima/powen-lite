@@ -172,11 +172,6 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'.author:before',
 			'.posted-on:before',
 			'.comment-metadata time:before',
-			'input[type="text"]:focus',
-			'input[type="email"]:focus',
-			'input[type="url"]:focus',
-			'input[type="password"]:focus',
-			'input[type="search"]:focus',
 			'textarea:focus',
 			'.flex-direction-nav li .flex-prev:before',
 			'.flex-direction-nav li .flex-next:before',
@@ -185,6 +180,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 		//background
 		$background_color_selectors = apply_filters('powen_background_color_selectors_array', array(
 			'.widget_calendar caption',
+			'#today',
 			'.current-date',
 			'.entry-header:after',
 			'.widget-title:after',
@@ -215,7 +211,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 		//=====================
 
 		//color (on hover)
-		$color_hover_selectors = apply_filters('powen_color_hover_selectors_array', array( 'a:hover', 'a:active', '.breadcrumbs li a:hover', 'p a:hover') );
+		$color_hover_selectors = apply_filters('powen_color_hover_selectors_array', array( 'a:hover', 'a:active', '.breadcrumbs li a:hover', 'p a:hover', '.current-menu-item > a') );
 
 		//background should change on hover.
 		$background_color_hover_selectors = apply_filters('powen_background_color_hover_selectors_array', array(

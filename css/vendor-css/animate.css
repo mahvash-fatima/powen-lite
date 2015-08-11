@@ -1313,11 +1313,11 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 
-.powen-main-navigation .menu-item-has-children:hover .fadeInUp {
+.fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
 }
 
 @-webkit-keyframes fadeInUpBig {

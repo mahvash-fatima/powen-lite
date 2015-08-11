@@ -365,6 +365,7 @@ input[type="search"] {
   text-indent: 0.3125rem;
   height: 2.5rem;
   letter-spacing: 0.0625rem;
+  outline: none;
 }
 
 textarea {
@@ -715,6 +716,9 @@ input[type="submit"] {
 .powen-continue-reading {
   margin: 2.61792rem 0 1.618rem 0;
 }
+.powen-continue-reading a {
+  padding: 0.625rem;
+}
 
 .powen-latest-post-tag {
   position: absolute;
@@ -1051,7 +1055,7 @@ ul, ol {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 2.5rem;
+  line-height: 3.125rem;
   font-weight: 400;
 }
 
@@ -1346,14 +1350,17 @@ h1.site-title {
 .powen-top-container .search-form .search-submit {
   display: none;
 }
-.powen-top-container .search-form input[type="text"],
-.powen-top-container .search-form input[type="email"],
-.powen-top-container .search-form input[type="url"],
-.powen-top-container .search-form input[type="password"],
-.powen-top-container .search-form input[type="search"] {
-  height: auto;
+.powen-top-container .search-form input.search-field {
+  text-indent: 0.625rem;
+  height: 2.5rem;
+  letter-spacing: 1px;
+  border: none;
+  box-shadow: 0px 0px 1px 0px #ccc;
+  border-radius: 2px;
+  padding-right: 1.25rem;
 }
-.powen-top-container .powen-search-box-top, .powen-top-container .powen-social_media_container {
+
+.powen-search-box-top, .powen-social_media_container {
   padding: 0.809rem 0;
 }
 
@@ -1363,6 +1370,7 @@ h1.site-title {
 
 .powen-nav {
   display: inline-block;
+  padding-left: 3.125rem;
 }
 .powen-nav a {
   padding: 0.809rem 0;
@@ -1377,6 +1385,7 @@ h1.site-title {
 .powen-top-most-nav, .powen-main-navigation {
   padding: 0 0.625rem;
   display: inline-block;
+  overflow: hidden;
 }
 .powen-top-most-nav a, .powen-main-navigation a {
   color: #666666;
@@ -1416,6 +1425,7 @@ h1.site-title {
   text-align: center;
   background: #000000;
   color: #404040;
+  overflow: hidden;
 }
 .site-info a {
   color: #666666;
@@ -1423,7 +1433,7 @@ h1.site-title {
 
 @media (max-width: 70.3125rem) {
   h1, h2, h3, h4, h5, h6 {
-    line-height: 2.5rem;
+    line-height: 3.125rem;
     font-weight: 400;
   }
 
@@ -1527,7 +1537,7 @@ h1.site-title {
 }
 @media (max-width: 37.5rem) {
   h1, h2, h3, h4, h5, h6 {
-    line-height: 2.5rem;
+    line-height: 3.125rem;
     font-weight: 400;
   }
 
@@ -1580,7 +1590,7 @@ h1.site-title {
 }
 @media (max-width: 25rem) {
   h1, h2, h3, h4, h5, h6 {
-    line-height: 2.5rem;
+    line-height: 3.125rem;
     font-weight: 400;
   }
 
@@ -1650,7 +1660,7 @@ h1.site-title {
   }
 
   .flexslider h1, .flexslider h2, .flexslider h3, .flexslider h4, .flexslider h5, .flexslider h6 {
-    line-height: 2.5rem;
+    line-height: 3.125rem;
     font-weight: 400;
   }
   .flexslider h1 {
@@ -1756,9 +1766,9 @@ Write your code here
 .powen-search-box-top .search-form label:after {
   content: "\f002";
   position: absolute;
-  right: 0.8125rem;
-  top: 0.0625rem;
-  color: #cccccc;
+  right: 0.9375rem;
+  top: 0.375rem;
+  color: #ececec;
   background-color: #ffffff;
 }
 

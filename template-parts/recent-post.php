@@ -22,8 +22,6 @@
 			<?php powen_content(); ?>
 		</div>
 
-		<div class="powen-continue-reading"><a href="<?php echo esc_url( the_permalink() ); ?>"><?php echo powen_mod( 'read_more_textbox', __( 'Continue Reading' , 'powen' )); ?></a></div>
-
 		<footer class="entry-footer">
 			<?php powen_entry_footer(); ?>
 			<?php do_action( 'powen_recent_post_bottom_extras' ); ?>

@@ -41,7 +41,7 @@
 	    	        <?php dynamic_sidebar( 'fourth-footer-widget-area' ); ?>
 	    	    </div><!-- .fourth .widget-area -->
 	    	    <?php } ?>
-	    	    <?php do_action( 'powen_powen-footer-widgets' ); ?>
+	    	    <?php do_action( 'powen-footer-widgets' ); ?>
     	    </div><!-- .powen-wrapper -->
     	</aside><!-- #fatfooter -->
     	<?php endif; ?>

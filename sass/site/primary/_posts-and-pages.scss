@@ -8,6 +8,9 @@
 
 .powen-continue-reading {
 	margin: $post_b_padding 0 $post_b_padding / $phi 0;
+	a {
+		padding: rem-calc(10);
+	}
 }
 
 .powen-latest-post-tag {
