@@ -156,7 +156,6 @@ h1.site-title {
 	img {
 	margin: 0 auto;
 	display: block;
-	width: 100%;
 	}
 }
 
@@ -319,6 +318,7 @@ h1.site-title {
 
 .powen-nav {
 	display: inline-block;
+	padding: rem-calc(10);
 	a {
 		padding: $default_gutter/2 0;
 	}
@@ -329,9 +329,11 @@ h1.site-title {
 	overflow: hidden;
 }
 .powen-top-most-nav, .powen-main-navigation {
-	padding: rem-calc(0 10);
 	display: inline-block;
 	overflow: hidden;
+	padding: rem-calc(10);
+	border-radius: 2px;
+	box-shadow: 0 0 1px 0 #ccc;
 	a {
 		color: #666666;
 	}
