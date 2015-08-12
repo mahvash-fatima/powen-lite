@@ -36,6 +36,10 @@ get_header(); ?>
 				<?php endwhile; ?>
 
 				<?php do_action( 'powen_before_pagination' ); ?>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 82468fa674c95003a4e40d8038cbd4cb209e9d39
 				<?php powen_pagination(); ?>
 
 			<?php else : ?>
