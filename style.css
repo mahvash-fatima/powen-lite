@@ -1177,6 +1177,7 @@ h1.site-title {
 }
 
 .powen-featured-img {
+  overflow: hidden;
   background-color: #ffffff;
 }
 .powen-featured-img img {
@@ -1293,6 +1294,9 @@ h1.site-title {
   overflow: hidden;
   padding: 1.618rem 0;
 }
+.powen-top-container nav {
+  display: inline-block;
+}
 .powen-top-container .powen-social-media-icons {
   margin: 0;
 }
@@ -1317,7 +1321,7 @@ h1.site-title {
   height: 2.5rem;
   letter-spacing: 1px;
   border: none;
-  box-shadow: 0px 0px 1px 0px #ccc;
+  border-bottom: 1px solid #ccc;
   border-radius: 2px;
   padding-right: 1.25rem;
 }

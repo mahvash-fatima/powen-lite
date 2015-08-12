@@ -235,7 +235,9 @@ class Powen_Customizer {
           'description' => __( 'Make slides', 'powen' ),
       ) );
 
-      for ( $i=0; $i <= apply_filters( 'powen_increase_slides', 19 ); $i++ ) {
+      $default_slides = powen_default_slides();
+
+      for ( $i = 0; $i <= apply_filters( 'powen_increase_slides', 19 ); $i++ ) {
 
       $wp_customize->add_section( 'powen_slider_section_' . $i, array(
           'priority'    => 10,
@@ -246,7 +248,7 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting( 'powen_slides['.$i.'][title]', array(
-          'default'           => sprintf( __( 'Demo Post %s' , 'powen' ), $i+1 ),
+          'default'           => isset( $default_slides[$i]['title'] ) ? $default_slides[$i]['title'] : false,
           'sanitize_callback' => 'sanitize_text_field',
           'capability'        => 'edit_theme_options',
       ) );
@@ -259,7 +261,7 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting( 'powen_slides['.$i.'][description]', array(
-          'default'           => __('Description', 'powen'),
+          'default'           => isset( $default_slides[$i]['description'] ) ? $default_slides[$i]['description'] : false,
           'sanitize_callback' => 'sanitize_text_field',
           'capability'        => 'edit_theme_options',
       ) );
@@ -272,7 +274,7 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting( 'powen_slides['.$i.'][link]', array(
-          'default'           => esc_url(home_url( '/' )),
+          'default'           => isset( $default_slides[$i]['link'] ) ? esc_url($default_slides[$i]['link']) : false,
           'sanitize_callback' => 'esc_url_raw',
           'capability'        => 'edit_theme_options',
       ) );
@@ -285,7 +287,7 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting( 'powen_slides['.$i.'][image]', array(
-          'default'           => esc_url(get_template_directory_uri() . '/images/slides/slide1.jpg'),
+          'default'           => isset( $default_slides[$i]['image'] ) ? esc_url($default_slides[$i]['image']) : false,
           'sanitize_callback' => 'esc_url_raw',
           'capability'        => 'edit_theme_options',
       ) );

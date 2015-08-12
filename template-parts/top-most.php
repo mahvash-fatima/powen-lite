@@ -6,6 +6,9 @@
 
 ?>
 <div id="navigation" class="powen-nav">
+
+	<?php do_action( 'powen_before_mobile_nav' ); ?>
+
 	<?php if( powen_mod('hide_menu_one') == '' ) { ?>
 	<nav id="menu-icon" class="powen-top-most-nav">
 		<a href="#site-navigation"><i class="mm"></i><?php echo esc_textarea( powen_mod( 'menu_one_title_textbox'), 'powen' ); ?></a>
@@ -19,5 +22,5 @@
 	</nav>
 	<?php } ?>
 
-	<?php do_action( 'powen_nav_extras' ); ?>
+	<?php do_action( 'powen_after_mobile_nav' ); ?>
 </div>
