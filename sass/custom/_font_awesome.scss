@@ -29,7 +29,8 @@ FontAwesome
 	.widget_recent_entries li:before,
 	.entry-header:after,
 	.widget-title:after,
-	.footer-scroll:before
+	.footer-scroll:before,
+	.powen-pro-mobile-menu .mm:before
 {
 font-family: 'FontAwesome';
 font-weight: normal;
@@ -50,7 +51,7 @@ Write your code here
 --------------------**/
 
 //HEADER
-.powen-top-most-nav .mm:before, .powen-main-navigation .m:before {
+.powen-top-most-nav .mm:before, .powen-main-navigation .m:before, .powen-pro-mobile-menu .mm:before {
 	content: "\f0c9";
 	padding: rem-calc(5);
 	font-size: 1.25em;

@@ -279,7 +279,8 @@ h1.site-title {
 	overflow: hidden;
 	padding: $default_gutter 0;
 	nav{
-		display: inline-block;
+		float: left;
+		margin-right: rem-calc(8);
 	}
 	.powen-social-media-icons {
 		margin: 0;
@@ -332,7 +333,7 @@ h1.site-title {
 	text-align: right;
 	overflow: hidden;
 }
-.powen-top-most-nav, .powen-main-navigation {
+.powen-top-most-nav, .powen-main-navigation, .powen-pro-mobile-menu-container{
 	display: inline-block;
 	overflow: hidden;
 	padding: rem-calc(10);

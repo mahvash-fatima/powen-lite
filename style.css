@@ -1295,7 +1295,8 @@ h1.site-title {
   padding: 1.618rem 0;
 }
 .powen-top-container nav {
-  display: inline-block;
+  float: left;
+  margin-right: 0.5rem;
 }
 .powen-top-container .powen-social-media-icons {
   margin: 0;
@@ -1348,14 +1349,14 @@ h1.site-title {
   overflow: hidden;
 }
 
-.powen-top-most-nav, .powen-main-navigation {
+.powen-top-most-nav, .powen-main-navigation, .powen-pro-mobile-menu-container {
   display: inline-block;
   overflow: hidden;
   padding: 0.625rem;
   border-radius: 2px;
   box-shadow: 0 0 1px 0 #ccc;
 }
-.powen-top-most-nav a, .powen-main-navigation a {
+.powen-top-most-nav a, .powen-main-navigation a, .powen-pro-mobile-menu-container a {
   color: #666666;
 }
 
@@ -1723,7 +1724,8 @@ FontAwesome
 .widget_recent_entries li:before,
 .entry-header:after,
 .widget-title:after,
-.footer-scroll:before {
+.footer-scroll:before,
+.powen-pro-mobile-menu .mm:before {
   font-family: 'FontAwesome';
   font-weight: normal;
   font-style: normal;
@@ -1742,7 +1744,7 @@ FontAwesome
 /**---------------
 Write your code here
 --------------------**/
-.powen-top-most-nav .mm:before, .powen-main-navigation .m:before {
+.powen-top-most-nav .mm:before, .powen-main-navigation .m:before, .powen-pro-mobile-menu .mm:before {
   content: "\f0c9";
   padding: 0.3125rem;
   font-size: 1.25em;

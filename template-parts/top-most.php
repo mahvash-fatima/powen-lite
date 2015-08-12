@@ -5,7 +5,7 @@
 	 */
 
 ?>
-<div id="navigation" class="powen-nav">
+<div id="navigation" class="powen-nav clear">
 
 	<?php do_action( 'powen_before_mobile_nav' ); ?>
 
