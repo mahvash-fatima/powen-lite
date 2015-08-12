@@ -662,43 +662,6 @@ input[type="submit"] {
   padding: 1.618rem;
 }
 
-/* media queries for larger screens such as small tablets in landscape or large tablets in portrait */
-@media screen and (max-width: 780px) {
-  /* only the .quarter layout class is relevant here - all other classes will have full width */
-  .quarter {
-    width: 48%;
-  }
-
-  .quarter.left {
-    margin-right: 2%;
-  }
-
-  .quarter.right {
-    margin-left: 2%;
-  }
-
-  footer .third.quarter.widget-area {
-    clear: both;
-  }
-}
-/* media queries for small screens in landscape mode (or similar) */
-@media screen and (max-width: 600px) {
-  /* width sizing all full width in small screens */
-  .quarter,
-  .one-third,
-  .half,
-  .two-thirds,
-  .three-quarters,
-  .full-width {
-    width: 100%;
-    margin: 0;
-  }
-
-  /* padding adjustments */
-  .widget-area {
-    padding: 0 0 0.625rem 0;
-  }
-}
 /*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
@@ -1421,6 +1384,9 @@ h1.site-title {
 .powen-footer-widgets a {
   color: #cccccc;
 }
+.powen-footer-widgets .powen-wrapper {
+  overflow: hidden;
+}
 
 .site-info {
   text-align: center;
@@ -1534,6 +1500,21 @@ h1.site-title {
 
   .flexslider .flex-control-nav {
     display: none;
+  }
+
+  .quarter,
+  .one-third,
+  .half,
+  .two-thirds,
+  .three-quarters,
+  .full-width {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* padding adjustments */
+  .widget-area {
+    padding: 0 0 0.625rem 0;
   }
 }
 @media (max-width: 37.5rem) {

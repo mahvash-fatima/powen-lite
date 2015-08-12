@@ -370,6 +370,9 @@ h1.site-title {
 	a {
 		color: #cccccc;
 	}
+	.powen-wrapper {
+		overflow: hidden;
+	}
 }
 .site-info {
 	text-align: center;
@@ -455,6 +458,20 @@ h1.site-title {
 	}
 	.flexslider .flex-control-nav {
 		display: none;
+	}
+
+	.quarter,
+	.one-third,
+	.half,
+	.two-thirds,
+	.three-quarters,
+	.full-width {
+	    width: 100%;
+	    margin: 0;
+	}
+	/* padding adjustments */
+	.widget-area {
+	    padding: rem-calc(0 0 10 0);
 	}
 }
 
