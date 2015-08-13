@@ -37,8 +37,6 @@ get_header(); ?>
 
 				<?php do_action( 'powen_before_pagination' ); ?>
 
-				<?php apply_filters('excerpt_more', 'powen_change_read_more'); ?>
-
 				<?php powen_pagination(); ?>
 
 			<?php else : ?>

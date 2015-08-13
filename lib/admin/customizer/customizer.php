@@ -168,6 +168,28 @@ class Powen_Customizer {
           'section' => 'nav',
       ) ) );
 
+      $wp_customize->add_setting( 'powen_mod[menu_three_title_textbox]', array(
+          'sanitize_callback' => 'sanitize_text_field',
+          'capability'        => 'edit_theme_options',
+      ) );
+
+      $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[menu_three_title_textbox]', array(
+          'label'    => __( 'Extra Menu Title', 'powen' ),
+          'section'  => 'nav',
+          'settings' => 'powen_mod[menu_three_title_textbox]',
+      ) ) );
+
+      $wp_customize->add_setting( 'powen_mod[hide_menu_three]', array(
+          'capability'        => 'edit_theme_options',
+          'sanitize_callback' => 'sanitize_text_field',
+      ) );
+
+      $wp_customize->add_control( new WP_Customize_Control ( $wp_customize, 'powen_mod[hide_menu_three]', array(
+          'type'    => 'checkbox',
+          'label'   => __('Hide', 'powen'),
+          'section' => 'nav',
+      ) ) );
+
       /*==============================
                 MEDIA SECTION
       ===============================*/

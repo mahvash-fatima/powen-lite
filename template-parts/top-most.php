@@ -22,5 +22,8 @@
 	</nav>
 	<?php } ?>
 
+	<!-- Social Media Icon -->
+	<?php powen_social_media_icons(); ?>
+
 	<?php do_action( 'powen_after_mobile_nav' ); ?>
 </div>

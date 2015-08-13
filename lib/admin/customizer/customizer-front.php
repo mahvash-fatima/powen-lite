@@ -165,7 +165,6 @@ class Powen_Customizer_Front extends Powen_Customizer
 		//color
 		$color_selectors = apply_filters('powen_create_color_scheme_array', array (
 			'p a',
-			'.powen-continue-reading:after',
 			'.cat-links:before',
 			'.comments-link:before',
 			'.edit-link:before',
@@ -175,7 +174,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'textarea:focus',
 			'.flex-direction-nav li .flex-prev:before',
 			'.flex-direction-nav li .flex-next:before',
-			'.breadcrumbs a'
+			'.breadcrumbs a',
 		) );
 		//background
 		$background_color_selectors = apply_filters('powen_background_color_selectors_array', array(
@@ -186,6 +185,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'.widget-title:after',
 			'.powen-pagination .current',
 			'.powen-latest-post-tag',
+			'.powen-continue-reading:after',
 			'button',
 			'input[type="button"]',
 			'input[type="reset"]',
@@ -211,7 +211,13 @@ class Powen_Customizer_Front extends Powen_Customizer
 		//=====================
 
 		//color (on hover)
-		$color_hover_selectors = apply_filters('powen_color_hover_selectors_array', array( 'a:hover', 'a:active', '.breadcrumbs li a:hover', 'p a:hover', '.current-menu-item > a') );
+		$color_hover_selectors = apply_filters('powen_color_hover_selectors_array', array(
+			'a:hover',
+			'a:active',
+			'.breadcrumbs li a:hover',
+			'p a:hover',
+			'.current-menu-item > a:hover'
+		) );
 
 		//background should change on hover.
 		$background_color_hover_selectors = apply_filters('powen_background_color_hover_selectors_array', array(

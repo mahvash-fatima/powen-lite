@@ -38,8 +38,6 @@
 					<?php do_action('powen_header_top_container_extras' ); ?>
 				</div>
 
-				<!-- Social Media Icon -->
-				<?php powen_social_media_icons(); ?>
 				<?php do_action('powen_header_social_container_extras' ); ?>
 
 			</div>

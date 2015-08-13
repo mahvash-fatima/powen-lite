@@ -12,6 +12,7 @@
 			this.navAnimation();
 			this.skipLinkFocusFix();
 			this.commonClass();
+			this.animateNav();
 		},
 
 		//mMenu
@@ -99,6 +100,10 @@
 			$(".powen-slider-content p").prepend("<i class='powen-slider-content-icon-before'></i>");
 			$(".powen-slider-content p").append("<i class='powen-slider-content-icon-after'></i>");
 		},
+
+		animateNav : function() {
+			$(".powen-pro-menu li ul").addClass('fadeInUp');
+		}
 
 	};
 

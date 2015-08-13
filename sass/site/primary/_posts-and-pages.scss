@@ -6,13 +6,6 @@
 	padding-top: $post_t_padding;
 }
 
-.powen-continue-reading {
-	margin: $post_b_padding 0 $post_b_padding / $phi 0;
-	a {
-		padding: rem-calc(10);
-	}
-}
-
 .powen-latest-post-tag {
 	position: absolute;
 	top: 0;
@@ -118,6 +111,11 @@
     margin-right: rem-calc(5);
     padding: rem-calc(5);
 }
+
 .powen-continue-reading {
-	text-align: right;
+	margin: $post_b_padding 0 $post_b_padding / $phi 0;
+	text-align: center;
+	a {
+		padding: rem-calc(10);
+	}
 }

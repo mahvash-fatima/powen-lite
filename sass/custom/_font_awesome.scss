@@ -106,8 +106,11 @@ Write your code here
 	padding: rem-calc(5);
 }
 .powen-continue-reading:after {
-	content: "\f178";
-	padding: rem-calc(5);
+	content: '';
+	display: block;
+	width: rem-calc(60);
+	height: rem-calc(1);
+	margin: rem-calc(25) auto rem-calc(25);
 }
 
 

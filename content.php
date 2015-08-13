@@ -29,9 +29,14 @@
 
 	<div class="entry-content">
 		<?php
-			/* translators: %s: Name of current post */
-			powen_content();
+		/**
+		* Custom Excerpt Length powen using wp_trim_excerpt()
+		*/
+
+		$powen_content = get_the_content();
+		echo wp_trim_words( $powen_content , apply_filters('powen_excerpt_length', '100') );
 		?>
+
 
 		<?php
 			wp_link_pages( array(
@@ -39,7 +44,6 @@
 				'after'  => '</div>',
 			) );
 		?>
-	<?php apply_filters('excerpt_more', 'powen_change_read_more'); ?>
 
 	</div><!-- .entry-content -->
 
