@@ -9,7 +9,11 @@
 		<!-- Featured Images -->
 		<?php if ( has_post_thumbnail() )
 		{
-			the_post_thumbnail();
+			if( powen_mod( 'sidebar_position' ) === 'no-sidebar' ){
+				the_post_thumbnail('full');
+			}else{
+				the_post_thumbnail('large');
+			}
 		}
 		?>
 		</a>
@@ -28,16 +32,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php
-		/**
-		* Custom Excerpt Length powen using wp_trim_excerpt()
-		*/
-
-		$powen_content = get_the_content();
-		echo wp_trim_words( $powen_content , apply_filters('powen_excerpt_length', '100') );
-		?>
-
-
+		<?php the_excerpt(); ?>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'powen' ),

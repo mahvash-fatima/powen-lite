@@ -22,7 +22,7 @@ class Powen_Customizer {
    */
   public static function register ( $wp_customize ) {
 
-      do_action('powen_customize_extras');
+      do_action('powen_customize_starts' , $wp_customize );
 
       /*==============================
         CONTENT
@@ -168,28 +168,6 @@ class Powen_Customizer {
           'section' => 'nav',
       ) ) );
 
-      $wp_customize->add_setting( 'powen_mod[menu_three_title_textbox]', array(
-          'sanitize_callback' => 'sanitize_text_field',
-          'capability'        => 'edit_theme_options',
-      ) );
-
-      $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[menu_three_title_textbox]', array(
-          'label'    => __( 'Extra Menu Title', 'powen' ),
-          'section'  => 'nav',
-          'settings' => 'powen_mod[menu_three_title_textbox]',
-      ) ) );
-
-      $wp_customize->add_setting( 'powen_mod[hide_menu_three]', array(
-          'capability'        => 'edit_theme_options',
-          'sanitize_callback' => 'sanitize_text_field',
-      ) );
-
-      $wp_customize->add_control( new WP_Customize_Control ( $wp_customize, 'powen_mod[hide_menu_three]', array(
-          'type'    => 'checkbox',
-          'label'   => __('Hide', 'powen'),
-          'section' => 'nav',
-      ) ) );
-
       /*==============================
                 MEDIA SECTION
       ===============================*/
@@ -250,12 +228,35 @@ class Powen_Customizer {
                 SLIDER
       ===============================*/
 
+      global $powen_theme;
+      $url = $powen_theme->get('AuthorURI') . "/powen-pro-pricing/";
+
       $wp_customize->add_panel( 'powen_slider_pannel', array(
           'priority'    => 10,
           'capability'  => 'edit_theme_options',
           'title'       => __( 'Slider Options', 'powen' ),
           'description' => __( 'Make slides', 'powen' ),
       ) );
+
+      $wp_customize->add_section( 'powen_slider_section_pro', array(
+          'priority'    => 9,
+          'capability'  => 'edit_theme_options',
+          'title'       => __( 'Powen Pro' , 'powen' ),
+          'description' => __( 'For More Options Upgrade to ', 'powen' ) . "<a href='{$url}'>".__( 'Powen Pro' , 'powen' )."</a>",
+          'panel'       => 'powen_slider_pannel',
+      ) );
+
+      $wp_customize->add_setting( 'powen_mod[hide_slider]', array(
+          'default'           => 0,
+          'sanitize_callback' => 'sanitize_text_field',
+          'capability'        => 'edit_theme_options',
+      ) );
+
+      $wp_customize->add_control( new WP_Customize_Control ( $wp_customize, 'powen_mod[hide_slider]', array(
+          'label'   => __('Hide Slider', 'powen'),
+          'type'    => 'checkbox',
+          'section' => 'powen_slider_section_pro',
+      ) ) );
 
       $default_slides = powen_default_slides();
 
@@ -504,6 +505,8 @@ class Powen_Customizer {
       // We can also change built-in settings by modifying properties. For instance, let's make some stuff use live preview JS...
       $wp_customize->get_setting( 'blogname' )->transport = 'postMessage';
       $wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
+
+      do_action('powen_customize_ends' , $wp_customize );
 
   }
 

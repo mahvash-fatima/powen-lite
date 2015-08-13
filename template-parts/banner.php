@@ -9,6 +9,7 @@ $slides = get_theme_mod( 'powen_slides', powen_default_slides() );
 
 ?>
 
+<?php if( ! powen_mod( 'hide_slider' , false ) ) :  ?>
 <div id="powen-main-slider" class="clear">
 	<section id="slider" class="flexslider">
 		<ul class='slides'>
@@ -31,3 +32,4 @@ $slides = get_theme_mod( 'powen_slides', powen_default_slides() );
 		</ul>
 	</section>
 </div>
+<?php endif; ?>

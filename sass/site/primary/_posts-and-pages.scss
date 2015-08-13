@@ -28,40 +28,8 @@
 	padding-right: rem-calc(5);
 }
 
-.content-area {
-	.post-comment {
-		background: red;
-	}
-	.comments-title {
-		text-align: center;
-	}
-}
 .posted-on, .byline {
 	padding: rem-calc(5);
-}
-.comment-body {
-	img {
-		border-radius: 100%;
-	}
-	.says {
-		display: none;
-	}
-	.fn {
-		display: block;
-	}
-	.comment-author img {
-		float: left;
-		margin-right: rem-calc(5);
-	}
-	.comment-metadata {
-		padding-bottom: rem-calc(5);
-	}
-	.reply {
-		text-align: right;
-	}
-}
-.comment-respond .logged-in-as a {
-	font-weight: bold;
 }
 
 //powen-pagination

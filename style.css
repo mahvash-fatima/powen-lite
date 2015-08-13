@@ -698,39 +698,8 @@ input[type="submit"] {
   padding-right: 0.3125rem;
 }
 
-.content-area .post-comment {
-  background: red;
-}
-.content-area .comments-title {
-  text-align: center;
-}
-
 .posted-on, .byline {
   padding: 0.3125rem;
-}
-
-.comment-body img {
-  border-radius: 100%;
-}
-.comment-body .says {
-  display: none;
-}
-.comment-body .fn {
-  display: block;
-}
-.comment-body .comment-author img {
-  float: left;
-  margin-right: 0.3125rem;
-}
-.comment-body .comment-metadata {
-  padding-bottom: 0.3125rem;
-}
-.comment-body .reply {
-  text-align: right;
-}
-
-.comment-respond .logged-in-as a {
-  font-weight: bold;
 }
 
 .powen-pagination {
@@ -803,6 +772,38 @@ input[type="submit"] {
 
 .bypostauthor {
   display: block;
+}
+
+.content-area .post-comment {
+  background: red;
+}
+.content-area .comments-title {
+  text-align: center;
+}
+
+.comment-body img {
+  border-radius: 100%;
+}
+.comment-body .says {
+  display: none;
+}
+.comment-body .fn {
+  display: block;
+}
+.comment-body .comment-author img {
+  float: left;
+  margin-right: 0.625rem;
+}
+.comment-body .comment-metadata {
+  padding-bottom: 0.3125rem;
+  font-size: 0.75rem;
+}
+.comment-body .reply {
+  text-align: right;
+}
+
+.comment-respond .logged-in-as a {
+  font-weight: bold;
 }
 
 /*--------------------------------------------------------------
@@ -1015,7 +1016,7 @@ ul, ol {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 3.125rem;
+  line-height: 1.3;
   font-weight: 400;
 }
 
@@ -1250,12 +1251,23 @@ h1.site-title {
   margin: 0;
   padding: 0;
 }
-.comment-list .comment {
+.comment-list > .comment {
   padding: 1.618rem;
   background-color: rgba(221, 193, 174, 0.05);
   border: 0.0625rem solid rgba(108, 67, 38, 0.05);
 }
 
+.comment-author .fn {
+  text-transform: capitalize;
+}
+
+.comments-title {
+  font-size: 1.5rem;
+}
+
+.comment-respond {
+  margin-top: 1.25rem;
+}
 .comment-respond .form-allowed-tags {
   display: none;
 }
@@ -1388,7 +1400,7 @@ h1.site-title {
 
 @media (max-width: 70.3125rem) {
   h1, h2, h3, h4, h5, h6 {
-    line-height: 3.125rem;
+    line-height: 1.3;
     font-weight: 400;
   }
 
@@ -1507,7 +1519,7 @@ h1.site-title {
 }
 @media (max-width: 37.5rem) {
   h1, h2, h3, h4, h5, h6 {
-    line-height: 3.125rem;
+    line-height: 1.3;
     font-weight: 400;
   }
 
@@ -1560,7 +1572,7 @@ h1.site-title {
 }
 @media (max-width: 25rem) {
   h1, h2, h3, h4, h5, h6 {
-    line-height: 3.125rem;
+    line-height: 1.3;
     font-weight: 400;
   }
 
@@ -1630,7 +1642,7 @@ h1.site-title {
   }
 
   .flexslider h1, .flexslider h2, .flexslider h3, .flexslider h4, .flexslider h5, .flexslider h6 {
-    line-height: 3.125rem;
+    line-height: 1.3;
     font-weight: 400;
   }
   .flexslider h1 {
@@ -1721,9 +1733,7 @@ FontAwesome
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-transform: translate(0, 0);
-      -ms-transform: translate(0, 0);
-          transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 /**---------------
@@ -1782,6 +1792,7 @@ Write your code here
 .comment-metadata time:before {
   content: "\f017";
   padding: 0.3125rem;
+  padding-left: 0;
 }
 
 .powen-continue-reading:after {

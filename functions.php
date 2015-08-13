@@ -12,7 +12,9 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
 }
 
-if( ! defined( 'POWEN_VERSION' )) define( 'POWEN_VERSION' , 1.0 );
+$powen_theme = wp_get_theme();
+
+if( ! defined( 'POWEN_VERSION' )) define( 'POWEN_VERSION' , $powen_theme->get('Version') );
 if( ! defined( 'POWEN_URI' )) define( 'POWEN_URI' , get_template_directory_uri() );
 if( ! defined( 'POWEN_DR' )) define( 'POWEN_DR'	, get_template_directory() );
 if( ! defined( 'POWEN_ADMIN_DR' )) define( 'POWEN_ADMIN_DR'	, POWEN_DR . '/lib/admin/' );
@@ -30,6 +32,7 @@ do_action( 'powen_init' );
 require POWEN_DR . '/inc/extras.php';
 
 do_action( 'powen_files_load' );
+
 
 /**
  * Customizer

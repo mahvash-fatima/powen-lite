@@ -3,7 +3,7 @@
 
 	<div class ="powen-featured-img">
 	<a href ="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark" >
-	<?php the_post_thumbnail(); ?>
+	<?php the_post_thumbnail('full'); ?>
 	</a>
 	</div>
 
@@ -19,14 +19,7 @@
 		<div class="powen-latest-post-tag"><span><?php echo __('Latest', 'powen'); ?></span></div>
 
 		<div class="entry-content">
-			<?php
-			/**
-			* Custom Excerpt Length powen using wp_trim_excerpt()
-			*/
-
-			$powen_content = get_the_content();
-			echo wp_trim_words( $powen_content , apply_filters('powen_excerpt_length', '100') );
-			?>
+			<?php the_excerpt(); ?>
 		</div>
 
 		<footer class="entry-footer">

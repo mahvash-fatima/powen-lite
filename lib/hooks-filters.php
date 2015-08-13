@@ -44,4 +44,4 @@ function powen_change_read_more( $more )
 	return '<div class="powen-continue-reading"><a class="moretag" href="' . get_permalink($post->ID) . '">'.__('Continue Reading', 'powen') . '</a></div>';
 }
 
-add_filter('the_excerpt', 'powen_change_read_more');
+add_filter('excerpt_more', 'powen_change_read_more');

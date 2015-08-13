@@ -231,14 +231,27 @@ h1.site-title {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	.comment {
+	> .comment {
 		padding: $default_gutter;
 		@include comment();
 	}
 }
 
-.comment-respond .form-allowed-tags {
-	display: none;
+.comment-author{
+	.fn{
+		text-transform: capitalize;
+	}
+}
+
+.comments-title{
+	font-size: rem-calc(24);
+}
+
+.comment-respond {
+	margin-top:rem-calc(20);
+	.form-allowed-tags {
+		display: none;
+	}
 }
 
 //**** Widgets
