@@ -78,20 +78,6 @@ class Powen_Customizer {
           'settings' =>  'powen_mod[content_length]',
       ) ) );
 
-      // READ MORE TEXT
-
-      $wp_customize->add_setting( 'powen_mod[read_more_textbox]', array(
-          'default'           => __('Continue Reading', 'powen'),
-          'sanitize_callback' => 'sanitize_text_field',
-          'capability'        => 'edit_theme_options',
-      ) );
-
-      $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[read_more_textbox]', array(
-          'label'    => __( 'Read More Text', 'powen' ),
-          'section'  => 'powen_content_section',
-          'settings' => 'powen_mod[read_more_textbox]',
-      ) ) );
-
       //COPYRIGHT TEXT
 
       $wp_customize->add_setting( 'powen_mod[copyright_textbox]', array(

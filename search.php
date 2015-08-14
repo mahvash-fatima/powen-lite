@@ -18,7 +18,11 @@ get_header(); ?>
 				<!-- Featured Images -->
 				<?php if ( has_post_thumbnail() )
 				{
-					the_post_thumbnail();
+					if( powen_mod( 'sidebar_position' ) === 'no-sidebar' ){
+						the_post_thumbnail('full');
+					}else{
+						the_post_thumbnail('large');
+					}
 				}
 				?>
 				</a>

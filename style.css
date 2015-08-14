@@ -1155,7 +1155,7 @@ h1.site-title {
 }
 
 .powen-most-recent-post {
-  margin-top: 2.61792rem;
+  margin-top: 1.618rem;
 }
 
 .article-hentry {
@@ -1800,7 +1800,7 @@ Write your code here
   display: block;
   width: 3.75rem;
   height: 0.0625rem;
-  margin: 1.5625rem auto 1.5625rem;
+  margin: 0.625rem auto 1.5625rem;
 }
 
 .widget_recent_comments li:before {

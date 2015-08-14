@@ -42,7 +42,6 @@
 
 			</div>
 
-
 			<!-- Main menu -->
 			<nav id="main-nav">
 				<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'menu_class'=>'powen-wrapper', 'menu_id' => 'main_nav') ); ?>
