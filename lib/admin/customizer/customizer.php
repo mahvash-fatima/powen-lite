@@ -59,25 +59,6 @@ class Powen_Customizer {
           'section' => 'powen_content_section',
       ) ) );
 
-      //Excerpt & Full content
-
-      $wp_customize->add_setting( 'powen_mod[content_length]', array(
-          'default'           => 'excerpt',
-          'sanitize_callback' => 'powen_sanitize_choices',
-          'capability'        => 'edit_theme_options',
-      ) );
-
-      $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[content_length]', array(
-          'label'   =>   __( 'Post Content Length', 'powen' ),
-          'type'    =>  'radio',
-          'choices' =>  array(
-            'excerpt' => __( 'Excerpt', 'powen' ),
-            'full'    => __( 'Full', 'powen' ),
-            ),
-          'section'  =>  'powen_content_section',
-          'settings' =>  'powen_mod[content_length]',
-      ) ) );
-
       //COPYRIGHT TEXT
 
       $wp_customize->add_setting( 'powen_mod[copyright_textbox]', array(
@@ -216,20 +197,22 @@ class Powen_Customizer {
 
       global $powen_theme;
       $url = $powen_theme->get('AuthorURI') . "/powen-pro-pricing/";
+      $description = ! defined( 'POWEN_PRO' ) ? __( 'For More Options Upgrade to ', 'powen' ) . "<a href='{$url}'>".__( 'Powen Pro' , 'powen' )."</a>" : false;
 
       $wp_customize->add_panel( 'powen_slider_pannel', array(
-          'priority'    => 10,
-          'capability'  => 'edit_theme_options',
-          'title'       => __( 'Slider Options', 'powen' ),
-          'description' => __( 'Make slides', 'powen' ),
+          'priority'       => 10,
+          'capability'     => 'edit_theme_options',
+          'title'          => __( 'Slider Options', 'powen' ),
+          'description'    => __( 'Add slider', 'powen' ),
       ) );
 
       $wp_customize->add_section( 'powen_slider_section_pro', array(
-          'priority'    => 9,
-          'capability'  => 'edit_theme_options',
-          'title'       => __( 'Powen Pro' , 'powen' ),
-          'description' => __( 'For More Options Upgrade to ', 'powen' ) . "<a href='{$url}'>".__( 'Powen Pro' , 'powen' )."</a>",
-          'panel'       => 'powen_slider_pannel',
+           'priority'    => 9,
+           'capability'  => 'edit_theme_options',
+           'title'       => __( 'Powen Pro' , 'powen' ),
+           'description' => $description,
+           'type'        => 'checkbox',
+           'panel'       => 'powen_slider_pannel',
       ) );
 
       $wp_customize->add_setting( 'powen_mod[hide_slider]', array(

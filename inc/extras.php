@@ -84,10 +84,12 @@ function powen_load_extras()
 /*
  * Adds New Menu to the admin bar
  */
-
 add_action('admin_bar_menu', 'powen_admin_menu', 100);
 function powen_admin_menu($admin_bar){
 	global $powen_theme;
+
+	if( defined( 'POWEN_PRO' ) ) return;
+
     $admin_bar->add_menu( array(
         'id'    => 'powen-admin-menu',
         'title' => __('Upgrade to Powen Pro', 'powen'),
