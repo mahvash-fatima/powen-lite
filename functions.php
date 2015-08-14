@@ -2,7 +2,7 @@
 /**
  * Powen functions and definitions
  *
- * @package powen
+ * @package Powen Lite
  */
 
 /**
