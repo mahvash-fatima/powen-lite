@@ -157,6 +157,7 @@ h1.site-title {
 	img {
 	margin: 0 auto;
 	display: block;
+	width: 100%;
 	}
 }
 
@@ -303,7 +304,6 @@ h1.site-title {
 			border: none;
 			border-bottom: 1px solid #ccc;
 			border-radius: 2px;
-			padding-right: rem-calc(20px);
 		}
 	}
 }
@@ -330,7 +330,6 @@ h1.site-title {
 }
 
 .powen-social-media-container {
-	overflow: hidden;
 	float: left;
 	ul {
 		margin: 0;
