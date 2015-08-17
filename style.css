@@ -1,17 +1,17 @@
 /*
-Theme Name: Powen Lite
+Theme Name: Powen Pro
 Theme URI: http://supernovathemes.com/powen-theme/
 Author: Mahvash Fatima
 Author URI: http://supernovathemes.com
-Description: Powen Lite has been specially designed for blogging websites however due to its clean design and plenty of customization options, it can easily be customized for any purpose.
+Description: Powen Pro has been specially designed for blogging websites however due to its clean design and plenty of customization options, it can easily be customized for any purpose.
 Version: 1.1.8
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: powen
 Tags: black, yellow, light, fluid-layout, responsive-layout, left-sidebar, right-sidebar, custom-background, custom-menu, custom-colors, featured-images, flexible-header, theme-options, translation-ready, threaded-comments, one-column, two-columns
 
-Powen Lite WordPress Theme is based on Underscores http://underscores.me/, Copyright (C) 2015, Supernova Themes
-Powen Lite WordPress theme is licensed under the GPL.
+Powen Pro WordPress Theme is based on Underscores http://underscores.me/, Copyright (C) 2015, Supernova Themes
+Powen Pro WordPress theme is licensed under the GPL.
 */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -638,21 +638,12 @@ input[type="submit"] {
   float: right;
 }
 
-.widget_powen_social_widget {
-  overflow: hidden;
-}
-.widget_powen_social_widget ul {
-  list-style: none;
-  margin: 0;
+.widget_powen_social_widget .powen-social-icon {
+  display: inline-block;
+  margin: 0.125rem 0;
   padding: 0;
 }
-.widget_powen_social_widget ul li {
-  float: left;
-  border-bottom: none;
-  padding: 0;
-  margin: 0.0625rem;
-}
-.widget_powen_social_widget ul li a {
+.widget_powen_social_widget a {
   padding: 0.625rem 1.25rem;
   text-align: center;
   display: inline-block;
@@ -1304,23 +1295,15 @@ h1.site-title {
   margin-top: 0.0625rem;
 }
 
-.powen-top-container {
-  overflow: hidden;
-  padding: 0.625rem 0;
-}
-.powen-top-container .search-form {
-  text-align: right;
-}
-.powen-top-container .search-form .search-submit {
+.powen-nav .search-form .search-submit {
   display: none;
 }
-.powen-top-container .search-form input.search-field {
+.powen-nav .search-form input.search-field {
   text-indent: 0.625rem;
-  height: 2.5rem;
+  height: auto;
   letter-spacing: 1px;
   border: none;
   border-bottom: 1px solid #ccc;
-  border-radius: 2px;
 }
 
 .widget_search input {
@@ -1328,41 +1311,17 @@ h1.site-title {
 }
 
 .powen-nav {
-  display: inline-block;
-  padding: 0.625rem 0;
-}
-.powen-nav a {
-  padding: 0.809rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
 }
 
-.powen-pro-mobile-menu-container, .powen-top-most-nav, .powen-main-navigation {
-  float: left;
-  margin: 0.0625rem;
-  overflow: hidden;
-}
-.powen-pro-mobile-menu-container a, .powen-top-most-nav a, .powen-main-navigation a {
+.powen-pro-mobile-menu-container, .powen-top-most-nav, .powen-main-navigation, .powen-search-box-top, .powen-social-icon {
   padding: 0.625rem;
+  line-height: 2;
+  text-align: center;
 }
 
-.powen-social-media-container {
-  float: left;
-}
-.powen-social-media-container ul {
-  margin: 0;
-}
-.powen-social-media-container ul li {
-  float: left;
-  margin: 0.0625rem;
-  list-style: none;
-}
-.powen-social-media-container ul li a {
-  padding: 0.625rem;
-}
-
-.powen-search-box-top {
-  float: right;
-  overflow: hidden;
-}
 .powen-search-box-top .search-form {
   position: relative;
 }
@@ -1744,16 +1703,14 @@ Write your code here
 --------------------**/
 .powen-top-most-nav .mm:before, .powen-main-navigation .m:before, .powen-pro-mobile-menu .mm:before {
   content: "\f0c9";
-  padding: 0.3125rem;
-  font-size: 1.25em;
-  vertical-align: bottom;
+  padding-right: 0.3125rem;
 }
 
 .powen-search-box-top .search-form label:after {
   content: "\f002";
   position: absolute;
   right: 1.25rem;
-  top: 0.375rem;
+  top: 0;
   color: #ececec;
 }
 
@@ -1799,11 +1756,7 @@ Write your code here
 }
 
 .powen-continue-reading:after {
-  content: '';
-  display: block;
-  width: 3.75rem;
-  height: 0.0625rem;
-  margin: 0.625rem auto 1.5625rem;
+  content: "\f178";
 }
 
 .widget_recent_comments li:before {

@@ -175,6 +175,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'.flex-direction-nav li .flex-prev:before',
 			'.flex-direction-nav li .flex-next:before',
 			'.breadcrumbs a',
+			'.powen-continue-reading:after',
 		) );
 		//background
 		$background_color_selectors = apply_filters('powen_background_color_selectors_array', array(
@@ -185,7 +186,6 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'.widget-title:after',
 			'.powen-pagination .current',
 			'.powen-latest-post-tag',
-			'.powen-continue-reading:after',
 			'button',
 			'input[type="button"]',
 			'input[type="reset"]',
