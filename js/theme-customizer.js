@@ -6,41 +6,6 @@
  */
 ( function( $ ) {
 
-	wp.customize( 'powen_mod[theme_font]', function( value ) {
-	    value.bind( function( newval ) {
-
-	        switch( newval.toString().toLowerCase() ) {
-
-	            case 'sansserif':
-	                sFont = 'sans-serif';
-	                break;
-
-	            case 'serif':
-	                sFont = 'serif';
-	                break;
-
-	            case 'courier':
-	                sFont = 'Courier New, Courier';
-	                break;
-
-	            case 'open-sans':
-	                sFont = 'Open Sans';
-	                break;
-
-	            default:
-	                sFont = 'Open Sans';
-	                break;
-
-	        }
-
-	        $( 'body' ).css({
-	            fontFamily: sFont
-	        });
-
-	    });
-
-	});
-
 	// Update the site title in real time...
 	wp.customize( 'blogname', function( value ) {
 		value.bind( function( newval ) {

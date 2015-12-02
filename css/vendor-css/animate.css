@@ -1316,8 +1316,8 @@ Copyright (c) 2015 Daniel Eden
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
 }
 
 @-webkit-keyframes fadeInUpBig {

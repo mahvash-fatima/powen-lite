@@ -17,6 +17,7 @@ FontAwesome
 	.comment-metadata time:before,
 	.powen-continue-reading:after,
 	.breadcrumbs .separator:after,
+	.tags-links:before,
 	//SECONDARY ICONS
 	.widget_recent_comments li:before,
 	.widget_recent_comments li>a:before,
@@ -96,6 +97,10 @@ Write your code here
 	padding: rem-calc(5);
 }
 .cat-links:before {
+	content: "\f0ca";
+	padding: rem-calc(5);
+}
+.tags-links:before {
 	content: "\f02c";
 	padding: rem-calc(5);
 }

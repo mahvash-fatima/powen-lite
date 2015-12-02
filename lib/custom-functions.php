@@ -188,3 +188,30 @@ if( ! function_exists( 'powen_cutomizer_option_css' ) ) :
 endif; //powen_cutomizer_option_css
 
 add_action( 'wp_head', 'powen_cutomizer_option_css' );
+
+//Post Tags
+if( ! function_exists( 'powen_post_tags' ) ) :
+
+	function powen_post_tags() {
+		if( powen_mod('post_tags') == 1 ) {
+			echo "<style> .entry-footer .tags-links {display: none;} </style>";
+		}
+	}
+
+endif; //powen_post_tags
+
+add_action( 'wp_head', 'powen_post_tags' );
+
+
+//Post Categories
+if( ! function_exists( 'powen_post_categories' ) ) :
+
+	function powen_post_categories() {
+		if( powen_mod('post_categories') == 1 ) {
+			echo "<style> .entry-footer .cat-links {display: none;} </style>";
+		}
+	}
+
+endif; //powen_post_categories
+
+add_action( 'wp_head', 'powen_post_categories' );

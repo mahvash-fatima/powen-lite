@@ -27,6 +27,10 @@ LICENSE
 	Animate by @daneden - https://github.com/daneden/animate.css - @animate.css
 	License - http://opensource.org/licenses/MIT ( MIT License )
 
+-Hover
+	Hover by @Ian Lunn - https://github.com/IanLunn/Hover/ - @hover.css
+	License - http://opensource.org/licenses/MIT ( MIT License )
+
 -Bootstrap
 	_s by @Automattic - https://github.com/automattic/_s - @_s
 	License - https://github.com/Automattic/_s/commit/60d249b7c31733181e2d213784110f221a26ecc0 ( GPLv2 License )

@@ -16,7 +16,7 @@
 
 		</header>
 
-		<div class="powen-latest-post-tag"><span><?php echo __('Latest', 'powen-lite'); ?></span></div>
+		<div class="powen-latest-post-tag"><span class="hvr-curl-bottom-right"><?php echo __('Latest', 'powen-lite'); ?></span></div>
 
 		<div class="entry-content">
 			<?php powen_content(); ?>

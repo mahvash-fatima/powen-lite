@@ -12,6 +12,7 @@
  */
 
 $first_post_id = false;
+
 $show_latest_post = powen_mod( 'show_latest_post', 1 );
 
 get_header(); ?>
@@ -38,9 +39,7 @@ get_header(); ?>
 
 		?>
 
-			<?php endwhile; else : ?>
-
-			<p><?php echo __( 'Sorry, no posts matched your criteria.', 'powen-lite' ); ?></p>
+			<?php endwhile; ?>
 
 			<?php endif; wp_reset_postdata(); ?>
 

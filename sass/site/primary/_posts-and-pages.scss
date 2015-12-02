@@ -59,6 +59,7 @@
 .powen-pagination .current, .powen-pagination a {
 	border: rem-calc(1) solid $color_border;
 	border-radius: 3px;
+	margin: rem-calc(5);
 }
 
 .powen-pagination .next, .powen-pagination .prev, .powen-pagination .last {
@@ -66,6 +67,7 @@
 	background: #ffffff;
 	border-radius: rem-calc(3);
 	border: rem-calc(1) solid $color_border;
+	margin: rem-calc(5);
 }
 
 //breadcrumbs

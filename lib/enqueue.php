@@ -20,6 +20,9 @@ if ( ! function_exists( 'powen_enqueue_styles' ) ) :
 		//Animate
 		wp_register_style( 'powen-animate', POWEN_URI . '/css/vendor-css/animate.css' );
 
+		//Hover
+		wp_register_style( 'powen-hover', POWEN_URI . '/css/vendor-css/hover.css' );
+
 		//Font Awesome
 		wp_register_style( 'powen-fontawesome', POWEN_URI . '/lib/fonts/font-awesome/css/font-awesome.min.css' );
 
@@ -46,6 +49,7 @@ if ( ! function_exists( 'powen_enqueue_styles' ) ) :
 
 		wp_enqueue_style( 'powen-animate');
 
+		wp_enqueue_style( 'powen-hover');
 
 	}
 
