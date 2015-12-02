@@ -9,7 +9,7 @@
 <?php get_header();  ?>
 	<section id="error-404" class="not-found">
 		<header class="page-header">
-			<h2 class="page-title"><?php _e( 'oops! That page can&rsquo;t be found.', 'powen' ); ?></h2>
+			<h2 class="page-title"><?php _e( 'oops! That page can&rsquo;t be found.', 'powen-lite' ); ?></h2>
 		</header><!-- .page-header -->
 		<?php do_action( 'powen_footer_top_extras' ); ?>
 	</section><!-- .error-404 -->

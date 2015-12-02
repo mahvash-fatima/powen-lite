@@ -49,7 +49,7 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 
 		// Add a page number if necessary:
 		if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
-			$title .= " $sep " . sprintf( __( 'Page %s', 'powen' ), max( $paged, $page ) );
+			$title .= " $sep " . sprintf( __( 'Page %s', 'powen-lite' ), max( $paged, $page ) );
 		}
 
 		return $title;
@@ -92,10 +92,10 @@ function powen_admin_menu($admin_bar){
 
     $admin_bar->add_menu( array(
         'id'    => 'powen-admin-menu',
-        'title' => __('Upgrade to Powen Pro', 'powen'),
+        'title' => __('Upgrade to Powen Pro', 'powen-lite'),
         'href'  => $powen_theme->get('AuthorURI') . "/powen-pro-pricing/",
         'meta'  => array(
-            'title' => __('Updgrade to Powen Pro', 'powen'),
+            'title' => __('Updgrade to Powen Pro', 'powen-lite'),
         ),
     ));
 }

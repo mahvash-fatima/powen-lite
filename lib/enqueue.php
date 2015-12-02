@@ -3,53 +3,59 @@
 /*==============================
         ENQUEUE STYLES
 ===============================*/
+if ( ! function_exists( 'powen_enqueue_styles' ) ) :
 
-function powen_enqueue_styles(){
+	function powen_enqueue_styles(){
 
-	$show_flexslider = powen_options('show-slider') || ! isset($powen_options['show-slider']);
+		$show_flexslider = powen_options('show-slider') || ! isset($powen_options['show-slider']);
 
-	/*===============
-         REGISTER
-	=================*/
+		/*===============
+	         REGISTER
+		=================*/
 
-	if( ! defined( 'POWEN_PRO' ) )
-	wp_enqueue_style( 'powen-google-font' , 'http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400,700' );
+		if( ! defined( 'POWEN_PRO' ) )
 
-	//Animate
-	wp_register_style( 'powen-animate', POWEN_URI . '/css/vendor-css/animate.css' );
+		wp_enqueue_style( 'powen-google-font' , 'http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400,700' );
 
-	//Font Awesome
-	wp_register_style( 'powen-fontawesome', POWEN_URI . '/lib/fonts/font-awesome/css/font-awesome.min.css' );
+		//Animate
+		wp_register_style( 'powen-animate', POWEN_URI . '/css/vendor-css/animate.css' );
 
-	//Mmenu
-	wp_register_style( 'powen-mobile-menu-style', POWEN_URI . '/css/vendor-css/jquery.mmenu.all.css' );
+		//Font Awesome
+		wp_register_style( 'powen-fontawesome', POWEN_URI . '/lib/fonts/font-awesome/css/font-awesome.min.css' );
 
-	//Default stylesheet
-	wp_register_style( 'powen-default', POWEN_URI . '/css/default.css', array('powen-fontawesome') );
+		//Mmenu
+		wp_register_style( 'powen-mobile-menu-style', POWEN_URI . '/css/vendor-css/jquery.mmenu.all.css' );
 
-	//Flexslider styles
-	wp_register_style( 'powen-flexslider', POWEN_URI . '/css/vendor-css/flexslider.css', array('powen-default') );
+		//Default stylesheet
+		wp_register_style( 'powen-default', POWEN_URI . '/css/default.css', array('powen-fontawesome') );
 
-	/*===============
-          ENQUEUE
-	=================*/
+		//Flexslider styles
+		wp_register_style( 'powen-flexslider', POWEN_URI . '/css/vendor-css/flexslider.css', array('powen-default') );
 
-	wp_enqueue_style('powen-mobile-menu-style');
+		/*===============
+	          ENQUEUE
+		=================*/
 
-	if( $show_flexslider )
-	wp_enqueue_style('powen-flexslider');
+		wp_enqueue_style('powen-mobile-menu-style');
 
-	wp_enqueue_style( 'powen-style', get_stylesheet_uri() );
+		if( $show_flexslider )
 
-	wp_enqueue_style( 'powen-animate');
+		wp_enqueue_style('powen-flexslider');
+
+		wp_enqueue_style( 'powen-style', get_stylesheet_uri() );
+
+		wp_enqueue_style( 'powen-animate');
 
 
-}
+	}
 
+endif; //powen_enqueue_styles
 
 /*==============================
         ENQUEUE SCRIPTS
 ===============================*/
+
+if ( ! function_exists( 'powen_enqueue_scripts' ) ) :
 
 function powen_enqueue_scripts(){
 
@@ -98,8 +104,6 @@ function powen_enqueue_scripts(){
 
 }
 
+endif; //powen_enqueue_scripts
 
 add_action( 'wp_enqueue_scripts', 'powen_enqueue_scripts' );
-
-
-

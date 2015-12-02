@@ -3,6 +3,10 @@
 	word-wrap: break-word;
 }
 
+#wp-admin-bar-powen-admin-menu a.ab-item {
+	color: #00A0D2;
+}
+
 body {
 	@include body();
 }
@@ -85,7 +89,6 @@ ul, ol {
 
 // Header
 .site-header {
-	width: 100%;
 	background-color: #fff;
 }
 
@@ -131,10 +134,6 @@ h1.site-title {
 	@include main_panel();
 }
 
-.powen-most-recent-post {
-	margin-top: $default_gutter;
-}
-
 .article-hentry {
 	@include sticky_post();
 }
@@ -145,6 +144,10 @@ h1.site-title {
 
 .powen-recent-post {
 	margin-top: $default_gutter;
+	background: #ffffff;
+	.powen-wrapper {
+		max-width: rem-calc(900);
+	}
 }
 
 .powen-pagination {
@@ -196,7 +199,7 @@ h1.site-title {
 .entry-meta {
 	display: inline-block;
 	font-weight: 300;
-	font-size: rem-calc(14);
+
 	@include entry_meta();
 }
 

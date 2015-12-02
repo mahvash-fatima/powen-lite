@@ -14,11 +14,6 @@ class Powen_Customizer_Front extends Powen_Customizer
 	*/
 	public static function css_output()
 	{
-	  //Handle Favicon
-	  $favicon_url = powen_mod('theme_favicon');
-	  if($favicon_url){
-	    echo '<link rel="shortcut icon" type="image" href="'.esc_url($favicon_url).'">';
-	  }
 	  ?>
 	  <!--Customizer CSS-->
 	  <style type="text/css">
@@ -171,7 +166,6 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'.author:before',
 			'.posted-on:before',
 			'.comment-metadata time:before',
-			'textarea:focus',
 			'.flex-direction-nav li .flex-prev:before',
 			'.flex-direction-nav li .flex-next:before',
 			'.breadcrumbs a',
