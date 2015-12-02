@@ -93,13 +93,17 @@ ul, ol {
 }
 
 .site-branding {
-	padding-top: $default_gutter;
-	padding-bottom: $default_gutter;
+	padding: rem-calc(15);
 	text-align: center;
+}
+
+.site-description {
+	margin-bottom: 0;
 }
 
 h1.site-title {
 	font-weight: 700;
+	margin-bottom: 0;
 }
 
 .site-title, .site-description {
@@ -294,6 +298,7 @@ h1.site-title {
 }
 
 .powen-nav {
+	padding: rem-calc(15 0 0 0);
 	.search-form {
 		.search-submit {
 			display: none;
@@ -314,10 +319,6 @@ h1.site-title {
 
 .widget_search input {
 	border: 1px solid #F8F8F8;
-}
-
-.powen-nav {
-	padding: $default_gutter 0;
 }
 
 .powen-pro-mobile-menu-container, .powen-top-most-nav, .powen-main-navigation, .powen-search-box-top, .powen-social-icon{

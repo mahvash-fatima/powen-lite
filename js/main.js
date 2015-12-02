@@ -40,7 +40,6 @@
 		createMainSlider: function(){
 			$('.flexslider').flexslider({
 			    animation: "slide",
-			    animationLoop: false,
 			    itemWidth: 210,
 			    itemMargin: 0,
 			    minItems: 2,

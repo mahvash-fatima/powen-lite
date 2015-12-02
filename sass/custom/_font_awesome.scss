@@ -147,6 +147,9 @@ Write your code here
    margin: rem-calc(25) auto rem-calc(25);
 }
 
+.widget-title:after {
+	margin: rem-calc(15) auto rem-calc(15);
+}
 
 //Back To Top
 .footer-scroll:before {
