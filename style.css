@@ -4,7 +4,7 @@ Theme URI: http://supernovathemes.com/powen-theme/
 Author: Mahvash Fatima
 Author URI: http://supernovathemes.com
 Description: Powen Lite has been specially designed for blogging websites however due to its clean design and plenty of customization options, it can easily be customized for any purpose.
-Version: 1.2.0
+Version: 1.2.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: powen
@@ -644,12 +644,12 @@ input[type="submit"] {
   padding: 0;
 }
 .widget_powen_social_widget a {
-  padding: 0.625rem 1.25rem;
-  text-align: center;
   display: inline-block;
-  width: 3.5rem;
+  width: 3.125rem;
   border: 1px solid #ccc;
-  border-radius: 0.1875rem;
+  border-radius: 0.125rem;
+  line-height: 3;
+  text-align: center;
 }
 
 #monster-widget-placeholder-8 {
@@ -1311,19 +1311,25 @@ h1.site-title {
 }
 
 .powen-nav {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
+  padding: 1.618rem 0;
 }
 
 .powen-pro-mobile-menu-container, .powen-top-most-nav, .powen-main-navigation, .powen-search-box-top, .powen-social-icon {
+  display: inline-block;
+}
+.powen-pro-mobile-menu-container a i:before, .powen-top-most-nav a i:before, .powen-main-navigation a i:before, .powen-search-box-top a i:before, .powen-social-icon a i:before {
   padding: 0.625rem;
-  line-height: 2;
-  text-align: center;
 }
 
+.powen-search-box-top {
+  float: right;
+}
 .powen-search-box-top .search-form {
   position: relative;
+  padding: 0 0.625rem;
+}
+.powen-search-box-top .search-form input {
+  padding-right: 1.875rem;
 }
 
 .site-footer {
@@ -1695,7 +1701,9 @@ FontAwesome
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 /**---------------
@@ -1703,7 +1711,6 @@ Write your code here
 --------------------**/
 .powen-top-most-nav .mm:before, .powen-main-navigation .m:before, .powen-pro-mobile-menu .mm:before {
   content: "\f0c9";
-  padding-right: 0.3125rem;
 }
 
 .powen-search-box-top .search-form label:after {
@@ -1711,7 +1718,7 @@ Write your code here
   position: absolute;
   right: 1.25rem;
   top: 0;
-  color: #ececec;
+  color: #cdcdcd;
 }
 
 .posted-on:before {
