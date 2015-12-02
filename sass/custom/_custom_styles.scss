@@ -312,6 +312,10 @@ h1.site-title {
 	width: 100%;
 }
 
+.widget_search input {
+	border: 1px solid #F8F8F8;
+}
+
 .powen-nav {
 	padding: $default_gutter 0;
 }
@@ -351,6 +355,10 @@ h1.site-title {
 	margin: 0 1% 0 0;
 	width: 24%;
 	padding: 1%;
+}
+
+.powen-footer-widgets .widget_search input {
+	border: 1px solid #565656;
 }
 
 //colors
