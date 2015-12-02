@@ -1,101 +1,4 @@
 /*--------------------------------------------------------------
-1.0 Reset
---------------------------------------------------------------*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-  border: 0;
-  font-family: inherit;
-  font-size: 100%;
-  font-style: inherit;
-  font-weight: inherit;
-  margin: 0;
-  outline: 0;
-  padding: 0;
-  vertical-align: baseline;
-}
-
-html {
-  overflow-y: scroll;
-  /* Keeps page centered in all browsers regardless of content height */
-  -webkit-text-size-adjust: 100%;
-  /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
-  -ms-text-size-adjust: 100%;
-  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
-  box-sizing: border-box;
-  /* Apply a natural box layout model to the document; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
-}
-
-*,
-*:before,
-*:after {
-  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-  box-sizing: inherit;
-}
-
-body {
-  background: #fff;
-  /* Fallback for when there is no custom background color defined. */
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-nav,
-section {
-  display: block;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-table {
-  /* tables still need 'cellspacing="0"' in the markup */
-  border-collapse: separate;
-  border-spacing: 0;
-}
-
-caption, th, td {
-  font-weight: normal;
-  text-align: center;
-  border-bottom: 1px solid;
-  border-left: 1px solid;
-}
-
-caption, th, td:first-child {
-  border-left: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-}
-
-blockquote, q {
-  quotes: "" "";
-}
-
-a:hover,
-a:active {
-  outline: 0;
-}
-
-a img {
-  border: 0;
-}
-
-/*--------------------------------------------------------------
 Custom Vars & Mixins
 --------------------------------------------------------------*/
 /*------------
@@ -323,7 +226,7 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-  border: 1px solid #cccccc;
+  border: 1px solid #F8F8F8;
   text-indent: 0.3125rem;
   height: 2.5rem;
   letter-spacing: 0.0625rem;
@@ -479,7 +382,8 @@ input[type="submit"] {
   padding: 0.3125rem 0.625rem;
   margin: 0.1875rem 0.0625rem;
   display: inline-block;
-  border: 1px dotted;
+  border: 1px solid #F5F5F5;
+  border-radius: 0.125rem;
 }
 .widget_tag_cloud a:hover {
   border: 1px solid;
@@ -515,7 +419,7 @@ input[type="submit"] {
 }
 
 .widget-area li {
-  border-bottom: 1px dashed #ccc;
+  border-bottom: 1px solid #F8F8F8;
   padding: 0.625rem 0;
 }
 .widget-area li:last-child {
@@ -610,15 +514,24 @@ input[type="submit"] {
 .widget_powen_social_widget a {
   display: inline-block;
   width: 3.125rem;
-  border: 1px solid #ccc;
+  border: 1px solid #F5F5F5;
   border-radius: 0.125rem;
   line-height: 3;
   text-align: center;
+  color: #565656;
 }
 
 #monster-widget-placeholder-8 {
   width: 100%;
   padding: 1.618rem;
+}
+
+.powen-footer-widgets li {
+  border-bottom: 1px solid #565656;
+}
+
+.powen-footer-widgets input, .powen-footer-widgets .widget_powen_social_widget a, .powen-footer-widgets .tagcloud a {
+  border: 1px solid #565656;
 }
 
 /*--------------------------------------------------------------
@@ -659,6 +572,10 @@ input[type="submit"] {
 
 .posted-on, .byline {
   padding: 0.3125rem;
+}
+
+.powen-footer-widgets input + div {
+  text-align: center;
 }
 
 .powen-pagination {
@@ -947,8 +864,12 @@ object {
   word-wrap: break-word;
 }
 
+#wp-admin-bar-powen-admin-menu a.ab-item {
+  color: #00A0D2;
+}
+
 body {
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 }
 
 a {
@@ -1122,10 +1043,6 @@ h1.site-title {
 
 .powen-recent-post {
   margin-top: 1.618rem;
-  background: #ffffff;
-}
-.powen-recent-post .powen-wrapper {
-  max-width: 56.25rem;
 }
 
 .powen-pagination {
@@ -1196,7 +1113,7 @@ h1.site-title {
   margin: 2.61792rem 0 1.618rem 0;
   line-height: 3em;
   text-align: center;
-  border-top: 0.125rem solid #f5f5f5;
+  border-top: 0.125rem solid #F8F8F8;
 }
 .entry-footer span {
   margin: 0.3125rem;
@@ -1257,6 +1174,11 @@ h1.site-title {
   margin-top: 0.0625rem;
 }
 
+.comments-area .comment-form p label {
+  display: inline-block;
+  min-width: 6.25rem;
+}
+
 .powen-nav .search-form .search-submit {
   display: none;
 }
@@ -1265,7 +1187,7 @@ h1.site-title {
   height: auto;
   letter-spacing: 1px;
   border: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #F8F8F8;
 }
 
 .widget_search input {
@@ -1637,6 +1559,7 @@ FontAwesome
 .cat-links:before,
 .comment-metadata time:before,
 .powen-continue-reading:after,
+.breadcrumbs .separator:after,
 .widget_recent_comments li:before,
 .widget_recent_comments li > a:before,
 .widget_archive li:before,
@@ -1726,6 +1649,12 @@ Write your code here
   content: "\f178";
 }
 
+.breadcrumbs .separator:after {
+  content: "\f105";
+  color: #cccccc;
+  padding-right: 0.3125rem;
+}
+
 .widget_recent_comments li:before {
   content: "\f007";
   padding-right: 0.625rem;
@@ -1781,6 +1710,10 @@ Write your code here
 /*--------------------------------------------------------------
 16.0 Slider
 --------------------------------------------------------------*/
+.flexslider img {
+  height: auto;
+}
+
 .flex-prev {
   font-size: 0.875rem;
   padding: 0 0.75rem;
