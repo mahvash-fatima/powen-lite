@@ -1,5 +1,5 @@
 
-<?php 
+<?php
 /**
  * Tempate part used in index.php for showing flexslider
  * @package powen
@@ -57,11 +57,11 @@ $powen_default_slides =  array(
 				if( ! empty($slides) ){
 					foreach ( $slides as $slide ) {
 
-						$slideLink		  = esc_url($slide['link']);
-						$slideImage		  = esc_url($slide['image']);
+						$slideLink		  = esc_url_raw($slide['link']);
+						$slideImage		  = esc_url_raw($slide['image']);
 						$slideTitle 	  = esc_attr(__($slide['title'], 'powen'));
 						$slideDescription = esc_attr(__($slide['description'], 'powen'));
-						
+
 						echo "<li>";
 						echo "<a href='{$slideLink}'>";
 						echo 	"<img src='{$slideImage}' alt='image'>";
@@ -83,8 +83,8 @@ $powen_default_slides =  array(
 				if( ! empty($slides) ){
 					foreach ( $slides as $slide ) {
 
-						$slideLink		  = esc_url($slide['link']);
-						$slideImage		  = esc_url($slide['image']);
+						$slideLink		  = esc_url_raw($slide['link']);
+						$slideImage		  = esc_url_raw($slide['image']);
 						$slideTitle 	  = esc_attr(__($slide['title'], 'powen'));
 						$slideDescription = esc_attr(__($slide['description'], 'powen'));
 

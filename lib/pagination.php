@@ -4,8 +4,8 @@ function powen_pagination($pages = '', $range = 4)
 {  
      $showitems = ($range * 2)+1;  
  
-     global $paged;
-     if(empty($paged)) $paged = 1;
+     global $powen_paged;
+     if(empty($powen_paged)) $powen_paged = 1;
  
      if($pages == '')
      {
@@ -19,20 +19,20 @@ function powen_pagination($pages = '', $range = 4)
  
      if(1 != $pages)
      {
-         echo "<div class=\"pagination\"><span>Page ".$paged." of ".$pages."</span>";
-         if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo; First</a>";
-         if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'class='page-previous'>&lsaquo; Previous</a>";
+         echo "<div class=\"pagination\"><span>Page ".$powen_paged." of ".$pages."</span>";
+         if($powen_paged > 2 && $powen_paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo; First</a>";
+         if($powen_paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($powen_paged - 1)."'class='page-previous'>&lsaquo; Previous</a>";
  
          for ($i=1; $i <= $pages; $i++)
          {
-             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
+             if (1 != $pages &&( !($i >= $powen_paged+$range+1 || $i <= $powen_paged-$range-1) || $pages <= $showitems ))
              {
-                 echo ($paged == $i)? "<span class=\"current\">".$i."</span>":"<a href='".get_pagenum_link($i)."' class=\"inactive\">".$i."</a>";
+                 echo ($powen_paged == $i)? "<span class=\"current\">".$i."</span>":"<a href='".get_pagenum_link($i)."' class=\"inactive\">".$i."</a>";
              }
          }
  
-         if ($paged < $pages && $showitems < $pages) echo "<a href=\"".get_pagenum_link($paged + 1)."\" class='page-next'>Next &rsaquo;</a>";  
-         if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."' class='page-last'>Last &raquo;</a>";
+         if ($powen_paged < $pages && $showitems < $pages) echo "<a href=\"".get_pagenum_link($powen_paged + 1)."\" class='page-next'>Next &rsaquo;</a>";  
+         if ($powen_paged < $pages-1 &&  $powen_paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."' class='page-last'>Last &raquo;</a>";
          echo "</div>\n";
      }
 }

@@ -20,7 +20,7 @@ get_header(); ?>
 <!-- slider-ends -->
 
 <div id="content" class="site-content clear">
-		
+
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main" role="main">
 
@@ -34,9 +34,9 @@ get_header(); ?>
 						 * If you want to override this in a child theme, then include a file
 						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 						 */
-						
+
 						get_template_part( 'content', get_post_format() );
-						
+
 					?>
 
 				<?php endwhile; ?>
@@ -44,7 +44,7 @@ get_header(); ?>
 				<?php if (function_exists("powen_pagination")) {
 				    powen_pagination();
 				} ?>
-				
+
 			<!-- To reset custom loop -->
 			<?php wp_reset_postdata(); ?>
 
@@ -57,8 +57,6 @@ get_header(); ?>
 			</main><!-- #main -->
 		</div><!-- #primary -->
 <?php get_sidebar(); ?>
-
-<?php powen_sidebar_layout(); ?>
 
 </div><!-- #content -->
 

@@ -1,7 +1,24 @@
 a {
 	color: $color__link_htag;
-	
+	transition: 0.5s;
+	-webkit-transition:0.5s;
+	-moz-transition:0.5s;
 	&:focus {
 		color: $color__link_htag;
 	}
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+input[type="submit"]
+{
+	color:#ffffff;
+}
+.pagination a:hover,
+.widget-area .tagcloud a:hover {
+	color: #ffffff;
 }

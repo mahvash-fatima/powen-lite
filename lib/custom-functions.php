@@ -6,8 +6,12 @@
  */
 
 
+function powen_mod( $key , $default = false ) {
+	$powen_cus = get_theme_mod('powen_mod' );
+	return isset($powen_cus[$key]) && $powen_cus[$key] ? $powen_cus[$key] : $default;
+}
 /**
- * Used to check if a value is set or not for our global variable $powen_options, 
+ * Used to check if a value is set or not for our global variable $powen_options,
  * so it doesn't return undefined index error in debug mode.
  * @param  [string]  $key1 first or the only key of the array
  * @param  [string] $key2 (optional) the second key of the array.
