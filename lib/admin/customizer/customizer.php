@@ -25,6 +25,27 @@ class Powen_Customizer {
       do_action('powen_customize_starts' , $wp_customize );
 
       /*==============================
+                    Css
+      ===============================*/
+
+      $wp_customize->add_section( 'powen_css_section' , array(
+          'title'      =>  __( 'CSS', 'powen-lite' ),
+          'capability' => 'edit_theme_options',
+      ) );
+
+      $wp_customize->add_setting( 'powen_mod[css_textarea]', array(
+          'sanitize_callback' => 'sanitize_text_field',
+          'capability'        => 'edit_theme_options',
+      ) );
+
+      $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[css_textarea]', array(
+          'label'    => __( 'CSS', 'powen-lite' ),
+          'type'     => 'textarea',
+          'section'  => 'powen_css_section',
+          'settings' => 'powen_mod[css_textarea]',
+      ) ) );
+
+      /*==============================
         CONTENT
       ===============================*/
 
@@ -242,6 +263,7 @@ class Powen_Customizer {
 
       $wp_customize->add_control( new WP_Customize_Control ( $wp_customize, 'powen_mod[hide_slider]', array(
           'label'   => __('Hide Slider', 'powen-lite'),
+          'description' => __('<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=sayedwp@gmail.com&item_name=Donation for Powen Lite">Please support the development of your theme -<strong> Donate <strong></a>', 'powen-lite'),
           'type'    => 'checkbox',
           'section' => 'powen_slider_section_pro',
       ) ) );
@@ -254,7 +276,7 @@ class Powen_Customizer {
           'priority'    => 10,
           'capability'  => 'edit_theme_options',
           'title'       => sprintf( __( 'Slide %s' , 'powen-lite' ), $i+1 ),
-          'description' => __( 'Add slide', 'powen-lite' ),
+          'description' => __( 'Note: Remove all the default Title, Description, Link and Image before customizing the slide', 'powen-lite' ),
           'panel'       => 'powen_slider_pannel',
       ) );
 

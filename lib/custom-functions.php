@@ -48,56 +48,56 @@ if( ! function_exists( 'powen_default_slides' ) ) :
 		        array
 		            (
 						'title'       => __('Demo Post One', 'powen-lite'),
-						'link' 		  => '',
+						'link' 		  => home_url( '/' ),
 						'description' => __('Omnis fugit itaque architecto sit saepe quidem tempora fuga esse incidunt perferendis harum.', 'powen-lite'),
 						'image'       => get_template_directory_uri() . '/images/slides/slide8.jpg',
 		            ),
 		        array
 		            (
 						'title'       => __('Demo Post Two', 'powen-lite'),
-						'link' 		  => '',
+						'link' 		  => home_url( '/' ),
 						'description' => __('Reiciendis blanditiis eius officia molestias dicta vero hic accusamus aliquam enim optio porro veritatis.', 'powen-lite'),
 						'image'       => get_template_directory_uri() . '/images/slides/slide7.jpg',
 		            ),
 		        array
 		            (
 						'title'       => __('Demo Post Three', 'powen-lite'),
-						'link' 		  => '',
+						'link' 		  => home_url( '/' ),
 						'description' => __('Eaque perferendis nesciunt provident facere sint laboriosam commodi saepe quas dolorem ipsam saepe itaque', 'powen-lite'),
 						'image'       => get_template_directory_uri() . '/images/slides/slide6.jpg',
 		            ),
 		        array
 		            (
 						'title'       => __('Demo Post Four', 'powen-lite'),
-						'link' 		  => '',
+						'link' 		  => home_url( '/' ),
 						'description' => __('Cupiditate deleniti, enim natus magni nisi deleniti eligendi recusandae reiciendis.', 'powen-lite'),
 						'image'       => get_template_directory_uri() . '/images/slides/slide5.jpg',
 		            ),
 		        array
 		            (
 						'title'       => __('Demo Post Five', 'powen-lite'),
-						'link' 		  => '',
+						'link' 		  => home_url( '/' ),
 						'description' => __('Temporibus eaque rem unde iste fugasse quaerat quo veniam reprehenderit repudiandae perferendis porro minus.', 'powen-lite'),
 						'image'       => get_template_directory_uri() . '/images/slides/slide4.jpg',
 		            ),
 		        array
 		            (
 						'title'       => __('Demo Post Six', 'powen-lite'),
-						'link' 		  => '',
+						'link' 		  => home_url( '/' ),
 						'description' => __('Perferendis quasi totam voluptates quo quaerat temporibus maiores nesciunt soluta rerum sint laboriosam.', 'powen-lite'),
 						'image'       => get_template_directory_uri() . '/images/slides/slide3.jpg',
 		            ),
 		        array
 		            (
 						'title'       => __('Demo Post Seven', 'powen-lite'),
-						'link' 		  => '',
+						'link' 		  => home_url( '/' ),
 						'description' => __('Inventore nesciunt quaerat unde dicta molestiae animi blanditiis expedita est architecto ipsum ullam nisi perspiciatis.', 'powen-lite'),
 						'image'       => get_template_directory_uri() . '/images/slides/slide2.jpg',
 		            ),
 		        array
 		            (
 						'title'       => __('Demo Post Eight', 'powen-lite'),
-						'link' 		  => '',
+						'link' 		  => home_url( '/' ),
 						'description' => __('Libero mollitia error expedita totam iste minus cumque quos obcaecati earum rerum totam ea vitae.', 'powen-lite'),
 						'image'       => get_template_directory_uri() . '/images/slides/slide1.jpg',
 		            )
@@ -173,3 +173,16 @@ if( ! function_exists( 'powen_custom_admin_head' ) ) :
 endif; //powen_custom_admin_head
 
 add_action( 'admin_head', 'powen_custom_admin_head' );
+
+// CSS
+if( ! function_exists( 'powen_cutomizer_option_css' ) ) :
+
+	function powen_cutomizer_option_css() {
+		if( powen_mod('css_textarea') ) {
+			echo "<style>". powen_mod('css_textarea') . "</style>";
+		}
+	}
+
+endif; //powen_cutomizer_option_css
+
+add_action( 'wp_head', 'powen_cutomizer_option_css' );
