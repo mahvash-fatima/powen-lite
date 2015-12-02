@@ -33,6 +33,25 @@ class Powen_Customizer {
           'capability' => 'edit_theme_options',
       ) );
 
+      //Full content or Excerpt
+      $wp_customize->add_setting( 'powen_mod[content_length]', array(
+          'default'           => 'excerpt',
+          'sanitize_callback' => 'powen_sanitize_choices',
+          'capability'        => 'edit_theme_options',
+      ) );
+
+      $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[content_length]', array(
+          'label'   =>   __( 'Content Length', 'powen-lite' ),
+          'type'    =>  'radio',
+          'choices' =>  array(
+            'full'    => __( 'full', 'powen-lite' ),
+            'excerpt' => __( 'excerpt', 'powen-lite' ),
+          ),
+          'section'  =>  'powen_content_section',
+          'settings' =>  'powen_mod[content_length]',
+      ) ) );
+
+
       //Hide author
 
       $wp_customize->add_setting( 'powen_mod[hide_author]', array(
@@ -442,7 +461,7 @@ class Powen_Customizer {
 
       //Logo placement
       $wp_customize->add_setting( 'powen_mod[logo_placement]', array(
-          'default'           => 'left',
+          'default'           => 'center',
           'sanitize_callback' => 'powen_sanitize_choices',
           'capability'        => 'edit_theme_options',
       ) );
