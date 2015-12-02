@@ -18,7 +18,11 @@ get_header(); ?>
 				<!-- Featured Images -->
 				<?php if ( has_post_thumbnail() )
 				{
-					the_post_thumbnail();
+					if( powen_mod( 'sidebar_position' ) === 'no-sidebar' ){
+						the_post_thumbnail('full');
+					}else{
+						the_post_thumbnail('large');
+					}
 				}
 				?>
 				</a>
@@ -45,10 +49,9 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<!-- Continue reading -->
-			<div class="powen-continue-reading"><a href="<?php esc_url(the_permalink()); ?>"><?php _e('Continue Reading', 'powen') ?></a></div>
+			<?php do_action( 'powen_before_pagination' ); ?>
 
-			<?php the_posts_navigation(); ?>
+			<?php powen_pagination(); ?>
 
 		<?php else : ?>
 

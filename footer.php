@@ -41,7 +41,7 @@
 	    	        <?php dynamic_sidebar( 'fourth-footer-widget-area' ); ?>
 	    	    </div><!-- .fourth .widget-area -->
 	    	    <?php } ?>
-	    	    <?php do_action( 'powen_powen-footer-widgets' ); ?>
+	    	    <?php do_action( 'powen-footer-widgets' ); ?>
     	    </div><!-- .powen-wrapper -->
     	</aside><!-- #fatfooter -->
     	<?php endif; ?>
@@ -50,9 +50,13 @@
 		<div class="powen-wrapper">
 			<div class="powen-footer-site-info">
 				<?php do_action( 'powen_footer_site_info_begins' ); ?>
-			    <?php echo apply_filters( 'powen_copyright_date_text', esc_attr( '(C)', 'powen' ) ); ?><?php echo apply_filters( 'powen_footer_copyright_date', __( date('Y') ) ); ?><a href="<?php echo apply_filters( 'powen_copyright_text_url', esc_url( home_url('/') ) ); ?>" class="powen-copyright" title="<?php echo apply_filters( 'powen_copyright_text', esc_attr( get_bloginfo('name', 'display') ) ); ?>">
+			    <?php echo apply_filters( 'powen_copyright_date_text', esc_attr( '(C)', 'powen' ) ); ?><?php echo apply_filters( 'powen_footer_copyright_date', __( date('Y') ) ); ?>
+
+				<?php if( powen_mod( 'copyright_textbox' ) !== '' ) { ?>
+			    <a href="<?php echo apply_filters( 'powen_copyright_text_url', esc_url( home_url('/') ) ); ?>" class="powen-copyright" title="<?php echo apply_filters( 'powen_copyright_text', esc_attr( get_bloginfo('name', 'display') ) ); ?>">
 			        <?php echo esc_textarea( powen_mod( 'copyright_textbox' ), 'powen' ); ?>
 			    </a>
+			    <?php } ?>
 
 				<span class="sep"><?php echo apply_filters( 'powen_footer_site_info_pipe',  ' |'  ); ?></span>
 

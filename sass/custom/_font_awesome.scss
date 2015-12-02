@@ -29,7 +29,8 @@ FontAwesome
 	.widget_recent_entries li:before,
 	.entry-header:after,
 	.widget-title:after,
-	.footer-scroll:before
+	.footer-scroll:before,
+	.powen-pro-mobile-menu .mm:before
 {
 font-family: 'FontAwesome';
 font-weight: normal;
@@ -50,7 +51,7 @@ Write your code here
 --------------------**/
 
 //HEADER
-.powen-top-most-nav .mm:before, .powen-main-navigation .m:before {
+.powen-top-most-nav .mm:before, .powen-main-navigation .m:before, .powen-pro-mobile-menu .mm:before {
 	content: "\f0c9";
 	padding: rem-calc(5);
 	font-size: 1.25em;
@@ -60,10 +61,9 @@ Write your code here
 .powen-search-box-top .search-form label:after {
 	content: "\f002";
 	position: absolute;
-	right: rem-calc(13);
-	top: rem-calc(1);
-	color: #cccccc;
-	background-color: #ffffff;
+	right: rem-calc(20);
+	top: rem-calc(6);
+	color: #ececec;
 }
 
 //PRIMARY ICONS
@@ -104,10 +104,14 @@ Write your code here
 .comment-metadata time:before {
 	content: "\f017";
 	padding: rem-calc(5);
+	padding-left: 0;
 }
 .powen-continue-reading:after {
-	content: "\f178";
-	padding: rem-calc(5);
+	content: '';
+	display: block;
+	width: rem-calc(60);
+	height: rem-calc(1);
+	margin: rem-calc(10) auto rem-calc(25);
 }
 
 

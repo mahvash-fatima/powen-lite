@@ -132,7 +132,7 @@ h1.site-title {
 }
 
 .powen-most-recent-post {
-	margin-top: $post_t_padding;
+	margin-top: $default_gutter;
 }
 
 .article-hentry {
@@ -152,6 +152,7 @@ h1.site-title {
 }
 
 .powen-featured-img {
+	overflow: hidden;
 	@include main_panel();
 	img {
 	margin: 0 auto;
@@ -231,14 +232,27 @@ h1.site-title {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	.comment {
+	> .comment {
 		padding: $default_gutter;
 		@include comment();
 	}
 }
 
-.comment-respond .form-allowed-tags {
-	display: none;
+.comment-author{
+	.fn{
+		text-transform: capitalize;
+	}
+}
+
+.comments-title{
+	font-size: rem-calc(24);
+}
+
+.comment-respond {
+	margin-top:rem-calc(20);
+	.form-allowed-tags {
+		display: none;
+	}
 }
 
 //**** Widgets
@@ -277,36 +291,20 @@ h1.site-title {
 
 .powen-top-container {
 	overflow: hidden;
-	padding: $default_gutter 0;
-	.powen-social-media-icons {
-		margin: 0;
-	    li {
-			margin: rem-calc(1);
-			display: inline-block;
-			a {
-				padding: rem-calc(5 10);
-				width: rem-calc(33);
-				display: block;
-				text-align: center;
-			}
-		}
-	}
-
+	padding: rem-calc(10 0);
 	.search-form {
 		text-align: right;
 		.search-submit {
 			display: none;
 		}
-		input[type="text"],
-		input[type="email"],
-		input[type="url"],
-		input[type="password"],
-		input[type="search"] {
-			height: auto;
+		input.search-field {
+			text-indent: rem-calc(10);
+			height: rem-calc(40);
+			letter-spacing: 1px;
+			border: none;
+			border-bottom: 1px solid #ccc;
+			border-radius: 2px;
 		}
-	}
-	.powen-search-box-top, .powen-social_media_container {
-		padding: $default_gutter/2 0;
 	}
 }
 
@@ -316,28 +314,40 @@ h1.site-title {
 
 .powen-nav {
 	display: inline-block;
+	padding: rem-calc(10 0);
 	a {
 		padding: $default_gutter/2 0;
 	}
 }
-.powen-social-media-container {
-	width: 100%;
-	text-align: right;
+
+.powen-pro-mobile-menu-container, .powen-top-most-nav, .powen-main-navigation {
+	float: left;
+	margin: rem-calc(1);
 	overflow: hidden;
-}
-.powen-top-most-nav, .powen-main-navigation {
-	padding: rem-calc(0 10);
-	display: inline-block;
 	a {
-		color: #666666;
+		padding: rem-calc(10);
+	}
+}
+
+.powen-social-media-container {
+	float: left;
+	ul {
+		margin: 0;
+		li {
+			float: left;
+			margin: rem-calc(1);
+			list-style: none;
+			a {
+				padding: rem-calc(10);
+			}
+		}
 	}
 }
 
 .powen-search-box-top {
-	display: inline-block;
 	float: right;
+	overflow: hidden;
 	.search-form {
-		padding: rem-calc(0 10);
 		position: relative;
 	}
 }
@@ -364,15 +374,20 @@ h1.site-title {
 	a {
 		color: #cccccc;
 	}
+	.powen-wrapper {
+		overflow: hidden;
+	}
 }
 .site-info {
 	text-align: center;
 	background: #000000;
 	color: #404040;
+	overflow: hidden;
 	a {
 		color: #666666;
 	}
 }
+
 
 //**** Responsive layout adjustments
 
@@ -447,6 +462,20 @@ h1.site-title {
 	}
 	.flexslider .flex-control-nav {
 		display: none;
+	}
+
+	.quarter,
+	.one-third,
+	.half,
+	.two-thirds,
+	.three-quarters,
+	.full-width {
+	    width: 100%;
+	    margin: 0;
+	}
+	/* padding adjustments */
+	.widget-area {
+	    padding: rem-calc(0 0 10 0);
 	}
 }
 
