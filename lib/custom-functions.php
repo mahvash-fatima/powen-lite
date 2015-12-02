@@ -11,15 +11,15 @@ function powen_mod( $key , $default = false )
 	$powen_mod = get_theme_mod('powen_mod' );
 	$saved_value = isset($powen_mod[$key]) && $powen_mod[$key] ? $powen_mod[$key] : $default;
 
-	$keys_to_be_escaped = array(
+	$keys_to_be_escaped = apply_filters('powen_key_to_be_escaped_array', array(
 		'theme_font',
 		'header_textcolor',
 		'header_taglinecolor',
 		'background_color',
 		'header_background',
-		'footer_widgets_background',
-		'footer_widgets_textcolor',
-		'footer_widgets_linkcolor',
+		'powen-footer-widgets_background',
+		'powen-footer-widgets_textcolor',
+		'powen-footer-widgets_linkcolor',
 		'footer_bottom_textcolor',
 		'footer_bottom_background_color',
 		'theme_color',
@@ -27,7 +27,7 @@ function powen_mod( $key , $default = false )
 		'header_text_placement',
 		'logo_placement',
 		'sidebar_position'
-		);
+		) );
 
 	if( in_array( $key , $keys_to_be_escaped ) ){
 		$saved_value = esc_html( $saved_value ); //As suggested by kevinhaig
@@ -65,4 +65,29 @@ function powen_options( $key1, $key2 = false ){
 
 	}
 
+}
+
+//Pagination
+
+if( ! function_exists( 'powen_pagination' ) )
+{
+	function powen_pagination()
+	{
+		echo "<nav class='powen-pagination clearfix' >";
+			echo paginate_links();
+		echo "</nav>";
+	}
+}
+
+if( ! function_exists( 'powen_content' ) )
+{
+	function powen_content()
+	{
+		if(powen_mod('content_length') == 'full') {
+			the_content();
+		}
+		else{
+			the_excerpt();
+		}
+	}
 }

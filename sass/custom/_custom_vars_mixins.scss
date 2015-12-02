@@ -54,20 +54,19 @@ $widget_b_padding: $widget_t_padding;
 /*------------
 *Typography
 ------------*/
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
 
 // DEFAULT _S "TYPOGRAPHY" VARS
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
-$font__line-height-body: $phi*1em;
-$font__line-height-pre: $phi*1em;
+$font__line-height-body: $phi*1rem;
+$font__line-height-pre: $phi*1rem;
 // /end
 
-$htag_lineheight: 1.313em;
+$htag_lineheight: rem-calc(40);
 $htag_weight: 400;
 
 // H tag font sizes 1 through 6
-$htag_sizes: 3, 2.25, 1.5, 1.313, 1.125, 1;
+$htag_sizes: 3, 2.5, 1.5, 1.313, 1.125, 1;
 
 // H tag vertical margins 1 through 6
 $htag_vmargins: 0.563, 0.625, 1.313, 1.313, 1.313, 0.75;
@@ -81,36 +80,38 @@ $htag_vmargins: 0.563, 0.625, 1.313, 1.313, 1.313, 0.75;
 		h#{$i} {
 			$value: nth($htag_sizes, $i);
 			$size: if( ($value * $factor) < 1, 1, $value * $factor );
-			font-size: $size * 1em;
-			margin: ( nth($htag_vmargins, $i) * 1em ) 0;
+			font-size: $size * 1rem;
+			margin-bottom: ( nth($htag_vmargins, $i) * 1rem );
 		}
 	}
 	// Set H1 widget titles default size
 	.widget-title {
 		$default: nth($htag_sizes, 4);
 		$size: if( ($default * $factor) < 1, 1, $default * $factor );
-		font-size: $size * 1.5em;
+		font-size: $size * 1.5rem;
 		text-align: center;
 	}
 	//Set H1 site title default size
 	.site-branding .site-title {
 		$default: nth($htag_sizes, 4);
 		$size: if( ($default * $factor) > 1, 1, $default * $factor );
-		font-size: $size * 3em;
+		font-size: $size * 3rem;
 	}
 	//Set H2 site description default size
 	.site-branding .site-description {
 		$default: nth($htag_sizes, 4);
 		$size: if( ($default * $factor) > 1, 1, $default * $factor );
-		font-size: $size * 1.5em;
+		font-size: $size * 1.5rem;
 	}
+
 }
 
 //---------------THEME COLORS-------------
 $color_link_date_default:						#aaaaaa;
 $color_text_on_dark_background_default:		    #ffffff;
-$color__powen-slider-content-background: 				rgba(0,0,0,0.3);
+$color__powen-slider-content-background: 		rgba(0,0,0,0.3);
 $color_border_default:    						#f2f2f2;
+$color_border:									#cccccc;
 $color_site_navigation_background:				#ffffff;
 
 $color_primary_background:				        #ffffff;
@@ -124,7 +125,7 @@ $color_text_secondary: 							#565656;
 
 //Footer Colors
 $color__footer_background:      				#cccccc;
-$color__footer_widgets_background: 			 	#f2f2f2;
+$color__powen-footer-widgets_background: 			 	#f2f2f2;
 
 
 // DEFAULT _S "COLORS" VARS
@@ -191,7 +192,7 @@ $color__border-abbr: 							#666;
 }
 
 @mixin sticky_post(){
-	margin-bottom: 50px;
+	margin: 0 0 $default_gutter 0;
 }
 
 @mixin site_footer(){

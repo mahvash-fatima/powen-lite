@@ -6,7 +6,7 @@ input[type="submit"] {
 	text-transform: uppercase;
 	border-radius: 0;
 	border: none;
-	padding: 10px 20px;
+	padding: rem-calc(10 20);
 	cursor: pointer;
 	-o-transition: .3s;
 	-ms-transition: .3s;

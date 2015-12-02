@@ -34,13 +34,15 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-	padding: 8px 20px;
-	border: 2px solid;
+	border: 1px solid $color_border;
+	text-indent: rem-calc(5);
+	height: rem-calc(40);
+	letter-spacing: rem-calc(1);
 }
 
 textarea {
 	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
-	padding-left: 3px;
+	padding-left: rem-calc(3);
 	vertical-align: top; /* Improves readability and alignment in all browsers */
 	width: 100%;
 }

@@ -14,10 +14,10 @@ get_header(); ?>
 			<main id="main" class="site-main" role="main">
 
 			<?php if ( have_posts() ) : ?>
-				
+
 				<header class="page-header">
 					<?php
-						esc_attr(the_archive_title( '<h1 class="page-title">', '</h1>' ));
+						esc_attr(the_archive_title( '<h2 class="page-title">', '</h2>' ));
 						esc_attr(the_archive_description( '<div class="taxonomy-description">', '</div>' ));
 					?>
 				</header><!-- .page-header -->

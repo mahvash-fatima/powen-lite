@@ -1,19 +1,21 @@
 /*------------------
 FontAwesome
 ---------------------*/
+	//HEADER
+	.powen-top-most-nav .mm:before,
+	.powen-main-navigation .m:before,
+	.powen-search-box-top .search-form label:after,
 	//PRIMARY ICONS
 	.posted-on:before,
 	.comments-link:before,
 	.edit-link:before,
 	.nav-previous a:before,
-	.flex-direction-nav li .flex-prev:before,
-	.flex-direction-nav li .flex-next:before,
 	.nav-next a:after,
 	.author:before,
 	.content-area .hentry .entry-date:after,
 	.cat-links:before,
 	.comment-metadata time:before,
-	.continue-reading:after,
+	.powen-continue-reading:after,
 	//SECONDARY ICONS
 	.widget_recent_comments li:before,
 	.widget_recent_comments li>a:before,
@@ -25,7 +27,8 @@ FontAwesome
 	.powen-wrapper .recent-comment-people:before,
 	.menu-long-menu-container li:before,
 	.widget_recent_entries li:before,
-	.powen-border-line,
+	.entry-header:after,
+	.widget-title:after,
 	.footer-scroll:before
 {
 font-family: 'FontAwesome';
@@ -46,62 +49,65 @@ transform: translate(0, 0);
 Write your code here
 --------------------**/
 
+//HEADER
+.powen-top-most-nav .mm:before, .powen-main-navigation .m:before {
+	content: "\f0c9";
+	padding: rem-calc(5);
+	font-size: 1.25em;
+	vertical-align: bottom;
+}
+
+.powen-search-box-top .search-form label:after {
+	content: "\f002";
+	position: absolute;
+	right: rem-calc(13);
+	top: rem-calc(1);
+	color: #cccccc;
+	background-color: #ffffff;
+}
+
 //PRIMARY ICONS
 
 //Date
 .posted-on:before {
 	content: "\f017";
-	padding: 5px;
-	font-size: 1em;
+	padding: rem-calc(5);
 }
 //Comment
 .comments-link:before {
 	content: "\f0e6";
-	padding: 5px;
+	padding: rem-calc(5);
 }
 //Edit
 .edit-link:before {
 	content: "\f044";
-	padding: 5px;
+	padding: rem-calc(5);
 }
 //Older posts
 .nav-previous a:before {
 	content: "\f100";
-	margin: 0 3px;
-}
-//Previous
-.flex-direction-nav li .flex-prev:before {
-	content: "\f100";
-	font-size: 1.5em;
-	color: #ffffff;
-}
-//Next
-.flex-direction-nav li .flex-next:before {
-	content: "\f101";
-	font-size: 1.5em;
-	color: #ffffff;
+	margin: rem-calc(0 5);
 }
 //Newer posts
 .nav-next a:after {
 	content: "\f101";
-	margin: 0 3px;
+	margin: rem-calc(0 3);
 }
 .author:before {
 	content: "\f007";
-	font-size: 1em;
-	padding: 5px;
+	padding: rem-calc(5);
 }
 .cat-links:before {
 	content: "\f02c";
-	padding: 5px;
+	padding: rem-calc(5);
 }
 .comment-metadata time:before {
 	content: "\f017";
-	padding: 5px;
+	padding: rem-calc(5);
 }
-.continue-reading:after {
+.powen-continue-reading:after {
 	content: "\f178";
-	padding: 10px;
+	padding: rem-calc(5);
 }
 
 
@@ -110,7 +116,7 @@ Write your code here
 //Recent Comments
 .widget_recent_comments li:before {
 	content: "\f007";
-	padding-right: 10px;
+	padding-right: rem-calc(10);
 	color: #cccccc;
 }
 .widget_recent_comments li>a:before {
@@ -119,69 +125,61 @@ Write your code here
 }
 //Archive
 .widget_archive li:before {
-	content: "\f111";
+	content: "\f105";
 	color: #cccccc;
-	font-size: 0.1em;
-	margin-right: 2em;
+	margin-right: rem-calc(15);
 }
 .widget_recent_entries li:before {
-	content: "\f111";
+	content: "\f105";
 	color: #cccccc;
-	font-size: 0.1em;
-	margin-right: 2em;
+	margin-right: rem-calc(15);
 }
 //Categories
 .widget_categories li:before {
-	content: "\f111";
+	content: "\f105";
 	color: #cccccc;
-	font-size: 0.1em;
-	margin-right: 2em;
+	margin-right: rem-calc(15);
 }
 //Meta
 .widget_meta li:before {
-	content: "\f111";
+	content: "\f105";
 	color: #cccccc;
-	font-size: 0.1em;
-	margin-right: 2em;
+	margin-right: rem-calc(15);
 }
 .widget_pages li:before {
-	content: "\f111";
+	content: "\f105";
 	color: #cccccc;
-	font-size: 0.1em;
-	margin-right: 2em;
+	margin-right: rem-calc(15);
 }
 .powen-wrapper .recent-comment-people:before {
 	content: "\f007";
-	font-size: 2.50em;
 	color: #454545;
 	background: #2F2F2F;
-	padding-right: 10px;
-	padding-left: 10px;
-	padding-top: 10px;
+	padding-right: rem-calc(10);
+	padding-left: rem-calc(10);
+	padding-top: rem-calc(10);
 	border-radius: 50%;
 }
 .menu-long-menu-container li:before {
-	content: "\f111";
+	content: "\f105";
 	color: #cccccc;
-	font-size: 0.1em;
-	margin-right: 2em;
+	margin-right: rem-calc(15);
 }
 
 //RECENT WIDGETS
 .widget_recent_entries li:before {
-	content: "\f111";
+	content: "\f105";
 	color: #cccccc;
-	font-size: 0.1em;
-	margin-right: 2em;
+	margin-right: rem-calc(15);
 }
 
 // widget-title
-.powen-border-line{
+.entry-header:after, .widget-title:after {
    content: '';
    display: block;
-   width: 60px;
-   height: 1px;
-   margin: 15px auto 23px;
+   width: rem-calc(60);
+   height: rem-calc(1);
+   margin: rem-calc(25) auto rem-calc(25);
 }
 
 
@@ -191,11 +189,11 @@ Write your code here
 	background: rgba(0, 0, 0, 0.46);
 	margin: 0;
 	position: fixed;
-	bottom: 50px;
-	right: 50px;
-	width: 40px;
+	bottom: rem-calc(100);
+	right: rem-calc(50);
+	width: rem-calc(40);
 	text-align: center;
-	height: 35px;
+	height: rem-calc(35);
 	z-index: 100;
 	text-decoration: none;
 	color: #fff;
