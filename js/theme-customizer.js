@@ -1,10 +1,41 @@
 /**
  * This file adds some LIVE to the Theme Customizer live preview. To leverage
  * this, set your custom settings to 'postMessage' and then add your handling
- * here. Your javascript should grab settings from customizer controls, and
+ * here. Your javascript should grab settings from customizer controls, and 
  * then make any necessary changes to the page using jQuery.
  */
 ( function( $ ) {
+
+	wp.customize( 'powen_theme_font', function( value ) {
+	    value.bind( function( newval ) {
+	 
+	        switch( newval.toString().toLowerCase() ) {
+	 
+	            case 'sansserif':
+	                sFont = 'sans-serif';
+	                break;
+	 
+	            case 'serif':
+	                sFont = 'serif';
+	                break;
+	 
+	            case 'courier':
+	                sFont = 'Courier New, Courier';
+	                break;
+	 
+	            default:
+	                sFont = 'Courier New, Courier';
+	                break;
+	 
+	        }
+	 
+	        $( 'body' ).css({
+	            fontFamily: sFont
+	        });
+	 
+	    });
+	 
+	});
 
 	// Update the site title in real time...
 	wp.customize( 'blogname', function( value ) {
@@ -12,7 +43,7 @@
 			$( '.site-title a' ).html( newval );
 		} );
 	} );
-
+	
 	//Update the site description in real time...
 	wp.customize( 'blogdescription', function( value ) {
 		value.bind( function( newval ) {
@@ -28,82 +59,64 @@
 	} );
 
 	//Update site title color in real time...
-	wp.customize( 'powen_mod[header_textcolor]', function( value ) {
+	wp.customize( 'header_textcolor', function( value ) {
 		value.bind( function( newval ) {
 			$('.site-title a').css('color', newval );
 		} );
 	} );
 
-	wp.customize( 'powen_mod[header_taglinecolor]', function( value ) {
+	wp.customize( 'powen_header_taglinecolor', function( value ) {
 		value.bind( function( newval ) {
 			$('.site-description').css('color', newval );
 		} );
 	} );
 
-	wp.customize( 'powen_mod[header_background]', function( value ) {
+	wp.customize( 'powen_header_background', function( value ) {
 		value.bind( function( newval ) {
 			$('.site-header').css('background-color', newval );
 		} );
 	} );
 
-	wp.customize( 'powen_mod[primary_menu_background_color]', function( value ) {
+	wp.customize( 'powen_footer_widgets_background', function( value ) {
 		value.bind( function( newval ) {
-			$('#mm-powen-primary-nav').css('background-color', newval );
+			$('.footer_widgets').css('background-color', newval );
 		} );
 	} );
 
-	wp.customize( 'powen_mod[primary_menu_color]', function( value ) {
+	wp.customize( 'powen_footer_widgets_textcolor', function( value ) {
 		value.bind( function( newval ) {
-			$('#mm-powen-primary-nav').css('color', newval );
+			$('.footer_widgets').css('color', newval );
 		} );
 	} );
 
-	wp.customize( 'powen_mod[main_menu_background_color]', function( value ) {
+	wp.customize( 'powen_footer_widgets_linkcolor', function( value ) {
 		value.bind( function( newval ) {
-			$('#mm-powen_secondary_nav').css('background-color', newval );
+			$('.footer_widgets a').css('color', newval );
 		} );
 	} );
 
-	wp.customize( 'powen_mod[main_menu_color]', function( value ) {
-		value.bind( function( newval ) {
-			$('#mm-powen_secondary_nav').css('color', newval );
-		} );
-	} );
-
-	wp.customize( 'powen_mod[powen-footer-widgets_background]', function( value ) {
-		value.bind( function( newval ) {
-			$('.powen-footer-widgets').css('background-color', newval );
-		} );
-	} );
-
-	wp.customize( 'powen_mod[powen-footer-widgets_textcolor]', function( value ) {
-		value.bind( function( newval ) {
-			$('.powen-footer-widgets').css('color', newval );
-		} );
-	} );
-
-	wp.customize( 'powen_mod[powen-footer-widgets_linkcolor]', function( value ) {
-		value.bind( function( newval ) {
-			$('.powen-footer-widgets a').css('color', newval );
-		} );
-	} );
-
-	wp.customize( 'powen_mod[footer_bottom_textcolor]', function( value ) {
+	wp.customize( 'powen_footer_bottom_textcolor', function( value ) {
 		value.bind( function( newval ) {
 			$('.site-info a').css('color', newval );
 		} );
 	} );
 
-	wp.customize( 'powen_mod[footer_bottom_textcolor]', function( value ) {
+	wp.customize( 'powen_footer_bottom_textcolor', function( value ) {
 		value.bind( function( newval ) {
 			$('.site-info').css('color', newval );
 		} );
 	} );
 
-	wp.customize( 'powen_mod[footer_bottom_background_color]', function( value ) {
+	wp.customize( 'powen_footer_bottom_background_color', function( value ) {
 		value.bind( function( newval ) {
 			$('.site-info').css('background-color', newval );
 		} );
+	} );
+
+	wp.customize( 'powen_display_header', function( value ) {
+	    value.bind( function( newval ) {
+	        false === newval ? $( '#masthead' ).hide() : $( '#masthead' ).show();
+	    } );
 	} );
 
 } )( jQuery );

@@ -20,15 +20,15 @@ function powen_posts_navigation() {
 	}
 	?>
 	<nav class="navigation posts-navigation" role="navigation">
-		<h2 class="screen-reader-text"><?php echo __( 'Posts navigation', 'powen-lite' ); ?></h2>
+		<h2 class="screen-reader-text"><?php _e( 'Posts navigation', 'powen' ); ?></h2>
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( __( 'Older posts', 'powen-lite' ) ); ?></div>
+			<div class="nav-previous"><?php next_posts_link( __( 'Older posts', 'powen' ) ); ?></div>
 			<?php endif; ?>
 
 			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts', 'powen-lite' ) ); ?></div>
+			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts', 'powen' ) ); ?></div>
 			<?php endif; ?>
 
 		</div><!-- .nav-links -->
@@ -53,7 +53,7 @@ function powen_the_post_navigation() {
 	}
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h2 class="screen-reader-text"><?php __( 'Post navigation', 'powen-lite' ); ?></h2>
+		<h2 class="screen-reader-text"><?php _e( 'Post navigation', 'powen' ); ?></h2>
 		<div class="nav-links">
 			<?php
 				previous_post_link( '<div class="nav-previous">%link</div>', '%title' );
@@ -69,54 +69,33 @@ if ( ! function_exists( 'powen_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  */
-	function powen_posted_on() {
-
-		if( powen_mod('hide_date') == '' ) {
-
-			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
-			if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-				$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
-			}
-
-			$time_string = sprintf( $time_string,
-				esc_attr( get_the_date( 'c' ) ),
-				esc_html( get_the_date() ),
-				esc_attr( get_the_modified_date( 'c' ) ),
-				esc_html( get_the_modified_date() )
-			);
-
-			$posted_on = sprintf(
-				_x( '%s', 'post date', 'powen-lite' ),
-				'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
-			);
-
-			echo '<span class="posted-on">' . $posted_on . '</span>';
-
-		}
-
+function powen_posted_on() {
+	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
+		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
 	}
 
+	$time_string = sprintf( $time_string,
+		esc_attr( get_the_date( 'c' ) ),
+		esc_html( get_the_date() ),
+		esc_attr( get_the_modified_date( 'c' ) ),
+		esc_html( get_the_modified_date() )
+	);
+
+	$posted_on = sprintf(
+		_x( '%s', 'post date', 'powen' ),
+		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+	);
+
+	$byline = sprintf(
+		_x( '%s', 'post author', 'powen' ),
+		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+	);
+
+	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>';
+
+}
 endif;
-
-if ( ! function_exists( 'powen_the_author' ) ) :
-
-	function powen_the_author() {
-
-		if( powen_mod('hide_author') == '' ) {
-
-			$byline = sprintf(
-				_x( '%s', 'post author', 'powen-lite' ),
-				'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
-			);
-
-			echo '<span class="byline"> ' . $byline . '</span>';
-
-		}
-
-	}
-
-endif;
-
 
 if ( ! function_exists( 'powen_entry_footer' ) ) :
 /**
@@ -126,25 +105,25 @@ function powen_entry_footer() {
 	// Hide category and tag text for pages.
 	if ( 'post' == get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( ',' );
+		$categories_list = get_the_category_list( __( ', ', 'powen' ) );
 		if ( $categories_list && powen_categorized_blog() ) {
-			printf( '<span class="cat-links">' . __( '%1$s', 'powen-lite' ) . '</span>', $categories_list );
+			printf( '<span class="cat-links">' . __( '%1$s', 'powen' ) . '</span>', $categories_list );
 		}
 
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', ',' );
+		$tags_list = get_the_tag_list( '', __( ', ', 'powen' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . __( '%1$s', 'powen-lite' ) . '</span>', $tags_list );
+			printf( '<span class="tags-links">' . __( 'Tagged %1$s', 'powen' ) . '</span>', $tags_list );
 		}
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';
-		comments_popup_link( __( 'Leave a comment', 'powen-lite' ), __( '1 Comment', 'powen-lite' ), __( '% Comments', 'powen-lite' ) );
+		comments_popup_link( __( 'Leave a comment', 'powen' ), __( '1 Comment', 'powen' ), __( '% Comments', 'powen' ) );
 		echo '</span>';
 	}
 
-	edit_post_link( __( 'Edit', 'powen-lite' ), '<span class="edit-link">', '</span>' );
+	edit_post_link( __( 'Edit', 'powen' ), '<span class="edit-link">', '</span>' );
 }
 endif;
 
@@ -161,45 +140,45 @@ if ( ! function_exists( 'powen_archive_title' ) ) :
  */
 function powen_archive_title( $before = '', $after = '' ) {
 	if ( is_category() ) {
-		$title = sprintf( __( 'Category: %s', 'powen-lite' ), single_cat_title( '', false ) );
+		$title = sprintf( __( 'Category: %s', 'powen' ), single_cat_title( '', false ) );
 	} elseif ( is_tag() ) {
-		$title = sprintf( __( 'Tag: %s', 'powen-lite' ), single_tag_title( '', false ) );
+		$title = sprintf( __( 'Tag: %s', 'powen' ), single_tag_title( '', false ) );
 	} elseif ( is_author() ) {
-		$title = sprintf( __( 'Author: %s', 'powen-lite' ), '<span class="vcard">' . get_the_author() . '</span>' );
+		$title = sprintf( __( 'Author: %s', 'powen' ), '<span class="vcard">' . get_the_author() . '</span>' );
 	} elseif ( is_year() ) {
-		$title = sprintf( __( 'Year: %s', 'powen-lite' ), get_the_date( _x( 'Y', 'yearly archives date format', 'powen-lite' ) ) );
+		$title = sprintf( __( 'Year: %s', 'powen' ), get_the_date( _x( 'Y', 'yearly archives date format', 'powen' ) ) );
 	} elseif ( is_month() ) {
-		$title = sprintf( __( 'Month: %s', 'powen-lite' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'powen-lite' ) ) );
+		$title = sprintf( __( 'Month: %s', 'powen' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'powen' ) ) );
 	} elseif ( is_day() ) {
-		$title = sprintf( __( 'Day: %s', 'powen-lite' ), get_the_date( _x( 'F j, Y', 'daily archives date format', 'powen-lite' ) ) );
+		$title = sprintf( __( 'Day: %s', 'powen' ), get_the_date( _x( 'F j, Y', 'daily archives date format', 'powen' ) ) );
 	} elseif ( is_tax( 'post_format' ) ) {
 		if ( is_tax( 'post_format', 'post-format-aside' ) ) {
-			$title = _x( 'Asides', 'post format archive title', 'powen-lite' );
+			$title = _x( 'Asides', 'post format archive title', 'powen' );
 		} elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) {
-			$title = _x( 'Galleries', 'post format archive title', 'powen-lite' );
+			$title = _x( 'Galleries', 'post format archive title', 'powen' );
 		} elseif ( is_tax( 'post_format', 'post-format-image' ) ) {
-			$title = _x( 'Images', 'post format archive title', 'powen-lite' );
+			$title = _x( 'Images', 'post format archive title', 'powen' );
 		} elseif ( is_tax( 'post_format', 'post-format-video' ) ) {
-			$title = _x( 'Videos', 'post format archive title', 'powen-lite' );
+			$title = _x( 'Videos', 'post format archive title', 'powen' );
 		} elseif ( is_tax( 'post_format', 'post-format-quote' ) ) {
-			$title = _x( 'Quotes', 'post format archive title', 'powen-lite' );
+			$title = _x( 'Quotes', 'post format archive title', 'powen' );
 		} elseif ( is_tax( 'post_format', 'post-format-link' ) ) {
-			$title = _x( 'Links', 'post format archive title', 'powen-lite' );
+			$title = _x( 'Links', 'post format archive title', 'powen' );
 		} elseif ( is_tax( 'post_format', 'post-format-status' ) ) {
-			$title = _x( 'Statuses', 'post format archive title', 'powen-lite' );
+			$title = _x( 'Statuses', 'post format archive title', 'powen' );
 		} elseif ( is_tax( 'post_format', 'post-format-audio' ) ) {
-			$title = _x( 'Audio', 'post format archive title', 'powen-lite' );
+			$title = _x( 'Audio', 'post format archive title', 'powen' );
 		} elseif ( is_tax( 'post_format', 'post-format-chat' ) ) {
-			$title = _x( 'Chats', 'post format archive title', 'powen-lite' );
+			$title = _x( 'Chats', 'post format archive title', 'powen' );
 		}
 	} elseif ( is_post_type_archive() ) {
-		$title = sprintf( __( 'Archives: %s', 'powen-lite' ), post_type_archive_title( '', false ) );
+		$title = sprintf( __( 'Archives: %s', 'powen' ), post_type_archive_title( '', false ) );
 	} elseif ( is_tax() ) {
 		$tax = get_taxonomy( get_queried_object()->taxonomy );
 		/* translators: 1: Taxonomy singular name, 2: Current taxonomy term */
-		$title = sprintf( __( '%1$s: %2$s', 'powen-lite' ), $tax->labels->singular_name, single_term_title( '', false ) );
+		$title = sprintf( __( '%1$s: %2$s', 'powen' ), $tax->labels->singular_name, single_term_title( '', false ) );
 	} else {
-		$title = __( 'Archives', 'powen-lite' );
+		$title = __( 'Archives', 'powen' );
 	}
 
 	/**

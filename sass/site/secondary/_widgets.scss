@@ -1,45 +1,76 @@
+.widget {
+	margin: 0 0 1.5em;
+	select {
+		max-width: 100%;
+	}
+}
+.widget-area, .footer_widgets  {
+	button,
+	  input[type="button"],
+	  input[type="reset"],
+	  input[type="submit"] {
+	    display: none;
+	}
+}
 .widget-area ul {
-    list-style: none;
+	list-style: none;
 }
 //widget_tag_cloud
 .widget_tag_cloud {
-    a {
-        letter-spacing: rem-calc(1);
-        text-transform: uppercase;
-        padding: rem-calc(5 10);
-        margin: rem-calc(3 1);
-        display: inline-block;
-    }
+	a {
+		font-size: 10px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		padding: 2px 8px 2px;
+		margin-right: 5px;
+		margin-bottom: 8px;
+		display: inline-block;
+		border: 1px dotted;
+	}
 }
-.widget_search input {
-    border: none;
+
+//widget_archive
+.widget_archive li a {
+	background: none;
 }
-.widget_tag_cloud a, .widget_powen_social_widget a, .widget_search input {
-    box-shadow: 0px 0px 0px 1px #f2f2f2;
+
+//widget_search
+.widget_search, .widget_calendar, .widget_tag_cloud {
+	padding: 0 $phi * 1rem;
+}
+
+//widget_text
+.widget_text {
+	overflow: hidden;
 }
 
 //widget_rss
 .widget_rss {
-    li {
-        margin-bottom: rem-calc(10);
-        a {
-            display: block;
-            font-weight: bold;
-        }
-    }
+	li {
+		margin-bottom: 10px;
+		a {
+			display: block;
+			font-weight: bold;
+		}
+	}
 }
 .rss-date {
-    display: block;
+	display: block;
 }
 .rssSummary {
-    padding: rem-calc(10 0);
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .widget-area li {
-    padding: rem-calc(10 0);
+	border-bottom: 1px dashed;
+	padding: 10px 0;
+	&:last-child {
+		border-bottom: none;
+	}
 }
 
-.widget_calendar caption, .powen-pagination .current, .widget_calendar .current-date a {
+.widget_calendar caption, .current-date, .pagination .current {
   color: #ffffff;
 }
 
@@ -106,23 +137,39 @@
     float: right;
 }
 
-//social icons
-.widget_powen_social_widget {
-    text-align: center;
-    .powen-social-icon {
-        font-size: 1rem;
+/* media queries for larger screens such as small tablets in landscape or large tablets in portrait */
+@media screen and ( max-width: 780px ) {
+     
+    /* only the .quarter layout class is relevant here - all other classes will have full width */
+    .quarter {
+        width: 48%;
     }
-    a {
-        width: rem-calc(40);
-        height: rem-calc(40);
-        margin: rem-calc(2 0);
-        line-height: 2.5;
+    .quarter.left {
+        margin-right: 2%;
+    }
+    .quarter.right {
+        margin-left: 2%;
+    }
+    footer .third.quarter.widget-area {
+        clear: both;
     }
 }
-.powen-footer-widgets .powen-social-icon a, .powen-footer-widgets .tagcloud a, .powen-footer-widgets input{
-    box-shadow: 0px 0px 0px 1px #565656;
-}
-#monster-widget-placeholder-8 {
-    width: 100%;
-    padding: $default_gutter;
+ 
+/* media queries for small screens in landscape mode (or similar) */
+@media screen and ( max-width: 600px ) {
+     
+    /* width sizing all full width in small screens */
+    .quarter,
+    .one-third,
+    .half,
+    .two-thirds,
+    .three-quarters,
+    .full-width {
+        width: 100%;
+        margin: 0;
+    }
+    /* padding adjustments */
+    .widget-area {
+        padding: 0 0 10px 0;
+    }
 }

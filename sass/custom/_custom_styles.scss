@@ -3,10 +3,6 @@
 	word-wrap: break-word;
 }
 
-#wp-admin-bar-powen-admin-menu a.ab-item {
-	color: #00A0D2;
-}
-
 body {
 	@include body();
 }
@@ -22,12 +18,16 @@ blockquote {
 // Overridden from lists.scss
 ul, ol {
 	padding: 0;
-	margin: rem-calc(0 0 10 10);
+	margin: 0 0 $phi*1em $phi*1em;
 }
 
 .sticky {
 	position: relative;
 }
+
+@include htags();
+
+// content of layout/content-sidebar pasted here for easier modification
 
 .content-area {
 	float: left;
@@ -35,26 +35,12 @@ ul, ol {
 	width: $size__site-main;
 }
 
-// content of layout/content-sidebar pasted here for easier modification
-
 .pagination {
-	padding: rem-calc(10);
+	padding: $phi * 1em;
 }
 
 .site-main {
 	margin: 0 $size__site-sidebar 0 0;
-}
-
-.powen-primary-nav .menu, .powen-main-nav .menu {
-	display: none;
-}
-
-.powen-primary-nav, .powen-social-icon{
-    display: inline-block;
-}
-.powen-main-nav {float: right;}
-.powen-primary-nav i:before, .powen-main-nav i:before, .powen-social-icon i:before {
-	padding: rem-calc(10);
 }
 
 .site-content .widget-area {
@@ -64,30 +50,19 @@ ul, ol {
 }
 
 .powen-wrapper {
-	max-width: rem-calc(1125);
+	padding-top: $phi * 1em;
+	padding-bottom: $phi * 1em;
+	max-width: total_site_width();
 	margin: 0 auto;
-}
-
-.powen-footer-widgets {
 	overflow: hidden;
 }
 
-.gallery img {
-	margin-bottom: rem-calc(35);
-}
-
 .widget-container {
-	padding: $default_gutter;
+	padding: $phi * 1em;
 	ul {
 		margin: 0;
 		padding: 0;
 	}
-}
-
-.hvr-back-pulse:hover,
-.hvr-back-pulse:focus,
-.hvr-back-pulse:active {
-	background-color: none;
 }
 
 // **-----
@@ -96,104 +71,56 @@ ul, ol {
 
 // Header
 .site-header {
+	width: 100%;
 	background-color: #fff;
 }
 
 .site-branding {
-	padding: rem-calc(15);
+	padding-left: $phi * 1rem;
+	padding-right: $phi * 1rem;
+	padding-top: $phi * 3rem;
+	padding-bottom: $phi * 3rem;
 	text-align: center;
 }
 
-.site-title, .site-description {
-	vertical-align: bottom;
-	margin-bottom: 0;
+h1.site-title {
+	font-weight: 700;
 }
-.site-title {
-	line-height: 2;
+
+.site-title, .site-description {
+	margin: 0;
+	line-height: 4rem;
+	vertical-align: bottom;
+}
+
+//Navigation
+
+#site-navigation .menu-header-menu-container, #main-nav {
+	display: none;
+}
+#site-navigation .menu {
+	display: none;
 }
 
 // Content
 .site-content {
-	max-width: rem-calc(1125);
-	margin: $default_gutter auto;
+	max-width: total_site_width();
+	margin: 42px auto;
 }
 
-.powen-nav {
-	padding: rem-calc(18 0);
-}
-
-.powen-search-box-top {
-	display: inline-block;
-	float: right;
-	position: relative;
-	height: rem-calc(25);
-	padding: rem-calc(15);
-	margin-right: rem-calc(10);
-	form {
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
-	.search-submit {
-		display: none;
-	}
-	input {
-		border: none;
-		height: auto;
-		padding-right: rem-calc(25);
-		display: none;
-		width: rem-calc(150);
-		background: #fff;
-    	box-shadow: 0px 0px 0px 1px #fafafa;
-	}
-}
-.fa-search {
-	position: absolute;
-    top: rem-calc(5);
-    right: rem-calc(5);
-    cursor: pointer;
-}
-
-//**** Posts & pages
+//**** Posts & pages 
 
 // (hentry class covers both) plus their internal elements
 .article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
 	padding-left: $post_l_padding;
 	padding-right: $post_r_padding;
-	padding-bottom: $post_b_padding;
-	padding-top: $post_t_padding;
-	margin: 0;
+	margin: 0 0 0 0;
 
 	@include main_panel();
 }
 
 .article-hentry {
 	@include sticky_post();
-}
-
-.site-info, .powen-footer-widgets {
-	padding: $default_gutter 0;
-}
-
-.powen-recent-post {
-	margin-top: $default_gutter;
-	.article-hentry {
-		padding-top: rem-calc(30);
-	}
-}
-
-.powen-pagination {
-	margin-bottom: $default_gutter;
-}
-
-.powen-featured-img {
-	overflow: hidden;
-	@include main_panel();
-	img {
-	margin: 0 auto;
-	display: block;
-	width: 100%;
-	}
 }
 
 .post-thumbnail {
@@ -228,10 +155,17 @@ ul, ol {
 	overflow: hidden;
 }
 
+.entry-title {
+	margin-top: 0;
+	margin-bottom: $post_t_padding;
+}
+
 .entry-meta {
 	display: inline-block;
 	font-weight: 300;
-
+	margin-bottom: $default_gutter;
+	font-size: 14px;
+	margin-bottom: $default_gutter;
 	@include entry_meta();
 }
 
@@ -244,26 +178,21 @@ ul, ol {
 		font-size: 18*$px;
 		font-weight: 700;
 		display: inline-block;
-		padding: rem-calc(10);
-
+		padding: 1em $phi * 1em;
+		margin: 2em 0 .5em 0;
+		
 		@include more_link();
 	}
 }
 
 .entry-footer {
 	margin: $post_b_padding 0 $post_b_padding / $phi 0;
-	line-height: 1rem;
+	line-height: 3em;
 	text-align: center;
 	span {
-		margin: rem-calc(5);
-		padding: rem-calc(5);
+		margin: 0 0.618em;
+		padding: 0 0.618em;
 		display: inline-block;
-	}
-	.tags-links {
-		display: inline;
-		a {
-			line-height: 2;
-		}
 	}
 	@include entry_footer();
 }
@@ -272,26 +201,9 @@ ul, ol {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	> .comment {
+	.comment {
 		padding: $default_gutter;
 		@include comment();
-	}
-}
-
-.comment-author{
-	.fn{
-		text-transform: capitalize;
-	}
-}
-
-.comments-title{
-	font-size: rem-calc(24);
-}
-
-.comment-respond {
-	margin-top:rem-calc(20);
-	.form-allowed-tags {
-		display: none;
 	}
 }
 
@@ -324,22 +236,58 @@ ul, ol {
 		}
 	}
 	.children li:first-of-type, .sub-menu li:first-of-type {
-		margin-top: rem-calc(1);
+		margin-top: 1em;
 	}
 
 }
 
-.comments-area .comment-form p label {
+.top-container {
+	border-bottom: 1px solid #f2f2f2;
+	padding-bottom: $phi * 1em;
+	overflow: hidden;
+	ul {
+		padding: 0;
+		margin: 0;
+		padding: 10px;
+		display: inline-block;
+		float: left;
+	    li {
+			display: inline-block;
+		a {
+			padding: 2px;
+		}
+		}
+	}
+
+	.search-form {
+		float: right;
+		display: inline-block;
+		padding: 10px;
+		.search-field {
+			padding: 0;
+			text-indent: 10px;
+			border: 1px solid;
+		}
+		.search-submit {
+			display: none;
+		}
+	}
+}
+
+.top-most-nav, .main-navigation, .powen-nav {
 	display: inline-block;
-	min-width: rem-calc(100);
+	float: left;
+}
+.powen-nav {
+	padding: 10px;
+}
+.top-most-nav, .main-navigation {
+	padding-right: 10px;
 }
 
-.widget_search input {
-	width: 100%;
-}
-
-.widget-area .widget_search .search-submit {
-	display: none;
+input.search-field {
+	box-sizing: border-box;
+	width: auto;
 }
 
 // Footer
@@ -349,7 +297,7 @@ ul, ol {
 	overflow: hidden;
 }
 
-.powen-footer-widgets .widget {
+.footer_widgets .widget {
 	background: transparent;
 	float: left;
 	margin: 0 1% 0 0;
@@ -358,35 +306,28 @@ ul, ol {
 }
 
 //colors
-.powen-footer-widgets {
+.footer_widgets {
 	background: #222222;
 	color: #808080;
 	a {
 		color: #cccccc;
-	}
-	.powen-wrapper {
-		overflow: hidden;
 	}
 }
 .site-info {
 	text-align: center;
 	background: #000000;
 	color: #404040;
-	overflow: hidden;
 	a {
 		color: #666666;
 	}
 }
-.widget-title {
-	text-align: center;
-}
-
-@include htags();
-
 
 //**** Responsive layout adjustments
 
-@media (max-width: rem-calc(1125)) {
+@media (max-width: total_site_width()) {
+
+	// Output headings at smaller size
+	@include htags(0.7);
 
 	// redeclare variables to be smaller
 	$default_h_padding: $phi * $phi * 1rem;
@@ -413,9 +354,13 @@ ul, ol {
 		margin-bottom: $default_gutter;
 		margin-left: -$post_l_padding;
 	}
+
+	.entry-title {
+		margin-bottom: 0;
+	}
 }
 
-@media (max-width: rem-calc(900)) {
+@media (max-width: 900*$px) {
 
 	// Single col layout
 	#primary, #secondary {
@@ -432,70 +377,44 @@ ul, ol {
 	.widget {
 		margin-left: 0;
 		margin-bottom: $default_gutter;
-		margin-top: $default_gutter;
 	}
-	.widget-area .widget {
-		margin-right: 0;
-	}
-
+	
 	.flexslider .powen-slider-content {
 		visibility: visible;
 		opacity: 1;
 	}
-	.powen-slider-title, .powen-slider-description{
+	.flexslider .powen-slider-content p, .flexslider .powen-slider-content h2{
 		visibility: visible;
 		opacity: 1;
 		text-overflow: ellipsis;
 		white-space: nowrap;
 		overflow: hidden;
 		width: 100%;
-		margin: rem-calc(5 0);
 	}
-	.flex-control-nav {
-		display: none;
-	}
-
-	.quarter,
-	.one-third,
-	.half,
-	.two-thirds,
-	.three-quarters,
-	.full-width {
-	    width: 100%;
-	    margin: 0;
-	}
-	/* padding adjustments */
-	.widget-area {
-	    padding: rem-calc(0 0 10 0);
-	}
-
-	//Font Size
-	body {font-size: 0.928rem;}
-	.site-title {font-size: 2rem;}
-	.site-description {font-size: 0.928rem;}
-	.powen-nav {font-size: 0.928rem;}
-	.powen-slider-title {font-size: 1.071rem;}
-	.powen-slider-description {font-size: 1rem;}
-	.widget-title {font-size: 1.214rem;}
-	.widget-area {font-size: 0.928rem;}
-	.powen-footer-nav {font-size: 0.928rem;}
-	h1 {font-size: 1.428rem;}
-	h2 {font-size: 1.357rem;}
-	h3 {font-size: 1.285rem;}
-	h4 {font-size: 1.214rem;}
-	h5 {font-size: 1.142rem;}
-	h6 {font-size: 1.071rem;}
-
-}
-
-@media (max-width: rem-calc(600)) {
-
-	.flex-direction-nav .flex-next, .flex-direction-nav .flex-prev {
+	.flexslider .flex-control-nav {
 		display: none;
 	}
 }
 
-@media (max-width: rem-calc(400)) {
+@media (max-width: 600*$px) {
+
+	@include htags(0.5);
+
+	.top-container {
+		.search-form {
+		display: block;
+		float: left;
+		}
+	}
+	.social-media-icons, .powen-nav {
+		display: block;
+		float: left;
+	}
+}
+
+@media (max-width: 400*$px) {
+
+	@include htags(0.4);
 
 	// redeclare variables to be smaller
 	$default_h_padding: $phi * 1rem;
@@ -513,15 +432,11 @@ ul, ol {
 	$widget_t_padding: $default_h_padding;
 	$widget_b_padding: $widget_t_padding;
 
-	.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
+	.hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
 		padding-left: $post_l_padding;
 		padding-right: $post_r_padding;
 		padding-top: $post_t_padding;
 		padding-bottom: $post_b_padding;
-	}
-
-	.powen-recent-article {
-		padding-top: $post_t_padding;
 	}
 
 	.post-thumbnail {
@@ -530,6 +445,23 @@ ul, ol {
 		margin-bottom: $default_gutter;
 		margin-left: -$post_l_padding;
 	}
-	.powen-slider-title {font-size: 1rem;}
-	.powen-slider-description {font-size: 0.928rem;}
+
+	.entry-title {
+		margin-bottom: $post_t_padding;
+	}
+
+	.widget {
+		padding-left: $widget_l_padding;
+		padding-right: $widget_r_padding;
+		padding-top: $widget_t_padding;
+		padding-bottom: $widget_b_padding;
+	}
+	
+	.flexslider {
+		@include htags(0.6);
+	}
+
+	button, input[type="button"], input[type="reset"], input[type="submit"] {
+		display: none;
+	}
 }

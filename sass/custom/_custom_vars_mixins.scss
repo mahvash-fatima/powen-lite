@@ -15,26 +15,26 @@ $default_gutter: $phi * 1rem;
 $small_col: 0.3;
 
 
-// DEFAULT _S "STRUCTURE" VARS
+// DEFAULT _S "STRUCTURE" VARS 
 $size__site-main: 100%;
 $size__site-sidebar: percentage($small_col);
 // /end
 
 
 // Padding settings
-$default_h_padding: $phi * 1rem;
+$default_h_padding: $phi * $phi * $phi * 1rem;
 $default_v_padding: $default_h_padding;
 
 // Posts and widgets horizontal padding
 $post_l_padding: $default_h_padding;
 $post_r_padding: $post_l_padding;
-$widget_l_padding: $default_h_padding;
+$widget_l_padding: $default_h_padding / $phi;
 $widget_r_padding: $widget_l_padding;
 
 // Posts and widgets vertical padding
-$post_t_padding: $default_h_padding;
+$post_t_padding: $default_h_padding / $phi;
 $post_b_padding: $post_t_padding;
-$widget_t_padding: $default_h_padding;
+$widget_t_padding: $default_h_padding / $phi;
 $widget_b_padding: $widget_t_padding;
 
 
@@ -58,15 +58,15 @@ $widget_b_padding: $widget_t_padding;
 // DEFAULT _S "TYPOGRAPHY" VARS
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
-$font__line-height-body: $phi*1rem;
-$font__line-height-pre: $phi*1rem;
+$font__line-height-body: $phi*1em;
+$font__line-height-pre: $phi*1em;
 // /end
 
-$htag_lineheight: 1.2;
+$htag_lineheight: 1.313em;
 $htag_weight: 400;
 
 // H tag font sizes 1 through 6
-$htag_sizes: 3, 2.2, 1.5, 1.313, 1.125, 1;
+$htag_sizes: 3, 2.25, 1.5, 1.313, 1.125, 1;
 
 // H tag vertical margins 1 through 6
 $htag_vmargins: 0.563, 0.625, 1.313, 1.313, 1.313, 0.75;
@@ -80,17 +80,36 @@ $htag_vmargins: 0.563, 0.625, 1.313, 1.313, 1.313, 0.75;
 		h#{$i} {
 			$value: nth($htag_sizes, $i);
 			$size: if( ($value * $factor) < 1, 1, $value * $factor );
-			margin-bottom: ( nth($htag_vmargins, $i) * 1rem );
+			font-size: $size * 1em;
+			margin: ( nth($htag_vmargins, $i) * 1em ) 0;
 		}
+	}
+	// Set H1 widget titles default size
+	.widget-title {
+		$default: nth($htag_sizes, 4);
+		$size: if( ($default * $factor) < 1, 1, $default * $factor );
+		font-size: $size * 1.5em;
+		text-align: center;
+	}
+	//Set H1 site title default size
+	.site-branding .site-title {
+		$default: nth($htag_sizes, 4);
+		$size: if( ($default * $factor) > 1, 1, $default * $factor );
+		font-size: $size * 3em;
+	}
+	//Set H2 site description default size
+	.site-branding .site-description {
+		$default: nth($htag_sizes, 4);
+		$size: if( ($default * $factor) > 1, 1, $default * $factor );
+		font-size: $size * 1.5em;
 	}
 }
 
-//---------------THEME COLORS-------------
+//---------------THEME COLORS-------------	
 $color_link_date_default:						#aaaaaa;
 $color_text_on_dark_background_default:		    #ffffff;
-$color__powen-slider-content-background: 		rgba(0, 0, 0, 0.3);
+$color__powen-slider-content-background: 				rgba(0,0,0,0.3);
 $color_border_default:    						#f2f2f2;
-$color_border:									#cccccc;
 $color_site_navigation_background:				#ffffff;
 
 $color_primary_background:				        #ffffff;
@@ -104,7 +123,7 @@ $color_text_secondary: 							#565656;
 
 //Footer Colors
 $color__footer_background:      				#cccccc;
-$color__powen-footer-widgets_background: 	    #f2f2f2;
+$color__footer_widgets_background: 			 	#f2f2f2;
 
 
 // DEFAULT _S "COLORS" VARS
@@ -162,7 +181,7 @@ $color__border-abbr: 							#666;
 }
 
 @mixin entry_footer(){
-	border-top: 2*$px solid #F8F8F8;
+	border-top: 2*$px solid $color__background-body;
 }
 
 @mixin comment(){
@@ -171,7 +190,7 @@ $color__border-abbr: 							#666;
 }
 
 @mixin sticky_post(){
-	margin: 0 0 $default_gutter 0;
+	margin-bottom: 50px;
 }
 
 @mixin site_footer(){
@@ -202,10 +221,10 @@ $color__border-abbr: 							#666;
 @mixin child_menu_item(){
 	a, a:link, a:visited {
 		border: 0;
-		border-top: 2*$px solid $color__primary-menu-border;
+		border-top: 2*$px solid $color__top-most-menu-border;
 	}
 	a:hover {
-	background-color: $color__primary-menu-background-hover;
+	background-color: $color__top-most-menu-background-hover;
 	color: $color_theme_default;
 	}
 }

@@ -1,46 +1,107 @@
 
-<?php
+<?php 
 /**
  * Tempate part used in index.php for showing flexslider
  * @package powen
  */
 
-$slides = get_theme_mod( 'powen_slides', powen_default_slides() );
+$powen_default_slides =  array(
+        array
+            (
+				'title'       => __('Demo Post One', 'powen'),
+				'link' 		  => '',
+				'description' => __('Dolores porro, architecto totam, animi, pariatur qui suscipit doloribus saepe temporibus magni, ducimus ut fugit eius. Consectetur saepe nemo, optio, ut deleniti illum. Velit assumenda amet', 'powen'),
+				'image'       => esc_url(get_template_directory_uri() . '/images/slides/slide5.jpg'),
+            ),
+        array
+            (
+				'title'       => __('Demo Post Two', 'powen'),
+				'link' 		  => '',
+				'description' => __('Soluta quidem sapiente, adipisci magni voluptatem necessitatibus voluptatum minima ipsa aliquam nobis rem officia autem odio dolorum laudantium. Minus voluptatum dicta tempora', 'powen'),
+				'image'       => esc_url(get_template_directory_uri() . '/images/slides/slide4.jpg'),
+            ),
+        array
+            (
+				'title'       => __('Demo Post Three', 'powen'),
+				'link' 		  => '',
+				'description' => __('Explicabo doloribus neque id cupiditate consequuntur fugit, magnam itaque officiis possimus enim assumenda autem minus non similique vitae illum, perferendis optio, nemo vel tenetur', 'powen'),
+				'image'       => esc_url(get_template_directory_uri() . '/images/slides/slide3.jpg'),
+            ),
+        array
+            (
+				'title'       => __('Demo Post Four', 'powen'),
+				'link' 		  => '',
+				'description' => __('Cupiditate deleniti, enim natus magni. Harum asperiores, maxime ratione! Iusto velit quibusdam, quo vitae esse nihil cum aspernatur laboriosam fugiat eos tenetur distinctio autem', 'powen'),
+				'image'       => esc_url(get_template_directory_uri() . '/images/slides/slide2.jpg'),
+            ),
+        array
+            (
+				'title'       => __('Demo Post Five', 'powen'),
+				'link' 		  => '',
+				'description' => __('Porro quae quo voluptates nobis, architecto sunt, delectus, earum temporibus eaque rem unde iste fuga. Esse quaerat quo, pariatur voluptas accusamus minima repudiandae fugit cupiditate', 'powen'),
+				'image'       => esc_url(get_template_directory_uri() . '/images/slides/slide1.jpg'),
+            )
+         );
 
-?>
 
-<?php if( ! powen_mod( 'hide_slider' , false ) ) :  ?>
+	$slides = powen_get_option( 'powen_slider_settings' , $powen_default_slides );
+
+ ?>
+
+<?php if( powen_options('show-slider') || ! isset($powen_options['show-slider']) ){ ?>
+
 <div id="powen-main-slider" class="clear">
 	<section id="slider" class="flexslider">
 		<ul class='slides'>
-
-		<?php if( is_array( $slides ) ) : foreach ( $slides as $slide ) : ?>
-
 			<?php
-				$slide_title       = isset( $slide['title'] ) ? $slide['title'] : false;
-				$slide_link        = isset( $slide['link'] ) ? $slide['link'] : false;
-				$slide_image       = isset( $slide['image'] ) ? $slide['image'] : false;
-				$slide_description = isset( $slide['description'] ) ? $slide['description'] : false;
+				if( ! empty($slides) ){
+					foreach ( $slides as $slide ) {
 
-			if( ! trim( $slide_image ) ) continue; ?>
+						$slideLink		  = esc_url($slide['link']);
+						$slideImage		  = esc_url($slide['image']);
+						$slideTitle 	  = esc_attr(__($slide['title'], 'powen'));
+						$slideDescription = esc_attr(__($slide['description'], 'powen'));
+						
+						echo "<li>";
+						echo "<a href='{$slideLink}'>";
+						echo 	"<img src='{$slideImage}' alt='image'>";
+						echo 	"<div class='powen-slider-content animated slideInUp'>";
+						echo 		"<h2>{$slideTitle}</h2>";
+						echo 		"<p>{$slideDescription}</p>";
+						echo 	"</div>";
+						echo 	"</a>";
+						echo "</li>";
+					}
+				}
+			?>
+		</ul>
+	</section>
 
-			<li>
-				<a href='<?php echo esc_url( $slide_link ); ?>'>
-					<img src='<?php echo esc_url( $slide_image ); ?>' alt='image'>
-					<?php if( $slide_title || $slide_description ) { ?>
-					<div class='powen-slider-content animated slideInUp'>
-						<div class="powen-slider-content-wrapper">
-							<h6 class="powen-slider-title"><?php echo esc_attr( $slide_title ); ?></h6>
-							<p class="powen-slider-description"><?php echo esc_attr( $slide_description ); ?></p>
-						</div>
-					</div>
-					<?php } ?>
-				</a>
-			</li>
+	<section id="carousel" class="flexslider">
+		<ul class='slides'>
+			<?php
+				if( ! empty($slides) ){
+					foreach ( $slides as $slide ) {
 
-		<?php endforeach; endif; ?>
+						$slideLink		  = esc_url($slide['link']);
+						$slideImage		  = esc_url($slide['image']);
+						$slideTitle 	  = esc_attr(__($slide['title'], 'powen'));
+						$slideDescription = esc_attr(__($slide['description'], 'powen'));
 
+						echo "<li>";
+						echo "<a href='{$slideLink}'>";
+						echo 	"<img src='{$slideImage}' alt='image'>";
+						echo 	"<div class='powen-slider-content animated slideInUp'>";
+						echo 		"<h2>{$slideTitle}</h2>";
+						echo 		"<p>{$slideDescription}</p>";
+						echo 	"</div>";
+						echo 	"</a>";
+						echo "</li>";
+					}
+				}
+			?>
 		</ul>
 	</section>
 </div>
-<?php endif; ?>
+<?php } ?>
+

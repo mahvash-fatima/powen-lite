@@ -1,20 +1,20 @@
 /*------------------
-FontAwesome
+FontAwesome 
 ---------------------*/
-	//CONTENT ICONS
+	//PRIMARY ICONS
 	.posted-on:before,
 	.comments-link:before,
 	.edit-link:before,
 	.nav-previous a:before,
-	.nav-next a:after,
+	.flex-direction-nav li .flex-prev:before,
+	.flex-direction-nav li .flex-next:before,
+	.nav-next a:after,	
 	.author:before,
 	.content-area .hentry .entry-date:after,
 	.cat-links:before,
 	.comment-metadata time:before,
-	.powen-continue-reading:after,
-	.breadcrumbs .separator:after,
-	.tags-links:before,
-	//SIDEBAR ICONS
+	.continue-reading:after,
+	//SECONDARY ICONS
 	.widget_recent_comments li:before,
 	.widget_recent_comments li>a:before,
 	.widget_archive li:before,
@@ -25,12 +25,12 @@ FontAwesome
 	.powen-wrapper .recent-comment-people:before,
 	.menu-long-menu-container li:before,
 	.widget_recent_entries li:before,
-	.entry-header:after,
-	.widget-title:after,
-	.footer-scroll:before,
-	.powen-pro-mobile-menu .mm:before,
+	.powen-border-line,
+	.footer-scroll:before
 {
 font-family: 'FontAwesome';
+src: url('../font-awesome-4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0');
+src: url('../font-awesome-4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
 font-weight: normal;
 font-style: normal;
 }
@@ -42,7 +42,7 @@ text-rendering: auto;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 transform: translate(0, 0);
-}
+} 
 
 /**---------------
 Write your code here
@@ -51,60 +51,68 @@ Write your code here
 //PRIMARY ICONS
 
 //Date
-.posted-on:before, .comment-metadata time:before {
+.posted-on:before {
 	content: "\f017";
-	padding: rem-calc(5);
+	padding: 5px;
+	font-size: 1em;
 }
 //Comment
 .comments-link:before {
 	content: "\f0e6";
-	padding: rem-calc(5);
+	padding: 5px;
 }
 //Edit
 .edit-link:before {
 	content: "\f044";
-	padding: rem-calc(5);
+	padding: 5px;
 }
 //Older posts
 .nav-previous a:before {
 	content: "\f100";
-	margin: rem-calc(0 5);
+	margin: 0 3px;
+}
+//Previous
+.flex-direction-nav li .flex-prev:before {
+	content: "\f100";
+	font-size: 1.5em;
+	color: #ffffff;
+}
+//Next
+.flex-direction-nav li .flex-next:before {
+	content: "\f101";
+	font-size: 1.5em;
+	color: #ffffff;
 }
 //Newer posts
 .nav-next a:after {
 	content: "\f101";
-	margin: rem-calc(0 3);
+	margin: 0 3px;
 }
 .author:before {
 	content: "\f007";
-	padding: rem-calc(5);
+	font-size: 1em;
+	padding: 5px;
 }
 .cat-links:before {
-	content: "\f0ca";
-	padding: rem-calc(5);
-}
-.tags-links:before {
 	content: "\f02c";
-	padding: rem-calc(5);
+	padding: 5px;
 }
 .comment-metadata time:before {
-	padding-left: 0;
+	content: "\f017";
+	padding: 5px;
 }
-.powen-continue-reading:after {
+.continue-reading:after {
 	content: "\f178";
+	padding: 10px;
 }
-.breadcrumbs .separator:after {
-	content: "\f105";
-    color: #cccccc;
-    padding-right: rem-calc(5);
-}
+
 
 //SECONDARY ICONS
 
 //Recent Comments
 .widget_recent_comments li:before {
 	content: "\f007";
-	padding-right: rem-calc(10);
+	padding-right: 10px;
 	color: #cccccc;
 }
 .widget_recent_comments li>a:before {
@@ -112,32 +120,72 @@ Write your code here
 	display: none;
 }
 //Archive
-.widget_archive li:before, .widget_recent_entries li:before, .widget_categories li:before, .widget_meta li:before, .widget_pages li:before, .menu-long-menu-container li:before, .widget_recent_entries li:before {
-	content: "\f105";
+.widget_archive li:before {
+	content: "\f111";
 	color: #cccccc;
-	padding-right: rem-calc(10);
+	font-size: 0.1em;
+	margin-right: 2em;
+}
+.widget_recent_entries li:before {
+	content: "\f111";
+	color: #cccccc;
+	font-size: 0.1em;
+	margin-right: 2em;
+}
+//Categories
+.widget_categories li:before {
+	content: "\f111";
+	color: #cccccc;
+	font-size: 0.1em;
+	margin-right: 2em;
+}
+//Meta
+.widget_meta li:before {
+	content: "\f111";
+	color: #cccccc;
+	font-size: 0.1em;
+	margin-right: 2em;
+}
+.widget_pages li:before {
+	content: "\f111";
+	color: #cccccc;
+	font-size: 0.1em;
+	margin-right: 2em;
 }
 .powen-wrapper .recent-comment-people:before {
 	content: "\f007";
+	font-size: 2.50em;
 	color: #454545;
 	background: #2F2F2F;
-	padding-right: rem-calc(10);
-	padding-left: rem-calc(10);
-	padding-top: rem-calc(10);
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 10px;
 	border-radius: 50%;
 }
-// widget-title
-.entry-header:after, .widget-title:after {
-   content: '';
-   display: block;
-   width: rem-calc(60);
-   height: rem-calc(1);
-   margin: rem-calc(25) auto rem-calc(25);
+.menu-long-menu-container li:before {
+	content: "\f111";
+	color: #cccccc;
+	font-size: 0.1em;
+	margin-right: 2em;
 }
 
-.widget-title:after {
-	margin: rem-calc(15) auto rem-calc(15);
+//RECENT WIDGETS
+.widget_recent_entries li:before {
+	content: "\f111";
+	color: #cccccc;
+	font-size: 0.1em;
+	margin-right: 2em;
 }
+
+// widget-title
+.powen-border-line{
+   content: '';
+   display: block;
+   width: 60px;
+   height: 1px;
+   margin: 15px auto 23px;
+}
+
 
 //Back To Top
 .footer-scroll:before {
@@ -145,11 +193,11 @@ Write your code here
 	background: rgba(0, 0, 0, 0.46);
 	margin: 0;
 	position: fixed;
-	bottom: rem-calc(100);
-	right: rem-calc(50);
-	width: rem-calc(40);
+	bottom: 50px;
+	right: 50px;
+	width: 40px;
 	text-align: center;
-	height: rem-calc(35);
+	height: 35px;
 	z-index: 100;
 	text-decoration: none;
 	color: #fff;

@@ -6,33 +6,29 @@
  */
 
 get_header(); ?>
-
+	
 	<div id="content" class="site-content">
-
+	
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
-			<div class="powen-featured-img">
+			<div class="featured-img">
 				<a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark" >
 				<!-- Featured Images -->
-				<?php if ( has_post_thumbnail() )
+				<?php if ( has_post_thumbnail() ) 
 				{
-					if( powen_mod( 'sidebar_position' ) === 'no-sidebar' ){
-						the_post_thumbnail('full');
-					}else{
-						the_post_thumbnail('large');
-					}
-				}
+					the_post_thumbnail();
+				} 
 				?>
 				</a>
 			</div>
 			<div class="article-hentry">
-
+			
 			<header class="page-header">
-				<h2 class="page-title"><?php printf( __( 'Search Results for: %s', 'powen-lite' ), '<span>' . get_search_query() . '</span>' ); ?></h2>
+				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'powen' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header><!-- .page-header -->
-
+			
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -46,25 +42,28 @@ get_header(); ?>
 
 				?>
 
-
+				
 			<?php endwhile; ?>
 
-			<?php do_action( 'powen_before_pagination' ); ?>
+			<!-- Continue reading -->
+			<div class="continue-reading"><a href="<?php esc_url(the_permalink()); ?>"><?php _e('Continue Reading', 'powen') ?></a></div>		
 
-			<?php powen_pagination(); ?>
+			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
 
 			<?php get_template_part( 'content', 'none' ); ?>
-
+			
 		<?php endif; ?>
-
+		
 		</div><!-- .article-hentry -->
 
 		</main><!-- #main -->
 	</section><!-- #primary -->
-
+	
 <?php get_sidebar(); ?>
+
+<?php powen_sidebar_layout(); ?>
 
 </div><!-- #content -->
 

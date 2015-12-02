@@ -95,7 +95,7 @@
       color: inherit;
       line-height: 20px;
       display: block;
-      padding: 15px 10px 15px 20px;
+      padding: 10px 10px 10px 20px;
       margin: 0; }
   .mm-list > li:not(.mm-subtitle):not(.mm-label):not(.mm-search):not(.mm-noresults):after {
     content: '';

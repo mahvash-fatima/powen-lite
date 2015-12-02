@@ -5,35 +5,30 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="powen-featured-img">
+	<div class="featured-img">
 		<a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark" >
 		<!-- Featured Images -->
-			<?php if ( has_post_thumbnail() )
-			{
-				if( powen_mod( 'sidebar_position' ) === 'no-sidebar' ){
-					the_post_thumbnail('full');
-				}else{
-					the_post_thumbnail('large');
-				}
-			}
-			?>
+		<?php if ( has_post_thumbnail() ) 
+		{
+			the_post_thumbnail();
+		} 
+		?>
 		</a>
 	</div>
 	<div class="article-hentry">
 	<header class="entry-header">
-		<?php esc_attr( the_title( '<h2 class="entry-title">', '</h2>' ) ); ?>
+		<?php esc_attr(the_title( '<h1 class="entry-title">', '</h1>' )); ?>
 
-
+		<div class="entry-meta">
 			<?php powen_posted_on(); ?>
-			<?php powen_the_author(); ?>
-
+		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'powen-lite' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'powen' ),
 				'after'  => '</div>',
 			) );
 		?>

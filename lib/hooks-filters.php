@@ -9,6 +9,20 @@
           ACTIONS
 ===============================*/
 
+function powen_user_scripts(){ 
+
+  echo "<script>";
+  echo powen_options( 'opt-ace-editor-js' );
+  echo "</script>";
+
+  echo "<style>";
+  echo powen_options('opt-ace-editor-css');
+  echo "</style>";
+
+}
+
+add_action( 'wp_head', 'powen_user_scripts' );
+
 //Removing the post format meta box
 add_action('after_setup_theme', 'powen_remove_formats', 100);
 
@@ -28,28 +42,8 @@ function powen_set_tag_cloud_sizes($args)
 {
 	 $args['smallest'] = 8;
 	 $args['largest'] = 22;
-
-	 return $args;
+	 
+	 return $args; 
 }
 
-add_filter('widget_tag_cloud_args', 'powen_set_tag_cloud_sizes');
-
-
-/**
- * Adds Read More button
- */
-function powen_change_read_more( $more )
-{
-	global $post;
-	return '<div class="powen-continue-reading"><a class="moretag" href="' . get_permalink($post->ID) . '">'.esc_textarea( powen_mod( 'continue_reading_textbox', 'Continue Reading' ), 'powen-lite' ) . '</a></div>';
-}
-
-add_filter('excerpt_more', 'powen_change_read_more');
-
-//Excerpt Range
-
-function powen_custom_excerpt_length( $length )
-{
-	return ( powen_mod('excerpt_range') && intval( powen_mod('excerpt_range') ) > 49 ) ? powen_mod('excerpt_range') : $length;
-}
-add_filter( 'excerpt_length', 'powen_custom_excerpt_length', 999 );
+add_filter('widget_tag_cloud_args','powen_set_tag_cloud_sizes');

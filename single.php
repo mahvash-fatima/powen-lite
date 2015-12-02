@@ -11,26 +11,13 @@ get_header(); ?>
 
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main" role="main">
-
+			
 			<?php while ( have_posts() ) : the_post(); ?>
-
-				<!-- Breadcrumb -->
-				<?php
-					if ( function_exists( "powen_breadcrumb" ) ) {
-						powen_breadcrumb();
-					}
-				?>
-
+				<?php powen_breadcrumb(); ?>
 				<?php get_template_part( 'content', 'single' ); ?>
+				
+				<?php powen_the_post_navigation(); ?>
 
-				<?php do_action( 'powen_after_single_post' ); ?>
-
-				<!-- Post Navigation -->
-				<?php
-					if ( function_exists( "powen_the_post_navigation" ) ) {
-				    	powen_the_post_navigation();
-					}
-				?>
 
 				<?php
 					// If comments are open or we have at least one comment, load up the comment template
@@ -46,8 +33,10 @@ get_header(); ?>
 
 <?php get_sidebar(); ?>
 
-</div><!-- #content -->
+<?php powen_sidebar_layout(); ?>
 
-<div class="clearfix"></div>
-
+	</div><!-- #content -->
+	
+		<div class="clearfix"></div>
+	
 <?php get_footer(); ?>
