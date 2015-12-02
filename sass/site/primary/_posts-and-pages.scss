@@ -12,8 +12,10 @@
 	right: 0;
 	color: #fff;
 	span {
-		padding: rem-calc(0 20);
+		padding: rem-calc(0 10);
 		display: inline-block;
+		font-size: rem-calc(15);
+		text-transform: uppercase;
 	}
 }
 
@@ -30,6 +32,10 @@
 
 .posted-on, .byline {
 	padding: rem-calc(5);
+}
+
+.powen-footer-widgets input + div {
+	text-align: center;
 }
 
 //powen-pagination
@@ -55,6 +61,7 @@
 .powen-pagination .current, .powen-pagination a {
 	border: rem-calc(1) solid $color_border;
 	border-radius: 3px;
+	margin: rem-calc(5);
 }
 
 .powen-pagination .next, .powen-pagination .prev, .powen-pagination .last {
@@ -62,6 +69,7 @@
 	background: #ffffff;
 	border-radius: rem-calc(3);
 	border: rem-calc(1) solid $color_border;
+	margin: rem-calc(5);
 }
 
 //breadcrumbs

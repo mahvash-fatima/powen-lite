@@ -3,6 +3,10 @@
 	word-wrap: break-word;
 }
 
+#wp-admin-bar-powen-admin-menu a.ab-item {
+	color: #00A0D2;
+}
+
 body {
 	@include body();
 }
@@ -25,15 +29,13 @@ ul, ol {
 	position: relative;
 }
 
-@include htags();
-
-// content of layout/content-sidebar pasted here for easier modification
-
 .content-area {
 	float: left;
 	margin: 0 (-$size__site-sidebar) 0 0;
 	width: $size__site-main;
 }
+
+// content of layout/content-sidebar pasted here for easier modification
 
 .pagination {
 	padding: rem-calc(10);
@@ -41,6 +43,18 @@ ul, ol {
 
 .site-main {
 	margin: 0 $size__site-sidebar 0 0;
+}
+
+.powen-primary-nav .menu, .powen-main-nav .menu {
+	display: none;
+}
+
+.powen-primary-nav, .powen-social-icon{
+    display: inline-block;
+}
+.powen-main-nav {float: right;}
+.powen-primary-nav i:before, .powen-main-nav i:before, .powen-social-icon i:before {
+	padding: rem-calc(10);
 }
 
 .site-content .widget-area {
@@ -58,6 +72,10 @@ ul, ol {
 	overflow: hidden;
 }
 
+.gallery img {
+	margin-bottom: rem-calc(35);
+}
+
 .widget-container {
 	padding: $default_gutter;
 	ul {
@@ -66,17 +84,10 @@ ul, ol {
 	}
 }
 
-//Slider
-.flexslider h6 {
-	line-height: 1.5;
-	color: #fff;
-	margin: rem-calc(10 0);
-	font-size: rem-calc(14);
-}
-.flexslider p {
-	font-size: rem-calc(11);
-	line-height: 1.5;
-	margin-bottom: rem-calc(30);
+.hvr-back-pulse:hover,
+.hvr-back-pulse:focus,
+.hvr-back-pulse:active {
+	background-color: none;
 }
 
 // **-----
@@ -85,37 +96,62 @@ ul, ol {
 
 // Header
 .site-header {
-	width: 100%;
 	background-color: #fff;
 }
 
 .site-branding {
-	padding-top: $default_gutter;
-	padding-bottom: $default_gutter;
+	padding: rem-calc(15);
 	text-align: center;
-}
-
-h1.site-title {
-	font-weight: 700;
 }
 
 .site-title, .site-description {
 	vertical-align: bottom;
+	margin-bottom: 0;
 }
-
-//Navigation
-
-#site-navigation .menu-header-menu-container, #main-nav {
-	display: none;
-}
-#site-navigation .menu {
-	display: none;
+.site-title {
+	line-height: 2;
 }
 
 // Content
 .site-content {
 	max-width: rem-calc(1125);
 	margin: $default_gutter auto;
+}
+
+.powen-nav {
+	padding: rem-calc(18 0);
+}
+
+.powen-search-box-top {
+	display: inline-block;
+	float: right;
+	position: relative;
+	height: rem-calc(25);
+	padding: rem-calc(15);
+	margin-right: rem-calc(10);
+	form {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.search-submit {
+		display: none;
+	}
+	input {
+		border: none;
+		height: auto;
+		padding-right: rem-calc(25);
+		display: none;
+		width: rem-calc(150);
+		background: #fff;
+    	box-shadow: 0px 0px 0px 1px #fafafa;
+	}
+}
+.fa-search {
+	position: absolute;
+    top: rem-calc(5);
+    right: rem-calc(5);
+    cursor: pointer;
 }
 
 //**** Posts & pages
@@ -131,10 +167,6 @@ h1.site-title {
 	@include main_panel();
 }
 
-.powen-most-recent-post {
-	margin-top: $default_gutter;
-}
-
 .article-hentry {
 	@include sticky_post();
 }
@@ -145,6 +177,9 @@ h1.site-title {
 
 .powen-recent-post {
 	margin-top: $default_gutter;
+	.article-hentry {
+		padding-top: rem-calc(30);
+	}
 }
 
 .powen-pagination {
@@ -196,7 +231,7 @@ h1.site-title {
 .entry-meta {
 	display: inline-block;
 	font-weight: 300;
-	font-size: rem-calc(14);
+
 	@include entry_meta();
 }
 
@@ -210,7 +245,6 @@ h1.site-title {
 		font-weight: 700;
 		display: inline-block;
 		padding: rem-calc(10);
-		margin: 2em 0 .5em 0;
 
 		@include more_link();
 	}
@@ -218,12 +252,18 @@ h1.site-title {
 
 .entry-footer {
 	margin: $post_b_padding 0 $post_b_padding / $phi 0;
-	line-height: 3em;
+	line-height: 1rem;
 	text-align: center;
 	span {
 		margin: rem-calc(5);
 		padding: rem-calc(5);
 		display: inline-block;
+	}
+	.tags-links {
+		display: inline;
+		a {
+			line-height: 2;
+		}
 	}
 	@include entry_footer();
 }
@@ -289,41 +329,17 @@ h1.site-title {
 
 }
 
-.powen-nav {
-	.search-form {
-		.search-submit {
-			display: none;
-		}
-		input.search-field {
-			text-indent: rem-calc(10);
-			height: auto;
-			letter-spacing: 1px;
-			border: none;
-			border-bottom: 1px solid #ccc;
-		}
-	}
+.comments-area .comment-form p label {
+	display: inline-block;
+	min-width: rem-calc(100);
 }
 
 .widget_search input {
 	width: 100%;
 }
 
-.powen-nav {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-end;
-}
-
-.powen-pro-mobile-menu-container, .powen-top-most-nav, .powen-main-navigation, .powen-search-box-top, .powen-social-icon{
-    padding: rem-calc(10);
-    line-height: 2;
-    text-align: center;
-}
-
-.powen-search-box-top {
-	.search-form {
-		position: relative;
-	}
+.widget-area .widget_search .search-submit {
+	display: none;
 }
 
 // Footer
@@ -361,14 +377,16 @@ h1.site-title {
 		color: #666666;
 	}
 }
+.widget-title {
+	text-align: center;
+}
+
+@include htags();
 
 
 //**** Responsive layout adjustments
 
 @media (max-width: rem-calc(1125)) {
-
-	// Output headings at smaller size
-	@include htags(0.7);
 
 	// redeclare variables to be smaller
 	$default_h_padding: $phi * $phi * 1rem;
@@ -395,7 +413,6 @@ h1.site-title {
 		margin-bottom: $default_gutter;
 		margin-left: -$post_l_padding;
 	}
-
 }
 
 @media (max-width: rem-calc(900)) {
@@ -425,7 +442,7 @@ h1.site-title {
 		visibility: visible;
 		opacity: 1;
 	}
-	.flexslider .powen-slider-content p, .flexslider .powen-slider-content h6{
+	.powen-slider-title, .powen-slider-description{
 		visibility: visible;
 		opacity: 1;
 		text-overflow: ellipsis;
@@ -434,7 +451,7 @@ h1.site-title {
 		width: 100%;
 		margin: rem-calc(5 0);
 	}
-	.flexslider .flex-control-nav {
+	.flex-control-nav {
 		display: none;
 	}
 
@@ -451,20 +468,34 @@ h1.site-title {
 	.widget-area {
 	    padding: rem-calc(0 0 10 0);
 	}
+
+	//Font Size
+	body {font-size: 0.928rem;}
+	.site-title {font-size: 2rem;}
+	.site-description {font-size: 0.928rem;}
+	.powen-nav {font-size: 0.928rem;}
+	.powen-slider-title {font-size: 1.071rem;}
+	.powen-slider-description {font-size: 1rem;}
+	.widget-title {font-size: 1.214rem;}
+	.widget-area {font-size: 0.928rem;}
+	.powen-footer-nav {font-size: 0.928rem;}
+	h1 {font-size: 1.428rem;}
+	h2 {font-size: 1.357rem;}
+	h3 {font-size: 1.285rem;}
+	h4 {font-size: 1.214rem;}
+	h5 {font-size: 1.142rem;}
+	h6 {font-size: 1.071rem;}
+
 }
 
 @media (max-width: rem-calc(600)) {
 
-	@include htags(0.5);
-
-	.flexslider .flex-direction-nav .flex-next, .flexslider .flex-direction-nav .flex-prev {
+	.flex-direction-nav .flex-next, .flex-direction-nav .flex-prev {
 		display: none;
 	}
 }
 
 @media (max-width: rem-calc(400)) {
-
-	@include htags(0.4);
 
 	// redeclare variables to be smaller
 	$default_h_padding: $phi * 1rem;
@@ -499,19 +530,6 @@ h1.site-title {
 		margin-bottom: $default_gutter;
 		margin-left: -$post_l_padding;
 	}
-
-	.entry-title {
-		margin-bottom: $post_t_padding;
-	}
-
-	.flexslider {
-		@include htags(0.6);
-	}
-	.flexslider h6 {
-		line-height: 1;
-	}
-
-	button, input[type="button"], input[type="reset"], input[type="submit"] {
-		display: none;
-	}
+	.powen-slider-title {font-size: 1rem;}
+	.powen-slider-description {font-size: 0.928rem;}
 }

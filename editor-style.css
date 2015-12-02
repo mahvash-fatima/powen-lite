@@ -1,138 +1,3 @@
-/*
-Theme Name: Powen Lite
-Theme URI: http://supernovathemes.com/powen-theme/
-Author: Mahvash Fatima
-Author URI: http://supernovathemes.com
-Description: Powen Lite has been specially designed for blogging websites however due to its clean design and plenty of customization options, it can easily be customized for any purpose.
-Version: 1.3.4
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: powen-lite
-Tags: black, yellow, light, fluid-layout, responsive-layout, left-sidebar, right-sidebar, custom-background, custom-menu, custom-colors, featured-images, flexible-header, theme-options, editor-style, translation-ready, threaded-comments, one-column, two-columns
-
-Powen Lite WordPress Theme is based on Underscores http://underscores.me/, Copyright (C) 2015, Supernova Themes
-Powen Lite WordPress theme is licensed under the GPL.
-*/
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-1.0 Reset
-2.0 Typography
-3.0 Elements
-4.0 Forms
-5.0 Navigation
-	5.1 Links
-	5.2 Menus
-6.0 Accessibility
-7.0 Alignments
-8.0 Clearings
-9.0 Widgets
-10.0 Content
-	10.1 Posts and pages
-	10.2 Asides
-	10.3 Comments
-11.0 Infinite scroll
-12.0 Media
-	12.1 Captions
-	12.2 Galleries
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-1.0 Reset
---------------------------------------------------------------*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-  border: 0;
-  font-family: inherit;
-  font-size: 100%;
-  font-style: inherit;
-  font-weight: inherit;
-  margin: 0;
-  outline: 0;
-  padding: 0;
-  vertical-align: baseline;
-}
-
-html {
-  overflow-y: scroll;
-  /* Keeps page centered in all browsers regardless of content height */
-  -webkit-text-size-adjust: 100%;
-  /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
-  -ms-text-size-adjust: 100%;
-  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
-  box-sizing: border-box;
-  /* Apply a natural box layout model to the document; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
-}
-
-*,
-*:before,
-*:after {
-  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-  box-sizing: inherit;
-}
-
-body {
-  background: #fff;
-  /* Fallback for when there is no custom background color defined. */
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-nav,
-section {
-  display: block;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-table {
-  /* tables still need 'cellspacing="0"' in the markup */
-  border-collapse: separate;
-  border-spacing: 0;
-}
-
-caption, th, td {
-  font-weight: normal;
-  text-align: center;
-  border-bottom: 1px solid;
-  border-left: 1px solid;
-}
-
-caption, th, td:first-child {
-  border-left: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-}
-
-blockquote, q {
-  quotes: "" "";
-}
-
-a:hover,
-a:active {
-  outline: 0;
-}
-
-a img {
-  border: 0;
-}
-
 /*--------------------------------------------------------------
 Custom Vars & Mixins
 --------------------------------------------------------------*/
@@ -148,6 +13,8 @@ input,
 select,
 textarea {
   color: #404040;
+  font-size: 10px;
+  font-size: 1rem;
   line-height: 1.618rem;
 }
 
@@ -312,7 +179,6 @@ input[type="submit"] {
   border-radius: 0;
   border: none;
   padding: 0.625rem 1.25rem;
-  outline: 0;
   cursor: pointer;
   -o-transition: .3s;
   -ms-transition: .3s;
@@ -330,7 +196,6 @@ input[type="search"] {
   -webkit-appearance: textfield;
   /* Addresses appearance set to searchfield in S5, Chrome */
   box-sizing: content-box;
-  background: red;
 }
 
 input[type="search"]::-webkit-search-decoration {
@@ -361,11 +226,11 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-  border: 1px solid #A9A9A9;
+  border: 1px solid #F8F8F8;
   text-indent: 0.3125rem;
   height: 2.5rem;
   letter-spacing: 0.0625rem;
-  outline: 0;
+  outline: none;
 }
 
 textarea {
@@ -375,7 +240,7 @@ textarea {
   vertical-align: top;
   /* Improves readability and alignment in all browsers */
   width: 100%;
-  outline: 0;
+  outline: none;
   font-size: 1.125rem;
 }
 
@@ -489,6 +354,24 @@ input[type="submit"] {
 /*--------------------------------------------------------------
 9.0 Widgets
 --------------------------------------------------------------*/
+.widget {
+  margin: 0 0 1.618rem;
+  overflow: hidden;
+}
+.widget select {
+  max-width: 100%;
+}
+
+.widget-area button,
+.widget-area input[type="button"],
+.widget-area input[type="reset"],
+.widget-area input[type="submit"], .powen-footer-widgets button,
+.powen-footer-widgets input[type="button"],
+.powen-footer-widgets input[type="reset"],
+.powen-footer-widgets input[type="submit"] {
+  display: none;
+}
+
 .widget-area ul {
   list-style: none;
 }
@@ -499,14 +382,23 @@ input[type="submit"] {
   padding: 0.3125rem 0.625rem;
   margin: 0.1875rem 0.0625rem;
   display: inline-block;
+  border: 1px solid #F5F5F5;
+  border-radius: 0.125rem;
+}
+.widget_tag_cloud a:hover {
+  border: 1px solid;
 }
 
-.widget_search input {
-  border: none;
+.widget_archive li a {
+  background: none;
 }
 
-.widget_tag_cloud a, .widget_powen_social_widget a, .widget_search input {
-  box-shadow: 0px 0px 0px 1px #f2f2f2;
+.widget_search, .widget_calendar, .widget_tag_cloud {
+  padding: 0 0.625rem;
+}
+
+.widget_text {
+  overflow: hidden;
 }
 
 .widget_rss li {
@@ -522,14 +414,23 @@ input[type="submit"] {
 }
 
 .rssSummary {
-  padding: 0.625rem 0;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
 }
 
 .widget-area li {
+  border-bottom: 1px solid #F8F8F8;
   padding: 0.625rem 0;
 }
+.widget-area li:last-child {
+  border-bottom: none;
+}
 
-.widget_calendar caption, .powen-pagination .current, .widget_calendar .current-date a {
+.widget_calendar caption, .powen-pagination .current {
+  color: #ffffff;
+}
+
+.widget_calendar .current-date a {
   color: #ffffff;
 }
 
@@ -605,26 +506,32 @@ input[type="submit"] {
   float: right;
 }
 
-.widget_powen_social_widget {
-  text-align: center;
-}
 .widget_powen_social_widget .powen-social-icon {
-  font-size: 1rem;
+  display: inline-block;
+  margin: 0.125rem 0;
+  padding: 0;
 }
 .widget_powen_social_widget a {
-  width: 2.5rem;
-  height: 2.5rem;
-  margin: 0.125rem 0;
-  line-height: 2.5;
-}
-
-.powen-footer-widgets .powen-social-icon a, .powen-footer-widgets .tagcloud a, .powen-footer-widgets input {
-  box-shadow: 0px 0px 0px 1px #565656;
+  display: inline-block;
+  width: 3.125rem;
+  border: 1px solid #F5F5F5;
+  border-radius: 0.125rem;
+  line-height: 3;
+  text-align: center;
+  color: #565656;
 }
 
 #monster-widget-placeholder-8 {
   width: 100%;
   padding: 1.618rem;
+}
+
+.powen-footer-widgets li {
+  border-bottom: 1px solid #565656;
+}
+
+.powen-footer-widgets input, .powen-footer-widgets .widget_powen_social_widget a, .powen-footer-widgets .tagcloud a {
+  border: 1px solid #565656;
 }
 
 /*--------------------------------------------------------------
@@ -638,7 +545,7 @@ input[type="submit"] {
 }
 
 .powen-recent-article {
-  padding-top: 1.618rem;
+  padding-top: 2.61792rem;
 }
 
 .powen-latest-post-tag {
@@ -648,10 +555,8 @@ input[type="submit"] {
   color: #fff;
 }
 .powen-latest-post-tag span {
-  padding: 0 0.625rem;
+  padding: 0 1.25rem;
   display: inline-block;
-  font-size: 0.9375rem;
-  text-transform: uppercase;
 }
 
 .entry-footer {
@@ -694,7 +599,6 @@ input[type="submit"] {
 .powen-pagination .current, .powen-pagination a {
   border: 0.0625rem solid #cccccc;
   border-radius: 3px;
-  margin: 0.3125rem;
 }
 
 .powen-pagination .next, .powen-pagination .prev, .powen-pagination .last {
@@ -702,7 +606,6 @@ input[type="submit"] {
   background: #ffffff;
   border-radius: 0.1875rem;
   border: 0.0625rem solid #cccccc;
-  margin: 0.3125rem;
 }
 
 .breadcrumbs {
@@ -721,7 +624,7 @@ input[type="submit"] {
 }
 
 .powen-continue-reading {
-  margin: 1.618rem 0 1rem 0;
+  margin: 2.61792rem 0 1.618rem 0;
   text-align: center;
 }
 .powen-continue-reading a {
@@ -966,7 +869,7 @@ object {
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 }
 
 a {
@@ -992,6 +895,54 @@ ul, ol {
   position: relative;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.563rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.625rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.313rem;
+}
+
+h4 {
+  font-size: 1.313rem;
+  margin-bottom: 1.313rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+  margin-bottom: 1.313rem;
+}
+
+h6 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.widget-title {
+  font-size: 1.9695rem;
+  text-align: center;
+}
+
+.site-branding .site-title {
+  font-size: 3rem;
+}
+
+.site-branding .site-description {
+  font-size: 1.5rem;
+}
+
 .content-area {
   float: left;
   margin: 0 -30% 0 0;
@@ -1004,22 +955,6 @@ ul, ol {
 
 .site-main {
   margin: 0 30% 0 0;
-}
-
-.powen-primary-nav .menu, .powen-main-nav .menu {
-  display: none;
-}
-
-.powen-primary-nav, .powen-social-icon {
-  display: inline-block;
-}
-
-.powen-main-nav {
-  float: right;
-}
-
-.powen-primary-nav i:before, .powen-main-nav i:before, .powen-social-icon i:before {
-  padding: 0.625rem;
 }
 
 .site-content .widget-area {
@@ -1037,10 +972,6 @@ ul, ol {
   overflow: hidden;
 }
 
-.gallery img {
-  margin-bottom: 2.1875rem;
-}
-
 .widget-container {
   padding: 1.618rem;
 }
@@ -1049,10 +980,17 @@ ul, ol {
   padding: 0;
 }
 
-.hvr-back-pulse:hover,
-.hvr-back-pulse:focus,
-.hvr-back-pulse:active {
-  background-color: none;
+.flexslider h6 {
+  line-height: 1.5;
+  color: #fff;
+  margin: 0.625rem 0;
+  font-size: 0.875rem;
+}
+
+.flexslider p {
+  font-size: 0.6875rem;
+  line-height: 1.5;
+  margin-bottom: 1.875rem;
 }
 
 .site-header {
@@ -1060,17 +998,17 @@ ul, ol {
 }
 
 .site-branding {
-  padding: 0.9375rem;
+  padding-top: 1.618rem;
+  padding-bottom: 1.618rem;
   text-align: center;
+}
+
+h1.site-title {
+  font-weight: 700;
 }
 
 .site-title, .site-description {
   vertical-align: bottom;
-  margin-bottom: 0;
-}
-
-.site-title {
-  line-height: 2;
 }
 
 .site-content {
@@ -1078,48 +1016,11 @@ ul, ol {
   margin: 1.618rem auto;
 }
 
-.powen-nav {
-  padding: 1.125rem 0;
-}
-
-.powen-search-box-top {
-  display: inline-block;
-  float: right;
-  position: relative;
-  height: 1.5625rem;
-  padding: 0.9375rem;
-  margin-right: 0.625rem;
-}
-.powen-search-box-top form {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.powen-search-box-top .search-submit {
-  display: none;
-}
-.powen-search-box-top input {
-  border: none;
-  height: auto;
-  padding-right: 1.5625rem;
-  display: none;
-  width: 9.375rem;
-  background: #fff;
-  box-shadow: 0px 0px 0px 1px #fafafa;
-}
-
-.fa-search {
-  position: absolute;
-  top: 0.3125rem;
-  right: 0.3125rem;
-  cursor: pointer;
-}
-
 .article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
-  padding-left: 1.618rem;
-  padding-right: 1.618rem;
-  padding-bottom: 1.618rem;
-  padding-top: 1.618rem;
+  padding-left: 4.2358rem;
+  padding-right: 4.2358rem;
+  padding-bottom: 2.61792rem;
+  padding-top: 2.61792rem;
   margin: 0;
   background-color: #ffffff;
 }
@@ -1134,9 +1035,6 @@ ul, ol {
 
 .powen-recent-post {
   margin-top: 1.618rem;
-}
-.powen-recent-post .article-hentry {
-  padding-top: 1.875rem;
 }
 
 .powen-pagination {
@@ -1155,9 +1053,9 @@ ul, ol {
 
 .post-thumbnail {
   margin-top: 1.618rem;
-  margin-right: -1.618rem;
+  margin-right: -4.2358rem;
   margin-bottom: 1.618rem;
-  margin-left: -1.618rem;
+  margin-left: -4.2358rem;
   border-top: 0.625rem solid #404040;
   border-bottom: 0.625rem solid #404040;
 }
@@ -1196,6 +1094,7 @@ ul, ol {
   font-weight: 700;
   display: inline-block;
   padding: 0.625rem;
+  margin: 2em 0 .5em 0;
   background: none;
   border-top: 0.1875rem solid #baabab;
   border-bottom: 0.1875rem solid #baabab;
@@ -1203,8 +1102,8 @@ ul, ol {
 }
 
 .entry-footer {
-  margin: 1.618rem 0 1rem 0;
-  line-height: 1rem;
+  margin: 2.61792rem 0 1.618rem 0;
+  line-height: 3em;
   text-align: center;
   border-top: 0.125rem solid #F8F8F8;
 }
@@ -1212,12 +1111,6 @@ ul, ol {
   margin: 0.3125rem;
   padding: 0.3125rem;
   display: inline-block;
-}
-.entry-footer .tags-links {
-  display: inline;
-}
-.entry-footer .tags-links a {
-  line-height: 2;
 }
 
 .comment-list {
@@ -1247,10 +1140,10 @@ ul, ol {
 }
 
 .widget {
-  padding-left: 1.618rem;
-  padding-right: 1.618rem;
-  padding-top: 1.618rem;
-  padding-bottom: 1.618rem;
+  padding-left: 2.61792rem;
+  padding-right: 2.61792rem;
+  padding-top: 2.61792rem;
+  padding-bottom: 2.61792rem;
   margin-left: 1.618rem;
   margin-bottom: 1.618rem;
   background-color: #ffffff;
@@ -1278,12 +1171,41 @@ ul, ol {
   min-width: 6.25rem;
 }
 
+.powen-nav .search-form .search-submit {
+  display: none;
+}
+.powen-nav .search-form input.search-field {
+  text-indent: 0.625rem;
+  height: auto;
+  letter-spacing: 1px;
+  border: none;
+  border-bottom: 1px solid #F8F8F8;
+}
+
 .widget_search input {
   width: 100%;
 }
 
-.widget-area .widget_search .search-submit {
-  display: none;
+.powen-nav {
+  padding: 1.618rem 0;
+}
+
+.powen-tertiary-mobile-nav, .powen-primary-nav, .powen_secondary_navigation, .powen-search-box-top, .powen-social-icon {
+  display: inline-block;
+}
+.powen-tertiary-mobile-nav a i:before, .powen-primary-nav a i:before, .powen_secondary_navigation a i:before, .powen-search-box-top a i:before, .powen-social-icon a i:before {
+  padding: 0.625rem;
+}
+
+.powen-search-box-top {
+  float: right;
+}
+.powen-search-box-top .search-form {
+  position: relative;
+  padding: 0 0.625rem;
+}
+.powen-search-box-top .search-form input {
+  padding-right: 1.875rem;
 }
 
 .site-footer {
@@ -1320,40 +1242,55 @@ ul, ol {
   color: #666666;
 }
 
-.widget-title {
-  text-align: center;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.2;
-  font-weight: 400;
-}
-
-h1 {
-  margin-bottom: 0.563rem;
-}
-
-h2 {
-  margin-bottom: 0.625rem;
-}
-
-h3 {
-  margin-bottom: 1.313rem;
-}
-
-h4 {
-  margin-bottom: 1.313rem;
-}
-
-h5 {
-  margin-bottom: 1.313rem;
-}
-
-h6 {
-  margin-bottom: 0.75rem;
-}
-
 @media (max-width: 70.3125rem) {
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3;
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+    margin-bottom: 0.563rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.625rem;
+  }
+
+  h3 {
+    font-size: 1.05rem;
+    margin-bottom: 1.313rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+    margin-bottom: 1.313rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+    margin-bottom: 1.313rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .widget-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .site-branding .site-title {
+    font-size: 2.7573rem;
+  }
+
+  .site-branding .site-description {
+    font-size: 1.37865rem;
+  }
+
   .article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
     padding-left: 2.61792rem;
     padding-right: 2.61792rem;
@@ -1395,7 +1332,7 @@ h6 {
     opacity: 1;
   }
 
-  .powen-slider-title, .powen-slider-description {
+  .flexslider .powen-slider-content p, .flexslider .powen-slider-content h6 {
     visibility: visible;
     opacity: 1;
     text-overflow: ellipsis;
@@ -1405,7 +1342,7 @@ h6 {
     margin: 0.3125rem 0;
   }
 
-  .flex-control-nav {
+  .flexslider .flex-control-nav {
     display: none;
   }
 
@@ -1423,73 +1360,109 @@ h6 {
   .widget-area {
     padding: 0 0 0.625rem 0;
   }
-
-  body {
-    font-size: 0.928rem;
-  }
-
-  .site-title {
-    font-size: 2rem;
-  }
-
-  .site-description {
-    font-size: 0.928rem;
-  }
-
-  .powen-nav {
-    font-size: 0.928rem;
-  }
-
-  .powen-slider-title {
-    font-size: 1.071rem;
-  }
-
-  .powen-slider-description {
-    font-size: 1rem;
-  }
-
-  .widget-title {
-    font-size: 1.214rem;
-  }
-
-  .widget-area {
-    font-size: 0.928rem;
-  }
-
-  .powen-footer-nav {
-    font-size: 0.928rem;
+}
+@media (max-width: 37.5rem) {
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3;
+    font-weight: 400;
   }
 
   h1 {
-    font-size: 1.428rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.563rem;
   }
 
   h2 {
-    font-size: 1.357rem;
+    font-size: 1.25rem;
+    margin-bottom: 0.625rem;
   }
 
   h3 {
-    font-size: 1.285rem;
+    font-size: 1rem;
+    margin-bottom: 1.313rem;
   }
 
   h4 {
-    font-size: 1.214rem;
+    font-size: 1rem;
+    margin-bottom: 1.313rem;
   }
 
   h5 {
-    font-size: 1.142rem;
+    font-size: 1rem;
+    margin-bottom: 1.313rem;
   }
 
   h6 {
-    font-size: 1.071rem;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
   }
-}
-@media (max-width: 37.5rem) {
-  .flex-direction-nav .flex-next, .flex-direction-nav .flex-prev {
+
+  .widget-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .site-branding .site-title {
+    font-size: 1.9695rem;
+  }
+
+  .site-branding .site-description {
+    font-size: 0.98475rem;
+  }
+
+  .flexslider .flex-direction-nav .flex-next, .flexslider .flex-direction-nav .flex-prev {
     display: none;
   }
 }
 @media (max-width: 25rem) {
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3;
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0.563rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+    margin-bottom: 0.625rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    margin-bottom: 1.313rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+    margin-bottom: 1.313rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+    margin-bottom: 1.313rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .widget-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .site-branding .site-title {
+    font-size: 1.5756rem;
+  }
+
+  .site-branding .site-description {
+    font-size: 0.7878rem;
+  }
+
   .article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
     padding-left: 1.618rem;
     padding-right: 1.618rem;
@@ -1508,12 +1481,55 @@ h6 {
     margin-left: -1.618rem;
   }
 
-  .powen-slider-title {
-    font-size: 1rem;
+  .entry-title {
+    margin-bottom: 1rem;
   }
 
-  .powen-slider-description {
-    font-size: 0.928rem;
+  .flexslider h1, .flexslider h2, .flexslider h3, .flexslider h4, .flexslider h5, .flexslider h6 {
+    line-height: 1.3;
+    font-weight: 400;
+  }
+  .flexslider h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.563rem;
+  }
+  .flexslider h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.625rem;
+  }
+  .flexslider h3 {
+    font-size: 1rem;
+    margin-bottom: 1.313rem;
+  }
+  .flexslider h4 {
+    font-size: 1rem;
+    margin-bottom: 1.313rem;
+  }
+  .flexslider h5 {
+    font-size: 1rem;
+    margin-bottom: 1.313rem;
+  }
+  .flexslider h6 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  .flexslider .widget-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .flexslider .site-branding .site-title {
+    font-size: 2.3634rem;
+  }
+  .flexslider .site-branding .site-description {
+    font-size: 1.1817rem;
+  }
+
+  .flexslider h6 {
+    line-height: 1;
+  }
+
+  button, input[type="button"], input[type="reset"], input[type="submit"] {
+    display: none;
   }
 }
 /*--------------------------------------------------------------
@@ -1522,6 +1538,9 @@ h6 {
 /*------------------
 FontAwesome
 ---------------------*/
+.powen-primary-nav .mm:before,
+.powen_secondary_navigation .m:before,
+.powen-search-box-top .search-form label:after,
 .posted-on:before,
 .comments-link:before,
 .edit-link:before,
@@ -1533,7 +1552,6 @@ FontAwesome
 .comment-metadata time:before,
 .powen-continue-reading:after,
 .breadcrumbs .separator:after,
-.tags-links:before,
 .widget_recent_comments li:before,
 .widget_recent_comments li > a:before,
 .widget_archive li:before,
@@ -1560,12 +1578,26 @@ FontAwesome
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 /**---------------
 Write your code here
 --------------------**/
+.powen-primary-nav .mm:before, .powen_secondary_navigation .m:before, .powen-pro-mobile-menu .mm:before {
+  content: "\f0c9";
+}
+
+.powen-search-box-top .search-form label:after {
+  content: "\f002";
+  position: absolute;
+  right: 1.25rem;
+  top: 0;
+  color: #cdcdcd;
+}
+
 .posted-on:before, .comment-metadata time:before {
   content: "\f017";
   padding: 0.3125rem;
@@ -1597,11 +1629,6 @@ Write your code here
 }
 
 .cat-links:before {
-  content: "\f0ca";
-  padding: 0.3125rem;
-}
-
-.tags-links:before {
   content: "\f02c";
   padding: 0.3125rem;
 }
@@ -1655,10 +1682,6 @@ Write your code here
   margin: 1.5625rem auto 1.5625rem;
 }
 
-.widget-title:after {
-  margin: 0.9375rem auto 0.9375rem;
-}
-
 .footer-scroll:before {
   content: "\f106";
   background: rgba(0, 0, 0, 0.46);
@@ -1679,6 +1702,10 @@ Write your code here
 /*--------------------------------------------------------------
 16.0 Slider
 --------------------------------------------------------------*/
+.flexslider img {
+  height: auto;
+}
+
 .flex-prev {
   font-size: 0.875rem;
   padding: 0 0.75rem;
@@ -1699,7 +1726,6 @@ Write your code here
   position: relative;
 }
 .slides img {
-  height: auto;
   width: 100%;
 }
 
@@ -1712,17 +1738,12 @@ Write your code here
   padding: 0.3125rem;
   background: rgba(0, 0, 0, 0.3);
 }
-
-.powen-slider-title {
-  line-height: 1.2;
+.powen-slider-content h3 {
   color: #ffffff;
-  margin: 0.625rem 0;
+  margin-bottom: 0;
 }
-
-.powen-slider-description {
+.powen-slider-content p {
   color: #ffffff;
-  line-height: 1.2;
-  margin-bottom: 1.875rem;
+  width: 100%;
 }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=editor-style.css.map */

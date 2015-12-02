@@ -48,6 +48,6 @@ get_header(); ?>
 
 </div><!-- #content -->
 
-	<div class="clearfix"></div>
+<div class="clearfix"></div>
 
 <?php get_footer(); ?>

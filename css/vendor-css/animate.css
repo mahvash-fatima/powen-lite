@@ -1081,8 +1081,17 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .fadeIn {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.flexslider li:hover .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+  visibility: visible;
+  opacity: 1;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
 }
 
 @-webkit-keyframes fadeInDown {
@@ -1113,11 +1122,11 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 
-.fadeInDown:hover {
+.fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 @-webkit-keyframes fadeInDownBig {
@@ -1302,8 +1311,8 @@ Copyright (c) 2015 Daniel Eden
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 25%, 0);
+    transform: translate3d(0, 25%, 0);
   }
 
   100% {
@@ -3067,6 +3076,7 @@ Copyright (c) 2015 Daniel Eden
   visibility: hidden;
   opacity: 0;
 }
+
 .flexslider li:hover .slideInUp {
   -webkit-animation-name: slideInUp;
    animation-name: slideInUp;

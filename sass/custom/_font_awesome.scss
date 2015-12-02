@@ -1,11 +1,7 @@
 /*------------------
 FontAwesome
 ---------------------*/
-	//HEADER
-	.powen-top-most-nav .mm:before,
-	.powen-main-navigation .m:before,
-	.powen-search-box-top .search-form label:after,
-	//PRIMARY ICONS
+	//CONTENT ICONS
 	.posted-on:before,
 	.comments-link:before,
 	.edit-link:before,
@@ -16,7 +12,9 @@ FontAwesome
 	.cat-links:before,
 	.comment-metadata time:before,
 	.powen-continue-reading:after,
-	//SECONDARY ICONS
+	.breadcrumbs .separator:after,
+	.tags-links:before,
+	//SIDEBAR ICONS
 	.widget_recent_comments li:before,
 	.widget_recent_comments li>a:before,
 	.widget_archive li:before,
@@ -30,7 +28,7 @@ FontAwesome
 	.entry-header:after,
 	.widget-title:after,
 	.footer-scroll:before,
-	.powen-pro-mobile-menu .mm:before
+	.powen-pro-mobile-menu .mm:before,
 {
 font-family: 'FontAwesome';
 font-weight: normal;
@@ -50,24 +48,10 @@ transform: translate(0, 0);
 Write your code here
 --------------------**/
 
-//HEADER
-.powen-top-most-nav .mm:before, .powen-main-navigation .m:before, .powen-pro-mobile-menu .mm:before {
-	content: "\f0c9";
-	padding-right: rem-calc(5);
-}
-
-.powen-search-box-top .search-form label:after {
-	content: "\f002";
-	position: absolute;
-	right: rem-calc(20);
-	top: 0;
-	color: #ececec;
-}
-
 //PRIMARY ICONS
 
 //Date
-.posted-on:before {
+.posted-on:before, .comment-metadata time:before {
 	content: "\f017";
 	padding: rem-calc(5);
 }
@@ -96,18 +80,24 @@ Write your code here
 	padding: rem-calc(5);
 }
 .cat-links:before {
+	content: "\f0ca";
+	padding: rem-calc(5);
+}
+.tags-links:before {
 	content: "\f02c";
 	padding: rem-calc(5);
 }
 .comment-metadata time:before {
-	content: "\f017";
-	padding: rem-calc(5);
 	padding-left: 0;
 }
 .powen-continue-reading:after {
 	content: "\f178";
 }
-
+.breadcrumbs .separator:after {
+	content: "\f105";
+    color: #cccccc;
+    padding-right: rem-calc(5);
+}
 
 //SECONDARY ICONS
 
@@ -122,32 +112,10 @@ Write your code here
 	display: none;
 }
 //Archive
-.widget_archive li:before {
+.widget_archive li:before, .widget_recent_entries li:before, .widget_categories li:before, .widget_meta li:before, .widget_pages li:before, .menu-long-menu-container li:before, .widget_recent_entries li:before {
 	content: "\f105";
 	color: #cccccc;
-	margin-right: rem-calc(15);
-}
-.widget_recent_entries li:before {
-	content: "\f105";
-	color: #cccccc;
-	margin-right: rem-calc(15);
-}
-//Categories
-.widget_categories li:before {
-	content: "\f105";
-	color: #cccccc;
-	margin-right: rem-calc(15);
-}
-//Meta
-.widget_meta li:before {
-	content: "\f105";
-	color: #cccccc;
-	margin-right: rem-calc(15);
-}
-.widget_pages li:before {
-	content: "\f105";
-	color: #cccccc;
-	margin-right: rem-calc(15);
+	padding-right: rem-calc(10);
 }
 .powen-wrapper .recent-comment-people:before {
 	content: "\f007";
@@ -158,19 +126,6 @@ Write your code here
 	padding-top: rem-calc(10);
 	border-radius: 50%;
 }
-.menu-long-menu-container li:before {
-	content: "\f105";
-	color: #cccccc;
-	margin-right: rem-calc(15);
-}
-
-//RECENT WIDGETS
-.widget_recent_entries li:before {
-	content: "\f105";
-	color: #cccccc;
-	margin-right: rem-calc(15);
-}
-
 // widget-title
 .entry-header:after, .widget-title:after {
    content: '';
@@ -180,6 +135,9 @@ Write your code here
    margin: rem-calc(25) auto rem-calc(25);
 }
 
+.widget-title:after {
+	margin: rem-calc(15) auto rem-calc(15);
+}
 
 //Back To Top
 .footer-scroll:before {

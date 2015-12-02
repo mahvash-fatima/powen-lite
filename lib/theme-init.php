@@ -18,9 +18,9 @@ function powen_setup() {
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
 	 * If you're building a theme based on powen, use a find and replace
-	 * to change 'powen' to the name of your theme in all the template files
+	 * to change 'powen-lite' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'powen', POWEN_DR . '/languages' );
+	load_theme_textdomain( 'powen-lite', POWEN_DR . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -45,8 +45,8 @@ function powen_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 	    apply_filters( 'powen_add_navigation', array(
-	    	'top-most' => __( 'Top Most Menu', 'powen' ),
-	    	'main-menu' => __( 'Main Menu', 'powen' ),
+	    	'top-most' => __( 'Top Most Menu', 'powen-lite' ),
+	    	'main-menu' => __( 'Main Menu', 'powen-lite' ),
 	) ) );
 
 	/*
@@ -65,6 +65,9 @@ function powen_setup() {
 
 	//registering image size of side-thumb
 	add_image_size( 'side-thumb', 220, 180 );
+
+	//add editor style
+	add_editor_style();
 }
 endif; // powen_setup
 add_action( 'after_setup_theme', 'powen_setup' );
@@ -74,9 +77,11 @@ add_action( 'after_setup_theme', 'powen_setup' );
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
+
+if ( ! function_exists( 'powen_widgets_init' ) ) :
 function powen_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'powen' ),
+		'name'          => __( 'Sidebar', 'powen-lite' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -87,9 +92,9 @@ function powen_widgets_init() {
 
 		// First footer widget area, located in the footer. Empty by default.
 		    register_sidebar( array(
-		        'name' => __( 'First Footer Widget Area', 'powen' ),
+		        'name' => __( 'First Footer Widget Area', 'powen-lite' ),
 		        'id' => 'first-footer-widget-area',
-		        'description' => __( 'The first footer widget area', 'powen' ),
+		        'description' => __( 'The first footer widget area', 'powen-lite' ),
 		        'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
 		        'after_widget' => '</div>',
 		        'before_title' => '<h3 class="widget-title">',
@@ -98,9 +103,9 @@ function powen_widgets_init() {
 
 		    // Second Footer Widget Area, located in the footer. Empty by default.
 		    register_sidebar( array(
-		        'name' => __( 'Second Footer Widget Area', 'powen' ),
+		        'name' => __( 'Second Footer Widget Area', 'powen-lite' ),
 		        'id' => 'second-footer-widget-area',
-		        'description' => __( 'The second footer widget area', 'powen' ),
+		        'description' => __( 'The second footer widget area', 'powen-lite' ),
 		        'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
 		        'after_widget' => '</div>',
 		        'before_title' => '<h3 class="widget-title">',
@@ -109,9 +114,9 @@ function powen_widgets_init() {
 
 		    // Third Footer Widget Area, located in the footer. Empty by default.
 		    register_sidebar( array(
-		        'name' => __( 'Third Footer Widget Area', 'powen' ),
+		        'name' => __( 'Third Footer Widget Area', 'powen-lite' ),
 		        'id' => 'third-footer-widget-area',
-		        'description' => __( 'The third footer widget area', 'powen' ),
+		        'description' => __( 'The third footer widget area', 'powen-lite' ),
 		        'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
 		        'after_widget' => '</div>',
 		        'before_title' => '<h3 class="widget-title">',
@@ -120,9 +125,9 @@ function powen_widgets_init() {
 
 		    // Fourth Footer Widget Area, located in the footer. Empty by default.
 		    register_sidebar( array(
-		        'name' => __( 'Fourth Footer Widget Area', 'powen' ),
+		        'name' => __( 'Fourth Footer Widget Area', 'powen-lite' ),
 		        'id' => 'fourth-footer-widget-area',
-		        'description' => __( 'The fourth footer widget area', 'powen' ),
+		        'description' => __( 'The fourth footer widget area', 'powen-lite' ),
 		        'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
 		        'after_widget' => '</div>',
 		        'before_title' => '<h3 class="widget-title">',
@@ -130,4 +135,5 @@ function powen_widgets_init() {
 		    ) );
 
 }
+endif; // powen_widgets_init
 add_action( 'widgets_init', 'powen_widgets_init' );

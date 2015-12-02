@@ -32,10 +32,11 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php the_excerpt(); ?>
+		<?php powen_content(); ?>
+
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'powen' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'powen-lite' ),
 				'after'  => '</div>',
 			) );
 		?>

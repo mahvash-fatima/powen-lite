@@ -6,41 +6,6 @@
  */
 ( function( $ ) {
 
-	wp.customize( 'powen_mod[theme_font]', function( value ) {
-	    value.bind( function( newval ) {
-
-	        switch( newval.toString().toLowerCase() ) {
-
-	            case 'sansserif':
-	                sFont = 'sans-serif';
-	                break;
-
-	            case 'serif':
-	                sFont = 'serif';
-	                break;
-
-	            case 'courier':
-	                sFont = 'Courier New, Courier';
-	                break;
-
-	            case 'open-sans':
-	                sFont = 'Open Sans';
-	                break;
-
-	            default:
-	                sFont = 'Open Sans';
-	                break;
-
-	        }
-
-	        $( 'body' ).css({
-	            fontFamily: sFont
-	        });
-
-	    });
-
-	});
-
 	// Update the site title in real time...
 	wp.customize( 'blogname', function( value ) {
 		value.bind( function( newval ) {
@@ -78,6 +43,30 @@
 	wp.customize( 'powen_mod[header_background]', function( value ) {
 		value.bind( function( newval ) {
 			$('.site-header').css('background-color', newval );
+		} );
+	} );
+
+	wp.customize( 'powen_mod[primary_menu_background_color]', function( value ) {
+		value.bind( function( newval ) {
+			$('#mm-powen-primary-nav').css('background-color', newval );
+		} );
+	} );
+
+	wp.customize( 'powen_mod[primary_menu_color]', function( value ) {
+		value.bind( function( newval ) {
+			$('#mm-powen-primary-nav').css('color', newval );
+		} );
+	} );
+
+	wp.customize( 'powen_mod[main_menu_background_color]', function( value ) {
+		value.bind( function( newval ) {
+			$('#mm-powen_secondary_nav').css('background-color', newval );
+		} );
+	} );
+
+	wp.customize( 'powen_mod[main_menu_color]', function( value ) {
+		value.bind( function( newval ) {
+			$('#mm-powen_secondary_nav').css('color', newval );
 		} );
 	} );
 
