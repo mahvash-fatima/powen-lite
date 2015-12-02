@@ -41,11 +41,11 @@ class Powen_Customizer {
               'default'           => '',
               'sanitize_callback' => 'esc_url_raw',
               'capability'        => 'edit_theme_options',
-  
+
           ));
 
           $wp_customize->add_control( "powen_mod[{$powen_social_site}]" , array(
-              'label'    => __( "{$powen_social_site} url:", 'powen' ),
+              'label'    => sprintf( __( "%s url:", 'powen' ) , $powen_social_site ),
               'settings' => "powen_mod[{$powen_social_site}]",
               'section'  => 'powen_social_media_section',
               'type'     => 'text',
@@ -73,7 +73,7 @@ class Powen_Customizer {
       $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[sidebar_position]', array(
           'label'         =>   __( 'Sidebar Position', 'powen' ),
           'type'          =>  'radio',
-          'choices'       =>  array( 
+          'choices'       =>  array(
             'left'        => __( 'left', 'powen' ),
             'right'       => __( 'right', 'powen' ),
             'no-sidebar'  => __( 'no-sidebar', 'powen' ),
@@ -118,7 +118,7 @@ class Powen_Customizer {
       $wp_customize->add_section( 'powen_slider_section_' . $i, array(
           'priority'       => 10,
           'capability'     => 'edit_theme_options',
-          'title'          => __( 'Slide ' . $i , 'powen' ),
+          'title'          => sprintf( __( 'Slide %s' , 'powen' ), $i ),
           'description'    => __( 'Add slides', 'powen' ),
           'panel'          => 'powen_slider_pannel',
       ) );
