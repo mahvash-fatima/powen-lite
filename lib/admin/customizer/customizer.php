@@ -207,7 +207,6 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting( 'powen_mod[copyright_textbox]', array(
-          'default'           => __( '@copyright', 'powen-lite' ),
           'sanitize_callback' => 'sanitize_text_field',
           'capability'        => 'edit_theme_options',
       ) );
