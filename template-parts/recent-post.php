@@ -19,7 +19,7 @@
 		<div class="powen-latest-post-tag"><span><?php echo __('Latest', 'powen-lite'); ?></span></div>
 
 		<div class="entry-content">
-			<?php the_excerpt(); ?>
+			<?php powen_content(); ?>
 		</div>
 
 		<footer class="entry-footer">

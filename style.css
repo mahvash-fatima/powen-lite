@@ -4,7 +4,7 @@ Theme URI: http://supernovathemes.com/powen-theme/
 Author: Mahvash Fatima
 Author URI: http://supernovathemes.com
 Description: Powen Lite has been specially designed for blogging websites however due to its clean design and plenty of customization options, it can easily be customized for any purpose.
-Version: 1.2.5
+Version: 1.2.8
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: powen-lite
@@ -361,7 +361,7 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-  border: 1px solid #cccccc;
+  border: 1px solid #F8F8F8;
   text-indent: 0.3125rem;
   height: 2.5rem;
   letter-spacing: 0.0625rem;
@@ -517,7 +517,8 @@ input[type="submit"] {
   padding: 0.3125rem 0.625rem;
   margin: 0.1875rem 0.0625rem;
   display: inline-block;
-  border: 1px dotted;
+  border: 1px solid #F5F5F5;
+  border-radius: 0.125rem;
 }
 .widget_tag_cloud a:hover {
   border: 1px solid;
@@ -553,7 +554,7 @@ input[type="submit"] {
 }
 
 .widget-area li {
-  border-bottom: 1px dashed #ccc;
+  border-bottom: 1px solid #F8F8F8;
   padding: 0.625rem 0;
 }
 .widget-area li:last-child {
@@ -648,15 +649,24 @@ input[type="submit"] {
 .widget_powen_social_widget a {
   display: inline-block;
   width: 3.125rem;
-  border: 1px solid #ccc;
+  border: 1px solid #F5F5F5;
   border-radius: 0.125rem;
   line-height: 3;
   text-align: center;
+  color: #565656;
 }
 
 #monster-widget-placeholder-8 {
   width: 100%;
   padding: 1.618rem;
+}
+
+.powen-footer-widgets li {
+  border-bottom: 1px solid #565656;
+}
+
+.powen-footer-widgets input, .powen-footer-widgets .widget_powen_social_widget a, .powen-footer-widgets .tagcloud a {
+  border: 1px solid #565656;
 }
 
 /*--------------------------------------------------------------
@@ -697,6 +707,10 @@ input[type="submit"] {
 
 .posted-on, .byline {
   padding: 0.3125rem;
+}
+
+.powen-footer-widgets input + div {
+  text-align: center;
 }
 
 .powen-pagination {
@@ -1164,10 +1178,6 @@ h1.site-title {
 
 .powen-recent-post {
   margin-top: 1.618rem;
-  background: #ffffff;
-}
-.powen-recent-post .powen-wrapper {
-  max-width: 56.25rem;
 }
 
 .powen-pagination {
@@ -1238,7 +1248,7 @@ h1.site-title {
   margin: 2.61792rem 0 1.618rem 0;
   line-height: 3em;
   text-align: center;
-  border-top: 0.125rem solid #f5f5f5;
+  border-top: 0.125rem solid #F8F8F8;
 }
 .entry-footer span {
   margin: 0.3125rem;
@@ -1299,6 +1309,11 @@ h1.site-title {
   margin-top: 0.0625rem;
 }
 
+.comments-area .comment-form p label {
+  display: inline-block;
+  min-width: 6.25rem;
+}
+
 .powen-nav .search-form .search-submit {
   display: none;
 }
@@ -1307,7 +1322,7 @@ h1.site-title {
   height: auto;
   letter-spacing: 1px;
   border: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #F8F8F8;
 }
 
 .widget_search input {
@@ -1679,6 +1694,7 @@ FontAwesome
 .cat-links:before,
 .comment-metadata time:before,
 .powen-continue-reading:after,
+.breadcrumbs .separator:after,
 .widget_recent_comments li:before,
 .widget_recent_comments li > a:before,
 .widget_archive li:before,
@@ -1764,6 +1780,12 @@ Write your code here
 
 .powen-continue-reading:after {
   content: "\f178";
+}
+
+.breadcrumbs .separator:after {
+  content: "\f105";
+  color: #cccccc;
+  padding-right: 0.3125rem;
 }
 
 .widget_recent_comments li:before {

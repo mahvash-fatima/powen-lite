@@ -16,6 +16,7 @@ FontAwesome
 	.cat-links:before,
 	.comment-metadata time:before,
 	.powen-continue-reading:after,
+	.breadcrumbs .separator:after,
 	//SECONDARY ICONS
 	.widget_recent_comments li:before,
 	.widget_recent_comments li>a:before,
@@ -103,6 +104,11 @@ Write your code here
 }
 .powen-continue-reading:after {
 	content: "\f178";
+}
+.breadcrumbs .separator:after {
+	content: "\f105";
+    color: #cccccc;
+    padding-right: rem-calc(5);
 }
 
 //SECONDARY ICONS

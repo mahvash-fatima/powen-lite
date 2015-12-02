@@ -126,13 +126,13 @@ function powen_entry_footer() {
 	// Hide category and tag text for pages.
 	if ( 'post' == get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( __( ', ', 'powen-lite' ) );
+		$categories_list = get_the_category_list( ',' );
 		if ( $categories_list && powen_categorized_blog() ) {
 			printf( '<span class="cat-links">' . __( '%1$s', 'powen-lite' ) . '</span>', $categories_list );
 		}
 
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', __( ', ', 'powen-lite' ) );
+		$tags_list = get_the_tag_list( '', ',' );
 		if ( $tags_list ) {
 			printf( '<span class="tags-links">' . __( 'Tagged %1$s', 'powen-lite' ) . '</span>', $tags_list );
 		}

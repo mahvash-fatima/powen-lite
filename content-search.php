@@ -22,7 +22,13 @@
 		</header><!-- .entry-header -->
 
 		<div class="entry-summary">
-			<?php the_excerpt(); ?>
+			<?php
+				if( powen_mod('content_length') == 'full' ) {
+					the_content();
+				}elseif ( powen_mod('content_length') == 'excerpt' ) {
+					the_excerpt();
+				}
+			?>
 		</div><!-- .entry-summary -->
 
 		<footer class="entry-footer">

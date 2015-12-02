@@ -11,7 +11,8 @@ if( ! function_exists( 'powen_mod' ) ) :
 	function powen_mod( $key , $default = false )
 	{
 		$powen_mod = get_theme_mod('powen_mod' );
-		$saved_value = isset($powen_mod[$key]) && $powen_mod[$key] ? $powen_mod[$key] : $default;
+
+		$saved_value = isset($powen_mod[$key]) ? $powen_mod[$key] : $default;
 
 		$keys_to_be_escaped = apply_filters('powen_key_to_be_escaped_array', array(
 			'theme_font',
@@ -155,13 +156,14 @@ if( ! function_exists( 'powen_content' ) ) :
 
 	function powen_content()
 	{
-		if(powen_mod('content_length') == 'full') {
+		if(powen_mod('content_length', 'excerpt') == 'full') {
 			the_content();
 		}
 		else{
 			the_excerpt();
 		}
 	}
+
 endif; //powen_content
 
 if( ! function_exists( 'powen_custom_admin_head' ) ) :

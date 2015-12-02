@@ -32,13 +32,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php
-		if( powen_mod('content_length') == 'full' ) {
-			the_content();
-		}elseif ( powen_mod('content_length') == 'excerpt' ) {
-			the_excerpt();
-		}
-		?>
+		<?php powen_content(); ?>
 
 		<?php
 			wp_link_pages( array(

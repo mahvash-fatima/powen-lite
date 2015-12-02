@@ -24,7 +24,8 @@
         padding: rem-calc(5 10);
         margin: rem-calc(3 1);
         display: inline-block;
-        border: 1px dotted;
+        border: 1px solid #F5F5F5;
+        border-radius: rem-calc(2);
         &:hover {
             border: 1px solid;
         }
@@ -65,7 +66,7 @@
 }
 
 .widget-area li {
-    border-bottom: 1px dashed #ccc;
+    border-bottom: 1px solid #F8F8F8;
     padding: rem-calc(10 0);
     &:last-child {
         border-bottom: none;
@@ -154,14 +155,22 @@
    a {
         display: inline-block;
         width: rem-calc(50);
-        border: 1px solid #ccc;
+        border: 1px solid #F5F5F5;
         border-radius: rem-calc(2);
         line-height: 3;
         text-align: center;
+        color: #565656;
    }
 }
 
 #monster-widget-placeholder-8 {
     width: 100%;
     padding: $default_gutter;
+}
+
+.powen-footer-widgets li {
+    border-bottom: 1px solid #565656;
+}
+.powen-footer-widgets input, .powen-footer-widgets .widget_powen_social_widget a, .powen-footer-widgets .tagcloud a {
+    border: 1px solid #565656;
 }

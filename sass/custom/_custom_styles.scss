@@ -144,10 +144,6 @@ h1.site-title {
 
 .powen-recent-post {
 	margin-top: $default_gutter;
-	background: #ffffff;
-	.powen-wrapper {
-		max-width: rem-calc(900);
-	}
 }
 
 .powen-pagination {
@@ -292,6 +288,11 @@ h1.site-title {
 
 }
 
+.comments-area .comment-form p label {
+	display: inline-block;
+	min-width: rem-calc(100);
+}
+
 .powen-nav {
 	.search-form {
 		.search-submit {
@@ -302,7 +303,7 @@ h1.site-title {
 			height: auto;
 			letter-spacing: 1px;
 			border: none;
-			border-bottom: 1px solid #ccc;
+			border-bottom: 1px solid #F8F8F8;
 		}
 	}
 }

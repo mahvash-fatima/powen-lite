@@ -29,7 +29,7 @@ class Powen_Customizer {
       ===============================*/
 
       $wp_customize->add_section( 'powen_css_section' , array(
-          'title'      =>  __( 'CSS', 'powen-lite' ),
+          'title'      =>  __( 'Custom CSS', 'powen-lite' ),
           'capability' => 'edit_theme_options',
       ) );
 
@@ -46,13 +46,27 @@ class Powen_Customizer {
       ) ) );
 
       /*==============================
-        CONTENT
+                  CONTENT
       ===============================*/
 
       $wp_customize->add_section( 'powen_content_section' , array(
           'title'      =>  __( 'Content', 'powen-lite' ),
           'capability' => 'edit_theme_options',
       ) );
+
+      //Show Latest Post
+      $wp_customize->add_setting( 'powen_mod[show_latest_post]', array(
+          'default'           => 1,
+          'sanitize_callback' => 'sanitize_text_field',
+          'capability'        => 'edit_theme_options',
+      ) );
+
+      $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[show_latest_post]', array(
+          'label'   =>   __( 'Show Latest Posts', 'powen-lite' ),
+          'type'    => 'checkbox',
+          'section'  =>  'powen_content_section',
+          'settings' =>  'powen_mod[show_latest_post]',
+      ) ) );
 
       //Full content or Excerpt
       $wp_customize->add_setting( 'powen_mod[content_length]', array(
@@ -238,6 +252,8 @@ class Powen_Customizer {
       global $powen_theme;
       $url = $powen_theme->get('AuthorURI') . "/powen-pro-pricing/";
       $description = ! defined( 'POWEN_PRO' ) ? __( 'For More Options Upgrade to ', 'powen-lite' ) . "<a href='{$url}'>".__( 'Powen Pro' , 'powen-lite' )."</a>" : false;
+      $urldesc     = esc_url('https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=sayedwp@gmail.com&item_name=Donation for Powen Lite', 'powen-lite');
+      $desc        = ! defined( 'POWEN_PRO' ) ? __( 'Please support the development of your theme - ', 'powen-lite' ) . "<a href='{$urldesc}'>".__( 'Donate', 'powen-lite' )."</a>" : false;
 
       $wp_customize->add_panel( 'powen_slider_pannel', array(
           'priority'       => 10,
@@ -250,7 +266,7 @@ class Powen_Customizer {
            'priority'    => 9,
            'capability'  => 'edit_theme_options',
            'title'       => __( 'Powen Pro' , 'powen-lite' ),
-           'description' => $description,
+           'description' => $description . "<br/><br/>" . $desc,
            'type'        => 'checkbox',
            'panel'       => 'powen_slider_pannel',
       ) );
@@ -263,12 +279,11 @@ class Powen_Customizer {
 
       $wp_customize->add_control( new WP_Customize_Control ( $wp_customize, 'powen_mod[hide_slider]', array(
           'label'   => __('Hide Slider', 'powen-lite'),
-          'description' => __('<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=sayedwp@gmail.com&item_name=Donation for Powen Lite">Please support the development of your theme -<strong> Donate <strong></a>', 'powen-lite'),
           'type'    => 'checkbox',
           'section' => 'powen_slider_section_pro',
       ) ) );
 
-      $default_slides = powen_default_slides();
+      $default_slides = get_theme_mod( 'powen_slides', powen_default_slides() );
 
       for ( $i = 0; $i <= apply_filters( 'powen_increase_slides', 19 ); $i++ ) {
 
@@ -276,12 +291,12 @@ class Powen_Customizer {
           'priority'    => 10,
           'capability'  => 'edit_theme_options',
           'title'       => sprintf( __( 'Slide %s' , 'powen-lite' ), $i+1 ),
-          'description' => __( 'Note: Remove all the default Title, Description, Link and Image before customizing the slide', 'powen-lite' ),
+          'description' => __( 'Note: All default slide values will be discarded, the moment you make any changes to the slide.', 'powen-lite' ),
           'panel'       => 'powen_slider_pannel',
       ) );
 
       $wp_customize->add_setting( 'powen_slides['.$i.'][title]', array(
-          'default'           => isset( $default_slides[$i]['title'] ) ? $default_slides[$i]['title'] : false,
+          'default'           => isset( $default_slides[$i]['title'] ) ? $default_slides[$i]['title'] : '',
           'sanitize_callback' => 'sanitize_text_field',
           'capability'        => 'edit_theme_options',
       ) );
@@ -294,7 +309,7 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting( 'powen_slides['.$i.'][description]', array(
-          'default'           => isset( $default_slides[$i]['description'] ) ? $default_slides[$i]['description'] : false,
+          'default'           => isset( $default_slides[$i]['description'] ) ? $default_slides[$i]['description'] : '',
           'sanitize_callback' => 'sanitize_text_field',
           'capability'        => 'edit_theme_options',
       ) );
@@ -307,7 +322,7 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting( 'powen_slides['.$i.'][link]', array(
-          'default'           => isset( $default_slides[$i]['link'] ) ? esc_url($default_slides[$i]['link']) : false,
+          'default'           => isset( $default_slides[$i]['link'] ) ? esc_url($default_slides[$i]['link']) : '',
           'sanitize_callback' => 'esc_url_raw',
           'capability'        => 'edit_theme_options',
       ) );
@@ -320,7 +335,7 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting( 'powen_slides['.$i.'][image]', array(
-          'default'           => isset( $default_slides[$i]['image'] ) ? esc_url($default_slides[$i]['image']) : false,
+          'default'           => isset( $default_slides[$i]['image'] ) ? esc_url($default_slides[$i]['image']) : '',
           'sanitize_callback' => 'esc_url_raw',
           'capability'        => 'edit_theme_options',
       ) );

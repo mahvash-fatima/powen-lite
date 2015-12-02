@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Powen Lite 1.2.2\n"
+"Project-Id-Version: Powen Lite 1.2.7\n"
 "Report-Msgid-Bugs-To: http://supernovathemes.com/powen-theme\n"
-"POT-Creation-Date: 2015-08-25 07:58:48+00:00\n"
+"POT-Creation-Date: 2015-08-30 10:54:06+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -64,12 +64,18 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: content-page.php:30 content-single.php:36 content.php:38
+#: content-page.php:30 content-single.php:36 content.php:39
 msgid "Pages:"
 msgstr ""
 
 #: content-page.php:37 inc/template-tags.php:147
 msgid "Edit"
+msgstr ""
+
+#: footer.php:53 lib/breadcrumb.php:86 lib/breadcrumb.php:90
+#: lib/breadcrumb.php:94 lib/breadcrumb.php:101 lib/breadcrumb.php:105
+#: lib/breadcrumb.php:110
+msgid "%s"
 msgstr ""
 
 #: footer.php:65
@@ -108,16 +114,13 @@ msgstr ""
 msgid "Post navigation"
 msgstr ""
 
-#: inc/template-tags.php:129 inc/template-tags.php:135
-#. translators: used between list items, there is a space after the comma
-msgid ", "
-msgstr ""
-
 #: inc/template-tags.php:131
+#. translators: used between list items, there is a space after the comma
 msgid "%1$s"
 msgstr ""
 
 #: inc/template-tags.php:137
+#. translators: used between list items, there is a space after the comma
 msgid "Tagged %1$s"
 msgstr ""
 
@@ -166,308 +169,333 @@ msgstr ""
 msgid "%1$s: %2$s"
 msgstr ""
 
-#: inc/template-tags.php:202 lib/breadcrumb.php:87 lib/breadcrumb.php:91
-#: lib/breadcrumb.php:95 lib/breadcrumb.php:102 lib/breadcrumb.php:106
-#: lib/breadcrumb.php:111
+#: inc/template-tags.php:202 lib/breadcrumb.php:86 lib/breadcrumb.php:90
+#: lib/breadcrumb.php:94 lib/breadcrumb.php:101 lib/breadcrumb.php:105
+#: lib/breadcrumb.php:110
 msgid "Archives"
 msgstr ""
 
-#: index.php:42
+#: index.php:43
 msgid "Sorry, no posts matched your criteria."
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:32
+msgid "Custom CSS"
+msgstr ""
+
+#: lib/admin/customizer/customizer.php:42
+msgid "CSS"
+msgstr ""
+
+#: lib/admin/customizer/customizer.php:53
 msgid "Content"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:44
-msgid "Hide The Author of The Post"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:57
-msgid "Hide The Date of The Post"
-msgstr ""
-
 #: lib/admin/customizer/customizer.php:65
-msgid "@copyright"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:71
-msgid "Copyright Text"
+msgid "Show Latest Posts"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:79
+msgid "Content Length"
+msgstr ""
+
+#: lib/admin/customizer/customizer.php:82
+msgid "full"
+msgstr ""
+
+#: lib/admin/customizer/customizer.php:83
+msgid "excerpt"
+msgstr ""
+
+#: lib/admin/customizer/customizer.php:98
+msgid "Hide The Author of The Post"
+msgstr ""
+
+#: lib/admin/customizer/customizer.php:111
+msgid "Hide The Date of The Post"
+msgstr ""
+
+#: lib/admin/customizer/customizer.php:119
+msgid "@copyright"
+msgstr ""
+
+#: lib/admin/customizer/customizer.php:125
+msgid "Copyright Text"
+msgstr ""
+
+#: lib/admin/customizer/customizer.php:133
 msgid "Supernova Themes"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:85
+#: lib/admin/customizer/customizer.php:139
 msgid "Author's Name"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:100
+#: lib/admin/customizer/customizer.php:154
 msgid "Top Most Menu Title"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:112
-#: lib/admin/customizer/customizer.php:134 pro/hooks.php:162
+#: lib/admin/customizer/customizer.php:166
+#: lib/admin/customizer/customizer.php:188 pro/hooks.php:162
 msgid "Hide"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:122
+#: lib/admin/customizer/customizer.php:176
 msgid "Main Menu Title"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:143
+#: lib/admin/customizer/customizer.php:197
 msgid "Social Media"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:144
+#: lib/admin/customizer/customizer.php:198
 msgid "Example for Phone url: tel:+13174562564"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:159
+#: lib/admin/customizer/customizer.php:213
 msgid "%s url:"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:172
+#: lib/admin/customizer/customizer.php:226
 msgid "Sidebar Layout"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:183
+#: lib/admin/customizer/customizer.php:237
 msgid "Sidebar Position"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:186
-#: lib/admin/customizer/customizer.php:419
-#: lib/admin/customizer/customizer.php:456
+#: lib/admin/customizer/customizer.php:240
+#: lib/admin/customizer/customizer.php:475
+#: lib/admin/customizer/customizer.php:512
 msgid "left"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:187
-#: lib/admin/customizer/customizer.php:420
-#: lib/admin/customizer/customizer.php:457
+#: lib/admin/customizer/customizer.php:241
+#: lib/admin/customizer/customizer.php:476
+#: lib/admin/customizer/customizer.php:513
 msgid "right"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:188
+#: lib/admin/customizer/customizer.php:242
 msgid "no-sidebar"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:200
+#: lib/admin/customizer/customizer.php:254
 msgid "For More Options Upgrade to "
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:200
-#: lib/admin/customizer/customizer.php:212
+#: lib/admin/customizer/customizer.php:254
+#: lib/admin/customizer/customizer.php:268
 msgid "Powen Pro"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:205
+#: lib/admin/customizer/customizer.php:256
+msgid "Please support the development of your theme - "
+msgstr ""
+
+#: lib/admin/customizer/customizer.php:256
+msgid "Donate"
+msgstr ""
+
+#: lib/admin/customizer/customizer.php:261
 msgid "Slider Options"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:206
+#: lib/admin/customizer/customizer.php:262
 msgid "Add slider"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:225
+#: lib/admin/customizer/customizer.php:281
 msgid "Hide Slider"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:237
+#: lib/admin/customizer/customizer.php:293
 msgid "Slide %s"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:238
-msgid "Add slide"
+#: lib/admin/customizer/customizer.php:294
+msgid ""
+"Note: All default slide values will be discarded, the moment you make any "
+"changes to the slide."
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:251
+#: lib/admin/customizer/customizer.php:307
 #: pro/admin/redux-framework/inc/fields/slides/field_slides.php:145
 #: pro/admin/redux-framework/inc/fields/slides/field_slides.php:200
 msgid "Title"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:264
+#: lib/admin/customizer/customizer.php:320
 #: pro/admin/redux-framework/inc/fields/slides/field_slides.php:149
 #: pro/admin/redux-framework/inc/fields/slides/field_slides.php:204
 msgid "Description"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:277
+#: lib/admin/customizer/customizer.php:333
 msgid "Link"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:290
+#: lib/admin/customizer/customizer.php:346
 msgid "Image"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:304
+#: lib/admin/customizer/customizer.php:360
 msgid "Theme Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:309
+#: lib/admin/customizer/customizer.php:365
 msgid "Link Color (on hover)"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:314
+#: lib/admin/customizer/customizer.php:370
 msgid "Site Title Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:319
+#: lib/admin/customizer/customizer.php:375
 msgid "Site Tagline Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:324
+#: lib/admin/customizer/customizer.php:380
 msgid "Header Background Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:329
+#: lib/admin/customizer/customizer.php:385
 msgid "Footer widgets background color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:334
+#: lib/admin/customizer/customizer.php:390
 msgid "Footer widgets text color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:340
+#: lib/admin/customizer/customizer.php:396
 msgid "Footer widgets link color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:345
+#: lib/admin/customizer/customizer.php:401
 msgid "Footer bottom background color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:350
+#: lib/admin/customizer/customizer.php:406
 msgid "Footer bottom text color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:378
-#: lib/admin/customizer/customizer.php:392
+#: lib/admin/customizer/customizer.php:434
+#: lib/admin/customizer/customizer.php:448
 msgid "Theme Font"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:415
+#: lib/admin/customizer/customizer.php:471
 msgid "Site Title & Tagline Placement"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:421
-#: lib/admin/customizer/customizer.php:458
+#: lib/admin/customizer/customizer.php:477
+#: lib/admin/customizer/customizer.php:514
 msgid "center"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:437
+#: lib/admin/customizer/customizer.php:493
 msgid "Upload logo"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:452
+#: lib/admin/customizer/customizer.php:508
 msgid "Logo placement"
 msgstr ""
 
-#: lib/breadcrumb.php:8
-msgid "&gt;"
-msgstr ""
-
-#: lib/breadcrumb.php:11
+#: lib/breadcrumb.php:10
 msgid "Homepage"
 msgstr ""
 
-#: lib/breadcrumb.php:30 lib/breadcrumb.php:37 lib/breadcrumb.php:52
-#: lib/breadcrumb.php:80
-msgid "%s"
-msgstr ""
-
-#: lib/breadcrumb.php:122
+#: lib/breadcrumb.php:121
 msgid "Author: "
 msgstr ""
 
-#: lib/breadcrumb.php:127
+#: lib/breadcrumb.php:126
 msgid "Page"
 msgstr ""
 
-#: lib/breadcrumb.php:132
+#: lib/breadcrumb.php:131
 msgid "Search results for: "
 msgstr ""
 
-#: lib/breadcrumb.php:137
+#: lib/breadcrumb.php:136
 msgid "Error 404"
 msgstr ""
 
-#: lib/custom-functions.php:50
+#: lib/custom-functions.php:51
 msgid "Demo Post One"
 msgstr ""
 
-#: lib/custom-functions.php:52
+#: lib/custom-functions.php:53
 msgid ""
 "Omnis fugit itaque architecto sit saepe quidem tempora fuga esse incidunt "
 "perferendis harum."
 msgstr ""
 
-#: lib/custom-functions.php:57
+#: lib/custom-functions.php:58
 msgid "Demo Post Two"
 msgstr ""
 
-#: lib/custom-functions.php:59
+#: lib/custom-functions.php:60
 msgid ""
 "Reiciendis blanditiis eius officia molestias dicta vero hic accusamus "
 "aliquam enim optio porro veritatis."
 msgstr ""
 
-#: lib/custom-functions.php:64
+#: lib/custom-functions.php:65
 msgid "Demo Post Three"
 msgstr ""
 
-#: lib/custom-functions.php:66
+#: lib/custom-functions.php:67
 msgid ""
 "Eaque perferendis nesciunt provident facere sint laboriosam commodi saepe "
 "quas dolorem ipsam saepe itaque"
 msgstr ""
 
-#: lib/custom-functions.php:71
+#: lib/custom-functions.php:72
 msgid "Demo Post Four"
 msgstr ""
 
-#: lib/custom-functions.php:73
+#: lib/custom-functions.php:74
 msgid ""
 "Cupiditate deleniti, enim natus magni nisi deleniti eligendi recusandae "
 "reiciendis."
 msgstr ""
 
-#: lib/custom-functions.php:78
+#: lib/custom-functions.php:79
 msgid "Demo Post Five"
 msgstr ""
 
-#: lib/custom-functions.php:80
+#: lib/custom-functions.php:81
 msgid ""
 "Temporibus eaque rem unde iste fugasse quaerat quo veniam reprehenderit "
 "repudiandae perferendis porro minus."
 msgstr ""
 
-#: lib/custom-functions.php:85
+#: lib/custom-functions.php:86
 msgid "Demo Post Six"
 msgstr ""
 
-#: lib/custom-functions.php:87
+#: lib/custom-functions.php:88
 msgid ""
 "Perferendis quasi totam voluptates quo quaerat temporibus maiores nesciunt "
 "soluta rerum sint laboriosam."
 msgstr ""
 
-#: lib/custom-functions.php:92
+#: lib/custom-functions.php:93
 msgid "Demo Post Seven"
 msgstr ""
 
-#: lib/custom-functions.php:94
+#: lib/custom-functions.php:95
 msgid ""
 "Inventore nesciunt quaerat unde dicta molestiae animi blanditiis expedita "
 "est architecto ipsum ullam nisi perspiciatis."
 msgstr ""
 
-#: lib/custom-functions.php:99
+#: lib/custom-functions.php:100
 msgid "Demo Post Eight"
 msgstr ""
 
-#: lib/custom-functions.php:101
+#: lib/custom-functions.php:102
 msgid ""
 "Libero mollitia error expedita totam iste minus cumque quos obcaecati earum "
 "rerum totam ea vitae."
@@ -533,19 +561,19 @@ msgstr ""
 msgid "The fourth footer widget area"
 msgstr ""
 
-#: pro/admin/options-init.php:111
+#: pro/admin/options-init.php:112
 msgid "Theme Information 1"
 msgstr ""
 
-#: pro/admin/options-init.php:112 pro/admin/options-init.php:117
+#: pro/admin/options-init.php:113 pro/admin/options-init.php:118
 msgid "<p>This is the tab content, HTML is allowed.</p>"
 msgstr ""
 
-#: pro/admin/options-init.php:116
+#: pro/admin/options-init.php:117
 msgid "Theme Information 2"
 msgstr ""
 
-#: pro/admin/options-init.php:123
+#: pro/admin/options-init.php:124
 msgid "<p>This is the sidebar content, HTML is allowed.</p>"
 msgstr ""
 
@@ -640,12 +668,12 @@ msgid "Excerpt Length"
 msgstr ""
 
 #: pro/admin/redux-framework/core/enqueue.php:438
-#: pro/admin/redux-framework/inc/extensions/customizer/extension_customizer.php:566
+#: pro/admin/redux-framework/inc/extensions/customizer/extension_customizer.php:572
 msgid "You have changes that are not saved. Would you like to save them now?"
 msgstr ""
 
 #: pro/admin/redux-framework/core/enqueue.php:446
-#: pro/admin/redux-framework/inc/extensions/customizer/extension_customizer.php:567
+#: pro/admin/redux-framework/inc/extensions/customizer/extension_customizer.php:573
 msgid "Are you sure? Resetting will lose all custom values."
 msgstr ""
 
@@ -654,7 +682,7 @@ msgid "Are you sure? Resetting will lose all custom values in this section."
 msgstr ""
 
 #: pro/admin/redux-framework/core/enqueue.php:462
-#: pro/admin/redux-framework/inc/extensions/customizer/extension_customizer.php:568
+#: pro/admin/redux-framework/inc/extensions/customizer/extension_customizer.php:574
 msgid ""
 "Your current options will be replaced with the values of this preset. Would "
 "you like to proceed?"
@@ -824,15 +852,15 @@ msgid ""
 "date. The core version is %s"
 msgstr ""
 
-#: pro/admin/redux-framework/inc/extensions/customizer/extension_customizer.php:601
+#: pro/admin/redux-framework/inc/extensions/customizer/extension_customizer.php:607
 msgid "You have changes that are not saved.  Would you like to save them now?"
 msgstr ""
 
-#: pro/admin/redux-framework/inc/extensions/customizer/extension_customizer.php:602
+#: pro/admin/redux-framework/inc/extensions/customizer/extension_customizer.php:608
 msgid "Are you sure?  Resetting will lose all custom values."
 msgstr ""
 
-#: pro/admin/redux-framework/inc/extensions/customizer/extension_customizer.php:603
+#: pro/admin/redux-framework/inc/extensions/customizer/extension_customizer.php:609
 msgid ""
 "Your current options will be replaced with the values of this preset.  "
 "Would you like to proceed?"

@@ -194,6 +194,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 		$border_color_selectors = apply_filters('powen_border_color_selectors_array', array(
 			'a:hover, a:active',
 			'.powen-pagination .current',
+			'.widget_powen_social_widget a:hover'
 		) );
 
 		self::generate_css( $color_selectors, 'color', 'theme_color', false, false, '#daa520' );
