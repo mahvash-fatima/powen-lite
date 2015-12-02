@@ -21,9 +21,16 @@
 		<a href="#main-nav"><i class="m"></i><?php echo esc_textarea( powen_mod( 'menu_two_title_textbox'), 'powen' ); ?></a>
 	</nav>
 	<?php } ?>
+	<?php do_action( 'powen_after_mobile_nav' ); ?>
 
 	<!-- Social Media Icon -->
 	<?php powen_social_media_icons(); ?>
+	<?php do_action('powen_header_social_container_extras' ); ?>
 
-	<?php do_action( 'powen_after_mobile_nav' ); ?>
+	<!-- Search -->
+	<div class="powen-search-box-top">
+		<?php get_search_form(); ?>
+		<?php do_action('powen_header_top_container_extras' ); ?>
+	</div>
+
 </div>

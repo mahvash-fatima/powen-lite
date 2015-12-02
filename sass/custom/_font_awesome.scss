@@ -53,16 +53,14 @@ Write your code here
 //HEADER
 .powen-top-most-nav .mm:before, .powen-main-navigation .m:before, .powen-pro-mobile-menu .mm:before {
 	content: "\f0c9";
-	padding: rem-calc(5);
-	font-size: 1.25em;
-	vertical-align: bottom;
+	padding-right: rem-calc(5);
 }
 
 .powen-search-box-top .search-form label:after {
 	content: "\f002";
 	position: absolute;
 	right: rem-calc(20);
-	top: rem-calc(6);
+	top: 0;
 	color: #ececec;
 }
 
@@ -107,11 +105,7 @@ Write your code here
 	padding-left: 0;
 }
 .powen-continue-reading:after {
-	content: '';
-	display: block;
-	width: rem-calc(60);
-	height: rem-calc(1);
-	margin: rem-calc(10) auto rem-calc(25);
+	content: "\f178";
 }
 
 

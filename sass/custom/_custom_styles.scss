@@ -289,21 +289,17 @@ h1.site-title {
 
 }
 
-.powen-top-container {
-	overflow: hidden;
-	padding: rem-calc(10 0);
+.powen-nav {
 	.search-form {
-		text-align: right;
 		.search-submit {
 			display: none;
 		}
 		input.search-field {
 			text-indent: rem-calc(10);
-			height: rem-calc(40);
+			height: auto;
 			letter-spacing: 1px;
 			border: none;
 			border-bottom: 1px solid #ccc;
-			border-radius: 2px;
 		}
 	}
 }
@@ -313,40 +309,18 @@ h1.site-title {
 }
 
 .powen-nav {
-	display: inline-block;
-	padding: rem-calc(10 0);
-	a {
-		padding: $default_gutter/2 0;
-	}
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
 }
 
-.powen-pro-mobile-menu-container, .powen-top-most-nav, .powen-main-navigation {
-	float: left;
-	margin: rem-calc(1);
-	overflow: hidden;
-	a {
-		padding: rem-calc(10);
-	}
-}
-
-.powen-social-media-container {
-	float: left;
-	ul {
-		margin: 0;
-		li {
-			float: left;
-			margin: rem-calc(1);
-			list-style: none;
-			a {
-				padding: rem-calc(10);
-			}
-		}
-	}
+.powen-pro-mobile-menu-container, .powen-top-most-nav, .powen-main-navigation, .powen-search-box-top, .powen-social-icon{
+    padding: rem-calc(10);
+    line-height: 2;
+    text-align: center;
 }
 
 .powen-search-box-top {
-	float: right;
-	overflow: hidden;
 	.search-form {
 		position: relative;
 	}

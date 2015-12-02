@@ -1,75 +1,75 @@
 .widget {
-	margin: 0 0 $phi * 1rem;
+    margin: 0 0 $phi * 1rem;
     overflow: hidden;
-	select {
-		max-width: 100%;
-	}
+    select {
+        max-width: 100%;
+    }
 }
 .widget-area, .powen-footer-widgets  {
-	button,
-	  input[type="button"],
-	  input[type="reset"],
-	  input[type="submit"] {
-	    display: none;
-	}
+    button,
+      input[type="button"],
+      input[type="reset"],
+      input[type="submit"] {
+        display: none;
+    }
 }
 .widget-area ul {
-	list-style: none;
+    list-style: none;
 }
 //widget_tag_cloud
 .widget_tag_cloud {
-	a {
-		letter-spacing: rem-calc(1);
-		text-transform: uppercase;
-		padding: rem-calc(5 10);
-		margin: rem-calc(3 1);
-		display: inline-block;
-		border: 1px dotted;
+    a {
+        letter-spacing: rem-calc(1);
+        text-transform: uppercase;
+        padding: rem-calc(5 10);
+        margin: rem-calc(3 1);
+        display: inline-block;
+        border: 1px dotted;
         &:hover {
             border: 1px solid;
         }
-	}
+    }
 }
 
 //widget_archive
 .widget_archive li a {
-	background: none;
+    background: none;
 }
 
 //widget_search
 .widget_search, .widget_calendar, .widget_tag_cloud {
-	padding: rem-calc(0 10);
+    padding: rem-calc(0 10);
 }
 
 //widget_text
 .widget_text {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 //widget_rss
 .widget_rss {
-	li {
-		margin-bottom: rem-calc(10);
-		a {
-			display: block;
-			font-weight: bold;
-		}
-	}
+    li {
+        margin-bottom: rem-calc(10);
+        a {
+            display: block;
+            font-weight: bold;
+        }
+    }
 }
 .rss-date {
-	display: block;
+    display: block;
 }
 .rssSummary {
-	padding-top: rem-calc(10);
-	padding-bottom: rem-calc(10);
+    padding-top: rem-calc(10);
+    padding-bottom: rem-calc(10);
 }
 
 .widget-area li {
-	border-bottom: 1px dashed #ccc;
-	padding: rem-calc(10 0);
-	&:last-child {
-		border-bottom: none;
-	}
+    border-bottom: 1px dashed #ccc;
+    padding: rem-calc(10 0);
+    &:last-child {
+        border-bottom: none;
+    }
 }
 
 .widget_calendar caption, .powen-pagination .current {
@@ -146,27 +146,19 @@
 
 //social icons
 .widget_powen_social_widget {
-    overflow: hidden;
-    ul {
-        list-style: none;
-        margin: 0;
+    .powen-social-icon {
+        display: inline-block;
+        margin: rem-calc(2 0);
         padding: 0;
-        li {
-            float: left;
-            border-bottom: none;
-            padding: 0;
-            margin: rem-calc(1);
-            a {
-                padding: rem-calc(10 20);
-                text-align: center;
-                display: inline-block;
-                width: rem-calc(56);
-                border: 1px solid #ccc;
-                border-radius: rem-calc(3);
-            }
-        }
-
     }
+   a {
+       padding: rem-calc(10 20);
+       text-align: center;
+       display: inline-block;
+       width: rem-calc(56);
+       border: 1px solid #ccc;
+       border-radius: rem-calc(3);
+   }
 }
 
 #monster-widget-placeholder-8 {

@@ -306,7 +306,7 @@ class Powen_Customizer {
                   ),
             array(
                       'slug'    =>'powen_mod[hover_link_color]',
-                      'default' => '#fa8072',
+                      'default' => '#dd9933',
                       'label'   => __( 'Link Color (on hover)', 'powen' )
                   ),
             array(
