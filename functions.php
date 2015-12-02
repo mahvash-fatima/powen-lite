@@ -32,8 +32,6 @@ do_action( 'powen_init' );
 require POWEN_DR . '/inc/extras.php';
 
 do_action( 'powen_files_load' );
-
-
 /**
  * Customizer
  */

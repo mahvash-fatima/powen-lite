@@ -1011,14 +1011,6 @@ h1.site-title {
   vertical-align: bottom;
 }
 
-#site-navigation .menu-header-menu-container, #main-nav {
-  display: none;
-}
-
-#site-navigation .menu {
-  display: none;
-}
-
 .site-content {
   max-width: 70.3125rem;
   margin: 1.618rem auto;
@@ -1198,10 +1190,10 @@ h1.site-title {
   padding: 1.618rem 0;
 }
 
-.powen-pro-mobile-menu-container, .powen-top-most-nav, .powen-main-navigation, .powen-search-box-top, .powen-social-icon {
+.powen-tertiary-mobile-nav, .powen-primary-nav, .powen_secondary_navigation, .powen-search-box-top, .powen-social-icon {
   display: inline-block;
 }
-.powen-pro-mobile-menu-container a i:before, .powen-top-most-nav a i:before, .powen-main-navigation a i:before, .powen-search-box-top a i:before, .powen-social-icon a i:before {
+.powen-tertiary-mobile-nav a i:before, .powen-primary-nav a i:before, .powen_secondary_navigation a i:before, .powen-search-box-top a i:before, .powen-social-icon a i:before {
   padding: 0.625rem;
 }
 
@@ -1546,8 +1538,8 @@ h1.site-title {
 /*------------------
 FontAwesome
 ---------------------*/
-.powen-top-most-nav .mm:before,
-.powen-main-navigation .m:before,
+.powen-primary-nav .mm:before,
+.powen_secondary_navigation .m:before,
 .powen-search-box-top .search-form label:after,
 .posted-on:before,
 .comments-link:before,
@@ -1594,7 +1586,7 @@ FontAwesome
 /**---------------
 Write your code here
 --------------------**/
-.powen-top-most-nav .mm:before, .powen-main-navigation .m:before, .powen-pro-mobile-menu .mm:before {
+.powen-primary-nav .mm:before, .powen_secondary_navigation .m:before, .powen-pro-mobile-menu .mm:before {
   content: "\f0c9";
 }
 
