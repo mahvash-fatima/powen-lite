@@ -13,11 +13,22 @@ get_header(); ?>
 			<main id="main" class="site-main" role="main">
 			
 			<?php while ( have_posts() ) : the_post(); ?>
-				<?php powen_breadcrumb(); ?>
+				
+				<!-- Breadcrumb -->
+				<?php 
+					if ( function_exists( "powen_breadcrumb" ) ) {
+						powen_breadcrumb(); 
+					} 
+				?>
+
 				<?php get_template_part( 'content', 'single' ); ?>
 				
-				<?php powen_the_post_navigation(); ?>
-
+				<!-- Post Navigation -->
+				<?php 
+					if ( function_exists( "powen_the_post_navigation" ) ) {
+				    	powen_the_post_navigation();
+					} 
+				?>
 
 				<?php
 					// If comments are open or we have at least one comment, load up the comment template
@@ -33,8 +44,8 @@ get_header(); ?>
 
 <?php get_sidebar(); ?>
 
-	</div><!-- #content -->
+</div><!-- #content -->
 	
-		<div class="clearfix"></div>
+	<div class="clearfix"></div>
 	
 <?php get_footer(); ?>

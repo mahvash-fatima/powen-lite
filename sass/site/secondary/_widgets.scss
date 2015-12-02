@@ -26,6 +26,9 @@
 		margin-bottom: 8px;
 		display: inline-block;
 		border: 1px dotted;
+        &:hover {
+            border: 1px solid;
+        }
 	}
 }
 
@@ -37,6 +40,10 @@
 //widget_search
 .widget_search, .widget_calendar, .widget_tag_cloud {
 	padding: 0 $phi * 1rem;
+}
+
+.search-form .search-field {
+    border: 2px solid;
 }
 
 //widget_text

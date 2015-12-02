@@ -13,11 +13,12 @@
 
 get_header(); ?>
 
-<?php  powen_get_option( 'powen_slider_settings' ); ?>
-
-<!-- slider -->
-<?php get_template_part( 'template-parts/banner' ); ?>
-<!-- slider-ends -->
+<?php 
+/*
+ *Slider
+ */
+	get_template_part( 'template-parts/banner' );
+?>
 
 <div id="content" class="site-content clear">
 
@@ -40,10 +41,15 @@ get_header(); ?>
 					?>
 
 				<?php endwhile; ?>
-
-				<?php if (function_exists("powen_pagination")) {
-				    powen_pagination();
-				} ?>
+				
+				<?php 
+				/*
+				 * Pagination
+				 */
+					if ( function_exists( "powen_pagination" ) ) {
+				    	powen_pagination();
+					} 
+				?>
 
 			<!-- To reset custom loop -->
 			<?php wp_reset_postdata(); ?>

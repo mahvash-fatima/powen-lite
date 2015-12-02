@@ -9,7 +9,7 @@
 ?>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-	<div class="footer_widgets">
+	<div id="footer-widgets" class="footer_widgets">
 			<div class="powen-wrapper">
 				<?php if( is_active_sidebar( 'first-footer-widget-area' )
 						  || is_active_sidebar( 'second-footer-widget-area' )
@@ -45,28 +45,28 @@
 		    </div><!-- .powen-wrapper -->
 	</div><!-- #footer_widgets -->
 
-	<div class="site-info">
-			<div class="powen-wrapper">
+	<div id="site-info" class="site-info">
+		<div class="powen-wrapper">
 
-			    <?php esc_attr_e('(C)', 'powen'); ?><?php _e(date('Y')); ?><a href="<?php echo esc_url(home_url('/')); ?>" class="powen-copyright" title="<?php echo esc_attr(get_bloginfo('name', 'display'), 'powen'); ?>">
-			        <?php echo esc_attr( powen_mod( 'copyright_textbox', 'Copyright'), 'powen' ); ?>
-			    </a>
+		    <?php esc_attr_e( '(C)', 'powen' ); ?><?php _e( date('Y') ); ?><a href="<?php echo esc_url( home_url('/') ); ?>" class="powen-copyright" title="<?php echo esc_attr( get_bloginfo('name', 'display') ); ?>">
+		        <?php echo esc_textarea( powen_mod( 'copyright_textbox', 'Copyright'), 'powen' ); ?>
+		    </a>
 
-				<span class="sep"> | </span>
+			<span class="sep"> | </span>
 
-				<?php
-					$footerUrl    = __('Supernova Themes', 'powen');
-					$footerUrlEsc = esc_url('http://supernovathemes.com');
-				?>
-				<?php printf( __( '%1$s by %2$s.', 'powen' ), 'Powen', '<a href= '.$footerUrlEsc.' class="powen-site" rel="designer">'.$footerUrl.'</a>' ); ?>
+			<?php 
+				$footerUrl = esc_url( 'http://supernovathemes.com' );
+				printf( __( '%1$s by %2$s.', 'powen' ), 'Powen', '<a href= '.$footerUrl.' class="powen-site" rel="designer">Supernova Themes</a>' ); 
+			?>
 
-			</div><!-- powen-wrapper -->
-		</div><!-- site-info -->
+
+		</div><!-- powen-wrapper -->
+	</div><!-- site-info -->
 
 	</footer><!-- #colophon -->
 
 <!-- back to top -->
-<div class="footer-scroll"></div>
+<div id="scroll-bar" class="footer-scroll"></div>
 
 </div><!-- #page -->
 

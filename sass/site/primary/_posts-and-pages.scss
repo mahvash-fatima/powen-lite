@@ -82,6 +82,9 @@ text-align: center;
 	border-radius: 3px;
 	text-align: center;
 	background: #ffffff;
+	&:hover {
+		border: 1px solid;
+	}
 }
 .pagination a, .pagination span {
   color: #999999;

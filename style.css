@@ -4,7 +4,7 @@ Theme URI: http://supernovathemes.com/powen-theme/
 Author: Mahvash Fatima
 Author URI: http://supernovathemes.com
 Description: Powen Lite has been specially designed for blogging websites however due to its clean design and plenty of customization options, it can easily be customized for any purpose.
-Version: 1.1.3
+Version: 1.1.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: powen
@@ -451,12 +451,6 @@ input[type="submit"] {
   color: #ffffff;
 }
 
-/* line 21, sass/navigation/_links.scss */
-.pagination a:hover,
-.widget-area .tagcloud a:hover {
-  color: #ffffff;
-}
-
 /*--------------------------------------------------------------
 6.0 Accessibility
 --------------------------------------------------------------*/
@@ -584,60 +578,69 @@ input[type="submit"] {
   display: inline-block;
   border: 1px dotted;
 }
+/* line 29, sass/site/secondary/_widgets.scss */
+.widget_tag_cloud a:hover {
+  border: 1px solid;
+}
 
-/* line 33, sass/site/secondary/_widgets.scss */
+/* line 36, sass/site/secondary/_widgets.scss */
 .widget_archive li a {
   background: none;
 }
 
-/* line 38, sass/site/secondary/_widgets.scss */
+/* line 41, sass/site/secondary/_widgets.scss */
 .widget_search, .widget_calendar, .widget_tag_cloud {
   padding: 0 1.618rem;
 }
 
-/* line 43, sass/site/secondary/_widgets.scss */
+/* line 45, sass/site/secondary/_widgets.scss */
+.search-form .search-field {
+  border: 2px solid;
+}
+
+/* line 50, sass/site/secondary/_widgets.scss */
 .widget_text {
   overflow: hidden;
 }
 
-/* line 49, sass/site/secondary/_widgets.scss */
+/* line 56, sass/site/secondary/_widgets.scss */
 .widget_rss li {
   margin-bottom: 10px;
 }
-/* line 51, sass/site/secondary/_widgets.scss */
+/* line 58, sass/site/secondary/_widgets.scss */
 .widget_rss li a {
   display: block;
   font-weight: bold;
 }
 
-/* line 57, sass/site/secondary/_widgets.scss */
+/* line 64, sass/site/secondary/_widgets.scss */
 .rss-date {
   display: block;
 }
 
-/* line 60, sass/site/secondary/_widgets.scss */
+/* line 67, sass/site/secondary/_widgets.scss */
 .rssSummary {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-/* line 65, sass/site/secondary/_widgets.scss */
+/* line 72, sass/site/secondary/_widgets.scss */
 .widget-area li {
   border-bottom: 1px dashed;
   padding: 10px 0;
 }
-/* line 68, sass/site/secondary/_widgets.scss */
+/* line 75, sass/site/secondary/_widgets.scss */
 .widget-area li:last-child {
   border-bottom: none;
 }
 
-/* line 73, sass/site/secondary/_widgets.scss */
+/* line 80, sass/site/secondary/_widgets.scss */
 .widget_calendar caption, .current-date, .pagination .current {
   color: #ffffff;
 }
 
 /* floats */
-/* line 80, sass/site/secondary/_widgets.scss */
+/* line 87, sass/site/secondary/_widgets.scss */
 .quarter,
 .one-third,
 .two-thirds,
@@ -646,44 +649,44 @@ input[type="submit"] {
 }
 
 /* widths */
-/* line 88, sass/site/secondary/_widgets.scss */
+/* line 95, sass/site/secondary/_widgets.scss */
 .one-third {
   width: 32%;
 }
 
-/* line 91, sass/site/secondary/_widgets.scss */
+/* line 98, sass/site/secondary/_widgets.scss */
 .two-thirds {
   width: 65.5%;
 }
 
-/* line 94, sass/site/secondary/_widgets.scss */
+/* line 101, sass/site/secondary/_widgets.scss */
 .quarter {
   width: 23.5%;
 }
 
-/* line 97, sass/site/secondary/_widgets.scss */
+/* line 104, sass/site/secondary/_widgets.scss */
 .three-quarters {
   width: 74.5%;
 }
 
-/* line 100, sass/site/secondary/_widgets.scss */
+/* line 107, sass/site/secondary/_widgets.scss */
 .half {
   width: 48%;
 }
 
 /* margins  */
-/* line 105, sass/site/secondary/_widgets.scss */
+/* line 112, sass/site/secondary/_widgets.scss */
 .one-third {
   margin: 0 0.5%;
 }
 
-/* line 108, sass/site/secondary/_widgets.scss */
+/* line 115, sass/site/secondary/_widgets.scss */
 .quarter,
 .two-thirds {
   margin: 0 0.5%;
 }
 
-/* line 112, sass/site/secondary/_widgets.scss */
+/* line 119, sass/site/secondary/_widgets.scss */
 .left,
 .quarter.left,
 .one-third.left {
@@ -691,7 +694,7 @@ input[type="submit"] {
   float: left;
 }
 
-/* line 118, sass/site/secondary/_widgets.scss */
+/* line 125, sass/site/secondary/_widgets.scss */
 .right,
 .quarter.right,
 .one-third.right {
@@ -699,24 +702,24 @@ input[type="submit"] {
   float: right;
 }
 
-/* line 124, sass/site/secondary/_widgets.scss */
+/* line 131, sass/site/secondary/_widgets.scss */
 .half.left {
   width: 48%;
   margin: 0 2% 0 0;
 }
 
-/* line 128, sass/site/secondary/_widgets.scss */
+/* line 135, sass/site/secondary/_widgets.scss */
 .half.right {
   width: 48%;
   margin: 0 0 0 2%;
 }
 
-/* line 132, sass/site/secondary/_widgets.scss */
+/* line 139, sass/site/secondary/_widgets.scss */
 .two-thirds.left {
   margin: 0 1% 0 0;
 }
 
-/* line 135, sass/site/secondary/_widgets.scss */
+/* line 142, sass/site/secondary/_widgets.scss */
 .two-thirds.right {
   margin: 0 0 0 1%;
   float: right;
@@ -725,22 +728,22 @@ input[type="submit"] {
 /* media queries for larger screens such as small tablets in landscape or large tablets in portrait */
 @media screen and (max-width: 780px) {
   /* only the .quarter layout class is relevant here - all other classes will have full width */
-  /* line 144, sass/site/secondary/_widgets.scss */
+  /* line 151, sass/site/secondary/_widgets.scss */
   .quarter {
     width: 48%;
   }
 
-  /* line 147, sass/site/secondary/_widgets.scss */
+  /* line 154, sass/site/secondary/_widgets.scss */
   .quarter.left {
     margin-right: 2%;
   }
 
-  /* line 150, sass/site/secondary/_widgets.scss */
+  /* line 157, sass/site/secondary/_widgets.scss */
   .quarter.right {
     margin-left: 2%;
   }
 
-  /* line 153, sass/site/secondary/_widgets.scss */
+  /* line 160, sass/site/secondary/_widgets.scss */
   footer .third.quarter.widget-area {
     clear: both;
   }
@@ -748,7 +751,7 @@ input[type="submit"] {
 /* media queries for small screens in landscape mode (or similar) */
 @media screen and (max-width: 600px) {
   /* width sizing all full width in small screens */
-  /* line 162, sass/site/secondary/_widgets.scss */
+  /* line 169, sass/site/secondary/_widgets.scss */
   .quarter,
   .one-third,
   .half,
@@ -760,7 +763,7 @@ input[type="submit"] {
   }
 
   /* padding adjustments */
-  /* line 172, sass/site/secondary/_widgets.scss */
+  /* line 179, sass/site/secondary/_widgets.scss */
   .widget-area {
     padding: 0 0 10px 0;
   }
@@ -875,21 +878,25 @@ input[type="submit"] {
   text-align: center;
   background: #ffffff;
 }
+/* line 85, sass/site/primary/_posts-and-pages.scss */
+.pagination a:hover {
+  border: 1px solid;
+}
 
-/* line 86, sass/site/primary/_posts-and-pages.scss */
+/* line 89, sass/site/primary/_posts-and-pages.scss */
 .pagination a, .pagination span {
   color: #999999;
   border: 1px solid #999999;
 }
 
-/* line 91, sass/site/primary/_posts-and-pages.scss */
+/* line 94, sass/site/primary/_posts-and-pages.scss */
 .pagination .page-previous, .pagination .page-next, .pagination .page-last {
   padding: 10px;
   width: 75px;
   height: 47px;
 }
 
-/* line 98, sass/site/primary/_posts-and-pages.scss */
+/* line 101, sass/site/primary/_posts-and-pages.scss */
 .breadcrumbs {
   list-style: none;
   overflow: hidden;
@@ -897,14 +904,14 @@ input[type="submit"] {
   margin: 0;
 }
 
-/* line 105, sass/site/primary/_posts-and-pages.scss */
+/* line 108, sass/site/primary/_posts-and-pages.scss */
 .breadcrumbs li {
   display: inline-block;
   margin-right: 1px;
   padding: 10px;
 }
 
-/* line 110, sass/site/primary/_posts-and-pages.scss */
+/* line 113, sass/site/primary/_posts-and-pages.scss */
 .continue-reading {
   text-align: right;
 }
@@ -2289,21 +2296,25 @@ Write your code here
   text-align: center;
   background: #ffffff;
 }
+/* line 85, sass/site/primary/_posts-and-pages.scss */
+.pagination a:hover {
+  border: 1px solid;
+}
 
-/* line 86, sass/site/primary/_posts-and-pages.scss */
+/* line 89, sass/site/primary/_posts-and-pages.scss */
 .pagination a, .pagination span {
   color: #999999;
   border: 1px solid #999999;
 }
 
-/* line 91, sass/site/primary/_posts-and-pages.scss */
+/* line 94, sass/site/primary/_posts-and-pages.scss */
 .pagination .page-previous, .pagination .page-next, .pagination .page-last {
   padding: 10px;
   width: 75px;
   height: 47px;
 }
 
-/* line 98, sass/site/primary/_posts-and-pages.scss */
+/* line 101, sass/site/primary/_posts-and-pages.scss */
 .breadcrumbs {
   list-style: none;
   overflow: hidden;
@@ -2311,14 +2322,14 @@ Write your code here
   margin: 0;
 }
 
-/* line 105, sass/site/primary/_posts-and-pages.scss */
+/* line 108, sass/site/primary/_posts-and-pages.scss */
 .breadcrumbs li {
   display: inline-block;
   margin-right: 1px;
   padding: 10px;
 }
 
-/* line 110, sass/site/primary/_posts-and-pages.scss */
+/* line 113, sass/site/primary/_posts-and-pages.scss */
 .continue-reading {
   text-align: right;
 }

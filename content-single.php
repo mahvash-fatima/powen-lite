@@ -17,7 +17,7 @@
 	</div>
 	<div class="article-hentry">
 	<header class="entry-header">
-		<?php esc_attr(the_title( '<h1 class="entry-title">', '</h1>' )); ?>
+		<?php esc_attr( the_title( '<h1 class="entry-title">', '</h1>' ) ); ?>
 
 		<div class="entry-meta">
 			<?php powen_posted_on(); ?>
