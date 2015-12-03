@@ -28,8 +28,8 @@ function powen_set_tag_cloud_sizes($args)
 {
 	 $args['smallest'] = 8;
 	 $args['largest'] = 22;
-	 
-	 return $args; 
+
+	 return $args;
 }
 
-add_filter('widget_tag_cloud_args','powen_set_tag_cloud_sizes');
+add_filter('widget_tag_cloud_args', 'powen_set_tag_cloud_sizes');

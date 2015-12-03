@@ -1,10 +1,10 @@
 .flex-prev {
-	font-size: 1.5em;
-	padding: 0px 12px;
+	font-size: rem-calc(14);
+	padding: rem-calc(0 12);
 }
 .flex-next {
-	font-size: 1.5em;
-	padding: 0px 12px;
+	font-size: rem-calc(14);
+	padding: rem-calc(0 12);
 }
 .flexslider {
 	width: 100%;
@@ -25,10 +25,11 @@
 	bottom: 0;
 	width: 100%;
 	height: auto;
-	padding: 10px;
+	padding: rem-calc(5);
 	background: $color__powen-slider-content-background;
-	h2 {
+	h3 {
 		color: $color_text_on_dark_background_default;
+		margin-bottom: 0;
 	}
 	p {
 		color: $color_text_on_dark_background_default;

@@ -1,10 +1,10 @@
 .widget {
-	margin: 0 0 1.5em;
+	margin: 0 0 $phi * 1rem;
 	select {
 		max-width: 100%;
 	}
 }
-.widget-area, .footer_widgets  {
+.widget-area, .powen-footer-widgets  {
 	button,
 	  input[type="button"],
 	  input[type="reset"],
@@ -18,12 +18,10 @@
 //widget_tag_cloud
 .widget_tag_cloud {
 	a {
-		font-size: 10px;
-		letter-spacing: 1px;
+		letter-spacing: rem-calc(1);
 		text-transform: uppercase;
-		padding: 2px 8px 2px;
-		margin-right: 5px;
-		margin-bottom: 8px;
+		padding: rem-calc(5 10);
+		margin: rem-calc(3 1);
 		display: inline-block;
 		border: 1px dotted;
         &:hover {
@@ -39,11 +37,7 @@
 
 //widget_search
 .widget_search, .widget_calendar, .widget_tag_cloud {
-	padding: 0 $phi * 1rem;
-}
-
-.search-form .search-field {
-    border: 2px solid;
+	padding: rem-calc(0 10);
 }
 
 //widget_text
@@ -54,7 +48,7 @@
 //widget_rss
 .widget_rss {
 	li {
-		margin-bottom: 10px;
+		margin-bottom: rem-calc(10);
 		a {
 			display: block;
 			font-weight: bold;
@@ -65,23 +59,28 @@
 	display: block;
 }
 .rssSummary {
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: rem-calc(10);
+	padding-bottom: rem-calc(10);
 }
 
 .widget-area li {
-	border-bottom: 1px dashed;
-	padding: 10px 0;
+	border-bottom: 1px dashed #ccc;
+	padding: rem-calc(10 0);
 	&:last-child {
 		border-bottom: none;
 	}
 }
 
-.widget_calendar caption, .current-date, .pagination .current {
+.widget_calendar caption, .powen-pagination .current {
   color: #ffffff;
 }
 
+.widget_calendar .current-date a {
+    color: #ffffff;
+}
+
 // FOOTER STYLE
+
 
 /* floats */
 .quarter,
@@ -144,9 +143,36 @@
     float: right;
 }
 
+//social icons
+.widget_powen_social_widget ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        float: left;
+        border-bottom: none;
+        padding: 0;
+        margin: rem-calc(1);
+        a {
+            padding: rem-calc(10 20);
+            text-align: center;
+            display: inline-block;
+            width: rem-calc(56);
+            border: 1px solid #ccc;
+            border-radius: rem-calc(3);
+        }
+    }
+
+}
+
+#monster-widget-placeholder-8 {
+    width: 100%;
+    padding: $default_gutter;
+}
+
 /* media queries for larger screens such as small tablets in landscape or large tablets in portrait */
 @media screen and ( max-width: 780px ) {
-     
+
     /* only the .quarter layout class is relevant here - all other classes will have full width */
     .quarter {
         width: 48%;
@@ -161,10 +187,10 @@
         clear: both;
     }
 }
- 
+
 /* media queries for small screens in landscape mode (or similar) */
 @media screen and ( max-width: 600px ) {
-     
+
     /* width sizing all full width in small screens */
     .quarter,
     .one-third,
@@ -177,6 +203,6 @@
     }
     /* padding adjustments */
     .widget-area {
-        padding: 0 0 10px 0;
+        padding: rem-calc(0 0 10 0);
     }
 }

@@ -24,18 +24,24 @@
 		//Main Menu
 		mainMenu: function(){
 			var $mainNav = $('#main-nav');
-			$mainNav.mmenu({}, {clone: true}).on( 'opened.mm', function() {
+			$mainNav.mmenu({
+				offCanvas: {
+				               position  : "right",
+				            }
+			 }, {clone: true}).on( 'opened.mm', function() {
 				$mainNav.trigger("open.mm");
 			});
 		},
 
 		//Slider
 		createMainSlider: function(){
-			$('#slider').flexslider({
-				animation: "slide",
-			    animationLoop: true,
-			    itemWidth: 460,
-			    itemMargin: 0
+			$('.flexslider').flexslider({
+			    animation: "slide",
+			    animationLoop: false,
+			    itemWidth: 210,
+			    itemMargin: 0,
+			    minItems: 2,
+			    maxItems: 4
 			});
 		},
 
@@ -88,11 +94,8 @@
 		},
 
 		commonClass : function() {
-			$(".widget .widget-title").append("<i class='powen-border-line'></i>");
-			$(".widget_calendar #today").addClass('current-date');
 			$(".powen-slider-content p").prepend("<i class='powen-slider-content-icon-before'></i>");
 			$(".powen-slider-content p").append("<i class='powen-slider-content-icon-after'></i>");
-
 		},
 
 	};

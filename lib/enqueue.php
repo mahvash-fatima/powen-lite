@@ -11,14 +11,15 @@ function powen_enqueue_styles(){
 	/*===============
          REGISTER
 	=================*/
+
+	if( ! defined( 'POWEN_PRO' ) )
+	wp_enqueue_style( 'powen-google-font' , 'http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400,700' );
+
 	//Animate
 	wp_register_style( 'powen-animate', POWEN_URI . '/css/vendor-css/animate.css' );
 
 	//Font Awesome
 	wp_register_style( 'powen-fontawesome', POWEN_URI . '/lib/fonts/font-awesome/css/font-awesome.min.css' );
-
-	//modernizr
-	wp_enqueue_script( 'powen-modernizr', POWEN_URI . '/js/modernizr.js' );
 
 	//Mmenu
 	wp_register_style( 'powen-mobile-menu-style', POWEN_URI . '/css/vendor-css/jquery.mmenu.all.css' );

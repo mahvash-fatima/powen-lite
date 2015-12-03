@@ -18,25 +18,30 @@ if( ! defined( 'POWEN_DR' )) define( 'POWEN_DR'	, get_template_directory() );
 if( ! defined( 'POWEN_ADMIN_DR' )) define( 'POWEN_ADMIN_DR'	, POWEN_DR . '/lib/admin/' );
 if( ! defined( 'POWEN_IMAGES' )) define( 'POWEN_IMAGES'	, POWEN_URI .'/images/' );
 
+do_action( 'powen_init' );
+
 /*==============================
           FILE INCLUDES
 ===============================*/
+
+/**
+ * Custom functions that act independently of the theme templates.
+ */
+require POWEN_DR . '/inc/extras.php';
+
+do_action( 'powen_files_load' );
 
 /**
  * Customizer
  */
 require_once POWEN_ADMIN_DR . 'customizer/customizer.php';
 require_once POWEN_ADMIN_DR . 'customizer/customizer-front.php';
+require_once POWEN_DR . '/lib/social-widget.php';
 
 /**
  * Breadcrumb
  */
 require_once POWEN_DR . '/lib/breadcrumb.php';
-
-/**
- * Pagination
- */
-require_once POWEN_DR . '/lib/pagination.php';
 
 /**
  * Contains Custom functions used througout the theme
@@ -63,11 +68,6 @@ require_once POWEN_DR . '/lib/enqueue.php';
  * Custom template tags for this theme.
  */
 require POWEN_DR . '/inc/template-tags.php';
-
-/**
- * Custom functions that act independently of the theme templates.
- */
-require POWEN_DR . '/inc/extras.php';
 
 /**
  * Load Jetpack compatibility file.

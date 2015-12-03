@@ -5,23 +5,24 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="featured-img">
+	<div class="powen-featured-img">
 		<a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark" >
 		<!-- Featured Images -->
-		<?php if ( has_post_thumbnail() ) 
+		<?php if ( has_post_thumbnail() )
 		{
 			the_post_thumbnail();
-		} 
+		}
 		?>
 		</a>
 	</div>
 	<div class="article-hentry">
 	<header class="entry-header">
-		<?php esc_attr( the_title( '<h1 class="entry-title">', '</h1>' ) ); ?>
+		<?php esc_attr( the_title( '<h2 class="entry-title">', '</h2>' ) ); ?>
 
-		<div class="entry-meta">
+
 			<?php powen_posted_on(); ?>
-		</div><!-- .entry-meta -->
+			<?php powen_the_author(); ?>
+
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

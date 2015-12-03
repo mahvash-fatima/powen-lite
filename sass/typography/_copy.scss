@@ -1,5 +1,5 @@
 p {
-	margin-bottom: 1.5em;
+	margin-bottom: rem-calc(14);
 }
 
 b, strong {
@@ -11,17 +11,17 @@ dfn, cite, em, i {
 }
 
 blockquote {
-	margin: 0 1.5em;
+	margin: 0 rem-calc(14);
 }
 
 address {
-	margin: 0 0 1.5em;
+	margin: 0 0 rem-calc(14);
 }
 
 pre {
 	background: $color__background-pre;
 	font-family: $font__pre;
-	@include font-size(1.5);
+	@include font-size(1.2);
 	line-height: $font__line-height-pre;
 	margin-bottom: 1.6em;
 	max-width: 100%;
@@ -30,7 +30,7 @@ pre {
 }
 
 code, kbd, tt, var {
-	@include font-size(1.5);
+	@include font-size(1.2);
 	font-family: $font__code;
 }
 
@@ -67,4 +67,8 @@ small {
 
 big {
 	font-size: 125%;
+}
+
+.reply {
+	padding: $default_gutter;
 }

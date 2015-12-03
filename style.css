@@ -4,11 +4,11 @@ Theme URI: http://supernovathemes.com/powen-theme/
 Author: Mahvash Fatima
 Author URI: http://supernovathemes.com
 Description: Powen Lite has been specially designed for blogging websites however due to its clean design and plenty of customization options, it can easily be customized for any purpose.
-Version: 1.1.5
+Version: 1.1.7
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: powen
-Tags: black, blue, pink, light, fluid-layout, responsive-layout, left-sidebar, right-sidebar, custom-background, custom-menu, custom-colors, featured-images, flexible-header, theme-options, translation-ready, threaded-comments, one-column, two-columns
+Tags: black, yellow, light, fluid-layout, responsive-layout, left-sidebar, right-sidebar, custom-background, custom-menu, custom-colors, featured-images, flexible-header, theme-options, translation-ready, threaded-comments, one-column, two-columns
 
 Powen Lite WordPress Theme is based on Underscores http://underscores.me/, Copyright (C) 2015, Supernova Themes
 Powen Lite WordPress theme is licensed under the GPL.
@@ -39,8 +39,6 @@ Powen Lite WordPress theme is licensed under the GPL.
 /*--------------------------------------------------------------
 1.0 Reset
 --------------------------------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
-/* line 1, sass/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -60,10 +58,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   vertical-align: baseline;
 }
 
-/* line 19, sass/_reset.scss */
 html {
-  font-size: 62.5%;
-  /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
   overflow-y: scroll;
   /* Keeps page centered in all browsers regardless of content height */
   -webkit-text-size-adjust: 100%;
@@ -74,7 +69,6 @@ html {
   /* Apply a natural box layout model to the document; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 }
 
-/* line 26, sass/_reset.scss */
 *,
 *:before,
 *:after {
@@ -82,13 +76,11 @@ html {
   box-sizing: inherit;
 }
 
-/* line 31, sass/_reset.scss */
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
 }
 
-/* line 34, sass/_reset.scss */
 article,
 aside,
 details,
@@ -102,19 +94,16 @@ section {
   display: block;
 }
 
-/* line 46, sass/_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 49, sass/_reset.scss */
 table {
   /* tables still need 'cellspacing="0"' in the markup */
   border-collapse: separate;
   border-spacing: 0;
 }
 
-/* line 53, sass/_reset.scss */
 caption, th, td {
   font-weight: normal;
   text-align: center;
@@ -122,29 +111,24 @@ caption, th, td {
   border-left: 1px solid;
 }
 
-/* line 59, sass/_reset.scss */
 caption, th, td:first-child {
   border-left: none;
 }
 
-/* line 62, sass/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: "";
 }
 
-/* line 66, sass/_reset.scss */
 blockquote, q {
   quotes: "" "";
 }
 
-/* line 72, sass/_reset.scss */
 a:hover,
 a:active {
   outline: 0;
 }
 
-/* line 76, sass/_reset.scss */
 a img {
   border: 0;
 }
@@ -158,81 +142,69 @@ Custom Vars & Mixins
 /*--------------------------------------------------------------
 2.0 Typography
 --------------------------------------------------------------*/
-/* line 1, sass/typography/_typography.scss */
 body,
 button,
 input,
 select,
 textarea {
   color: #404040;
-  font-size: 16px;
-  font-size: 1.6rem;
-  line-height: 1.618em;
+  font-size: 10px;
+  font-size: 1rem;
+  line-height: 1.618rem;
 }
 
-/* line 1, sass/typography/_headings.scss */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
-/* line 1, sass/typography/_copy.scss */
 p {
-  margin-bottom: 1.5em;
+  margin-bottom: 0.875rem;
 }
 
-/* line 5, sass/typography/_copy.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 9, sass/typography/_copy.scss */
 dfn, cite, em, i {
   font-style: italic;
 }
 
-/* line 13, sass/typography/_copy.scss */
 blockquote {
-  margin: 0 1.5em;
+  margin: 0 0.875rem;
 }
 
-/* line 17, sass/typography/_copy.scss */
 address {
-  margin: 0 0 1.5em;
+  margin: 0 0 0.875rem;
 }
 
-/* line 21, sass/typography/_copy.scss */
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 15px;
-  font-size: 1.5rem;
-  line-height: 1.618em;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.618rem;
   margin-bottom: 1.6em;
   max-width: 100%;
   overflow: auto;
   padding: 1.6em;
 }
 
-/* line 32, sass/typography/_copy.scss */
 code, kbd, tt, var {
-  font-size: 15px;
-  font-size: 1.5rem;
+  font-size: 12px;
+  font-size: 1.2rem;
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
-/* line 37, sass/typography/_copy.scss */
 abbr, acronym {
   border-bottom: 1px dotted #666;
   cursor: help;
 }
 
-/* line 42, sass/typography/_copy.scss */
 mark, ins {
   background: #fff9c0;
   text-decoration: none;
 }
 
-/* line 47, sass/typography/_copy.scss */
 sup,
 sub {
   font-size: 75%;
@@ -242,30 +214,29 @@ sub {
   vertical-align: baseline;
 }
 
-/* line 56, sass/typography/_copy.scss */
 sup {
   bottom: 1ex;
 }
 
-/* line 60, sass/typography/_copy.scss */
 sub {
   top: .5ex;
 }
 
-/* line 64, sass/typography/_copy.scss */
 small {
   font-size: 75%;
 }
 
-/* line 68, sass/typography/_copy.scss */
 big {
   font-size: 125%;
+}
+
+.reply {
+  padding: 1.618rem;
 }
 
 /*--------------------------------------------------------------
 3.0 Elements
 --------------------------------------------------------------*/
-/* line 1, sass/elements/_elements.scss */
 hr {
   background-color: #ccc;
   border: 0;
@@ -273,39 +244,32 @@ hr {
   margin-bottom: 1.5em;
 }
 
-/* line 1, sass/elements/_lists.scss */
 ul, ol {
   margin: 0 0 1.5em 3em;
 }
 
-/* line 5, sass/elements/_lists.scss */
 ul {
   list-style: disc;
 }
 
-/* line 9, sass/elements/_lists.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 13, sass/elements/_lists.scss */
 li > ul,
 li > ol {
   margin-bottom: 0;
   margin-left: 1.5em;
 }
 
-/* line 19, sass/elements/_lists.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 23, sass/elements/_lists.scss */
 dd {
   margin: 0 1.5em 1.5em;
 }
 
-/* line 10, sass/elements/_elements.scss */
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -313,18 +277,15 @@ img {
   /* Adhere to container width. */
 }
 
-/* line 15, sass/elements/_elements.scss */
 figure {
   margin: 0;
 }
 
-/* line 1, sass/elements/_tables.scss */
 table {
   margin: 0 0 1.5em;
   width: 100%;
 }
 
-/* line 6, sass/elements/_tables.scss */
 th {
   font-weight: bold;
 }
@@ -332,7 +293,6 @@ th {
 /*--------------------------------------------------------------
 4.0 Forms
 --------------------------------------------------------------*/
-/* line 1, sass/forms/_forms.scss */
 button,
 input,
 select,
@@ -345,7 +305,6 @@ textarea {
   /* Improves appearance and consistency in all browsers */
 }
 
-/* line 1, sass/forms/_buttons.scss */
 button,
 input[type="button"],
 input[type="reset"],
@@ -354,7 +313,7 @@ input[type="submit"] {
   text-transform: uppercase;
   border-radius: 0;
   border: none;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   cursor: pointer;
   -o-transition: .3s;
   -ms-transition: .3s;
@@ -362,27 +321,23 @@ input[type="submit"] {
   -webkit-transition: .3s;
 }
 
-/* line 1, sass/forms/_fields.scss */
 input[type="checkbox"],
 input[type="radio"] {
   padding: 0;
   /* Addresses excess padding in IE8/9 */
 }
 
-/* line 6, sass/forms/_fields.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* Addresses appearance set to searchfield in S5, Chrome */
   box-sizing: content-box;
 }
 
-/* line 11, sass/forms/_fields.scss */
 input[type="search"]::-webkit-search-decoration {
   /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
   -webkit-appearance: none;
 }
 
-/* line 15, sass/forms/_fields.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
@@ -390,7 +345,6 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-/* line 21, sass/forms/_fields.scss */
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -402,21 +356,21 @@ textarea {
   background: transparent;
 }
 
-/* line 32, sass/forms/_fields.scss */
 input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-  padding: 8px 20px;
-  border: 2px solid;
+  border: 1px solid #cccccc;
+  text-indent: 0.3125rem;
+  height: 2.5rem;
+  letter-spacing: 0.0625rem;
 }
 
-/* line 41, sass/forms/_fields.scss */
 textarea {
   overflow: auto;
   /* Removes default vertical scrollbar in IE6/7/8/9 */
-  padding-left: 3px;
+  padding-left: 0.1875rem;
   vertical-align: top;
   /* Improves readability and alignment in all browsers */
   width: 100%;
@@ -428,19 +382,16 @@ textarea {
 /*--------------------------------------------------------------
 5.1 Links
 --------------------------------------------------------------*/
-/* line 1, sass/navigation/_links.scss */
 a {
   color: #404040;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
 }
-/* line 6, sass/navigation/_links.scss */
 a:focus {
   color: #404040;
 }
 
-/* line 11, sass/navigation/_links.scss */
 button,
 input[type="button"],
 input[type="reset"],
@@ -455,7 +406,6 @@ input[type="submit"] {
 6.0 Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers */
-/* line 2, sass/modules/_accessibility.scss */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
@@ -463,7 +413,6 @@ input[type="submit"] {
   width: 1px;
   overflow: hidden;
 }
-/* line 9, sass/modules/_accessibility.scss */
 .screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
@@ -488,21 +437,18 @@ input[type="submit"] {
 /*--------------------------------------------------------------
 7.0 Alignments
 --------------------------------------------------------------*/
-/* line 1, sass/modules/_alignments.scss */
 .alignleft {
   display: inline;
   float: left;
   margin-right: 1.5em;
 }
 
-/* line 7, sass/modules/_alignments.scss */
 .alignright {
   display: inline;
   float: right;
   margin-left: 1.5em;
 }
 
-/* line 13, sass/modules/_alignments.scss */
 .aligncenter {
   display: block;
   margin-left: auto;
@@ -512,7 +458,6 @@ input[type="submit"] {
 /*--------------------------------------------------------------
 8.0 Clearings
 --------------------------------------------------------------*/
-/* line 1, sass/modules/_clearings.scss */
 .clear:before,
 .clear:after,
 .entry-content:before,
@@ -529,7 +474,6 @@ input[type="submit"] {
   display: table;
 }
 
-/* line 16, sass/modules/_clearings.scss */
 .clear:after,
 .entry-content:after,
 .comment-content:after,
@@ -542,105 +486,85 @@ input[type="submit"] {
 /*--------------------------------------------------------------
 9.0 Widgets
 --------------------------------------------------------------*/
-/* line 1, sass/site/secondary/_widgets.scss */
 .widget {
-  margin: 0 0 1.5em;
+  margin: 0 0 1.618rem;
 }
-/* line 3, sass/site/secondary/_widgets.scss */
 .widget select {
   max-width: 100%;
 }
 
-/* line 8, sass/site/secondary/_widgets.scss */
 .widget-area button,
 .widget-area input[type="button"],
 .widget-area input[type="reset"],
-.widget-area input[type="submit"], .footer_widgets button,
-.footer_widgets input[type="button"],
-.footer_widgets input[type="reset"],
-.footer_widgets input[type="submit"] {
+.widget-area input[type="submit"], .powen-footer-widgets button,
+.powen-footer-widgets input[type="button"],
+.powen-footer-widgets input[type="reset"],
+.powen-footer-widgets input[type="submit"] {
   display: none;
 }
 
-/* line 15, sass/site/secondary/_widgets.scss */
 .widget-area ul {
   list-style: none;
 }
 
-/* line 20, sass/site/secondary/_widgets.scss */
 .widget_tag_cloud a {
-  font-size: 10px;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   text-transform: uppercase;
-  padding: 2px 8px 2px;
-  margin-right: 5px;
-  margin-bottom: 8px;
+  padding: 0.3125rem 0.625rem;
+  margin: 0.1875rem 0.0625rem;
   display: inline-block;
   border: 1px dotted;
 }
-/* line 29, sass/site/secondary/_widgets.scss */
 .widget_tag_cloud a:hover {
   border: 1px solid;
 }
 
-/* line 36, sass/site/secondary/_widgets.scss */
 .widget_archive li a {
   background: none;
 }
 
-/* line 41, sass/site/secondary/_widgets.scss */
 .widget_search, .widget_calendar, .widget_tag_cloud {
-  padding: 0 1.618rem;
+  padding: 0 0.625rem;
 }
 
-/* line 45, sass/site/secondary/_widgets.scss */
-.search-form .search-field {
-  border: 2px solid;
-}
-
-/* line 50, sass/site/secondary/_widgets.scss */
 .widget_text {
   overflow: hidden;
 }
 
-/* line 56, sass/site/secondary/_widgets.scss */
 .widget_rss li {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
-/* line 58, sass/site/secondary/_widgets.scss */
 .widget_rss li a {
   display: block;
   font-weight: bold;
 }
 
-/* line 64, sass/site/secondary/_widgets.scss */
 .rss-date {
   display: block;
 }
 
-/* line 67, sass/site/secondary/_widgets.scss */
 .rssSummary {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
 }
 
-/* line 72, sass/site/secondary/_widgets.scss */
 .widget-area li {
-  border-bottom: 1px dashed;
-  padding: 10px 0;
+  border-bottom: 1px dashed #ccc;
+  padding: 0.625rem 0;
 }
-/* line 75, sass/site/secondary/_widgets.scss */
 .widget-area li:last-child {
   border-bottom: none;
 }
 
-/* line 80, sass/site/secondary/_widgets.scss */
-.widget_calendar caption, .current-date, .pagination .current {
+.widget_calendar caption, .powen-pagination .current {
+  color: #ffffff;
+}
+
+.widget_calendar .current-date a {
   color: #ffffff;
 }
 
 /* floats */
-/* line 87, sass/site/secondary/_widgets.scss */
 .quarter,
 .one-third,
 .two-thirds,
@@ -649,44 +573,36 @@ input[type="submit"] {
 }
 
 /* widths */
-/* line 95, sass/site/secondary/_widgets.scss */
 .one-third {
   width: 32%;
 }
 
-/* line 98, sass/site/secondary/_widgets.scss */
 .two-thirds {
   width: 65.5%;
 }
 
-/* line 101, sass/site/secondary/_widgets.scss */
 .quarter {
   width: 23.5%;
 }
 
-/* line 104, sass/site/secondary/_widgets.scss */
 .three-quarters {
   width: 74.5%;
 }
 
-/* line 107, sass/site/secondary/_widgets.scss */
 .half {
   width: 48%;
 }
 
 /* margins  */
-/* line 112, sass/site/secondary/_widgets.scss */
 .one-third {
   margin: 0 0.5%;
 }
 
-/* line 115, sass/site/secondary/_widgets.scss */
 .quarter,
 .two-thirds {
   margin: 0 0.5%;
 }
 
-/* line 119, sass/site/secondary/_widgets.scss */
 .left,
 .quarter.left,
 .one-third.left {
@@ -694,7 +610,6 @@ input[type="submit"] {
   float: left;
 }
 
-/* line 125, sass/site/secondary/_widgets.scss */
 .right,
 .quarter.right,
 .one-third.right {
@@ -702,48 +617,65 @@ input[type="submit"] {
   float: right;
 }
 
-/* line 131, sass/site/secondary/_widgets.scss */
 .half.left {
   width: 48%;
   margin: 0 2% 0 0;
 }
 
-/* line 135, sass/site/secondary/_widgets.scss */
 .half.right {
   width: 48%;
   margin: 0 0 0 2%;
 }
 
-/* line 139, sass/site/secondary/_widgets.scss */
 .two-thirds.left {
   margin: 0 1% 0 0;
 }
 
-/* line 142, sass/site/secondary/_widgets.scss */
 .two-thirds.right {
   margin: 0 0 0 1%;
   float: right;
 }
 
+.widget_powen_social_widget ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.widget_powen_social_widget ul li {
+  float: left;
+  border-bottom: none;
+  padding: 0;
+  margin: 0.0625rem;
+}
+.widget_powen_social_widget ul li a {
+  padding: 0.625rem 1.25rem;
+  text-align: center;
+  display: inline-block;
+  width: 3.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.1875rem;
+}
+
+#monster-widget-placeholder-8 {
+  width: 100%;
+  padding: 1.618rem;
+}
+
 /* media queries for larger screens such as small tablets in landscape or large tablets in portrait */
 @media screen and (max-width: 780px) {
   /* only the .quarter layout class is relevant here - all other classes will have full width */
-  /* line 151, sass/site/secondary/_widgets.scss */
   .quarter {
     width: 48%;
   }
 
-  /* line 154, sass/site/secondary/_widgets.scss */
   .quarter.left {
     margin-right: 2%;
   }
 
-  /* line 157, sass/site/secondary/_widgets.scss */
   .quarter.right {
     margin-left: 2%;
   }
 
-  /* line 160, sass/site/secondary/_widgets.scss */
   footer .third.quarter.widget-area {
     clear: both;
   }
@@ -751,7 +683,6 @@ input[type="submit"] {
 /* media queries for small screens in landscape mode (or similar) */
 @media screen and (max-width: 600px) {
   /* width sizing all full width in small screens */
-  /* line 169, sass/site/secondary/_widgets.scss */
   .quarter,
   .one-third,
   .half,
@@ -763,9 +694,8 @@ input[type="submit"] {
   }
 
   /* padding adjustments */
-  /* line 179, sass/site/secondary/_widgets.scss */
   .widget-area {
-    padding: 0 0 10px 0;
+    padding: 0 0 0.625rem 0;
   }
 }
 /*--------------------------------------------------------------
@@ -774,152 +704,127 @@ input[type="submit"] {
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
-/* line 1, sass/site/primary/_posts-and-pages.scss */
+.powen-most-recent-post {
+  position: relative;
+}
+
+.powen-recent-article {
+  padding-top: 2.61792rem;
+}
+
+.powen-continue-reading {
+  margin: 2.61792rem 0 1.618rem 0;
+}
+
+.powen-latest-post-tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+}
+.powen-latest-post-tag span {
+  padding: 0 1.25rem;
+  display: inline-block;
+}
+
 .entry-footer {
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
 }
-/* line 3, sass/site/primary/_posts-and-pages.scss */
 .entry-footer .post-share {
-  font-size: 0.6em;
+  font-size: 0.875rem;
 }
 
-/* line 8, sass/site/primary/_posts-and-pages.scss */
-.featured-img img {
-  display: block;
+.entry-date {
+  padding-right: 0.3125rem;
 }
 
-/* line 13, sass/site/primary/_posts-and-pages.scss */
-.site-main .entry-date {
-  padding-right: 10px;
-}
-
-/* line 18, sass/site/primary/_posts-and-pages.scss */
 .content-area .post-comment {
   background: red;
 }
-/* line 21, sass/site/primary/_posts-and-pages.scss */
 .content-area .comments-title {
   text-align: center;
 }
 
-/* line 25, sass/site/primary/_posts-and-pages.scss */
 .posted-on, .byline {
-  padding: 10px;
+  padding: 0.3125rem;
 }
 
-/* line 29, sass/site/primary/_posts-and-pages.scss */
 .comment-body img {
   border-radius: 100%;
 }
-/* line 32, sass/site/primary/_posts-and-pages.scss */
 .comment-body .says {
   display: none;
 }
-/* line 35, sass/site/primary/_posts-and-pages.scss */
 .comment-body .fn {
   display: block;
 }
-/* line 38, sass/site/primary/_posts-and-pages.scss */
 .comment-body .comment-author img {
   float: left;
-  margin-right: 10px;
+  margin-right: 0.3125rem;
 }
-/* line 42, sass/site/primary/_posts-and-pages.scss */
 .comment-body .comment-metadata {
-  padding-bottom: 10px;
+  padding-bottom: 0.3125rem;
 }
-/* line 45, sass/site/primary/_posts-and-pages.scss */
 .comment-body .reply {
   text-align: right;
 }
 
-/* line 49, sass/site/primary/_posts-and-pages.scss */
 .comment-respond .logged-in-as a {
   font-weight: bold;
 }
 
-/* line 53, sass/site/primary/_posts-and-pages.scss */
-.pagination {
-  overflow: hidden;
-  clear: both;
-  position: relative;
-  font-size: 11px;
-}
-
-/* line 59, sass/site/primary/_posts-and-pages.scss */
-.pagination span {
-  display: block;
-  float: left;
-  margin: 2px 2px 2px 0;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  background: #ffffff;
-}
-
-/* line 68, sass/site/primary/_posts-and-pages.scss */
-.pagination .current {
-  width: 55px;
-  height: 47px;
-  border-radius: 3px;
+.powen-pagination {
   text-align: center;
 }
-
-/* line 74, sass/site/primary/_posts-and-pages.scss */
-.pagination a {
-  display: block;
-  float: left;
-  margin: 2px 2px 2px 0;
-  text-decoration: none;
-  padding: 10px;
-  width: 55px;
-  height: 47px;
-  border-radius: 3px;
-  text-align: center;
+.powen-pagination .current {
+  padding: 0.9375rem 1.5625rem;
+  display: inline-block;
+}
+.powen-pagination a {
+  padding: 0.9375rem 1.5625rem;
   background: #ffffff;
+  display: inline-block;
 }
-/* line 85, sass/site/primary/_posts-and-pages.scss */
-.pagination a:hover {
-  border: 1px solid;
-}
-
-/* line 89, sass/site/primary/_posts-and-pages.scss */
-.pagination a, .pagination span {
-  color: #999999;
-  border: 1px solid #999999;
+.powen-pagination .dots {
+  padding: 0.9375rem 1.5625rem;
+  border-radius: 3px;
+  display: inline-block;
 }
 
-/* line 94, sass/site/primary/_posts-and-pages.scss */
-.pagination .page-previous, .pagination .page-next, .pagination .page-last {
-  padding: 10px;
-  width: 75px;
-  height: 47px;
+.powen-pagination .current, .powen-pagination a {
+  border: 0.0625rem solid #cccccc;
+  border-radius: 3px;
 }
 
-/* line 101, sass/site/primary/_posts-and-pages.scss */
+.powen-pagination .next, .powen-pagination .prev, .powen-pagination .last {
+  padding: 0.9375rem 1.875rem;
+  background: #ffffff;
+  border-radius: 0.1875rem;
+  border: 0.0625rem solid #cccccc;
+}
+
 .breadcrumbs {
   list-style: none;
   overflow: hidden;
   background: #fff;
   margin: 0;
+  padding: 1.618rem;
+  text-align: right;
 }
 
-/* line 108, sass/site/primary/_posts-and-pages.scss */
 .breadcrumbs li {
   display: inline-block;
-  margin-right: 1px;
-  padding: 10px;
+  margin-right: 0.3125rem;
+  padding: 0.3125rem;
 }
 
-/* line 113, sass/site/primary/_posts-and-pages.scss */
-.continue-reading {
+.powen-continue-reading {
   text-align: right;
 }
 
 /*--------------------------------------------------------------
 10.2 Asides
 --------------------------------------------------------------*/
-/* line 1, sass/site/primary/_asides.scss */
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
   display: none;
@@ -928,12 +833,10 @@ input[type="submit"] {
 /*--------------------------------------------------------------
 10.3 Comments
 --------------------------------------------------------------*/
-/* line 1, sass/site/primary/_comments.scss */
 .comment-content a {
   word-wrap: break-word;
 }
 
-/* line 4, sass/site/primary/_comments.scss */
 .bypostauthor {
   display: block;
 }
@@ -942,7 +845,6 @@ input[type="submit"] {
 11.0 Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
-/* line 2, sass/modules/_infinite-scroll.scss */
 .infinite-scroll .posts-navigation,
 .infinite-scroll.neverending .site-footer {
   /* Theme Footer (when set to scrolling) */
@@ -950,7 +852,6 @@ input[type="submit"] {
 }
 
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
-/* line 8, sass/modules/_infinite-scroll.scss */
 .infinity-end.neverending .site-footer {
   display: block;
 }
@@ -958,23 +859,19 @@ input[type="submit"] {
 /*--------------------------------------------------------------
 12.01 Media
 --------------------------------------------------------------*/
-/* line 1, sass/media/_captions.scss */
 .wp-caption {
   margin-bottom: 1.5em;
   max-width: 100%;
 }
-/* line 5, sass/media/_captions.scss */
 .wp-caption img[class*="wp-image-"] {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 9, sass/media/_captions.scss */
 .wp-caption .wp-caption-text {
   margin: 0.8075em 0;
 }
 
-/* line 14, sass/media/_captions.scss */
 .wp-caption-text {
   text-align: center;
 }
@@ -982,12 +879,10 @@ input[type="submit"] {
 /*--------------------------------------------------------------
 12.02 Media
 --------------------------------------------------------------*/
-/* line 1, sass/media/_galleries.scss */
 .gallery {
   margin-bottom: 1.5em;
 }
 
-/* line 5, sass/media/_galleries.scss */
 .gallery-item {
   display: inline-block;
   text-align: center;
@@ -995,47 +890,38 @@ input[type="submit"] {
   width: 100%;
 }
 
-/* line 12, sass/media/_galleries.scss */
 .gallery-columns-2 .gallery-item {
   max-width: 50%;
 }
 
-/* line 16, sass/media/_galleries.scss */
 .gallery-columns-3 .gallery-item {
   max-width: 33.33%;
 }
 
-/* line 20, sass/media/_galleries.scss */
 .gallery-columns-4 .gallery-item {
   max-width: 25%;
 }
 
-/* line 24, sass/media/_galleries.scss */
 .gallery-columns-5 .gallery-item {
   max-width: 20%;
 }
 
-/* line 28, sass/media/_galleries.scss */
 .gallery-columns-6 .gallery-item {
   max-width: 16.66%;
 }
 
-/* line 32, sass/media/_galleries.scss */
 .gallery-columns-7 .gallery-item {
   max-width: 14.28%;
 }
 
-/* line 36, sass/media/_galleries.scss */
 .gallery-columns-8 .gallery-item {
   max-width: 12.5%;
 }
 
-/* line 40, sass/media/_galleries.scss */
 .gallery-columns-9 .gallery-item {
   max-width: 11.11%;
 }
 
-/* line 44, sass/media/_galleries.scss */
 .gallery-caption {
   display: block;
 }
@@ -1043,7 +929,6 @@ input[type="submit"] {
 /*--------------------------------------------------------------
 12.03 Media
 --------------------------------------------------------------*/
-/* line 1, sass/media/_media.scss */
 .page-content img.wp-smiley,
 .entry-content img.wp-smiley,
 .comment-content img.wp-smiley {
@@ -1054,7 +939,6 @@ input[type="submit"] {
 }
 
 /* Make sure embeds and iframes fit their containers */
-/* line 11, sass/media/_media.scss */
 embed,
 iframe,
 object {
@@ -1064,23 +948,19 @@ object {
 /*--------------------------------------------------------------
 12.1 Captions
 --------------------------------------------------------------*/
-/* line 1, sass/media/_captions.scss */
 .wp-caption {
   margin-bottom: 1.5em;
   max-width: 100%;
 }
-/* line 5, sass/media/_captions.scss */
 .wp-caption img[class*="wp-image-"] {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 9, sass/media/_captions.scss */
 .wp-caption .wp-caption-text {
   margin: 0.8075em 0;
 }
 
-/* line 14, sass/media/_captions.scss */
 .wp-caption-text {
   text-align: center;
 }
@@ -1088,12 +968,10 @@ object {
 /*--------------------------------------------------------------
 12.2 Galleries
 --------------------------------------------------------------*/
-/* line 1, sass/media/_galleries.scss */
 .gallery {
   margin-bottom: 1.5em;
 }
 
-/* line 5, sass/media/_galleries.scss */
 .gallery-item {
   display: inline-block;
   text-align: center;
@@ -1101,47 +979,38 @@ object {
   width: 100%;
 }
 
-/* line 12, sass/media/_galleries.scss */
 .gallery-columns-2 .gallery-item {
   max-width: 50%;
 }
 
-/* line 16, sass/media/_galleries.scss */
 .gallery-columns-3 .gallery-item {
   max-width: 33.33%;
 }
 
-/* line 20, sass/media/_galleries.scss */
 .gallery-columns-4 .gallery-item {
   max-width: 25%;
 }
 
-/* line 24, sass/media/_galleries.scss */
 .gallery-columns-5 .gallery-item {
   max-width: 20%;
 }
 
-/* line 28, sass/media/_galleries.scss */
 .gallery-columns-6 .gallery-item {
   max-width: 16.66%;
 }
 
-/* line 32, sass/media/_galleries.scss */
 .gallery-columns-7 .gallery-item {
   max-width: 14.28%;
 }
 
-/* line 36, sass/media/_galleries.scss */
 .gallery-columns-8 .gallery-item {
   max-width: 12.5%;
 }
 
-/* line 40, sass/media/_galleries.scss */
 .gallery-columns-9 .gallery-item {
   max-width: 11.11%;
 }
 
-/* line 44, sass/media/_galleries.scss */
 .gallery-caption {
   display: block;
 }
@@ -1149,272 +1018,250 @@ object {
 /*--------------------------------------------------------------
 13.0 Custom Styles
 --------------------------------------------------------------*/
-/* line 1, sass/custom/_custom_styles.scss */
 * {
   box-sizing: border-box;
   word-wrap: break-word;
 }
 
-/* line 6, sass/custom/_custom_styles.scss */
 body {
   background-color: #f5f5f5;
 }
 
-/* line 153, sass/custom/_custom_vars_mixins.scss */
 a {
   text-decoration: none;
 }
 
-/* line 12, sass/custom/_custom_styles.scss */
 blockquote {
   padding: 1.618rem;
   font-size: 1.25rem;
   background-color: #ffffff;
   color: #565656;
 }
-/* line 161, sass/custom/_custom_vars_mixins.scss */
 blockquote a, blockquote a:visited, blockquote a:active {
   color: inherit;
 }
 
-/* line 19, sass/custom/_custom_styles.scss */
 ul, ol {
   padding: 0;
-  margin: 0 0 1.618em 1.618em;
+  margin: 0 0 0.625rem 0.625rem;
 }
 
-/* line 24, sass/custom/_custom_styles.scss */
 .sticky {
   position: relative;
 }
 
-/* line 76, sass/custom/_custom_vars_mixins.scss */
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.313em;
+  line-height: 2.5rem;
   font-weight: 400;
 }
 
-/* line 81, sass/custom/_custom_vars_mixins.scss */
 h1 {
-  font-size: 3em;
-  margin: 0.563em 0;
+  font-size: 3rem;
+  margin-bottom: 0.563rem;
 }
 
-/* line 81, sass/custom/_custom_vars_mixins.scss */
 h2 {
-  font-size: 2.25em;
-  margin: 0.625em 0;
+  font-size: 2.5rem;
+  margin-bottom: 0.625rem;
 }
 
-/* line 81, sass/custom/_custom_vars_mixins.scss */
 h3 {
-  font-size: 1.5em;
-  margin: 1.313em 0;
+  font-size: 1.5rem;
+  margin-bottom: 1.313rem;
 }
 
-/* line 81, sass/custom/_custom_vars_mixins.scss */
 h4 {
-  font-size: 1.313em;
-  margin: 1.313em 0;
+  font-size: 1.313rem;
+  margin-bottom: 1.313rem;
 }
 
-/* line 81, sass/custom/_custom_vars_mixins.scss */
 h5 {
-  font-size: 1.125em;
-  margin: 1.313em 0;
+  font-size: 1.125rem;
+  margin-bottom: 1.313rem;
 }
 
-/* line 81, sass/custom/_custom_vars_mixins.scss */
 h6 {
-  font-size: 1em;
-  margin: 0.75em 0;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
 }
 
-/* line 89, sass/custom/_custom_vars_mixins.scss */
 .widget-title {
-  font-size: 1.9695em;
+  font-size: 1.9695rem;
   text-align: center;
 }
 
-/* line 96, sass/custom/_custom_vars_mixins.scss */
 .site-branding .site-title {
-  font-size: 3em;
+  font-size: 3rem;
 }
 
-/* line 102, sass/custom/_custom_vars_mixins.scss */
 .site-branding .site-description {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
-/* line 32, sass/custom/_custom_styles.scss */
 .content-area {
   float: left;
   margin: 0 -30% 0 0;
   width: 100%;
 }
 
-/* line 38, sass/custom/_custom_styles.scss */
 .pagination {
-  padding: 1.618em;
+  padding: 0.625rem;
 }
 
-/* line 42, sass/custom/_custom_styles.scss */
 .site-main {
   margin: 0 30% 0 0;
 }
 
-/* line 46, sass/custom/_custom_styles.scss */
 .site-content .widget-area {
   float: right;
   overflow: hidden;
   width: 30%;
 }
 
-/* line 52, sass/custom/_custom_styles.scss */
 .powen-wrapper {
-  padding-top: 1.618em;
-  padding-bottom: 1.618em;
-  max-width: 115.2910430629rem;
+  max-width: 70.3125rem;
   margin: 0 auto;
+}
+
+.powen-footer-widgets {
   overflow: hidden;
 }
 
-/* line 60, sass/custom/_custom_styles.scss */
 .widget-container {
-  padding: 1.618em;
+  padding: 1.618rem;
 }
-/* line 62, sass/custom/_custom_styles.scss */
 .widget-container ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 73, sass/custom/_custom_styles.scss */
+.flexslider h6 {
+  line-height: 1.5;
+  color: #fff;
+  margin: 0.625rem 0;
+  font-size: 0.875rem;
+}
+
+.flexslider p {
+  font-size: 0.6875rem;
+  line-height: 1.5;
+  margin-bottom: 1.875rem;
+}
+
 .site-header {
   width: 100%;
   background-color: #fff;
 }
 
-/* line 78, sass/custom/_custom_styles.scss */
 .site-branding {
-  padding-left: 1.618rem;
-  padding-right: 1.618rem;
-  padding-top: 4.854rem;
-  padding-bottom: 4.854rem;
+  padding-top: 1.618rem;
+  padding-bottom: 1.618rem;
   text-align: center;
 }
 
-/* line 86, sass/custom/_custom_styles.scss */
 h1.site-title {
   font-weight: 700;
 }
 
-/* line 90, sass/custom/_custom_styles.scss */
 .site-title, .site-description {
-  margin: 0;
-  line-height: 4rem;
   vertical-align: bottom;
 }
 
-/* line 98, sass/custom/_custom_styles.scss */
 #site-navigation .menu-header-menu-container, #main-nav {
   display: none;
 }
 
-/* line 101, sass/custom/_custom_styles.scss */
 #site-navigation .menu {
   display: none;
 }
 
-/* line 106, sass/custom/_custom_styles.scss */
 .site-content {
-  max-width: 115.2910430629rem;
-  margin: 42px auto;
+  max-width: 70.3125rem;
+  margin: 1.618rem auto;
 }
 
-/* line 114, sass/custom/_custom_styles.scss */
 .article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
-  padding-left: 4.235801032rem;
-  padding-right: 4.235801032rem;
-  margin: 0 0 0 0;
+  padding-left: 4.2358rem;
+  padding-right: 4.2358rem;
+  padding-bottom: 2.61792rem;
+  padding-top: 2.61792rem;
+  margin: 0;
   background-color: #ffffff;
 }
 
-/* line 122, sass/custom/_custom_styles.scss */
+.powen-most-recent-post {
+  margin-top: 2.61792rem;
+}
+
 .article-hentry {
-  margin-bottom: 50px;
+  margin: 0 0 1.618rem 0;
 }
 
-/* line 126, sass/custom/_custom_styles.scss */
-.featured-img {
+.site-info, .powen-footer-widgets {
+  padding: 1.618rem 0;
+}
+
+.powen-recent-post {
+  margin-top: 1.618rem;
+}
+
+.powen-pagination {
+  margin-bottom: 1.618rem;
+}
+
+.powen-featured-img {
   background-color: #ffffff;
 }
-/* line 128, sass/custom/_custom_styles.scss */
-.featured-img img {
+.powen-featured-img img {
   margin: 0 auto;
+  display: block;
+  width: 100%;
 }
 
-/* line 133, sass/custom/_custom_styles.scss */
 .post-thumbnail {
   margin-top: 1.618rem;
-  margin-right: -4.235801032rem;
+  margin-right: -4.2358rem;
   margin-bottom: 1.618rem;
-  margin-left: -4.235801032rem;
+  margin-left: -4.2358rem;
   border-top: 0.625rem solid #404040;
   border-bottom: 0.625rem solid #404040;
 }
-/* line 138, sass/custom/_custom_styles.scss */
 .post-thumbnail img {
   min-width: 100%;
   vertical-align: bottom;
 }
 
-/* line 146, sass/custom/_custom_styles.scss */
 .page-header .page-title {
   text-align: center;
 }
 
-/* line 153, sass/custom/_custom_styles.scss */
 .entry-content a img {
   vertical-align: bottom;
 }
 
-/* line 160, sass/custom/_custom_styles.scss */
 .entry-header {
   text-align: center;
   overflow: hidden;
 }
 
-/* line 165, sass/custom/_custom_styles.scss */
-.entry-title {
-  margin-top: 0;
-  margin-bottom: 2.617924rem;
-}
-
-/* line 170, sass/custom/_custom_styles.scss */
 .entry-meta {
   display: inline-block;
   font-weight: 300;
-  margin-bottom: 1.618rem;
-  font-size: 14px;
-  margin-bottom: 1.618rem;
+  font-size: 0.875rem;
 }
-/* line 179, sass/custom/_custom_vars_mixins.scss */
 .entry-meta a, .entry-meta a:visited, .entry-meta a:active {
   color: inherit;
 }
 
-/* line 179, sass/custom/_custom_styles.scss */
 .continue_btn {
   text-align: center;
 }
 
-/* line 184, sass/custom/_custom_styles.scss */
 .entry-content a.more-link {
   font-size: 1.125rem;
   font-weight: 700;
   display: inline-block;
-  padding: 1em 1.618em;
+  padding: 0.625rem;
   margin: 2em 0 .5em 0;
   background: none;
   border-top: 0.1875rem solid #baabab;
@@ -1422,134 +1269,134 @@ h1.site-title {
   color: #404040;
 }
 
-/* line 195, sass/custom/_custom_styles.scss */
 .entry-footer {
-  margin: 2.617924rem 0 1.618rem 0;
+  margin: 2.61792rem 0 1.618rem 0;
   line-height: 3em;
   text-align: center;
   border-top: 0.125rem solid #f5f5f5;
 }
-/* line 199, sass/custom/_custom_styles.scss */
 .entry-footer span {
-  margin: 0 0.618em;
-  padding: 0 0.618em;
+  margin: 0.3125rem;
+  padding: 0.3125rem;
   display: inline-block;
 }
 
-/* line 207, sass/custom/_custom_styles.scss */
 .comment-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 211, sass/custom/_custom_styles.scss */
 .comment-list .comment {
   padding: 1.618rem;
   background-color: rgba(221, 193, 174, 0.05);
   border: 0.0625rem solid rgba(108, 67, 38, 0.05);
 }
 
-/* line 219, sass/custom/_custom_styles.scss */
+.comment-respond .form-allowed-tags {
+  display: none;
+}
+
 .widget {
-  padding-left: 2.617924rem;
-  padding-right: 2.617924rem;
-  padding-top: 2.617924rem;
-  padding-bottom: 2.617924rem;
+  padding-left: 2.61792rem;
+  padding-right: 2.61792rem;
+  padding-top: 2.61792rem;
+  padding-bottom: 2.61792rem;
   margin-left: 1.618rem;
   margin-bottom: 1.618rem;
   background-color: #ffffff;
   color: #565656;
 }
 
-/* line 230, sass/custom/_custom_styles.scss */
 .widget ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 235, sass/custom/_custom_styles.scss */
 .widget ul li.page_item_has_children, .widget ul li.menu-item-has-children {
   padding-bottom: 0;
   border: none;
 }
-/* line 241, sass/custom/_custom_styles.scss */
 .widget ul li li li li {
   padding-left: 0;
 }
-/* line 245, sass/custom/_custom_styles.scss */
 .widget ul .children li:first-of-type, .widget ul .sub-menu li:first-of-type {
-  margin-top: 1em;
+  margin-top: 0.0625rem;
 }
 
-/* line 251, sass/custom/_custom_styles.scss */
-.top-container {
-  padding-bottom: 1.618em;
+.powen-top-container {
   overflow: hidden;
+  padding: 1.618rem 0;
 }
-/* line 254, sass/custom/_custom_styles.scss */
-.top-container ul {
-  padding: 0;
+.powen-top-container .powen-social-media-icons {
   margin: 0;
-  padding: 10px;
+}
+.powen-top-container .powen-social-media-icons li {
+  margin: 0.0625rem;
   display: inline-block;
-  float: left;
 }
-/* line 260, sass/custom/_custom_styles.scss */
-.top-container ul li {
-  display: inline-block;
-  padding: 0 5px;
+.powen-top-container .powen-social-media-icons li a {
+  padding: 0.3125rem 0.625rem;
+  width: 2.0625rem;
+  display: block;
+  text-align: center;
 }
-/* line 263, sass/custom/_custom_styles.scss */
-.top-container ul li a {
-  padding: 2px;
+.powen-top-container .search-form {
+  text-align: right;
 }
-/* line 269, sass/custom/_custom_styles.scss */
-.top-container .search-form {
-  float: right;
-  display: inline-block;
-  padding: 10px;
-}
-/* line 273, sass/custom/_custom_styles.scss */
-.top-container .search-form .search-field {
-  padding: 0;
-  text-indent: 10px;
-  border: 1px solid;
-}
-/* line 278, sass/custom/_custom_styles.scss */
-.top-container .search-form .search-submit {
+.powen-top-container .search-form .search-submit {
   display: none;
 }
-
-/* line 284, sass/custom/_custom_styles.scss */
-.top-most-nav, .main-navigation, .powen-nav {
-  display: inline-block;
-  float: left;
+.powen-top-container .search-form input[type="text"],
+.powen-top-container .search-form input[type="email"],
+.powen-top-container .search-form input[type="url"],
+.powen-top-container .search-form input[type="password"],
+.powen-top-container .search-form input[type="search"] {
+  height: auto;
+}
+.powen-top-container .powen-search-box-top, .powen-top-container .powen-social_media_container {
+  padding: 0.809rem 0;
 }
 
-/* line 288, sass/custom/_custom_styles.scss */
+.widget_search input {
+  width: 100%;
+}
+
 .powen-nav {
-  padding: 10px;
+  display: inline-block;
+}
+.powen-nav a {
+  padding: 0.809rem 0;
 }
 
-/* line 291, sass/custom/_custom_styles.scss */
-.top-most-nav, .main-navigation {
-  padding-right: 10px;
+.powen-social-media-container {
+  width: 100%;
+  text-align: right;
+  overflow: hidden;
 }
 
-/* line 295, sass/custom/_custom_styles.scss */
-input.search-field {
-  box-sizing: border-box;
-  width: auto;
+.powen-top-most-nav, .powen-main-navigation {
+  padding: 0 0.625rem;
+  display: inline-block;
+}
+.powen-top-most-nav a, .powen-main-navigation a {
+  color: #666666;
 }
 
-/* line 302, sass/custom/_custom_styles.scss */
+.powen-search-box-top {
+  display: inline-block;
+  float: right;
+}
+.powen-search-box-top .search-form {
+  padding: 0 0.625rem;
+  position: relative;
+}
+
 .site-footer {
   width: 100%;
   overflow: hidden;
 }
 
-/* line 307, sass/custom/_custom_styles.scss */
-.footer_widgets .widget {
+.powen-footer-widgets .widget {
   background: transparent;
   float: left;
   margin: 0 1% 0 0;
@@ -1557,109 +1404,87 @@ input.search-field {
   padding: 1%;
 }
 
-/* line 316, sass/custom/_custom_styles.scss */
-.footer_widgets {
+.powen-footer-widgets {
   background: #222222;
   color: #808080;
 }
-/* line 319, sass/custom/_custom_styles.scss */
-.footer_widgets a {
+.powen-footer-widgets a {
   color: #cccccc;
 }
 
-/* line 323, sass/custom/_custom_styles.scss */
 .site-info {
   text-align: center;
   background: #000000;
   color: #404040;
 }
-/* line 327, sass/custom/_custom_styles.scss */
 .site-info a {
   color: #666666;
 }
 
-@media (max-width: 115.2910430629rem) {
-  /* line 76, sass/custom/_custom_vars_mixins.scss */
+@media (max-width: 70.3125rem) {
   h1, h2, h3, h4, h5, h6 {
-    line-height: 1.313em;
+    line-height: 2.5rem;
     font-weight: 400;
   }
 
-  /* line 81, sass/custom/_custom_vars_mixins.scss */
   h1 {
-    font-size: 2.1em;
-    margin: 0.563em 0;
+    font-size: 2.1rem;
+    margin-bottom: 0.563rem;
   }
 
-  /* line 81, sass/custom/_custom_vars_mixins.scss */
   h2 {
-    font-size: 1.575em;
-    margin: 0.625em 0;
+    font-size: 1.75rem;
+    margin-bottom: 0.625rem;
   }
 
-  /* line 81, sass/custom/_custom_vars_mixins.scss */
   h3 {
-    font-size: 1.05em;
-    margin: 1.313em 0;
+    font-size: 1.05rem;
+    margin-bottom: 1.313rem;
   }
 
-  /* line 81, sass/custom/_custom_vars_mixins.scss */
   h4 {
-    font-size: 1em;
-    margin: 1.313em 0;
+    font-size: 1rem;
+    margin-bottom: 1.313rem;
   }
 
-  /* line 81, sass/custom/_custom_vars_mixins.scss */
   h5 {
-    font-size: 1em;
-    margin: 1.313em 0;
+    font-size: 1rem;
+    margin-bottom: 1.313rem;
   }
 
-  /* line 81, sass/custom/_custom_vars_mixins.scss */
   h6 {
-    font-size: 1em;
-    margin: 0.75em 0;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
   }
 
-  /* line 89, sass/custom/_custom_vars_mixins.scss */
   .widget-title {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-align: center;
   }
 
-  /* line 96, sass/custom/_custom_vars_mixins.scss */
   .site-branding .site-title {
-    font-size: 2.7573em;
+    font-size: 2.7573rem;
   }
 
-  /* line 102, sass/custom/_custom_vars_mixins.scss */
   .site-branding .site-description {
-    font-size: 1.37865em;
+    font-size: 1.37865rem;
   }
 
-  /* line 351, sass/custom/_custom_styles.scss */
   .article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
-    padding-left: 2.617924rem;
-    padding-right: 2.617924rem;
+    padding-left: 2.61792rem;
+    padding-right: 2.61792rem;
     padding-top: 1.618rem;
     padding-bottom: 1.618rem;
   }
 
-  /* line 358, sass/custom/_custom_styles.scss */
   .post-thumbnail {
     margin-top: 1.618rem;
-    margin-right: -2.617924rem;
+    margin-right: -2.61792rem;
     margin-bottom: 1.618rem;
-    margin-left: -2.617924rem;
-  }
-
-  /* line 365, sass/custom/_custom_styles.scss */
-  .entry-title {
-    margin-bottom: 0;
+    margin-left: -2.61792rem;
   }
 }
 @media (max-width: 56.25rem) {
-  /* line 373, sass/custom/_custom_styles.scss */
   #primary, #secondary {
     overflow: hidden;
     float: none;
@@ -1667,170 +1492,152 @@ input.search-field {
     width: 100%;
   }
 
-  /* line 380, sass/custom/_custom_styles.scss */
   #primary .site-main {
     margin: 0;
   }
 
-  /* line 384, sass/custom/_custom_styles.scss */
   .widget {
     margin-left: 0;
     margin-bottom: 1.618rem;
+    margin-top: 1.618rem;
   }
 
-  /* line 389, sass/custom/_custom_styles.scss */
+  .widget-area .widget {
+    margin-right: 0;
+  }
+
   .flexslider .powen-slider-content {
     visibility: visible;
     opacity: 1;
   }
 
-  /* line 393, sass/custom/_custom_styles.scss */
-  .flexslider .powen-slider-content p, .flexslider .powen-slider-content h2 {
+  .flexslider .powen-slider-content p, .flexslider .powen-slider-content h6 {
     visibility: visible;
     opacity: 1;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     width: 100%;
+    margin: 0.3125rem 0;
   }
 
-  /* line 401, sass/custom/_custom_styles.scss */
   .flexslider .flex-control-nav {
     display: none;
   }
 }
 @media (max-width: 37.5rem) {
-  /* line 76, sass/custom/_custom_vars_mixins.scss */
   h1, h2, h3, h4, h5, h6 {
-    line-height: 1.313em;
+    line-height: 2.5rem;
     font-weight: 400;
   }
 
-  /* line 81, sass/custom/_custom_vars_mixins.scss */
   h1 {
-    font-size: 1.5em;
-    margin: 0.563em 0;
+    font-size: 1.5rem;
+    margin-bottom: 0.563rem;
   }
 
-  /* line 81, sass/custom/_custom_vars_mixins.scss */
   h2 {
-    font-size: 1.125em;
-    margin: 0.625em 0;
+    font-size: 1.25rem;
+    margin-bottom: 0.625rem;
   }
 
-  /* line 81, sass/custom/_custom_vars_mixins.scss */
   h3 {
-    font-size: 1em;
-    margin: 1.313em 0;
+    font-size: 1rem;
+    margin-bottom: 1.313rem;
   }
 
-  /* line 81, sass/custom/_custom_vars_mixins.scss */
   h4 {
-    font-size: 1em;
-    margin: 1.313em 0;
+    font-size: 1rem;
+    margin-bottom: 1.313rem;
   }
 
-  /* line 81, sass/custom/_custom_vars_mixins.scss */
   h5 {
-    font-size: 1em;
-    margin: 1.313em 0;
+    font-size: 1rem;
+    margin-bottom: 1.313rem;
   }
 
-  /* line 81, sass/custom/_custom_vars_mixins.scss */
   h6 {
-    font-size: 1em;
-    margin: 0.75em 0;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
   }
 
-  /* line 89, sass/custom/_custom_vars_mixins.scss */
   .widget-title {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-align: center;
   }
 
-  /* line 96, sass/custom/_custom_vars_mixins.scss */
   .site-branding .site-title {
-    font-size: 1.9695em;
+    font-size: 1.9695rem;
   }
 
-  /* line 102, sass/custom/_custom_vars_mixins.scss */
   .site-branding .site-description {
-    font-size: 0.98475em;
+    font-size: 0.98475rem;
   }
 
-  /* line 410, sass/custom/_custom_styles.scss */
-  .top-container .social-media-icons {
+  .flexslider .flex-direction-nav .flex-next, .flexslider .flex-direction-nav .flex-prev {
     display: none;
   }
 }
 @media (max-width: 25rem) {
-  /* line 76, sass/custom/_custom_vars_mixins.scss */
   h1, h2, h3, h4, h5, h6 {
-    line-height: 1.313em;
+    line-height: 2.5rem;
     font-weight: 400;
   }
 
-  /* line 81, sass/custom/_custom_vars_mixins.scss */
   h1 {
-    font-size: 1.2em;
-    margin: 0.563em 0;
+    font-size: 1.2rem;
+    margin-bottom: 0.563rem;
   }
 
-  /* line 81, sass/custom/_custom_vars_mixins.scss */
   h2 {
-    font-size: 1em;
-    margin: 0.625em 0;
+    font-size: 1rem;
+    margin-bottom: 0.625rem;
   }
 
-  /* line 81, sass/custom/_custom_vars_mixins.scss */
   h3 {
-    font-size: 1em;
-    margin: 1.313em 0;
+    font-size: 1rem;
+    margin-bottom: 1.313rem;
   }
 
-  /* line 81, sass/custom/_custom_vars_mixins.scss */
   h4 {
-    font-size: 1em;
-    margin: 1.313em 0;
+    font-size: 1rem;
+    margin-bottom: 1.313rem;
   }
 
-  /* line 81, sass/custom/_custom_vars_mixins.scss */
   h5 {
-    font-size: 1em;
-    margin: 1.313em 0;
+    font-size: 1rem;
+    margin-bottom: 1.313rem;
   }
 
-  /* line 81, sass/custom/_custom_vars_mixins.scss */
   h6 {
-    font-size: 1em;
-    margin: 0.75em 0;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
   }
 
-  /* line 89, sass/custom/_custom_vars_mixins.scss */
   .widget-title {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-align: center;
   }
 
-  /* line 96, sass/custom/_custom_vars_mixins.scss */
   .site-branding .site-title {
-    font-size: 1.5756em;
+    font-size: 1.5756rem;
   }
 
-  /* line 102, sass/custom/_custom_vars_mixins.scss */
   .site-branding .site-description {
-    font-size: 0.7878em;
+    font-size: 0.7878rem;
   }
 
-  /* line 436, sass/custom/_custom_styles.scss */
-  .hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
+  .article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
     padding-left: 1.618rem;
     padding-right: 1.618rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
 
-  /* line 443, sass/custom/_custom_styles.scss */
+  .powen-recent-article {
+    padding-top: 1rem;
+  }
+
   .post-thumbnail {
     margin-top: 1.618rem;
     margin-right: -1.618rem;
@@ -1838,76 +1645,55 @@ input.search-field {
     margin-left: -1.618rem;
   }
 
-  /* line 450, sass/custom/_custom_styles.scss */
   .entry-title {
     margin-bottom: 1rem;
   }
 
-  /* line 454, sass/custom/_custom_styles.scss */
-  .widget {
-    padding-left: 1.618rem;
-    padding-right: 1.618rem;
-    padding-top: 1.618rem;
-    padding-bottom: 1.618rem;
-  }
-
-  /* line 76, sass/custom/_custom_vars_mixins.scss */
   .flexslider h1, .flexslider h2, .flexslider h3, .flexslider h4, .flexslider h5, .flexslider h6 {
-    line-height: 1.313em;
+    line-height: 2.5rem;
     font-weight: 400;
   }
-  /* line 81, sass/custom/_custom_vars_mixins.scss */
   .flexslider h1 {
-    font-size: 1.8em;
-    margin: 0.563em 0;
+    font-size: 1.8rem;
+    margin-bottom: 0.563rem;
   }
-  /* line 81, sass/custom/_custom_vars_mixins.scss */
   .flexslider h2 {
-    font-size: 1.35em;
-    margin: 0.625em 0;
+    font-size: 1.5rem;
+    margin-bottom: 0.625rem;
   }
-  /* line 81, sass/custom/_custom_vars_mixins.scss */
   .flexslider h3 {
-    font-size: 1em;
-    margin: 1.313em 0;
+    font-size: 1rem;
+    margin-bottom: 1.313rem;
   }
-  /* line 81, sass/custom/_custom_vars_mixins.scss */
   .flexslider h4 {
-    font-size: 1em;
-    margin: 1.313em 0;
+    font-size: 1rem;
+    margin-bottom: 1.313rem;
   }
-  /* line 81, sass/custom/_custom_vars_mixins.scss */
   .flexslider h5 {
-    font-size: 1em;
-    margin: 1.313em 0;
+    font-size: 1rem;
+    margin-bottom: 1.313rem;
   }
-  /* line 81, sass/custom/_custom_vars_mixins.scss */
   .flexslider h6 {
-    font-size: 1em;
-    margin: 0.75em 0;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
   }
-  /* line 89, sass/custom/_custom_vars_mixins.scss */
   .flexslider .widget-title {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-align: center;
   }
-  /* line 96, sass/custom/_custom_vars_mixins.scss */
   .flexslider .site-branding .site-title {
-    font-size: 2.3634em;
+    font-size: 2.3634rem;
   }
-  /* line 102, sass/custom/_custom_vars_mixins.scss */
   .flexslider .site-branding .site-description {
-    font-size: 1.1817em;
+    font-size: 1.1817rem;
   }
 
-  /* line 465, sass/custom/_custom_styles.scss */
+  .flexslider h6 {
+    line-height: 1;
+  }
+
   button, input[type="button"], input[type="reset"], input[type="submit"] {
     display: none;
-  }
-
-  /* line 468, sass/custom/_custom_styles.scss */
-  .top-container .search-form input {
-    width: 80px;
   }
 }
 /*--------------------------------------------------------------
@@ -1916,19 +1702,19 @@ input.search-field {
 /*------------------
 FontAwesome
 ---------------------*/
-/* line 5, sass/custom/_font_awesome.scss */
+.powen-top-most-nav .mm:before,
+.powen-main-navigation .m:before,
+.powen-search-box-top .search-form label:after,
 .posted-on:before,
 .comments-link:before,
 .edit-link:before,
 .nav-previous a:before,
-.flex-direction-nav li .flex-prev:before,
-.flex-direction-nav li .flex-next:before,
 .nav-next a:after,
 .author:before,
 .content-area .hentry .entry-date:after,
 .cat-links:before,
 .comment-metadata time:before,
-.continue-reading:after,
+.powen-continue-reading:after,
 .widget_recent_comments li:before,
 .widget_recent_comments li > a:before,
 .widget_archive li:before,
@@ -1939,14 +1725,14 @@ FontAwesome
 .powen-wrapper .recent-comment-people:before,
 .menu-long-menu-container li:before,
 .widget_recent_entries li:before,
-.powen-border-line,
+.entry-header:after,
+.widget-title:after,
 .footer-scroll:before {
   font-family: 'FontAwesome';
   font-weight: normal;
   font-style: normal;
 }
 
-/* line 35, sass/custom/_font_awesome.scss */
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -1960,177 +1746,148 @@ FontAwesome
 /**---------------
 Write your code here
 --------------------**/
-/* line 52, sass/custom/_font_awesome.scss */
+.powen-top-most-nav .mm:before, .powen-main-navigation .m:before {
+  content: "\f0c9";
+  padding: 0.3125rem;
+  font-size: 1.25em;
+  vertical-align: bottom;
+}
+
+.powen-search-box-top .search-form label:after {
+  content: "\f002";
+  position: absolute;
+  right: 0.8125rem;
+  top: 0.0625rem;
+  color: #cccccc;
+  background-color: #ffffff;
+}
+
 .posted-on:before {
   content: "\f017";
-  padding: 5px;
-  font-size: 1em;
+  padding: 0.3125rem;
 }
 
-/* line 58, sass/custom/_font_awesome.scss */
 .comments-link:before {
   content: "\f0e6";
-  padding: 5px;
+  padding: 0.3125rem;
 }
 
-/* line 63, sass/custom/_font_awesome.scss */
 .edit-link:before {
   content: "\f044";
-  padding: 5px;
+  padding: 0.3125rem;
 }
 
-/* line 68, sass/custom/_font_awesome.scss */
 .nav-previous a:before {
   content: "\f100";
-  margin: 0 3px;
+  margin: 0 0.3125rem;
 }
 
-/* line 73, sass/custom/_font_awesome.scss */
-.flex-direction-nav li .flex-prev:before {
-  content: "\f100";
-  font-size: 1.5em;
-  color: #ffffff;
-}
-
-/* line 79, sass/custom/_font_awesome.scss */
-.flex-direction-nav li .flex-next:before {
-  content: "\f101";
-  font-size: 1.5em;
-  color: #ffffff;
-}
-
-/* line 85, sass/custom/_font_awesome.scss */
 .nav-next a:after {
   content: "\f101";
-  margin: 0 3px;
+  margin: 0 0.1875rem;
 }
 
-/* line 89, sass/custom/_font_awesome.scss */
 .author:before {
   content: "\f007";
-  font-size: 1em;
-  padding: 5px;
+  padding: 0.3125rem;
 }
 
-/* line 94, sass/custom/_font_awesome.scss */
 .cat-links:before {
   content: "\f02c";
-  padding: 5px;
+  padding: 0.3125rem;
 }
 
-/* line 98, sass/custom/_font_awesome.scss */
 .comment-metadata time:before {
   content: "\f017";
-  padding: 5px;
+  padding: 0.3125rem;
 }
 
-/* line 102, sass/custom/_font_awesome.scss */
-.continue-reading:after {
+.powen-continue-reading:after {
   content: "\f178";
-  padding: 10px;
+  padding: 0.3125rem;
 }
 
-/* line 111, sass/custom/_font_awesome.scss */
 .widget_recent_comments li:before {
   content: "\f007";
-  padding-right: 10px;
+  padding-right: 0.625rem;
   color: #cccccc;
 }
 
-/* line 116, sass/custom/_font_awesome.scss */
 .widget_recent_comments li > a:before {
   content: "\f075";
   display: none;
 }
 
-/* line 121, sass/custom/_font_awesome.scss */
 .widget_archive li:before {
-  content: "\f111";
+  content: "\f105";
   color: #cccccc;
-  font-size: 0.1em;
-  margin-right: 2em;
+  margin-right: 0.9375rem;
 }
 
-/* line 127, sass/custom/_font_awesome.scss */
 .widget_recent_entries li:before {
-  content: "\f111";
+  content: "\f105";
   color: #cccccc;
-  font-size: 0.1em;
-  margin-right: 2em;
+  margin-right: 0.9375rem;
 }
 
-/* line 134, sass/custom/_font_awesome.scss */
 .widget_categories li:before {
-  content: "\f111";
+  content: "\f105";
   color: #cccccc;
-  font-size: 0.1em;
-  margin-right: 2em;
+  margin-right: 0.9375rem;
 }
 
-/* line 141, sass/custom/_font_awesome.scss */
 .widget_meta li:before {
-  content: "\f111";
+  content: "\f105";
   color: #cccccc;
-  font-size: 0.1em;
-  margin-right: 2em;
+  margin-right: 0.9375rem;
 }
 
-/* line 147, sass/custom/_font_awesome.scss */
 .widget_pages li:before {
-  content: "\f111";
+  content: "\f105";
   color: #cccccc;
-  font-size: 0.1em;
-  margin-right: 2em;
+  margin-right: 0.9375rem;
 }
 
-/* line 153, sass/custom/_font_awesome.scss */
 .powen-wrapper .recent-comment-people:before {
   content: "\f007";
-  font-size: 2.50em;
   color: #454545;
   background: #2F2F2F;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 10px;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  padding-top: 0.625rem;
   border-radius: 50%;
 }
 
-/* line 163, sass/custom/_font_awesome.scss */
 .menu-long-menu-container li:before {
-  content: "\f111";
+  content: "\f105";
   color: #cccccc;
-  font-size: 0.1em;
-  margin-right: 2em;
+  margin-right: 0.9375rem;
 }
 
-/* line 171, sass/custom/_font_awesome.scss */
 .widget_recent_entries li:before {
-  content: "\f111";
+  content: "\f105";
   color: #cccccc;
-  font-size: 0.1em;
-  margin-right: 2em;
+  margin-right: 0.9375rem;
 }
 
-/* line 179, sass/custom/_font_awesome.scss */
-.powen-border-line {
+.entry-header:after, .widget-title:after {
   content: '';
   display: block;
-  width: 60px;
-  height: 1px;
-  margin: 15px auto 23px;
+  width: 3.75rem;
+  height: 0.0625rem;
+  margin: 1.5625rem auto 1.5625rem;
 }
 
-/* line 189, sass/custom/_font_awesome.scss */
 .footer-scroll:before {
   content: "\f106";
   background: rgba(0, 0, 0, 0.46);
   margin: 0;
   position: fixed;
-  bottom: 50px;
-  right: 50px;
-  width: 40px;
+  bottom: 6.25rem;
+  right: 3.125rem;
+  width: 2.5rem;
   text-align: center;
-  height: 35px;
+  height: 2.1875rem;
   z-index: 100;
   text-decoration: none;
   color: #fff;
@@ -2141,195 +1898,45 @@ Write your code here
 /*--------------------------------------------------------------
 16.0 Slider
 --------------------------------------------------------------*/
-/* line 1, sass/site/_slider.scss */
 .flex-prev {
-  font-size: 1.5em;
-  padding: 0px 12px;
+  font-size: 0.875rem;
+  padding: 0 0.75rem;
 }
 
-/* line 5, sass/site/_slider.scss */
 .flex-next {
-  font-size: 1.5em;
-  padding: 0px 12px;
+  font-size: 0.875rem;
+  padding: 0 0.75rem;
 }
 
-/* line 9, sass/site/_slider.scss */
 .flexslider {
   width: 100%;
   overflow: hidden;
   position: relative;
 }
 
-/* line 15, sass/site/_slider.scss */
 .slides li {
   position: relative;
 }
-/* line 18, sass/site/_slider.scss */
 .slides img {
   width: 100%;
 }
 
-/* line 22, sass/site/_slider.scss */
 .powen-slider-content {
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   height: auto;
-  padding: 10px;
+  padding: 0.3125rem;
   background: rgba(0, 0, 0, 0.3);
 }
-/* line 30, sass/site/_slider.scss */
-.powen-slider-content h2 {
+.powen-slider-content h3 {
   color: #ffffff;
+  margin-bottom: 0;
 }
-/* line 33, sass/site/_slider.scss */
 .powen-slider-content p {
   color: #ffffff;
   width: 100%;
 }
 
-/*--------------------------------------------------------------
-17.0 Posts and pages
---------------------------------------------------------------*/
-/* line 1, sass/site/primary/_posts-and-pages.scss */
-.entry-footer {
-  letter-spacing: 1px;
-}
-/* line 3, sass/site/primary/_posts-and-pages.scss */
-.entry-footer .post-share {
-  font-size: 0.6em;
-}
-
-/* line 8, sass/site/primary/_posts-and-pages.scss */
-.featured-img img {
-  display: block;
-}
-
-/* line 13, sass/site/primary/_posts-and-pages.scss */
-.site-main .entry-date {
-  padding-right: 10px;
-}
-
-/* line 18, sass/site/primary/_posts-and-pages.scss */
-.content-area .post-comment {
-  background: red;
-}
-/* line 21, sass/site/primary/_posts-and-pages.scss */
-.content-area .comments-title {
-  text-align: center;
-}
-
-/* line 25, sass/site/primary/_posts-and-pages.scss */
-.posted-on, .byline {
-  padding: 10px;
-}
-
-/* line 29, sass/site/primary/_posts-and-pages.scss */
-.comment-body img {
-  border-radius: 100%;
-}
-/* line 32, sass/site/primary/_posts-and-pages.scss */
-.comment-body .says {
-  display: none;
-}
-/* line 35, sass/site/primary/_posts-and-pages.scss */
-.comment-body .fn {
-  display: block;
-}
-/* line 38, sass/site/primary/_posts-and-pages.scss */
-.comment-body .comment-author img {
-  float: left;
-  margin-right: 10px;
-}
-/* line 42, sass/site/primary/_posts-and-pages.scss */
-.comment-body .comment-metadata {
-  padding-bottom: 10px;
-}
-/* line 45, sass/site/primary/_posts-and-pages.scss */
-.comment-body .reply {
-  text-align: right;
-}
-
-/* line 49, sass/site/primary/_posts-and-pages.scss */
-.comment-respond .logged-in-as a {
-  font-weight: bold;
-}
-
-/* line 53, sass/site/primary/_posts-and-pages.scss */
-.pagination {
-  overflow: hidden;
-  clear: both;
-  position: relative;
-  font-size: 11px;
-}
-
-/* line 59, sass/site/primary/_posts-and-pages.scss */
-.pagination span {
-  display: block;
-  float: left;
-  margin: 2px 2px 2px 0;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  background: #ffffff;
-}
-
-/* line 68, sass/site/primary/_posts-and-pages.scss */
-.pagination .current {
-  width: 55px;
-  height: 47px;
-  border-radius: 3px;
-  text-align: center;
-}
-
-/* line 74, sass/site/primary/_posts-and-pages.scss */
-.pagination a {
-  display: block;
-  float: left;
-  margin: 2px 2px 2px 0;
-  text-decoration: none;
-  padding: 10px;
-  width: 55px;
-  height: 47px;
-  border-radius: 3px;
-  text-align: center;
-  background: #ffffff;
-}
-/* line 85, sass/site/primary/_posts-and-pages.scss */
-.pagination a:hover {
-  border: 1px solid;
-}
-
-/* line 89, sass/site/primary/_posts-and-pages.scss */
-.pagination a, .pagination span {
-  color: #999999;
-  border: 1px solid #999999;
-}
-
-/* line 94, sass/site/primary/_posts-and-pages.scss */
-.pagination .page-previous, .pagination .page-next, .pagination .page-last {
-  padding: 10px;
-  width: 75px;
-  height: 47px;
-}
-
-/* line 101, sass/site/primary/_posts-and-pages.scss */
-.breadcrumbs {
-  list-style: none;
-  overflow: hidden;
-  background: #fff;
-  margin: 0;
-}
-
-/* line 108, sass/site/primary/_posts-and-pages.scss */
-.breadcrumbs li {
-  display: inline-block;
-  margin-right: 1px;
-  padding: 10px;
-}
-
-/* line 113, sass/site/primary/_posts-and-pages.scss */
-.continue-reading {
-  text-align: right;
-}
+/*# sourceMappingURL=style.css.map */

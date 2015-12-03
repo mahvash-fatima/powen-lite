@@ -80,3 +80,5 @@ html[xmlns] .slides {display: block;}
   .flex-direction-nav .flex-prev { opacity: 1; left: 10px;}
   .flex-direction-nav .flex-next { opacity: 1; right: 10px;}
 }
+.flex-direction-nav .flex-prev { display: none; }
+.flex-direction-nav .flex-next { display: none; }
