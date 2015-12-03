@@ -6,6 +6,7 @@ input[type="radio"] {
 input[type="search"] {
 	-webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
 	box-sizing: content-box;
+	background: red;
 }
 
 input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
@@ -38,7 +39,7 @@ input[type="search"] {
 	text-indent: rem-calc(5);
 	height: rem-calc(40);
 	letter-spacing: rem-calc(1);
-	outline: none;
+	outline: 0;
 }
 
 textarea {
@@ -46,6 +47,6 @@ textarea {
 	padding-left: rem-calc(3);
 	vertical-align: top; /* Improves readability and alignment in all browsers */
 	width: 100%;
-	outline: none;
+	outline: 0;
 	font-size: rem-calc(18);
 }

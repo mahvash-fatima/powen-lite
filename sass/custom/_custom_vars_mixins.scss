@@ -22,19 +22,19 @@ $size__site-sidebar: percentage($small_col);
 
 
 // Padding settings
-$default_h_padding: $phi * $phi * $phi * 1rem;
+$default_h_padding: $phi * 1rem;
 $default_v_padding: $default_h_padding;
 
 // Posts and widgets horizontal padding
 $post_l_padding: $default_h_padding;
 $post_r_padding: $post_l_padding;
-$widget_l_padding: $default_h_padding / $phi;
+$widget_l_padding: $default_h_padding;
 $widget_r_padding: $widget_l_padding;
 
 // Posts and widgets vertical padding
-$post_t_padding: $default_h_padding / $phi;
+$post_t_padding: $default_h_padding;
 $post_b_padding: $post_t_padding;
-$widget_t_padding: $default_h_padding / $phi;
+$widget_t_padding: $default_h_padding;
 $widget_b_padding: $widget_t_padding;
 
 
@@ -62,11 +62,11 @@ $font__line-height-body: $phi*1rem;
 $font__line-height-pre: $phi*1rem;
 // /end
 
-$htag_lineheight: 1.3;
+$htag_lineheight: 1.2;
 $htag_weight: 400;
 
 // H tag font sizes 1 through 6
-$htag_sizes: 3, 2.5, 1.5, 1.313, 1.125, 1;
+$htag_sizes: 3, 2.2, 1.5, 1.313, 1.125, 1;
 
 // H tag vertical margins 1 through 6
 $htag_vmargins: 0.563, 0.625, 1.313, 1.313, 1.313, 0.75;
@@ -80,36 +80,15 @@ $htag_vmargins: 0.563, 0.625, 1.313, 1.313, 1.313, 0.75;
 		h#{$i} {
 			$value: nth($htag_sizes, $i);
 			$size: if( ($value * $factor) < 1, 1, $value * $factor );
-			font-size: $size * 1rem;
 			margin-bottom: ( nth($htag_vmargins, $i) * 1rem );
 		}
 	}
-	// Set H1 widget titles default size
-	.widget-title {
-		$default: nth($htag_sizes, 4);
-		$size: if( ($default * $factor) < 1, 1, $default * $factor );
-		font-size: $size * 1.5rem;
-		text-align: center;
-	}
-	//Set H1 site title default size
-	.site-branding .site-title {
-		$default: nth($htag_sizes, 4);
-		$size: if( ($default * $factor) > 1, 1, $default * $factor );
-		font-size: $size * 3rem;
-	}
-	//Set H2 site description default size
-	.site-branding .site-description {
-		$default: nth($htag_sizes, 4);
-		$size: if( ($default * $factor) > 1, 1, $default * $factor );
-		font-size: $size * 1.5rem;
-	}
-
 }
 
 //---------------THEME COLORS-------------
 $color_link_date_default:						#aaaaaa;
 $color_text_on_dark_background_default:		    #ffffff;
-$color__powen-slider-content-background: 		rgba(0,0,0,0.3);
+$color__powen-slider-content-background: 		rgba(0, 0, 0, 0.3);
 $color_border_default:    						#f2f2f2;
 $color_border:									#cccccc;
 $color_site_navigation_background:				#ffffff;
@@ -125,7 +104,7 @@ $color_text_secondary: 							#565656;
 
 //Footer Colors
 $color__footer_background:      				#cccccc;
-$color__powen-footer-widgets_background: 			 	#f2f2f2;
+$color__powen-footer-widgets_background: 	    #f2f2f2;
 
 
 // DEFAULT _S "COLORS" VARS
@@ -223,10 +202,10 @@ $color__border-abbr: 							#666;
 @mixin child_menu_item(){
 	a, a:link, a:visited {
 		border: 0;
-		border-top: 2*$px solid $color__top-most-menu-border;
+		border-top: 2*$px solid $color__primary-menu-border;
 	}
 	a:hover {
-	background-color: $color__top-most-menu-background-hover;
+	background-color: $color__primary-menu-background-hover;
 	color: $color_theme_default;
 	}
 }

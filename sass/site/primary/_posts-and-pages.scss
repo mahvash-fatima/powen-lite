@@ -12,8 +12,10 @@
 	right: 0;
 	color: #fff;
 	span {
-		padding: rem-calc(0 20);
+		padding: rem-calc(0 10);
 		display: inline-block;
+		font-size: rem-calc(15);
+		text-transform: uppercase;
 	}
 }
 

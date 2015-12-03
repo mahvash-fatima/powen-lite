@@ -41,7 +41,7 @@ add_filter('widget_tag_cloud_args', 'powen_set_tag_cloud_sizes');
 function powen_change_read_more( $more )
 {
 	global $post;
-	return '<div class="powen-continue-reading"><a class="moretag" href="' . get_permalink($post->ID) . '">'.__('Continue Reading', 'powen-lite') . '</a></div>';
+	return '<div class="powen-continue-reading"><a class="moretag" href="' . get_permalink($post->ID) . '">'.esc_textarea( powen_mod( 'continue_reading_textbox', 'Continue Reading' ), 'powen-lite' ) . '</a></div>';
 }
 
 add_filter('excerpt_more', 'powen_change_read_more');

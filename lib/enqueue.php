@@ -45,11 +45,11 @@ if ( ! function_exists( 'powen_enqueue_styles' ) ) :
 
 		wp_enqueue_style('powen-flexslider');
 
-		wp_enqueue_style( 'powen-style', get_stylesheet_uri() );
-
 		wp_enqueue_style( 'powen-animate');
 
 		wp_enqueue_style( 'powen-hover');
+
+		wp_enqueue_style( 'powen-style', get_stylesheet_uri() );
 
 	}
 

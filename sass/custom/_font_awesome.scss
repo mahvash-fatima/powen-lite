@@ -1,11 +1,7 @@
 /*------------------
 FontAwesome
 ---------------------*/
-	//HEADER
-	.powen-top-most-nav .mm:before,
-	.powen-main-navigation .m:before,
-	.powen-search-box-top .search-form label:after,
-	//PRIMARY ICONS
+	//CONTENT ICONS
 	.posted-on:before,
 	.comments-link:before,
 	.edit-link:before,
@@ -18,7 +14,7 @@ FontAwesome
 	.powen-continue-reading:after,
 	.breadcrumbs .separator:after,
 	.tags-links:before,
-	//SECONDARY ICONS
+	//SIDEBAR ICONS
 	.widget_recent_comments li:before,
 	.widget_recent_comments li>a:before,
 	.widget_archive li:before,
@@ -32,7 +28,7 @@ FontAwesome
 	.entry-header:after,
 	.widget-title:after,
 	.footer-scroll:before,
-	.powen-pro-mobile-menu .mm:before
+	.powen-pro-mobile-menu .mm:before,
 {
 font-family: 'FontAwesome';
 font-weight: normal;
@@ -51,19 +47,6 @@ transform: translate(0, 0);
 /**---------------
 Write your code here
 --------------------**/
-
-//HEADER
-.powen-top-most-nav .mm:before, .powen-main-navigation .m:before, .powen-pro-mobile-menu .mm:before {
-	content: "\f0c9";
-}
-
-.powen-search-box-top .search-form label:after {
-	content: "\f002";
-	position: absolute;
-	right: rem-calc(20);
-	top: 0;
-	color: #cdcdcd;
-}
 
 //PRIMARY ICONS
 

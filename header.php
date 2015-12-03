@@ -25,14 +25,9 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="powen-wrapper clear">
 
-		<?php do_action( 'powen_header_top_most' ); ?>
+		<?php do_action( 'powen_header_primary' ); ?>
 
 			<?php get_template_part( 'template-parts/top-most' ); ?>
-
-			<!-- Main menu -->
-			<nav id="main-nav">
-				<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'menu_class'=>'powen-wrapper', 'menu_id' => 'main_nav') ); ?>
-			</nav>
 
 			<?php do_action( 'powen_before_site_branding' ); ?>
 			<div class="site-branding">

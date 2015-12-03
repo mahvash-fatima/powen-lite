@@ -46,6 +46,30 @@
 		} );
 	} );
 
+	wp.customize( 'powen_mod[primary_menu_background_color]', function( value ) {
+		value.bind( function( newval ) {
+			$('#mm-powen-primary-nav').css('background-color', newval );
+		} );
+	} );
+
+	wp.customize( 'powen_mod[primary_menu_color]', function( value ) {
+		value.bind( function( newval ) {
+			$('#mm-powen-primary-nav').css('color', newval );
+		} );
+	} );
+
+	wp.customize( 'powen_mod[main_menu_background_color]', function( value ) {
+		value.bind( function( newval ) {
+			$('#mm-powen_secondary_nav').css('background-color', newval );
+		} );
+	} );
+
+	wp.customize( 'powen_mod[main_menu_color]', function( value ) {
+		value.bind( function( newval ) {
+			$('#mm-powen_secondary_nav').css('color', newval );
+		} );
+	} );
+
 	wp.customize( 'powen_mod[powen-footer-widgets_background]', function( value ) {
 		value.bind( function( newval ) {
 			$('.powen-footer-widgets').css('background-color', newval );
