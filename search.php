@@ -30,7 +30,7 @@ get_header(); ?>
 			<div class="article-hentry">
 
 			<header class="page-header">
-				<h2 class="page-title"><?php printf( __( 'Search Results for: %s', 'powen' ), '<span>' . get_search_query() . '</span>' ); ?></h2>
+				<h2 class="page-title"><?php printf( __( 'Search Results for: %s', 'powen-lite' ), '<span>' . get_search_query() . '</span>' ); ?></h2>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>

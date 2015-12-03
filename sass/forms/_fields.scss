@@ -46,4 +46,6 @@ textarea {
 	padding-left: rem-calc(3);
 	vertical-align: top; /* Improves readability and alignment in all browsers */
 	width: 100%;
+	outline: none;
+	font-size: rem-calc(18);
 }

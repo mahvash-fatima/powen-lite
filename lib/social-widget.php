@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Adds Foo_Widget widget.
+ * Adds Footer_Widget widget.
  */
 class Powen_Social_Widget extends WP_Widget {
 
@@ -11,8 +11,8 @@ class Powen_Social_Widget extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'powen_social_widget', // Base ID
-			__( 'Powen Social Widget', 'powen' ), // Name
-			apply_filters('powen_social_widget_description', array( 'description' => __( 'Shows Widget for social icons', 'powen' ), ) ) // Args
+			__( 'Powen Social Widget', 'powen-lite' ), // Name
+			apply_filters('powen_social_widget_description', array( 'description' => __( 'Shows Widget for social icons', 'powen-lite' ), ) ) // Args
 		);
 	}
 
@@ -41,7 +41,7 @@ class Powen_Social_Widget extends WP_Widget {
 	 * @param array $instance Previously saved values from database.
 	 */
 	public function form( $instance ) {
-		$title = ! empty( $instance['title'] ) ? $instance['title'] : __( 'New title', 'powen' );
+		$title = ! empty( $instance['title'] ) ? $instance['title'] : __( 'New title', 'powen-lite' );
 		?>
 
 		<?php
@@ -64,11 +64,16 @@ class Powen_Social_Widget extends WP_Widget {
 		return $instance;
 	}
 
-} // class Foo_Widget
+} // class Footer_Widget
 
 
-// register Foo_Widget widget
-function powen_register_social_widget() {
-    register_widget( 'Powen_Social_Widget' );
-}
+// register social widget in footer
+if( ! function_exists( 'powen_register_social_widget' ) ) :
+
+	function powen_register_social_widget() {
+	    register_widget( 'Powen_Social_Widget' );
+	}
+
+endif;//powen_register_social_widget
+
 add_action( 'widgets_init', 'powen_register_social_widget' );

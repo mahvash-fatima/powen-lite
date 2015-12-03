@@ -4,11 +4,11 @@ Theme URI: http://supernovathemes.com/powen-theme/
 Author: Mahvash Fatima
 Author URI: http://supernovathemes.com
 Description: Powen Lite has been specially designed for blogging websites however due to its clean design and plenty of customization options, it can easily be customized for any purpose.
-Version: 1.2.1
+Version: 1.2.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: powen
-Tags: black, yellow, light, fluid-layout, responsive-layout, left-sidebar, right-sidebar, custom-background, custom-menu, custom-colors, featured-images, flexible-header, theme-options, translation-ready, threaded-comments, one-column, two-columns
+Text Domain: powen-lite
+Tags: black, yellow, light, fluid-layout, responsive-layout, left-sidebar, right-sidebar, custom-background, custom-menu, custom-colors, featured-images, flexible-header, theme-options, editor-style, translation-ready, threaded-comments, one-column, two-columns
 
 Powen Lite WordPress Theme is based on Underscores http://underscores.me/, Copyright (C) 2015, Supernova Themes
 Powen Lite WordPress theme is licensed under the GPL.
@@ -375,6 +375,8 @@ textarea {
   vertical-align: top;
   /* Improves readability and alignment in all browsers */
   width: 100%;
+  outline: none;
+  font-size: 1.125rem;
 }
 
 /*--------------------------------------------------------------
@@ -983,6 +985,10 @@ object {
   word-wrap: break-word;
 }
 
+#wp-admin-bar-powen-admin-menu a.ab-item {
+  color: #00A0D2;
+}
+
 body {
   background-color: #f5f5f5;
 }
@@ -1109,7 +1115,6 @@ h6 {
 }
 
 .site-header {
-  width: 100%;
   background-color: #fff;
 }
 
@@ -1149,10 +1154,6 @@ h1.site-title {
   background-color: #ffffff;
 }
 
-.powen-most-recent-post {
-  margin-top: 1.618rem;
-}
-
 .article-hentry {
   margin: 0 0 1.618rem 0;
 }
@@ -1163,6 +1164,10 @@ h1.site-title {
 
 .powen-recent-post {
   margin-top: 1.618rem;
+  background: #ffffff;
+}
+.powen-recent-post .powen-wrapper {
+  max-width: 56.25rem;
 }
 
 .powen-pagination {
@@ -1208,7 +1213,6 @@ h1.site-title {
 .entry-meta {
   display: inline-block;
   font-weight: 300;
-  font-size: 0.875rem;
 }
 .entry-meta a, .entry-meta a:visited, .entry-meta a:active {
   color: inherit;
@@ -1701,9 +1705,7 @@ FontAwesome
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-transform: translate(0, 0);
-      -ms-transform: translate(0, 0);
-          transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 /**---------------
@@ -1721,7 +1723,7 @@ Write your code here
   color: #cdcdcd;
 }
 
-.posted-on:before {
+.posted-on:before, .comment-metadata time:before {
   content: "\f017";
   padding: 0.3125rem;
 }
@@ -1757,8 +1759,6 @@ Write your code here
 }
 
 .comment-metadata time:before {
-  content: "\f017";
-  padding: 0.3125rem;
   padding-left: 0;
 }
 
@@ -1777,34 +1777,10 @@ Write your code here
   display: none;
 }
 
-.widget_archive li:before {
+.widget_archive li:before, .widget_recent_entries li:before, .widget_categories li:before, .widget_meta li:before, .widget_pages li:before, .menu-long-menu-container li:before, .widget_recent_entries li:before {
   content: "\f105";
   color: #cccccc;
-  margin-right: 0.9375rem;
-}
-
-.widget_recent_entries li:before {
-  content: "\f105";
-  color: #cccccc;
-  margin-right: 0.9375rem;
-}
-
-.widget_categories li:before {
-  content: "\f105";
-  color: #cccccc;
-  margin-right: 0.9375rem;
-}
-
-.widget_meta li:before {
-  content: "\f105";
-  color: #cccccc;
-  margin-right: 0.9375rem;
-}
-
-.widget_pages li:before {
-  content: "\f105";
-  color: #cccccc;
-  margin-right: 0.9375rem;
+  padding-right: 0.625rem;
 }
 
 .powen-wrapper .recent-comment-people:before {
@@ -1815,18 +1791,6 @@ Write your code here
   padding-left: 0.625rem;
   padding-top: 0.625rem;
   border-radius: 50%;
-}
-
-.menu-long-menu-container li:before {
-  content: "\f105";
-  color: #cccccc;
-  margin-right: 0.9375rem;
-}
-
-.widget_recent_entries li:before {
-  content: "\f105";
-  color: #cccccc;
-  margin-right: 0.9375rem;
 }
 
 .entry-header:after, .widget-title:after {
@@ -1857,6 +1821,10 @@ Write your code here
 /*--------------------------------------------------------------
 16.0 Slider
 --------------------------------------------------------------*/
+.flexslider img {
+  height: auto;
+}
+
 .flex-prev {
   font-size: 0.875rem;
   padding: 0 0.75rem;

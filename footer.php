@@ -50,11 +50,11 @@
 		<div class="powen-wrapper">
 			<div class="powen-footer-site-info">
 				<?php do_action( 'powen_footer_site_info_begins' ); ?>
-			    <?php echo apply_filters( 'powen_copyright_date_text', esc_attr( '(C)', 'powen' ) ); ?><?php echo apply_filters( 'powen_footer_copyright_date', __( date('Y') ) ); ?>
+			    <?php echo apply_filters( 'powen_copyright_date_text', esc_attr( '(C)', 'powen-lite' ) ); ?><?php echo apply_filters( 'powen_footer_copyright_date', __( date('Y'), 'powen-lite' ) ); ?>
 
 				<?php if( powen_mod( 'copyright_textbox' ) !== '' ) { ?>
 			    <a href="<?php echo apply_filters( 'powen_copyright_text_url', esc_url( home_url('/') ) ); ?>" class="powen-copyright" title="<?php echo apply_filters( 'powen_copyright_text', esc_attr( get_bloginfo('name', 'display') ) ); ?>">
-			        <?php echo esc_textarea( powen_mod( 'copyright_textbox' ), 'powen' ); ?>
+			        <?php echo esc_textarea( powen_mod( 'copyright_textbox' ), 'powen-lite' ); ?>
 			    </a>
 			    <?php } ?>
 
@@ -62,7 +62,7 @@
 
 				<?php
 					$footerUrl = esc_url( 'http://supernovathemes.com' );
-					printf( __( '%1$s by %2$s.', 'powen' ), 'Powen', '<a href= '.apply_filters( 'powen_theme_url', $footerUrl ).' class="powen-site" rel="designer">'.powen_mod('theme_author', 'Supernova Themes').'</a>' );
+					printf( __( '%1$s by %2$s.', 'powen-lite' ), 'Powen', '<a href= '.apply_filters( 'powen_theme_url', $footerUrl ).' class="powen-site" rel="designer">'.powen_mod('theme_author', 'Supernova Themes').'</a>' );
 				?>
 
 				<?php do_action( 'powen_footer_site_info_ends' ); ?>
