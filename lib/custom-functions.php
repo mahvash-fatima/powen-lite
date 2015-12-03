@@ -11,7 +11,8 @@ if( ! function_exists( 'powen_mod' ) ) :
 	function powen_mod( $key , $default = false )
 	{
 		$powen_mod = get_theme_mod('powen_mod' );
-		$saved_value = isset($powen_mod[$key]) && $powen_mod[$key] ? $powen_mod[$key] : $default;
+
+		$saved_value = isset($powen_mod[$key]) ? $powen_mod[$key] : $default;
 
 		$keys_to_be_escaped = apply_filters('powen_key_to_be_escaped_array', array(
 			'theme_font',
@@ -155,13 +156,14 @@ if( ! function_exists( 'powen_content' ) ) :
 
 	function powen_content()
 	{
-		if(powen_mod('content_length') == 'full') {
+		if(powen_mod('content_length', 'excerpt') == 'full') {
 			the_content();
 		}
 		else{
 			the_excerpt();
 		}
 	}
+
 endif; //powen_content
 
 if( ! function_exists( 'powen_custom_admin_head' ) ) :
@@ -186,3 +188,30 @@ if( ! function_exists( 'powen_cutomizer_option_css' ) ) :
 endif; //powen_cutomizer_option_css
 
 add_action( 'wp_head', 'powen_cutomizer_option_css' );
+
+//Post Tags
+if( ! function_exists( 'powen_post_tags' ) ) :
+
+	function powen_post_tags() {
+		if( powen_mod('post_tags') == 1 ) {
+			echo "<style> .entry-footer .tags-links {display: none;} </style>";
+		}
+	}
+
+endif; //powen_post_tags
+
+add_action( 'wp_head', 'powen_post_tags' );
+
+
+//Post Categories
+if( ! function_exists( 'powen_post_categories' ) ) :
+
+	function powen_post_categories() {
+		if( powen_mod('post_categories') == 1 ) {
+			echo "<style> .entry-footer .cat-links {display: none;} </style>";
+		}
+	}
+
+endif; //powen_post_categories
+
+add_action( 'wp_head', 'powen_post_categories' );

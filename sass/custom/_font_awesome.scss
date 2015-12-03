@@ -16,6 +16,8 @@ FontAwesome
 	.cat-links:before,
 	.comment-metadata time:before,
 	.powen-continue-reading:after,
+	.breadcrumbs .separator:after,
+	.tags-links:before,
 	//SECONDARY ICONS
 	.widget_recent_comments li:before,
 	.widget_recent_comments li>a:before,
@@ -95,6 +97,10 @@ Write your code here
 	padding: rem-calc(5);
 }
 .cat-links:before {
+	content: "\f0ca";
+	padding: rem-calc(5);
+}
+.tags-links:before {
 	content: "\f02c";
 	padding: rem-calc(5);
 }
@@ -103,6 +109,11 @@ Write your code here
 }
 .powen-continue-reading:after {
 	content: "\f178";
+}
+.breadcrumbs .separator:after {
+	content: "\f105";
+    color: #cccccc;
+    padding-right: rem-calc(5);
 }
 
 //SECONDARY ICONS
@@ -141,6 +152,9 @@ Write your code here
    margin: rem-calc(25) auto rem-calc(25);
 }
 
+.widget-title:after {
+	margin: rem-calc(15) auto rem-calc(15);
+}
 
 //Back To Top
 .footer-scroll:before {

@@ -25,8 +25,10 @@ class Powen_Customizer_Front extends Powen_Customizer
 
 	public static function custom_css()
 	{
+		do_action( 'powen_lite_custom_css_begin' );
+
 		self::create_color_scheme();
-	    self::generate_css( 'body', 'font-family', 'theme_font', '"', '"', "Open Sans" );
+		self::generate_css( 'body', 'font-family', 'theme_font', '"', '"', "Open Sans" );
 	    self::generate_css('.site-title a', 'color', 'header_textcolor', '');
 	    self::generate_css('.site-description', 'color', 'header_taglinecolor');
 	    self::generate_css('body', 'background-color', 'background_color', '');
@@ -37,9 +39,13 @@ class Powen_Customizer_Front extends Powen_Customizer
 	    self::generate_css('.site-info a', 'color', 'footer_bottom_textcolor');
 	    self::generate_css('.site-info', 'color', 'footer_bottom_textcolor');
 	    self::generate_css('.site-info', 'background-color', 'footer_bottom_background_color');
-	    self::powen_title_layout();
-	    self::powen_logo_placement();
-	    self::powen_sidebar_layout();
+	    self::title_layout();
+	    self::logo_placement();
+	    self::sidebar_layout();
+	    self::fixed_slider_content();
+	    self::header_search_bar();
+
+	    do_action( 'powen_lite_custom_css_end' );
 	}
 
 	/**
@@ -90,7 +96,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 	    }
 	}
 
-	public static function powen_title_layout() {
+	public static function title_layout() {
 	    $powen_header_text_position = powen_mod( 'header_text_placement' );
 	    if( $powen_header_text_position ) {
 	        switch ( $powen_header_text_position ) {
@@ -108,7 +114,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 	    }
 	}
 
-	public static function powen_logo_placement() {
+	public static function logo_placement() {
 	  $powen_logo_position = powen_mod( 'logo_placement' );
 	  if( $powen_logo_position ) {
 	      switch ( $powen_logo_position ) {
@@ -126,7 +132,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 	  }
 	}
 
-	public static function powen_sidebar_layout() {
+	public static function sidebar_layout() {
 
 		$sidebar_position = powen_mod('sidebar_position');
 
@@ -151,6 +157,19 @@ class Powen_Customizer_Front extends Powen_Customizer
 
 	}
 
+	public static function fixed_slider_content() {
+		if( powen_mod('fixed_slider_content') == 1 ) {
+			echo ".powen-slider-content.animated.slideInUp { opacity: 1; visibility: visible; }";
+			echo ".flexslider li:hover .slideInUp { animation-name: initial; }";
+		}
+	}
+
+	public static function header_search_bar() {
+		if( powen_mod('hide_header_search_bar') == 1 ) {
+			echo ".powen-search-box-top { display: none; }";
+		}
+	}
+
 	public static function create_color_scheme() {
 
 		//=====================
@@ -161,6 +180,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 		$color_selectors = apply_filters('powen_create_color_scheme_array', array (
 			'p a',
 			'.cat-links:before',
+			'.tags-links:before',
 			'.comments-link:before',
 			'.edit-link:before',
 			'.author:before',
@@ -210,7 +230,6 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'a:active',
 			'.breadcrumbs li a:hover',
 			'p a:hover',
-			'.current-menu-item > a:hover'
 		) );
 
 		//background should change on hover.
@@ -223,16 +242,17 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'input[type="button"]:hover',
 			'input[type="reset"]:hover',
 			'input[type="submit"]:hover',
+			'.hvr-underline-from-center:before',
+			'.hvr-sweep-to-right:before',
+			'.hvr-shutter-out-horizontal:before',
 		) );
 
 		// border color (on hover)
 		$border_color_hover_selectors = apply_filters('powen_border_color_hover_selectors_array', array(
-			'.widget-area .tagcloud a:hover',
 			'.powen-pagination a:hover',
 			'.powen-pagination .next:hover',
 			'.powen-pagination .prev:hover',
 			'.powen-pagination .last:hover',
-			'.widget_powen_social_widget ul li a:hover',
 		) );
 
 		self::generate_css( $color_hover_selectors, 'color', 'hover_link_color', false, false, '#dd9933' );

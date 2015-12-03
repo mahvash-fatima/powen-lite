@@ -183,7 +183,7 @@ $color__border-abbr: 							#666;
 }
 
 @mixin entry_footer(){
-	border-top: 2*$px solid $color__background-body;
+	border-top: 2*$px solid #F8F8F8;
 }
 
 @mixin comment(){

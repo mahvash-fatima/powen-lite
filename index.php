@@ -13,9 +13,11 @@
 
 $first_post_id = false;
 
+$show_latest_post = powen_mod( 'show_latest_post', 1 );
+
 get_header(); ?>
 
-<?php if( get_query_var( 'paged' ) === 0 ) { ?>
+<?php if( $show_latest_post && get_query_var( 'paged' ) === 0 ) { ?>
 	<div id="powen-latest-post" class="powen-recent-post">
 		<div class="powen-wrapper">
 
@@ -37,9 +39,7 @@ get_header(); ?>
 
 		?>
 
-			<?php endwhile; else : ?>
-
-			<p><?php echo __( 'Sorry, no posts matched your criteria.', 'powen-lite' ); ?></p>
+			<?php endwhile; ?>
 
 			<?php endif; wp_reset_postdata(); ?>
 
@@ -61,7 +61,7 @@ get_header(); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php
-					if( get_the_ID() === $first_post_id ) {
+					if( $show_latest_post && get_the_ID() === $first_post_id ) {
 						continue;
 					}
 					?>
@@ -78,9 +78,10 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 
-				<?php do_action( 'powen_before_pagination' ); ?>
-
-				<?php powen_pagination(); ?><!-- Pagination -->
+				<?php
+					 do_action( 'powen_before_pagination' );
+					 powen_pagination(); //pagination
+				 ?>
 
 				<!-- To reset custom loop -->
 				<?php wp_reset_postdata(); ?>

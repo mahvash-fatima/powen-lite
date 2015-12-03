@@ -72,15 +72,21 @@ ul, ol {
 
 //Slider
 .flexslider h6 {
-	line-height: 1.5;
+	line-height: 1.2;
 	color: #fff;
 	margin: rem-calc(10 0);
-	font-size: rem-calc(14);
+	font-size: rem-calc(20);
 }
 .flexslider p {
-	font-size: rem-calc(11);
-	line-height: 1.5;
+	font-size: rem-calc(18);
+	line-height: 1.2;
 	margin-bottom: rem-calc(30);
+}
+
+.hvr-back-pulse:hover,
+.hvr-back-pulse:focus,
+.hvr-back-pulse:active {
+	background-color: none;
 }
 
 // **-----
@@ -93,13 +99,17 @@ ul, ol {
 }
 
 .site-branding {
-	padding-top: $default_gutter;
-	padding-bottom: $default_gutter;
+	padding: rem-calc(15);
 	text-align: center;
+}
+
+.site-description {
+	margin-bottom: 0;
 }
 
 h1.site-title {
 	font-weight: 700;
+	margin-bottom: 0;
 }
 
 .site-title, .site-description {
@@ -144,10 +154,6 @@ h1.site-title {
 
 .powen-recent-post {
 	margin-top: $default_gutter;
-	background: #ffffff;
-	.powen-wrapper {
-		max-width: rem-calc(900);
-	}
 }
 
 .powen-pagination {
@@ -221,12 +227,15 @@ h1.site-title {
 
 .entry-footer {
 	margin: $post_b_padding 0 $post_b_padding / $phi 0;
-	line-height: 3em;
+	line-height: 1rem;
 	text-align: center;
 	span {
 		margin: rem-calc(5);
 		padding: rem-calc(5);
 		display: inline-block;
+	}
+	.tags-links a {
+		line-height: 2;
 	}
 	@include entry_footer();
 }
@@ -292,7 +301,13 @@ h1.site-title {
 
 }
 
+.comments-area .comment-form p label {
+	display: inline-block;
+	min-width: rem-calc(100);
+}
+
 .powen-nav {
+	padding: rem-calc(15 0);
 	.search-form {
 		.search-submit {
 			display: none;
@@ -302,7 +317,7 @@ h1.site-title {
 			height: auto;
 			letter-spacing: 1px;
 			border: none;
-			border-bottom: 1px solid #ccc;
+			border-bottom: 1px solid #F8F8F8;
 		}
 	}
 }
@@ -311,8 +326,8 @@ h1.site-title {
 	width: 100%;
 }
 
-.powen-nav {
-	padding: $default_gutter 0;
+.widget_search input {
+	border: 1px solid #F8F8F8;
 }
 
 .powen-pro-mobile-menu-container, .powen-top-most-nav, .powen-main-navigation, .powen-search-box-top, .powen-social-icon{
@@ -328,6 +343,7 @@ h1.site-title {
 
 .powen-search-box-top {
 	float: right;
+	font-size: rem-calc(14);
 	.search-form {
 		position: relative;
 		padding: rem-calc(0 10);
@@ -350,6 +366,10 @@ h1.site-title {
 	margin: 0 1% 0 0;
 	width: 24%;
 	padding: 1%;
+}
+
+.powen-footer-widgets .widget_search input {
+	border: 1px solid #565656;
 }
 
 //colors
@@ -379,7 +399,7 @@ h1.site-title {
 @media (max-width: rem-calc(1125)) {
 
 	// Output headings at smaller size
-	@include htags(0.7);
+	@include htags(0.8);
 
 	// redeclare variables to be smaller
 	$default_h_padding: $phi * $phi * 1rem;
@@ -466,7 +486,7 @@ h1.site-title {
 
 @media (max-width: rem-calc(600)) {
 
-	@include htags(0.5);
+	@include htags(0.7);
 
 	.flexslider .flex-direction-nav .flex-next, .flexslider .flex-direction-nav .flex-prev {
 		display: none;
@@ -475,7 +495,7 @@ h1.site-title {
 
 @media (max-width: rem-calc(400)) {
 
-	@include htags(0.4);
+	@include htags(0.7);
 
 	// redeclare variables to be smaller
 	$default_h_padding: $phi * 1rem;
@@ -516,7 +536,7 @@ h1.site-title {
 	}
 
 	.flexslider {
-		@include htags(0.6);
+		@include htags(0.5);
 	}
 	.flexslider h6 {
 		line-height: 1;

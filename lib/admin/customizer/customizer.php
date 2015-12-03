@@ -29,7 +29,7 @@ class Powen_Customizer {
       ===============================*/
 
       $wp_customize->add_section( 'powen_css_section' , array(
-          'title'      =>  __( 'CSS', 'powen-lite' ),
+          'title'      =>  __( 'Custom CSS', 'powen-lite' ),
           'capability' => 'edit_theme_options',
       ) );
 
@@ -46,15 +46,81 @@ class Powen_Customizer {
       ) ) );
 
       /*==============================
-        CONTENT
+                  CONTENT
       ===============================*/
-
-      $wp_customize->add_section( 'powen_content_section' , array(
-          'title'      =>  __( 'Content', 'powen-lite' ),
-          'capability' => 'edit_theme_options',
+      $wp_customize->add_panel( 'powen_content_pannel', array(
+          'priority'       => 10,
+          'capability'     => 'edit_theme_options',
+          'title'          => __( 'Content Options', 'powen-lite' ),
       ) );
 
-      //Full content or Excerpt
+      //Show Latest Post
+
+      $wp_customize->add_section( 'powen_latest_post_section' , array(
+          'title'      =>  __( 'Latest Post', 'powen-lite' ),
+          'capability' => 'edit_theme_options',
+          'panel'      => 'powen_content_pannel',
+      ) );
+
+      $wp_customize->add_setting( 'powen_mod[show_latest_post]', array(
+          'sanitize_callback' => 'sanitize_text_field',
+          'capability'        => 'edit_theme_options',
+      ) );
+
+      $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[show_latest_post]', array(
+          'label'    =>   __( 'Show Latest Post in full width', 'powen-lite' ),
+          'type'     => 'checkbox',
+          'section'  =>  'powen_latest_post_section',
+          'settings' =>  'powen_mod[show_latest_post]',
+      ) ) );
+
+      //Post Tags
+
+      $wp_customize->add_section( 'powen_post_tags_section' , array(
+          'title'      =>  __( 'Post Tags', 'powen-lite' ),
+          'capability' => 'edit_theme_options',
+          'panel'      => 'powen_content_pannel',
+      ) );
+
+      $wp_customize->add_setting( 'powen_mod[post_tags]', array(
+          'sanitize_callback' => 'sanitize_text_field',
+          'capability'        => 'edit_theme_options',
+      ) );
+
+      $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[post_tags]', array(
+          'label'    =>   __( 'Hide Post Tags', 'powen-lite' ),
+          'type'     => 'checkbox',
+          'section'  =>  'powen_post_tags_section',
+          'settings' =>  'powen_mod[post_tags]',
+      ) ) );
+
+      //Post Categories
+      $wp_customize->add_section( 'powen_post_categories_section' , array(
+          'title'      =>  __( 'Post Categories', 'powen-lite' ),
+          'capability' => 'edit_theme_options',
+          'panel'      => 'powen_content_pannel',
+      ) );
+
+      $wp_customize->add_setting( 'powen_mod[post_categories]', array(
+          'sanitize_callback' => 'sanitize_text_field',
+          'capability'        => 'edit_theme_options',
+      ) );
+
+      $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[post_categories]', array(
+          'label'   =>   __( 'Hide Post Categories', 'powen-lite' ),
+          'type'    => 'checkbox',
+          'section'  =>  'powen_post_categories_section',
+          'settings' =>  'powen_mod[post_categories]',
+      ) ) );
+
+      //Full content
+
+      $wp_customize->add_section( 'powen_excerpt_section' , array(
+          'title'      =>  __( 'Content Length', 'powen-lite' ),
+          'capability' => 'edit_theme_options',
+          'panel'      => 'powen_content_pannel',
+      ) );
+
       $wp_customize->add_setting( 'powen_mod[content_length]', array(
           'default'           => 'excerpt',
           'sanitize_callback' => 'powen_sanitize_choices',
@@ -62,16 +128,29 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[content_length]', array(
-          'label'   =>   __( 'Content Length', 'powen-lite' ),
+          'label'   =>   __( 'Show Content', 'powen-lite' ),
           'type'    =>  'radio',
           'choices' =>  array(
             'full'    => __( 'full', 'powen-lite' ),
             'excerpt' => __( 'excerpt', 'powen-lite' ),
           ),
-          'section'  =>  'powen_content_section',
+          'section'  =>  'powen_excerpt_section',
           'settings' =>  'powen_mod[content_length]',
       ) ) );
 
+      //Excerpt Length
+      $wp_customize->add_setting( 'powen_mod[excerpt_range]', array(
+          'default'           => '50',
+          'capability'        => 'edit_theme_options',
+          'sanitize_callback' => 'sanitize_text_field',
+      ) );
+
+      $wp_customize->add_control( new WP_Customize_Control ( $wp_customize, 'powen_mod[excerpt_range]', array(
+      'type'        => 'text',
+      'section'     => 'powen_excerpt_section',
+      'label'       => __( 'Excerpt Length', 'powen-lite' ),
+      'description' => __( 'Make sure you have selected <strong>excerpt</strong>. Write only <strong>numbers</strong> in textbox and not <strong>px</strong>. It should not be less than <strong>50</strong>', 'powen-lite' ),
+      ) ) );
 
       //Hide author
 
@@ -83,7 +162,7 @@ class Powen_Customizer {
       $wp_customize->add_control( new WP_Customize_Control ( $wp_customize, 'powen_mod[hide_author]', array(
           'label'   => __('Hide The Author of The Post', 'powen-lite'),
           'type'    => 'checkbox',
-          'section' => 'powen_content_section',
+          'section' => 'powen_display_section',
       ) ) );
 
       //Hide date
@@ -96,10 +175,36 @@ class Powen_Customizer {
       $wp_customize->add_control( new WP_Customize_Control ( $wp_customize, 'powen_mod[hide_date]', array(
           'label'   => __('Hide The Date of The Post', 'powen-lite'),
           'type'    => 'checkbox',
-          'section' => 'powen_content_section',
+          'section' => 'powen_display_section',
       ) ) );
 
+      //Hide Search Header Search Bar
+      $wp_customize->add_section( 'powen_hide_header_search_bar_section' , array(
+          'title'      =>  __( 'Header Search Bar', 'powen-lite' ),
+          'capability' => 'edit_theme_options',
+          'panel'      => 'powen_content_pannel',
+      ) );
+
+      $wp_customize->add_setting( 'powen_mod[hide_header_search_bar]', array(
+          'sanitize_callback' => 'sanitize_text_field',
+          'capability'        => 'edit_theme_options',
+      ) );
+
+      $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[hide_header_search_bar]', array(
+          'label'    =>   __( 'Hide Header Search Bar', 'powen-lite' ),
+          'type'     => 'checkbox',
+          'section'  =>  'powen_hide_header_search_bar_section',
+          'settings' =>  'powen_mod[hide_header_search_bar]',
+      ) ) );
+
+
       //COPYRIGHT TEXT
+
+      $wp_customize->add_section( 'powen_modify_text_section' , array(
+          'title'      =>  __( 'Modify Text', 'powen-lite' ),
+          'capability' => 'edit_theme_options',
+          'panel'      => 'powen_content_pannel',
+      ) );
 
       $wp_customize->add_setting( 'powen_mod[copyright_textbox]', array(
           'default'           => __( '@copyright', 'powen-lite' ),
@@ -109,7 +214,7 @@ class Powen_Customizer {
 
       $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[copyright_textbox]', array(
           'label'    => __( 'Copyright Text', 'powen-lite' ),
-          'section'  => 'powen_content_section',
+          'section'  => 'powen_modify_text_section',
           'settings' => 'powen_mod[copyright_textbox]',
       ) ) );
 
@@ -123,7 +228,7 @@ class Powen_Customizer {
 
       $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[theme_author]', array(
           'label'    => __( "Author's Name", 'powen-lite' ),
-          'section'  => 'powen_content_section',
+          'section'  => 'powen_modify_text_section',
           'settings' => 'powen_mod[theme_author]',
       ) ) );
 
@@ -238,6 +343,8 @@ class Powen_Customizer {
       global $powen_theme;
       $url = $powen_theme->get('AuthorURI') . "/powen-pro-pricing/";
       $description = ! defined( 'POWEN_PRO' ) ? __( 'For More Options Upgrade to ', 'powen-lite' ) . "<a href='{$url}'>".__( 'Powen Pro' , 'powen-lite' )."</a>" : false;
+      $urldesc     = esc_url('https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=sayedwp@gmail.com&item_name=Donation for Powen Lite', 'powen-lite');
+      $desc        = ! defined( 'POWEN_PRO' ) ? __( 'Please support the development of your theme - ', 'powen-lite' ) . "<a href='{$urldesc}'>".__( 'Donate', 'powen-lite' )."</a>" : false;
 
       $wp_customize->add_panel( 'powen_slider_pannel', array(
           'priority'       => 10,
@@ -250,7 +357,7 @@ class Powen_Customizer {
            'priority'    => 9,
            'capability'  => 'edit_theme_options',
            'title'       => __( 'Powen Pro' , 'powen-lite' ),
-           'description' => $description,
+           'description' => $description . "<br/><br/>" . $desc,
            'type'        => 'checkbox',
            'panel'       => 'powen_slider_pannel',
       ) );
@@ -263,12 +370,23 @@ class Powen_Customizer {
 
       $wp_customize->add_control( new WP_Customize_Control ( $wp_customize, 'powen_mod[hide_slider]', array(
           'label'   => __('Hide Slider', 'powen-lite'),
-          'description' => __('<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=sayedwp@gmail.com&item_name=Donation for Powen Lite">Please support the development of your theme -<strong> Donate <strong></a>', 'powen-lite'),
           'type'    => 'checkbox',
           'section' => 'powen_slider_section_pro',
       ) ) );
 
-      $default_slides = powen_default_slides();
+      $wp_customize->add_setting( 'powen_mod[fixed_slider_content]', array(
+          'default'           => 0,
+          'sanitize_callback' => 'sanitize_text_field',
+          'capability'        => 'edit_theme_options',
+      ) );
+
+      $wp_customize->add_control( new WP_Customize_Control ( $wp_customize, 'powen_mod[fixed_slider_content]', array(
+          'label'   => __('Fixed Slider Content', 'powen-lite'),
+          'type'    => 'checkbox',
+          'section' => 'powen_slider_section_pro',
+      ) ) );
+
+      $default_slides = get_theme_mod( 'powen_slides', powen_default_slides() );
 
       for ( $i = 0; $i <= apply_filters( 'powen_increase_slides', 19 ); $i++ ) {
 
@@ -276,12 +394,12 @@ class Powen_Customizer {
           'priority'    => 10,
           'capability'  => 'edit_theme_options',
           'title'       => sprintf( __( 'Slide %s' , 'powen-lite' ), $i+1 ),
-          'description' => __( 'Note: Remove all the default Title, Description, Link and Image before customizing the slide', 'powen-lite' ),
+          'description' => __( 'Note: All default slide values will be discarded, the moment you make any changes to the slide.', 'powen-lite' ),
           'panel'       => 'powen_slider_pannel',
       ) );
 
       $wp_customize->add_setting( 'powen_slides['.$i.'][title]', array(
-          'default'           => isset( $default_slides[$i]['title'] ) ? $default_slides[$i]['title'] : false,
+          'default'           => isset( $default_slides[$i]['title'] ) ? $default_slides[$i]['title'] : '',
           'sanitize_callback' => 'sanitize_text_field',
           'capability'        => 'edit_theme_options',
       ) );
@@ -294,7 +412,7 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting( 'powen_slides['.$i.'][description]', array(
-          'default'           => isset( $default_slides[$i]['description'] ) ? $default_slides[$i]['description'] : false,
+          'default'           => isset( $default_slides[$i]['description'] ) ? $default_slides[$i]['description'] : '',
           'sanitize_callback' => 'sanitize_text_field',
           'capability'        => 'edit_theme_options',
       ) );
@@ -307,7 +425,7 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting( 'powen_slides['.$i.'][link]', array(
-          'default'           => isset( $default_slides[$i]['link'] ) ? esc_url($default_slides[$i]['link']) : false,
+          'default'           => isset( $default_slides[$i]['link'] ) ? esc_url($default_slides[$i]['link']) : '',
           'sanitize_callback' => 'esc_url_raw',
           'capability'        => 'edit_theme_options',
       ) );
@@ -320,7 +438,7 @@ class Powen_Customizer {
       ) );
 
       $wp_customize->add_setting( 'powen_slides['.$i.'][image]', array(
-          'default'           => isset( $default_slides[$i]['image'] ) ? esc_url($default_slides[$i]['image']) : false,
+          'default'           => isset( $default_slides[$i]['image'] ) ? esc_url($default_slides[$i]['image']) : '',
           'sanitize_callback' => 'esc_url_raw',
           'capability'        => 'edit_theme_options',
       ) );
@@ -412,33 +530,6 @@ class Powen_Customizer {
                 )
             ) );
       }
-
-      //Theme Font
-
-      $wp_customize->add_section('powen_font_section', array(
-          'title'      => __( 'Theme Font', 'powen-lite' ),
-          'capability' => 'edit_theme_options',
-
-      ) );
-
-      $wp_customize->add_setting('powen_mod[theme_font]', array(
-          'default'           => 'Open Sans',
-          'sanitize_callback' => 'powen_sanitize_choices',
-          'transport'         => 'postMessage',
-          'capability'        => 'edit_theme_options',
-      ) );
-
-      $wp_customize->add_control('powen_mod[theme_font]', array(
-          'section'  => 'powen_font_section',
-          'label'    => __( 'Theme Font', 'powen-lite' ),
-          'type'     => 'select',
-          'settings' => 'powen_mod[theme_font]',
-          'choices'  => array(
-              'sansserif' => 'sans-serif',
-              'serif'     => 'serif',
-              'courier'   => 'Courier New',
-              'open-sans' => 'Open Sans',
-      ) ) );
 
       /*==============================
               SITE TITLE PLACEMENT

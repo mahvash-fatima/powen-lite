@@ -45,3 +45,11 @@ function powen_change_read_more( $more )
 }
 
 add_filter('excerpt_more', 'powen_change_read_more');
+
+//Excerpt Range
+
+function powen_custom_excerpt_length( $length )
+{
+	return ( powen_mod('excerpt_range') && intval( powen_mod('excerpt_range') ) > 49 ) ? powen_mod('excerpt_range') : $length;
+}
+add_filter( 'excerpt_length', 'powen_custom_excerpt_length', 999 );
