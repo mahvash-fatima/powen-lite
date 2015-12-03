@@ -309,20 +309,28 @@ h1.site-title {
 }
 
 .powen-nav {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-end;
+	padding: $default_gutter 0;
 }
 
 .powen-pro-mobile-menu-container, .powen-top-most-nav, .powen-main-navigation, .powen-search-box-top, .powen-social-icon{
-    padding: rem-calc(10);
-    line-height: 2;
-    text-align: center;
+    display: inline-block;
+    a {
+    	i {
+    		&:before {
+    			padding: rem-calc(10);
+    		}
+    	}
+    }
 }
 
 .powen-search-box-top {
+	float: right;
 	.search-form {
 		position: relative;
+		padding: rem-calc(0 10);
+		input {
+			padding-right: rem-calc(30);
+		}
 	}
 }
 

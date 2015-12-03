@@ -152,12 +152,12 @@
         padding: 0;
     }
    a {
-       padding: rem-calc(10 20);
-       text-align: center;
-       display: inline-block;
-       width: rem-calc(56);
-       border: 1px solid #ccc;
-       border-radius: rem-calc(3);
+        display: inline-block;
+        width: rem-calc(50);
+        border: 1px solid #ccc;
+        border-radius: rem-calc(2);
+        line-height: 3;
+        text-align: center;
    }
 }
 
