@@ -49,7 +49,7 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 
 		// Add a page number if necessary:
 		if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
-			$title .= " $sep " . sprintf( __( 'Page %s', 'powen-lite' ), max( $paged, $page ) );
+			$title .= " $sep " . sprintf( __( 'Page %s', 'powen' ), max( $paged, $page ) );
 		}
 
 		return $title;
@@ -69,33 +69,3 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 	}
 	add_action( 'wp_head', 'powen_render_title' );
 endif;
-
-add_action( 'powen_files_load' , 'powen_load_extras' );
-function powen_load_extras()
-{
-	$file = POWEN_DR . '/pro/powen-pro.php';
-
-	if (file_exists($file)) {
-		define( 'POWEN_PRO', true );
-	    require_once $file;
-	}
-}
-
-/*
- * Adds New Menu to the admin bar
- */
-add_action('admin_bar_menu', 'powen_admin_menu', 100);
-function powen_admin_menu($admin_bar){
-	global $powen_theme;
-
-	if( defined( 'POWEN_PRO' ) ) return;
-
-    $admin_bar->add_menu( array(
-        'id'    => 'powen-admin-menu',
-        'title' => __('Upgrade to Powen Pro', 'powen-lite'),
-        'href'  => $powen_theme->get('AuthorURI') . "/powen-pro-pricing/",
-        'meta'  => array(
-            'title' => __('Updgrade to Powen Pro', 'powen-lite'),
-        ),
-    ));
-}

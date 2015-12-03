@@ -6,7 +6,6 @@ input[type="radio"] {
 input[type="search"] {
 	-webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
 	box-sizing: content-box;
-	background: red;
 }
 
 input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
@@ -35,18 +34,13 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-	border: 1px solid #A9A9A9;
-	text-indent: rem-calc(5);
-	height: rem-calc(40);
-	letter-spacing: rem-calc(1);
-	outline: 0;
+	padding: 8px 20px;
+	border: 2px solid;
 }
 
 textarea {
 	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
-	padding-left: rem-calc(3);
+	padding-left: 3px;
 	vertical-align: top; /* Improves readability and alignment in all browsers */
 	width: 100%;
-	outline: 0;
-	font-size: rem-calc(18);
 }

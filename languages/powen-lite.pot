@@ -2,16 +2,16 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Powen Lite 1.3.4\n"
+"Project-Id-Version: Powen Lite 1.3.1\n"
 "Report-Msgid-Bugs-To: http://supernovathemes.com/powen-theme\n"
-"POT-Creation-Date: 2015-11-16 07:24:50+00:00\n"
+"POT-Creation-Date: 2015-09-19 07:04:26+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Company <support@powen-lite.com>\n"
 "Language-Team: Team <support@powen-lite.com>\n"
-"X-Generator: grunt-wp-i18n 0.5.3\n"
+"X-Generator: grunt-wp-i18n 0.5.2\n"
 "X-Poedit-KeywordsList: "
 "__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
 "attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
@@ -23,344 +23,6 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-Bookmarks: \n"
 "X-Textdomain-Support: yes\n"
-
-#: lib/admin/customizer/customizer.php:78
-#: lib/admin/customizer/customizer.php:153
-#: lib/admin/customizer/customizer.php:224
-#: lib/admin/customizer/customizer.php:255
-#: lib/admin/customizer/customizer.php:283
-#: lib/admin/customizer/customizer.php:624
-msgid "11"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:79
-#: lib/admin/customizer/customizer.php:154
-#: lib/admin/customizer/customizer.php:225
-#: lib/admin/customizer/customizer.php:256
-#: lib/admin/customizer/customizer.php:284
-#: lib/admin/customizer/customizer.php:625
-msgid "12"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:80
-#: lib/admin/customizer/customizer.php:155
-#: lib/admin/customizer/customizer.php:226
-#: lib/admin/customizer/customizer.php:257
-#: lib/admin/customizer/customizer.php:285
-#: lib/admin/customizer/customizer.php:626
-msgid "13"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:81
-#: lib/admin/customizer/customizer.php:156
-#: lib/admin/customizer/customizer.php:227
-#: lib/admin/customizer/customizer.php:258
-#: lib/admin/customizer/customizer.php:286
-#: lib/admin/customizer/customizer.php:627
-msgid "14"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:82
-#: lib/admin/customizer/customizer.php:110
-#: lib/admin/customizer/customizer.php:157
-#: lib/admin/customizer/customizer.php:228
-#: lib/admin/customizer/customizer.php:259
-#: lib/admin/customizer/customizer.php:287
-#: lib/admin/customizer/customizer.php:314
-#: lib/admin/customizer/customizer.php:357
-#: lib/admin/customizer/customizer.php:401
-#: lib/admin/customizer/customizer.php:444
-#: lib/admin/customizer/customizer.php:487
-#: lib/admin/customizer/customizer.php:530
-#: lib/admin/customizer/customizer.php:581
-#: lib/admin/customizer/customizer.php:628
-msgid "15"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:83
-#: lib/admin/customizer/customizer.php:111
-#: lib/admin/customizer/customizer.php:158
-#: lib/admin/customizer/customizer.php:229
-#: lib/admin/customizer/customizer.php:260
-#: lib/admin/customizer/customizer.php:288
-#: lib/admin/customizer/customizer.php:315
-#: lib/admin/customizer/customizer.php:358
-#: lib/admin/customizer/customizer.php:402
-#: lib/admin/customizer/customizer.php:445
-#: lib/admin/customizer/customizer.php:488
-#: lib/admin/customizer/customizer.php:531
-#: lib/admin/customizer/customizer.php:582
-#: lib/admin/customizer/customizer.php:629
-msgid "16"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:112
-#: lib/admin/customizer/customizer.php:261
-#: lib/admin/customizer/customizer.php:316
-#: lib/admin/customizer/customizer.php:359
-#: lib/admin/customizer/customizer.php:403
-#: lib/admin/customizer/customizer.php:446
-#: lib/admin/customizer/customizer.php:489
-#: lib/admin/customizer/customizer.php:532
-#: lib/admin/customizer/customizer.php:583
-msgid "17"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:113
-#: lib/admin/customizer/customizer.php:262
-#: lib/admin/customizer/customizer.php:317
-#: lib/admin/customizer/customizer.php:360
-#: lib/admin/customizer/customizer.php:404
-#: lib/admin/customizer/customizer.php:447
-#: lib/admin/customizer/customizer.php:490
-#: lib/admin/customizer/customizer.php:533
-#: lib/admin/customizer/customizer.php:584
-msgid "18"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:114
-#: lib/admin/customizer/customizer.php:263
-#: lib/admin/customizer/customizer.php:318
-#: lib/admin/customizer/customizer.php:361
-#: lib/admin/customizer/customizer.php:405
-#: lib/admin/customizer/customizer.php:448
-#: lib/admin/customizer/customizer.php:491
-#: lib/admin/customizer/customizer.php:534
-#: lib/admin/customizer/customizer.php:585
-msgid "19"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:115
-#: lib/admin/customizer/customizer.php:264
-#: lib/admin/customizer/customizer.php:319
-#: lib/admin/customizer/customizer.php:362
-#: lib/admin/customizer/customizer.php:406
-#: lib/admin/customizer/customizer.php:449
-#: lib/admin/customizer/customizer.php:492
-#: lib/admin/customizer/customizer.php:535
-#: lib/admin/customizer/customizer.php:586
-msgid "20"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:116
-#: lib/admin/customizer/customizer.php:320
-#: lib/admin/customizer/customizer.php:363
-#: lib/admin/customizer/customizer.php:407
-#: lib/admin/customizer/customizer.php:450
-#: lib/admin/customizer/customizer.php:493
-#: lib/admin/customizer/customizer.php:536
-#: lib/admin/customizer/customizer.php:587
-msgid "21"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:117
-#: lib/admin/customizer/customizer.php:321
-#: lib/admin/customizer/customizer.php:364
-#: lib/admin/customizer/customizer.php:408
-#: lib/admin/customizer/customizer.php:451
-#: lib/admin/customizer/customizer.php:494
-#: lib/admin/customizer/customizer.php:537
-#: lib/admin/customizer/customizer.php:588
-msgid "22"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:118
-#: lib/admin/customizer/customizer.php:322
-#: lib/admin/customizer/customizer.php:365
-#: lib/admin/customizer/customizer.php:409
-#: lib/admin/customizer/customizer.php:452
-#: lib/admin/customizer/customizer.php:495
-#: lib/admin/customizer/customizer.php:538
-#: lib/admin/customizer/customizer.php:589
-msgid "23"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:119
-#: lib/admin/customizer/customizer.php:323
-#: lib/admin/customizer/customizer.php:366
-#: lib/admin/customizer/customizer.php:410
-#: lib/admin/customizer/customizer.php:453
-#: lib/admin/customizer/customizer.php:496
-#: lib/admin/customizer/customizer.php:539
-#: lib/admin/customizer/customizer.php:590
-msgid "24"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:120
-#: lib/admin/customizer/customizer.php:324
-#: lib/admin/customizer/customizer.php:367
-#: lib/admin/customizer/customizer.php:411
-#: lib/admin/customizer/customizer.php:454
-#: lib/admin/customizer/customizer.php:497
-#: lib/admin/customizer/customizer.php:540
-#: lib/admin/customizer/customizer.php:591
-msgid "25"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:121
-#: lib/admin/customizer/customizer.php:325
-#: lib/admin/customizer/customizer.php:368
-#: lib/admin/customizer/customizer.php:412
-#: lib/admin/customizer/customizer.php:455
-#: lib/admin/customizer/customizer.php:498
-#: lib/admin/customizer/customizer.php:541
-#: lib/admin/customizer/customizer.php:592
-msgid "26"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:122
-#: lib/admin/customizer/customizer.php:326
-#: lib/admin/customizer/customizer.php:369
-#: lib/admin/customizer/customizer.php:413
-#: lib/admin/customizer/customizer.php:456
-#: lib/admin/customizer/customizer.php:499
-#: lib/admin/customizer/customizer.php:542
-#: lib/admin/customizer/customizer.php:593
-msgid "27"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:123
-#: lib/admin/customizer/customizer.php:327
-#: lib/admin/customizer/customizer.php:370
-#: lib/admin/customizer/customizer.php:414
-#: lib/admin/customizer/customizer.php:457
-#: lib/admin/customizer/customizer.php:500
-#: lib/admin/customizer/customizer.php:543
-#: lib/admin/customizer/customizer.php:594
-msgid "28"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:124
-#: lib/admin/customizer/customizer.php:328
-#: lib/admin/customizer/customizer.php:371
-#: lib/admin/customizer/customizer.php:415
-#: lib/admin/customizer/customizer.php:458
-#: lib/admin/customizer/customizer.php:501
-#: lib/admin/customizer/customizer.php:544
-#: lib/admin/customizer/customizer.php:595
-msgid "29"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:125
-#: lib/admin/customizer/customizer.php:329
-#: lib/admin/customizer/customizer.php:372
-#: lib/admin/customizer/customizer.php:416
-#: lib/admin/customizer/customizer.php:459
-#: lib/admin/customizer/customizer.php:502
-#: lib/admin/customizer/customizer.php:545
-#: lib/admin/customizer/customizer.php:596
-msgid "30"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:126
-#: lib/admin/customizer/customizer.php:330
-#: lib/admin/customizer/customizer.php:373
-#: lib/admin/customizer/customizer.php:417
-#: lib/admin/customizer/customizer.php:460
-#: lib/admin/customizer/customizer.php:503
-#: lib/admin/customizer/customizer.php:546
-#: lib/admin/customizer/customizer.php:597
-msgid "31"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:127
-#: lib/admin/customizer/customizer.php:331
-#: lib/admin/customizer/customizer.php:374
-#: lib/admin/customizer/customizer.php:418
-#: lib/admin/customizer/customizer.php:461
-#: lib/admin/customizer/customizer.php:504
-#: lib/admin/customizer/customizer.php:547
-#: lib/admin/customizer/customizer.php:598
-msgid "32"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:128
-#: lib/admin/customizer/customizer.php:332
-#: lib/admin/customizer/customizer.php:375
-#: lib/admin/customizer/customizer.php:419
-#: lib/admin/customizer/customizer.php:462
-#: lib/admin/customizer/customizer.php:505
-#: lib/admin/customizer/customizer.php:548
-#: lib/admin/customizer/customizer.php:599
-msgid "33"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:129
-#: lib/admin/customizer/customizer.php:333
-#: lib/admin/customizer/customizer.php:376
-#: lib/admin/customizer/customizer.php:420
-#: lib/admin/customizer/customizer.php:463
-#: lib/admin/customizer/customizer.php:506
-#: lib/admin/customizer/customizer.php:549
-#: lib/admin/customizer/customizer.php:600
-msgid "34"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:130
-#: lib/admin/customizer/customizer.php:334
-#: lib/admin/customizer/customizer.php:377
-#: lib/admin/customizer/customizer.php:421
-#: lib/admin/customizer/customizer.php:464
-#: lib/admin/customizer/customizer.php:507
-#: lib/admin/customizer/customizer.php:550
-#: lib/admin/customizer/customizer.php:601
-msgid "35"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:131
-#: lib/admin/customizer/customizer.php:335
-#: lib/admin/customizer/customizer.php:378
-#: lib/admin/customizer/customizer.php:422
-#: lib/admin/customizer/customizer.php:465
-#: lib/admin/customizer/customizer.php:508
-#: lib/admin/customizer/customizer.php:551
-#: lib/admin/customizer/customizer.php:602
-msgid "36"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:132
-#: lib/admin/customizer/customizer.php:336
-#: lib/admin/customizer/customizer.php:379
-#: lib/admin/customizer/customizer.php:423
-#: lib/admin/customizer/customizer.php:466
-#: lib/admin/customizer/customizer.php:509
-#: lib/admin/customizer/customizer.php:552
-#: lib/admin/customizer/customizer.php:603
-msgid "37"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:133
-#: lib/admin/customizer/customizer.php:337
-#: lib/admin/customizer/customizer.php:380
-#: lib/admin/customizer/customizer.php:424
-#: lib/admin/customizer/customizer.php:467
-#: lib/admin/customizer/customizer.php:510
-#: lib/admin/customizer/customizer.php:553
-#: lib/admin/customizer/customizer.php:604
-msgid "38"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:134
-#: lib/admin/customizer/customizer.php:338
-#: lib/admin/customizer/customizer.php:381
-#: lib/admin/customizer/customizer.php:425
-#: lib/admin/customizer/customizer.php:468
-#: lib/admin/customizer/customizer.php:511
-#: lib/admin/customizer/customizer.php:554
-#: lib/admin/customizer/customizer.php:605
-msgid "39"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:135
-#: lib/admin/customizer/customizer.php:339
-#: lib/admin/customizer/customizer.php:382
-#: lib/admin/customizer/customizer.php:426
-#: lib/admin/customizer/customizer.php:469
-#: lib/admin/customizer/customizer.php:512
-#: lib/admin/customizer/customizer.php:555
-#: lib/admin/customizer/customizer.php:606
-msgid "40"
-msgstr ""
 
 #: 404.php:12
 msgid "oops! That page can&rsquo;t be found."
@@ -517,438 +179,247 @@ msgid "CSS"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:54
-msgid "Typography"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:60
-#: lib/admin/customizer/customizer.php:72
-msgid "Body"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:73
-msgid "Set your website body default font size in pixels"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:91
-msgid "Site Identity"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:104
-msgid "Site Title"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:105
-msgid "Set your site title default font size in pixels"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:147
-msgid "Site Description"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:148
-msgid "Set your site description default font size in pixels"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:171
-msgid "Site Title Font Weight "
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:172
-msgid "Set your site title font weight"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:177
-msgid "Bold"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:178
-#: lib/admin/customizer/customizer.php:199
-msgid "Normal"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:192
-msgid "Site Description Font Style "
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:193
-msgid "Set your site description font style"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:198
-msgid "Italic"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:206
-#: lib/admin/customizer/customizer.php:218
-msgid "Navigation"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:219
-msgid "Set your navigation default font size in pixels"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:236
-msgid "Slider Identity"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:249
-msgid "Slider Title"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:250
-msgid "Set your slider title default font size in pixels"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:277
-msgid "Slider Description"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:278
-msgid "Set your slider description default font size in pixels"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:295
-msgid "Heading"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:308
-msgid "Heading 1"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:309
-msgid "Set your h1 default font size in pixels"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:351
-msgid "Heading 2"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:352
-msgid "Set your blog title default font size in pixels"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:395
-msgid "Heading 3"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:396
-msgid "Set your h3 default font size in pixels"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:438
-msgid "Heading 4"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:439
-msgid "Set your h4 default font size in pixels"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:481
-msgid "Heading 5"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:482
-msgid "Set your h5 default font size in pixels"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:524
-msgid "Heading 6"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:525
-msgid "Set your h6 default font size in pixels"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:562
-msgid "Widgets"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:575
-msgid "widgets Title"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:576
-msgid "Set your sidebar widget title default font size in pixels"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:618
-msgid "Widgets Content"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:619
-msgid "Set your sidebar widget content default font size in pixels"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:641
 msgid "Content Options"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:647
+#: lib/admin/customizer/customizer.php:60
 msgid "Latest Post"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:658
+#: lib/admin/customizer/customizer.php:71
 msgid "Show Latest Post in full width"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:667
+#: lib/admin/customizer/customizer.php:80
 msgid "Post Tags"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:678
+#: lib/admin/customizer/customizer.php:91
 msgid "Hide Post Tags"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:686
+#: lib/admin/customizer/customizer.php:99
 msgid "Post Categories"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:697
+#: lib/admin/customizer/customizer.php:110
 msgid "Hide Post Categories"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:706
+#: lib/admin/customizer/customizer.php:119
 msgid "Content Length"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:718
+#: lib/admin/customizer/customizer.php:131
 msgid "Show Content"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:721
+#: lib/admin/customizer/customizer.php:134
 msgid "full"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:722
+#: lib/admin/customizer/customizer.php:135
 msgid "excerpt"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:738
+#: lib/admin/customizer/customizer.php:151
 msgid "Excerpt Length"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:739
+#: lib/admin/customizer/customizer.php:152
 msgid ""
 "Make sure you have selected <strong>excerpt</strong>. Write only "
 "<strong>numbers</strong> in textbox and not <strong>px</strong>. It should "
 "not be less than <strong>50</strong>"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:750
+#: lib/admin/customizer/customizer.php:163
 msgid "Hide The Author of The Post"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:763
+#: lib/admin/customizer/customizer.php:176
 msgid "Hide The Date of The Post"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:770
-msgid "Header Search Bar"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:781
-msgid "Hide Header Search Bar"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:791
+#: lib/admin/customizer/customizer.php:184
 msgid "Modify Text"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:805
-msgid "Continue Reading Text"
+#: lib/admin/customizer/customizer.php:190
+msgid "@copyright"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:818
+#: lib/admin/customizer/customizer.php:196
 msgid "Copyright Text"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:826
+#: lib/admin/customizer/customizer.php:204
 msgid "Supernova Themes"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:832
+#: lib/admin/customizer/customizer.php:210
 msgid "Author's Name"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:847
+#: lib/admin/customizer/customizer.php:225
 msgid "Top Most Menu Title"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:859
-#: lib/admin/customizer/customizer.php:881
+#: lib/admin/customizer/customizer.php:237
+#: lib/admin/customizer/customizer.php:259
 #: pro/customizer/customizer-hooks.php:32
 msgid "Hide"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:869
+#: lib/admin/customizer/customizer.php:247
 msgid "Main Menu Title"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:890
+#: lib/admin/customizer/customizer.php:268
 msgid "Social Media"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:891
+#: lib/admin/customizer/customizer.php:269
 msgid "Example for Phone url: tel:+13174562564"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:906
+#: lib/admin/customizer/customizer.php:284
 msgid "%s url:"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:919
+#: lib/admin/customizer/customizer.php:297
 msgid "Sidebar Layout"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:930
+#: lib/admin/customizer/customizer.php:308
 msgid "Sidebar Position"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:933
-#: lib/admin/customizer/customizer.php:1173
-#: lib/admin/customizer/customizer.php:1210
+#: lib/admin/customizer/customizer.php:311
+#: lib/admin/customizer/customizer.php:519
+#: lib/admin/customizer/customizer.php:556
 msgid "left"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:934
-#: lib/admin/customizer/customizer.php:1174
-#: lib/admin/customizer/customizer.php:1211
+#: lib/admin/customizer/customizer.php:312
+#: lib/admin/customizer/customizer.php:520
+#: lib/admin/customizer/customizer.php:557
 msgid "right"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:935
+#: lib/admin/customizer/customizer.php:313
 msgid "no-sidebar"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:947
+#: lib/admin/customizer/customizer.php:325
 msgid "For More Options Upgrade to "
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:947
-#: lib/admin/customizer/customizer.php:961
+#: lib/admin/customizer/customizer.php:325
+#: lib/admin/customizer/customizer.php:339
 msgid "Powen Pro"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:949
+#: lib/admin/customizer/customizer.php:327
 msgid "Please support the development of your theme - "
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:949
+#: lib/admin/customizer/customizer.php:327
 msgid "Donate"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:954
+#: lib/admin/customizer/customizer.php:332
 msgid "Slider Options"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:955
+#: lib/admin/customizer/customizer.php:333
 msgid "Add slider"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:974
+#: lib/admin/customizer/customizer.php:352
 msgid "Hide Slider"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:986
-msgid "Fixed Slider Content"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:998
+#: lib/admin/customizer/customizer.php:364
 msgid "Slide %s"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:999
+#: lib/admin/customizer/customizer.php:365
 msgid ""
 "Note: All default slide values will be discarded, the moment you make any "
 "changes to the slide."
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1012
+#: lib/admin/customizer/customizer.php:378
 msgid "Title"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1025
+#: lib/admin/customizer/customizer.php:391
 msgid "Description"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1038
+#: lib/admin/customizer/customizer.php:404
 msgid "Link"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1051
+#: lib/admin/customizer/customizer.php:417
 msgid "Image"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1065
+#: lib/admin/customizer/customizer.php:431
 msgid "Theme Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1070
+#: lib/admin/customizer/customizer.php:436
 msgid "Link Color (on hover)"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1075
+#: lib/admin/customizer/customizer.php:441
 msgid "Site Title Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1080
+#: lib/admin/customizer/customizer.php:446
 msgid "Site Tagline Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1085
+#: lib/admin/customizer/customizer.php:451
 msgid "Header Background Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1090
+#: lib/admin/customizer/customizer.php:456
 msgid "Footer widgets background color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1095
+#: lib/admin/customizer/customizer.php:461
 msgid "Footer widgets text color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1101
+#: lib/admin/customizer/customizer.php:467
 msgid "Footer widgets link color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1106
+#: lib/admin/customizer/customizer.php:472
 msgid "Footer bottom background color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1111
+#: lib/admin/customizer/customizer.php:477
 msgid "Footer bottom text color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1116
-msgid "Primary Menu Background Color"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:1121
-msgid "Primary Menu Color"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:1126
-msgid "Secondary Background Color"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:1131
-msgid "Secondary Color"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:1169
+#: lib/admin/customizer/customizer.php:515
 msgid "Site Title & Tagline Placement"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1175
-#: lib/admin/customizer/customizer.php:1212
+#: lib/admin/customizer/customizer.php:521
+#: lib/admin/customizer/customizer.php:558
 msgid "center"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1191
+#: lib/admin/customizer/customizer.php:537
 msgid "Upload logo"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1206
+#: lib/admin/customizer/customizer.php:552
 msgid "Logo placement"
 msgstr ""
 
@@ -973,39 +444,47 @@ msgid "Error 404"
 msgstr ""
 
 #: lib/custom-functions.php:51
-msgid "WOODEN PIER"
+msgid "Demo Post One"
 msgstr ""
 
-#: lib/custom-functions.php:53 lib/custom-functions.php:67
+#: lib/custom-functions.php:53
+msgid ""
+"Omnis fugit itaque architecto sit saepe quidem tempora fuga esse incidunt "
+"perferendis harum."
+msgstr ""
+
+#: lib/custom-functions.php:58
+msgid "Demo Post Two"
+msgstr ""
+
+#: lib/custom-functions.php:60
+msgid ""
+"Reiciendis blanditiis eius officia molestias dicta vero hic accusamus "
+"aliquam enim optio porro veritatis."
+msgstr ""
+
+#: lib/custom-functions.php:65
+msgid "Demo Post Three"
+msgstr ""
+
+#: lib/custom-functions.php:67
 msgid ""
 "Eaque perferendis nesciunt provident facere sint laboriosam commodi saepe "
 "quas dolorem ipsam saepe itaque"
 msgstr ""
 
-#: lib/custom-functions.php:58
-msgid "FASHION"
+#: lib/custom-functions.php:72
+msgid "Demo Post Four"
 msgstr ""
 
-#: lib/custom-functions.php:60
+#: lib/custom-functions.php:74
 msgid ""
 "Cupiditate deleniti, enim natus magni nisi deleniti eligendi recusandae "
 "reiciendis."
 msgstr ""
 
-#: lib/custom-functions.php:65
-msgid "FOOD"
-msgstr ""
-
-#: lib/custom-functions.php:72
-msgid "WEDDING"
-msgstr ""
-
-#: lib/custom-functions.php:74
-msgid "CUPIDITATE DELENITI, ENIM NATUS MAGNI"
-msgstr ""
-
 #: lib/custom-functions.php:79
-msgid "FRIENDS"
+msgid "Demo Post Five"
 msgstr ""
 
 #: lib/custom-functions.php:81
@@ -1015,7 +494,7 @@ msgid ""
 msgstr ""
 
 #: lib/custom-functions.php:86
-msgid "TOURIST"
+msgid "Demo Post Six"
 msgstr ""
 
 #: lib/custom-functions.php:88
@@ -1025,7 +504,7 @@ msgid ""
 msgstr ""
 
 #: lib/custom-functions.php:93
-msgid "HAPPY COUPLE"
+msgid "Demo Post Seven"
 msgstr ""
 
 #: lib/custom-functions.php:95
@@ -1035,7 +514,7 @@ msgid ""
 msgstr ""
 
 #: lib/custom-functions.php:100
-msgid "READ AND RELAX"
+msgid "Demo Post Eight"
 msgstr ""
 
 #: lib/custom-functions.php:102
@@ -1044,13 +523,8 @@ msgid ""
 "rerum totam ea vitae."
 msgstr ""
 
-#: lib/custom-functions.php:236
-msgid ""
-"The Menu had some bugs and we have fixed the issue. You will need to add "
-"your menu to one of the Theme Locations. 1.Scroll to the bottom of the menu "
-"editor window. 2.In the section titled Theme Locations, click the check box "
-"for the location where you want your menu to appear. 3.Click Save Menu once "
-"you have made your selection. | <a href=\"%1$s\">Hide Notice</a>"
+#: lib/hooks-filters.php:44
+msgid "Continue Reading"
 msgstr ""
 
 #: lib/social-widget.php:14
@@ -1109,127 +583,111 @@ msgstr ""
 msgid "The fourth footer widget area"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:19
-msgid "Pro Menu Title"
+#: pro/customizer/customizer-hooks.php:19 pro/powen-pro.php:51
+msgid "Powen Pro Menu"
 msgstr ""
 
 #: pro/customizer/customizer-hooks.php:20
 msgid "This text is shown only on a small screen."
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:43
-msgid "Switch Off Footer Menu"
-msgstr ""
-
-#: pro/customizer/customizer-hooks.php:50 pro/hooks.php:129
+#: pro/customizer/customizer-hooks.php:39 pro/hooks.php:125
 #: pro/powen-pro.php:38
 msgid "Load More"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:61
+#: pro/customizer/customizer-hooks.php:50
 msgid "Hide Load More Button"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:69
+#: pro/customizer/customizer-hooks.php:58
 msgid "Pagination"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:80
+#: pro/customizer/customizer-hooks.php:69
 msgid "Hide Pagination"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:88
+#: pro/customizer/customizer-hooks.php:77
 msgid "Infinite Ajax Scrolling"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:99
+#: pro/customizer/customizer-hooks.php:88
 msgid "Stop Infinite Ajax Scrolling"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:107
+#: pro/customizer/customizer-hooks.php:96
 msgid "Flexible Layout"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:121
+#: pro/customizer/customizer-hooks.php:110
 msgid "Value"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:122
+#: pro/customizer/customizer-hooks.php:111
 msgid ""
 "Write only <strong>numbers</strong> and not <strong>px</strong>. It should "
 "not be less than <strong>900</strong>"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:129
+#: pro/customizer/customizer-hooks.php:118
 msgid "Add Spots"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:134
+#: pro/customizer/customizer-hooks.php:123
 msgid "Header Top Most"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:145
-#: pro/customizer/customizer-hooks.php:164
-#: pro/customizer/customizer-hooks.php:183
-#: pro/customizer/customizer-hooks.php:202
-#: pro/customizer/customizer-hooks.php:221
-#: pro/customizer/customizer-hooks.php:240
-#: pro/customizer/customizer-hooks.php:259
-#: pro/customizer/customizer-hooks.php:278
-#: pro/customizer/customizer-hooks.php:297
+#: pro/customizer/customizer-hooks.php:134
+#: pro/customizer/customizer-hooks.php:153
+#: pro/customizer/customizer-hooks.php:172
+#: pro/customizer/customizer-hooks.php:191
+#: pro/customizer/customizer-hooks.php:210
+#: pro/customizer/customizer-hooks.php:229
+#: pro/customizer/customizer-hooks.php:248
+#: pro/customizer/customizer-hooks.php:267
+#: pro/customizer/customizer-hooks.php:286
 msgid "Short Code"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:153
+#: pro/customizer/customizer-hooks.php:142
 msgid "Before Site Identity"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:172
+#: pro/customizer/customizer-hooks.php:161
 msgid "After Site Identity"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:191
+#: pro/customizer/customizer-hooks.php:180
 msgid "After First Home Post"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:210
+#: pro/customizer/customizer-hooks.php:199
 msgid "Before Content"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:229
+#: pro/customizer/customizer-hooks.php:218
 msgid "Above Footer"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:248
+#: pro/customizer/customizer-hooks.php:237
 msgid "Footer Widgets"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:267
+#: pro/customizer/customizer-hooks.php:256
 msgid "Footer Site Info Begins"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:286
+#: pro/customizer/customizer-hooks.php:275
 msgid "Footer Site Info Ends"
 msgstr ""
 
+#: pro/customizer/customizer-hooks.php:295
+msgid "Typography"
+msgstr ""
+
 #: pro/customizer/customizer-hooks.php:306
-msgid "Font Family"
-msgstr ""
-
-#: pro/customizer/customizer-hooks.php:318
 msgid "Google Font"
-msgstr ""
-
-#: pro/customizer/customizer-hooks.php:319
-msgid "Set your website default font"
-msgstr ""
-
-#: pro/customizer/customizer-hooks.php:357
-msgid "Pro Menu Background Color"
-msgstr ""
-
-#: pro/customizer/customizer-hooks.php:362
-msgid "Pro Menu Color"
 msgstr ""
 
 #: pro/customizer/fonts.php:17
@@ -1248,12 +706,8 @@ msgstr ""
 msgid "Loading..."
 msgstr ""
 
-#: pro/powen-pro.php:51
-msgid "Pro Menu"
-msgstr ""
-
 #: pro/powen-pro.php:52
-msgid "Footer Menu"
+msgid "Powen Pro Footer Menu"
 msgstr ""
 
 #: pro/updater/EDD_SL_Theme_Updater.php:54
