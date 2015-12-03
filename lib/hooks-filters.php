@@ -33,3 +33,15 @@ function powen_set_tag_cloud_sizes($args)
 }
 
 add_filter('widget_tag_cloud_args', 'powen_set_tag_cloud_sizes');
+
+
+/**
+ * Adds Read More button
+ */
+function powen_change_read_more( $more )
+{
+	global $post;
+	return '<div class="powen-continue-reading"><a class="moretag" href="' . get_permalink($post->ID) . '">'.__('Continue Reading', 'powen') . '</a></div>';
+}
+
+add_filter('excerpt_more', 'powen_change_read_more');

@@ -9,7 +9,11 @@
 		<!-- Featured Images -->
 		<?php if ( has_post_thumbnail() )
 		{
-			the_post_thumbnail();
+			if( powen_mod( 'sidebar_position' ) === 'no-sidebar' ){
+				the_post_thumbnail('full');
+			}else{
+				the_post_thumbnail('large');
+			}
 		}
 		?>
 		</a>
@@ -28,20 +32,13 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php
-			/* translators: %s: Name of current post */
-			powen_content();
-		?>
-
+		<?php the_excerpt(); ?>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'powen' ),
 				'after'  => '</div>',
 			) );
 		?>
-
-	<!-- Continue reading -->
-	<div class="powen-continue-reading"><a href="<?php esc_url( the_permalink() ); ?>"><?php echo __(powen_mod( 'read_more_textbox', 'Continue Reading')); ?></a></div>
 
 	</div><!-- .entry-content -->
 

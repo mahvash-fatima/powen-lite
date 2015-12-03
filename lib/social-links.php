@@ -35,10 +35,8 @@ function powen_social_media_icons()
 
     // CREATE THE OUTPUT for each active social site, add it as a list item
     if( $active_sites ) { ?>
-    <div class="powen-social-media-container">
-        <ul class='powen-social-media-icons'>
             <?php foreach ($active_sites as $site => $site_url ) : ?>
-            <li>
+                <div class="powen-social-icon">
                 <a href="<?php echo esc_url($site_url); ?>" target="new">
                 <?php if( $site == "vimeo") { ?>
                     <i class="fa fa-<?php echo $site; ?>-square"></i>
@@ -46,10 +44,8 @@ function powen_social_media_icons()
                     <i class="fa fa-<?php echo $site; ?>"></i>
                     <?php } ?>
                 </a>
-            </li>
+                </div>
             <?php endforeach; ?>
-        </ul>
-    </div>
         <?php
     }
 }

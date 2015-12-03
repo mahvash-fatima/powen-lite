@@ -27,27 +27,7 @@
 
 		<?php do_action( 'powen_header_top_most' ); ?>
 
-			<?php //Navigation ?>
-
-			<nav id="top-most-container" class="powen-top-container">
-
-				<!-- Top most menu -->
-				<?php get_template_part( 'template-parts/top-most' ); ?>
-
-				<!-- Search -->
-				<div class="powen-search-box-top">
-					<?php get_search_form(); ?>
-					<?php do_action('powen_header_top_container_extras' ); ?>
-				</div>
-
-				<!-- Social Media Icon -->
-				<?php powen_social_media_icons(); ?>
-				<?php do_action('powen_header_social_container_extras' ); ?>
-
-				<?php do_action( 'powen_header_top_most_extras' ); ?>
-
-			</nav>
-
+			<?php get_template_part( 'template-parts/top-most' ); ?>
 
 			<!-- Main menu -->
 			<nav id="main-nav">

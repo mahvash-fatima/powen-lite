@@ -3,7 +3,7 @@
 
 	<div class ="powen-featured-img">
 	<a href ="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark" >
-	<?php the_post_thumbnail(); ?>
+	<?php the_post_thumbnail('full'); ?>
 	</a>
 	</div>
 
@@ -19,10 +19,8 @@
 		<div class="powen-latest-post-tag"><span><?php echo __('Latest', 'powen'); ?></span></div>
 
 		<div class="entry-content">
-			<?php powen_content(); ?>
+			<?php the_excerpt(); ?>
 		</div>
-
-		<div class="powen-continue-reading"><a href="<?php echo esc_url( the_permalink() ); ?>"><?php echo powen_mod( 'read_more_textbox', __( 'Continue Reading' , 'powen' )); ?></a></div>
 
 		<footer class="entry-footer">
 			<?php powen_entry_footer(); ?>

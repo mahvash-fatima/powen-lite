@@ -4,7 +4,7 @@ Theme URI: http://supernovathemes.com/powen-theme/
 Author: Mahvash Fatima
 Author URI: http://supernovathemes.com
 Description: Powen Lite has been specially designed for blogging websites however due to its clean design and plenty of customization options, it can easily be customized for any purpose.
-Version: 1.1.7
+Version: 1.2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: powen
@@ -365,6 +365,7 @@ input[type="search"] {
   text-indent: 0.3125rem;
   height: 2.5rem;
   letter-spacing: 0.0625rem;
+  outline: none;
 }
 
 textarea {
@@ -488,6 +489,7 @@ input[type="submit"] {
 --------------------------------------------------------------*/
 .widget {
   margin: 0 0 1.618rem;
+  overflow: hidden;
 }
 .widget select {
   max-width: 100%;
@@ -636,18 +638,12 @@ input[type="submit"] {
   float: right;
 }
 
-.widget_powen_social_widget ul {
-  list-style: none;
-  margin: 0;
+.widget_powen_social_widget .powen-social-icon {
+  display: inline-block;
+  margin: 0.125rem 0;
   padding: 0;
 }
-.widget_powen_social_widget ul li {
-  float: left;
-  border-bottom: none;
-  padding: 0;
-  margin: 0.0625rem;
-}
-.widget_powen_social_widget ul li a {
+.widget_powen_social_widget a {
   padding: 0.625rem 1.25rem;
   text-align: center;
   display: inline-block;
@@ -661,43 +657,6 @@ input[type="submit"] {
   padding: 1.618rem;
 }
 
-/* media queries for larger screens such as small tablets in landscape or large tablets in portrait */
-@media screen and (max-width: 780px) {
-  /* only the .quarter layout class is relevant here - all other classes will have full width */
-  .quarter {
-    width: 48%;
-  }
-
-  .quarter.left {
-    margin-right: 2%;
-  }
-
-  .quarter.right {
-    margin-left: 2%;
-  }
-
-  footer .third.quarter.widget-area {
-    clear: both;
-  }
-}
-/* media queries for small screens in landscape mode (or similar) */
-@media screen and (max-width: 600px) {
-  /* width sizing all full width in small screens */
-  .quarter,
-  .one-third,
-  .half,
-  .two-thirds,
-  .three-quarters,
-  .full-width {
-    width: 100%;
-    margin: 0;
-  }
-
-  /* padding adjustments */
-  .widget-area {
-    padding: 0 0 0.625rem 0;
-  }
-}
 /*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
@@ -710,10 +669,6 @@ input[type="submit"] {
 
 .powen-recent-article {
   padding-top: 2.61792rem;
-}
-
-.powen-continue-reading {
-  margin: 2.61792rem 0 1.618rem 0;
 }
 
 .powen-latest-post-tag {
@@ -738,39 +693,8 @@ input[type="submit"] {
   padding-right: 0.3125rem;
 }
 
-.content-area .post-comment {
-  background: red;
-}
-.content-area .comments-title {
-  text-align: center;
-}
-
 .posted-on, .byline {
   padding: 0.3125rem;
-}
-
-.comment-body img {
-  border-radius: 100%;
-}
-.comment-body .says {
-  display: none;
-}
-.comment-body .fn {
-  display: block;
-}
-.comment-body .comment-author img {
-  float: left;
-  margin-right: 0.3125rem;
-}
-.comment-body .comment-metadata {
-  padding-bottom: 0.3125rem;
-}
-.comment-body .reply {
-  text-align: right;
-}
-
-.comment-respond .logged-in-as a {
-  font-weight: bold;
 }
 
 .powen-pagination {
@@ -819,7 +743,11 @@ input[type="submit"] {
 }
 
 .powen-continue-reading {
-  text-align: right;
+  margin: 2.61792rem 0 1.618rem 0;
+  text-align: center;
+}
+.powen-continue-reading a {
+  padding: 0.625rem;
 }
 
 /*--------------------------------------------------------------
@@ -839,6 +767,38 @@ input[type="submit"] {
 
 .bypostauthor {
   display: block;
+}
+
+.content-area .post-comment {
+  background: red;
+}
+.content-area .comments-title {
+  text-align: center;
+}
+
+.comment-body img {
+  border-radius: 100%;
+}
+.comment-body .says {
+  display: none;
+}
+.comment-body .fn {
+  display: block;
+}
+.comment-body .comment-author img {
+  float: left;
+  margin-right: 0.625rem;
+}
+.comment-body .comment-metadata {
+  padding-bottom: 0.3125rem;
+  font-size: 0.75rem;
+}
+.comment-body .reply {
+  text-align: right;
+}
+
+.comment-respond .logged-in-as a {
+  font-weight: bold;
 }
 
 /*--------------------------------------------------------------
@@ -1051,7 +1011,7 @@ ul, ol {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 2.5rem;
+  line-height: 1.3;
   font-weight: 400;
 }
 
@@ -1190,7 +1150,7 @@ h1.site-title {
 }
 
 .powen-most-recent-post {
-  margin-top: 2.61792rem;
+  margin-top: 1.618rem;
 }
 
 .article-hentry {
@@ -1210,6 +1170,7 @@ h1.site-title {
 }
 
 .powen-featured-img {
+  overflow: hidden;
   background-color: #ffffff;
 }
 .powen-featured-img img {
@@ -1286,12 +1247,23 @@ h1.site-title {
   margin: 0;
   padding: 0;
 }
-.comment-list .comment {
+.comment-list > .comment {
   padding: 1.618rem;
   background-color: rgba(221, 193, 174, 0.05);
   border: 0.0625rem solid rgba(108, 67, 38, 0.05);
 }
 
+.comment-author .fn {
+  text-transform: capitalize;
+}
+
+.comments-title {
+  font-size: 1.5rem;
+}
+
+.comment-respond {
+  margin-top: 1.25rem;
+}
 .comment-respond .form-allowed-tags {
   display: none;
 }
@@ -1323,38 +1295,15 @@ h1.site-title {
   margin-top: 0.0625rem;
 }
 
-.powen-top-container {
-  overflow: hidden;
-  padding: 1.618rem 0;
-}
-.powen-top-container .powen-social-media-icons {
-  margin: 0;
-}
-.powen-top-container .powen-social-media-icons li {
-  margin: 0.0625rem;
-  display: inline-block;
-}
-.powen-top-container .powen-social-media-icons li a {
-  padding: 0.3125rem 0.625rem;
-  width: 2.0625rem;
-  display: block;
-  text-align: center;
-}
-.powen-top-container .search-form {
-  text-align: right;
-}
-.powen-top-container .search-form .search-submit {
+.powen-nav .search-form .search-submit {
   display: none;
 }
-.powen-top-container .search-form input[type="text"],
-.powen-top-container .search-form input[type="email"],
-.powen-top-container .search-form input[type="url"],
-.powen-top-container .search-form input[type="password"],
-.powen-top-container .search-form input[type="search"] {
+.powen-nav .search-form input.search-field {
+  text-indent: 0.625rem;
   height: auto;
-}
-.powen-top-container .powen-search-box-top, .powen-top-container .powen-social_media_container {
-  padding: 0.809rem 0;
+  letter-spacing: 1px;
+  border: none;
+  border-bottom: 1px solid #ccc;
 }
 
 .widget_search input {
@@ -1362,32 +1311,18 @@ h1.site-title {
 }
 
 .powen-nav {
-  display: inline-block;
-}
-.powen-nav a {
-  padding: 0.809rem 0;
-}
-
-.powen-social-media-container {
-  width: 100%;
-  text-align: right;
-  overflow: hidden;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
 }
 
-.powen-top-most-nav, .powen-main-navigation {
-  padding: 0 0.625rem;
-  display: inline-block;
-}
-.powen-top-most-nav a, .powen-main-navigation a {
-  color: #666666;
+.powen-pro-mobile-menu-container, .powen-top-most-nav, .powen-main-navigation, .powen-search-box-top, .powen-social-icon {
+  padding: 0.625rem;
+  line-height: 2;
+  text-align: center;
 }
 
-.powen-search-box-top {
-  display: inline-block;
-  float: right;
-}
 .powen-search-box-top .search-form {
-  padding: 0 0.625rem;
   position: relative;
 }
 
@@ -1411,11 +1346,15 @@ h1.site-title {
 .powen-footer-widgets a {
   color: #cccccc;
 }
+.powen-footer-widgets .powen-wrapper {
+  overflow: hidden;
+}
 
 .site-info {
   text-align: center;
   background: #000000;
   color: #404040;
+  overflow: hidden;
 }
 .site-info a {
   color: #666666;
@@ -1423,7 +1362,7 @@ h1.site-title {
 
 @media (max-width: 70.3125rem) {
   h1, h2, h3, h4, h5, h6 {
-    line-height: 2.5rem;
+    line-height: 1.3;
     font-weight: 400;
   }
 
@@ -1524,10 +1463,25 @@ h1.site-title {
   .flexslider .flex-control-nav {
     display: none;
   }
+
+  .quarter,
+  .one-third,
+  .half,
+  .two-thirds,
+  .three-quarters,
+  .full-width {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* padding adjustments */
+  .widget-area {
+    padding: 0 0 0.625rem 0;
+  }
 }
 @media (max-width: 37.5rem) {
   h1, h2, h3, h4, h5, h6 {
-    line-height: 2.5rem;
+    line-height: 1.3;
     font-weight: 400;
   }
 
@@ -1580,7 +1534,7 @@ h1.site-title {
 }
 @media (max-width: 25rem) {
   h1, h2, h3, h4, h5, h6 {
-    line-height: 2.5rem;
+    line-height: 1.3;
     font-weight: 400;
   }
 
@@ -1650,7 +1604,7 @@ h1.site-title {
   }
 
   .flexslider h1, .flexslider h2, .flexslider h3, .flexslider h4, .flexslider h5, .flexslider h6 {
-    line-height: 2.5rem;
+    line-height: 1.3;
     font-weight: 400;
   }
   .flexslider h1 {
@@ -1727,7 +1681,8 @@ FontAwesome
 .widget_recent_entries li:before,
 .entry-header:after,
 .widget-title:after,
-.footer-scroll:before {
+.footer-scroll:before,
+.powen-pro-mobile-menu .mm:before {
   font-family: 'FontAwesome';
   font-weight: normal;
   font-style: normal;
@@ -1746,20 +1701,17 @@ FontAwesome
 /**---------------
 Write your code here
 --------------------**/
-.powen-top-most-nav .mm:before, .powen-main-navigation .m:before {
+.powen-top-most-nav .mm:before, .powen-main-navigation .m:before, .powen-pro-mobile-menu .mm:before {
   content: "\f0c9";
-  padding: 0.3125rem;
-  font-size: 1.25em;
-  vertical-align: bottom;
+  padding-right: 0.3125rem;
 }
 
 .powen-search-box-top .search-form label:after {
   content: "\f002";
   position: absolute;
-  right: 0.8125rem;
-  top: 0.0625rem;
-  color: #cccccc;
-  background-color: #ffffff;
+  right: 1.25rem;
+  top: 0;
+  color: #ececec;
 }
 
 .posted-on:before {
@@ -1800,11 +1752,11 @@ Write your code here
 .comment-metadata time:before {
   content: "\f017";
   padding: 0.3125rem;
+  padding-left: 0;
 }
 
 .powen-continue-reading:after {
   content: "\f178";
-  padding: 0.3125rem;
 }
 
 .widget_recent_comments li:before {

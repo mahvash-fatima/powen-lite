@@ -78,6 +78,8 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 
+				<?php do_action( 'powen_before_pagination' ); ?>
+
 				<?php powen_pagination(); ?><!-- Pagination -->
 
 				<!-- To reset custom loop -->
