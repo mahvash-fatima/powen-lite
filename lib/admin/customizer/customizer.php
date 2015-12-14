@@ -1102,22 +1102,22 @@ class Powen_Customizer {
             array(
                       'slug'    =>'powen_mod[primary_nav_background_color]',
                       'default' => '#222222',
-                      'label'   => __( 'Primary Menu Background Color', 'powen-lite' )
+                      'label'   => __( 'Top Most Menu Background Color', 'powen-lite' )
                   ),
             array(
                       'slug'    =>'powen_mod[primary_nav_color]',
                       'default' => '#cccccc',
-                      'label'   => __( 'Primary Menu Color', 'powen-lite' )
+                      'label'   => __( 'Top Most Menu Text Color', 'powen-lite' )
                   ),
             array(
                       'slug'    =>'powen_mod[secondary_nav_background_color]',
                       'default' => '#222222',
-                      'label'   => __( 'Secondary Background Color', 'powen-lite' )
+                      'label'   => __( 'Main Menu Background Color', 'powen-lite' )
                   ),
             array(
                       'slug'    =>'powen_mod[secondary_nav_color]',
                       'default' => '#cccccc',
-                      'label'   => __( 'Secondary Color', 'powen-lite' )
+                      'label'   => __( 'Main Menu Text Color', 'powen-lite' )
                   ),
             ) );
 

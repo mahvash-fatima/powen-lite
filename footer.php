@@ -50,20 +50,28 @@
 		<div class="powen-wrapper">
 			<div class="powen-footer-site-info">
 				<?php do_action( 'powen_footer_site_info_begins' ); ?>
-			    <?php echo apply_filters( 'powen_copyright_date_text', esc_attr( '(C)', 'powen-lite' ) ); ?><?php echo apply_filters( 'powen_footer_copyright_date', sprintf( __( '%s', 'powen-lite' ), date('Y') ) ); ?>
+
+			    <span class="powen-footer-date-before"><?php echo apply_filters( 'powen_copyright_date_text', esc_attr( '(C)', 'powen-lite' ) ); ?></span><span class="powen-footer-date"><?php echo apply_filters( 'powen_footer_copyright_date', sprintf( __( '%s', 'powen-lite' ), date('Y') ) ); ?></span>
 
 				<?php if( powen_mod( 'copyright_textbox' ) !== '' ) { ?>
-			    <a href="<?php echo apply_filters( 'powen_copyright_text_url', esc_url( home_url('/') ) ); ?>" class="powen-copyright" title="<?php echo apply_filters( 'powen_copyright_text', esc_attr( get_bloginfo('name', 'display') ) ); ?>">
-			        <?php echo esc_textarea( powen_mod( 'copyright_textbox' ), 'powen-lite' ); ?>
-			    </a>
+					<span class="powen-footer-copyright">
+					    <a href="<?php echo apply_filters( 'powen_copyright_text_url', esc_url( home_url('/') ) ); ?>" class="powen-copyright" title="<?php echo apply_filters( 'powen_copyright_text', esc_attr( get_bloginfo('name', 'display') ) ); ?>">
+					        <?php echo esc_textarea( powen_mod( 'copyright_textbox' ), 'powen-lite' ); ?>
+					    </a>
+				    </span>
 			    <?php } ?>
 
 				<span class="sep"><?php echo apply_filters( 'powen_footer_site_info_pipe',  ' |'  ); ?></span>
 
-				<?php
-					$footerUrl = esc_url( 'http://supernovathemes.com' );
-					printf( __( '%1$s by %2$s.', 'powen-lite' ), 'Powen', '<a href= '.apply_filters( 'powen_theme_url', $footerUrl ).' class="powen-site" rel="designer">'.powen_mod('theme_author', 'Supernova Themes').'</a>' );
-				?>
+				<span class="powen-site-info">
+					<?php
+						$footerUrl = esc_url( 'http://supernovathemes.com' );
+					?>
+					<span class="powen-site-identity">Powen <?php _e( 'by' , 'powen-lite' ); ?></span>
+					<a href="<?php echo apply_filters( 'powen_theme_url', $footerUrl ); ?>" class="powen-site" rel="designer">
+						<?php echo powen_mod('theme_author', 'Supernova Themes'); ?>
+					</a>
+				</span>
 
 				<?php do_action( 'powen_footer_site_info_ends' ); ?>
 
