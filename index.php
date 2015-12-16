@@ -24,9 +24,8 @@ get_header(); ?>
 		<?php
 
 			$args = apply_filters('powen_recent_post_arguments_array', array(
-				'author'         => 1,
-				'posts_per_page' => 1,
-				'post_status'    => 'publish',
+				'posts_per_page'      => 1,
+				'ignore_sticky_posts' => true,
 			) );
 
 			$query = new WP_Query( $args );
