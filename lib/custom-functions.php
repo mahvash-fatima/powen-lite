@@ -257,3 +257,48 @@ function powen_nag_ignore() {
 
     }
 }
+
+
+if( ! function_exists( 'powen_font_url' ) )
+{
+	/**
+	 * Returns the font url of the theme, we are returning it from a function to handle two things
+	 * one is to handle the http problems and the other is so that we can also load it to post editor.
+	 * @return string font url
+	 */
+	function powen_font_url()
+	{
+		/**
+		 * Use font url without http://, we do this because google font without https have
+		 * problem loading on websites with https.
+		 * @var font_url
+		 */
+		$font_url = 'fonts.googleapis.com/css?family=Rosario|PT+Sans|Oxygen:400';
+
+		return ( substr( site_url(), 0, 8 ) == 'https://') ? 'https://' . $font_url : 'http://' . $font_url;
+	}
+}
+
+if( ! function_exists( 'powen_image_size' ) ) :
+
+function powen_image_size() {
+	if( powen_mod( 'image_size' ) == 'thumbnail' ) {
+		if( has_post_thumbnail() ) {
+			the_post_thumbnail('thumbnail');
+		}
+	}elseif( powen_mod( 'image_size' ) == 'medium' ) {
+		if( has_post_thumbnail() ) {
+			the_post_thumbnail('medium');
+		}
+	}elseif( powen_mod( 'image_size' ) == 'large' ) {
+		if( has_post_thumbnail() ) {
+			the_post_thumbnail('large');
+		}
+	}elseif( powen_mod( 'image_size' ) == 'full' ) {
+		if( has_post_thumbnail() ) {
+			the_post_thumbnail('full');
+		}
+	}
+}
+
+endif;
