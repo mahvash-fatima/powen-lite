@@ -11,11 +11,25 @@
         display: inline-block;
     }
 }
-.widget_search input {
-    border: none;
+
+.widget_search {
+    input[type=search] {
+        border: none;
+        width: 100%;
+        padding: rem-calc(5 0);
+        text-indent: 10px;
+    }
+    input[type=submit] {
+        display: none;
+    }
 }
-.widget_tag_cloud a, .widget_powen_social_widget a, .widget_search input {
+
+.widget_tag_cloud a, .widget_powen_social_widget a {
     box-shadow: 0px 0px 0px 1px #f2f2f2;
+}
+
+.site-footer .widget_search input[type=search] {
+    box-shadow: 0px 0px 0px 1px #565656;
 }
 
 //widget_rss
@@ -39,7 +53,7 @@
     padding: rem-calc(10 0);
 }
 
-.widget_calendar caption, .powen-pagination .current, .widget_calendar .current-date a {
+.powen-pagination .current {
   color: #ffffff;
 }
 
@@ -106,17 +120,39 @@
     float: right;
 }
 
-//social icons
+//Button
+.powen-footer-widgets {
+    input[type="submit"] {
+        background: transparent;
+        font-size: rem-calc(13);
+        padding: rem-calc(2 5);
+        text-transform: inherit;
+    }
+}
+
+//Social Icons
 .widget_powen_social_widget {
     text-align: center;
     .powen-social-icon {
         font-size: 1rem;
+        position: relative;
     }
     a {
         width: rem-calc(40);
         height: rem-calc(40);
         margin: rem-calc(2 0);
-        line-height: 2.5;
+        i {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            -webkit-transform : translateY(-50%);
+            -moz-transform    : translateY(-50%);
+            -ms-transform     : translateY(-50%);
+            -o-transform      : translateY(-50%);
+            transform         : translateY(-50%);
+        }
     }
 }
 .powen-footer-widgets .powen-social-icon a, .powen-footer-widgets .tagcloud a, .powen-footer-widgets input{
@@ -125,4 +161,38 @@
 #monster-widget-placeholder-8 {
     width: 100%;
     padding: $default_gutter;
+}
+
+//Widget Calendar
+.widget_calendar {
+    thead, tbody {
+        text-align: center;
+    }
+    th, td {
+        padding: rem-calc(5);
+        border: 0;
+    }
+    thead th {
+        font-weight: normal;
+    }
+    tbody td a {
+        font-weight: bold;
+    }
+    a {
+        text-decoration: none;
+    }
+    caption {
+        margin-bottom   : rem-calc(15);
+    }
+    #today {
+        border: 1px solid;
+    }
+    tfoot {
+        #prev {
+            text-align: left;
+        }
+        #next {
+            text-align: right;
+        }
+    }
 }

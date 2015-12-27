@@ -216,44 +216,22 @@ endif; //powen_post_categories
 
 add_action( 'wp_head', 'powen_post_categories' );
 
+if( ! function_exists( 'powen_font_url' ) )
+{
+	/**
+	 * Returns the font url of the theme, we are returning it from a function to handle two things
+	 * one is to handle the http problems and the other is so that we can also load it to post editor.
+	 * @return string font url
+	 */
+	function powen_font_url()
+	{
+		/**
+		 * Use font url without http://, we do this because google font without https have
+		 * problem loading on websites with https.
+		 * @var font_url
+		 */
+		$font_url = 'fonts.googleapis.com/css?family=Rosario|PT+Sans|Oxygen:400';
 
-
-//Notice
-add_action('admin_notices', 'powen_admin_notice');
-
-function powen_admin_notice() {
-
-    global $current_user ;
-
-        $user_id = $current_user->ID;
-
-        /* Check that the user hasn't already clicked to ignore the message */
-
-    if ( ! get_user_meta($user_id, 'powen_ignore_notice') ) {
-
-        echo '<div class="updated"><p>';
-
-        printf(__('The Menu had some bugs and we have fixed the issue. You will need to add your menu to one of the Theme Locations. 1.Scroll to the bottom of the menu editor window. 2.In the section titled Theme Locations, click the check box for the location where you want your menu to appear. 3.Click Save Menu once you have made your selection. | <a href="%1$s">Hide Notice</a>', 'powen-lite'), '?powen_nag_ignore=0');
-
-        echo "</p></div>";
-
-    }
-
-}
-
-add_action('admin_init', 'powen_nag_ignore');
-
-function powen_nag_ignore() {
-
-    global $current_user;
-
-        $user_id = $current_user->ID;
-
-        /* If user clicks to ignore the notice, add that to their user meta */
-
-        if ( isset($_GET['powen_nag_ignore']) && '0' == $_GET['powen_nag_ignore'] ) {
-
-             add_user_meta($user_id, 'powen_ignore_notice', 'true', true);
-
-    }
+		return ( substr( site_url(), 0, 8 ) == 'https://') ? 'https://' . $font_url : 'http://' . $font_url;
+	}
 }

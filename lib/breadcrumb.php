@@ -28,12 +28,12 @@ if ( ! function_exists( 'powen_breadcrumb' ) ) :
                 // Single post (Only display the first category)
                 echo '<li class="item-cat item-cat-' . $category[0]->term_id . ' item-cat-' . $category[0]->category_nicename . '"><a class="bread-cat bread-cat-' . $category[0]->term_id . ' bread-cat-' . $category[0]->category_nicename . '" href="' . esc_url(get_category_link($category[0]->term_id )) . '" title="' . esc_attr( $category[0]->cat_name ) . '">' . $category[0]->cat_name . '</a></li>';
                 echo '<li class="separator separator-' . $category[0]->term_id . '"></li>';
-                echo '<li class="item-current item-' . $post->ID . '"><strong class="bread-current bread-' . $post->ID . '" title="' . esc_attr( get_the_title() ) . '">' . get_the_title() . '</strong></li>';
+                echo '<li class="item-current item-' . $post->ID . '"><span class="bread-current bread-' . $post->ID . '" title="' . esc_attr( get_the_title() ) . '">' . get_the_title() . '</span></li>';
 
             } else if ( is_category() ) {
 
                 // Category page
-                echo '<li class="item-current item-cat-' . $category[0]->term_id . ' item-cat-' . $category[0]->category_nicename . '"><strong class="bread-current bread-cat-' . $category[0]->term_id . ' bread-cat-' . $category[0]->category_nicename . '">' . $category[0]->cat_name . '</strong></li>';
+                echo '<li class="item-current item-cat-' . $category[0]->term_id . ' item-cat-' . $category[0]->category_nicename . '"><span class="bread-current bread-cat-' . $category[0]->term_id . ' bread-cat-' . $category[0]->category_nicename . '">' . $category[0]->cat_name . '</span></li>';
 
             } else if ( is_page() ) {
 
@@ -56,12 +56,12 @@ if ( ! function_exists( 'powen_breadcrumb' ) ) :
                     echo $parents;
 
                     // Current page
-                    echo '<li class="item-current item-' . $post->ID . '"><strong title="' . get_the_title() . '"> ' . get_the_title() . '</strong></li>';
+                    echo '<li class="item-current item-' . $post->ID . '"><span title="' . get_the_title() . '"> ' . get_the_title() . '</span></li>';
 
                 } else {
 
                     // Just display current page if not parents
-                    echo '<li class="item-current item-' . $post->ID . '"><strong class="bread-current bread-' . $post->ID . '"> ' . get_the_title() . '</strong></li>';
+                    echo '<li class="item-current item-' . $post->ID . '"><span class="bread-current bread-' . $post->ID . '"> ' . get_the_title() . '</span></li>';
 
                 }
 
@@ -76,7 +76,7 @@ if ( ! function_exists( 'powen_breadcrumb' ) ) :
                 $terms = get_terms( $taxonomy, $args );
 
                 // Display the tag name
-                echo '<li class="item-current item-tag-' . $terms[0]->term_id . ' item-tag-' . $terms[0]->slug . '"><strong class="bread-current bread-tag-' . $terms[0]->term_id . ' bread-tag-' . $terms[0]->slug . '">' . $terms[0]->name . '</strong></li>';
+                echo '<li class="item-current item-tag-' . $terms[0]->term_id . ' item-tag-' . $terms[0]->slug . '"><span class="bread-current bread-tag-' . $terms[0]->term_id . ' bread-tag-' . $terms[0]->slug . '">' . $terms[0]->name . '</span></li>';
 
             } elseif ( is_day() ) {
 
@@ -91,7 +91,7 @@ if ( ! function_exists( 'powen_breadcrumb' ) ) :
                 echo '<li class="separator separator-' . get_the_time('m') . '"></li>';
 
                 // Day display
-                echo '<li class="item-current item-' . get_the_time('j') . '"><strong class="bread-current bread-' . get_the_time('j') . '"> ' . sprintf( __( '%s', 'powen-lite' ), get_the_time('jS') ) . ' ' . sprintf( __( '%s', 'powen-lite' ), get_the_time('M') ) . __( 'Archives', 'powen-lite' ) . '</strong></li>';
+                echo '<li class="item-current item-' . get_the_time('j') . '"><span class="bread-current bread-' . get_the_time('j') . '"> ' . sprintf( __( '%s', 'powen-lite' ), get_the_time('jS') ) . ' ' . sprintf( __( '%s', 'powen-lite' ), get_the_time('M') ) . __( 'Archives', 'powen-lite' ) . '</span></li>';
 
             } else if ( is_month() ) {
 
@@ -102,12 +102,12 @@ if ( ! function_exists( 'powen_breadcrumb' ) ) :
                 echo '<li class="separator separator-' . get_the_time('Y') . '"></li>';
 
                 // Month display
-                echo '<li class="item-month item-month-' . get_the_time('m') . '"><strong class="bread-month bread-month-' . get_the_time('m') . '" title="' . esc_attr( get_the_time('M') ) . '">' . sprintf( __( '%s', 'powen-lite' ), get_the_time('M') ) . __( 'Archives', 'powen-lite' ) . '</strong></li>';
+                echo '<li class="item-month item-month-' . get_the_time('m') . '"><span class="bread-month bread-month-' . get_the_time('m') . '" title="' . esc_attr( get_the_time('M') ) . '">' . sprintf( __( '%s', 'powen-lite' ), get_the_time('M') ) . __( 'Archives', 'powen-lite' ) . '</span></li>';
 
             } else if ( is_year() ) {
 
                 // Display year archive
-                echo '<li class="item-current item-current-' . get_the_time('Y') . '"><strong class="bread-current bread-current-' . get_the_time('Y') . '" title="' . esc_attr( get_the_time('Y') ) . '">' . sprintf( __( '%s', 'powen-lite' ), get_the_time('Y') ) . __( 'Archives', 'powen-lite' ) . '</strong></li>';
+                echo '<li class="item-current item-current-' . get_the_time('Y') . '"><span class="bread-current bread-current-' . get_the_time('Y') . '" title="' . esc_attr( get_the_time('Y') ) . '">' . sprintf( __( '%s', 'powen-lite' ), get_the_time('Y') ) . __( 'Archives', 'powen-lite' ) . '</span></li>';
 
             } else if ( is_author() ) {
 
@@ -118,17 +118,17 @@ if ( ! function_exists( 'powen_breadcrumb' ) ) :
                 $userdata = get_userdata( $author );
 
                 // Display author name
-                echo '<li class="item-current item-current-' . $userdata->user_nicename . '"><strong class="bread-current bread-current-' . $userdata->user_nicename . '" title="' . esc_attr($userdata->display_name) . '">' . __( 'Author: ', 'powen-lite' ) . $userdata->display_name . '</strong></li>';
+                echo '<li class="item-current item-current-' . $userdata->user_nicename . '"><span class="bread-current bread-current-' . $userdata->user_nicename . '" title="' . esc_attr($userdata->display_name) . '">' . __( 'Author: ', 'powen-lite' ) . $userdata->display_name . '</span></li>';
 
             } else if ( get_query_var('paged') ) {
 
                 // Paginated archives
-                echo '<li class="item-current item-current-' . get_query_var('paged') . '"><strong class="bread-current bread-current-' . get_query_var('paged') . '" title="Page ' . esc_attr( get_query_var('paged') ) . '">'.__( 'Page', 'powen-lite' ) . ' ' . get_query_var('paged') . '</strong></li>';
+                echo '<li class="item-current item-current-' . get_query_var('paged') . '"><span class="bread-current bread-current-' . get_query_var('paged') . '" title="Page ' . esc_attr( get_query_var('paged') ) . '">'.__( 'Page', 'powen-lite' ) . ' ' . get_query_var('paged') . '</span></li>';
 
             } else if ( is_search() ) {
 
                 // Search results page
-                echo '<li class="item-current item-current-' . get_search_query() . '"><strong class="bread-current bread-current-' . get_search_query() . '" title="Search results for: ' . esc_attr( get_search_query() ) . '">' . __('Search results for: ', 'powen-lite' ) . get_search_query() . '</strong></li>';
+                echo '<li class="item-current item-current-' . get_search_query() . '"><span class="bread-current bread-current-' . get_search_query() . '" title="Search results for: ' . esc_attr( get_search_query() ) . '">' . __('Search results for: ', 'powen-lite' ) . get_search_query() . '</span></li>';
 
             } elseif ( is_404() ) {
 
