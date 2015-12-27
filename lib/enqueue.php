@@ -15,7 +15,7 @@ if ( ! function_exists( 'powen_enqueue_styles' ) ) :
 
 		if( ! defined( 'POWEN_PRO' ) )
 
-		wp_register_style( 'powen-google-font', powen_font_url() );
+		wp_enqueue_style( 'powen-google-font' , 'http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400,700' );
 
 		//Animate
 		wp_register_style( 'powen-animate', POWEN_URI . '/css/vendor-css/animate.css' );
@@ -38,8 +38,6 @@ if ( ! function_exists( 'powen_enqueue_styles' ) ) :
 		/*===============
 	          ENQUEUE
 		=================*/
-
-		wp_enqueue_style( 'powen-google-font');
 
 		wp_enqueue_style('powen-mobile-menu-style');
 

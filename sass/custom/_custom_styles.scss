@@ -11,18 +11,6 @@ body {
 	@include body();
 }
 
-body,
-.mm-menu,
-input[type=search],
-input[type="submit"],
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-textarea {
-	font-family: "Rosario", "PT Sans", "Oxygen";
-}
-
 @include links();
 
 blockquote {
@@ -135,29 +123,30 @@ ul, ol {
 }
 
 .powen-search-box-top {
-	border: 1px solid transparent;
+	display: inline-block;
 	float: right;
 	position: relative;
+	height: rem-calc(25);
+	padding: rem-calc(15);
 	margin-right: rem-calc(10);
 	form {
 		position: absolute;
 		top: 0;
 		right: 0;
 	}
-	input[type=submit] {
+	.search-submit {
 		display: none;
 	}
-	input[type=search] {
+	input {
 		border: none;
 		height: auto;
-		padding: rem-calc(5 25 5 5);
+		padding-right: rem-calc(25);
 		display: none;
 		width: rem-calc(150);
 		background: #fff;
     	box-shadow: 0px 0px 0px 1px #fafafa;
 	}
 }
-
 .fa-search {
 	position: absolute;
     top: rem-calc(5);
@@ -263,10 +252,14 @@ ul, ol {
 
 .entry-footer {
 	margin: $post_b_padding 0 $post_b_padding / $phi 0;
+	line-height: 1rem;
 	text-align: center;
 	span {
 		margin: rem-calc(5);
 		padding: rem-calc(5);
+		display: inline-block;
+	}
+	.tags-links {
 		display: inline;
 		a {
 			line-height: 2;
@@ -339,6 +332,14 @@ ul, ol {
 .comments-area .comment-form p label {
 	display: inline-block;
 	min-width: rem-calc(100);
+}
+
+.widget_search input {
+	width: 100%;
+}
+
+.widget-area .widget_search .search-submit {
+	display: none;
 }
 
 // Footer
