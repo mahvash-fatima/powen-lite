@@ -123,24 +123,22 @@ ul, ol {
 }
 
 .powen-search-box-top {
-	display: inline-block;
+	border: 1px solid transparent;
 	float: right;
 	position: relative;
-	height: rem-calc(25);
-	padding: rem-calc(15);
 	margin-right: rem-calc(10);
 	form {
 		position: absolute;
 		top: 0;
 		right: 0;
 	}
-	.search-submit {
-		display: none;
-	}
-	input {
+	input[type=submit] {
+ 		display: none;
+ 	}
+	input[type=search] {
 		border: none;
 		height: auto;
-		padding-right: rem-calc(25);
+		padding: rem-calc(5 25 5 5);
 		display: none;
 		width: rem-calc(150);
 		background: #fff;
@@ -332,14 +330,6 @@ ul, ol {
 .comments-area .comment-form p label {
 	display: inline-block;
 	min-width: rem-calc(100);
-}
-
-.widget_search input {
-	width: 100%;
-}
-
-.widget-area .widget_search .search-submit {
-	display: none;
 }
 
 // Footer

@@ -50,49 +50,49 @@ if( ! function_exists( 'powen_default_slides' ) ) :
 	            (
 					'title'       => __('Demo Post One', 'powen-lite'),
 					'link' 		  => home_url( '/' ),
-					'description' => __('Omnis fugit itaque architecto sit saepe quidem tempora fuga esse incidunt perferendis harum.', 'powen-lite'),
+					'description' => __('Omnis fugit itaque architecto sit saepe quidem tempora.', 'powen-lite'),
 					'image'       => get_template_directory_uri() . '/images/slides/slide8.jpg',
 	            ),
 	        array
 	            (
 					'title'       => __('Demo Post Two', 'powen-lite'),
 					'link' 		  => home_url( '/' ),
-					'description' => __('Reiciendis blanditiis eius officia molestias dicta vero hic accusamus aliquam enim optio porro veritatis.', 'powen-lite'),
+					'description' => __('Reiciendis blanditiis eius officia molestias dicta ver.', 'powen-lite'),
 					'image'       => get_template_directory_uri() . '/images/slides/slide7.jpg',
 	            ),
 	        array
 	            (
 					'title'       => __('Demo Post Three', 'powen-lite'),
 					'link' 		  => home_url( '/' ),
-					'description' => __('Eaque perferendis nesciunt provident facere sint laboriosam commodi saepe quas dolorem ipsam saepe itaque', 'powen-lite'),
+					'description' => __('Eaque perferendis nesciunt provident.', 'powen-lite'),
 					'image'       => get_template_directory_uri() . '/images/slides/slide6.jpg',
 	            ),
 	        array
 	            (
 					'title'       => __('Demo Post Four', 'powen-lite'),
 					'link' 		  => home_url( '/' ),
-					'description' => __('Cupiditate deleniti, enim natus magni nisi deleniti eligendi recusandae reiciendis.', 'powen-lite'),
+					'description' => __('Cupiditate deleniti, enim natus.', 'powen-lite'),
 					'image'       => get_template_directory_uri() . '/images/slides/slide5.jpg',
 	            ),
 	        array
 	            (
 					'title'       => __('Demo Post Five', 'powen-lite'),
 					'link' 		  => home_url( '/' ),
-					'description' => __('Temporibus eaque rem unde iste fugasse quaerat quo veniam reprehenderit repudiandae perferendis porro minus.', 'powen-lite'),
+					'description' => __('Temporibus eaque rem unde iste fugasse quaerat quo ven.', 'powen-lite'),
 					'image'       => get_template_directory_uri() . '/images/slides/slide4.jpg',
 	            ),
 	        array
 	            (
 					'title'       => __('Demo Post Six', 'powen-lite'),
 					'link' 		  => home_url( '/' ),
-					'description' => __('Perferendis quasi totam voluptates quo quaerat temporibus maiores nesciunt soluta rerum sint laboriosam.', 'powen-lite'),
+					'description' => __('Perferendis quasi totam voluptates quo quaerat tempori.', 'powen-lite'),
 					'image'       => get_template_directory_uri() . '/images/slides/slide3.jpg',
 	            ),
 	        array
 	            (
 					'title'       => __('Demo Post Seven', 'powen-lite'),
 					'link' 		  => home_url( '/' ),
-					'description' => __('Inventore nesciunt quaerat unde dicta molestiae animi blanditiis expedita est architecto ipsum ullam nisi perspiciatis.', 'powen-lite'),
+					'description' => __('Inventore nesciunt quaerat unde dicta molestiae animis.', 'powen-lite'),
 					'image'       => get_template_directory_uri() . '/images/slides/slide2.jpg',
 	            ),
 	        array
@@ -100,7 +100,7 @@ if( ! function_exists( 'powen_default_slides' ) ) :
 					'title'       => __('Demo Post Eight', 'powen-lite'),
 					'link' 		  => home_url( '/' ),
 					'description' => __('Libero mollitia error expedita totam iste minus cumque quos obcaecati earum rerum totam ea vitae.', 'powen-lite'),
-					'image'       => get_template_directory_uri() . '/images/slides/slide1.jpg',
+					'description' => __('Libero mollitia error expedita totam iste minus cumque.', 'powen-lite'),
 	            )
 	    ) );
 	}
@@ -217,48 +217,6 @@ endif; //powen_post_categories
 add_action( 'wp_head', 'powen_post_categories' );
 
 
-
-//Notice
-add_action('admin_notices', 'powen_admin_notice');
-
-function powen_admin_notice() {
-
-    global $current_user ;
-
-        $user_id = $current_user->ID;
-
-        /* Check that the user hasn't already clicked to ignore the message */
-
-    if ( ! get_user_meta($user_id, 'powen_ignore_notice') ) {
-
-        echo '<div class="updated"><p>';
-
-        printf(__('The Menu had some bugs and we have fixed the issue. You will need to add your menu to one of the Theme Locations. 1.Scroll to the bottom of the menu editor window. 2.In the section titled Theme Locations, click the check box for the location where you want your menu to appear. 3.Click Save Menu once you have made your selection. | <a href="%1$s">Hide Notice</a>', 'powen-lite'), '?powen_nag_ignore=0');
-
-        echo "</p></div>";
-
-    }
-
-}
-
-add_action('admin_init', 'powen_nag_ignore');
-
-function powen_nag_ignore() {
-
-    global $current_user;
-
-        $user_id = $current_user->ID;
-
-        /* If user clicks to ignore the notice, add that to their user meta */
-
-        if ( isset($_GET['powen_nag_ignore']) && '0' == $_GET['powen_nag_ignore'] ) {
-
-             add_user_meta($user_id, 'powen_ignore_notice', 'true', true);
-
-    }
-}
-
-
 if( ! function_exists( 'powen_font_url' ) )
 {
 	/**
@@ -273,32 +231,8 @@ if( ! function_exists( 'powen_font_url' ) )
 		 * problem loading on websites with https.
 		 * @var font_url
 		 */
-		$font_url = 'fonts.googleapis.com/css?family=Rosario|PT+Sans|Oxygen:400';
+		$font_url = 'fonts.googleapis.com/css?family=Open+Sans:400,700';
 
 		return ( substr( site_url(), 0, 8 ) == 'https://') ? 'https://' . $font_url : 'http://' . $font_url;
 	}
 }
-
-if( ! function_exists( 'powen_image_size' ) ) :
-
-function powen_image_size() {
-	if( powen_mod( 'image_size' ) == 'thumbnail' ) {
-		if( has_post_thumbnail() ) {
-			the_post_thumbnail('thumbnail');
-		}
-	}elseif( powen_mod( 'image_size' ) == 'medium' ) {
-		if( has_post_thumbnail() ) {
-			the_post_thumbnail('medium');
-		}
-	}elseif( powen_mod( 'image_size' ) == 'large' ) {
-		if( has_post_thumbnail() ) {
-			the_post_thumbnail('large');
-		}
-	}elseif( powen_mod( 'image_size' ) == 'full' ) {
-		if( has_post_thumbnail() ) {
-			the_post_thumbnail('full');
-		}
-	}
-}
-
-endif;

@@ -567,7 +567,7 @@ class Powen_Customizer {
         $wp_customize->add_setting( 'powen_mod[widgets_title]', array(
           'sanitize_callback' => 'powen_sanitize_choices',
           'capability'        => 'edit_theme_options',
-          'default'           => '1.285',
+          'default'           => '1.214',
         ));
 
         $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[widgets_title]', array(
@@ -650,7 +650,7 @@ class Powen_Customizer {
       $wp_customize->add_setting( 'powen_mod[show_latest_post]', array(
           'sanitize_callback' => 'sanitize_text_field',
           'capability'        => 'edit_theme_options',
-          'defaut'            => 1,
+          'default'            => 1,
       ) );
 
       $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[show_latest_post]', array(

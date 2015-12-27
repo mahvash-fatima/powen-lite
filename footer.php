@@ -51,7 +51,7 @@
 			<div class="powen-footer-site-info">
 				<?php do_action( 'powen_footer_site_info_begins' ); ?>
 
-			    <span class="powen-footer-date-before"><?php echo apply_filters( 'powen_copyright_date_text', esc_attr( '(C)', 'powen-lite' ) ); ?></span><span class="powen-footer-date"><?php echo apply_filters( 'powen_footer_copyright_date', sprintf( __( '%s', 'powen-lite' ), date('Y') ) ); ?></span>
+			    <span class="powen-footer-date"><?php echo apply_filters( 'powen_footer_copyright_date', sprintf( __( '&copy%s', 'powen-lite' ), date('Y') ) ); ?></span>
 
 				<?php if( powen_mod( 'copyright_textbox' ) !== '' ) { ?>
 					<span class="powen-footer-copyright">
