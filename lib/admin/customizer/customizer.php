@@ -650,6 +650,7 @@ class Powen_Customizer {
       $wp_customize->add_setting( 'powen_mod[show_latest_post]', array(
           'sanitize_callback' => 'sanitize_text_field',
           'capability'        => 'edit_theme_options',
+          'defaut'            => 1,
       ) );
 
       $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[show_latest_post]', array(

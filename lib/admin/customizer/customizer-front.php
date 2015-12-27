@@ -28,7 +28,6 @@ class Powen_Customizer_Front extends Powen_Customizer
 		do_action( 'powen_lite_custom_css_begin' );
 
 		self::create_color_scheme();
-		self::generate_css( 'body', 'font-family', 'theme_font', '"', '"', "Open Sans" );
 		self::generate_css( 'body', 'font-size', 'body', '', 'rem', '1', true, '(min-width:900px)' );
 		self::generate_css( '.site-branding .site-title', 'font-size', 'site_title', '', 'rem', '2.142', true, '(min-width:900px)' );
 		self::generate_css( '.site-branding .site-description', 'font-size', 'site_description', '', 'rem', '0.928', true, '(min-width:900px)' );
@@ -211,11 +210,11 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'.flex-direction-nav li .flex-next:before',
 			'.breadcrumbs a',
 			'.powen-continue-reading:after',
-			'#today',
+			'.widget_calendar thead',
+			'.widget_calendar #today'
 		) );
 		//background
 		$background_color_selectors = apply_filters('powen_background_color_selectors_array', array(
-			'.widget_calendar caption',
 			'.current-date',
 			'.entry-header:after',
 			'.widget-title:after',
