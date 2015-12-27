@@ -38,6 +38,8 @@ do_action( 'powen_files_load' );
 require_once POWEN_ADMIN_DR . 'customizer/customizer.php';
 require_once POWEN_ADMIN_DR . 'customizer/customizer-front.php';
 require_once POWEN_DR . '/lib/social-widget.php';
+require_once POWEN_ADMIN_DR . 'customizer/add-control-custom-radio-image.php';
+require_once POWEN_ADMIN_DR . 'customizer/admin-functions.php';
 
 /**
  * Breadcrumb
