@@ -23,9 +23,10 @@
 	<header class="entry-header">
 		<?php esc_attr( the_title( '<h2 class="entry-title">', '</h2>' ) ); ?>
 
-
+		<div class="entry-meta">
 			<?php powen_posted_on(); ?>
 			<?php powen_the_author(); ?>
+		</div>
 
 	</header><!-- .entry-header -->
 

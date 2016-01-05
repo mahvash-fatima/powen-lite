@@ -17,6 +17,9 @@ blockquote {
 	padding: $default_gutter;
 	font-size: 20*$px;
 	@include blockquote();
+	p {
+		display: inline;
+	}
 }
 
 // Overridden from lists.scss
@@ -123,7 +126,6 @@ ul, ol {
 }
 
 .powen-search-box-top {
-	border: 1px solid transparent;
 	float: right;
 	position: relative;
 	margin-right: rem-calc(10);
@@ -229,8 +231,19 @@ ul, ol {
 .entry-meta {
 	display: inline-block;
 	font-weight: 300;
+	font-size: rem-calc(13);
+	a {
+		color: #888888;
+	}
+}
 
-	@include entry_meta();
+.posted-on:before,
+.author:before,
+.edit-link:before,
+.comments-link:before,
+.tags-links:before,
+.cat-links:before {
+	color: #aaaaaa;
 }
 
 .continue_btn {
@@ -252,6 +265,7 @@ ul, ol {
 	margin: $post_b_padding 0 $post_b_padding / $phi 0;
 	line-height: 1rem;
 	text-align: center;
+	font-size: rem-calc(14);
 	span {
 		margin: rem-calc(5);
 		padding: rem-calc(5);
@@ -264,6 +278,9 @@ ul, ol {
 		}
 	}
 	@include entry_footer();
+	a {
+		color: #888888;
+	}
 }
 
 .comment-list {

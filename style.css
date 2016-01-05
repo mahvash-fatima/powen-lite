@@ -681,10 +681,6 @@ input[type="submit"] {
   padding: 1.618rem;
 }
 
-.site-footer .widget_search input[type=search] {
-  box-shadow: 0px 0px 0px 1px #565656;
-}
-
 .powen-footer-widgets input[type="submit"] {
   background: transparent;
   font-size: 0.8125rem;
@@ -700,6 +696,15 @@ input[type="submit"] {
   width: 2.8125rem;
   height: 0.0625rem;
   margin: 0.625rem 0 1.5625rem 0;
+}
+
+.site-footer input[type="search"],
+.site-footer input[type="email"],
+.site-footer input[type="url"],
+.site-footer input[type="password"],
+.site-footer input[type="text"] {
+  box-shadow: 0 0 0 1px #565656;
+  border: none;
 }
 
 /*--------------------------------------------------------------
@@ -1060,6 +1065,9 @@ blockquote {
 blockquote a, blockquote a:visited, blockquote a:active {
   color: inherit;
 }
+blockquote p {
+  display: inline;
+}
 
 ul, ol {
   padding: 0;
@@ -1161,7 +1169,6 @@ ul, ol {
 }
 
 .powen-search-box-top {
-  border: 1px solid transparent;
   float: right;
   position: relative;
   margin-right: 0.625rem;
@@ -1258,9 +1265,19 @@ ul, ol {
 .entry-meta {
   display: inline-block;
   font-weight: 300;
+  font-size: 0.8125rem;
 }
-.entry-meta a, .entry-meta a:visited, .entry-meta a:active {
-  color: inherit;
+.entry-meta a {
+  color: #888888;
+}
+
+.posted-on:before,
+.author:before,
+.edit-link:before,
+.comments-link:before,
+.tags-links:before,
+.cat-links:before {
+  color: #aaaaaa;
 }
 
 .continue_btn {
@@ -1282,6 +1299,7 @@ ul, ol {
   margin: 1.618rem 0 1rem 0;
   line-height: 1rem;
   text-align: center;
+  font-size: 0.875rem;
   border-top: 0.125rem solid #F8F8F8;
 }
 .entry-footer span {
@@ -1294,6 +1312,9 @@ ul, ol {
 }
 .entry-footer .tags-links a {
   line-height: 2;
+}
+.entry-footer a {
+  color: #888888;
 }
 
 .comment-list {
@@ -1602,6 +1623,8 @@ FontAwesome
 .powen-continue-reading:after,
 .breadcrumbs .separator:after,
 .tags-links:before,
+blockquote:before,
+blockquote:after,
 .widget_recent_comments li:before,
 .widget_recent_comments li > a:before,
 .widget_archive li:before,
@@ -1711,6 +1734,16 @@ Write your code here
   padding-left: 0.625rem;
   padding-top: 0.625rem;
   border-radius: 50%;
+}
+
+blockquote:before {
+  content: "\f10d";
+  margin-right: 0.625rem;
+}
+
+blockquote:after {
+  content: "\f10e";
+  margin-left: 0.625rem;
 }
 
 .footer-scroll:before {

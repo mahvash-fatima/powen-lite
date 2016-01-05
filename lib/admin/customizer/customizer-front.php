@@ -200,12 +200,6 @@ class Powen_Customizer_Front extends Powen_Customizer
 		//color
 		$color_selectors = apply_filters('powen_create_color_scheme_array', array (
 			'p a',
-			'.cat-links:before',
-			'.tags-links:before',
-			'.comments-link:before',
-			'.edit-link:before',
-			'.author:before',
-			'.posted-on:before',
 			'.comment-metadata time:before',
 			'.flex-direction-nav li .flex-prev:before',
 			'.flex-direction-nav li .flex-next:before',

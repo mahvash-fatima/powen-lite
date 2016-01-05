@@ -99,8 +99,8 @@ if( ! function_exists( 'powen_default_slides' ) ) :
 	            (
 					'title'       => __('Demo Post Eight', 'powen-lite'),
 					'link' 		  => home_url( '/' ),
-					'description' => __('Libero mollitia error expedita totam iste minus cumque quos obcaecati earum rerum totam ea vitae.', 'powen-lite'),
 					'description' => __('Libero mollitia error expedita totam iste minus cumque.', 'powen-lite'),
+					'image'       => get_template_directory_uri() . '/images/slides/slide1.jpg',
 	            )
 	    ) );
 	}

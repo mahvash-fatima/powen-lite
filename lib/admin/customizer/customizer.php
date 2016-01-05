@@ -806,6 +806,19 @@ class Powen_Customizer {
           'settings' => 'powen_mod[continue_reading_textbox]',
       ) ) );
 
+      //Latest Post
+      $wp_customize->add_setting( 'powen_mod[latest_post]', array(
+          'default'           => 'Latest',
+          'sanitize_callback' => 'sanitize_text_field',
+          'capability'        => 'edit_theme_options',
+      ) );
+
+      $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[latest_post]', array(
+          'label'    => __( 'Latest Post', 'powen-lite' ),
+          'section'  => 'powen_modify_text_section',
+          'settings' => 'powen_mod[latest_post]',
+      ) ) );
+
       //Copyright Text
 
       $wp_customize->add_setting( 'powen_mod[copyright_textbox]', array(

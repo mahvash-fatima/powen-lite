@@ -1,14 +1,14 @@
-# Copyright (C) 2015 Mahvash Fatima
+# Copyright (C) 2016 Mahvash Fatima
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Powen Lite 1.3.7\n"
+"Project-Id-Version: Powen Lite 1.3.8\n"
 "Report-Msgid-Bugs-To: http://supernovathemes.com/powen-theme\n"
-"POT-Creation-Date: 2015-12-27 19:32:36+00:00\n"
+"POT-Creation-Date: 2016-01-05 07:25:49+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Company <support@powen-lite.com>\n"
 "Language-Team: Team <support@powen-lite.com>\n"
 "X-Generator: grunt-wp-i18n 0.5.3\n"
@@ -434,6 +434,15 @@ msgstr ""
 
 #: inc/extras.php:98
 msgid "Updgrade to Powen Pro"
+msgstr ""
+
+#: inc/extras.php:118
+msgid ""
+"The Menu had some bugs and we have fixed the issue. You will need to add "
+"your menu to one of the Theme Locations. 1.Scroll to the bottom of the menu "
+"editor window. 2.In the section titled Theme Locations, click the check box "
+"for the location where you want your menu to appear. 3.Click Save Menu once "
+"you have made your selection. | <a href=\"%1$s\">Hide Notice</a>"
 msgstr ""
 
 #: inc/template-tags.php:23
@@ -977,9 +986,7 @@ msgid "Demo Post One"
 msgstr ""
 
 #: lib/custom-functions.php:53
-msgid ""
-"Omnis fugit itaque architecto sit saepe quidem tempora fuga esse incidunt "
-"perferendis harum."
+msgid "Omnis fugit itaque architecto sit saepe quidem tempora."
 msgstr ""
 
 #: lib/custom-functions.php:58
@@ -987,9 +994,7 @@ msgid "Demo Post Two"
 msgstr ""
 
 #: lib/custom-functions.php:60
-msgid ""
-"Reiciendis blanditiis eius officia molestias dicta vero hic accusamus "
-"aliquam enim optio porro veritatis."
+msgid "Reiciendis blanditiis eius officia molestias dicta ver."
 msgstr ""
 
 #: lib/custom-functions.php:65
@@ -997,9 +1002,7 @@ msgid "Demo Post Three"
 msgstr ""
 
 #: lib/custom-functions.php:67
-msgid ""
-"Eaque perferendis nesciunt provident facere sint laboriosam commodi saepe "
-"quas dolorem ipsam saepe itaque"
+msgid "Eaque perferendis nesciunt provident."
 msgstr ""
 
 #: lib/custom-functions.php:72
@@ -1007,9 +1010,7 @@ msgid "Demo Post Four"
 msgstr ""
 
 #: lib/custom-functions.php:74
-msgid ""
-"Cupiditate deleniti, enim natus magni nisi deleniti eligendi recusandae "
-"reiciendis."
+msgid "Cupiditate deleniti, enim natus."
 msgstr ""
 
 #: lib/custom-functions.php:79
@@ -1017,9 +1018,7 @@ msgid "Demo Post Five"
 msgstr ""
 
 #: lib/custom-functions.php:81
-msgid ""
-"Temporibus eaque rem unde iste fugasse quaerat quo veniam reprehenderit "
-"repudiandae perferendis porro minus."
+msgid "Temporibus eaque rem unde iste fugasse quaerat quo ven."
 msgstr ""
 
 #: lib/custom-functions.php:86
@@ -1027,9 +1026,7 @@ msgid "Demo Post Six"
 msgstr ""
 
 #: lib/custom-functions.php:88
-msgid ""
-"Perferendis quasi totam voluptates quo quaerat temporibus maiores nesciunt "
-"soluta rerum sint laboriosam."
+msgid "Perferendis quasi totam voluptates quo quaerat tempori."
 msgstr ""
 
 #: lib/custom-functions.php:93
@@ -1037,9 +1034,7 @@ msgid "Demo Post Seven"
 msgstr ""
 
 #: lib/custom-functions.php:95
-msgid ""
-"Inventore nesciunt quaerat unde dicta molestiae animi blanditiis expedita "
-"est architecto ipsum ullam nisi perspiciatis."
+msgid "Inventore nesciunt quaerat unde dicta molestiae animis."
 msgstr ""
 
 #: lib/custom-functions.php:100
@@ -1052,13 +1047,8 @@ msgid ""
 "rerum totam ea vitae."
 msgstr ""
 
-#: lib/custom-functions.php:236
-msgid ""
-"The Menu had some bugs and we have fixed the issue. You will need to add "
-"your menu to one of the Theme Locations. 1.Scroll to the bottom of the menu "
-"editor window. 2.In the section titled Theme Locations, click the check box "
-"for the location where you want your menu to appear. 3.Click Save Menu once "
-"you have made your selection. | <a href=\"%1$s\">Hide Notice</a>"
+#: lib/custom-functions.php:103
+msgid "Libero mollitia error expedita totam iste minus cumque."
 msgstr ""
 
 #: lib/social-widget.php:14
@@ -1412,7 +1402,7 @@ msgstr ""
 
 #: pro/customizer/fonts.php:23
 msgctxt "font style"
-msgid "Rosario"
+msgid "Open Sans"
 msgstr ""
 
 #: pro/customizer/fonts.php:187

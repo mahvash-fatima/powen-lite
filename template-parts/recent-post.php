@@ -11,12 +11,14 @@
 		<header class ="entry-header">
 			<?php the_title( sprintf( '<h2 class ="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
+		<div class="entry-meta">
 			<?php powen_posted_on(); ?>
 			<?php powen_the_author(); ?>
+		</div>
 
 		</header>
 
-		<div class="powen-latest-post-tag"><span class="hvr-curl-bottom-right"><?php echo __('Latest', 'powen-lite'); ?></span></div>
+		<div class="powen-latest-post-tag"><span class="hvr-curl-bottom-right"><?php echo esc_textarea( powen_mod( 'latest_post', 'Latest' ), 'powen-lite' ); ?></span></div>
 
 		<div class="entry-content">
 			<?php powen_content(); ?>

@@ -15,8 +15,10 @@
 
 			<?php if ( 'post' == get_post_type() ) : ?>
 
+			<div class="entry-meta">
 				<?php powen_posted_on(); ?>
 				<?php powen_the_author(); ?>
+			</div>
 
 			<?php endif; ?>
 		</header><!-- .entry-header -->
