@@ -4,7 +4,7 @@ Theme URI: http://supernovathemes.com/powen-theme/
 Author: Mahvash Fatima
 Author URI: http://supernovathemes.com
 Description: Powen Lite has been specially designed for blogging websites however due to its clean design and plenty of customization options, it can easily be customized for any purpose.
-Version: 1.3.8
+Version: 1.3.9
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: powen-lite
@@ -344,7 +344,7 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
+  color: #000000;
   border-radius: 0;
   background: transparent;
 }
@@ -681,11 +681,18 @@ input[type="submit"] {
   padding: 1.618rem;
 }
 
+.widget-area input[type="submit"] {
+  text-transform: inherit;
+  font-size: 0.8125rem;
+  padding: 0.0625rem 0.3125rem;
+}
+
 .powen-footer-widgets input[type="submit"] {
   background: transparent;
   font-size: 0.8125rem;
   padding: 0.125rem 0.3125rem;
   text-transform: inherit;
+  color: #666;
 }
 .powen-footer-widgets .widget-title {
   text-align: left;
@@ -702,9 +709,11 @@ input[type="submit"] {
 .site-footer input[type="email"],
 .site-footer input[type="url"],
 .site-footer input[type="password"],
-.site-footer input[type="text"] {
+.site-footer input[type="text"],
+.site-footer input[submit="submit"] {
   box-shadow: 0 0 0 1px #565656;
   border: none;
+  color: #999999;
 }
 
 /*--------------------------------------------------------------
@@ -1159,6 +1168,11 @@ ul, ol {
   line-height: 2;
 }
 
+.entry-header:after,
+.widget-title:after {
+  background-color: #f2f2f2;
+}
+
 .site-content {
   max-width: 70.3125rem;
   margin: 1.618rem auto;
@@ -1268,7 +1282,7 @@ ul, ol {
   font-size: 0.8125rem;
 }
 .entry-meta a {
-  color: #888888;
+  color: #aaaaaa;
 }
 
 .posted-on:before,
@@ -1277,7 +1291,7 @@ ul, ol {
 .comments-link:before,
 .tags-links:before,
 .cat-links:before {
-  color: #aaaaaa;
+  color: #C0C0C0;
 }
 
 .continue_btn {
@@ -1314,7 +1328,7 @@ ul, ol {
   line-height: 2;
 }
 .entry-footer a {
-  color: #888888;
+  color: #aaaaaa;
 }
 
 .comment-list {
@@ -1624,7 +1638,6 @@ FontAwesome
 .breadcrumbs .separator:after,
 .tags-links:before,
 blockquote:before,
-blockquote:after,
 .widget_recent_comments li:before,
 .widget_recent_comments li > a:before,
 .widget_archive li:before,
@@ -1739,11 +1752,6 @@ Write your code here
 blockquote:before {
   content: "\f10d";
   margin-right: 0.625rem;
-}
-
-blockquote:after {
-  content: "\f10e";
-  margin-left: 0.625rem;
 }
 
 .footer-scroll:before {

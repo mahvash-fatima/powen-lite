@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Powen Lite 1.3.8\n"
 "Report-Msgid-Bugs-To: http://supernovathemes.com/powen-theme\n"
-"POT-Creation-Date: 2016-01-05 07:25:49+00:00\n"
+"POT-Creation-Date: 2016-01-06 01:17:31+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -402,7 +402,7 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: content-page.php:30 content-single.php:36 content.php:39
+#: content-page.php:30 content-single.php:37 content.php:39
 msgid "Pages:"
 msgstr ""
 
@@ -693,6 +693,7 @@ msgid "Content Options"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:645
+#: lib/admin/customizer/customizer.php:817
 msgid "Latest Post"
 msgstr ""
 
@@ -767,197 +768,205 @@ msgstr ""
 msgid "Continue Reading Text"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:817
+#: lib/admin/customizer/customizer.php:830
 msgid "Copyright Text"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:825
+#: lib/admin/customizer/customizer.php:838
 msgid "Supernova Themes"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:831
+#: lib/admin/customizer/customizer.php:844
 msgid "Author's Name"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:846
+#: lib/admin/customizer/customizer.php:859
 msgid "Top Most Menu Title"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:858
-#: lib/admin/customizer/customizer.php:880
+#: lib/admin/customizer/customizer.php:871
+#: lib/admin/customizer/customizer.php:893
 #: pro/customizer/customizer-hooks.php:32
 msgid "Hide"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:868
+#: lib/admin/customizer/customizer.php:881
 msgid "Main Menu Title"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:889
+#: lib/admin/customizer/customizer.php:902
 msgid "Social Media"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:890
+#: lib/admin/customizer/customizer.php:903
 msgid "Example for Phone url: tel:+13174562564"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:904
+#: lib/admin/customizer/customizer.php:917
 msgid "%s url:"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:916
+#: lib/admin/customizer/customizer.php:929
 msgid "Sidebar Layout"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:927
+#: lib/admin/customizer/customizer.php:940
 msgid "Sidebar Position"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:930
-#: lib/admin/customizer/customizer.php:1163
-#: lib/admin/customizer/customizer.php:1200
+#: lib/admin/customizer/customizer.php:943
+#: lib/admin/customizer/customizer.php:1186
+#: lib/admin/customizer/customizer.php:1223
 msgid "left"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:931
-#: lib/admin/customizer/customizer.php:1164
-#: lib/admin/customizer/customizer.php:1201
+#: lib/admin/customizer/customizer.php:944
+#: lib/admin/customizer/customizer.php:1187
+#: lib/admin/customizer/customizer.php:1224
 msgid "right"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:932
+#: lib/admin/customizer/customizer.php:945
 msgid "no-sidebar"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:944
+#: lib/admin/customizer/customizer.php:957
 msgid "For More Options Upgrade to "
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:944
-#: lib/admin/customizer/customizer.php:956
+#: lib/admin/customizer/customizer.php:957
+#: lib/admin/customizer/customizer.php:969
 msgid "Powen Pro"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:946
+#: lib/admin/customizer/customizer.php:959
 msgid "Please support the development of your theme - "
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:946
+#: lib/admin/customizer/customizer.php:959
 msgid "Donate"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:950
+#: lib/admin/customizer/customizer.php:963
 msgid "Slider Options"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:951
+#: lib/admin/customizer/customizer.php:964
 msgid "Add slider"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:969
+#: lib/admin/customizer/customizer.php:982
 msgid "Hide Slider"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:981
+#: lib/admin/customizer/customizer.php:994
 msgid "Fixed Slider Content"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:992
+#: lib/admin/customizer/customizer.php:1005
 msgid "Slide %s"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:993
+#: lib/admin/customizer/customizer.php:1006
 msgid ""
 "Note: All default slide values will be discarded, the moment you make any "
 "changes to the slide."
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1005
+#: lib/admin/customizer/customizer.php:1018
 msgid "Title"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1017
+#: lib/admin/customizer/customizer.php:1030
 msgid "Description"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1029
+#: lib/admin/customizer/customizer.php:1042
 msgid "Link"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1041
+#: lib/admin/customizer/customizer.php:1054
 msgid "Image"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1055
+#: lib/admin/customizer/customizer.php:1068
 msgid "Theme Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1060
+#: lib/admin/customizer/customizer.php:1073
 msgid "Link Color (on hover)"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1065
+#: lib/admin/customizer/customizer.php:1078
 msgid "Site Title Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1070
+#: lib/admin/customizer/customizer.php:1083
 msgid "Site Tagline Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1075
+#: lib/admin/customizer/customizer.php:1088
 msgid "Header Background Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1080
+#: lib/admin/customizer/customizer.php:1093
 msgid "Footer widgets background color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1085
+#: lib/admin/customizer/customizer.php:1098
 msgid "Footer widgets text color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1091
+#: lib/admin/customizer/customizer.php:1104
 msgid "Footer widgets link color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1096
+#: lib/admin/customizer/customizer.php:1109
 msgid "Footer bottom background color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1101
+#: lib/admin/customizer/customizer.php:1114
 msgid "Footer bottom text color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1106
+#: lib/admin/customizer/customizer.php:1119
+msgid "Footer bottom link color"
+msgstr ""
+
+#: lib/admin/customizer/customizer.php:1124
+msgid "Footer link color(on hover)"
+msgstr ""
+
+#: lib/admin/customizer/customizer.php:1129
 msgid "Top Most Menu Background Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1111
+#: lib/admin/customizer/customizer.php:1134
 msgid "Top Most Menu Text Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1116
+#: lib/admin/customizer/customizer.php:1139
 msgid "Main Menu Background Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1121
+#: lib/admin/customizer/customizer.php:1144
 msgid "Main Menu Text Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1159
+#: lib/admin/customizer/customizer.php:1182
 msgid "Site Title & Tagline Placement"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1165
-#: lib/admin/customizer/customizer.php:1202
+#: lib/admin/customizer/customizer.php:1188
+#: lib/admin/customizer/customizer.php:1225
 msgid "center"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1181
+#: lib/admin/customizer/customizer.php:1204
 msgid "Upload logo"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1196
+#: lib/admin/customizer/customizer.php:1219
 msgid "Logo placement"
 msgstr ""
 
@@ -1042,12 +1051,6 @@ msgid "Demo Post Eight"
 msgstr ""
 
 #: lib/custom-functions.php:102
-msgid ""
-"Libero mollitia error expedita totam iste minus cumque quos obcaecati earum "
-"rerum totam ea vitae."
-msgstr ""
-
-#: lib/custom-functions.php:103
 msgid "Libero mollitia error expedita totam iste minus cumque."
 msgstr ""
 
@@ -1286,10 +1289,6 @@ msgstr ""
 
 #: search.php:33
 msgid "Search Results for: %s"
-msgstr ""
-
-#: template-parts/recent-post.php:19
-msgid "Latest"
 msgstr ""
 
 #. Theme Name of the plugin/theme

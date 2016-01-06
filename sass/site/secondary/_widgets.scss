@@ -199,12 +199,22 @@
 }
 
 //Button
+
+.widget-area {
+    input[type="submit"] {
+        text-transform: inherit;
+        font-size: rem-calc(13);
+        padding: rem-calc(1 5);
+    }
+}
+
 .powen-footer-widgets {
     input[type="submit"] {
         background: transparent;
         font-size: rem-calc(13);
         padding: rem-calc(2 5);
         text-transform: inherit;
+        color: #666;
     }
     .widget-title {
         text-align: left;
@@ -224,8 +234,10 @@
     input[type="url"],
     input[type="password"],
     input[type="text"],
+    input[submit="submit"]
     {
         box-shadow: 0 0 0 1px #565656;
         border: none;
+        color: #999999;
     }
 }

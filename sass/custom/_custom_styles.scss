@@ -115,6 +115,11 @@ ul, ol {
 	line-height: 2;
 }
 
+.entry-header:after,
+.widget-title:after {
+	background-color: #f2f2f2;
+}
+
 // Content
 .site-content {
 	max-width: rem-calc(1125);
@@ -233,7 +238,7 @@ ul, ol {
 	font-weight: 300;
 	font-size: rem-calc(13);
 	a {
-		color: #888888;
+		color: #aaaaaa;
 	}
 }
 
@@ -243,7 +248,7 @@ ul, ol {
 .comments-link:before,
 .tags-links:before,
 .cat-links:before {
-	color: #aaaaaa;
+	color: #C0C0C0;
 }
 
 .continue_btn {
@@ -279,7 +284,7 @@ ul, ol {
 	}
 	@include entry_footer();
 	a {
-		color: #888888;
+		color: #aaaaaa;
 	}
 }
 

@@ -15,7 +15,6 @@ FontAwesome
 	.breadcrumbs .separator:after,
 	.tags-links:before,
 	blockquote:before,
-	blockquote:after,
 	//SIDEBAR ICONS
 	.widget_recent_comments li:before,
 	.widget_recent_comments li>a:before,
@@ -130,11 +129,6 @@ Write your code here
 blockquote:before {
 	content: "\f10d";
 	margin-right: rem-calc(10);
-}
-
-blockquote:after {
-	content: "\f10e";
-	margin-left: rem-calc(10);
 }
 
 //Back To Top

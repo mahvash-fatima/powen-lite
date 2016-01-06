@@ -1064,12 +1064,12 @@ class Powen_Customizer {
       $theme_colors = apply_filters('powen_theme_colors_array', array(
             array(
                       'slug'    =>'powen_mod[theme_color]',
-                      'default' => '#daa520',
+                      'default' => '#e6b800',
                       'label'   => __( 'Theme Color', 'powen-lite' )
                   ),
             array(
                       'slug'    =>'powen_mod[hover_link_color]',
-                      'default' => '#dd9933',
+                      'default' => '#daa520',
                       'label'   => __( 'Link Color (on hover)', 'powen-lite' )
                   ),
             array(
@@ -1110,8 +1110,18 @@ class Powen_Customizer {
                   ),
             array(
                       'slug'    =>'powen_mod[footer_bottom_textcolor]',
-                      'default' => '#999999',
+                      'default' => '#666666',
                       'label'   => __( 'Footer bottom text color', 'powen-lite' )
+                  ),
+            array(
+                      'slug'    =>'powen_mod[footer_bottom_link_color]',
+                      'default' => '#888888',
+                      'label'   => __( 'Footer bottom link color', 'powen-lite' )
+                  ),
+            array(
+                      'slug'    =>'powen_mod[footer_hover_link_color]',
+                      'default' => '#ffffff',
+                      'label'   => __( 'Footer link color(on hover)', 'powen-lite' )
                   ),
             array(
                       'slug'    =>'powen_mod[primary_nav_background_color]',
