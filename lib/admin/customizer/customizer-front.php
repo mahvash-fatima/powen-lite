@@ -203,7 +203,6 @@ class Powen_Customizer_Front extends Powen_Customizer
 		//color
 		$color_selectors = apply_filters('powen_create_color_scheme_array', array (
 			'p a',
-			'.comment-metadata time:before',
 			'.flex-direction-nav li .flex-prev:before',
 			'.flex-direction-nav li .flex-next:before',
 			'.breadcrumbs a',
@@ -243,9 +242,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 		$color_hover_selectors = apply_filters('powen_color_hover_selectors_array', array(
 			'a:hover',
 			'a:active',
-			'.breadcrumbs li a:hover',
-			'p a:hover',
-
+			'.comment-metadata a:hover',
 		) );
 
 		//background should change on hover.

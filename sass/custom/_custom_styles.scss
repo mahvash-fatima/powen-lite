@@ -144,12 +144,10 @@ ul, ol {
  	}
 	input[type=search] {
 		border: none;
-		height: auto;
-		padding: rem-calc(5 25 5 5);
+		padding-right: rem-calc(25);
 		display: none;
-		width: rem-calc(150);
-		background: #fff;
     	box-shadow: 0px 0px 0px 1px #fafafa;
+    	transition: none;
 	}
 }
 .fa-search {
@@ -393,6 +391,26 @@ ul, ol {
 	text-align: center;
 }
 
+.footer-scroll {
+	background: rgba(0, 0, 0, 0.46);
+	width: rem-calc(40);
+	height: rem-calc(35);
+	padding: rem-calc(4);
+	box-shadow: 0px 0px 1px #555555;
+	position: fixed;
+	bottom: rem-calc(100);
+	right: rem-calc(50);
+	text-align: center;
+	z-index: 100;
+	color: #ffffff;
+	cursor: pointer;
+	transition: 0.3s;
+	&:hover {
+		background: #555555;
+		text-shadow: 0px 2px 1px #000000;
+	}
+}
+
 @include htags();
 
 
@@ -445,6 +463,21 @@ ul, ol {
 		margin-left: 0;
 		margin-bottom: $default_gutter;
 		margin-top: $default_gutter;
+	}
+	.widget-title {
+		text-align: left;
+		&:after {
+			width: rem-calc(45);
+			margin: rem-calc(15 0);
+		}
+	}
+	.widget_powen_social_widget {
+		text-align: left;
+	}
+	.widget_search {
+		input[type=search] {
+			width: auto;
+		}
 	}
 	.widget-area .widget {
 		margin-right: 0;

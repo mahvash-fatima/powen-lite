@@ -2,12 +2,12 @@
 FontAwesome
 ---------------------*/
 	//CONTENT ICONS
-	.posted-on:before,
-	.comments-link:before,
-	.edit-link:before,
+	.posted-on a:before,
+	.comments-link a:before,
+	.edit-link a:before,
 	.nav-previous a:before,
 	.nav-next a:after,
-	.author:before,
+	.byline a:before,
 	.content-area .hentry .entry-date:after,
 	.cat-links:before,
 	.comment-metadata time:before,
@@ -50,17 +50,17 @@ Write your code here
 //PRIMARY ICONS
 
 //Date
-.posted-on:before, .comment-metadata time:before {
+.posted-on a:before, .comment-metadata time:before {
 	content: "\f017";
 	padding: rem-calc(5);
 }
 //Comment
-.comments-link:before {
+.comments-link a:before {
 	content: "\f0e6";
 	padding: rem-calc(5);
 }
 //Edit
-.edit-link:before {
+.edit-link a:before {
 	content: "\f044";
 	padding: rem-calc(5);
 }
@@ -74,7 +74,7 @@ Write your code here
 	content: "\f101";
 	margin: rem-calc(0 3);
 }
-.author:before {
+.byline a:before {
 	content: "\f007";
 	padding: rem-calc(5);
 }
@@ -134,17 +134,5 @@ blockquote:before {
 //Back To Top
 .footer-scroll:before {
 	content: "\f106";
-	background: rgba(0, 0, 0, 0.46);
-	margin: 0;
-	position: fixed;
-	bottom: rem-calc(100);
-	right: rem-calc(50);
-	width: rem-calc(40);
-	text-align: center;
-	height: rem-calc(35);
-	z-index: 100;
-	text-decoration: none;
-	color: #fff;
-	cursor: pointer;
-	text-shadow: 0px 4px 0px #fff;
+	font-size: rem-calc(25);
 }

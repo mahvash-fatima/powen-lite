@@ -346,30 +346,32 @@ input[type="search"],
 textarea {
   color: #000000;
   border-radius: 0;
-  background: transparent;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
+  background: #ffffff;
   border: 1px solid #A9A9A9;
-  padding: 0.625rem;
+  padding: 0.3125rem 0;
+  text-indent: 0.3125rem;
   letter-spacing: 0.0625rem;
   outline: 0;
   line-height: 1.2;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+  border: 1px solid #000000;
 }
 
 textarea {
   overflow: auto;
   /* Removes default vertical scrollbar in IE6/7/8/9 */
-  padding: 0.1875rem;
   vertical-align: top;
   /* Improves readability and alignment in all browsers */
   width: 100%;
-  outline: 0;
-  font-size: 1.125rem;
 }
 
 /*--------------------------------------------------------------
@@ -497,9 +499,13 @@ input[type="submit"] {
 .widget_search input[type=search] {
   border: none;
   width: 100%;
-  padding: 0.3125rem 0;
-  text-indent: 10px;
   box-shadow: 0 0 0 1px #fbfbfb;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+.widget_search input[type=search]:focus {
+  box-shadow: 0 0 0 1px #eeeeee;
 }
 
 .widget_search input[type="submit"] {
@@ -687,6 +693,22 @@ input[type="submit"] {
   padding: 0.0625rem 0.3125rem;
 }
 
+.powen-footer-widgets input[type="text"],
+.powen-footer-widgets input[type="email"],
+.powen-footer-widgets input[type="url"],
+.powen-footer-widgets input[type="password"],
+.powen-footer-widgets input[type="search"],
+.powen-footer-widgets textarea {
+  background: transparent;
+}
+.powen-footer-widgets input[type="text"]:focus,
+.powen-footer-widgets input[type="email"]:focus,
+.powen-footer-widgets input[type="url"]:focus,
+.powen-footer-widgets input[type="password"]:focus,
+.powen-footer-widgets input[type="search"]:focus,
+.powen-footer-widgets textarea:focus {
+  box-shadow: 0 0 0 1px #777777;
+}
 .powen-footer-widgets input[type="submit"] {
   background: transparent;
   font-size: 0.8125rem;
@@ -702,7 +724,7 @@ input[type="submit"] {
   display: block;
   width: 2.8125rem;
   height: 0.0625rem;
-  margin: 0.625rem 0 1.5625rem 0;
+  margin: 0.9375rem 0;
 }
 
 .site-footer input[type="search"],
@@ -866,6 +888,9 @@ input[type="submit"] {
 .comment-body .comment-metadata {
   padding-bottom: 0.3125rem;
   font-size: 0.75rem;
+}
+.comment-body .comment-metadata a {
+  color: #aaaaaa;
 }
 .comment-body .reply {
   text-align: right;
@@ -1197,12 +1222,10 @@ ul, ol {
 }
 .powen-search-box-top input[type=search] {
   border: none;
-  height: auto;
-  padding: 0.3125rem 1.5625rem 0.3125rem 0.3125rem;
+  padding-right: 1.5625rem;
   display: none;
-  width: 9.375rem;
-  background: #fff;
   box-shadow: 0px 0px 0px 1px #fafafa;
+  transition: none;
 }
 
 .fa-search {
@@ -1427,6 +1450,26 @@ ul, ol {
   text-align: center;
 }
 
+.footer-scroll {
+  background: rgba(0, 0, 0, 0.46);
+  width: 2.5rem;
+  height: 2.1875rem;
+  padding: 0.25rem;
+  box-shadow: 0px 0px 1px #555555;
+  position: fixed;
+  bottom: 6.25rem;
+  right: 3.125rem;
+  text-align: center;
+  z-index: 100;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer-scroll:hover {
+  background: #555555;
+  text-shadow: 0px 2px 1px #000000;
+}
+
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   font-weight: 400;
@@ -1487,6 +1530,22 @@ h6 {
     margin-left: 0;
     margin-bottom: 1.618rem;
     margin-top: 1.618rem;
+  }
+
+  .widget-title {
+    text-align: left;
+  }
+  .widget-title:after {
+    width: 2.8125rem;
+    margin: 0.9375rem 0;
+  }
+
+  .widget_powen_social_widget {
+    text-align: left;
+  }
+
+  .widget_search input[type=search] {
+    width: auto;
   }
 
   .widget-area .widget {
@@ -1625,12 +1684,12 @@ h6 {
 /*------------------
 FontAwesome
 ---------------------*/
-.posted-on:before,
-.comments-link:before,
-.edit-link:before,
+.posted-on a:before,
+.comments-link a:before,
+.edit-link a:before,
 .nav-previous a:before,
 .nav-next a:after,
-.author:before,
+.byline a:before,
 .content-area .hentry .entry-date:after,
 .cat-links:before,
 .comment-metadata time:before,
@@ -1668,17 +1727,17 @@ blockquote:before,
 /**---------------
 Write your code here
 --------------------**/
-.posted-on:before, .comment-metadata time:before {
+.posted-on a:before, .comment-metadata time:before {
   content: "\f017";
   padding: 0.3125rem;
 }
 
-.comments-link:before {
+.comments-link a:before {
   content: "\f0e6";
   padding: 0.3125rem;
 }
 
-.edit-link:before {
+.edit-link a:before {
   content: "\f044";
   padding: 0.3125rem;
 }
@@ -1693,7 +1752,7 @@ Write your code here
   margin: 0 0.1875rem;
 }
 
-.author:before {
+.byline a:before {
   content: "\f007";
   padding: 0.3125rem;
 }
@@ -1756,19 +1815,7 @@ blockquote:before {
 
 .footer-scroll:before {
   content: "\f106";
-  background: rgba(0, 0, 0, 0.46);
-  margin: 0;
-  position: fixed;
-  bottom: 6.25rem;
-  right: 3.125rem;
-  width: 2.5rem;
-  text-align: center;
-  height: 2.1875rem;
-  z-index: 100;
-  text-decoration: none;
-  color: #fff;
-  cursor: pointer;
-  text-shadow: 0px 4px 0px #fff;
+  font-size: 1.5625rem;
 }
 
 /*--------------------------------------------------------------
