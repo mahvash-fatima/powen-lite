@@ -344,13 +344,10 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  font-size: 0.9375rem;
   color: #000000;
   border-radius: 0;
   background: #ffffff;
   border: 1px solid #A9A9A9;
-  padding: 0.3125rem 0;
-  text-indent: 0.3125rem;
   letter-spacing: 0.0625rem;
   outline: 0;
   line-height: 1.2;
@@ -367,12 +364,22 @@ textarea:focus {
   border: 1px solid #000000;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+  text-indent: 0.3125rem;
+  padding: 0.3125rem 0;
+}
+
 textarea {
   overflow: auto;
   /* Removes default vertical scrollbar in IE6/7/8/9 */
   vertical-align: top;
   /* Improves readability and alignment in all browsers */
   width: 100%;
+  padding: 0.625rem;
 }
 
 /*--------------------------------------------------------------
