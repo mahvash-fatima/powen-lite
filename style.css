@@ -344,6 +344,7 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
+  font-size: 0.9375rem;
   color: #000000;
   border-radius: 0;
   background: #ffffff;
@@ -774,6 +775,10 @@ input[type="submit"] {
 
 .entry-date {
   padding-right: 0.3125rem;
+}
+
+.updated:not(.published) {
+  display: none;
 }
 
 .posted-on, .byline {
@@ -1313,7 +1318,8 @@ ul, ol {
 .edit-link:before,
 .comments-link:before,
 .tags-links:before,
-.cat-links:before {
+.cat-links:before,
+.byline:before {
   color: #C0C0C0;
 }
 
@@ -1543,6 +1549,9 @@ h6 {
   .widget_powen_social_widget {
     text-align: left;
   }
+  .widget_powen_social_widget i {
+    text-align: center;
+  }
 
   .widget_search input[type=search] {
     width: auto;
@@ -1684,12 +1693,12 @@ h6 {
 /*------------------
 FontAwesome
 ---------------------*/
-.posted-on a:before,
-.comments-link a:before,
-.edit-link a:before,
-.nav-previous a:before,
-.nav-next a:after,
-.byline a:before,
+.posted-on:before,
+.comments-link:before,
+.edit-link:before,
+.nav-previous:before,
+.nav-next:after,
+.byline:before,
 .content-area .hentry .entry-date:after,
 .cat-links:before,
 .comment-metadata time:before,
@@ -1727,38 +1736,38 @@ blockquote:before,
 /**---------------
 Write your code here
 --------------------**/
-.posted-on a:before, .comment-metadata time:before {
+.posted-on:before, .comment-metadata time:before {
   content: "\f017";
   padding: 0.3125rem;
 }
 
-.comments-link a:before {
+.comments-link:before {
   content: "\f0e6";
   padding: 0.3125rem;
 }
 
-.edit-link a:before {
+.edit-link:before {
   content: "\f044";
   padding: 0.3125rem;
 }
 
-.nav-previous a:before {
+.nav-previous:before {
   content: "\f100";
   margin: 0 0.3125rem;
 }
 
-.nav-next a:after {
+.nav-next:after {
   content: "\f101";
   margin: 0 0.1875rem;
 }
 
-.byline a:before {
+.byline:before {
   content: "\f007";
   padding: 0.3125rem;
 }
 
 .cat-links:before {
-  content: "\f0ca";
+  content: "\f07b";
   padding: 0.3125rem;
 }
 

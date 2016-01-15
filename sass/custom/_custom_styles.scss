@@ -245,7 +245,9 @@ ul, ol {
 .edit-link:before,
 .comments-link:before,
 .tags-links:before,
-.cat-links:before {
+.cat-links:before,
+.byline:before
+{
 	color: #C0C0C0;
 }
 
@@ -473,6 +475,9 @@ ul, ol {
 	}
 	.widget_powen_social_widget {
 		text-align: left;
+		i {
+			text-align: center;
+		}
 	}
 	.widget_search {
 		input[type=search] {

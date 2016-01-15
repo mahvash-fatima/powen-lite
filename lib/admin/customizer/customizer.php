@@ -738,33 +738,7 @@ class Powen_Customizer {
       'description' => __( 'Make sure you have selected <strong>excerpt</strong>. Write only <strong>numbers</strong> in textbox and not <strong>px</strong>. It should not be less than <strong>50</strong>', 'powen-lite' ),
       ) ) );
 
-      //Hide author
-
-      $wp_customize->add_setting( 'powen_mod[hide_author]', array(
-          'capability'        => 'edit_theme_options',
-          'sanitize_callback' => 'sanitize_text_field',
-      ) );
-
-      $wp_customize->add_control( new WP_Customize_Control ( $wp_customize, 'powen_mod[hide_author]', array(
-          'label'   => __('Hide The Author of The Post', 'powen-lite'),
-          'type'    => 'checkbox',
-          'section' => 'powen_display_section',
-      ) ) );
-
-      //Hide date
-
-      $wp_customize->add_setting( 'powen_mod[hide_date]', array(
-          'capability'        => 'edit_theme_options',
-          'sanitize_callback' => 'sanitize_text_field',
-      ) );
-
-      $wp_customize->add_control( new WP_Customize_Control ( $wp_customize, 'powen_mod[hide_date]', array(
-          'label'   => __('Hide The Date of The Post', 'powen-lite'),
-          'type'    => 'checkbox',
-          'section' => 'powen_display_section',
-      ) ) );
-
-      //Hide Search Header Search Bar
+      //Hide Header Search Bar
       $wp_customize->add_section( 'powen_hide_header_search_bar_section' , array(
           'title'      =>  __( 'Header Search Bar', 'powen-lite' ),
           'capability' => 'edit_theme_options',

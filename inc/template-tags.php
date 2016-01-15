@@ -71,29 +71,24 @@ if ( ! function_exists( 'powen_posted_on' ) ) :
  */
 	function powen_posted_on() {
 
-		if( powen_mod('hide_date') == '' ) {
-
-			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
-			if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-				$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
-			}
-
-			$time_string = sprintf( $time_string,
-				esc_attr( get_the_date( 'c' ) ),
-				esc_html( get_the_date() ),
-				esc_attr( get_the_modified_date( 'c' ) ),
-				esc_html( get_the_modified_date() )
-			);
-
-			$posted_on = sprintf(
-				_x( '%s', 'post date', 'powen-lite' ),
-				'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
-			);
-
-			echo '<span class="posted-on">' . $posted_on . '</span>';
-
+		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
+			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
 		}
 
+		$time_string = sprintf( $time_string,
+			esc_attr( get_the_date( 'c' ) ),
+			esc_html( get_the_date() ),
+			esc_attr( get_the_modified_date( 'c' ) ),
+			esc_html( get_the_modified_date() )
+		);
+
+		$posted_on = sprintf(
+			_x( '%s', 'post date', 'powen-lite' ),
+			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+		);
+
+		echo '<span class="posted-on">' . $posted_on . '</span>';
 	}
 
 endif;
@@ -102,17 +97,12 @@ if ( ! function_exists( 'powen_the_author' ) ) :
 
 	function powen_the_author() {
 
-		if( powen_mod('hide_author') == '' ) {
+		$byline = sprintf(
+			_x( '%s', 'post author', 'powen-lite' ),
+			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+		);
 
-			$byline = sprintf(
-				_x( '%s', 'post author', 'powen-lite' ),
-				'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
-			);
-
-			echo '<span class="byline"> ' . $byline . '</span>';
-
-		}
-
+		echo '<span class="byline"> ' . $byline . '</span>';
 	}
 
 endif;

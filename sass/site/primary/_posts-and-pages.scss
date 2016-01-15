@@ -30,6 +30,10 @@
 	padding-right: rem-calc(5);
 }
 
+.updated:not(.published) {
+    display: none;
+}
+
 .posted-on, .byline {
 	padding: rem-calc(5);
 }

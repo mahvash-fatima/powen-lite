@@ -2,12 +2,12 @@
 FontAwesome
 ---------------------*/
 	//CONTENT ICONS
-	.posted-on a:before,
-	.comments-link a:before,
-	.edit-link a:before,
-	.nav-previous a:before,
-	.nav-next a:after,
-	.byline a:before,
+	.posted-on:before,
+	.comments-link:before,
+	.edit-link:before,
+	.nav-previous:before,
+	.nav-next:after,
+	.byline:before,
 	.content-area .hentry .entry-date:after,
 	.cat-links:before,
 	.comment-metadata time:before,
@@ -50,36 +50,36 @@ Write your code here
 //PRIMARY ICONS
 
 //Date
-.posted-on a:before, .comment-metadata time:before {
+.posted-on:before, .comment-metadata time:before {
 	content: "\f017";
 	padding: rem-calc(5);
 }
 //Comment
-.comments-link a:before {
+.comments-link:before {
 	content: "\f0e6";
 	padding: rem-calc(5);
 }
 //Edit
-.edit-link a:before {
+.edit-link:before {
 	content: "\f044";
 	padding: rem-calc(5);
 }
 //Older posts
-.nav-previous a:before {
+.nav-previous:before {
 	content: "\f100";
 	margin: rem-calc(0 5);
 }
 //Newer posts
-.nav-next a:after {
+.nav-next:after {
 	content: "\f101";
 	margin: rem-calc(0 3);
 }
-.byline a:before {
+.byline:before {
 	content: "\f007";
 	padding: rem-calc(5);
 }
 .cat-links:before {
-	content: "\f0ca";
+	content: "\f07b";
 	padding: rem-calc(5);
 }
 .tags-links:before {
