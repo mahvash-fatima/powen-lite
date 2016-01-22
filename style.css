@@ -680,9 +680,7 @@ input[type="submit"] {
   right: 0;
   margin: 0 auto;
   -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -1237,7 +1235,8 @@ ul, ol {
   padding-right: 1.5625rem;
   display: none;
   box-shadow: 0px 0px 0px 1px #fafafa;
-  transition: none;
+  -webkit-transition: none;
+          transition: none;
 }
 
 .fa-search {
@@ -1476,7 +1475,8 @@ ul, ol {
   z-index: 100;
   color: #ffffff;
   cursor: pointer;
-  transition: 0.3s;
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
 }
 .footer-scroll:hover {
   background: #555555;
@@ -1737,7 +1737,9 @@ blockquote:before,
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 /**---------------

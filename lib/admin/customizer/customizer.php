@@ -1166,6 +1166,18 @@ class Powen_Customizer {
       /*==============================
               LOGO & FAVICON
       ===============================*/
+      //Hide Tagline
+      $wp_customize->add_setting( 'powen_mod[hide_tagline]', array(
+          'sanitize_callback' => 'sanitize_text_field',
+          'capability'        => 'edit_theme_options',
+      ) );
+
+      $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[hide_tagline]', array(
+          'label'    =>   __( 'Hide Tagline', 'powen-lite' ),
+          'type'     => 'checkbox',
+          'section'  =>  'title_tagline',
+          'settings' =>  'powen_mod[hide_tagline]',
+      ) ) );
 
       //Upload logo
 

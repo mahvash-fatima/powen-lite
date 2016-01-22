@@ -236,3 +236,31 @@ if( ! function_exists( 'powen_font_url' ) )
 		return ( substr( site_url(), 0, 8 ) == 'https://') ? 'https://' . $font_url : 'http://' . $font_url;
 	}
 }
+
+if( ! function_exists( 'powen_site_branding' ) )
+{
+	function powen_site_branding()
+	{
+		$site_title   = get_bloginfo( 'name' );
+		$site_logo    = powen_mod( 'upload_logo' );
+		$hide_tagline = powen_mod( 'hide_tagline' );
+		$title_class  = $site_logo ? ' screen-reader-text' : false;
+		$desc_class   = $hide_tagline ? ' screen-reader-text' : false;
+
+		if( $site_logo ){
+			printf( '<a class="logo-link" href="%s" rel="home"><img src="%s" alt="%s" ></a>' , esc_url( home_url( '/' ) )  , esc_url( $site_logo ), __( 'Logo' , 'powen-lite' ) );
+		}
+
+		if ( is_front_page() && is_home() ){ ?>
+			<h1 class="site-title<?php echo $title_class; ?>"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo esc_html($site_title); ?></a></h1>
+		<?php } else { ?>
+			<h2 class="site-title<?php echo $title_class; ?>"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo esc_html($site_title); ?></a></h2>
+		<?php }
+
+		?>
+
+		<p class="site-description<?php echo $desc_class; ?>"><?php bloginfo( 'description' ); ?></p>
+
+		<?php
+	}
+}

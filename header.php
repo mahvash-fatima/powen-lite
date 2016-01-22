@@ -30,27 +30,10 @@
 			<?php get_template_part( 'template-parts/top-most' ); ?>
 
 			<?php do_action( 'powen_before_site_branding' ); ?>
+
 			<div class="site-branding">
-
-				<?php if ( powen_mod( 'upload_logo' ) ) : ?>
-
-				    <div id="logo" class='powen-site-logo'>
-				        <a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( powen_mod( 'upload_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
-				        <h2 class='site-description'><?php bloginfo( 'description' ); ?></h2>
-				    </div>
-
-				<?php else : ?>
-
-			    	<div id="title-tagline" class="powen-title-description">
-			        	<h1 class='site-title'><a href='<?php echo apply_filters('powen_site_tiltle_url', esc_url( home_url( '/' ) ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a></h1>
-			        	<h2 class='site-description'><?php bloginfo( 'description' ); ?></h2>
-			    	</div>
-
-				<?php endif; ?>
-
-			</div><!-- site-branding -->
-
-		<?php do_action( 'powen_after_site_branding' ); ?>
+				<?php echo powen_site_branding(); ?>
+			</div><!-- .site-branding -->
 
 		</div>
 	</header>

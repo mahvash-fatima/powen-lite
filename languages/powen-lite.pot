@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Powen Lite 1.3.9\n"
+"Project-Id-Version: Powen Lite 1.4.0\n"
 "Report-Msgid-Bugs-To: http://supernovathemes.com/powen-theme\n"
-"POT-Creation-Date: 2016-01-15 04:37:03+00:00\n"
+"POT-Creation-Date: 2016-01-22 06:41:22+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -406,7 +406,7 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
-#: content-page.php:37 inc/template-tags.php:147
+#: content-page.php:37 inc/template-tags.php:137
 msgid "Edit"
 msgstr ""
 
@@ -461,57 +461,57 @@ msgstr ""
 msgid "Post navigation"
 msgstr ""
 
-#: inc/template-tags.php:131 inc/template-tags.php:137
+#: inc/template-tags.php:121 inc/template-tags.php:127
 #. translators: used between list items, there is a space after the comma
 msgid "%1$s"
 msgstr ""
 
-#: inc/template-tags.php:143
+#: inc/template-tags.php:133
 msgid "Leave a comment"
 msgstr ""
 
-#: inc/template-tags.php:143
+#: inc/template-tags.php:133
 msgid "1 Comment"
 msgstr ""
 
-#: inc/template-tags.php:143
+#: inc/template-tags.php:133
 msgid "% Comments"
 msgstr ""
 
-#: inc/template-tags.php:164
+#: inc/template-tags.php:154
 msgid "Category: %s"
 msgstr ""
 
-#: inc/template-tags.php:166
+#: inc/template-tags.php:156
 msgid "Tag: %s"
 msgstr ""
 
-#: inc/template-tags.php:168
+#: inc/template-tags.php:158
 msgid "Author: %s"
 msgstr ""
 
-#: inc/template-tags.php:170
+#: inc/template-tags.php:160
 msgid "Year: %s"
 msgstr ""
 
-#: inc/template-tags.php:172
+#: inc/template-tags.php:162
 msgid "Month: %s"
 msgstr ""
 
-#: inc/template-tags.php:174
+#: inc/template-tags.php:164
 msgid "Day: %s"
 msgstr ""
 
-#: inc/template-tags.php:196
+#: inc/template-tags.php:186
 msgid "Archives: %s"
 msgstr ""
 
-#: inc/template-tags.php:200
+#: inc/template-tags.php:190
 #. translators: 1: Taxonomy singular name, 2: Current taxonomy term
 msgid "%1$s: %2$s"
 msgstr ""
 
-#: inc/template-tags.php:202 lib/breadcrumb.php:86 lib/breadcrumb.php:90
+#: inc/template-tags.php:192 lib/breadcrumb.php:86 lib/breadcrumb.php:90
 #: lib/breadcrumb.php:94 lib/breadcrumb.php:101 lib/breadcrumb.php:105
 #: lib/breadcrumb.php:110
 msgid "Archives"
@@ -693,7 +693,7 @@ msgid "Content Options"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:645
-#: lib/admin/customizer/customizer.php:817
+#: lib/admin/customizer/customizer.php:791
 msgid "Latest Post"
 msgstr ""
 
@@ -744,229 +744,225 @@ msgid ""
 "not be less than <strong>50</strong>"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:749
-msgid "Hide The Author of The Post"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:762
-msgid "Hide The Date of The Post"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:769
+#: lib/admin/customizer/customizer.php:743
 msgid "Header Search Bar"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:780
+#: lib/admin/customizer/customizer.php:754
 msgid "Hide Header Search Bar"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:790
+#: lib/admin/customizer/customizer.php:764
 msgid "Modify Text"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:804
+#: lib/admin/customizer/customizer.php:778
 msgid "Continue Reading Text"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:830
+#: lib/admin/customizer/customizer.php:804
 msgid "Copyright Text"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:838
+#: lib/admin/customizer/customizer.php:812
 msgid "Supernova Themes"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:844
+#: lib/admin/customizer/customizer.php:818
 msgid "Author's Name"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:859
+#: lib/admin/customizer/customizer.php:833
 msgid "Top Most Menu Title"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:871
-#: lib/admin/customizer/customizer.php:893
+#: lib/admin/customizer/customizer.php:845
+#: lib/admin/customizer/customizer.php:867
 #: pro/customizer/customizer-hooks.php:32
 msgid "Hide"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:881
+#: lib/admin/customizer/customizer.php:855
 msgid "Main Menu Title"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:902
+#: lib/admin/customizer/customizer.php:876
 msgid "Social Media"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:903
+#: lib/admin/customizer/customizer.php:877
 msgid "Example for Phone url: tel:+13174562564"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:917
+#: lib/admin/customizer/customizer.php:891
 msgid "%s url:"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:929
+#: lib/admin/customizer/customizer.php:903
 msgid "Sidebar Layout"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:940
+#: lib/admin/customizer/customizer.php:914
 msgid "Sidebar Position"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:943
-#: lib/admin/customizer/customizer.php:1186
-#: lib/admin/customizer/customizer.php:1223
+#: lib/admin/customizer/customizer.php:917
+#: lib/admin/customizer/customizer.php:1160
+#: lib/admin/customizer/customizer.php:1209
 msgid "left"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:944
-#: lib/admin/customizer/customizer.php:1187
-#: lib/admin/customizer/customizer.php:1224
+#: lib/admin/customizer/customizer.php:918
+#: lib/admin/customizer/customizer.php:1161
+#: lib/admin/customizer/customizer.php:1210
 msgid "right"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:945
+#: lib/admin/customizer/customizer.php:919
 msgid "no-sidebar"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:957
+#: lib/admin/customizer/customizer.php:931
 msgid "For More Options Upgrade to "
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:957
-#: lib/admin/customizer/customizer.php:969
+#: lib/admin/customizer/customizer.php:931
+#: lib/admin/customizer/customizer.php:943
 msgid "Powen Pro"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:959
+#: lib/admin/customizer/customizer.php:933
 msgid "Please support the development of your theme - "
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:959
+#: lib/admin/customizer/customizer.php:933
 msgid "Donate"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:963
+#: lib/admin/customizer/customizer.php:937
 msgid "Slider Options"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:964
+#: lib/admin/customizer/customizer.php:938
 msgid "Add slider"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:982
+#: lib/admin/customizer/customizer.php:956
 msgid "Hide Slider"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:994
+#: lib/admin/customizer/customizer.php:968
 msgid "Fixed Slider Content"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1005
+#: lib/admin/customizer/customizer.php:979
 msgid "Slide %s"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1006
+#: lib/admin/customizer/customizer.php:980
 msgid ""
 "Note: All default slide values will be discarded, the moment you make any "
 "changes to the slide."
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1018
+#: lib/admin/customizer/customizer.php:992
 msgid "Title"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1030
+#: lib/admin/customizer/customizer.php:1004
 msgid "Description"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1042
+#: lib/admin/customizer/customizer.php:1016
 msgid "Link"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1054
+#: lib/admin/customizer/customizer.php:1028
 msgid "Image"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1068
+#: lib/admin/customizer/customizer.php:1042
 msgid "Theme Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1073
+#: lib/admin/customizer/customizer.php:1047
 msgid "Link Color (on hover)"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1078
+#: lib/admin/customizer/customizer.php:1052
 msgid "Site Title Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1083
+#: lib/admin/customizer/customizer.php:1057
 msgid "Site Tagline Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1088
+#: lib/admin/customizer/customizer.php:1062
 msgid "Header Background Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1093
+#: lib/admin/customizer/customizer.php:1067
 msgid "Footer widgets background color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1098
+#: lib/admin/customizer/customizer.php:1072
 msgid "Footer widgets text color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1104
+#: lib/admin/customizer/customizer.php:1078
 msgid "Footer widgets link color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1109
+#: lib/admin/customizer/customizer.php:1083
 msgid "Footer bottom background color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1114
+#: lib/admin/customizer/customizer.php:1088
 msgid "Footer bottom text color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1119
+#: lib/admin/customizer/customizer.php:1093
 msgid "Footer bottom link color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1124
+#: lib/admin/customizer/customizer.php:1098
 msgid "Footer link color(on hover)"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1129
+#: lib/admin/customizer/customizer.php:1103
 msgid "Top Most Menu Background Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1134
+#: lib/admin/customizer/customizer.php:1108
 msgid "Top Most Menu Text Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1139
+#: lib/admin/customizer/customizer.php:1113
 msgid "Main Menu Background Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1144
+#: lib/admin/customizer/customizer.php:1118
 msgid "Main Menu Text Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1182
+#: lib/admin/customizer/customizer.php:1156
 msgid "Site Title & Tagline Placement"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1188
-#: lib/admin/customizer/customizer.php:1225
+#: lib/admin/customizer/customizer.php:1162
+#: lib/admin/customizer/customizer.php:1211
 msgid "center"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1204
+#: lib/admin/customizer/customizer.php:1176
+msgid "Hide Tagline"
+msgstr ""
+
+#: lib/admin/customizer/customizer.php:1190
 msgid "Upload logo"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1219
+#: lib/admin/customizer/customizer.php:1205
 msgid "Logo placement"
 msgstr ""
 
@@ -1052,6 +1048,10 @@ msgstr ""
 
 #: lib/custom-functions.php:102
 msgid "Libero mollitia error expedita totam iste minus cumque."
+msgstr ""
+
+#: lib/custom-functions.php:251
+msgid "Logo"
 msgstr ""
 
 #: lib/social-widget.php:14
@@ -1329,72 +1329,72 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/template-tags.php:89
+#: inc/template-tags.php:87
 msgctxt "post date"
 msgid "%s"
 msgstr ""
 
-#: inc/template-tags.php:108
+#: inc/template-tags.php:101
 msgctxt "post author"
 msgid "%s"
 msgstr ""
 
-#: inc/template-tags.php:170
+#: inc/template-tags.php:160
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr ""
 
-#: inc/template-tags.php:172
+#: inc/template-tags.php:162
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr ""
 
-#: inc/template-tags.php:174
+#: inc/template-tags.php:164
 msgctxt "daily archives date format"
 msgid "F j, Y"
 msgstr ""
 
-#: inc/template-tags.php:177
+#: inc/template-tags.php:167
 msgctxt "post format archive title"
 msgid "Asides"
 msgstr ""
 
-#: inc/template-tags.php:179
+#: inc/template-tags.php:169
 msgctxt "post format archive title"
 msgid "Galleries"
 msgstr ""
 
-#: inc/template-tags.php:181
+#: inc/template-tags.php:171
 msgctxt "post format archive title"
 msgid "Images"
 msgstr ""
 
-#: inc/template-tags.php:183
+#: inc/template-tags.php:173
 msgctxt "post format archive title"
 msgid "Videos"
 msgstr ""
 
-#: inc/template-tags.php:185
+#: inc/template-tags.php:175
 msgctxt "post format archive title"
 msgid "Quotes"
 msgstr ""
 
-#: inc/template-tags.php:187
+#: inc/template-tags.php:177
 msgctxt "post format archive title"
 msgid "Links"
 msgstr ""
 
-#: inc/template-tags.php:189
+#: inc/template-tags.php:179
 msgctxt "post format archive title"
 msgid "Statuses"
 msgstr ""
 
-#: inc/template-tags.php:191
+#: inc/template-tags.php:181
 msgctxt "post format archive title"
 msgid "Audio"
 msgstr ""
 
-#: inc/template-tags.php:193
+#: inc/template-tags.php:183
 msgctxt "post format archive title"
 msgid "Chats"
 msgstr ""

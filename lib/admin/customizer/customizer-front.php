@@ -143,14 +143,14 @@ class Powen_Customizer_Front extends Powen_Customizer
 	  if( $powen_logo_position ) {
 	      switch ( $powen_logo_position ) {
 	          case 'left':
-	              echo '.site-branding .powen-site-logo{ text-align: left; }';
+	              echo '.site-branding{ text-align: left; }';
 	              break;
 	          case 'right':
-	              echo '.site-branding .powen-site-logo{ text-align: right; }';
+	              echo '.site-branding{ text-align: right; }';
 	              break;
 	          case 'center':
 	              echo '.site-branding{ text-align: center; }';
-	              echo '.site-branding .powen-site-logo{ float: none; margin-left: auto; margin-right: auto; }';
+	              echo '.site-branding{ float: none; margin-left: auto; margin-right: auto; }';
 	              break;
 	      }
 	  }
