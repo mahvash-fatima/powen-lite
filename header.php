@@ -35,6 +35,8 @@
 				<?php echo powen_site_branding(); ?>
 			</div><!-- .site-branding -->
 
+		<?php do_action( 'powen_after_site_branding' ); ?>
+
 		</div>
 	</header>
 
