@@ -4,7 +4,7 @@ Theme URI: http://supernovathemes.com/powen-theme/
 Author: Mahvash Fatima
 Author URI: http://supernovathemes.com
 Description: Powen Lite has been specially designed for blogging websites however due to its clean design and plenty of customization options, it can easily be customized for any purpose.
-Version: 1.4.1
+Version: 1.4.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: powen-lite
@@ -680,7 +680,9 @@ input[type="submit"] {
   right: 0;
   margin: 0 auto;
   -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -1235,8 +1237,7 @@ ul, ol {
   padding-right: 1.5625rem;
   display: none;
   box-shadow: 0px 0px 0px 1px #fafafa;
-  -webkit-transition: none;
-          transition: none;
+  transition: none;
 }
 
 .fa-search {
@@ -1475,8 +1476,7 @@ ul, ol {
   z-index: 100;
   color: #ffffff;
   cursor: pointer;
-  -webkit-transition: 0.3s;
-          transition: 0.3s;
+  transition: 0.3s;
 }
 .footer-scroll:hover {
   background: #555555;
@@ -1737,9 +1737,7 @@ blockquote:before,
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-transform: translate(0, 0);
-      -ms-transform: translate(0, 0);
-          transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 /**---------------
@@ -1791,6 +1789,7 @@ Write your code here
 
 .powen-continue-reading:after {
   content: "\f178";
+  vertical-align: middle;
 }
 
 .breadcrumbs .separator:after {
@@ -1884,3 +1883,5 @@ blockquote:before {
   line-height: 1.2;
   margin-bottom: 1.875rem;
 }
+
+/*# sourceMappingURL=style.css.map */
