@@ -4,7 +4,7 @@ Theme URI: http://supernovathemes.com/powen-theme/
 Author: Mahvash Fatima
 Author URI: http://supernovathemes.com
 Description: Powen Lite has been specially designed for blogging websites however due to its clean design and plenty of customization options, it can easily be customized for any purpose.
-Version: 1.4.2
+Version: 1.4.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: powen-lite
@@ -870,6 +870,10 @@ input[type="submit"] {
 /*--------------------------------------------------------------
 10.3 Comments
 --------------------------------------------------------------*/
+.comment-content {
+  font-size: 0.875rem;
+  color: #757575;
+}
 .comment-content a {
   word-wrap: break-word;
 }
@@ -883,8 +887,13 @@ input[type="submit"] {
 }
 .content-area .comments-title {
   text-align: center;
+  margin-bottom: 3.125rem;
 }
 
+.comment-body {
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid #f2f2f2;
+}
 .comment-body img {
   border-radius: 100%;
 }
@@ -907,6 +916,7 @@ input[type="submit"] {
 }
 .comment-body .reply {
   text-align: right;
+  font-size: 0.8125rem;
 }
 
 /*--------------------------------------------------------------
@@ -1105,9 +1115,11 @@ a {
 
 blockquote {
   padding: 1.618rem;
-  font-size: 1.25rem;
-  background-color: #ffffff;
-  color: #565656;
+  background-color: #fbfbfb;
+  color: #757575;
+  font-size: 0.875rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #f8f8f8;
 }
 blockquote a, blockquote a:visited, blockquote a:active {
   color: inherit;
@@ -1376,7 +1388,6 @@ ul, ol {
 .comment-list > .comment {
   padding: 1.618rem;
   background-color: rgba(255, 255, 255, 0.2);
-  border: 0.0625rem solid rgba(108, 67, 38, 0.05);
 }
 
 .comment-author .fn {
@@ -1384,7 +1395,7 @@ ul, ol {
 }
 
 .comments-title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .comment-respond {
@@ -1714,6 +1725,7 @@ FontAwesome
 .breadcrumbs .separator:after,
 .tags-links:before,
 blockquote:before,
+.comment-body .reply:before,
 .widget_recent_comments li:before,
 .widget_recent_comments li > a:before,
 .widget_archive li:before,
@@ -1829,6 +1841,11 @@ Write your code here
 blockquote:before {
   content: "\f10d";
   margin-right: 0.625rem;
+}
+
+.comment-body .reply:before {
+  content: "\f112";
+  margin-right: 0.3125rem;
 }
 
 .footer-scroll:before {

@@ -231,7 +231,7 @@ if( ! function_exists( 'powen_font_url' ) )
 		 * problem loading on websites with https.
 		 * @var font_url
 		 */
-		$font_url = 'fonts.googleapis.com/css?family=Open+Sans:400,700';
+		$font_url = 'fonts.googleapis.com/css?family=Open+Sans:400,600,700';
 
 		return ( substr( site_url(), 0, 8 ) == 'https://') ? 'https://' . $font_url : 'http://' . $font_url;
 	}

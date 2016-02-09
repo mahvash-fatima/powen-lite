@@ -136,8 +136,11 @@ $color__border-abbr: 							#666;
 }
 
 @mixin blockquote(){
-	background-color: $color_secondary_background;
-	color: $color_text_secondary;
+	background-color: #fbfbfb;
+	color: #757575;
+	font-size: rem-calc(14);
+	margin-bottom: rem-calc(20);
+	border: 1px solid #f8f8f8;
 	a, a:visited, a:active {
 		color: inherit;
 	}
@@ -161,7 +164,6 @@ $color__border-abbr: 							#666;
 
 @mixin comment(){
 	background-color: rgba(255, 255, 255, 0.2);
-	border: 1*$px solid rgba(108, 67, 38, 0.05);
 }
 
 @mixin sticky_post(){
