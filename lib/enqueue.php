@@ -108,6 +108,15 @@ function powen_enqueue_scripts(){
 
 	wp_enqueue_script( 'powen-main' );
 
+	wp_localize_script( 'powen-main', 'powenVars', array(
+		'animation'    => apply_filters('powen_animation', 'slide'),
+		'pauseOnHover' => apply_filters('powen_pauseOnHover', true),
+		'itemWidth'    => apply_filters('powen_itemWidth', 210),
+		'itemMargin'   => apply_filters('powen_itemMargin', 0),
+		'minItems'     => apply_filters('powen_minItems', 4),
+		'maxItems'     => apply_filters('powen_maxItems', 4)
+	));
+
 }
 
 endif; //powen_enqueue_scripts

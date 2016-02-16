@@ -57,21 +57,20 @@
 			if ((width <= 400) ){
 
 			  $('.flexslider').flexslider({
-			    animation: "slide"
+			    animation : powenVars.animation
 			  });
 
 			} else {
 
 				$('.flexslider').flexslider(
 				{
-					animation  : "slide",
-					pauseOnHover: true,
-					itemWidth  : 210,
-					itemMargin : 0,
-					minItems   : 2,
-					maxItems   : 4
+					animation    : powenVars.animation,
+					pauseOnHover : powenVars.pauseOnHover,
+					itemWidth    : powenVars.itemWidth,
+					itemMargin   : powenVars.itemMargin,
+					minItems     : powenVars.minItems,
+					maxItems     : powenVars.maxItems
 				});
-
 			}
 		},
 
