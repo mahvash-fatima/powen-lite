@@ -59,7 +59,7 @@ function powen_setup() {
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', array(
-		'default-color' => 'ffffff',
+		'default-color' => 'f2f2f2',
 		'default-image' => '',
 	) );
 

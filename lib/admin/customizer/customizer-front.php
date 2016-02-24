@@ -47,7 +47,6 @@ class Powen_Customizer_Front extends Powen_Customizer
 		self::generate_css( '.widget-area', 'font-size', 'widgets_content', '', 'rem', '0.928', true, '(min-width:900px)' );
 	    self::generate_css('.site-title a', 'color', 'header_textcolor', false, false, '#000000');
 	    self::generate_css('.site-description', 'color', 'header_taglinecolor', false, false, '#222222');
-	    self::generate_css('body', 'background-color', 'background_color', false, false, '#f2f2f2');
 	    self::generate_css('.site-header', 'background-color', 'header_background', false, false, '#ffffff');
 	    self::generate_css('.powen-footer-widgets', 'background-color', 'powen-footer-widgets_background', false, false, '#222222');
 	    self::generate_css('.powen-footer-widgets, .widget_calendar thead', 'color', 'powen-footer-widgets_textcolor', false, false, '#808080');
