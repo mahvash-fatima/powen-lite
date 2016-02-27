@@ -14,6 +14,15 @@
 .slides {
 	li {
 		position: relative;
+		&:hover {
+			.powen-slider-content{
+				-webkit-transform: translateY(0%);
+				-moz-transform: translateY(0%);
+				-ms-transform: translateY(0%);
+				-o-transform: translateY(0%);
+				transform: translateY(0%);
+			}
+		}
 	}
 	img {
 		height: auto;
@@ -23,11 +32,21 @@
 .powen-slider-content {
 	position: absolute;
 	left: 0;
-	bottom: 0;
+	bottom: 0px;
 	width: 100%;
 	height: auto;
 	padding: rem-calc(5);
 	background: $color__powen-slider-content-background;
+	-webkit-transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	-o-transform: translateY(100%);
+	transform: translateY(100%);
+	-webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+	transition: 0.5s;
 }
 .powen-slider-title {
 	line-height: 1.2;

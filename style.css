@@ -1875,6 +1875,13 @@ blockquote:before {
 .slides li {
   position: relative;
 }
+.slides li:hover .powen-slider-content {
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+}
 .slides img {
   height: auto;
   width: 100%;
@@ -1883,11 +1890,21 @@ blockquote:before {
 .powen-slider-content {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
   height: auto;
   padding: 0.3125rem;
   background: rgba(0, 0, 0, 0.3);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  transition: 0.5s;
 }
 
 .powen-slider-title {

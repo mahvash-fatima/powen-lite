@@ -28,7 +28,7 @@ $slides = get_theme_mod( 'powen_slides', powen_default_slides() );
 				<a href='<?php echo esc_url( $slide_link ); ?>'>
 					<img src='<?php echo esc_url( $slide_image ); ?>' alt='image'>
 					<?php if( $slide_title || $slide_description ) { ?>
-					<div class='powen-slider-content animated slideInUp'>
+					<div class='powen-slider-content'>
 						<div class="powen-slider-content-wrapper">
 							<h6 class="powen-slider-title"><?php echo esc_attr( $slide_title ); ?></h6>
 							<p class="powen-slider-description"><?php echo esc_attr( $slide_description ); ?></p>
