@@ -1881,6 +1881,7 @@ blockquote:before {
   -ms-transform: translateY(0%);
   -o-transform: translateY(0%);
   transform: translateY(0%);
+  opacity: 1;
 }
 .slides img {
   height: auto;
@@ -1905,6 +1906,7 @@ blockquote:before {
   -o-transition: 0.5s;
   transition: 0.5s;
   transition: 0.5s;
+  opacity: 0;
 }
 
 .powen-slider-title {

@@ -21,6 +21,7 @@
 				-ms-transform: translateY(0%);
 				-o-transform: translateY(0%);
 				transform: translateY(0%);
+				opacity: 1;
 			}
 		}
 	}
@@ -47,6 +48,7 @@
     -o-transition: 0.5s;
     transition: 0.5s;
 	transition: 0.5s;
+	opacity: 0;
 }
 .powen-slider-title {
 	line-height: 1.2;
