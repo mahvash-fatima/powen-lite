@@ -2,14 +2,11 @@
 .scss-cache/
 scss/.sass-cache/
 node_modules
-npm-debug.log
 .DS_Store
 *.sublime-project
 *.sublime-workspace
 pro
 powen-pro
 /nbproject/private/
-Gruntfile.js
 *.rb
 *.log
-*.json
