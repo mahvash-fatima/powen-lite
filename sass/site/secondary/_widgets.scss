@@ -1,7 +1,44 @@
-.widget-area ul {
-    list-style: none;
+.widget-area {
+    ul {
+        list-style: none;
+    }
+    li {
+        padding: rem-calc(10 0);
+    }
+    button {
+        margin-bottom: rem-calc(4);
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"],
+    input[type="search"],
+    textarea {
+        margin-bottom: rem-calc(4);
+        margin-top: rem-calc(4);
+    }
+    input[type="submit"] {
+        text-transform: inherit;
+        font-size: rem-calc(13);
+        padding: rem-calc(1 5);
+        margin-bottom: rem-calc(4);
+    }
 }
-//widget_tag_cloud
+
+.widget-title {
+    &:after {
+        margin: rem-calc(15) auto rem-calc(15);
+    }
+}
+
+.entry-header:after, .widget-title:after {
+   content: '';
+   display: block;
+   width: rem-calc(60);
+   height: rem-calc(1);
+   margin: rem-calc(25) auto rem-calc(25);
+}
+
 .widget_tag_cloud {
     a {
         letter-spacing: rem-calc(1);
@@ -11,6 +48,7 @@
         display: inline-block;
     }
 }
+
 .widget_search {
     input[type=search] {
         border: none;
@@ -23,17 +61,15 @@
             box-shadow: 0 0 0 1px #eeeeee;
         }
     }
-}
-
-.widget_search input[type="submit"] {
-    display: none;
+    input[type="submit"] {
+        display: none;
+    }
 }
 
 .widget_tag_cloud a, .widget_powen_social_widget a {
     box-shadow: 0px 0px 0px 1px #f2f2f2;
 }
 
-//widget_rss
 .widget_rss {
     li {
         margin-bottom: rem-calc(10);
@@ -50,15 +86,12 @@
     padding: rem-calc(10 0);
 }
 
-.widget-area li {
-    padding: rem-calc(10 0);
+.powen-pagination {
+   .current {
+        color: #ffffff;
+    }
 }
 
-.powen-pagination .current {
-  color: #ffffff;
-}
-
-//Widget Calendar
 .widget_calendar {
     thead, tbody {
         text-align: center;
@@ -91,20 +124,6 @@
         }
     }
  }
-
-// widget-title
-.entry-header:after, .widget-title:after {
-   content: '';
-   display: block;
-   width: rem-calc(60);
-   height: rem-calc(1);
-   margin: rem-calc(25) auto rem-calc(25);
-}
-
-.widget-title:after {
-    margin: rem-calc(15) auto rem-calc(15);
-}
-
 
 // FOOTER STYLE
 
@@ -169,7 +188,6 @@
     float: right;
 }
 
-//social icons
 .widget_powen_social_widget {
     text-align: center;
     .powen-social-icon {
@@ -202,16 +220,6 @@
     padding: $default_gutter;
 }
 
-//Button
-
-.widget-area {
-    input[type="submit"] {
-        text-transform: inherit;
-        font-size: rem-calc(13);
-        padding: rem-calc(1 5);
-    }
-}
-
 .powen-footer-widgets {
     input[type="text"],
     input[type="email"],
@@ -220,6 +228,7 @@
     input[type="search"],
     textarea {
         background: transparent;
+        margin-bottom: rem-calc(4);
         &:focus {
             box-shadow: 0 0 0 1px #777777;
         }
@@ -230,6 +239,7 @@
         padding: rem-calc(2 5);
         text-transform: inherit;
         color: #666;
+        margin-bottom: rem-calc(4);
     }
     .widget-title {
         text-align: left;

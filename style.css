@@ -496,6 +496,39 @@ input[type="submit"] {
 .widget-area ul {
   list-style: none;
 }
+.widget-area li {
+  padding: 0.625rem 0;
+}
+.widget-area button {
+  margin-bottom: 0.25rem;
+}
+.widget-area input[type="text"],
+.widget-area input[type="email"],
+.widget-area input[type="url"],
+.widget-area input[type="password"],
+.widget-area input[type="search"],
+.widget-area textarea {
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+}
+.widget-area input[type="submit"] {
+  text-transform: inherit;
+  font-size: 0.8125rem;
+  padding: 0.0625rem 0.3125rem;
+  margin-bottom: 0.25rem;
+}
+
+.widget-title:after {
+  margin: 0.9375rem auto 0.9375rem;
+}
+
+.entry-header:after, .widget-title:after {
+  content: '';
+  display: block;
+  width: 3.75rem;
+  height: 0.0625rem;
+  margin: 1.5625rem auto 1.5625rem;
+}
 
 .widget_tag_cloud a {
   letter-spacing: 0.0625rem;
@@ -516,7 +549,6 @@ input[type="submit"] {
 .widget_search input[type=search]:focus {
   box-shadow: 0 0 0 1px #eeeeee;
 }
-
 .widget_search input[type="submit"] {
   display: none;
 }
@@ -538,10 +570,6 @@ input[type="submit"] {
 }
 
 .rssSummary {
-  padding: 0.625rem 0;
-}
-
-.widget-area li {
   padding: 0.625rem 0;
 }
 
@@ -576,18 +604,6 @@ input[type="submit"] {
 }
 .widget_calendar tfoot #next {
   text-align: right;
-}
-
-.entry-header:after, .widget-title:after {
-  content: '';
-  display: block;
-  width: 3.75rem;
-  height: 0.0625rem;
-  margin: 1.5625rem auto 1.5625rem;
-}
-
-.widget-title:after {
-  margin: 0.9375rem auto 0.9375rem;
 }
 
 /* floats */
@@ -696,12 +712,6 @@ input[type="submit"] {
   padding: 1.618rem;
 }
 
-.widget-area input[type="submit"] {
-  text-transform: inherit;
-  font-size: 0.8125rem;
-  padding: 0.0625rem 0.3125rem;
-}
-
 .powen-footer-widgets input[type="text"],
 .powen-footer-widgets input[type="email"],
 .powen-footer-widgets input[type="url"],
@@ -709,6 +719,7 @@ input[type="submit"] {
 .powen-footer-widgets input[type="search"],
 .powen-footer-widgets textarea {
   background: transparent;
+  margin-bottom: 0.25rem;
 }
 .powen-footer-widgets input[type="text"]:focus,
 .powen-footer-widgets input[type="email"]:focus,
@@ -724,6 +735,7 @@ input[type="submit"] {
   padding: 0.125rem 0.3125rem;
   text-transform: inherit;
   color: #666;
+  margin-bottom: 0.25rem;
 }
 .powen-footer-widgets .widget-title {
   text-align: left;

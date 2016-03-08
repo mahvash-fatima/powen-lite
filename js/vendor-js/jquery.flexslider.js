@@ -837,7 +837,7 @@
 
       if (slider.transitions) {
         target = (vertical) ? "translate3d(0," + target + ",0)" : "translate3d(" + target + ",0,0)";
-        dur = (dur !== undefined) ? (dur/1000) + "s" : "0s";
+        dur = (dur !== undefined) ? (dur/500) + "s" : "0s";
         slider.container.css("-" + slider.pfx + "-transition-duration", dur);
          slider.container.css("transition-duration", dur);
       }
