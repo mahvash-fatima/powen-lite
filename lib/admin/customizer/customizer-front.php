@@ -182,8 +182,14 @@ class Powen_Customizer_Front extends Powen_Customizer
 
 	public static function fixed_slider_content() {
 		if( powen_mod('fixed_slider_content') == 1 ) {
-			echo ".powen-slider-content.animated.slideInUp { opacity: 1; visibility: visible; }";
-			echo ".flexslider li:hover .slideInUp { animation-name: initial; }";
+			echo ".powen-slider-content{
+					-webkit-transform: translateY(0%);
+					-moz-transform: translateY(0%);
+					-ms-transform: translateY(0%);
+					-o-transform: translateY(0%);
+					transform: translateY(0%);
+					opacity: 1;
+	             }";
 		}
 	}
 
