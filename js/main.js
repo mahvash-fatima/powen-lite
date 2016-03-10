@@ -53,21 +53,51 @@
 		//Slider
 		createMainSlider: function()
 		{
-			$('.powen-main-slider').slick(
-			{
-				slidesToShow: 4,
-				slidesToScroll: 4,
-				arrows: false,
-				dots: false
+			$('.powen-main-slider').slick({
+				dots           : true,
+				infinite       : true,
+				speed          : 300,
+				slidesToShow   : 4,
+				slidesToScroll : 4,
+				responsive     : [
+			    {
+					breakpoint : 1024,
+					settings   : {
+						slidesToShow   : 3,
+						slidesToScroll : 3,
+						infinite       : true,
+						dots           : true,
+			    	}
+			    },
+			    {
+					breakpoint : 600,
+					settings   : {
+						slidesToShow   : 2,
+						slidesToScroll : 2,
+						dots           : false,
+			        }
+			    },
+			    {
+					breakpoint : 480,
+					settings   : {
+						slidesToShow   : 1,
+						slidesToScroll : 1,
+						dots           : false,
+						centerMode     : true,
+						centerPadding  : '40px',
+			        }
+			    },
+		        {
+		    		breakpoint : 360,
+		    		settings   : {
+		    			slidesToShow   : 1,
+		    			slidesToScroll : 1,
+		    			dots           : false,
+		    			adaptiveHeight : true,
+		            }
+		        }
+			    ]
 			});
-			// $( '.bh-most-popular-slider' ).slick( {
-			// 	slidesToShow: 1,
-			// 	slidesToScroll: 1,
-			// 	arrows: true,
-			// 	nextArrow: $( '.bh-mpsl-nav .bh-mpsl-next' ),
-			// 	prevArrow: $( '.bh-mpsl-nav .bh-mpsl-prev' ),
-			// 	dots: false
-			// } );
 		},
 
 		//Scroll Back To Top

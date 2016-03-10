@@ -2,18 +2,15 @@
 /* Slider */
 .slick-loading .slick-list
 {
-    background: #fff url('./ajax-loader.gif') center center no-repeat;
+    background: #fff url('../../images/vendor/ajax-loader.gif') center center no-repeat;
 }
 
 /* Icons */
 @font-face
 {
-    font-family: 'slick';
+    font-family: 'FontAwesome';
     font-weight: normal;
     font-style: normal;
-
-    src: url('./fonts/slick.eot');
-    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
 }
 /* Arrows */
 .slick-prev,
@@ -67,7 +64,7 @@
 .slick-prev:before,
 .slick-next:before
 {
-    font-family: 'slick';
+    font-family: 'FontAwesome';
     font-size: 20px;
     line-height: 1;
 
@@ -80,38 +77,38 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 0;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: 0;
     left: auto;
 }
 .slick-prev:before
 {
-    content: '←';
+    content: "\f104";
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    content: "\f105";
 }
 
 .slick-next
 {
-    right: -25px;
+    right: 0;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: 0;
 }
 .slick-next:before
 {
-    content: '→';
+    content: "\f105";
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    content: "\f104";
 }
 
 /* Dots */
@@ -123,7 +120,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -45px;
+    bottom: 0;
 
     display: block;
 
@@ -177,8 +174,8 @@
 }
 .slick-dots li button:before
 {
-    font-family: 'slick';
-    font-size: 6px;
+    font-family: 'FontAwesome';
+    font-size: 11px;
     line-height: 20px;
 
     position: absolute;
@@ -188,17 +185,19 @@
     width: 20px;
     height: 20px;
 
-    content: '•';
+    content: "\f111";
     text-align: center;
 
-    opacity: .25;
-    color: black;
+    opacity: .75;
+    color: white;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before
 {
-    opacity: .75;
-    color: black;
+    font-size: 16px;
+    color: white;
+    line-height: 18px;
+    opacity: 1;
 }

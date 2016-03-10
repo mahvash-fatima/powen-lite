@@ -106,10 +106,11 @@ function powen_enqueue_scripts(){
 	wp_enqueue_script( 'powen-main' );
 
 	// wp_localize_script( 'powen-main', 'powenVars', array(
-	// 	'slidesToShow'    => apply_filters('powen_slides_to_show', 4),
-	// 	'slidesToScroll' => apply_filters('powen_slides_to_scroll', 1),
-	// 	'arrows'    => apply_filters('powen_arrows', false),
-	// 	'dots'   => apply_filters('powen_dots', false),
+	// 	'dots'           => apply_filters('powen_dots', true),
+	// 	'infinite'       => apply_filters('powen_infinite', true),
+	// 	'speed'          => apply_filters('powen_speed', 300),
+	// 	'slidesToShow'   => apply_filters('powen_slides_to_show', 4),
+	// 	'slidesToScroll' => apply_filters('powen_slides_to_scroll', 4),
 	// ));
 
 }

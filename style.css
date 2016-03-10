@@ -1592,8 +1592,12 @@ h6 {
     margin-right: 0;
   }
 
-  .flexslider .powen-slider-content {
-    visibility: visible;
+  .powen-main-slides .powen-slider-content {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
     opacity: 1;
   }
 
@@ -1605,10 +1609,6 @@ h6 {
     overflow: hidden;
     width: 100%;
     margin: 0.3125rem 0;
-  }
-
-  .flex-control-nav {
-    display: none;
   }
 
   .quarter,
@@ -1871,7 +1871,6 @@ blockquote:before {
 .powen-main-slider {
   width: 100%;
   overflow: hidden;
-  position: relative;
 }
 
 .powen-main-slides {

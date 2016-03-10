@@ -1,8 +1,8 @@
 .powen-main-slider {
 	width: 100%;
 	overflow: hidden;
-	position: relative;
 }
+
 .powen-main-slides {
 	position: relative;
 	&:hover {
@@ -16,6 +16,7 @@
 		}
 	}
 }
+
 .powen-slider-content {
 	position: absolute;
 	left: 0;
