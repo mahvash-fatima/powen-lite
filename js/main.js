@@ -8,7 +8,7 @@
 		{
 			this.topMostMenu();
 			this.mainMenu();
-			this.createMainSlider();
+			// this.createMainSlider();
 			this.backtoTop();
 			this.skipLinkFocusFix();
 			this.addClass();
@@ -51,28 +51,28 @@
 		},
 
 		//Slider
-		createMainSlider: function()
-		{
-			var width = $(window).width();
-			if ((width <= 400) ){
+		// createMainSlider: function()
+		// {
+		// 	var width = $(window).width();
+		// 	if ((width <= 400) ){
 
-			  $('.flexslider').flexslider({
-			    animation : powenVars.animation
-			  });
+		// 	  $('.flexslider').flexslider({
+		// 	    animation : powenVars.animation
+		// 	  });
 
-			} else {
+		// 	} else {
 
-				$('.flexslider').flexslider(
-				{
-					animation    : powenVars.animation,
-					pauseOnHover : powenVars.pauseOnHover,
-					itemWidth    : powenVars.itemWidth,
-					itemMargin   : powenVars.itemMargin,
-					minItems     : powenVars.minItems,
-					maxItems     : powenVars.maxItems
-				});
-			}
-		},
+		// 		$('.flexslider').flexslider(
+		// 		{
+		// 			animation    : powenVars.animation,
+		// 			pauseOnHover : powenVars.pauseOnHover,
+		// 			itemWidth    : powenVars.itemWidth,
+		// 			itemMargin   : powenVars.itemMargin,
+		// 			minItems     : powenVars.minItems,
+		// 			maxItems     : powenVars.maxItems
+		// 		});
+		// 	}
+		// },
 
 		//Scroll Back To Top
 		backtoTop: function()

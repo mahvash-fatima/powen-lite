@@ -7,7 +7,7 @@ if ( ! function_exists( 'powen_enqueue_styles' ) ) :
 
 	function powen_enqueue_styles(){
 
-		$show_flexslider = powen_options('show-slider') || ! isset($powen_options['show-slider']);
+		// $show_flexslider = powen_options('show-slider') || ! isset($powen_options['show-slider']);
 
 		/*===============
 	         REGISTER
@@ -33,7 +33,7 @@ if ( ! function_exists( 'powen_enqueue_styles' ) ) :
 		wp_register_style( 'powen-default', POWEN_URI . '/css/default.css', array('powen-fontawesome') );
 
 		//Flexslider styles
-		wp_register_style( 'powen-flexslider', POWEN_URI . '/css/vendor-css/flexslider.css', array('powen-default') );
+		// wp_register_style( 'powen-flexslider', POWEN_URI . '/css/vendor-css/flexslider.css', array('powen-default') );
 
 		/*===============
 	          ENQUEUE
@@ -43,9 +43,9 @@ if ( ! function_exists( 'powen_enqueue_styles' ) ) :
 
 		wp_enqueue_style('powen-mobile-menu-style');
 
-		if( $show_flexslider )
+		// if( $show_flexslider )
 
-		wp_enqueue_style('powen-flexslider');
+		// wp_enqueue_style('powen-flexslider');
 
 		wp_enqueue_style( 'powen-animate');
 
@@ -65,7 +65,7 @@ if ( ! function_exists( 'powen_enqueue_scripts' ) ) :
 
 function powen_enqueue_scripts(){
 
-	$show_flexslider = powen_options('show-slider') || ! isset($powen_options['show-slider']);
+	// $show_flexslider = powen_options('show-slider') || ! isset($powen_options['show-slider']);
 
 	//Because they go to the same hook.
 	powen_enqueue_styles();
@@ -82,7 +82,7 @@ function powen_enqueue_scripts(){
 	wp_register_script( 'powen-mobile-menu', POWEN_URI . '/js/vendor-js/jquery.mmenu.min.all.js', array('jquery'), POWEN_VERSION, true );
 
 	//Flexslider
-	wp_register_script( 'powen-jquery-flexslider',  POWEN_URI . '/js/vendor-js/jquery.flexslider.js', array('jquery'), POWEN_VERSION, true );
+	// wp_register_script( 'powen-jquery-flexslider',  POWEN_URI . '/js/vendor-js/jquery.flexslider.js', array('jquery'), POWEN_VERSION, true );
 
 	//Main script of the theme
 	wp_register_script( 'powen-main', POWEN_URI . '/js/main.js', array('jquery'), POWEN_VERSION, true );
@@ -103,19 +103,19 @@ function powen_enqueue_scripts(){
 	//mMenu
 	wp_enqueue_script('powen-mobile-menu');
 
-	if($show_flexslider)
-	wp_enqueue_script( 'powen-jquery-flexslider' );
+	// if($show_flexslider)
+	// wp_enqueue_script( 'powen-jquery-flexslider' );
 
 	wp_enqueue_script( 'powen-main' );
 
-	wp_localize_script( 'powen-main', 'powenVars', array(
-		'animation'    => apply_filters('powen_animation', 'slide'),
-		'pauseOnHover' => apply_filters('powen_pauseOnHover', true),
-		'itemWidth'    => apply_filters('powen_itemWidth', 210),
-		'itemMargin'   => apply_filters('powen_itemMargin', 0),
-		'minItems'     => apply_filters('powen_minItems', 4),
-		'maxItems'     => apply_filters('powen_maxItems', 4)
-	));
+	// wp_localize_script( 'powen-main', 'powenVars', array(
+	// 	'animation'    => apply_filters('powen_animation', 'slide'),
+	// 	'pauseOnHover' => apply_filters('powen_pauseOnHover', true),
+	// 	'itemWidth'    => apply_filters('powen_itemWidth', 210),
+	// 	'itemMargin'   => apply_filters('powen_itemMargin', 0),
+	// 	'minItems'     => apply_filters('powen_minItems', 4),
+	// 	'maxItems'     => apply_filters('powen_maxItems', 4)
+	// ));
 
 }
 
