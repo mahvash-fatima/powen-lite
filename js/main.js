@@ -8,7 +8,7 @@
 		{
 			this.topMostMenu();
 			this.mainMenu();
-			// this.createMainSlider();
+			this.createMainSlider();
 			this.backtoTop();
 			this.skipLinkFocusFix();
 			this.addClass();
@@ -51,28 +51,24 @@
 		},
 
 		//Slider
-		// createMainSlider: function()
-		// {
-		// 	var width = $(window).width();
-		// 	if ((width <= 400) ){
-
-		// 	  $('.flexslider').flexslider({
-		// 	    animation : powenVars.animation
-		// 	  });
-
-		// 	} else {
-
-		// 		$('.flexslider').flexslider(
-		// 		{
-		// 			animation    : powenVars.animation,
-		// 			pauseOnHover : powenVars.pauseOnHover,
-		// 			itemWidth    : powenVars.itemWidth,
-		// 			itemMargin   : powenVars.itemMargin,
-		// 			minItems     : powenVars.minItems,
-		// 			maxItems     : powenVars.maxItems
-		// 		});
-		// 	}
-		// },
+		createMainSlider: function()
+		{
+			$('.main-slider').slick(
+			{
+				slidesToShow: 4,
+				slidesToScroll: 4,
+				arrows: false,
+				dots: false
+			});
+			// $( '.bh-most-popular-slider' ).slick( {
+			// 	slidesToShow: 1,
+			// 	slidesToScroll: 1,
+			// 	arrows: true,
+			// 	nextArrow: $( '.bh-mpsl-nav .bh-mpsl-next' ),
+			// 	prevArrow: $( '.bh-mpsl-nav .bh-mpsl-prev' ),
+			// 	dots: false
+			// } );
+		},
 
 		//Scroll Back To Top
 		backtoTop: function()
