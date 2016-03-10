@@ -53,7 +53,7 @@
 		//Slider
 		createMainSlider: function()
 		{
-			$('.main-slider').slick(
+			$('.powen-main-slider').slick(
 			{
 				slidesToShow: 4,
 				slidesToScroll: 4,

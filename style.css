@@ -1592,6 +1592,25 @@ h6 {
     margin-right: 0;
   }
 
+  .flexslider .powen-slider-content {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .powen-slider-title, .powen-slider-description {
+    visibility: visible;
+    opacity: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    margin: 0.3125rem 0;
+  }
+
+  .flex-control-nav {
+    display: none;
+  }
+
   .quarter,
   .one-third,
   .half,
@@ -1621,6 +1640,14 @@ h6 {
 
   .powen-nav {
     font-size: 0.928rem;
+  }
+
+  .powen-slider-title {
+    font-size: 1.071rem;
+  }
+
+  .powen-slider-description {
+    font-size: 1rem;
   }
 
   .widget-title {
@@ -1681,6 +1708,14 @@ h6 {
     margin-right: -1.618rem;
     margin-bottom: 1.618rem;
     margin-left: -1.618rem;
+  }
+
+  .powen-slider-title {
+    font-size: 1rem;
+  }
+
+  .powen-slider-description {
+    font-size: 0.928rem;
   }
 }
 /*--------------------------------------------------------------
@@ -1833,5 +1868,54 @@ blockquote:before {
 /*--------------------------------------------------------------
 16.0 Slider
 --------------------------------------------------------------*/
+.powen-main-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.powen-main-slides {
+  position: relative;
+}
+.powen-main-slides:hover .powen-slider-content {
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.powen-slider-content {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: auto;
+  padding: 0.3125rem;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.powen-slider-title {
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 0.625rem 0;
+}
+
+.powen-slider-description {
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 1.875rem;
+}
 
 /*# sourceMappingURL=style.css.map */
