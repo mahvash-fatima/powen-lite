@@ -22,7 +22,7 @@ $slides = get_theme_mod( 'powen_slides', powen_default_slides() );
 
 			if( ! trim( $slide_image ) ) continue; ?>
 
-			<div class="powen-main-slides">
+			<div class="powen-slide">
 				<a href='<?php echo esc_url( $slide_link ); ?>'>
 					<img src='<?php echo esc_url( $slide_image ); ?>' alt='image'>
 					<?php if( $slide_title || $slide_description ) { ?>

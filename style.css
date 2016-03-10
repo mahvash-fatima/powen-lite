@@ -1592,7 +1592,7 @@ h6 {
     margin-right: 0;
   }
 
-  .powen-main-slides .powen-slider-content {
+  .powen-slide .powen-slider-content {
     -webkit-transform: translateY(0%);
     -moz-transform: translateY(0%);
     -ms-transform: translateY(0%);
@@ -1873,10 +1873,10 @@ blockquote:before {
   overflow: hidden;
 }
 
-.powen-main-slides {
+.powen-slide {
   position: relative;
 }
-.powen-main-slides:hover .powen-slider-content {
+.powen-slide:hover .powen-slider-content {
   -webkit-transform: translateY(0%);
   -moz-transform: translateY(0%);
   -ms-transform: translateY(0%);
