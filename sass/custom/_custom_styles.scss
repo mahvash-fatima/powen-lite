@@ -487,23 +487,6 @@ ul, ol {
 		margin-right: 0;
 	}
 
-	.flexslider .powen-slider-content {
-		visibility: visible;
-		opacity: 1;
-	}
-	.powen-slider-title, .powen-slider-description{
-		visibility: visible;
-		opacity: 1;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-		overflow: hidden;
-		width: 100%;
-		margin: rem-calc(5 0);
-	}
-	.flex-control-nav {
-		display: none;
-	}
-
 	.quarter,
 	.one-third,
 	.half,
@@ -523,8 +506,6 @@ ul, ol {
 	.site-title {font-size: 2rem;}
 	.site-description {font-size: 0.928rem;}
 	.powen-nav {font-size: 0.928rem;}
-	.powen-slider-title {font-size: 1.071rem;}
-	.powen-slider-description {font-size: 1rem;}
 	.widget-title {font-size: 1.214rem;}
 	.widget-area {font-size: 0.928rem;}
 	.powen-footer-nav {font-size: 0.928rem;}
@@ -579,6 +560,4 @@ ul, ol {
 		margin-bottom: $default_gutter;
 		margin-left: -$post_l_padding;
 	}
-	.powen-slider-title {font-size: 1rem;}
-	.powen-slider-description {font-size: 0.928rem;}
 }
