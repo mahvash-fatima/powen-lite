@@ -54,11 +54,11 @@
 		createMainSlider: function()
 		{
 			var options = {
-				dots           : powenVars.dots ? true : false,
-				infinite       : powenVars.infinite ? true : false,
 				speed          : parseInt(powenVars.speed),
 				slidesToShow   : parseInt(powenVars.slidesToShow),
 				slidesToScroll : parseInt(powenVars.slidesToScroll),
+				dots           : powenVars.dots ? true : false,
+				infinite       : powenVars.infinite ? true : false,
 				responsive     : [
 			    {
 					breakpoint : 1024,
@@ -99,9 +99,7 @@
 			    ]
 			};
 
-			console.log(options);
-
-			$('.powen-main-slider').slick( options );
+			$('.powen-main-slider').slick( options ).fadeIn();
 		},
 
 		//Scroll Back To Top
