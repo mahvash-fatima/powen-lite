@@ -697,9 +697,7 @@ input[type="submit"] {
   right: 0;
   margin: 0 auto;
   -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -1262,7 +1260,8 @@ ul, ol {
   padding-right: 1.5625rem;
   display: none;
   box-shadow: 0px 0px 0px 1px #fafafa;
-  transition: none;
+  -webkit-transition: none;
+          transition: none;
 }
 
 .fa-search {
@@ -1500,7 +1499,8 @@ ul, ol {
   z-index: 100;
   color: #ffffff;
   cursor: pointer;
-  transition: 0.3s;
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
 }
 .footer-scroll:hover {
   background: #555555;
@@ -1592,8 +1592,10 @@ h6 {
     margin-right: 0;
   }
 
-  .flexslider .powen-slider-content {
-    visibility: visible;
+  .powen-slide .powen-slider-content {
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
     opacity: 1;
   }
 
@@ -1605,10 +1607,6 @@ h6 {
     overflow: hidden;
     width: 100%;
     margin: 0.3125rem 0;
-  }
-
-  .flex-control-nav {
-    display: none;
   }
 
   .quarter,
@@ -1762,7 +1760,9 @@ blockquote:before,
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 /**---------------
@@ -1868,36 +1868,21 @@ blockquote:before {
 /*--------------------------------------------------------------
 16.0 Slider
 --------------------------------------------------------------*/
-.flex-prev {
-  font-size: 0.875rem;
-  padding: 0 0.75rem;
-}
-
-.flex-next {
-  font-size: 0.875rem;
-  padding: 0 0.75rem;
-}
-
-.flexslider {
+.powen-main-slider {
   width: 100%;
   overflow: hidden;
-  position: relative;
+  display: none;
+  background: #ffffff;
 }
 
-.slides li {
+.powen-slide {
   position: relative;
 }
-.slides li:hover .powen-slider-content {
+.powen-slide:hover .powen-slider-content {
   -webkit-transform: translateY(0%);
-  -moz-transform: translateY(0%);
   -ms-transform: translateY(0%);
-  -o-transform: translateY(0%);
   transform: translateY(0%);
   opacity: 1;
-}
-.slides img {
-  height: auto;
-  width: 100%;
 }
 
 .powen-slider-content {
@@ -1909,13 +1894,9 @@ blockquote:before {
   padding: 0.3125rem;
   background: rgba(0, 0, 0, 0.3);
   -webkit-transform: translateY(100%);
-  -moz-transform: translateY(100%);
   -ms-transform: translateY(100%);
-  -o-transform: translateY(100%);
   transform: translateY(100%);
   -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
   opacity: 0;
 }

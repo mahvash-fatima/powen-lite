@@ -1,35 +1,24 @@
-.flex-prev {
-	font-size: rem-calc(14);
-	padding: rem-calc(0 12);
-}
-.flex-next {
-	font-size: rem-calc(14);
-	padding: rem-calc(0 12);
-}
-.flexslider {
+.powen-main-slider {
 	width: 100%;
 	overflow: hidden;
-	position: relative;
+	display: none;
+	background: #ffffff;
 }
-.slides {
-	li {
-		position: relative;
-		&:hover {
-			.powen-slider-content{
-				-webkit-transform: translateY(0%);
-				-moz-transform: translateY(0%);
-				-ms-transform: translateY(0%);
-				-o-transform: translateY(0%);
-				transform: translateY(0%);
-				opacity: 1;
-			}
+
+.powen-slide {
+	position: relative;
+	&:hover {
+		.powen-slider-content{
+			-webkit-transform: translateY(0%);
+			-moz-transform: translateY(0%);
+			-ms-transform: translateY(0%);
+			-o-transform: translateY(0%);
+			transform: translateY(0%);
+			opacity: 1;
 		}
 	}
-	img {
-		height: auto;
-		width: 100%;
-	}
 }
+
 .powen-slider-content {
 	position: absolute;
 	left: 0;

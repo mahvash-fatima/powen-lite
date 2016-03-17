@@ -53,25 +53,53 @@
 		//Slider
 		createMainSlider: function()
 		{
-			var width = $(window).width();
-			if ((width <= 400) ){
+			var options = {
+				speed          : parseInt(powenVars.speed),
+				slidesToShow   : parseInt(powenVars.slidesToShow),
+				slidesToScroll : parseInt(powenVars.slidesToScroll),
+				dots           : powenVars.dots ? true : false,
+				infinite       : powenVars.infinite ? true : false,
+				responsive     : [
+			    {
+					breakpoint : 1024,
+					settings   : {
+						slidesToShow   : 3,
+						slidesToScroll : 3,
+						infinite       : true,
+						dots           : true,
+			    	}
+			    },
+			    {
+					breakpoint : 600,
+					settings   : {
+						slidesToShow   : 2,
+						slidesToScroll : 2,
+						dots           : false,
+			        }
+			    },
+			    {
+					breakpoint : 480,
+					settings   : {
+						slidesToShow   : 1,
+						slidesToScroll : 1,
+						dots           : false,
+						centerMode     : true,
+						centerPadding  : '40px',
+			        }
+			    },
+		        {
+		    		breakpoint : 360,
+		    		settings   : {
+		    			slidesToShow   : 1,
+		    			slidesToScroll : 1,
+		    			dots           : false,
+		    			adaptiveHeight : true,
+		            }
+		        }
+			    ]
+			};
 
-			  $('.flexslider').flexslider({
-			    animation : powenVars.animation
-			  });
-
-			} else {
-
-				$('.flexslider').flexslider(
-				{
-					animation    : powenVars.animation,
-					pauseOnHover : powenVars.pauseOnHover,
-					itemWidth    : powenVars.itemWidth,
-					itemMargin   : powenVars.itemMargin,
-					minItems     : powenVars.minItems,
-					maxItems     : powenVars.maxItems
-				});
-			}
+			$('.powen-main-slider').slick( options ).fadeIn();
 		},
 
 		//Scroll Back To Top

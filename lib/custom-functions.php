@@ -51,42 +51,42 @@ if( ! function_exists( 'powen_default_slides' ) ) :
 					'title'       => __('Demo Post One', 'powen-lite'),
 					'link' 		  => home_url( '/' ),
 					'description' => __('Omnis fugit itaque architecto sit saepe quidem tempora.', 'powen-lite'),
-					'image'       => get_template_directory_uri() . '/images/slides/slide8.jpg',
+					'image'       => get_template_directory_uri() . '/images/slides/slide8.png',
 	            ),
 	        array
 	            (
 					'title'       => __('Demo Post Two', 'powen-lite'),
 					'link' 		  => home_url( '/' ),
 					'description' => __('Reiciendis blanditiis eius officia molestias dicta ver.', 'powen-lite'),
-					'image'       => get_template_directory_uri() . '/images/slides/slide7.jpg',
+					'image'       => get_template_directory_uri() . '/images/slides/slide7.png',
 	            ),
 	        array
 	            (
 					'title'       => __('Demo Post Three', 'powen-lite'),
 					'link' 		  => home_url( '/' ),
 					'description' => __('Eaque perferendis nesciunt provident.', 'powen-lite'),
-					'image'       => get_template_directory_uri() . '/images/slides/slide6.jpg',
+					'image'       => get_template_directory_uri() . '/images/slides/slide6.png',
 	            ),
 	        array
 	            (
 					'title'       => __('Demo Post Four', 'powen-lite'),
 					'link' 		  => home_url( '/' ),
 					'description' => __('Cupiditate deleniti, enim natus.', 'powen-lite'),
-					'image'       => get_template_directory_uri() . '/images/slides/slide5.jpg',
+					'image'       => get_template_directory_uri() . '/images/slides/slide5.png',
 	            ),
 	        array
 	            (
 					'title'       => __('Demo Post Five', 'powen-lite'),
 					'link' 		  => home_url( '/' ),
 					'description' => __('Temporibus eaque rem unde iste fugasse quaerat quo ven.', 'powen-lite'),
-					'image'       => get_template_directory_uri() . '/images/slides/slide4.jpg',
+					'image'       => get_template_directory_uri() . '/images/slides/slide4.png',
 	            ),
 	        array
 	            (
 					'title'       => __('Demo Post Six', 'powen-lite'),
 					'link' 		  => home_url( '/' ),
 					'description' => __('Perferendis quasi totam voluptates quo quaerat tempori.', 'powen-lite'),
-					'image'       => get_template_directory_uri() . '/images/slides/slide3.jpg',
+					'image'       => get_template_directory_uri() . '/images/slides/slide3.png',
 	            ),
 	        array
 	            (
@@ -100,44 +100,12 @@ if( ! function_exists( 'powen_default_slides' ) ) :
 					'title'       => __('Demo Post Eight', 'powen-lite'),
 					'link' 		  => home_url( '/' ),
 					'description' => __('Libero mollitia error expedita totam iste minus cumque.', 'powen-lite'),
-					'image'       => get_template_directory_uri() . '/images/slides/slide1.jpg',
+					'image'       => get_template_directory_uri() . '/images/slides/slide1.png',
 	            )
 	    ) );
 	}
 
 endif; //powen_default_slides
-
-/**
- * Used to check if a value is set or not for our global variable $powen_options,
- * so it doesn't return undefined index error in debug mode.
- * @param  [string]  $key1 first or the only key of the array
- * @param  [string] $key2 (optional) the second key of the array.
- * @return [mixed]        the value of $powen_options key provided
- */
-if( ! function_exists( 'powen_options' ) ) :
-
-	function powen_options( $key1, $key2 = false ){
-
-		global $powen_options;
-
-		if( isset($powen_options[$key1]) && $powen_options[$key1] )
-		{
-			if( $key2 )
-			{
-				if( isset($powen_options[$key1][$key2]) && $powen_options[$key1][$key2] )
-				{
-					return $powen_options[$key1][$key2];
-				}
-			}
-			else
-			{
-				return $powen_options[$key1];
-			}
-
-		}
-
-	}
-endif; //powen_options
 
 //Pagination
 

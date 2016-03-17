@@ -45,36 +45,36 @@ IMAGE SIZE
 IMAGE LINK
 ==========
 
--slide1.jpg
-	@Link - https://pixabay.com/en/book-read-relax-lilac-bank-old-759873/ - @pixabay
+-slide1.png
+	@Link - https://pixabay.com/en/bicycle-bike-riding-ride-activity-932433/ - @pixabay
 	License - https://creativecommons.org/publicdomain/zero/1.0/deed.en ( CC0 1.0 Universal (CC0 1.0) )
 
--slide2.jpg
-	@Link - https://pixabay.com/en/happy-couple-young-people-family-692725/ - @pixabay
+-slide2.png
+	@Link - https://pixabay.com/en/squash-sport-man-game-racket-ball-793059/ - @pixabay
 	License - https://creativecommons.org/publicdomain/zero/1.0/deed.en ( CC0 1.0 Universal (CC0 1.0) )
 
--slide3.jpg
-	@Link - https://pixabay.com/en/blonde-girl-young-woman-person-768681/ - @pixabay
+-slide3.png
+	@Link - https://pixabay.com/en/canon-camera-dslr-lens-690689/ - @pixabay
 	License - https://creativecommons.org/publicdomain/zero/1.0/deed.en ( CC0 1.0 Universal (CC0 1.0) )
 
--slide4.jpg
-	@Link - https://pixabay.com/en/girls-friends-friendship-young-685778/ - @pixabay
+-slide4.png
+	@Link - https://pixabay.com/en/grapes-bunch-fruit-person-holding-690230/ - @pixabay
 	License - https://creativecommons.org/publicdomain/zero/1.0/deed.en ( CC0 1.0 Universal (CC0 1.0) )
 
--slide5.jpg
-	@Link - https://pixabay.com/en/bride-bouquet-wedding-white-woman-845727/ - @pixabay
+-slide5.png
+	@Link - https://pixabay.com/en/boat-shipwreck-beached-ocean-sand-867218/ - @pixabay
 	License - https://creativecommons.org/publicdomain/zero/1.0/deed.en ( CC0 1.0 Universal (CC0 1.0) )
 
--slide6.jpg
-	@Link - https://pixabay.com/en/meal-food-decorative-restaurant-731422/ - @pixabay
+-slide6.png
+	@Link - https://pixabay.com/en/sports-persons-running-people-731506/ - @pixabay
 	License - https://creativecommons.org/publicdomain/zero/1.0/deed.en ( CC0 1.0 Universal (CC0 1.0) )
 
--slide7.jpg
-	@Link - https://pixabay.com/en/fashion-girl-woman-female-model-821506/ - @pixabay
+-slide7.png
+	@Link - https://pixabay.com/en/subway-travel-transport-tracks-691504/ - @pixabay
 	License - https://creativecommons.org/publicdomain/zero/1.0/deed.en ( CC0 1.0 Universal (CC0 1.0) )
 
--slide8.jpg
-	@Link - https://pixabay.com/en/pier-wooden-planks-shore-water-336599/ - @pixabay
+-slide8.png
+	@Link - https://pixabay.com/en/fashion-emotional-model-girl-woman-821498/ - @pixabay
 	License - https://creativecommons.org/publicdomain/zero/1.0/deed.en ( CC0 1.0 Universal (CC0 1.0) )
 
 DEMO URL
@@ -87,3 +87,9 @@ THEME DOCUMENTATION
 ===================
 
 	@Link - http://supernovathemes.com/powen-theme/
+
+
+GITHUB URL
+==========
+
+	@Link - https://github.com/memash/powen-lite

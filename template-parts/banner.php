@@ -10,9 +10,7 @@ $slides = get_theme_mod( 'powen_slides', powen_default_slides() );
 ?>
 
 <?php if( ! powen_mod( 'hide_slider' , false ) ) :  ?>
-<div id="powen-main-slider" class="clear">
-	<section id="slider" class="flexslider">
-		<ul class='slides'>
+	<section id="powen-slider" class="powen-main-slider">
 
 		<?php if( is_array( $slides ) ) : foreach ( $slides as $slide ) : ?>
 
@@ -24,7 +22,7 @@ $slides = get_theme_mod( 'powen_slides', powen_default_slides() );
 
 			if( ! trim( $slide_image ) ) continue; ?>
 
-			<li>
+			<div class="powen-slide">
 				<a href='<?php echo esc_url( $slide_link ); ?>'>
 					<img src='<?php echo esc_url( $slide_image ); ?>' alt='image'>
 					<?php if( $slide_title || $slide_description ) { ?>
@@ -36,11 +34,9 @@ $slides = get_theme_mod( 'powen_slides', powen_default_slides() );
 					</div>
 					<?php } ?>
 				</a>
-			</li>
+			</div>
 
 		<?php endforeach; endif; ?>
 
-		</ul>
 	</section>
-</div>
 <?php endif; ?>
