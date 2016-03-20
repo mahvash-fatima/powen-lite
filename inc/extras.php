@@ -175,10 +175,11 @@ function powen_admin_notice() {
     global $current_user ;
 
         $user_id = $current_user->ID;
+        $theme_mod = get_theme_mod( 'powen_mod' );
 
         /* Check that the user hasn't already clicked to ignore the message */
 
-    if ( ! get_user_meta($user_id, 'powen_ignore_notice') ) {
+    if ( ! get_user_meta($user_id, 'powen_ignore_notice') && empty( $theme_mod ) ) {
 
         echo '<div class="updated"><p>';
 
