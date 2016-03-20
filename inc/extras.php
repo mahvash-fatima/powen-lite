@@ -137,7 +137,7 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 	add_action( 'wp_head', 'powen_render_title' );
 endif;
 
-add_action( 'powen_files_load' , 'powen_load_extras' );
+//add_action( 'powen_files_load' , 'powen_load_extras' );
 function powen_load_extras()
 {
 	$file = POWEN_DR . '/pro/powen-pro.php';
@@ -179,11 +179,11 @@ function powen_admin_notice() {
 
         /* Check that the user hasn't already clicked to ignore the message */
 
-    if ( ! get_user_meta($user_id, 'powen_ignore_notice') && empty( $theme_mod ) ) {
+    if ( ! get_user_meta( $user_id, 'powen_ignore_pro_notice') ) {
 
         echo '<div class="updated"><p>';
 
-        printf(__('The Menu had some bugs and we have fixed the issue. You will need to add your menu to one of the Theme Locations. 1.Scroll to the bottom of the menu editor window. 2.In the section titled Theme Locations, click the check box for the location where you want your menu to appear. 3.Click Save Menu once you have made your selection. | <a href="%1$s">Hide Notice</a>', 'powen-lite'), '?powen_nag_ignore=0');
+        printf(__('Try Powen Pro for more features, better SEO, full navigation and premium support. Click <a target="_blank" href="http://supernovathemes.com/powen-pro-pricing/">here</a> to know more. | <a href="%1$s">Hide</a>', 'powen-lite'), '?powen_nag_ignore=0');
 
         echo "</p></div>";
 
@@ -203,7 +203,6 @@ function powen_nag_ignore() {
 
         if ( isset($_GET['powen_nag_ignore']) && '0' == $_GET['powen_nag_ignore'] ) {
 
-             add_user_meta($user_id, 'powen_ignore_notice', 'true', true);
-
+             add_user_meta( $user_id, 'powen_ignore_pro_notice', 'true', true);
     }
 }
