@@ -79,3 +79,6 @@ require POWEN_DR . '/inc/jetpack.php';
  * Social Links
  */
 require_once POWEN_DR . '/lib/social-links.php';
+
+
+do_action( 'powen_theme_end' );
