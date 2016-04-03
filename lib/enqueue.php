@@ -111,6 +111,7 @@ function powen_enqueue_scripts(){
 		'slidesToScroll' => 4,
 		'dots'           => true,
 		'infinite'       => true,
+		'autoplay'		 => true
 	) ) );
 
 }

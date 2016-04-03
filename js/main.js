@@ -1,3 +1,7 @@
+/**
+ * This does not require document ready because its loaded at the bottom
+ * you can also access the Powen object from other files or from child theme
+ */
 (function($) {
 
 	"use strict";
@@ -15,7 +19,6 @@
 			this.searchBar();
 		},
 
-		//Top Most Menu
 		topMostMenu: function()
 		{
 			var $topMostMenu = $('#site-navigation');
@@ -53,11 +56,14 @@
 		//Slider
 		createMainSlider: function()
 		{
+			if( powenVars === 'undefined' ) return;
+
 			var options = {
 				speed          : parseInt(powenVars.speed),
 				slidesToShow   : parseInt(powenVars.slidesToShow),
 				slidesToScroll : parseInt(powenVars.slidesToScroll),
 				dots           : powenVars.dots ? true : false,
+				autoplay       : powenVars.autoplay ? true : false,
 				infinite       : powenVars.infinite ? true : false,
 				responsive     : [
 			    {
