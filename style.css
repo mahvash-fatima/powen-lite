@@ -4,7 +4,7 @@ Theme URI: http://supernovathemes.com/powen-theme/
 Author: Mahvash Fatima
 Author URI: http://supernovathemes.com
 Description: Powen Lite has been specially designed for blogging websites however due to its clean design and plenty of customization options, it can easily be customized for any purpose.
-Version: 1.5.1
+Version: 1.5.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: powen-lite
@@ -697,7 +697,9 @@ input[type="submit"] {
   right: 0;
   margin: 0 auto;
   -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -1260,8 +1262,7 @@ ul, ol {
   padding-right: 1.5625rem;
   display: none;
   box-shadow: 0px 0px 0px 1px #fafafa;
-  -webkit-transition: none;
-          transition: none;
+  transition: none;
 }
 
 .fa-search {
@@ -1499,8 +1500,7 @@ ul, ol {
   z-index: 100;
   color: #ffffff;
   cursor: pointer;
-  -webkit-transition: 0.3s;
-          transition: 0.3s;
+  transition: 0.3s;
 }
 .footer-scroll:hover {
   background: #555555;
@@ -1594,7 +1594,9 @@ h6 {
 
   .powen-slide .powen-slider-content {
     -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
     -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
     transform: translateY(0%);
     opacity: 1;
   }
@@ -1760,9 +1762,7 @@ blockquote:before,
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-transform: translate(0, 0);
-      -ms-transform: translate(0, 0);
-          transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 /**---------------
@@ -1880,7 +1880,9 @@ blockquote:before {
 }
 .powen-slide:hover .powen-slider-content {
   -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
   -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
   transform: translateY(0%);
   opacity: 1;
 }
@@ -1894,9 +1896,13 @@ blockquote:before {
   padding: 0.3125rem;
   background: rgba(0, 0, 0, 0.3);
   -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
   -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
   transform: translateY(100%);
   -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   opacity: 0;
 }
@@ -1911,6 +1917,18 @@ blockquote:before {
   color: #ffffff;
   line-height: 1.2;
   margin-bottom: 1.875rem;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-next:before {
+  margin-left: 0.375rem;
+}
+
+.slick-prev:before {
+  margin-left: 0.1875rem;
 }
 
 /*# sourceMappingURL=style.css.map */

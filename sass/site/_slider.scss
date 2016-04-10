@@ -48,3 +48,21 @@
 	line-height: 1.2;
 	margin-bottom: rem-calc(30);
 }
+
+.slick-slide{
+	img{
+		width: 100%;
+	}
+}
+
+.slick-next{
+	&:before{
+	    margin-left: rem-calc(6);
+	}
+}
+
+.slick-prev{
+	&:before{
+		margin-left:rem-calc(3);
+	}
+}
