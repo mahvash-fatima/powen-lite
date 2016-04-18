@@ -119,17 +119,16 @@
 			{
 		    	if ($(this).scrollTop() > offset) {
 
-				    $icon.on('.back-to-top').fadeIn(duration);
+				    $icon.fadeIn(duration);
 
 				} else {
-		            $icon.on('.back-to-top').fadeOut(duration);
+		            $icon.fadeOut(duration);
 		        }
 			});
 
 			$icon.on( 'click' , function ()
 			{
-				$("body,html").animate( { scrollTop: 0 }, 600);
-				return false;
+				$("body,html").animate( { scrollTop: 0 }, 400);
 			});
 		},
 
