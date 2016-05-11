@@ -104,6 +104,9 @@ ul, ol {
 .site-branding {
 	padding: rem-calc(15);
 	text-align: center;
+	img{
+	    max-height: 450px;
+	}
 }
 
 .site-title, .site-description {
