@@ -929,7 +929,7 @@ class Powen_Customizer {
       global $powen_theme;
       $url = $powen_theme->get('AuthorURI') . "/powen-pro-pricing/";
       $description = ! defined( 'POWEN_PRO' ) ? __( 'For More Options Upgrade to ', 'powen-lite' ) . "<a href='{$url}'>".__( 'Powen Pro' , 'powen-lite' )."</a>" : false;
-      $urldesc     = esc_url('https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=sayedwp@gmail.com&item_name=Donation for Powen Lite', 'powen-lite');
+      $urldesc     = esc_url('https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=mashwp@gmail.com&item_name=Donation for Powen Lite', 'powen-lite');
       $desc        = ! defined( 'POWEN_PRO' ) ? __( 'Please support the development of your theme - ', 'powen-lite' ) . "<a href='{$urldesc}'>".__( 'Donate', 'powen-lite' )."</a>" : false;
 
       $wp_customize->add_panel( 'powen_slider_pannel', array(
