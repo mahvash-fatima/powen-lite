@@ -831,6 +831,7 @@ class Powen_Customizer {
 
       $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[menu_one_title_textbox]', array(
           'label'    => __( 'Top Most Menu Title', 'powen-lite' ),
+          'description' => __('This text is shown at the top left-hand corner of the screen.', 'powen-lite'),
           'section'  => 'menu_locations',
           'settings' => 'powen_mod[menu_one_title_textbox]',
       ) ) );
@@ -853,6 +854,7 @@ class Powen_Customizer {
 
       $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[menu_two_title_textbox]', array(
           'label'    => __( 'Main Menu Title', 'powen-lite' ),
+          'description' => __('This text is shown at the top right-hand corner of the screen.', 'powen-lite'),
           'section'  => 'menu_locations',
           'settings' => 'powen_mod[menu_two_title_textbox]',
       ) ) );
@@ -874,7 +876,7 @@ class Powen_Customizer {
 
       $wp_customize->add_section( 'powen_social_media_section', array(
           'title'       => __('Social Media', 'powen-lite'),
-          'description' => __('Example for Phone url: tel:+13174562564', 'powen-lite'),
+          'description' => __('Set up your social links', 'powen-lite'),
           'capability'  => 'edit_theme_options',
       ) );
 
@@ -940,7 +942,7 @@ class Powen_Customizer {
 
       $wp_customize->add_section( 'powen_slider_section_pro', array(
            'capability'  => 'edit_theme_options',
-           'title'       => __( 'Powen Pro' , 'powen-lite' ),
+           'title'       => __( 'Slider Display' , 'powen-lite' ),
            'description' => $description . "<br/><br/>" . $desc,
            'type'        => 'checkbox',
            'panel'       => 'powen_slider_pannel',
