@@ -4,7 +4,7 @@ Theme URI: http://supernovathemes.com/powen-theme/
 Author: Mahvash Fatima
 Author URI: http://supernovathemes.com
 Description: Powen Lite has been specially designed for blogging websites however due to its clean design and plenty of customization options, it can easily be customized for any purpose.
-Version: 1.5.7
+Version: 1.5.8
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: powen-lite
@@ -14,7 +14,7 @@ Powen Lite WordPress Theme is based on Underscores http://underscores.me/, Copyr
 Powen Lite WordPress theme is licensed under the GPL.
 */
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
+>>> TABLE OF CONTENTS
 ----------------------------------------------------------------
 1.0 Reset
 2.0 Typography
@@ -1384,6 +1384,7 @@ ul, ol {
   margin: 0.3125rem;
   padding: 0.3125rem;
   display: inline-block;
+  color: #aaaaaa;
 }
 .entry-footer .tags-links {
   display: inline;
@@ -1392,7 +1393,7 @@ ul, ol {
   line-height: 2;
 }
 .entry-footer a {
-  color: #aaaaaa;
+  color: inherit;
 }
 
 .comment-list {

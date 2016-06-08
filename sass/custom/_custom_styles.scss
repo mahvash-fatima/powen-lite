@@ -277,6 +277,7 @@ ul, ol {
 		margin: rem-calc(5);
 		padding: rem-calc(5);
 		display: inline-block;
+		color: #aaaaaa;
 	}
 	.tags-links {
 		display: inline;
@@ -286,7 +287,7 @@ ul, ol {
 	}
 	@include entry_footer();
 	a {
-		color: #aaaaaa;
+		color: inherit;
 	}
 }
 
