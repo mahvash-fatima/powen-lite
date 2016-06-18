@@ -173,7 +173,7 @@
 .slick-dots li button:before
 {
     font-family: 'FontAwesome';
-    font-size: 11px;
+    font-size: 16px;
     line-height: 20px;
 
     position: absolute;
@@ -183,7 +183,7 @@
     width: 20px;
     height: 20px;
 
-    content: "\f111";
+    content: "\f10c";
     text-align: center;
 
     opacity: .75;
@@ -194,8 +194,6 @@
 }
 .slick-dots li.slick-active button:before
 {
-    font-size: 16px;
-    color: white;
-    line-height: 18px;
+    content: "\f111";
     opacity: 1;
 }
