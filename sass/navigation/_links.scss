@@ -1,10 +1,30 @@
 a {
-	color: $color__link_htag;
 	transition: 0.5s;
 	-webkit-transition:0.5s;
 	-moz-transition:0.5s;
-	&:focus {
-		color: $color__link_htag;
+}
+
+.powen-primary-nav a,
+.powen-main-nav a,
+.entry-title a,
+.powen-continue-reading a,
+.nav-links a,
+.reply a,
+.widget-area a
+{
+	color: inherit;
+}
+
+.widget-area a {
+	border-bottom: 1px solid #f8f8f8;
+	&:hover {
+		border-bottom: 1px solid #fafafa;
+	}
+}
+.powen-footer-widgets a {
+	border: none;
+	&:hover {
+		border: none;
 	}
 }
 

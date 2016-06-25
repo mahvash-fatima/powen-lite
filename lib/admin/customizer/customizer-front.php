@@ -207,10 +207,8 @@ class Powen_Customizer_Front extends Powen_Customizer
 
 		//color
 		$color_selectors = apply_filters('powen_create_color_scheme_array', array (
-			'p a',
-			'.breadcrumbs a',
+			'a',
 			'.powen-continue-reading:after',
-			'.widget_calendar #today'
 		) );
 		//background
 		$background_color_selectors = apply_filters('powen_background_color_selectors_array', array(
@@ -229,7 +227,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 
 		//border color
 		$border_color_selectors = apply_filters('powen_border_color_selectors_array', array(
-			'a:hover, a:active',
+			'a:hover',
 			'.powen-pagination .current',
 		) );
 
@@ -245,7 +243,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 		$color_hover_selectors = apply_filters('powen_color_hover_selectors_array', array(
 			'a:hover',
 			'a:active',
-			'.comment-metadata a:hover',
+			'a:focus',
 		) );
 
 		//background should change on hover.

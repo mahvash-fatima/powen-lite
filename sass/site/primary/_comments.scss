@@ -39,12 +39,12 @@
 	.comment-metadata {
 		padding-bottom: rem-calc(5);
 		font-size: rem-calc(12);
-		a {
-			color: #aaaaaa;
-		}
 	}
 	.reply {
 		text-align: right;
 		font-size: rem-calc(13);
 	}
+}
+.comment-metadata a {
+	color: #aaaaaa;
 }

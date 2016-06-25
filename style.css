@@ -4,7 +4,7 @@ Theme URI: http://supernovathemes.com/powen-theme/
 Author: Mahvash Fatima
 Author URI: http://supernovathemes.com
 Description: Powen Lite has been specially designed for blogging websites however due to its clean design and plenty of customization options, it can easily be customized for any purpose.
-Version: 1.5.9
+Version: 1.6.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: powen-lite
@@ -390,13 +390,33 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-  color: #404040;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
 }
-a:focus {
-  color: #404040;
+
+.powen-primary-nav a,
+.powen-main-nav a,
+.entry-title a,
+.powen-continue-reading a,
+.nav-links a,
+.reply a,
+.widget-area a {
+  color: inherit;
+}
+
+.widget-area a {
+  border-bottom: 1px solid #f8f8f8;
+}
+.widget-area a:hover {
+  border-bottom: 1px solid #fafafa;
+}
+
+.powen-footer-widgets a {
+  border: none;
+}
+.powen-footer-widgets a:hover {
+  border: none;
 }
 
 button,
@@ -923,12 +943,13 @@ input[type="submit"] {
   padding-bottom: 0.3125rem;
   font-size: 0.75rem;
 }
-.comment-body .comment-metadata a {
-  color: #aaaaaa;
-}
 .comment-body .reply {
   text-align: right;
   font-size: 0.8125rem;
+}
+
+.comment-metadata a {
+  color: #aaaaaa;
 }
 
 /*--------------------------------------------------------------
@@ -1133,9 +1154,6 @@ blockquote {
   margin-bottom: 1.25rem;
   border: 1px solid #f8f8f8;
 }
-blockquote a, blockquote a:visited, blockquote a:active {
-  color: inherit;
-}
 blockquote p {
   display: inline;
 }
@@ -1318,8 +1336,8 @@ ul, ol {
   margin-right: -1.618rem;
   margin-bottom: 1.618rem;
   margin-left: -1.618rem;
-  border-top: 0.625rem solid #404040;
-  border-bottom: 0.625rem solid #404040;
+  border-top: 0.625rem solid royalblue;
+  border-bottom: 0.625rem solid royalblue;
 }
 .post-thumbnail img {
   min-width: 100%;
@@ -1368,9 +1386,9 @@ ul, ol {
   display: inline-block;
   padding: 0.625rem;
   background: none;
-  border-top: 0.1875rem solid #baabab;
-  border-bottom: 0.1875rem solid #baabab;
-  color: #404040;
+  border-top: 0.1875rem solid white;
+  border-bottom: 0.1875rem solid white;
+  color: royalblue;
 }
 
 .entry-footer {

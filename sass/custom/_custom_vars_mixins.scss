@@ -96,7 +96,6 @@ $color_site_navigation_background:				#ffffff;
 $color_primary_background:				        #ffffff;
 $color_secondary_background:					#ffffff;
 
-$color__link_htag: 								#404040;
 $color_text_primary: 							#565656;
 $color_text_secondary: 							#565656;
 
@@ -140,9 +139,6 @@ $color__border-abbr: 							#666;
 	font-size: rem-calc(14);
 	margin-bottom: rem-calc(20);
 	border: 1px solid #f8f8f8;
-	a, a:visited, a:active {
-		color: inherit;
-	}
 }
 
 @mixin main_panel(){
