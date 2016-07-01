@@ -244,6 +244,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'a:hover',
 			'a:active',
 			'a:focus',
+			'.fa-search:hover',
 		) );
 
 		//background should change on hover.

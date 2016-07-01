@@ -157,6 +157,9 @@ ul, ol {
     top: rem-calc(5);
     right: rem-calc(5);
     cursor: pointer;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
 }
 
 //**** Posts & pages
