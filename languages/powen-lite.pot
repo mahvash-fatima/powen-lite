@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Powen Lite 1.6.1\n"
+"Project-Id-Version: Powen Lite 1.6.2\n"
 "Report-Msgid-Bugs-To: http://supernovathemes.com/powen-theme\n"
-"POT-Creation-Date: 2016-07-01 06:08:50+00:00\n"
+"POT-Creation-Date: 2016-07-18 13:14:39+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -814,14 +814,14 @@ msgid "Sidebar Position"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:919
-#: lib/admin/customizer/customizer.php:1162
-#: lib/admin/customizer/customizer.php:1224
+#: lib/admin/customizer/customizer.php:1163
+#: lib/admin/customizer/customizer.php:1225
 msgid "left"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:920
-#: lib/admin/customizer/customizer.php:1163
-#: lib/admin/customizer/customizer.php:1225
+#: lib/admin/customizer/customizer.php:1164
+#: lib/admin/customizer/customizer.php:1226
 msgid "right"
 msgstr ""
 
@@ -853,130 +853,130 @@ msgstr ""
 msgid "Add slider"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:945
+#: lib/admin/customizer/customizer.php:946
 msgid "Slider Display"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:958
+#: lib/admin/customizer/customizer.php:959
 msgid "Hide Slider"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:970
+#: lib/admin/customizer/customizer.php:971
 msgid "Fixed Slider Content"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:981
+#: lib/admin/customizer/customizer.php:982
 msgid "Slide %s"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:982
+#: lib/admin/customizer/customizer.php:983
 msgid ""
 "Note: All default slide values will be discarded, the moment you make any "
 "changes to the slide."
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:994
+#: lib/admin/customizer/customizer.php:995
 msgid "Title"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1006
+#: lib/admin/customizer/customizer.php:1007
 msgid "Description"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1018
+#: lib/admin/customizer/customizer.php:1019
 msgid "Link"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1030
+#: lib/admin/customizer/customizer.php:1031
 msgid "Image"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1044
+#: lib/admin/customizer/customizer.php:1045
 msgid "Theme Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1049
+#: lib/admin/customizer/customizer.php:1050
 msgid "Link Color (on hover)"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1054
+#: lib/admin/customizer/customizer.php:1055
 msgid "Site Title Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1059
+#: lib/admin/customizer/customizer.php:1060
 msgid "Site Tagline Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1064
+#: lib/admin/customizer/customizer.php:1065
 msgid "Header Background Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1069
+#: lib/admin/customizer/customizer.php:1070
 msgid "Footer widgets background color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1074
+#: lib/admin/customizer/customizer.php:1075
 msgid "Footer widgets text color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1080
+#: lib/admin/customizer/customizer.php:1081
 msgid "Footer widgets link color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1085
+#: lib/admin/customizer/customizer.php:1086
 msgid "Footer bottom background color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1090
+#: lib/admin/customizer/customizer.php:1091
 msgid "Footer bottom text color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1095
+#: lib/admin/customizer/customizer.php:1096
 msgid "Footer bottom link color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1100
+#: lib/admin/customizer/customizer.php:1101
 msgid "Footer link color(on hover)"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1105
+#: lib/admin/customizer/customizer.php:1106
 msgid "Top Most Menu Background Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1110
+#: lib/admin/customizer/customizer.php:1111
 msgid "Top Most Menu Text Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1115
+#: lib/admin/customizer/customizer.php:1116
 msgid "Main Menu Background Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1120
+#: lib/admin/customizer/customizer.php:1121
 msgid "Main Menu Text Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1158
+#: lib/admin/customizer/customizer.php:1159
 msgid "Site Title & Tagline Placement"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1164
-#: lib/admin/customizer/customizer.php:1226
+#: lib/admin/customizer/customizer.php:1165
+#: lib/admin/customizer/customizer.php:1227
 msgid "center"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1178
+#: lib/admin/customizer/customizer.php:1179
 msgid "Hide Site Title"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1191
+#: lib/admin/customizer/customizer.php:1192
 msgid "Hide Tagline"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1205
+#: lib/admin/customizer/customizer.php:1206
 msgid "Upload logo"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1220
+#: lib/admin/customizer/customizer.php:1221
 msgid "Logo placement"
 msgstr ""
 

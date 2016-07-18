@@ -938,6 +938,7 @@ class Powen_Customizer {
           'capability'     => 'edit_theme_options',
           'title'          => __( 'Slider Options', 'powen-lite' ),
           'description'    => __( 'Add slider', 'powen-lite' ),
+          'priority'       => 30,
       ) );
 
       $wp_customize->add_section( 'powen_slider_section_pro', array(
