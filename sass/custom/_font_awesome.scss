@@ -16,6 +16,10 @@ FontAwesome
 	.tags-links:before,
 	blockquote:before,
 	.comment-body .reply:before,
+	#cancel-comment-reply-link:before,
+	.logged-in-as a:first-child:before,
+	.logged-in-as a:nth-child(2):before,
+	.comment-awaiting-moderation:before,
 	//SIDEBAR ICONS
 	.widget_recent_comments li:before,
 	.widget_recent_comments li>a:before,
@@ -98,6 +102,19 @@ Write your code here
 	content: "\f105";
     color: #cccccc;
     padding-right: rem-calc(5);
+}
+#cancel-comment-reply-link:before {
+	content: "\f05e";
+}
+.logged-in-as a:first-child:before {
+	content: "\f007";
+}
+.logged-in-as a:nth-child(2):before {
+	content: "\f08b";
+}
+.comment-awaiting-moderation:before {
+	content: "\f071";
+	margin-right: rem-calc(5);
 }
 
 //SECONDARY ICONS

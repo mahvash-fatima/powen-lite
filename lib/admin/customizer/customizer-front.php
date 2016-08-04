@@ -209,6 +209,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 		$color_selectors = apply_filters('powen_create_color_scheme_array', array (
 			'a',
 			'.powen-continue-reading:after',
+			'.comment-awaiting-moderation:before',
 		) );
 		//background
 		$background_color_selectors = apply_filters('powen_background_color_selectors_array', array(
@@ -229,6 +230,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 		$border_color_selectors = apply_filters('powen_border_color_selectors_array', array(
 			'a:hover',
 			'.powen-pagination .current',
+			'div.wpcf7-validation-errors',
 		) );
 
 		self::generate_css( $color_selectors, 'color', 'theme_color', false, false, '#e6b800' );

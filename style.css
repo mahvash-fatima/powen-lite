@@ -4,7 +4,7 @@ Theme URI: http://supernovathemes.com/powen-theme/
 Author: Mahvash Fatima
 Author URI: http://supernovathemes.com
 Description: Powen Lite has been specially designed for blogging websites however due to its clean design and plenty of customization options, it can easily be customized for any purpose.
-Version: 1.6.3
+Version: 1.6.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: powen-lite
@@ -937,21 +937,52 @@ input[type="submit"] {
 .comment-body .fn {
   display: block;
 }
-.comment-body .comment-author img {
-  float: left;
-  margin-right: 0.625rem;
-}
 .comment-body .comment-metadata {
   padding-bottom: 0.3125rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 .comment-body .reply {
   text-align: right;
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
+}
+
+.comment-author b a {
+  color: #000000;
+}
+.comment-author img {
+  float: left;
+  margin-right: 0.625rem;
+}
+
+.comment-awaiting-moderation {
+  background: #fafafa;
+  padding: 0.9375rem;
+  border: 1px solid #f1f1f1;
+  border-radius: 0.1875rem;
 }
 
 .comment-metadata a {
   color: #aaaaaa;
+}
+
+#cancel-comment-reply-link {
+  font-size: 0.875rem;
+  color: #aaaaaa;
+  margin-left: 0.625rem;
+}
+#cancel-comment-reply-link:before {
+  margin-right: 0.3125rem;
+}
+
+.logged-in-as a {
+  color: #aaaaaa;
+  font-size: 0.875rem;
+}
+.logged-in-as a:first-child:before, .logged-in-as a:nth-child(2):before {
+  margin-right: 0.3125rem;
+}
+.logged-in-as a:nth-child(2) {
+  margin-left: 0.625rem;
 }
 
 /*--------------------------------------------------------------
@@ -1433,10 +1464,6 @@ ul, ol {
   text-transform: capitalize;
 }
 
-.comments-title {
-  font-size: 1.25rem;
-}
-
 .comment-respond {
   margin-top: 1.25rem;
 }
@@ -1766,6 +1793,10 @@ FontAwesome
 .tags-links:before,
 blockquote:before,
 .comment-body .reply:before,
+#cancel-comment-reply-link:before,
+.logged-in-as a:first-child:before,
+.logged-in-as a:nth-child(2):before,
+.comment-awaiting-moderation:before,
 .widget_recent_comments li:before,
 .widget_recent_comments li > a:before,
 .widget_archive li:before,
@@ -1849,6 +1880,23 @@ Write your code here
   content: "\f105";
   color: #cccccc;
   padding-right: 0.3125rem;
+}
+
+#cancel-comment-reply-link:before {
+  content: "\f05e";
+}
+
+.logged-in-as a:first-child:before {
+  content: "\f007";
+}
+
+.logged-in-as a:nth-child(2):before {
+  content: "\f08b";
+}
+
+.comment-awaiting-moderation:before {
+  content: "\f071";
+  margin-right: 0.3125rem;
 }
 
 .widget_recent_comments li:before {

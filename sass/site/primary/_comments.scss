@@ -32,19 +32,52 @@
 	.fn {
 		display: block;
 	}
-	.comment-author img {
-		float: left;
-		margin-right: rem-calc(10);
-	}
 	.comment-metadata {
 		padding-bottom: rem-calc(5);
-		font-size: rem-calc(12);
+		font-size: rem-calc(14);
 	}
 	.reply {
 		text-align: right;
-		font-size: rem-calc(13);
+		font-size: rem-calc(14);
 	}
+}
+.comment-author {
+	b a {
+		color: #000000;
+	}
+	img {
+		float: left;
+		margin-right: rem-calc(10);
+	}
+}
+.comment-awaiting-moderation {
+	background: #fafafa;
+	padding: rem-calc(15);
+	border: 1px solid #f1f1f1;
+	border-radius: rem-calc(3);
 }
 .comment-metadata a {
 	color: #aaaaaa;
+}
+#cancel-comment-reply-link {
+	font-size: rem-calc(14);
+	color: #aaaaaa;
+	margin-left: rem-calc(10);
+	&:before {
+		margin-right: rem-calc(5);
+	}
+}
+.logged-in-as {
+	a {
+		color: #aaaaaa;
+		font-size: rem-calc(14);
+	}
+	a:first-child, a:nth-child(2) {
+		&:before {
+			margin-right: rem-calc(5);
+		}
+	}
+	a:nth-child(2) {
+		margin-left: rem-calc(10);
+	}
 }
