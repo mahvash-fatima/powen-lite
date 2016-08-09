@@ -89,35 +89,35 @@ IMAGE LINK
 ==========
 
 -slide1.png
-	@Link - https://pixabay.com/en/bicycle-bike-riding-ride-activity-932433/ - @pixabay
+	@Link - https://pixabay.com/en/wings-woman-blonde-model-black-873700/ - @pixabay
 	License - https://creativecommons.org/publicdomain/zero/1.0/deed.en ( CC0 1.0 Universal (CC0 1.0) )
 
 -slide2.png
-	@Link - https://pixabay.com/en/squash-sport-man-game-racket-ball-793059/ - @pixabay
+	@Link - https://pixabay.com/en/boat-lake-reflection-water-calm-499585/ - @pixabay
 	License - https://creativecommons.org/publicdomain/zero/1.0/deed.en ( CC0 1.0 Universal (CC0 1.0) )
 
 -slide3.png
-	@Link - https://pixabay.com/en/canon-camera-dslr-lens-690689/ - @pixabay
+	@Link - https://pixabay.com/en/pumpkin-vegetables-autumn-harvest-1009593/ - @pixabay
 	License - https://creativecommons.org/publicdomain/zero/1.0/deed.en ( CC0 1.0 Universal (CC0 1.0) )
 
 -slide4.png
-	@Link - https://pixabay.com/en/grapes-bunch-fruit-person-holding-690230/ - @pixabay
+	@Link - https://pixabay.com/en/chair-wall-living-room-furniture-1484853/ - @pixabay
 	License - https://creativecommons.org/publicdomain/zero/1.0/deed.en ( CC0 1.0 Universal (CC0 1.0) )
 
 -slide5.png
-	@Link - https://pixabay.com/en/boat-shipwreck-beached-ocean-sand-867218/ - @pixabay
+	@Link - https://pixabay.com/en/nature-plant-minimalistic-1528435/ - @pixabay
 	License - https://creativecommons.org/publicdomain/zero/1.0/deed.en ( CC0 1.0 Universal (CC0 1.0) )
 
 -slide6.png
-	@Link - https://pixabay.com/en/sports-persons-running-people-731506/ - @pixabay
+	@Link - https://pixabay.com/en/cock-chicken-animal-background-721951/ - @pixabay
 	License - https://creativecommons.org/publicdomain/zero/1.0/deed.en ( CC0 1.0 Universal (CC0 1.0) )
 
 -slide7.png
-	@Link - https://pixabay.com/en/subway-travel-transport-tracks-691504/ - @pixabay
+	@Link - https://pixabay.com/en/girl-beauty-studio-seductive-1252999/ - @pixabay
 	License - https://creativecommons.org/publicdomain/zero/1.0/deed.en ( CC0 1.0 Universal (CC0 1.0) )
 
 -slide8.png
-	@Link - https://pixabay.com/en/fashion-emotional-model-girl-woman-821498/ - @pixabay
+	@Link - https://pixabay.com/en/compact-camera-digital-camera-349875/ - @pixabay
 	License - https://creativecommons.org/publicdomain/zero/1.0/deed.en ( CC0 1.0 Universal (CC0 1.0) )
 
 DEMO URL
