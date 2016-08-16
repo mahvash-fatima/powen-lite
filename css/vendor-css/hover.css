@@ -4835,7 +4835,7 @@
   -webkit-transition-property: width, height;
   transition-property: width, height;
 }
-.hvr-curl-bottom-right:hover:before, .hvr-curl-bottom-right:focus:before, .hvr-curl-bottom-right:active:before {
+.powen-most-recent-post:hover .hvr-curl-bottom-right:before, .powen-most-recent-post .hvr-curl-bottom-right:focus:before, .powen-most-recent-post .hvr-curl-bottom-right:active:before {
   width: 25px;
   height: 25px;
 }
