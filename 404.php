@@ -16,7 +16,7 @@
 			</header><!-- .page-header -->
 
 			<div class="page-content">
-				<p><?php _e( 'It looks like nothing was found at this location.', 'powen-lite' ); ?></p>
+				<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'powen-lite' ); ?></p>
 			</div><!-- .page-content -->
 		</div>
 	</section><!-- .error-404 -->
