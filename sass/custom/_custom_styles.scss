@@ -118,7 +118,9 @@ ul, ol {
 }
 
 .entry-header:after,
-.widget-title:after {
+.widget-title:after,
+.error-404 .page-header:after
+{
 	background-color: #f2f2f2;
 }
 
@@ -598,7 +600,7 @@ ul, ol {
 
 //404 Page
 .error-404 {
-	background: #f8f8f8;
+	border-top: 1px solid #f2f2f2;
 	.page-header {
 		text-align: center;
 	}
@@ -609,24 +611,5 @@ ul, ol {
 	}
 	.page-content {
 		text-align: center;
-		margin-top: $default_gutter;
-		form {
-			margin-top: rem-calc(50);
-		}
-		.search-field {
-			padding: 8px;
-			border: 2px solid #ffffff;
-			&:focus {
-				border-color: #eeeeee;
-			}
-		}
-		.search-submit {
-			background: #eee;
-			color: #000;
-			&:hover {
-				background: #000000;
-				color: #ffffff;
-			}
-		}
 	}
 }

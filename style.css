@@ -544,7 +544,7 @@ input[type="submit"] {
   margin: 0.9375rem auto 0.9375rem;
 }
 
-.entry-header:after, .widget-title:after {
+.entry-header:after, .widget-title:after, .error-404 .page-header:after {
   content: '';
   display: block;
   width: 3.75rem;
@@ -1285,7 +1285,8 @@ ul, ol {
 }
 
 .entry-header:after,
-.widget-title:after {
+.widget-title:after,
+.error-404 .page-header:after {
   background-color: #f2f2f2;
 }
 
@@ -1779,7 +1780,7 @@ h6 {
   }
 }
 .error-404 {
-  background: #f8f8f8;
+  border-top: 1px solid #f2f2f2;
 }
 .error-404 .page-header {
   text-align: center;
@@ -1791,25 +1792,6 @@ h6 {
 }
 .error-404 .page-content {
   text-align: center;
-  margin-top: 1.618rem;
-}
-.error-404 .page-content form {
-  margin-top: 3.125rem;
-}
-.error-404 .page-content .search-field {
-  padding: 8px;
-  border: 2px solid #ffffff;
-}
-.error-404 .page-content .search-field:focus {
-  border-color: #eeeeee;
-}
-.error-404 .page-content .search-submit {
-  background: #eee;
-  color: #000;
-}
-.error-404 .page-content .search-submit:hover {
-  background: #000000;
-  color: #ffffff;
 }
 
 /*--------------------------------------------------------------

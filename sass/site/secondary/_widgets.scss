@@ -31,7 +31,7 @@
     }
 }
 
-.entry-header:after, .widget-title:after {
+.entry-header:after, .widget-title:after, .error-404 .page-header:after {
    content: '';
    display: block;
    width: rem-calc(60);
