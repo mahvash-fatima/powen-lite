@@ -1329,7 +1329,7 @@ ul, ol {
   -moz-transition: 0.5s;
 }
 
-.article-hentry, .comments-area, .site-main .posts-navigation, .error-404, .site-main .post-navigation, .paging-navigation {
+.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .error-404, .site-main .post-navigation, .paging-navigation {
   padding-left: 1.618rem;
   padding-right: 1.618rem;
   padding-bottom: 1.618rem;
@@ -1781,18 +1781,12 @@ h6 {
 .error-404 {
   min-height: 21.875rem;
   border-top: 1px solid #f2f2f2;
-}
-.error-404 .page-header {
   text-align: center;
-  margin-bottom: 1.25rem;
 }
 .error-404 .fa-exclamation-circle {
   font-size: 6.25rem;
   color: #eeeeee;
   margin-bottom: 1.25rem;
-}
-.error-404 .page-content {
-  text-align: center;
 }
 
 /*--------------------------------------------------------------
