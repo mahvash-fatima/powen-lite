@@ -599,6 +599,7 @@ ul, ol {
 
 //404 Page
 .error-404 {
+	min-height: rem-calc(300);
 	border-top: 1px solid #f2f2f2;
 	.page-header {
 		text-align: center;
