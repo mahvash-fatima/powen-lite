@@ -544,7 +544,7 @@ input[type="submit"] {
   margin: 0.9375rem auto 0.9375rem;
 }
 
-.entry-header:after, .widget-title:after, .error-404 .page-header:after {
+.entry-header:after, .widget-title:after {
   content: '';
   display: block;
   width: 3.75rem;
@@ -1285,8 +1285,7 @@ ul, ol {
 }
 
 .entry-header:after,
-.widget-title:after,
-.error-404 .page-header:after {
+.widget-title:after {
   background-color: #f2f2f2;
 }
 
@@ -1784,6 +1783,7 @@ h6 {
 }
 .error-404 .page-header {
   text-align: center;
+  margin-bottom: 1.25rem;
 }
 .error-404 .fa-exclamation-circle {
   font-size: 6.25rem;
