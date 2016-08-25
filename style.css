@@ -4,7 +4,7 @@ Theme URI: http://supernovathemes.com/powen-theme/
 Author: Mahvash Fatima
 Author URI: http://supernovathemes.com
 Description: Powen Lite has been specially designed for blogging websites however due to its clean design and plenty of customization options, it can easily be customized for any purpose.
-Version: 1.6.7
+Version: 1.6.8
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: powen-lite
@@ -1329,7 +1329,7 @@ ul, ol {
   -moz-transition: 0.5s;
 }
 
-.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
+.article-hentry, .comments-area, .site-main .posts-navigation, .error-404, .site-main .post-navigation, .paging-navigation {
   padding-left: 1.618rem;
   padding-right: 1.618rem;
   padding-bottom: 1.618rem;
@@ -1605,6 +1605,11 @@ h6 {
     margin-bottom: 1.618rem;
     margin-left: -2.61792rem;
   }
+
+  .footer-scroll {
+    bottom: 1.875rem;
+    right: 1.875rem;
+  }
 }
 @media (max-width: 56.25rem) {
   #primary, #secondary {
@@ -1773,6 +1778,40 @@ h6 {
     font-size: 0.928rem;
   }
 }
+.error-404 {
+  background: #f8f8f8;
+}
+.error-404 .page-header {
+  text-align: center;
+}
+.error-404 .fa-exclamation-circle {
+  font-size: 6.25rem;
+  color: #eeeeee;
+  margin-bottom: 1.25rem;
+}
+.error-404 .page-content {
+  text-align: center;
+  margin-top: 1.618rem;
+}
+.error-404 .page-content form {
+  margin-top: 3.125rem;
+}
+.error-404 .page-content .search-field {
+  padding: 8px;
+  border: 2px solid #ffffff;
+}
+.error-404 .page-content .search-field:focus {
+  border-color: #eeeeee;
+}
+.error-404 .page-content .search-submit {
+  background: #eee;
+  color: #000;
+}
+.error-404 .page-content .search-submit:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
 /*--------------------------------------------------------------
 13.0 Font awesome
 --------------------------------------------------------------*/

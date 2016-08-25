@@ -165,7 +165,7 @@ ul, ol {
 //**** Posts & pages
 
 // (hentry class covers both) plus their internal elements
-.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
+.article-hentry, .comments-area, .site-main .posts-navigation, .error-404, .site-main .post-navigation, .paging-navigation {
 	padding-left: $post_l_padding;
 	padding-right: $post_r_padding;
 	padding-bottom: $post_b_padding;
@@ -448,6 +448,11 @@ ul, ol {
 		margin-bottom: $default_gutter;
 		margin-left: -$post_l_padding;
 	}
+
+	.footer-scroll {
+		bottom: rem-calc(30);
+		right: rem-calc(30);
+	}
 }
 
 @media (max-width: rem-calc(900)) {
@@ -589,4 +594,39 @@ ul, ol {
 	}
 	.powen-slider-title {font-size: 1rem;}
 	.powen-slider-description {font-size: 0.928rem;}
+}
+
+//404 Page
+.error-404 {
+	background: #f8f8f8;
+	.page-header {
+		text-align: center;
+	}
+	.fa-exclamation-circle {
+		font-size: rem-calc(100);
+		color: #eeeeee;
+		margin-bottom: rem-calc(20);
+	}
+	.page-content {
+		text-align: center;
+		margin-top: $default_gutter;
+		form {
+			margin-top: rem-calc(50);
+		}
+		.search-field {
+			padding: 8px;
+			border: 2px solid #ffffff;
+			&:focus {
+				border-color: #eeeeee;
+			}
+		}
+		.search-submit {
+			background: #eee;
+			color: #000;
+			&:hover {
+				background: #000000;
+				color: #ffffff;
+			}
+		}
+	}
 }
