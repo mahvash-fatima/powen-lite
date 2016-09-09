@@ -255,10 +255,9 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'input[type="button"]:hover',
 			'input[type="reset"]:hover',
 			'input[type="submit"]:hover',
+			'input[type="submit"]:active',
+			'input[type="submit"]:focus',
 			'button:hover',
-			'input[type="button"]:hover',
-			'input[type="reset"]:hover',
-			'input[type="submit"]:hover',
 			'.hvr-sweep-to-right:before',
 			'.hvr-shutter-out-horizontal:before',
 		) );
