@@ -19,11 +19,12 @@ input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly i
 	padding: 0;
 }
 
-input[type="text"],
 input[type="email"],
-input[type="url"],
 input[type="password"],
 input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
 textarea {
 	color: $color__text-input;
 	border-radius: 0;
@@ -40,11 +41,13 @@ textarea {
 	}
 }
 
-input[type="text"],
 input[type="email"],
-input[type="url"],
 input[type="password"],
-input[type="search"] {
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"]
+{
 	text-indent: rem-calc(5);
 	padding: rem-calc(5 0);
 }
@@ -54,4 +57,74 @@ textarea {
 	vertical-align: top; /* Improves readability and alignment in all browsers */
 	width: 100%;
 	padding: rem-calc(10);
+}
+
+.powen-search-box-top {
+	float: right;
+	position: relative;
+	margin-right: rem-calc(10);
+	form {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	input[type="search"] {
+		border: none;
+		padding-right: rem-calc(25);
+		display: none;
+		box-shadow: 0px 0px 0px 1px #fafafa;
+		transition: none;
+	}
+	input[type="submit"] {
+		display: none;
+	}
+}
+
+.widget-area {
+	input[type="email"],
+	input[type="password"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="text"],
+	input[type="url"],
+	textarea {
+		margin-bottom: rem-calc(5);
+		margin-top: rem-calc(5);
+	}
+}
+
+.widget_search {
+	input[type="search"] {
+		width: 100%;
+		border-top: none;
+		border-right: none;
+		border-bottom: 2px solid #f1f1f1;
+		border-left: none;
+		&:focus {
+			border-color: #cccccc;
+		}
+	}
+	input[type="submit"] {
+		display: none;
+	}
+}
+
+.site-footer {
+	input[type="email"],
+	input[type="password"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="text"],
+	input[type="url"]
+	textarea {
+		background: transparent;
+		margin-top: rem-calc(5);
+		margin-bottom: rem-calc(5);
+		box-shadow: 0 0 0 1px #565656;
+		border: none;
+		color: #999999;
+		&:focus {
+			box-shadow: 0 0 0 1px #777777;
+		}
+	}
 }

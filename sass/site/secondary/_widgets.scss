@@ -5,24 +5,6 @@
     li {
         padding: rem-calc(10 0);
     }
-    button {
-        margin-bottom: rem-calc(4);
-    }
-    input[type="text"],
-    input[type="email"],
-    input[type="url"],
-    input[type="password"],
-    input[type="search"],
-    textarea {
-        margin-bottom: rem-calc(4);
-        margin-top: rem-calc(4);
-    }
-    input[type="submit"] {
-        text-transform: inherit;
-        font-size: rem-calc(13);
-        padding: rem-calc(1 5);
-        margin-bottom: rem-calc(4);
-    }
 }
 
 .widget-title {
@@ -46,23 +28,6 @@
         padding: rem-calc(5 10);
         margin: rem-calc(3 1);
         display: inline-block;
-    }
-}
-
-.widget_search {
-    input[type=search] {
-        border: none;
-        width: 100%;
-        border-bottom: 2px solid #f1f1f1;
-        transition: 0.3s;
-        -webkit-transition: 0.3s;
-        -moz-transition: 0.3s;
-        &:focus {
-            border-color: #cccccc;
-        }
-    }
-    input[type="submit"] {
-        display: none;
     }
 }
 
@@ -212,7 +177,7 @@
         }
     }
 }
-.powen-footer-widgets .powen-social-icon a, .powen-footer-widgets .tagcloud a, .powen-footer-widgets input{
+.powen-footer-widgets .powen-social-icon a, .powen-footer-widgets .tagcloud a{
     box-shadow: 0px 0px 0px 1px #565656;
 }
 #monster-widget-placeholder-8 {
@@ -221,26 +186,6 @@
 }
 
 .powen-footer-widgets {
-    input[type="text"],
-    input[type="email"],
-    input[type="url"],
-    input[type="password"],
-    input[type="search"],
-    textarea {
-        background: transparent;
-        margin-bottom: rem-calc(4);
-        &:focus {
-            box-shadow: 0 0 0 1px #777777;
-        }
-    }
-    input[type="submit"] {
-        background: transparent;
-        font-size: rem-calc(13);
-        padding: rem-calc(2 5);
-        text-transform: inherit;
-        color: #666;
-        margin-bottom: rem-calc(4);
-    }
     .widget-title {
         text-align: left;
         &:after {
@@ -250,19 +195,5 @@
             height: rem-calc(1);
             margin: rem-calc(15 0);
         }
-    }
-}
-
-.site-footer {
-    input[type="search"],
-    input[type="email"],
-    input[type="url"],
-    input[type="password"],
-    input[type="text"],
-    input[submit="submit"]
-    {
-        box-shadow: 0 0 0 1px #565656;
-        border: none;
-        color: #999999;
     }
 }

@@ -133,26 +133,6 @@ ul, ol {
 	padding: rem-calc(18 0);
 }
 
-.powen-search-box-top {
-	float: right;
-	position: relative;
-	margin-right: rem-calc(10);
-	form {
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
-	input[type=submit] {
- 		display: none;
- 	}
-	input[type=search] {
-		border: none;
-		padding-right: rem-calc(25);
-		display: none;
-    	box-shadow: 0px 0px 0px 1px #fafafa;
-    	transition: none;
-	}
-}
 .fa-search {
 	position: absolute;
     top: rem-calc(5);
@@ -488,11 +468,7 @@ ul, ol {
 			text-align: center;
 		}
 	}
-	.widget_search {
-		input[type=search] {
-			width: auto;
-		}
-	}
+
 	.widget-area .widget {
 		margin-right: 0;
 	}

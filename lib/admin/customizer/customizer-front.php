@@ -25,49 +25,49 @@ class Powen_Customizer_Front extends Powen_Customizer
 
 	public static function custom_css()
 	{
-		do_action( 'powen_lite_custom_css_begin' );
+		do_action('powen_lite_custom_css_begin');
 
 		self::create_color_scheme();
-		self::generate_css( 'body', 'font-family', 'theme_font', '"', '"', "Open Sans" );
-		self::generate_css( 'body', 'font-size', 'body', '', 'rem', '1', true, '(min-width:900px)' );
-		self::generate_css( '.site-branding .site-title', 'font-size', 'site_title', '', 'rem', '2.142', true, '(min-width:900px)' );
-		self::generate_css( '.site-branding .site-description', 'font-size', 'site_description', '', 'rem', '0.928', true, '(min-width:900px)' );
-		self::generate_css( '.site-title', 'font-weight', 'site_title_font_weight', '', '', 'normal' );
-		self::generate_css( '.site-description', 'font-style', 'site_description_font_style', '', '', 'normal' );
-		self::generate_css( '.powen-nav', 'font-size', 'nav_font_size', '', 'rem', '0.928', true, '(min-width:900px)' );
-		self::generate_css( '.powen-slider-title', 'font-size', 'slider_title', '', 'rem', '1.285', true, '(min-width:900px)' );
-		self::generate_css( '.powen-slider-description', 'font-size', 'slider_description', '', 'rem', '1', true, '(min-width:900px)' );
-		self::generate_css( 'h1', 'font-size', 'h1', '', 'rem', '1.857', true, '(min-width:900px)' );
-		self::generate_css( 'h2', 'font-size', 'h2', '', 'rem', '1.785', true, '(min-width:900px)' );
-		self::generate_css( 'h3', 'font-size', 'h3', '', 'rem', '1.714', true, '(min-width:900px)' );
-		self::generate_css( 'h4', 'font-size', 'h4', '', 'rem', '1.428', true, '(min-width:900px)' );
-		self::generate_css( 'h5', 'font-size', 'h5', '', 'rem', '1.357', true, '(min-width:900px)' );
-		self::generate_css( 'h6', 'font-size', 'h6', '', 'rem', '1.285', true, '(min-width:900px)' );
-		self::generate_css( '.widget-title', 'font-size', 'widgets_title', '', 'rem', '1.428', true, '(min-width:900px)' );
-		self::generate_css( '.widget-area', 'font-size', 'widgets_content', '', 'rem', '0.928', true, '(min-width:900px)' );
-	    self::generate_css('.site-title a', 'color', 'header_textcolor', false, false, '#000000');
-	    self::generate_css('.site-description', 'color', 'header_taglinecolor', false, false, '#222222');
-	    self::generate_css('.site-header', 'background-color', 'header_background', false, false, '#ffffff');
-	    self::generate_css('.powen-footer-widgets', 'background-color', 'powen-footer-widgets_background', false, false, '#222222');
-	    self::generate_css('.powen-footer-widgets, .widget_calendar thead', 'color', 'powen-footer-widgets_textcolor', false, false, '#808080');
-	    self::generate_css('.powen-footer-widgets .widget-title:after', 'background-color', 'powen-footer-widgets_textcolor', false, false, '#808080');
-	    self::generate_css('.powen-footer-widgets a', 'color', 'powen-footer-widgets_linkcolor', false, false, '#cccccc');
-	    self::generate_css('.site-footer a:hover, .site-footer input[type="submit"]:hover', 'color', 'footer_hover_link_color', false, false, '#ffffff');
-	    self::generate_css('.hvr-underline-from-center:before', 'background-color', 'footer_hover_link_color', false, false, '#ffffff');
-	    self::generate_css('.site-info', 'color', 'footer_bottom_textcolor', false, false, '#666666');
-	    self::generate_css('.site-info a', 'color', 'footer_bottom_link_color', false, false, '#888888');
-	    self::generate_css('.site-info', 'background-color', 'footer_bottom_background_color', false, false, '#000000');
-	    self::generate_css('#mm-site-navigation', 'background-color', 'primary_nav_background_color', false, false, '#222222');
-	    self::generate_css('#mm-site-navigation', 'color', 'primary_nav_color', false, false, '#cccccc');
-	    self::generate_css('#mm-main-nav', 'background-color', 'secondary_nav_background_color', false, false, '#222222');
-	    self::generate_css('#mm-main-nav', 'color', 'secondary_nav_color', false, false, '#cccccc');
-	    self::title_layout();
-	    self::logo_placement();
-	    self::sidebar_layout();
-	    self::fixed_slider_content();
-	    self::header_search_bar();
+		self::generate_css('body', 'font-family', 'theme_font', '"', '"', "Open Sans");
+		self::generate_css('body', 'font-size', 'body', '', 'rem', '1', true, '(min-width:900px)');
+		self::generate_css('.site-branding .site-title', 'font-size', 'site_title', '', 'rem', '2.142', true, '(min-width:900px)');
+		self::generate_css('.site-branding .site-description', 'font-size', 'site_description', '', 'rem', '0.928', true, '(min-width:900px)');
+		self::generate_css('.site-title', 'font-weight', 'site_title_font_weight', '', '', 'normal');
+		self::generate_css('.site-description', 'font-style', 'site_description_font_style', '', '', 'normal');
+		self::generate_css('.powen-nav', 'font-size', 'nav_font_size', '', 'rem', '0.928', true, '(min-width:900px)');
+		self::generate_css('.powen-slider-title', 'font-size', 'slider_title', '', 'rem', '1.285', true, '(min-width:900px)');
+		self::generate_css('.powen-slider-description', 'font-size', 'slider_description', '', 'rem', '1', true, '(min-width:900px)');
+		self::generate_css('h1', 'font-size', 'h1', '', 'rem', '1.857', true, '(min-width:900px)');
+		self::generate_css('h2', 'font-size', 'h2', '', 'rem', '1.785', true, '(min-width:900px)');
+		self::generate_css('h3', 'font-size', 'h3', '', 'rem', '1.714', true, '(min-width:900px)');
+		self::generate_css('h4', 'font-size', 'h4', '', 'rem', '1.428', true, '(min-width:900px)');
+		self::generate_css('h5', 'font-size', 'h5', '', 'rem', '1.357', true, '(min-width:900px)');
+		self::generate_css('h6', 'font-size', 'h6', '', 'rem', '1.285', true, '(min-width:900px)');
+		self::generate_css('.widget-title', 'font-size', 'widgets_title', '', 'rem', '1.428', true, '(min-width:900px)');
+		self::generate_css('.widget-area', 'font-size', 'widgets_content', '', 'rem', '0.928', true, '(min-width:900px)');
+		self::generate_css('.site-title a', 'color', 'header_textcolor', false, false, '#000000');
+		self::generate_css('.site-description', 'color', 'header_taglinecolor', false, false, '#222222');
+		self::generate_css('.site-header', 'background-color', 'header_background', false, false, '#ffffff');
+		self::generate_css('.powen-footer-widgets', 'background-color', 'powen-footer-widgets_background', false, false, '#222222');
+		self::generate_css('.powen-footer-widgets, .widget_calendar thead', 'color', 'powen-footer-widgets_textcolor', false, false, '#808080');
+		self::generate_css('.powen-footer-widgets .widget-title:after', 'background-color', 'powen-footer-widgets_textcolor', false, false, '#808080');
+		self::generate_css('.powen-footer-widgets a', 'color', 'powen-footer-widgets_linkcolor', false, false, '#cccccc');
+		self::generate_css('.site-footer a:hover, .site-footer input[type="button"]:hover, .site-footer input[type="reset"]:hover, .site-footer input[type="submit"]:hover', 'color', 'footer_hover_link_color', false, false, '#ffffff');
+		self::generate_css('.hvr-underline-from-center:before', 'background-color', 'footer_hover_link_color', false, false, '#ffffff');
+		self::generate_css('.site-info', 'color', 'footer_bottom_textcolor', false, false, '#666666');
+		self::generate_css('.site-info a', 'color', 'footer_bottom_link_color', false, false, '#888888');
+		self::generate_css('.site-info', 'background-color', 'footer_bottom_background_color', false, false, '#000000');
+		self::generate_css('#mm-site-navigation', 'background-color', 'primary_nav_background_color', false, false, '#222222');
+		self::generate_css('#mm-site-navigation', 'color', 'primary_nav_color', false, false, '#cccccc');
+		self::generate_css('#mm-main-nav', 'background-color', 'secondary_nav_background_color', false, false, '#222222');
+		self::generate_css('#mm-main-nav', 'color', 'secondary_nav_color', false, false, '#cccccc');
+		self::title_layout();
+		self::logo_placement();
+		self::sidebar_layout();
+		self::fixed_slider_content();
+		self::header_search_bar();
 
-	    do_action( 'powen_lite_custom_css_end' );
+		do_action('powen_lite_custom_css_end');
 	}
 
 	/**
@@ -220,10 +220,6 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'input[type="button"]',
 			'input[type="reset"]',
 			'input[type="submit"]',
-			'button:hover',
-			'input[type="button"]:hover',
-			'input[type="reset"]:hover',
-			'input[type="submit"]:hover',
 		) );
 
 		//border color
@@ -253,12 +249,17 @@ class Powen_Customizer_Front extends Powen_Customizer
 		//background should change on hover.
 		$background_color_hover_selectors = apply_filters('powen_background_color_hover_selectors_array', array(
 			'button:hover',
+			'button:active',
+			'button:focus',
 			'input[type="button"]:hover',
+			'input[type="button"]:active',
+			'input[type="button"]:focus',
 			'input[type="reset"]:hover',
+			'input[type="reset"]:active',
+			'input[type="reset"]:focus',
 			'input[type="submit"]:hover',
 			'input[type="submit"]:active',
 			'input[type="submit"]:focus',
-			'button:hover',
 			'.hvr-sweep-to-right:before',
 			'.hvr-shutter-out-horizontal:before',
 		) );
