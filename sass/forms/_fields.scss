@@ -115,16 +115,15 @@ textarea {
 	input[type="search"],
 	input[type="tel"],
 	input[type="text"],
-	input[type="url"]
+	input[type="url"],
 	textarea {
 		background: transparent;
 		margin-top: rem-calc(5);
 		margin-bottom: rem-calc(5);
-		box-shadow: 0 0 0 1px #565656;
+		box-shadow: 0 0 0 1px;
 		border: none;
-		color: #999999;
 		&:focus {
-			box-shadow: 0 0 0 1px #777777;
+			box-shadow: 0 0 0 1px #999999;
 		}
 	}
 }

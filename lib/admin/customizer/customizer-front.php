@@ -49,10 +49,10 @@ class Powen_Customizer_Front extends Powen_Customizer
 		self::generate_css('.site-description', 'color', 'header_taglinecolor', false, false, '#222222');
 		self::generate_css('.site-header', 'background-color', 'header_background', false, false, '#ffffff');
 		self::generate_css('.powen-footer-widgets', 'background-color', 'powen-footer-widgets_background', false, false, '#222222');
-		self::generate_css('.powen-footer-widgets, .widget_calendar thead', 'color', 'powen-footer-widgets_textcolor', false, false, '#808080');
+		self::generate_css('.powen-footer-widgets, .widget_calendar thead, .powen-footer-widgets input[type="email"], .powen-footer-widgets input[type="password"], .powen-footer-widgets input[type="search"], .powen-footer-widgets input[type="tel"], .powen-footer-widgets input[type="text"], .powen-footer-widgets input[type="url"], .powen-footer-widgets textarea, .powen-footer-widgets button,  .powen-footer-widgets input[type="button"], .powen-footer-widgets input[type="submit"], .powen-footer-widgets input[type="reset"]', 'color', 'powen-footer-widgets_textcolor', false, false, '#808080');
 		self::generate_css('.powen-footer-widgets .widget-title:after', 'background-color', 'powen-footer-widgets_textcolor', false, false, '#808080');
 		self::generate_css('.powen-footer-widgets a', 'color', 'powen-footer-widgets_linkcolor', false, false, '#cccccc');
-		self::generate_css('.site-footer a:hover, .site-footer input[type="button"]:hover, .site-footer input[type="reset"]:hover, .site-footer input[type="submit"]:hover', 'color', 'footer_hover_link_color', false, false, '#ffffff');
+		self::generate_css('.site-footer a:hover, .site-footer a:focus, .site-footer a:active', 'color', 'footer_hover_link_color', false, false, '#ffffff');
 		self::generate_css('.hvr-underline-from-center:before', 'background-color', 'footer_hover_link_color', false, false, '#ffffff');
 		self::generate_css('.site-info', 'color', 'footer_bottom_textcolor', false, false, '#666666');
 		self::generate_css('.site-info a', 'color', 'footer_bottom_link_color', false, false, '#888888');
@@ -270,6 +270,18 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'.powen-pagination .next:hover',
 			'.powen-pagination .prev:hover',
 			'.powen-pagination .last:hover',
+			'button:hover',
+			'input[type="button"]:hover',
+			'input[type="reset"]:hover',
+			'input[type="submit"]:hover',
+			'button:focus',
+			'input[type="button"]:focus',
+			'input[type="reset"]:focus',
+			'input[type="submit"]:focus',
+			'button:active',
+			'input[type="button"]:active',
+			'input[type="reset"]:active',
+			'input[type="submit"]:active',
 		) );
 
 		self::generate_css( $color_hover_selectors, 'color', 'hover_link_color', false, false, '#daa520' );

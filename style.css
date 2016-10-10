@@ -4,7 +4,7 @@ Theme URI: http://supernovathemes.com/powen-theme/
 Author: Mahvash Fatima
 Author URI: http://supernovathemes.com
 Description: Powen Lite has been specially designed for blogging websites however due to its clean design and plenty of customization options, it can easily be customized for any purpose.
-Version: 1.7.0
+Version: 1.7.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: powen-lite
@@ -329,9 +329,20 @@ input[type="submit"] {
 .site-footer input[type="button"],
 .site-footer input[type="reset"],
 .site-footer input[type="submit"] {
-  box-shadow: 0 0 0 1px #565656;
+  border: 1px solid;
   background: transparent;
-  color: #999999;
+}
+.site-footer button:hover, .site-footer button:focus, .site-footer button:active,
+.site-footer input[type="button"]:hover,
+.site-footer input[type="button"]:focus,
+.site-footer input[type="button"]:active,
+.site-footer input[type="reset"]:hover,
+.site-footer input[type="reset"]:focus,
+.site-footer input[type="reset"]:active,
+.site-footer input[type="submit"]:hover,
+.site-footer input[type="submit"]:focus,
+.site-footer input[type="submit"]:active {
+  color: #ffffff;
 }
 
 input[type="checkbox"],
@@ -457,23 +468,22 @@ textarea {
 .site-footer input[type="search"],
 .site-footer input[type="tel"],
 .site-footer input[type="text"],
-.site-footer input[type="url"]
-textarea {
+.site-footer input[type="url"],
+.site-footer textarea {
   background: transparent;
   margin-top: 0.3125rem;
   margin-bottom: 0.3125rem;
-  box-shadow: 0 0 0 1px #565656;
+  box-shadow: 0 0 0 1px;
   border: none;
-  color: #999999;
 }
 .site-footer input[type="email"]:focus,
 .site-footer input[type="password"]:focus,
 .site-footer input[type="search"]:focus,
 .site-footer input[type="tel"]:focus,
 .site-footer input[type="text"]:focus,
-.site-footer input[type="url"]
-textarea:focus {
-  box-shadow: 0 0 0 1px #777777;
+.site-footer input[type="url"]:focus,
+.site-footer textarea:focus {
+  box-shadow: 0 0 0 1px #999999;
 }
 
 /*--------------------------------------------------------------
