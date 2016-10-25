@@ -135,4 +135,4 @@ THEME DOCUMENTATION
 GITHUB URL
 ==========
 
-	@Link - https://github.com/memash/powen-lite
+	@Link - https://github.com/mahvash-fatima/powen-lite
