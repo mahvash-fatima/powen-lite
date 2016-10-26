@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Powen Lite 1.7.0\n"
+"Project-Id-Version: Powen Lite 1.7.1\n"
 "Report-Msgid-Bugs-To: http://supernovathemes.com/powen-theme\n"
-"POT-Creation-Date: 2016-10-10 09:59:13+00:00\n"
+"POT-Creation-Date: 2016-10-26 06:04:15+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -420,7 +420,7 @@ msgstr ""
 msgid "%s"
 msgstr ""
 
-#: footer.php:70
+#: footer.php:70 pro/customizer/customizer-hooks.php:357 pro/hooks.php:152
 msgid "by"
 msgstr ""
 
@@ -546,6 +546,7 @@ msgid "Site Identity"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:103
+#: pro/customizer/customizer-hooks.php:349
 msgid "Site Title"
 msgstr ""
 
@@ -1140,7 +1141,7 @@ msgstr ""
 msgid "Switch Off Footer Menu"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:50 pro/hooks.php:129
+#: pro/customizer/customizer-hooks.php:50 pro/hooks.php:138
 #: pro/powen-pro.php:38
 msgid "Load More"
 msgstr ""
@@ -1188,66 +1189,74 @@ msgid "Header Top Most"
 msgstr ""
 
 #: pro/customizer/customizer-hooks.php:144
-#: pro/customizer/customizer-hooks.php:163
-#: pro/customizer/customizer-hooks.php:182
-#: pro/customizer/customizer-hooks.php:201
-#: pro/customizer/customizer-hooks.php:220
-#: pro/customizer/customizer-hooks.php:239
-#: pro/customizer/customizer-hooks.php:258
-#: pro/customizer/customizer-hooks.php:277
-#: pro/customizer/customizer-hooks.php:296
+#: pro/customizer/customizer-hooks.php:162
+#: pro/customizer/customizer-hooks.php:181
+#: pro/customizer/customizer-hooks.php:200
+#: pro/customizer/customizer-hooks.php:219
+#: pro/customizer/customizer-hooks.php:238
+#: pro/customizer/customizer-hooks.php:257
+#: pro/customizer/customizer-hooks.php:276
+#: pro/customizer/customizer-hooks.php:295
 msgid "Short Code"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:152
+#: pro/customizer/customizer-hooks.php:151
 msgid "Before Site Identity"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:171
+#: pro/customizer/customizer-hooks.php:170
 msgid "After Site Identity"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:190
+#: pro/customizer/customizer-hooks.php:189
 msgid "After First Home Post"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:209
+#: pro/customizer/customizer-hooks.php:208
 msgid "Before Content"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:228
+#: pro/customizer/customizer-hooks.php:227
 msgid "Above Footer"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:247
+#: pro/customizer/customizer-hooks.php:246
 msgid "Footer Widgets"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:266
+#: pro/customizer/customizer-hooks.php:265
 msgid "Footer Site Info Begins"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:285
+#: pro/customizer/customizer-hooks.php:284
 msgid "Footer Site Info Ends"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:305
+#: pro/customizer/customizer-hooks.php:304
 msgid "Font Family"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:317
+#: pro/customizer/customizer-hooks.php:316
 msgid "Google Font"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:318
+#: pro/customizer/customizer-hooks.php:317
 msgid "Set your website default font"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:356
+#: pro/customizer/customizer-hooks.php:335
+msgid "Author's URL"
+msgstr ""
+
+#: pro/customizer/customizer-hooks.php:363
+msgid "After Site Title"
+msgstr ""
+
+#: pro/customizer/customizer-hooks.php:399
 msgid "Pro Menu Background Color"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:361
+#: pro/customizer/customizer-hooks.php:404
 msgid "Pro Menu Color"
 msgstr ""
 
