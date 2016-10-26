@@ -61,17 +61,19 @@
 				    </span>
 			    <?php } ?>
 
-				<span class="sep"><?php echo apply_filters( 'powen_footer_site_info_pipe',  ' |'  ); ?></span>
+				<?php if ( function_exists( 'powen_pro_footer_site_info' ) ) {
+					powen_pro_footer_site_info();
+				} else { ?>
+					<span class="sep"><?php echo apply_filters( 'powen_footer_site_info_pipe',  ' |'  ); ?></span>
+					<span class="powen-site-info">
+						<?php  $footerUrl = esc_url( 'http://supernovathemes.com' ); ?>
+						<span class="powen-site-identity">Powen <?php _e( 'by' , 'powen-lite' ); ?></span>
+						<a href="<?php echo apply_filters( 'powen_theme_url', $footerUrl ); ?>" class="powen-site" rel="designer">
+							<?php echo powen_mod('theme_author', 'Supernova Themes'); ?>
+						</a>
+					</span>
 
-				<span class="powen-site-info">
-					<?php
-						$footerUrl = esc_url( 'http://supernovathemes.com' );
-					?>
-					<span class="powen-site-identity"><?php echo apply_filters( 'powen_site_title_footer', 'Powen' ); ?> <?php _e( 'by' , 'powen-lite' ); ?></span>
-					<a href="<?php echo apply_filters( 'powen_theme_url', $footerUrl ); ?>" class="powen-site" rel="designer">
-						<?php echo powen_mod('theme_author', 'Supernova Themes'); ?>
-					</a>
-				</span>
+				<?php } ?>
 
 				<?php do_action( 'powen_footer_site_info_ends' ); ?>
 
