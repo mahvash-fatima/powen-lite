@@ -40,6 +40,7 @@ class Powen_Customizer {
 
       $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'powen_mod[css_textarea]', array(
           'label'    => __( 'CSS', 'powen-lite' ),
+          'description' => __( 'Add CSS', 'powen-lite' ),
           'type'     => 'textarea',
           'section'  => 'powen_css_section',
           'settings' => 'powen_mod[css_textarea]',
