@@ -133,16 +133,6 @@ ul, ol {
 	padding: rem-calc(18 0);
 }
 
-.fa-search {
-	position: absolute;
-    top: rem-calc(5);
-    right: rem-calc(5);
-    cursor: pointer;
-	transition: 0.5s;
-	-webkit-transition: 0.5s;
-	-moz-transition: 0.5s;
-}
-
 //**** Posts & pages
 
 // (hentry class covers both) plus their internal elements

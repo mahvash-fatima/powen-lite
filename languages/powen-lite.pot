@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Powen Lite 1.7.1\n"
+"Project-Id-Version: Powen Lite 1.7.3\n"
 "Report-Msgid-Bugs-To: http://supernovathemes.com/powen-theme\n"
-"POT-Creation-Date: 2016-10-26 06:04:15+00:00\n"
+"POT-Creation-Date: 2016-11-15 18:19:53+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,22 +24,13 @@ msgstr ""
 "X-Poedit-Bookmarks: \n"
 "X-Textdomain-Support: yes\n"
 
-#: lib/admin/customizer/customizer.php:77
-#: lib/admin/customizer/customizer.php:152
-#: lib/admin/customizer/customizer.php:223
-#: lib/admin/customizer/customizer.php:254
-#: lib/admin/customizer/customizer.php:282
-#: lib/admin/customizer/customizer.php:623
-msgid "11"
-msgstr ""
-
 #: lib/admin/customizer/customizer.php:78
 #: lib/admin/customizer/customizer.php:153
 #: lib/admin/customizer/customizer.php:224
 #: lib/admin/customizer/customizer.php:255
 #: lib/admin/customizer/customizer.php:283
 #: lib/admin/customizer/customizer.php:624
-msgid "12"
+msgid "11"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:79
@@ -48,7 +39,7 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:256
 #: lib/admin/customizer/customizer.php:284
 #: lib/admin/customizer/customizer.php:625
-msgid "13"
+msgid "12"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:80
@@ -57,24 +48,16 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:257
 #: lib/admin/customizer/customizer.php:285
 #: lib/admin/customizer/customizer.php:626
-msgid "14"
+msgid "13"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:81
-#: lib/admin/customizer/customizer.php:109
 #: lib/admin/customizer/customizer.php:156
 #: lib/admin/customizer/customizer.php:227
 #: lib/admin/customizer/customizer.php:258
 #: lib/admin/customizer/customizer.php:286
-#: lib/admin/customizer/customizer.php:313
-#: lib/admin/customizer/customizer.php:356
-#: lib/admin/customizer/customizer.php:400
-#: lib/admin/customizer/customizer.php:443
-#: lib/admin/customizer/customizer.php:486
-#: lib/admin/customizer/customizer.php:529
-#: lib/admin/customizer/customizer.php:580
 #: lib/admin/customizer/customizer.php:627
-msgid "15"
+msgid "14"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:82
@@ -91,11 +74,15 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:530
 #: lib/admin/customizer/customizer.php:581
 #: lib/admin/customizer/customizer.php:628
-msgid "16"
+msgid "15"
 msgstr ""
 
+#: lib/admin/customizer/customizer.php:83
 #: lib/admin/customizer/customizer.php:111
+#: lib/admin/customizer/customizer.php:158
+#: lib/admin/customizer/customizer.php:229
 #: lib/admin/customizer/customizer.php:260
+#: lib/admin/customizer/customizer.php:288
 #: lib/admin/customizer/customizer.php:315
 #: lib/admin/customizer/customizer.php:358
 #: lib/admin/customizer/customizer.php:402
@@ -103,7 +90,8 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:488
 #: lib/admin/customizer/customizer.php:531
 #: lib/admin/customizer/customizer.php:582
-msgid "17"
+#: lib/admin/customizer/customizer.php:629
+msgid "16"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:112
@@ -115,7 +103,7 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:489
 #: lib/admin/customizer/customizer.php:532
 #: lib/admin/customizer/customizer.php:583
-msgid "18"
+msgid "17"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:113
@@ -127,7 +115,7 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:490
 #: lib/admin/customizer/customizer.php:533
 #: lib/admin/customizer/customizer.php:584
-msgid "19"
+msgid "18"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:114
@@ -139,10 +127,11 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:491
 #: lib/admin/customizer/customizer.php:534
 #: lib/admin/customizer/customizer.php:585
-msgid "20"
+msgid "19"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:115
+#: lib/admin/customizer/customizer.php:264
 #: lib/admin/customizer/customizer.php:319
 #: lib/admin/customizer/customizer.php:362
 #: lib/admin/customizer/customizer.php:406
@@ -150,7 +139,7 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:492
 #: lib/admin/customizer/customizer.php:535
 #: lib/admin/customizer/customizer.php:586
-msgid "21"
+msgid "20"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:116
@@ -161,7 +150,7 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:493
 #: lib/admin/customizer/customizer.php:536
 #: lib/admin/customizer/customizer.php:587
-msgid "22"
+msgid "21"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:117
@@ -172,7 +161,7 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:494
 #: lib/admin/customizer/customizer.php:537
 #: lib/admin/customizer/customizer.php:588
-msgid "23"
+msgid "22"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:118
@@ -183,7 +172,7 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:495
 #: lib/admin/customizer/customizer.php:538
 #: lib/admin/customizer/customizer.php:589
-msgid "24"
+msgid "23"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:119
@@ -194,7 +183,7 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:496
 #: lib/admin/customizer/customizer.php:539
 #: lib/admin/customizer/customizer.php:590
-msgid "25"
+msgid "24"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:120
@@ -205,7 +194,7 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:497
 #: lib/admin/customizer/customizer.php:540
 #: lib/admin/customizer/customizer.php:591
-msgid "26"
+msgid "25"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:121
@@ -216,7 +205,7 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:498
 #: lib/admin/customizer/customizer.php:541
 #: lib/admin/customizer/customizer.php:592
-msgid "27"
+msgid "26"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:122
@@ -227,7 +216,7 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:499
 #: lib/admin/customizer/customizer.php:542
 #: lib/admin/customizer/customizer.php:593
-msgid "28"
+msgid "27"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:123
@@ -238,7 +227,7 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:500
 #: lib/admin/customizer/customizer.php:543
 #: lib/admin/customizer/customizer.php:594
-msgid "29"
+msgid "28"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:124
@@ -249,7 +238,7 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:501
 #: lib/admin/customizer/customizer.php:544
 #: lib/admin/customizer/customizer.php:595
-msgid "30"
+msgid "29"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:125
@@ -260,7 +249,7 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:502
 #: lib/admin/customizer/customizer.php:545
 #: lib/admin/customizer/customizer.php:596
-msgid "31"
+msgid "30"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:126
@@ -271,7 +260,7 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:503
 #: lib/admin/customizer/customizer.php:546
 #: lib/admin/customizer/customizer.php:597
-msgid "32"
+msgid "31"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:127
@@ -282,7 +271,7 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:504
 #: lib/admin/customizer/customizer.php:547
 #: lib/admin/customizer/customizer.php:598
-msgid "33"
+msgid "32"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:128
@@ -293,7 +282,7 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:505
 #: lib/admin/customizer/customizer.php:548
 #: lib/admin/customizer/customizer.php:599
-msgid "34"
+msgid "33"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:129
@@ -304,7 +293,7 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:506
 #: lib/admin/customizer/customizer.php:549
 #: lib/admin/customizer/customizer.php:600
-msgid "35"
+msgid "34"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:130
@@ -315,7 +304,7 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:507
 #: lib/admin/customizer/customizer.php:550
 #: lib/admin/customizer/customizer.php:601
-msgid "36"
+msgid "35"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:131
@@ -326,7 +315,7 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:508
 #: lib/admin/customizer/customizer.php:551
 #: lib/admin/customizer/customizer.php:602
-msgid "37"
+msgid "36"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:132
@@ -337,7 +326,7 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:509
 #: lib/admin/customizer/customizer.php:552
 #: lib/admin/customizer/customizer.php:603
-msgid "38"
+msgid "37"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:133
@@ -348,7 +337,7 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:510
 #: lib/admin/customizer/customizer.php:553
 #: lib/admin/customizer/customizer.php:604
-msgid "39"
+msgid "38"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:134
@@ -359,6 +348,17 @@ msgstr ""
 #: lib/admin/customizer/customizer.php:511
 #: lib/admin/customizer/customizer.php:554
 #: lib/admin/customizer/customizer.php:605
+msgid "39"
+msgstr ""
+
+#: lib/admin/customizer/customizer.php:135
+#: lib/admin/customizer/customizer.php:339
+#: lib/admin/customizer/customizer.php:382
+#: lib/admin/customizer/customizer.php:426
+#: lib/admin/customizer/customizer.php:469
+#: lib/admin/customizer/customizer.php:512
+#: lib/admin/customizer/customizer.php:555
+#: lib/admin/customizer/customizer.php:606
 msgid "40"
 msgstr ""
 
@@ -420,7 +420,7 @@ msgstr ""
 msgid "%s"
 msgstr ""
 
-#: footer.php:70 pro/customizer/customizer-hooks.php:357 pro/hooks.php:152
+#: footer.php:70 pro/customizer/customizer-hooks.php:391 pro/hooks.php:152
 msgid "by"
 msgstr ""
 
@@ -528,460 +528,464 @@ msgstr ""
 msgid "CSS"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:53
+#: lib/admin/customizer/customizer.php:43
+msgid "Add CSS"
+msgstr ""
+
+#: lib/admin/customizer/customizer.php:54
 msgid "Typography"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:59
-#: lib/admin/customizer/customizer.php:71
+#: lib/admin/customizer/customizer.php:60
+#: lib/admin/customizer/customizer.php:72
 msgid "Body"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:72
+#: lib/admin/customizer/customizer.php:73
 msgid "Set your website body default font size in pixels"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:90
+#: lib/admin/customizer/customizer.php:91
 msgid "Site Identity"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:103
-#: pro/customizer/customizer-hooks.php:349
+#: lib/admin/customizer/customizer.php:104
+#: pro/customizer/customizer-hooks.php:383
 msgid "Site Title"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:104
+#: lib/admin/customizer/customizer.php:105
 msgid "Set your site title default font size in pixels"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:146
+#: lib/admin/customizer/customizer.php:147
 msgid "Site Description"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:147
+#: lib/admin/customizer/customizer.php:148
 msgid "Set your site description default font size in pixels"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:170
+#: lib/admin/customizer/customizer.php:171
 msgid "Site Title Font Weight "
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:171
+#: lib/admin/customizer/customizer.php:172
 msgid "Set your site title font weight"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:176
+#: lib/admin/customizer/customizer.php:177
 msgid "Bold"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:177
-#: lib/admin/customizer/customizer.php:198
+#: lib/admin/customizer/customizer.php:178
+#: lib/admin/customizer/customizer.php:199
 msgid "Normal"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:191
+#: lib/admin/customizer/customizer.php:192
 msgid "Site Description Font Style "
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:192
+#: lib/admin/customizer/customizer.php:193
 msgid "Set your site description font style"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:197
+#: lib/admin/customizer/customizer.php:198
 msgid "Italic"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:205
-#: lib/admin/customizer/customizer.php:217
+#: lib/admin/customizer/customizer.php:206
+#: lib/admin/customizer/customizer.php:218
 msgid "Navigation"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:218
+#: lib/admin/customizer/customizer.php:219
 msgid "Set your navigation default font size in pixels"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:235
+#: lib/admin/customizer/customizer.php:236
 msgid "Slider Identity"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:248
+#: lib/admin/customizer/customizer.php:249
 msgid "Slider Title"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:249
+#: lib/admin/customizer/customizer.php:250
 msgid "Set your slider title default font size in pixels"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:276
+#: lib/admin/customizer/customizer.php:277
 msgid "Slider Description"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:277
+#: lib/admin/customizer/customizer.php:278
 msgid "Set your slider description default font size in pixels"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:294
+#: lib/admin/customizer/customizer.php:295
 msgid "Heading"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:307
+#: lib/admin/customizer/customizer.php:308
 msgid "Heading 1"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:308
+#: lib/admin/customizer/customizer.php:309
 msgid "Set your h1 default font size in pixels"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:350
+#: lib/admin/customizer/customizer.php:351
 msgid "Heading 2"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:351
+#: lib/admin/customizer/customizer.php:352
 msgid "Set your blog title default font size in pixels"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:394
+#: lib/admin/customizer/customizer.php:395
 msgid "Heading 3"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:395
+#: lib/admin/customizer/customizer.php:396
 msgid "Set your h3 default font size in pixels"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:437
+#: lib/admin/customizer/customizer.php:438
 msgid "Heading 4"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:438
+#: lib/admin/customizer/customizer.php:439
 msgid "Set your h4 default font size in pixels"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:480
+#: lib/admin/customizer/customizer.php:481
 msgid "Heading 5"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:481
+#: lib/admin/customizer/customizer.php:482
 msgid "Set your h5 default font size in pixels"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:523
+#: lib/admin/customizer/customizer.php:524
 msgid "Heading 6"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:524
+#: lib/admin/customizer/customizer.php:525
 msgid "Set your h6 default font size in pixels"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:561
+#: lib/admin/customizer/customizer.php:562
 msgid "Widgets"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:574
+#: lib/admin/customizer/customizer.php:575
 msgid "widgets Title"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:575
+#: lib/admin/customizer/customizer.php:576
 msgid "Set your sidebar widget title default font size in pixels"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:617
+#: lib/admin/customizer/customizer.php:618
 msgid "Widgets Content"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:618
+#: lib/admin/customizer/customizer.php:619
 msgid "Set your sidebar widget content default font size in pixels"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:639
+#: lib/admin/customizer/customizer.php:640
 msgid "Content Options"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:645
-#: lib/admin/customizer/customizer.php:791
+#: lib/admin/customizer/customizer.php:646
+#: lib/admin/customizer/customizer.php:792
 msgid "Latest Post"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:657
+#: lib/admin/customizer/customizer.php:658
 msgid "Show Latest Post in full width"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:666
+#: lib/admin/customizer/customizer.php:667
 msgid "Post Tags"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:677
+#: lib/admin/customizer/customizer.php:678
 msgid "Hide Post Tags"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:685
+#: lib/admin/customizer/customizer.php:686
 msgid "Post Categories"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:696
+#: lib/admin/customizer/customizer.php:697
 msgid "Hide Post Categories"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:705
+#: lib/admin/customizer/customizer.php:706
 msgid "Content Length"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:717
+#: lib/admin/customizer/customizer.php:718
 msgid "Show Content"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:720
+#: lib/admin/customizer/customizer.php:721
 msgid "full"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:721
+#: lib/admin/customizer/customizer.php:722
 msgid "excerpt"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:737
+#: lib/admin/customizer/customizer.php:738
 msgid "Excerpt Length"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:738
+#: lib/admin/customizer/customizer.php:739
 msgid ""
 "Make sure you have selected <strong>excerpt</strong>. Write only "
 "<strong>numbers</strong> in textbox and not <strong>px</strong>. It should "
 "not be less than <strong>50</strong>"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:743
+#: lib/admin/customizer/customizer.php:744
 msgid "Header Search Bar"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:754
+#: lib/admin/customizer/customizer.php:755
 msgid "Hide Header Search Bar"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:764
+#: lib/admin/customizer/customizer.php:765
 msgid "Modify Text"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:778
+#: lib/admin/customizer/customizer.php:779
 msgid "Continue Reading Text"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:804
+#: lib/admin/customizer/customizer.php:805
 msgid "Copyright Text"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:812
+#: lib/admin/customizer/customizer.php:813
 msgid "Supernova Themes"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:818
+#: lib/admin/customizer/customizer.php:819
 msgid "Author's Name"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:833
+#: lib/admin/customizer/customizer.php:834
 msgid "Top Most Menu Title"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:834
+#: lib/admin/customizer/customizer.php:835
 msgid "This text is shown at the top left-hand corner of the screen."
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:846
-#: lib/admin/customizer/customizer.php:869
+#: lib/admin/customizer/customizer.php:847
+#: lib/admin/customizer/customizer.php:870
 #: pro/customizer/customizer-hooks.php:32
 msgid "Hide"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:856
+#: lib/admin/customizer/customizer.php:857
 msgid "Main Menu Title"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:857
+#: lib/admin/customizer/customizer.php:858
 msgid "This text is shown at the top right-hand corner of the screen."
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:878
+#: lib/admin/customizer/customizer.php:879
 msgid "Social Media"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:879
+#: lib/admin/customizer/customizer.php:880
 msgid "Set up your social links"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:893
+#: lib/admin/customizer/customizer.php:894
 msgid "%s url:"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:905
+#: lib/admin/customizer/customizer.php:906
 msgid "Sidebar Layout"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:916
+#: lib/admin/customizer/customizer.php:917
 msgid "Sidebar Position"
-msgstr ""
-
-#: lib/admin/customizer/customizer.php:919
-#: lib/admin/customizer/customizer.php:1163
-#: lib/admin/customizer/customizer.php:1225
-msgid "left"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:920
 #: lib/admin/customizer/customizer.php:1164
 #: lib/admin/customizer/customizer.php:1226
-msgid "right"
+msgid "left"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:921
+#: lib/admin/customizer/customizer.php:1165
+#: lib/admin/customizer/customizer.php:1227
+msgid "right"
+msgstr ""
+
+#: lib/admin/customizer/customizer.php:922
 msgid "no-sidebar"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:933
+#: lib/admin/customizer/customizer.php:934
 msgid "For More Options Upgrade to "
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:933
+#: lib/admin/customizer/customizer.php:934
 msgid "Powen Pro"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:935
+#: lib/admin/customizer/customizer.php:936
 msgid "Please support the development of your theme - "
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:935
+#: lib/admin/customizer/customizer.php:936
 msgid "Donate"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:939
+#: lib/admin/customizer/customizer.php:940
 msgid "Slider Options"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:940
+#: lib/admin/customizer/customizer.php:941
 msgid "Add slider"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:946
+#: lib/admin/customizer/customizer.php:947
 msgid "Slider Display"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:959
+#: lib/admin/customizer/customizer.php:960
 msgid "Hide Slider"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:971
+#: lib/admin/customizer/customizer.php:972
 msgid "Fixed Slider Content"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:982
+#: lib/admin/customizer/customizer.php:983
 msgid "Slide %s"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:983
+#: lib/admin/customizer/customizer.php:984
 msgid ""
 "Note: All default slide values will be discarded, the moment you make any "
 "changes to the slide."
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:995
+#: lib/admin/customizer/customizer.php:996
 msgid "Title"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1007
+#: lib/admin/customizer/customizer.php:1008
 msgid "Description"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1019
+#: lib/admin/customizer/customizer.php:1020
 msgid "Link"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1031
+#: lib/admin/customizer/customizer.php:1032
 msgid "Image"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1045
+#: lib/admin/customizer/customizer.php:1046
 msgid "Theme Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1050
+#: lib/admin/customizer/customizer.php:1051
 msgid "Link Color (on hover)"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1055
+#: lib/admin/customizer/customizer.php:1056
 msgid "Site Title Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1060
+#: lib/admin/customizer/customizer.php:1061
 msgid "Site Tagline Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1065
+#: lib/admin/customizer/customizer.php:1066
 msgid "Header Background Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1070
+#: lib/admin/customizer/customizer.php:1071
 msgid "Footer widgets background color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1075
+#: lib/admin/customizer/customizer.php:1076
 msgid "Footer widgets text color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1081
+#: lib/admin/customizer/customizer.php:1082
 msgid "Footer widgets link color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1086
+#: lib/admin/customizer/customizer.php:1087
 msgid "Footer bottom background color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1091
+#: lib/admin/customizer/customizer.php:1092
 msgid "Footer bottom text color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1096
+#: lib/admin/customizer/customizer.php:1097
 msgid "Footer bottom link color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1101
+#: lib/admin/customizer/customizer.php:1102
 msgid "Footer link color(on hover)"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1106
+#: lib/admin/customizer/customizer.php:1107
 msgid "Top Most Menu Background Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1111
+#: lib/admin/customizer/customizer.php:1112
 msgid "Top Most Menu Text Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1116
+#: lib/admin/customizer/customizer.php:1117
 msgid "Main Menu Background Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1121
+#: lib/admin/customizer/customizer.php:1122
 msgid "Main Menu Text Color"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1159
+#: lib/admin/customizer/customizer.php:1160
 msgid "Site Title & Tagline Placement"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1165
-#: lib/admin/customizer/customizer.php:1227
+#: lib/admin/customizer/customizer.php:1166
+#: lib/admin/customizer/customizer.php:1228
 msgid "center"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1179
+#: lib/admin/customizer/customizer.php:1180
 msgid "Hide Site Title"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1192
+#: lib/admin/customizer/customizer.php:1193
 msgid "Hide Tagline"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1206
+#: lib/admin/customizer/customizer.php:1207
 msgid "Upload logo"
 msgstr ""
 
-#: lib/admin/customizer/customizer.php:1221
+#: lib/admin/customizer/customizer.php:1222
 msgid "Logo placement"
 msgstr ""
 
@@ -1141,122 +1145,138 @@ msgstr ""
 msgid "Switch Off Footer Menu"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:50 pro/hooks.php:138
-#: pro/powen-pro.php:38
-msgid "Load More"
+#: pro/customizer/customizer-hooks.php:50
+msgid "Header Icons"
+msgstr ""
+
+#: pro/customizer/customizer-hooks.php:51
+msgid "Set up your header links"
 msgstr ""
 
 #: pro/customizer/customizer-hooks.php:61
+msgid "Icon"
+msgstr ""
+
+#: pro/customizer/customizer-hooks.php:74
+msgid "url"
+msgstr ""
+
+#: pro/customizer/customizer-hooks.php:84 pro/hooks.php:138
+#: pro/powen-pro.php:39
+msgid "Load More"
+msgstr ""
+
+#: pro/customizer/customizer-hooks.php:95
 msgid "Hide Load More Button"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:69
+#: pro/customizer/customizer-hooks.php:103
 msgid "Pagination"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:80
+#: pro/customizer/customizer-hooks.php:114
 msgid "Hide Pagination"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:88
+#: pro/customizer/customizer-hooks.php:122
 msgid "Infinite Ajax Scrolling"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:99
+#: pro/customizer/customizer-hooks.php:133
 msgid "Stop Infinite Ajax Scrolling"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:107
+#: pro/customizer/customizer-hooks.php:141
 msgid "Flexible Layout"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:121
+#: pro/customizer/customizer-hooks.php:155
 msgid "Value"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:122
+#: pro/customizer/customizer-hooks.php:156
 msgid ""
 "Write only <strong>numbers</strong> and not <strong>px</strong>. It should "
 "not be less than <strong>900</strong>"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:128
+#: pro/customizer/customizer-hooks.php:162
 msgid "Ad Spots"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:133
+#: pro/customizer/customizer-hooks.php:167
 msgid "Header Top Most"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:144
-#: pro/customizer/customizer-hooks.php:162
-#: pro/customizer/customizer-hooks.php:181
-#: pro/customizer/customizer-hooks.php:200
-#: pro/customizer/customizer-hooks.php:219
-#: pro/customizer/customizer-hooks.php:238
-#: pro/customizer/customizer-hooks.php:257
-#: pro/customizer/customizer-hooks.php:276
-#: pro/customizer/customizer-hooks.php:295
+#: pro/customizer/customizer-hooks.php:178
+#: pro/customizer/customizer-hooks.php:196
+#: pro/customizer/customizer-hooks.php:215
+#: pro/customizer/customizer-hooks.php:234
+#: pro/customizer/customizer-hooks.php:253
+#: pro/customizer/customizer-hooks.php:272
+#: pro/customizer/customizer-hooks.php:291
+#: pro/customizer/customizer-hooks.php:310
+#: pro/customizer/customizer-hooks.php:329
 msgid "Short Code"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:151
+#: pro/customizer/customizer-hooks.php:185
 msgid "Before Site Identity"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:170
+#: pro/customizer/customizer-hooks.php:204
 msgid "After Site Identity"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:189
+#: pro/customizer/customizer-hooks.php:223
 msgid "After First Home Post"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:208
+#: pro/customizer/customizer-hooks.php:242
 msgid "Before Content"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:227
+#: pro/customizer/customizer-hooks.php:261
 msgid "Above Footer"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:246
+#: pro/customizer/customizer-hooks.php:280
 msgid "Footer Widgets"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:265
+#: pro/customizer/customizer-hooks.php:299
 msgid "Footer Site Info Begins"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:284
+#: pro/customizer/customizer-hooks.php:318
 msgid "Footer Site Info Ends"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:304
+#: pro/customizer/customizer-hooks.php:338
 msgid "Font Family"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:316
+#: pro/customizer/customizer-hooks.php:350
 msgid "Google Font"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:317
+#: pro/customizer/customizer-hooks.php:351
 msgid "Set your website default font"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:335
+#: pro/customizer/customizer-hooks.php:369
 msgid "Author's URL"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:363
+#: pro/customizer/customizer-hooks.php:397
 msgid "After Site Title"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:399
+#: pro/customizer/customizer-hooks.php:433
 msgid "Pro Menu Background Color"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:404
+#: pro/customizer/customizer-hooks.php:438
 msgid "Pro Menu Color"
 msgstr ""
 
@@ -1272,15 +1292,313 @@ msgstr ""
 msgid "Google Fonts"
 msgstr ""
 
-#: pro/powen-pro.php:37
+#: pro/font-icon.php:12
+msgid "glass"
+msgstr ""
+
+#: pro/font-icon.php:13
+msgid "music"
+msgstr ""
+
+#: pro/font-icon.php:14
+msgid "search"
+msgstr ""
+
+#: pro/font-icon.php:15
+msgid "envelope-o"
+msgstr ""
+
+#: pro/font-icon.php:16
+msgid "heart"
+msgstr ""
+
+#: pro/font-icon.php:17
+msgid "star"
+msgstr ""
+
+#: pro/font-icon.php:18
+msgid "star-o"
+msgstr ""
+
+#: pro/font-icon.php:19
+msgid "user"
+msgstr ""
+
+#: pro/font-icon.php:20
+msgid "film"
+msgstr ""
+
+#: pro/font-icon.php:21 pro/font-icon.php:22 pro/font-icon.php:23
+#: pro/font-icon.php:24 pro/font-icon.php:25 pro/font-icon.php:26
+#: pro/font-icon.php:27 pro/font-icon.php:28 pro/font-icon.php:29
+#: pro/font-icon.php:30 pro/font-icon.php:31 pro/font-icon.php:32
+#: pro/font-icon.php:33 pro/font-icon.php:34 pro/font-icon.php:35
+#: pro/font-icon.php:36 pro/font-icon.php:37 pro/font-icon.php:38
+#: pro/font-icon.php:39 pro/font-icon.php:40 pro/font-icon.php:41
+#: pro/font-icon.php:42 pro/font-icon.php:43 pro/font-icon.php:44
+#: pro/font-icon.php:45 pro/font-icon.php:46 pro/font-icon.php:47
+#: pro/font-icon.php:48 pro/font-icon.php:49 pro/font-icon.php:50
+#: pro/font-icon.php:51 pro/font-icon.php:52 pro/font-icon.php:53
+#: pro/font-icon.php:54 pro/font-icon.php:55 pro/font-icon.php:56
+#: pro/font-icon.php:57 pro/font-icon.php:58 pro/font-icon.php:59
+#: pro/font-icon.php:60 pro/font-icon.php:61 pro/font-icon.php:62
+#: pro/font-icon.php:63 pro/font-icon.php:64 pro/font-icon.php:65
+#: pro/font-icon.php:66 pro/font-icon.php:67 pro/font-icon.php:68
+#: pro/font-icon.php:69 pro/font-icon.php:70 pro/font-icon.php:71
+#: pro/font-icon.php:72 pro/font-icon.php:73 pro/font-icon.php:74
+#: pro/font-icon.php:75 pro/font-icon.php:76 pro/font-icon.php:77
+#: pro/font-icon.php:78 pro/font-icon.php:79 pro/font-icon.php:80
+#: pro/font-icon.php:81 pro/font-icon.php:82 pro/font-icon.php:83
+#: pro/font-icon.php:84 pro/font-icon.php:85 pro/font-icon.php:86
+#: pro/font-icon.php:87 pro/font-icon.php:88 pro/font-icon.php:89
+#: pro/font-icon.php:90 pro/font-icon.php:91 pro/font-icon.php:92
+#: pro/font-icon.php:93 pro/font-icon.php:94 pro/font-icon.php:95
+#: pro/font-icon.php:96 pro/font-icon.php:97 pro/font-icon.php:98
+#: pro/font-icon.php:99 pro/font-icon.php:100 pro/font-icon.php:101
+#: pro/font-icon.php:102 pro/font-icon.php:103 pro/font-icon.php:104
+#: pro/font-icon.php:105 pro/font-icon.php:106 pro/font-icon.php:107
+#: pro/font-icon.php:108 pro/font-icon.php:109 pro/font-icon.php:110
+#: pro/font-icon.php:111 pro/font-icon.php:112 pro/font-icon.php:113
+#: pro/font-icon.php:114 pro/font-icon.php:115 pro/font-icon.php:116
+#: pro/font-icon.php:117 pro/font-icon.php:118 pro/font-icon.php:119
+#: pro/font-icon.php:120 pro/font-icon.php:121 pro/font-icon.php:122
+#: pro/font-icon.php:123 pro/font-icon.php:124 pro/font-icon.php:125
+#: pro/font-icon.php:126 pro/font-icon.php:127 pro/font-icon.php:128
+#: pro/font-icon.php:129 pro/font-icon.php:130 pro/font-icon.php:131
+#: pro/font-icon.php:132 pro/font-icon.php:133 pro/font-icon.php:134
+#: pro/font-icon.php:135 pro/font-icon.php:136 pro/font-icon.php:137
+#: pro/font-icon.php:138 pro/font-icon.php:139 pro/font-icon.php:140
+#: pro/font-icon.php:141 pro/font-icon.php:142 pro/font-icon.php:143
+#: pro/font-icon.php:144 pro/font-icon.php:145 pro/font-icon.php:146
+#: pro/font-icon.php:147 pro/font-icon.php:148 pro/font-icon.php:149
+#: pro/font-icon.php:150 pro/font-icon.php:151 pro/font-icon.php:152
+#: pro/font-icon.php:153 pro/font-icon.php:154 pro/font-icon.php:155
+#: pro/font-icon.php:156 pro/font-icon.php:157 pro/font-icon.php:158
+#: pro/font-icon.php:159 pro/font-icon.php:160 pro/font-icon.php:161
+#: pro/font-icon.php:162 pro/font-icon.php:163 pro/font-icon.php:164
+#: pro/font-icon.php:165 pro/font-icon.php:166 pro/font-icon.php:167
+#: pro/font-icon.php:168 pro/font-icon.php:169 pro/font-icon.php:170
+#: pro/font-icon.php:171 pro/font-icon.php:172 pro/font-icon.php:173
+#: pro/font-icon.php:174 pro/font-icon.php:175 pro/font-icon.php:176
+#: pro/font-icon.php:177 pro/font-icon.php:178 pro/font-icon.php:179
+#: pro/font-icon.php:180 pro/font-icon.php:181 pro/font-icon.php:182
+#: pro/font-icon.php:183 pro/font-icon.php:184 pro/font-icon.php:185
+#: pro/font-icon.php:186 pro/font-icon.php:187 pro/font-icon.php:188
+#: pro/font-icon.php:189 pro/font-icon.php:190 pro/font-icon.php:191
+#: pro/font-icon.php:192 pro/font-icon.php:193 pro/font-icon.php:194
+#: pro/font-icon.php:195 pro/font-icon.php:196 pro/font-icon.php:197
+#: pro/font-icon.php:198 pro/font-icon.php:199 pro/font-icon.php:200
+#: pro/font-icon.php:201 pro/font-icon.php:202 pro/font-icon.php:203
+#: pro/font-icon.php:204 pro/font-icon.php:205 pro/font-icon.php:206
+#: pro/font-icon.php:207 pro/font-icon.php:208 pro/font-icon.php:209
+#: pro/font-icon.php:210 pro/font-icon.php:211 pro/font-icon.php:212
+#: pro/font-icon.php:213 pro/font-icon.php:214 pro/font-icon.php:215
+#: pro/font-icon.php:216 pro/font-icon.php:217 pro/font-icon.php:218
+#: pro/font-icon.php:219 pro/font-icon.php:220 pro/font-icon.php:221
+#: pro/font-icon.php:222 pro/font-icon.php:223 pro/font-icon.php:224
+#: pro/font-icon.php:225 pro/font-icon.php:226 pro/font-icon.php:227
+#: pro/font-icon.php:228 pro/font-icon.php:229 pro/font-icon.php:230
+#: pro/font-icon.php:231 pro/font-icon.php:232 pro/font-icon.php:233
+#: pro/font-icon.php:234 pro/font-icon.php:235 pro/font-icon.php:236
+#: pro/font-icon.php:237 pro/font-icon.php:238 pro/font-icon.php:239
+#: pro/font-icon.php:240 pro/font-icon.php:241 pro/font-icon.php:242
+#: pro/font-icon.php:243 pro/font-icon.php:244 pro/font-icon.php:245
+#: pro/font-icon.php:246 pro/font-icon.php:247 pro/font-icon.php:248
+#: pro/font-icon.php:249 pro/font-icon.php:250 pro/font-icon.php:251
+#: pro/font-icon.php:252 pro/font-icon.php:253 pro/font-icon.php:254
+#: pro/font-icon.php:255 pro/font-icon.php:256 pro/font-icon.php:257
+#: pro/font-icon.php:258 pro/font-icon.php:259 pro/font-icon.php:260
+#: pro/font-icon.php:261 pro/font-icon.php:262 pro/font-icon.php:263
+#: pro/font-icon.php:264 pro/font-icon.php:265 pro/font-icon.php:266
+#: pro/font-icon.php:267 pro/font-icon.php:268 pro/font-icon.php:269
+#: pro/font-icon.php:270 pro/font-icon.php:271 pro/font-icon.php:272
+#: pro/font-icon.php:273 pro/font-icon.php:274 pro/font-icon.php:275
+#: pro/font-icon.php:276 pro/font-icon.php:277 pro/font-icon.php:278
+#: pro/font-icon.php:279 pro/font-icon.php:280 pro/font-icon.php:281
+#: pro/font-icon.php:282 pro/font-icon.php:283 pro/font-icon.php:284
+#: pro/font-icon.php:285 pro/font-icon.php:286 pro/font-icon.php:287
+#: pro/font-icon.php:288 pro/font-icon.php:289 pro/font-icon.php:290
+#: pro/font-icon.php:291 pro/font-icon.php:292 pro/font-icon.php:293
+#: pro/font-icon.php:294 pro/font-icon.php:295 pro/font-icon.php:296
+#: pro/font-icon.php:297 pro/font-icon.php:298 pro/font-icon.php:299
+#: pro/font-icon.php:300 pro/font-icon.php:301 pro/font-icon.php:302
+#: pro/font-icon.php:303 pro/font-icon.php:304 pro/font-icon.php:305
+#: pro/font-icon.php:306 pro/font-icon.php:307 pro/font-icon.php:308
+#: pro/font-icon.php:309 pro/font-icon.php:310 pro/font-icon.php:311
+#: pro/font-icon.php:312 pro/font-icon.php:313 pro/font-icon.php:314
+#: pro/font-icon.php:315 pro/font-icon.php:316 pro/font-icon.php:317
+#: pro/font-icon.php:318 pro/font-icon.php:319 pro/font-icon.php:320
+#: pro/font-icon.php:321 pro/font-icon.php:322 pro/font-icon.php:323
+#: pro/font-icon.php:324 pro/font-icon.php:325 pro/font-icon.php:326
+#: pro/font-icon.php:327 pro/font-icon.php:328 pro/font-icon.php:329
+#: pro/font-icon.php:330 pro/font-icon.php:331 pro/font-icon.php:332
+#: pro/font-icon.php:333 pro/font-icon.php:334 pro/font-icon.php:335
+#: pro/font-icon.php:336 pro/font-icon.php:337 pro/font-icon.php:338
+#: pro/font-icon.php:339 pro/font-icon.php:340 pro/font-icon.php:341
+#: pro/font-icon.php:342 pro/font-icon.php:343 pro/font-icon.php:344
+#: pro/font-icon.php:345 pro/font-icon.php:346 pro/font-icon.php:347
+#: pro/font-icon.php:348 pro/font-icon.php:349 pro/font-icon.php:350
+#: pro/font-icon.php:351 pro/font-icon.php:352 pro/font-icon.php:353
+#: pro/font-icon.php:354 pro/font-icon.php:355 pro/font-icon.php:356
+#: pro/font-icon.php:357 pro/font-icon.php:358 pro/font-icon.php:359
+#: pro/font-icon.php:360 pro/font-icon.php:361 pro/font-icon.php:362
+#: pro/font-icon.php:363 pro/font-icon.php:364 pro/font-icon.php:365
+#: pro/font-icon.php:366 pro/font-icon.php:367 pro/font-icon.php:368
+#: pro/font-icon.php:369 pro/font-icon.php:370 pro/font-icon.php:371
+#: pro/font-icon.php:372 pro/font-icon.php:373 pro/font-icon.php:374
+#: pro/font-icon.php:375 pro/font-icon.php:376 pro/font-icon.php:377
+#: pro/font-icon.php:378 pro/font-icon.php:379 pro/font-icon.php:380
+#: pro/font-icon.php:381 pro/font-icon.php:382 pro/font-icon.php:383
+#: pro/font-icon.php:384 pro/font-icon.php:385 pro/font-icon.php:386
+#: pro/font-icon.php:387 pro/font-icon.php:388 pro/font-icon.php:389
+#: pro/font-icon.php:390 pro/font-icon.php:391 pro/font-icon.php:392
+#: pro/font-icon.php:393 pro/font-icon.php:394 pro/font-icon.php:395
+#: pro/font-icon.php:396 pro/font-icon.php:397 pro/font-icon.php:398
+#: pro/font-icon.php:399 pro/font-icon.php:400 pro/font-icon.php:401
+#: pro/font-icon.php:402 pro/font-icon.php:403 pro/font-icon.php:404
+#: pro/font-icon.php:405 pro/font-icon.php:406 pro/font-icon.php:407
+#: pro/font-icon.php:408 pro/font-icon.php:409 pro/font-icon.php:410
+#: pro/font-icon.php:411 pro/font-icon.php:412 pro/font-icon.php:413
+#: pro/font-icon.php:414 pro/font-icon.php:415 pro/font-icon.php:416
+#: pro/font-icon.php:417 pro/font-icon.php:418 pro/font-icon.php:419
+#: pro/font-icon.php:420 pro/font-icon.php:421 pro/font-icon.php:422
+#: pro/font-icon.php:423 pro/font-icon.php:424 pro/font-icon.php:425
+#: pro/font-icon.php:426 pro/font-icon.php:427 pro/font-icon.php:428
+#: pro/font-icon.php:429 pro/font-icon.php:430 pro/font-icon.php:431
+#: pro/font-icon.php:432 pro/font-icon.php:433 pro/font-icon.php:434
+#: pro/font-icon.php:435 pro/font-icon.php:436 pro/font-icon.php:437
+#: pro/font-icon.php:438 pro/font-icon.php:439 pro/font-icon.php:440
+#: pro/font-icon.php:441 pro/font-icon.php:442 pro/font-icon.php:443
+#: pro/font-icon.php:444 pro/font-icon.php:445 pro/font-icon.php:446
+#: pro/font-icon.php:447 pro/font-icon.php:448 pro/font-icon.php:449
+#: pro/font-icon.php:450 pro/font-icon.php:451 pro/font-icon.php:452
+#: pro/font-icon.php:453 pro/font-icon.php:454 pro/font-icon.php:455
+#: pro/font-icon.php:456 pro/font-icon.php:457 pro/font-icon.php:458
+#: pro/font-icon.php:459 pro/font-icon.php:460 pro/font-icon.php:461
+#: pro/font-icon.php:462 pro/font-icon.php:463 pro/font-icon.php:464
+#: pro/font-icon.php:465 pro/font-icon.php:466 pro/font-icon.php:467
+#: pro/font-icon.php:468 pro/font-icon.php:469 pro/font-icon.php:470
+#: pro/font-icon.php:471 pro/font-icon.php:472 pro/font-icon.php:473
+#: pro/font-icon.php:474 pro/font-icon.php:475 pro/font-icon.php:476
+#: pro/font-icon.php:477 pro/font-icon.php:478 pro/font-icon.php:479
+#: pro/font-icon.php:480 pro/font-icon.php:481 pro/font-icon.php:482
+#: pro/font-icon.php:483 pro/font-icon.php:484 pro/font-icon.php:485
+#: pro/font-icon.php:486 pro/font-icon.php:487 pro/font-icon.php:488
+#: pro/font-icon.php:489 pro/font-icon.php:490 pro/font-icon.php:491
+#: pro/font-icon.php:492 pro/font-icon.php:493 pro/font-icon.php:494
+#: pro/font-icon.php:495 pro/font-icon.php:496 pro/font-icon.php:497
+#: pro/font-icon.php:498 pro/font-icon.php:499 pro/font-icon.php:500
+#: pro/font-icon.php:501 pro/font-icon.php:502 pro/font-icon.php:503
+#: pro/font-icon.php:504 pro/font-icon.php:505 pro/font-icon.php:506
+#: pro/font-icon.php:507 pro/font-icon.php:508 pro/font-icon.php:509
+#: pro/font-icon.php:510 pro/font-icon.php:511 pro/font-icon.php:512
+#: pro/font-icon.php:513 pro/font-icon.php:514 pro/font-icon.php:515
+#: pro/font-icon.php:516 pro/font-icon.php:517 pro/font-icon.php:518
+#: pro/font-icon.php:519 pro/font-icon.php:520 pro/font-icon.php:521
+#: pro/font-icon.php:522 pro/font-icon.php:523 pro/font-icon.php:524
+#: pro/font-icon.php:525 pro/font-icon.php:526 pro/font-icon.php:527
+#: pro/font-icon.php:528 pro/font-icon.php:529 pro/font-icon.php:530
+#: pro/font-icon.php:531 pro/font-icon.php:532 pro/font-icon.php:533
+#: pro/font-icon.php:534 pro/font-icon.php:535 pro/font-icon.php:536
+#: pro/font-icon.php:537 pro/font-icon.php:538 pro/font-icon.php:539
+#: pro/font-icon.php:540 pro/font-icon.php:541 pro/font-icon.php:542
+#: pro/font-icon.php:543 pro/font-icon.php:544 pro/font-icon.php:545
+#: pro/font-icon.php:546 pro/font-icon.php:547 pro/font-icon.php:548
+#: pro/font-icon.php:549 pro/font-icon.php:550 pro/font-icon.php:551
+#: pro/font-icon.php:552 pro/font-icon.php:553 pro/font-icon.php:554
+#: pro/font-icon.php:555 pro/font-icon.php:556 pro/font-icon.php:557
+#: pro/font-icon.php:558 pro/font-icon.php:559 pro/font-icon.php:560
+#: pro/font-icon.php:561 pro/font-icon.php:562 pro/font-icon.php:563
+#: pro/font-icon.php:564 pro/font-icon.php:565 pro/font-icon.php:566
+#: pro/font-icon.php:567 pro/font-icon.php:568 pro/font-icon.php:569
+#: pro/font-icon.php:570 pro/font-icon.php:571 pro/font-icon.php:572
+#: pro/font-icon.php:573 pro/font-icon.php:574 pro/font-icon.php:575
+#: pro/font-icon.php:576 pro/font-icon.php:577 pro/font-icon.php:578
+#: pro/font-icon.php:579 pro/font-icon.php:580 pro/font-icon.php:581
+#: pro/font-icon.php:582 pro/font-icon.php:583 pro/font-icon.php:584
+#: pro/font-icon.php:585 pro/font-icon.php:586 pro/font-icon.php:587
+#: pro/font-icon.php:588 pro/font-icon.php:589 pro/font-icon.php:590
+#: pro/font-icon.php:591 pro/font-icon.php:592 pro/font-icon.php:593
+#: pro/font-icon.php:594 pro/font-icon.php:595 pro/font-icon.php:596
+#: pro/font-icon.php:597 pro/font-icon.php:598 pro/font-icon.php:599
+#: pro/font-icon.php:600 pro/font-icon.php:601 pro/font-icon.php:602
+#: pro/font-icon.php:603 pro/font-icon.php:604 pro/font-icon.php:605
+#: pro/font-icon.php:606 pro/font-icon.php:607 pro/font-icon.php:608
+#: pro/font-icon.php:609 pro/font-icon.php:610 pro/font-icon.php:611
+#: pro/font-icon.php:612 pro/font-icon.php:613 pro/font-icon.php:614
+#: pro/font-icon.php:615 pro/font-icon.php:616 pro/font-icon.php:617
+#: pro/font-icon.php:618 pro/font-icon.php:619 pro/font-icon.php:620
+#: pro/font-icon.php:621 pro/font-icon.php:622 pro/font-icon.php:623
+#: pro/font-icon.php:624 pro/font-icon.php:625 pro/font-icon.php:626
+#: pro/font-icon.php:627 pro/font-icon.php:628 pro/font-icon.php:629
+#: pro/font-icon.php:630 pro/font-icon.php:631 pro/font-icon.php:632
+#: pro/font-icon.php:633 pro/font-icon.php:634 pro/font-icon.php:635
+#: pro/font-icon.php:636 pro/font-icon.php:637 pro/font-icon.php:638
+#: pro/font-icon.php:639 pro/font-icon.php:640 pro/font-icon.php:641
+#: pro/font-icon.php:642 pro/font-icon.php:643 pro/font-icon.php:644
+#: pro/font-icon.php:645 pro/font-icon.php:646 pro/font-icon.php:647
+#: pro/font-icon.php:648 pro/font-icon.php:649 pro/font-icon.php:650
+#: pro/font-icon.php:651 pro/font-icon.php:652 pro/font-icon.php:653
+#: pro/font-icon.php:654 pro/font-icon.php:655 pro/font-icon.php:656
+#: pro/font-icon.php:657 pro/font-icon.php:658 pro/font-icon.php:659
+#: pro/font-icon.php:660 pro/font-icon.php:661 pro/font-icon.php:662
+#: pro/font-icon.php:663 pro/font-icon.php:664 pro/font-icon.php:665
+#: pro/font-icon.php:666 pro/font-icon.php:667 pro/font-icon.php:668
+#: pro/font-icon.php:669 pro/font-icon.php:670 pro/font-icon.php:671
+#: pro/font-icon.php:672 pro/font-icon.php:673 pro/font-icon.php:674
+#: pro/font-icon.php:675 pro/font-icon.php:676 pro/font-icon.php:677
+#: pro/font-icon.php:678 pro/font-icon.php:679 pro/font-icon.php:680
+#: pro/font-icon.php:681 pro/font-icon.php:682 pro/font-icon.php:683
+#: pro/font-icon.php:684 pro/font-icon.php:685 pro/font-icon.php:686
+#: pro/font-icon.php:687 pro/font-icon.php:688 pro/font-icon.php:689
+#: pro/font-icon.php:690 pro/font-icon.php:691 pro/font-icon.php:692
+#: pro/font-icon.php:693 pro/font-icon.php:694 pro/font-icon.php:695
+#: pro/font-icon.php:696 pro/font-icon.php:697 pro/font-icon.php:698
+#: pro/font-icon.php:699 pro/font-icon.php:700 pro/font-icon.php:701
+#: pro/font-icon.php:702 pro/font-icon.php:703 pro/font-icon.php:704
+#: pro/font-icon.php:705 pro/font-icon.php:706 pro/font-icon.php:707
+#: pro/font-icon.php:708 pro/font-icon.php:709 pro/font-icon.php:710
+#: pro/font-icon.php:711 pro/font-icon.php:712 pro/font-icon.php:713
+#: pro/font-icon.php:714 pro/font-icon.php:715 pro/font-icon.php:716
+#: pro/font-icon.php:717 pro/font-icon.php:718 pro/font-icon.php:719
+#: pro/font-icon.php:720 pro/font-icon.php:721 pro/font-icon.php:722
+#: pro/font-icon.php:723 pro/font-icon.php:724 pro/font-icon.php:725
+#: pro/font-icon.php:726 pro/font-icon.php:727 pro/font-icon.php:728
+#: pro/font-icon.php:729 pro/font-icon.php:730 pro/font-icon.php:731
+#: pro/font-icon.php:732 pro/font-icon.php:733 pro/font-icon.php:734
+#: pro/font-icon.php:735 pro/font-icon.php:736 pro/font-icon.php:737
+#: pro/font-icon.php:738 pro/font-icon.php:739 pro/font-icon.php:740
+#: pro/font-icon.php:741 pro/font-icon.php:742 pro/font-icon.php:743
+#: pro/font-icon.php:744 pro/font-icon.php:745 pro/font-icon.php:746
+#: pro/font-icon.php:747 pro/font-icon.php:748 pro/font-icon.php:749
+#: pro/font-icon.php:750 pro/font-icon.php:751 pro/font-icon.php:752
+#: pro/font-icon.php:753 pro/font-icon.php:754 pro/font-icon.php:755
+#: pro/font-icon.php:756 pro/font-icon.php:757 pro/font-icon.php:758
+#: pro/font-icon.php:759 pro/font-icon.php:760 pro/font-icon.php:761
+#: pro/font-icon.php:762 pro/font-icon.php:763 pro/font-icon.php:764
+#: pro/font-icon.php:765 pro/font-icon.php:766 pro/font-icon.php:767
+#: pro/font-icon.php:768 pro/font-icon.php:769 pro/font-icon.php:770
+#: pro/font-icon.php:771 pro/font-icon.php:772 pro/font-icon.php:773
+#: pro/font-icon.php:774 pro/font-icon.php:775 pro/font-icon.php:776
+#: pro/font-icon.php:777 pro/font-icon.php:778 pro/font-icon.php:779
+#: pro/font-icon.php:780 pro/font-icon.php:781 pro/font-icon.php:782
+#: pro/font-icon.php:783 pro/font-icon.php:784 pro/font-icon.php:785
+#: pro/font-icon.php:786 pro/font-icon.php:787 pro/font-icon.php:788
+#: pro/font-icon.php:789 pro/font-icon.php:790 pro/font-icon.php:791
+#: pro/font-icon.php:792 pro/font-icon.php:793 pro/font-icon.php:794
+#: pro/font-icon.php:795 pro/font-icon.php:796
+msgid "A"
+msgstr ""
+
+#: pro/powen-pro.php:38
 msgid "Loading..."
 msgstr ""
 
-#: pro/powen-pro.php:51
+#: pro/powen-pro.php:52
 msgid "Pro Menu"
 msgstr ""
 
-#: pro/powen-pro.php:52
+#: pro/powen-pro.php:53
 msgid "Footer Menu"
 msgstr ""
 

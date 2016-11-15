@@ -426,6 +426,7 @@ textarea {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 1;
 }
 .powen-search-box-top input[type="search"] {
   border: none;
@@ -436,6 +437,16 @@ textarea {
 }
 .powen-search-box-top input[type="submit"] {
   display: none;
+}
+.powen-search-box-top .fa-search {
+  z-index: 2;
+  position: absolute;
+  top: 0.3125rem;
+  right: 0.3125rem;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
 }
 
 .widget-area input[type="email"],
@@ -1330,16 +1341,6 @@ ul, ol {
 
 .powen-nav {
   padding: 1.125rem 0;
-}
-
-.fa-search {
-  position: absolute;
-  top: 0.3125rem;
-  right: 0.3125rem;
-  cursor: pointer;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
 }
 
 .article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .error-404, .site-main .post-navigation, .paging-navigation {
