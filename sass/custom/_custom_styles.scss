@@ -252,6 +252,16 @@ ul, ol {
 		padding: rem-calc(5);
 		display: inline-block;
 		color: #aaaaaa;
+
+		-ms-word-break: break-all;
+		word-break: break-all;
+
+		// Non standard for webkit
+		word-break: break-word;
+
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		hyphens: auto;
 	}
 	.tags-links {
 		display: inline;
