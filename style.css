@@ -421,6 +421,7 @@ textarea {
   float: right;
   position: relative;
   margin-right: 0.625rem;
+  margin-left: 0.625rem;
 }
 .powen-search-box-top form {
   position: absolute;
