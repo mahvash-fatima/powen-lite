@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Powen Lite 1.7.0\n"
+"Project-Id-Version: Powen Lite 1.7.1\n"
 "Report-Msgid-Bugs-To: http://supernovathemes.com/powen-theme\n"
-"POT-Creation-Date: 2016-10-10 09:59:13+00:00\n"
+"POT-Creation-Date: 2016-11-24 12:48:34+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -420,7 +420,7 @@ msgstr ""
 msgid "%s"
 msgstr ""
 
-#: footer.php:70
+#: footer.php:70 pro/customizer/customizer-hooks.php:398 pro/hooks.php:152
 msgid "by"
 msgstr ""
 
@@ -546,6 +546,7 @@ msgid "Site Identity"
 msgstr ""
 
 #: lib/admin/customizer/customizer.php:103
+#: pro/customizer/customizer-hooks.php:390
 msgid "Site Title"
 msgstr ""
 
@@ -1140,114 +1141,142 @@ msgstr ""
 msgid "Switch Off Footer Menu"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:50 pro/hooks.php:129
-#: pro/powen-pro.php:38
+#: pro/customizer/customizer-hooks.php:50
+msgid "Font Icon"
+msgstr ""
+
+#: pro/customizer/customizer-hooks.php:56
+msgid "Font Icon %s"
+msgstr ""
+
+#: pro/customizer/customizer-hooks.php:57
+msgid "Set up your font icon link"
+msgstr ""
+
+#: pro/customizer/customizer-hooks.php:68
+msgid "Icon"
+msgstr ""
+
+#: pro/customizer/customizer-hooks.php:81
+msgid "URL"
+msgstr ""
+
+#: pro/customizer/customizer-hooks.php:91 pro/hooks.php:138
+#: pro/powen-pro.php:39
 msgid "Load More"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:61
+#: pro/customizer/customizer-hooks.php:102
 msgid "Hide Load More Button"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:69
+#: pro/customizer/customizer-hooks.php:110
 msgid "Pagination"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:80
+#: pro/customizer/customizer-hooks.php:121
 msgid "Hide Pagination"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:88
+#: pro/customizer/customizer-hooks.php:129
 msgid "Infinite Ajax Scrolling"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:99
+#: pro/customizer/customizer-hooks.php:140
 msgid "Stop Infinite Ajax Scrolling"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:107
+#: pro/customizer/customizer-hooks.php:148
 msgid "Flexible Layout"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:121
+#: pro/customizer/customizer-hooks.php:162
 msgid "Value"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:122
+#: pro/customizer/customizer-hooks.php:163
 msgid ""
 "Write only <strong>numbers</strong> and not <strong>px</strong>. It should "
 "not be less than <strong>900</strong>"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:128
+#: pro/customizer/customizer-hooks.php:169
 msgid "Ad Spots"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:133
+#: pro/customizer/customizer-hooks.php:174
 msgid "Header Top Most"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:144
-#: pro/customizer/customizer-hooks.php:163
-#: pro/customizer/customizer-hooks.php:182
-#: pro/customizer/customizer-hooks.php:201
-#: pro/customizer/customizer-hooks.php:220
-#: pro/customizer/customizer-hooks.php:239
-#: pro/customizer/customizer-hooks.php:258
-#: pro/customizer/customizer-hooks.php:277
-#: pro/customizer/customizer-hooks.php:296
+#: pro/customizer/customizer-hooks.php:185
+#: pro/customizer/customizer-hooks.php:203
+#: pro/customizer/customizer-hooks.php:222
+#: pro/customizer/customizer-hooks.php:241
+#: pro/customizer/customizer-hooks.php:260
+#: pro/customizer/customizer-hooks.php:279
+#: pro/customizer/customizer-hooks.php:298
+#: pro/customizer/customizer-hooks.php:317
+#: pro/customizer/customizer-hooks.php:336
 msgid "Short Code"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:152
+#: pro/customizer/customizer-hooks.php:192
 msgid "Before Site Identity"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:171
+#: pro/customizer/customizer-hooks.php:211
 msgid "After Site Identity"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:190
+#: pro/customizer/customizer-hooks.php:230
 msgid "After First Home Post"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:209
+#: pro/customizer/customizer-hooks.php:249
 msgid "Before Content"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:228
+#: pro/customizer/customizer-hooks.php:268
 msgid "Above Footer"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:247
+#: pro/customizer/customizer-hooks.php:287
 msgid "Footer Widgets"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:266
+#: pro/customizer/customizer-hooks.php:306
 msgid "Footer Site Info Begins"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:285
+#: pro/customizer/customizer-hooks.php:325
 msgid "Footer Site Info Ends"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:305
+#: pro/customizer/customizer-hooks.php:345
 msgid "Font Family"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:317
+#: pro/customizer/customizer-hooks.php:357
 msgid "Google Font"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:318
+#: pro/customizer/customizer-hooks.php:358
 msgid "Set your website default font"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:356
+#: pro/customizer/customizer-hooks.php:376
+msgid "Author's URL"
+msgstr ""
+
+#: pro/customizer/customizer-hooks.php:404
+msgid "After Site Title"
+msgstr ""
+
+#: pro/customizer/customizer-hooks.php:440
 msgid "Pro Menu Background Color"
 msgstr ""
 
-#: pro/customizer/customizer-hooks.php:361
+#: pro/customizer/customizer-hooks.php:445
 msgid "Pro Menu Color"
 msgstr ""
 
@@ -1263,15 +1292,3147 @@ msgstr ""
 msgid "Google Fonts"
 msgstr ""
 
-#: pro/powen-pro.php:37
+#: pro/font-icon.php:12
+msgid "glass"
+msgstr ""
+
+#: pro/font-icon.php:13
+msgid "music"
+msgstr ""
+
+#: pro/font-icon.php:14
+msgid "search"
+msgstr ""
+
+#: pro/font-icon.php:15
+msgid "envelope-o"
+msgstr ""
+
+#: pro/font-icon.php:16
+msgid "heart"
+msgstr ""
+
+#: pro/font-icon.php:17
+msgid "star"
+msgstr ""
+
+#: pro/font-icon.php:18
+msgid "star-o"
+msgstr ""
+
+#: pro/font-icon.php:19
+msgid "user"
+msgstr ""
+
+#: pro/font-icon.php:20
+msgid "film"
+msgstr ""
+
+#: pro/font-icon.php:21
+msgid "th-large"
+msgstr ""
+
+#: pro/font-icon.php:22
+msgid "th"
+msgstr ""
+
+#: pro/font-icon.php:23
+msgid "th-list"
+msgstr ""
+
+#: pro/font-icon.php:24
+msgid "check"
+msgstr ""
+
+#: pro/font-icon.php:25
+msgid "remove"
+msgstr ""
+
+#: pro/font-icon.php:26
+msgid "close"
+msgstr ""
+
+#: pro/font-icon.php:27
+msgid "times"
+msgstr ""
+
+#: pro/font-icon.php:28
+msgid "search-plus"
+msgstr ""
+
+#: pro/font-icon.php:29
+msgid "search-minus"
+msgstr ""
+
+#: pro/font-icon.php:30
+msgid "power-off"
+msgstr ""
+
+#: pro/font-icon.php:31
+msgid "signal"
+msgstr ""
+
+#: pro/font-icon.php:32
+msgid "gear"
+msgstr ""
+
+#: pro/font-icon.php:33
+msgid "cog"
+msgstr ""
+
+#: pro/font-icon.php:34
+msgid "trash-o"
+msgstr ""
+
+#: pro/font-icon.php:35
+msgid "home"
+msgstr ""
+
+#: pro/font-icon.php:36
+msgid "file-o"
+msgstr ""
+
+#: pro/font-icon.php:37
+msgid "clock-o"
+msgstr ""
+
+#: pro/font-icon.php:38
+msgid "road"
+msgstr ""
+
+#: pro/font-icon.php:39
+msgid "download"
+msgstr ""
+
+#: pro/font-icon.php:40
+msgid "arrow-circle-o-down"
+msgstr ""
+
+#: pro/font-icon.php:41
+msgid "arrow-circle-o-up"
+msgstr ""
+
+#: pro/font-icon.php:42
+msgid "inbox"
+msgstr ""
+
+#: pro/font-icon.php:43
+msgid "play-circle-o"
+msgstr ""
+
+#: pro/font-icon.php:44
+msgid "rotate-right"
+msgstr ""
+
+#: pro/font-icon.php:45
+msgid "repeat"
+msgstr ""
+
+#: pro/font-icon.php:46
+msgid "refresh"
+msgstr ""
+
+#: pro/font-icon.php:47
+msgid "list-alt"
+msgstr ""
+
+#: pro/font-icon.php:48
+msgid "lock"
+msgstr ""
+
+#: pro/font-icon.php:49
+msgid "flag"
+msgstr ""
+
+#: pro/font-icon.php:50
+msgid "headphones"
+msgstr ""
+
+#: pro/font-icon.php:51
+msgid "volume-off"
+msgstr ""
+
+#: pro/font-icon.php:52
+msgid "volume-down"
+msgstr ""
+
+#: pro/font-icon.php:53
+msgid "volume-up"
+msgstr ""
+
+#: pro/font-icon.php:54
+msgid "qrcode"
+msgstr ""
+
+#: pro/font-icon.php:55
+msgid "barcode"
+msgstr ""
+
+#: pro/font-icon.php:56
+msgid "tag"
+msgstr ""
+
+#: pro/font-icon.php:57
+msgid "tags"
+msgstr ""
+
+#: pro/font-icon.php:58
+msgid "book"
+msgstr ""
+
+#: pro/font-icon.php:59
+msgid "bookmark"
+msgstr ""
+
+#: pro/font-icon.php:60
+msgid "print"
+msgstr ""
+
+#: pro/font-icon.php:61
+msgid "camera"
+msgstr ""
+
+#: pro/font-icon.php:62
+msgid "font"
+msgstr ""
+
+#: pro/font-icon.php:63
+msgid "bold"
+msgstr ""
+
+#: pro/font-icon.php:64
+msgid "italic"
+msgstr ""
+
+#: pro/font-icon.php:65
+msgid "text-height"
+msgstr ""
+
+#: pro/font-icon.php:66
+msgid "text-width"
+msgstr ""
+
+#: pro/font-icon.php:67
+msgid "align-left"
+msgstr ""
+
+#: pro/font-icon.php:68
+msgid "align-center"
+msgstr ""
+
+#: pro/font-icon.php:69
+msgid "align-right"
+msgstr ""
+
+#: pro/font-icon.php:70
+msgid "align-justify"
+msgstr ""
+
+#: pro/font-icon.php:71
+msgid "list"
+msgstr ""
+
+#: pro/font-icon.php:72
+msgid "dedent"
+msgstr ""
+
+#: pro/font-icon.php:73
+msgid "outdent"
+msgstr ""
+
+#: pro/font-icon.php:74
+msgid "indent"
+msgstr ""
+
+#: pro/font-icon.php:75
+msgid "video-camera"
+msgstr ""
+
+#: pro/font-icon.php:76
+msgid "photo"
+msgstr ""
+
+#: pro/font-icon.php:77
+msgid "image"
+msgstr ""
+
+#: pro/font-icon.php:78
+msgid "picture-o"
+msgstr ""
+
+#: pro/font-icon.php:79
+msgid "pencil"
+msgstr ""
+
+#: pro/font-icon.php:80
+msgid "map-marker"
+msgstr ""
+
+#: pro/font-icon.php:81
+msgid "adjust"
+msgstr ""
+
+#: pro/font-icon.php:82
+msgid "tint"
+msgstr ""
+
+#: pro/font-icon.php:83
+msgid "edit"
+msgstr ""
+
+#: pro/font-icon.php:84
+msgid "pencil-square-o"
+msgstr ""
+
+#: pro/font-icon.php:85
+msgid "share-square-o"
+msgstr ""
+
+#: pro/font-icon.php:86
+msgid "check-square-o"
+msgstr ""
+
+#: pro/font-icon.php:87
+msgid "arrows"
+msgstr ""
+
+#: pro/font-icon.php:88
+msgid "step-backward"
+msgstr ""
+
+#: pro/font-icon.php:89
+msgid "fast-backward"
+msgstr ""
+
+#: pro/font-icon.php:90
+msgid "backward"
+msgstr ""
+
+#: pro/font-icon.php:91
+msgid "play"
+msgstr ""
+
+#: pro/font-icon.php:92
+msgid "pause"
+msgstr ""
+
+#: pro/font-icon.php:93
+msgid "stop"
+msgstr ""
+
+#: pro/font-icon.php:94
+msgid "forward"
+msgstr ""
+
+#: pro/font-icon.php:95
+msgid "fast-forward"
+msgstr ""
+
+#: pro/font-icon.php:96
+msgid "step-forward"
+msgstr ""
+
+#: pro/font-icon.php:97
+msgid "eject"
+msgstr ""
+
+#: pro/font-icon.php:98
+msgid "chevron-left"
+msgstr ""
+
+#: pro/font-icon.php:99
+msgid "chevron-right"
+msgstr ""
+
+#: pro/font-icon.php:100
+msgid "plus-circle"
+msgstr ""
+
+#: pro/font-icon.php:101
+msgid "minus-circle"
+msgstr ""
+
+#: pro/font-icon.php:102
+msgid "times-circle"
+msgstr ""
+
+#: pro/font-icon.php:103
+msgid "check-circle"
+msgstr ""
+
+#: pro/font-icon.php:104
+msgid "question-circle"
+msgstr ""
+
+#: pro/font-icon.php:105
+msgid "info-circle"
+msgstr ""
+
+#: pro/font-icon.php:106
+msgid "crosshairs"
+msgstr ""
+
+#: pro/font-icon.php:107
+msgid "times-circle-o"
+msgstr ""
+
+#: pro/font-icon.php:108
+msgid "check-circle-o"
+msgstr ""
+
+#: pro/font-icon.php:109
+msgid "ban"
+msgstr ""
+
+#: pro/font-icon.php:110
+msgid "arrow-left"
+msgstr ""
+
+#: pro/font-icon.php:111
+msgid "arrow-right"
+msgstr ""
+
+#: pro/font-icon.php:112
+msgid "arrow-up"
+msgstr ""
+
+#: pro/font-icon.php:113
+msgid "arrow-down"
+msgstr ""
+
+#: pro/font-icon.php:114
+msgid "mail-forward"
+msgstr ""
+
+#: pro/font-icon.php:115
+msgid "share"
+msgstr ""
+
+#: pro/font-icon.php:116
+msgid "expand"
+msgstr ""
+
+#: pro/font-icon.php:117
+msgid "compress"
+msgstr ""
+
+#: pro/font-icon.php:118
+msgid "plus"
+msgstr ""
+
+#: pro/font-icon.php:119
+msgid "minus"
+msgstr ""
+
+#: pro/font-icon.php:120
+msgid "asterisk"
+msgstr ""
+
+#: pro/font-icon.php:121
+msgid "exclamation-circle"
+msgstr ""
+
+#: pro/font-icon.php:122
+msgid "gift"
+msgstr ""
+
+#: pro/font-icon.php:123
+msgid "leaf"
+msgstr ""
+
+#: pro/font-icon.php:124
+msgid "fire"
+msgstr ""
+
+#: pro/font-icon.php:125
+msgid "eye"
+msgstr ""
+
+#: pro/font-icon.php:126
+msgid "eye-slash"
+msgstr ""
+
+#: pro/font-icon.php:127
+msgid "warning"
+msgstr ""
+
+#: pro/font-icon.php:128
+msgid "exclamation-triangle"
+msgstr ""
+
+#: pro/font-icon.php:129
+msgid "plane"
+msgstr ""
+
+#: pro/font-icon.php:130
+msgid "calendar"
+msgstr ""
+
+#: pro/font-icon.php:131
+msgid "random"
+msgstr ""
+
+#: pro/font-icon.php:132
+msgid "comment"
+msgstr ""
+
+#: pro/font-icon.php:133
+msgid "magnet"
+msgstr ""
+
+#: pro/font-icon.php:134
+msgid "chevron-up"
+msgstr ""
+
+#: pro/font-icon.php:135
+msgid "chevron-down"
+msgstr ""
+
+#: pro/font-icon.php:136
+msgid "retweet"
+msgstr ""
+
+#: pro/font-icon.php:137
+msgid "shopping-cart"
+msgstr ""
+
+#: pro/font-icon.php:138
+msgid "folder"
+msgstr ""
+
+#: pro/font-icon.php:139
+msgid "folder-open"
+msgstr ""
+
+#: pro/font-icon.php:140
+msgid "arrows-v"
+msgstr ""
+
+#: pro/font-icon.php:141
+msgid "arrows-h"
+msgstr ""
+
+#: pro/font-icon.php:142
+msgid "bar-chart-o"
+msgstr ""
+
+#: pro/font-icon.php:143
+msgid "bar-chart"
+msgstr ""
+
+#: pro/font-icon.php:144
+msgid "twitter-square"
+msgstr ""
+
+#: pro/font-icon.php:145
+msgid "facebook-square"
+msgstr ""
+
+#: pro/font-icon.php:146
+msgid "camera-retro"
+msgstr ""
+
+#: pro/font-icon.php:147
+msgid "key"
+msgstr ""
+
+#: pro/font-icon.php:148
+msgid "gears"
+msgstr ""
+
+#: pro/font-icon.php:149
+msgid "cogs"
+msgstr ""
+
+#: pro/font-icon.php:150
+msgid "comments"
+msgstr ""
+
+#: pro/font-icon.php:151
+msgid "thumbs-o-up"
+msgstr ""
+
+#: pro/font-icon.php:152
+msgid "thumbs-o-down"
+msgstr ""
+
+#: pro/font-icon.php:153
+msgid "star-half"
+msgstr ""
+
+#: pro/font-icon.php:154
+msgid "heart-o"
+msgstr ""
+
+#: pro/font-icon.php:155
+msgid "sign-out"
+msgstr ""
+
+#: pro/font-icon.php:156
+msgid "linkedin-square"
+msgstr ""
+
+#: pro/font-icon.php:157
+msgid "thumb-tack"
+msgstr ""
+
+#: pro/font-icon.php:158
+msgid "external-link"
+msgstr ""
+
+#: pro/font-icon.php:159
+msgid "sign-in"
+msgstr ""
+
+#: pro/font-icon.php:160
+msgid "trophy"
+msgstr ""
+
+#: pro/font-icon.php:161
+msgid "github-square"
+msgstr ""
+
+#: pro/font-icon.php:162
+msgid "upload"
+msgstr ""
+
+#: pro/font-icon.php:163
+msgid "lemon-o"
+msgstr ""
+
+#: pro/font-icon.php:164
+msgid "phone"
+msgstr ""
+
+#: pro/font-icon.php:165
+msgid "square-o"
+msgstr ""
+
+#: pro/font-icon.php:166
+msgid "bookmark-o"
+msgstr ""
+
+#: pro/font-icon.php:167
+msgid "phone-square"
+msgstr ""
+
+#: pro/font-icon.php:168
+msgid "twitter"
+msgstr ""
+
+#: pro/font-icon.php:169
+msgid "facebook-f"
+msgstr ""
+
+#: pro/font-icon.php:170
+msgid "facebook"
+msgstr ""
+
+#: pro/font-icon.php:171
+msgid "github"
+msgstr ""
+
+#: pro/font-icon.php:172
+msgid "unlock"
+msgstr ""
+
+#: pro/font-icon.php:173
+msgid "credit-card"
+msgstr ""
+
+#: pro/font-icon.php:174
+msgid "feed"
+msgstr ""
+
+#: pro/font-icon.php:175
+msgid "rss"
+msgstr ""
+
+#: pro/font-icon.php:176
+msgid "hdd-o"
+msgstr ""
+
+#: pro/font-icon.php:177
+msgid "bullhorn"
+msgstr ""
+
+#: pro/font-icon.php:178
+msgid "bell"
+msgstr ""
+
+#: pro/font-icon.php:179
+msgid "certificate"
+msgstr ""
+
+#: pro/font-icon.php:180
+msgid "hand-o-right"
+msgstr ""
+
+#: pro/font-icon.php:181
+msgid "hand-o-left"
+msgstr ""
+
+#: pro/font-icon.php:182
+msgid "hand-o-up"
+msgstr ""
+
+#: pro/font-icon.php:183
+msgid "hand-o-down"
+msgstr ""
+
+#: pro/font-icon.php:184
+msgid "arrow-circle-left"
+msgstr ""
+
+#: pro/font-icon.php:185
+msgid "arrow-circle-right"
+msgstr ""
+
+#: pro/font-icon.php:186
+msgid "arrow-circle-up"
+msgstr ""
+
+#: pro/font-icon.php:187
+msgid "arrow-circle-down"
+msgstr ""
+
+#: pro/font-icon.php:188
+msgid "globe"
+msgstr ""
+
+#: pro/font-icon.php:189
+msgid "wrench"
+msgstr ""
+
+#: pro/font-icon.php:190
+msgid "tasks"
+msgstr ""
+
+#: pro/font-icon.php:191
+msgid "filter"
+msgstr ""
+
+#: pro/font-icon.php:192
+msgid "briefcase"
+msgstr ""
+
+#: pro/font-icon.php:193
+msgid "arrows-alt"
+msgstr ""
+
+#: pro/font-icon.php:194
+msgid "group"
+msgstr ""
+
+#: pro/font-icon.php:195
+msgid "users"
+msgstr ""
+
+#: pro/font-icon.php:196
+msgid "chain"
+msgstr ""
+
+#: pro/font-icon.php:197
+msgid "link"
+msgstr ""
+
+#: pro/font-icon.php:198
+msgid "cloud"
+msgstr ""
+
+#: pro/font-icon.php:199
+msgid "flask"
+msgstr ""
+
+#: pro/font-icon.php:200
+msgid "cut"
+msgstr ""
+
+#: pro/font-icon.php:201
+msgid "scissors"
+msgstr ""
+
+#: pro/font-icon.php:202
+msgid "copy"
+msgstr ""
+
+#: pro/font-icon.php:203
+msgid "files-o"
+msgstr ""
+
+#: pro/font-icon.php:204
+msgid "paperclip"
+msgstr ""
+
+#: pro/font-icon.php:205
+msgid "save"
+msgstr ""
+
+#: pro/font-icon.php:206
+msgid "floppy-o"
+msgstr ""
+
+#: pro/font-icon.php:207
+msgid "square"
+msgstr ""
+
+#: pro/font-icon.php:208
+msgid "navicon"
+msgstr ""
+
+#: pro/font-icon.php:209
+msgid "reorder"
+msgstr ""
+
+#: pro/font-icon.php:210
+msgid "bars"
+msgstr ""
+
+#: pro/font-icon.php:211
+msgid "list-ul"
+msgstr ""
+
+#: pro/font-icon.php:212
+msgid "list-ol"
+msgstr ""
+
+#: pro/font-icon.php:213
+msgid "strikethrough"
+msgstr ""
+
+#: pro/font-icon.php:214
+msgid "underline"
+msgstr ""
+
+#: pro/font-icon.php:215
+msgid "table"
+msgstr ""
+
+#: pro/font-icon.php:216
+msgid "magic"
+msgstr ""
+
+#: pro/font-icon.php:217
+msgid "truck"
+msgstr ""
+
+#: pro/font-icon.php:218
+msgid "pinterest"
+msgstr ""
+
+#: pro/font-icon.php:219
+msgid "pinterest-square"
+msgstr ""
+
+#: pro/font-icon.php:220
+msgid "google-plus-square"
+msgstr ""
+
+#: pro/font-icon.php:221
+msgid "google-plus"
+msgstr ""
+
+#: pro/font-icon.php:222
+msgid "money"
+msgstr ""
+
+#: pro/font-icon.php:223
+msgid "caret-down"
+msgstr ""
+
+#: pro/font-icon.php:224
+msgid "caret-up"
+msgstr ""
+
+#: pro/font-icon.php:225
+msgid "caret-left"
+msgstr ""
+
+#: pro/font-icon.php:226
+msgid "caret-right"
+msgstr ""
+
+#: pro/font-icon.php:227
+msgid "columns"
+msgstr ""
+
+#: pro/font-icon.php:228
+msgid "unsorted"
+msgstr ""
+
+#: pro/font-icon.php:229
+msgid "sort"
+msgstr ""
+
+#: pro/font-icon.php:230
+msgid "sort-down"
+msgstr ""
+
+#: pro/font-icon.php:231
+msgid "sort-desc"
+msgstr ""
+
+#: pro/font-icon.php:232
+msgid "sort-up"
+msgstr ""
+
+#: pro/font-icon.php:233
+msgid "sort-asc"
+msgstr ""
+
+#: pro/font-icon.php:234
+msgid "envelope"
+msgstr ""
+
+#: pro/font-icon.php:235
+msgid "linkedin"
+msgstr ""
+
+#: pro/font-icon.php:236
+msgid "rotate-left"
+msgstr ""
+
+#: pro/font-icon.php:237
+msgid "undo"
+msgstr ""
+
+#: pro/font-icon.php:238
+msgid "legal"
+msgstr ""
+
+#: pro/font-icon.php:239
+msgid "gavel"
+msgstr ""
+
+#: pro/font-icon.php:240
+msgid "dashboard"
+msgstr ""
+
+#: pro/font-icon.php:241
+msgid "tachometer"
+msgstr ""
+
+#: pro/font-icon.php:242
+msgid "comment-o"
+msgstr ""
+
+#: pro/font-icon.php:243
+msgid "comments-o"
+msgstr ""
+
+#: pro/font-icon.php:244
+msgid "flash"
+msgstr ""
+
+#: pro/font-icon.php:245
+msgid "bolt"
+msgstr ""
+
+#: pro/font-icon.php:246
+msgid "sitemap"
+msgstr ""
+
+#: pro/font-icon.php:247
+msgid "umbrella"
+msgstr ""
+
+#: pro/font-icon.php:248
+msgid "paste"
+msgstr ""
+
+#: pro/font-icon.php:249
+msgid "clipboard"
+msgstr ""
+
+#: pro/font-icon.php:250
+msgid "lightbulb-o"
+msgstr ""
+
+#: pro/font-icon.php:251
+msgid "exchange"
+msgstr ""
+
+#: pro/font-icon.php:252
+msgid "cloud-download"
+msgstr ""
+
+#: pro/font-icon.php:253
+msgid "cloud-upload"
+msgstr ""
+
+#: pro/font-icon.php:254
+msgid "user-md"
+msgstr ""
+
+#: pro/font-icon.php:255
+msgid "stethoscope"
+msgstr ""
+
+#: pro/font-icon.php:256
+msgid "suitcase"
+msgstr ""
+
+#: pro/font-icon.php:257
+msgid "bell-o"
+msgstr ""
+
+#: pro/font-icon.php:258
+msgid "coffee"
+msgstr ""
+
+#: pro/font-icon.php:259
+msgid "cutlery"
+msgstr ""
+
+#: pro/font-icon.php:260
+msgid "file-text-o"
+msgstr ""
+
+#: pro/font-icon.php:261
+msgid "building-o"
+msgstr ""
+
+#: pro/font-icon.php:262
+msgid "hospital-o"
+msgstr ""
+
+#: pro/font-icon.php:263
+msgid "ambulance"
+msgstr ""
+
+#: pro/font-icon.php:264
+msgid "medkit"
+msgstr ""
+
+#: pro/font-icon.php:265
+msgid "fighter-jet"
+msgstr ""
+
+#: pro/font-icon.php:266
+msgid "beer"
+msgstr ""
+
+#: pro/font-icon.php:267
+msgid "h-square"
+msgstr ""
+
+#: pro/font-icon.php:268
+msgid "plus-square"
+msgstr ""
+
+#: pro/font-icon.php:269
+msgid "angle-double-left"
+msgstr ""
+
+#: pro/font-icon.php:270
+msgid "angle-double-right"
+msgstr ""
+
+#: pro/font-icon.php:271
+msgid "angle-double-up"
+msgstr ""
+
+#: pro/font-icon.php:272
+msgid "angle-double-down"
+msgstr ""
+
+#: pro/font-icon.php:273
+msgid "angle-left"
+msgstr ""
+
+#: pro/font-icon.php:274
+msgid "angle-right"
+msgstr ""
+
+#: pro/font-icon.php:275
+msgid "angle-up"
+msgstr ""
+
+#: pro/font-icon.php:276
+msgid "angle-down"
+msgstr ""
+
+#: pro/font-icon.php:277
+msgid "desktop"
+msgstr ""
+
+#: pro/font-icon.php:278
+msgid "laptop"
+msgstr ""
+
+#: pro/font-icon.php:279
+msgid "tablet"
+msgstr ""
+
+#: pro/font-icon.php:280
+msgid "mobile-phone"
+msgstr ""
+
+#: pro/font-icon.php:281
+msgid "mobile"
+msgstr ""
+
+#: pro/font-icon.php:282
+msgid "circle-o"
+msgstr ""
+
+#: pro/font-icon.php:283
+msgid "quote-left"
+msgstr ""
+
+#: pro/font-icon.php:284
+msgid "quote-right"
+msgstr ""
+
+#: pro/font-icon.php:285
+msgid "spinner"
+msgstr ""
+
+#: pro/font-icon.php:286
+msgid "circle"
+msgstr ""
+
+#: pro/font-icon.php:287
+msgid "mail-reply"
+msgstr ""
+
+#: pro/font-icon.php:288
+msgid "reply"
+msgstr ""
+
+#: pro/font-icon.php:289
+msgid "github-alt"
+msgstr ""
+
+#: pro/font-icon.php:290
+msgid "folder-o"
+msgstr ""
+
+#: pro/font-icon.php:291
+msgid "folder-open-o"
+msgstr ""
+
+#: pro/font-icon.php:292
+msgid "smile-o"
+msgstr ""
+
+#: pro/font-icon.php:293
+msgid "frown-o"
+msgstr ""
+
+#: pro/font-icon.php:294
+msgid "meh-o"
+msgstr ""
+
+#: pro/font-icon.php:295
+msgid "gamepad"
+msgstr ""
+
+#: pro/font-icon.php:296
+msgid "keyboard-o"
+msgstr ""
+
+#: pro/font-icon.php:297
+msgid "flag-o"
+msgstr ""
+
+#: pro/font-icon.php:298
+msgid "flag-checkered"
+msgstr ""
+
+#: pro/font-icon.php:299
+msgid "terminal"
+msgstr ""
+
+#: pro/font-icon.php:300
+msgid "code"
+msgstr ""
+
+#: pro/font-icon.php:301
+msgid "mail-reply-all"
+msgstr ""
+
+#: pro/font-icon.php:302
+msgid "reply-all"
+msgstr ""
+
+#: pro/font-icon.php:303
+msgid "star-half-empty"
+msgstr ""
+
+#: pro/font-icon.php:304
+msgid "star-half-full"
+msgstr ""
+
+#: pro/font-icon.php:305
+msgid "star-half-o"
+msgstr ""
+
+#: pro/font-icon.php:306
+msgid "location-arrow"
+msgstr ""
+
+#: pro/font-icon.php:307
+msgid "crop"
+msgstr ""
+
+#: pro/font-icon.php:308
+msgid "code-fork"
+msgstr ""
+
+#: pro/font-icon.php:309
+msgid "unlink"
+msgstr ""
+
+#: pro/font-icon.php:310
+msgid "chain-broken"
+msgstr ""
+
+#: pro/font-icon.php:311
+msgid "question"
+msgstr ""
+
+#: pro/font-icon.php:312
+msgid "info"
+msgstr ""
+
+#: pro/font-icon.php:313
+msgid "exclamation"
+msgstr ""
+
+#: pro/font-icon.php:314
+msgid "superscript"
+msgstr ""
+
+#: pro/font-icon.php:315
+msgid "subscript"
+msgstr ""
+
+#: pro/font-icon.php:316
+msgid "eraser"
+msgstr ""
+
+#: pro/font-icon.php:317
+msgid "puzzle-piece"
+msgstr ""
+
+#: pro/font-icon.php:318
+msgid "microphone"
+msgstr ""
+
+#: pro/font-icon.php:319
+msgid "microphone-slash"
+msgstr ""
+
+#: pro/font-icon.php:320
+msgid "shield"
+msgstr ""
+
+#: pro/font-icon.php:321
+msgid "calendar-o"
+msgstr ""
+
+#: pro/font-icon.php:322
+msgid "fire-extinguisher"
+msgstr ""
+
+#: pro/font-icon.php:323
+msgid "rocket"
+msgstr ""
+
+#: pro/font-icon.php:324
+msgid "maxcdn"
+msgstr ""
+
+#: pro/font-icon.php:325
+msgid "chevron-circle-left"
+msgstr ""
+
+#: pro/font-icon.php:326
+msgid "chevron-circle-right"
+msgstr ""
+
+#: pro/font-icon.php:327
+msgid "chevron-circle-up"
+msgstr ""
+
+#: pro/font-icon.php:328
+msgid "chevron-circle-down"
+msgstr ""
+
+#: pro/font-icon.php:329
+msgid "html5"
+msgstr ""
+
+#: pro/font-icon.php:330
+msgid "css3"
+msgstr ""
+
+#: pro/font-icon.php:331
+msgid "anchor"
+msgstr ""
+
+#: pro/font-icon.php:332
+msgid "unlock-alt"
+msgstr ""
+
+#: pro/font-icon.php:333
+msgid "bullseye"
+msgstr ""
+
+#: pro/font-icon.php:334
+msgid "ellipsis-h"
+msgstr ""
+
+#: pro/font-icon.php:335
+msgid "ellipsis-v"
+msgstr ""
+
+#: pro/font-icon.php:336
+msgid "rss-square"
+msgstr ""
+
+#: pro/font-icon.php:337
+msgid "play-circle"
+msgstr ""
+
+#: pro/font-icon.php:338
+msgid "ticket"
+msgstr ""
+
+#: pro/font-icon.php:339
+msgid "minus-square"
+msgstr ""
+
+#: pro/font-icon.php:340
+msgid "minus-square-o"
+msgstr ""
+
+#: pro/font-icon.php:341
+msgid "level-up"
+msgstr ""
+
+#: pro/font-icon.php:342
+msgid "level-down"
+msgstr ""
+
+#: pro/font-icon.php:343
+msgid "check-square"
+msgstr ""
+
+#: pro/font-icon.php:344
+msgid "pencil-square"
+msgstr ""
+
+#: pro/font-icon.php:345
+msgid "external-link-square"
+msgstr ""
+
+#: pro/font-icon.php:346
+msgid "share-square"
+msgstr ""
+
+#: pro/font-icon.php:347
+msgid "compass"
+msgstr ""
+
+#: pro/font-icon.php:348
+msgid "toggle-down"
+msgstr ""
+
+#: pro/font-icon.php:349
+msgid "caret-square-o-down"
+msgstr ""
+
+#: pro/font-icon.php:350
+msgid "toggle-up"
+msgstr ""
+
+#: pro/font-icon.php:351
+msgid "caret-square-o-up"
+msgstr ""
+
+#: pro/font-icon.php:352
+msgid "toggle-right"
+msgstr ""
+
+#: pro/font-icon.php:353
+msgid "caret-square-o-right"
+msgstr ""
+
+#: pro/font-icon.php:354
+msgid "euro"
+msgstr ""
+
+#: pro/font-icon.php:355
+msgid "eur"
+msgstr ""
+
+#: pro/font-icon.php:356
+msgid "gbp"
+msgstr ""
+
+#: pro/font-icon.php:357
+msgid "dollar"
+msgstr ""
+
+#: pro/font-icon.php:358
+msgid "usd"
+msgstr ""
+
+#: pro/font-icon.php:359
+msgid "rupee"
+msgstr ""
+
+#: pro/font-icon.php:360
+msgid "inr"
+msgstr ""
+
+#: pro/font-icon.php:361
+msgid "cny"
+msgstr ""
+
+#: pro/font-icon.php:362
+msgid "rmb"
+msgstr ""
+
+#: pro/font-icon.php:363
+msgid "yen"
+msgstr ""
+
+#: pro/font-icon.php:364
+msgid "jpy"
+msgstr ""
+
+#: pro/font-icon.php:365
+msgid "ruble"
+msgstr ""
+
+#: pro/font-icon.php:366
+msgid "rouble"
+msgstr ""
+
+#: pro/font-icon.php:367
+msgid "rub"
+msgstr ""
+
+#: pro/font-icon.php:368
+msgid "won"
+msgstr ""
+
+#: pro/font-icon.php:369
+msgid "krw"
+msgstr ""
+
+#: pro/font-icon.php:370
+msgid "bitcoin"
+msgstr ""
+
+#: pro/font-icon.php:371
+msgid "btc"
+msgstr ""
+
+#: pro/font-icon.php:372
+msgid "file"
+msgstr ""
+
+#: pro/font-icon.php:373
+msgid "file-text"
+msgstr ""
+
+#: pro/font-icon.php:374
+msgid "sort-alpha-asc"
+msgstr ""
+
+#: pro/font-icon.php:375
+msgid "sort-alpha-desc"
+msgstr ""
+
+#: pro/font-icon.php:376
+msgid "sort-amount-asc"
+msgstr ""
+
+#: pro/font-icon.php:377
+msgid "sort-amount-desc"
+msgstr ""
+
+#: pro/font-icon.php:378
+msgid "sort-numeric-asc"
+msgstr ""
+
+#: pro/font-icon.php:379
+msgid "sort-numeric-desc"
+msgstr ""
+
+#: pro/font-icon.php:380
+msgid "thumbs-up"
+msgstr ""
+
+#: pro/font-icon.php:381
+msgid "thumbs-down"
+msgstr ""
+
+#: pro/font-icon.php:382
+msgid "youtube-square"
+msgstr ""
+
+#: pro/font-icon.php:383
+msgid "youtube"
+msgstr ""
+
+#: pro/font-icon.php:384
+msgid "xing"
+msgstr ""
+
+#: pro/font-icon.php:385
+msgid "xing-square"
+msgstr ""
+
+#: pro/font-icon.php:386
+msgid "youtube-play"
+msgstr ""
+
+#: pro/font-icon.php:387
+msgid "dropbox"
+msgstr ""
+
+#: pro/font-icon.php:388
+msgid "stack-overflow"
+msgstr ""
+
+#: pro/font-icon.php:389
+msgid "instagram"
+msgstr ""
+
+#: pro/font-icon.php:390
+msgid "flickr"
+msgstr ""
+
+#: pro/font-icon.php:391
+msgid "adn"
+msgstr ""
+
+#: pro/font-icon.php:392
+msgid "bitbucket"
+msgstr ""
+
+#: pro/font-icon.php:393
+msgid "bitbucket-square"
+msgstr ""
+
+#: pro/font-icon.php:394
+msgid "tumblr"
+msgstr ""
+
+#: pro/font-icon.php:395
+msgid "tumblr-square"
+msgstr ""
+
+#: pro/font-icon.php:396
+msgid "long-arrow-down"
+msgstr ""
+
+#: pro/font-icon.php:397
+msgid "long-arrow-up"
+msgstr ""
+
+#: pro/font-icon.php:398
+msgid "long-arrow-left"
+msgstr ""
+
+#: pro/font-icon.php:399
+msgid "long-arrow-right"
+msgstr ""
+
+#: pro/font-icon.php:400
+msgid "apple"
+msgstr ""
+
+#: pro/font-icon.php:401
+msgid "windows"
+msgstr ""
+
+#: pro/font-icon.php:402
+msgid "android"
+msgstr ""
+
+#: pro/font-icon.php:403
+msgid "linux"
+msgstr ""
+
+#: pro/font-icon.php:404
+msgid "dribbble"
+msgstr ""
+
+#: pro/font-icon.php:405
+msgid "skype"
+msgstr ""
+
+#: pro/font-icon.php:406
+msgid "foursquare"
+msgstr ""
+
+#: pro/font-icon.php:407
+msgid "trello"
+msgstr ""
+
+#: pro/font-icon.php:408
+msgid "female"
+msgstr ""
+
+#: pro/font-icon.php:409
+msgid "male"
+msgstr ""
+
+#: pro/font-icon.php:410
+msgid "gittip"
+msgstr ""
+
+#: pro/font-icon.php:411
+msgid "gratipay"
+msgstr ""
+
+#: pro/font-icon.php:412
+msgid "sun-o"
+msgstr ""
+
+#: pro/font-icon.php:413
+msgid "moon-o"
+msgstr ""
+
+#: pro/font-icon.php:414
+msgid "archive"
+msgstr ""
+
+#: pro/font-icon.php:415
+msgid "bug"
+msgstr ""
+
+#: pro/font-icon.php:416
+msgid "vk"
+msgstr ""
+
+#: pro/font-icon.php:417
+msgid "weibo"
+msgstr ""
+
+#: pro/font-icon.php:418
+msgid "renren"
+msgstr ""
+
+#: pro/font-icon.php:419
+msgid "pagelines"
+msgstr ""
+
+#: pro/font-icon.php:420
+msgid "stack-exchange"
+msgstr ""
+
+#: pro/font-icon.php:421
+msgid "arrow-circle-o-right"
+msgstr ""
+
+#: pro/font-icon.php:422
+msgid "arrow-circle-o-left"
+msgstr ""
+
+#: pro/font-icon.php:423
+msgid "toggle-left"
+msgstr ""
+
+#: pro/font-icon.php:424
+msgid "caret-square-o-left"
+msgstr ""
+
+#: pro/font-icon.php:425
+msgid "dot-circle-o"
+msgstr ""
+
+#: pro/font-icon.php:426
+msgid "wheelchair"
+msgstr ""
+
+#: pro/font-icon.php:427
+msgid "vimeo-square"
+msgstr ""
+
+#: pro/font-icon.php:428
+msgid "turkish-lira"
+msgstr ""
+
+#: pro/font-icon.php:429
+msgid "try"
+msgstr ""
+
+#: pro/font-icon.php:430
+msgid "plus-square-o"
+msgstr ""
+
+#: pro/font-icon.php:431
+msgid "space-shuttle"
+msgstr ""
+
+#: pro/font-icon.php:432
+msgid "slack"
+msgstr ""
+
+#: pro/font-icon.php:433
+msgid "envelope-square"
+msgstr ""
+
+#: pro/font-icon.php:434
+msgid "wordpress"
+msgstr ""
+
+#: pro/font-icon.php:435
+msgid "openid"
+msgstr ""
+
+#: pro/font-icon.php:436
+msgid "institution"
+msgstr ""
+
+#: pro/font-icon.php:437
+msgid "bank"
+msgstr ""
+
+#: pro/font-icon.php:438
+msgid "university"
+msgstr ""
+
+#: pro/font-icon.php:439
+msgid "mortar-board"
+msgstr ""
+
+#: pro/font-icon.php:440
+msgid "graduation-cap"
+msgstr ""
+
+#: pro/font-icon.php:441
+msgid "yahoo"
+msgstr ""
+
+#: pro/font-icon.php:442
+msgid "google"
+msgstr ""
+
+#: pro/font-icon.php:443
+msgid "reddit"
+msgstr ""
+
+#: pro/font-icon.php:444
+msgid "reddit-square"
+msgstr ""
+
+#: pro/font-icon.php:445
+msgid "stumbleupon-circle"
+msgstr ""
+
+#: pro/font-icon.php:446
+msgid "stumbleupon"
+msgstr ""
+
+#: pro/font-icon.php:447
+msgid "delicious"
+msgstr ""
+
+#: pro/font-icon.php:448
+msgid "digg"
+msgstr ""
+
+#: pro/font-icon.php:449
+msgid "pied-piper-pp"
+msgstr ""
+
+#: pro/font-icon.php:450
+msgid "pied-piper-alt"
+msgstr ""
+
+#: pro/font-icon.php:451
+msgid "drupal"
+msgstr ""
+
+#: pro/font-icon.php:452
+msgid "joomla"
+msgstr ""
+
+#: pro/font-icon.php:453
+msgid "language"
+msgstr ""
+
+#: pro/font-icon.php:454
+msgid "fax"
+msgstr ""
+
+#: pro/font-icon.php:455
+msgid "building"
+msgstr ""
+
+#: pro/font-icon.php:456
+msgid "child"
+msgstr ""
+
+#: pro/font-icon.php:457
+msgid "paw"
+msgstr ""
+
+#: pro/font-icon.php:458
+msgid "spoon"
+msgstr ""
+
+#: pro/font-icon.php:459
+msgid "cube"
+msgstr ""
+
+#: pro/font-icon.php:460
+msgid "cubes"
+msgstr ""
+
+#: pro/font-icon.php:461
+msgid "behance"
+msgstr ""
+
+#: pro/font-icon.php:462
+msgid "behance-square"
+msgstr ""
+
+#: pro/font-icon.php:463
+msgid "steam"
+msgstr ""
+
+#: pro/font-icon.php:464
+msgid "steam-square"
+msgstr ""
+
+#: pro/font-icon.php:465
+msgid "recycle"
+msgstr ""
+
+#: pro/font-icon.php:466
+msgid "automobile"
+msgstr ""
+
+#: pro/font-icon.php:467
+msgid "car"
+msgstr ""
+
+#: pro/font-icon.php:468
+msgid "cab"
+msgstr ""
+
+#: pro/font-icon.php:469
+msgid "taxi"
+msgstr ""
+
+#: pro/font-icon.php:470
+msgid "tree"
+msgstr ""
+
+#: pro/font-icon.php:471
+msgid "spotify"
+msgstr ""
+
+#: pro/font-icon.php:472
+msgid "deviantart"
+msgstr ""
+
+#: pro/font-icon.php:473
+msgid "soundcloud"
+msgstr ""
+
+#: pro/font-icon.php:474
+msgid "database"
+msgstr ""
+
+#: pro/font-icon.php:475
+msgid "file-pdf-o"
+msgstr ""
+
+#: pro/font-icon.php:476
+msgid "file-word-o"
+msgstr ""
+
+#: pro/font-icon.php:477
+msgid "file-excel-o"
+msgstr ""
+
+#: pro/font-icon.php:478
+msgid "file-powerpoint-o"
+msgstr ""
+
+#: pro/font-icon.php:479
+msgid "file-photo-o"
+msgstr ""
+
+#: pro/font-icon.php:480
+msgid "file-picture-o"
+msgstr ""
+
+#: pro/font-icon.php:481
+msgid "file-image-o"
+msgstr ""
+
+#: pro/font-icon.php:482
+msgid "file-zip-o"
+msgstr ""
+
+#: pro/font-icon.php:483
+msgid "file-archive-o"
+msgstr ""
+
+#: pro/font-icon.php:484
+msgid "file-sound-o"
+msgstr ""
+
+#: pro/font-icon.php:485
+msgid "file-audio-o"
+msgstr ""
+
+#: pro/font-icon.php:486
+msgid "file-movie-o"
+msgstr ""
+
+#: pro/font-icon.php:487
+msgid "file-video-o"
+msgstr ""
+
+#: pro/font-icon.php:488
+msgid "file-code-o"
+msgstr ""
+
+#: pro/font-icon.php:489
+msgid "vine"
+msgstr ""
+
+#: pro/font-icon.php:490
+msgid "codepen"
+msgstr ""
+
+#: pro/font-icon.php:491
+msgid "jsfiddle"
+msgstr ""
+
+#: pro/font-icon.php:492
+msgid "life-buoy"
+msgstr ""
+
+#: pro/font-icon.php:493
+msgid "life-saver"
+msgstr ""
+
+#: pro/font-icon.php:494
+msgid "support"
+msgstr ""
+
+#: pro/font-icon.php:495
+msgid "life-ring"
+msgstr ""
+
+#: pro/font-icon.php:496
+msgid "circle-o-notch"
+msgstr ""
+
+#: pro/font-icon.php:497
+msgid "ra"
+msgstr ""
+
+#: pro/font-icon.php:498
+msgid "resistance"
+msgstr ""
+
+#: pro/font-icon.php:499
+msgid "rebel"
+msgstr ""
+
+#: pro/font-icon.php:500
+msgid "ge"
+msgstr ""
+
+#: pro/font-icon.php:501
+msgid "empire"
+msgstr ""
+
+#: pro/font-icon.php:502
+msgid "git-square"
+msgstr ""
+
+#: pro/font-icon.php:503
+msgid "git"
+msgstr ""
+
+#: pro/font-icon.php:504
+msgid "y-combinator-square"
+msgstr ""
+
+#: pro/font-icon.php:505
+msgid "yc-square"
+msgstr ""
+
+#: pro/font-icon.php:506
+msgid "hacker-news"
+msgstr ""
+
+#: pro/font-icon.php:507
+msgid "tencent-weibo"
+msgstr ""
+
+#: pro/font-icon.php:508
+msgid "qq"
+msgstr ""
+
+#: pro/font-icon.php:509
+msgid "wechat"
+msgstr ""
+
+#: pro/font-icon.php:510
+msgid "weixin"
+msgstr ""
+
+#: pro/font-icon.php:511
+msgid "send"
+msgstr ""
+
+#: pro/font-icon.php:512
+msgid "paper-plane"
+msgstr ""
+
+#: pro/font-icon.php:513
+msgid "send-o"
+msgstr ""
+
+#: pro/font-icon.php:514
+msgid "paper-plane-o"
+msgstr ""
+
+#: pro/font-icon.php:515
+msgid "history"
+msgstr ""
+
+#: pro/font-icon.php:516
+msgid "circle-thin"
+msgstr ""
+
+#: pro/font-icon.php:517
+msgid "header"
+msgstr ""
+
+#: pro/font-icon.php:518
+msgid "paragraph"
+msgstr ""
+
+#: pro/font-icon.php:519
+msgid "sliders"
+msgstr ""
+
+#: pro/font-icon.php:520
+msgid "share-alt"
+msgstr ""
+
+#: pro/font-icon.php:521
+msgid "share-alt-square"
+msgstr ""
+
+#: pro/font-icon.php:522
+msgid "bomb"
+msgstr ""
+
+#: pro/font-icon.php:523
+msgid "soccer-ball-o"
+msgstr ""
+
+#: pro/font-icon.php:524
+msgid "futbol-o"
+msgstr ""
+
+#: pro/font-icon.php:525
+msgid "tty"
+msgstr ""
+
+#: pro/font-icon.php:526
+msgid "binoculars"
+msgstr ""
+
+#: pro/font-icon.php:527
+msgid "plug"
+msgstr ""
+
+#: pro/font-icon.php:528
+msgid "slideshare"
+msgstr ""
+
+#: pro/font-icon.php:529
+msgid "twitch"
+msgstr ""
+
+#: pro/font-icon.php:530
+msgid "yelp"
+msgstr ""
+
+#: pro/font-icon.php:531
+msgid "newspaper-o"
+msgstr ""
+
+#: pro/font-icon.php:532
+msgid "wifi"
+msgstr ""
+
+#: pro/font-icon.php:533
+msgid "calculator"
+msgstr ""
+
+#: pro/font-icon.php:534
+msgid "paypal"
+msgstr ""
+
+#: pro/font-icon.php:535
+msgid "google-wallet"
+msgstr ""
+
+#: pro/font-icon.php:536
+msgid "cc-visa"
+msgstr ""
+
+#: pro/font-icon.php:537
+msgid "cc-mastercard"
+msgstr ""
+
+#: pro/font-icon.php:538
+msgid "cc-discover"
+msgstr ""
+
+#: pro/font-icon.php:539
+msgid "cc-amex"
+msgstr ""
+
+#: pro/font-icon.php:540
+msgid "cc-paypal"
+msgstr ""
+
+#: pro/font-icon.php:541
+msgid "cc-stripe"
+msgstr ""
+
+#: pro/font-icon.php:542
+msgid "bell-slash"
+msgstr ""
+
+#: pro/font-icon.php:543
+msgid "bell-slash-o"
+msgstr ""
+
+#: pro/font-icon.php:544
+msgid "trash"
+msgstr ""
+
+#: pro/font-icon.php:545
+msgid "copyright"
+msgstr ""
+
+#: pro/font-icon.php:546
+msgid "at"
+msgstr ""
+
+#: pro/font-icon.php:547
+msgid "eyedropper"
+msgstr ""
+
+#: pro/font-icon.php:548
+msgid "paint-brush"
+msgstr ""
+
+#: pro/font-icon.php:549
+msgid "birthday-cake"
+msgstr ""
+
+#: pro/font-icon.php:550
+msgid "area-chart"
+msgstr ""
+
+#: pro/font-icon.php:551
+msgid "pie-chart"
+msgstr ""
+
+#: pro/font-icon.php:552
+msgid "line-chart"
+msgstr ""
+
+#: pro/font-icon.php:553
+msgid "lastfm"
+msgstr ""
+
+#: pro/font-icon.php:554
+msgid "lastfm-square"
+msgstr ""
+
+#: pro/font-icon.php:555
+msgid "toggle-off"
+msgstr ""
+
+#: pro/font-icon.php:556
+msgid "toggle-on"
+msgstr ""
+
+#: pro/font-icon.php:557
+msgid "bicycle"
+msgstr ""
+
+#: pro/font-icon.php:558
+msgid "bus"
+msgstr ""
+
+#: pro/font-icon.php:559
+msgid "ioxhost"
+msgstr ""
+
+#: pro/font-icon.php:560
+msgid "angellist"
+msgstr ""
+
+#: pro/font-icon.php:561
+msgid "cc"
+msgstr ""
+
+#: pro/font-icon.php:562
+msgid "shekel"
+msgstr ""
+
+#: pro/font-icon.php:563
+msgid "sheqel"
+msgstr ""
+
+#: pro/font-icon.php:564
+msgid "ils"
+msgstr ""
+
+#: pro/font-icon.php:565
+msgid "meanpath"
+msgstr ""
+
+#: pro/font-icon.php:566
+msgid "buysellads"
+msgstr ""
+
+#: pro/font-icon.php:567
+msgid "connectdevelop"
+msgstr ""
+
+#: pro/font-icon.php:568
+msgid "dashcube"
+msgstr ""
+
+#: pro/font-icon.php:569
+msgid "forumbee"
+msgstr ""
+
+#: pro/font-icon.php:570
+msgid "leanpub"
+msgstr ""
+
+#: pro/font-icon.php:571
+msgid "sellsy"
+msgstr ""
+
+#: pro/font-icon.php:572
+msgid "shirtsinbulk"
+msgstr ""
+
+#: pro/font-icon.php:573
+msgid "simplybuilt"
+msgstr ""
+
+#: pro/font-icon.php:574
+msgid "skyatlas"
+msgstr ""
+
+#: pro/font-icon.php:575
+msgid "cart-plus"
+msgstr ""
+
+#: pro/font-icon.php:576
+msgid "cart-arrow-down"
+msgstr ""
+
+#: pro/font-icon.php:577
+msgid "diamond"
+msgstr ""
+
+#: pro/font-icon.php:578
+msgid "ship"
+msgstr ""
+
+#: pro/font-icon.php:579
+msgid "user-secret"
+msgstr ""
+
+#: pro/font-icon.php:580
+msgid "motorcycle"
+msgstr ""
+
+#: pro/font-icon.php:581
+msgid "street-view"
+msgstr ""
+
+#: pro/font-icon.php:582
+msgid "heartbeat"
+msgstr ""
+
+#: pro/font-icon.php:583
+msgid "venus"
+msgstr ""
+
+#: pro/font-icon.php:584
+msgid "mars"
+msgstr ""
+
+#: pro/font-icon.php:585
+msgid "mercury"
+msgstr ""
+
+#: pro/font-icon.php:586
+msgid "intersex"
+msgstr ""
+
+#: pro/font-icon.php:587
+msgid "transgender"
+msgstr ""
+
+#: pro/font-icon.php:588
+msgid "transgender-alt"
+msgstr ""
+
+#: pro/font-icon.php:589
+msgid "venus-double"
+msgstr ""
+
+#: pro/font-icon.php:590
+msgid "mars-double"
+msgstr ""
+
+#: pro/font-icon.php:591
+msgid "venus-mars"
+msgstr ""
+
+#: pro/font-icon.php:592
+msgid "mars-stroke"
+msgstr ""
+
+#: pro/font-icon.php:593
+msgid "mars-stroke-v"
+msgstr ""
+
+#: pro/font-icon.php:594
+msgid "mars-stroke-h"
+msgstr ""
+
+#: pro/font-icon.php:595
+msgid "neuter"
+msgstr ""
+
+#: pro/font-icon.php:596
+msgid "genderless"
+msgstr ""
+
+#: pro/font-icon.php:597
+msgid "facebook-official"
+msgstr ""
+
+#: pro/font-icon.php:598
+msgid "pinterest-p"
+msgstr ""
+
+#: pro/font-icon.php:599
+msgid "whatsapp"
+msgstr ""
+
+#: pro/font-icon.php:600
+msgid "server"
+msgstr ""
+
+#: pro/font-icon.php:601
+msgid "user-plus"
+msgstr ""
+
+#: pro/font-icon.php:602
+msgid "user-times"
+msgstr ""
+
+#: pro/font-icon.php:603
+msgid "hotel"
+msgstr ""
+
+#: pro/font-icon.php:604
+msgid "bed"
+msgstr ""
+
+#: pro/font-icon.php:605
+msgid "viacoin"
+msgstr ""
+
+#: pro/font-icon.php:606
+msgid "train"
+msgstr ""
+
+#: pro/font-icon.php:607
+msgid "subway"
+msgstr ""
+
+#: pro/font-icon.php:608
+msgid "medium"
+msgstr ""
+
+#: pro/font-icon.php:609
+msgid "yc"
+msgstr ""
+
+#: pro/font-icon.php:610
+msgid "y-combinator"
+msgstr ""
+
+#: pro/font-icon.php:611
+msgid "optin-monster"
+msgstr ""
+
+#: pro/font-icon.php:612
+msgid "opencart"
+msgstr ""
+
+#: pro/font-icon.php:613
+msgid "expeditedssl"
+msgstr ""
+
+#: pro/font-icon.php:614
+msgid "battery-4"
+msgstr ""
+
+#: pro/font-icon.php:615
+msgid "battery"
+msgstr ""
+
+#: pro/font-icon.php:616
+msgid "battery-full"
+msgstr ""
+
+#: pro/font-icon.php:617
+msgid "battery-3"
+msgstr ""
+
+#: pro/font-icon.php:618
+msgid "battery-three-quarters"
+msgstr ""
+
+#: pro/font-icon.php:619
+msgid "battery-2"
+msgstr ""
+
+#: pro/font-icon.php:620
+msgid "battery-half"
+msgstr ""
+
+#: pro/font-icon.php:621
+msgid "battery-1"
+msgstr ""
+
+#: pro/font-icon.php:622
+msgid "battery-quarter"
+msgstr ""
+
+#: pro/font-icon.php:623
+msgid "battery-0"
+msgstr ""
+
+#: pro/font-icon.php:624
+msgid "battery-empty"
+msgstr ""
+
+#: pro/font-icon.php:625
+msgid "mouse-pointer"
+msgstr ""
+
+#: pro/font-icon.php:626
+msgid "i-cursor"
+msgstr ""
+
+#: pro/font-icon.php:627
+msgid "object-group"
+msgstr ""
+
+#: pro/font-icon.php:628
+msgid "object-ungroup"
+msgstr ""
+
+#: pro/font-icon.php:629
+msgid "sticky-note"
+msgstr ""
+
+#: pro/font-icon.php:630
+msgid "sticky-note-o"
+msgstr ""
+
+#: pro/font-icon.php:631
+msgid "cc-jcb"
+msgstr ""
+
+#: pro/font-icon.php:632
+msgid "cc-diners-club"
+msgstr ""
+
+#: pro/font-icon.php:633
+msgid "clone"
+msgstr ""
+
+#: pro/font-icon.php:634
+msgid "balance-scale"
+msgstr ""
+
+#: pro/font-icon.php:635
+msgid "hourglass-o"
+msgstr ""
+
+#: pro/font-icon.php:636
+msgid "hourglass-1"
+msgstr ""
+
+#: pro/font-icon.php:637
+msgid "hourglass-start"
+msgstr ""
+
+#: pro/font-icon.php:638
+msgid "hourglass-2"
+msgstr ""
+
+#: pro/font-icon.php:639
+msgid "hourglass-half"
+msgstr ""
+
+#: pro/font-icon.php:640
+msgid "hourglass-3"
+msgstr ""
+
+#: pro/font-icon.php:641
+msgid "hourglass-end"
+msgstr ""
+
+#: pro/font-icon.php:642
+msgid "hourglass"
+msgstr ""
+
+#: pro/font-icon.php:643
+msgid "hand-grab-o"
+msgstr ""
+
+#: pro/font-icon.php:644
+msgid "hand-rock-o"
+msgstr ""
+
+#: pro/font-icon.php:645
+msgid "hand-stop-o"
+msgstr ""
+
+#: pro/font-icon.php:646
+msgid "hand-paper-o"
+msgstr ""
+
+#: pro/font-icon.php:647
+msgid "hand-scissors-o"
+msgstr ""
+
+#: pro/font-icon.php:648
+msgid "hand-lizard-o"
+msgstr ""
+
+#: pro/font-icon.php:649
+msgid "hand-spock-o"
+msgstr ""
+
+#: pro/font-icon.php:650
+msgid "hand-pointer-o"
+msgstr ""
+
+#: pro/font-icon.php:651
+msgid "hand-peace-o"
+msgstr ""
+
+#: pro/font-icon.php:652
+msgid "trademark"
+msgstr ""
+
+#: pro/font-icon.php:653
+msgid "registered"
+msgstr ""
+
+#: pro/font-icon.php:654
+msgid "creative-commons"
+msgstr ""
+
+#: pro/font-icon.php:655
+msgid "gg"
+msgstr ""
+
+#: pro/font-icon.php:656
+msgid "gg-circle"
+msgstr ""
+
+#: pro/font-icon.php:657
+msgid "tripadvisor"
+msgstr ""
+
+#: pro/font-icon.php:658
+msgid "odnoklassniki"
+msgstr ""
+
+#: pro/font-icon.php:659
+msgid "odnoklassniki-square"
+msgstr ""
+
+#: pro/font-icon.php:660
+msgid "get-pocket"
+msgstr ""
+
+#: pro/font-icon.php:661
+msgid "wikipedia-w"
+msgstr ""
+
+#: pro/font-icon.php:662
+msgid "safari"
+msgstr ""
+
+#: pro/font-icon.php:663
+msgid "chrome"
+msgstr ""
+
+#: pro/font-icon.php:664
+msgid "firefox"
+msgstr ""
+
+#: pro/font-icon.php:665
+msgid "opera"
+msgstr ""
+
+#: pro/font-icon.php:666
+msgid "internet-explorer"
+msgstr ""
+
+#: pro/font-icon.php:667
+msgid "tv"
+msgstr ""
+
+#: pro/font-icon.php:668
+msgid "television"
+msgstr ""
+
+#: pro/font-icon.php:669
+msgid "contao"
+msgstr ""
+
+#: pro/font-icon.php:670
+msgid "500px"
+msgstr ""
+
+#: pro/font-icon.php:671
+msgid "amazon"
+msgstr ""
+
+#: pro/font-icon.php:672
+msgid "calendar-plus-o"
+msgstr ""
+
+#: pro/font-icon.php:673
+msgid "calendar-minus-o"
+msgstr ""
+
+#: pro/font-icon.php:674
+msgid "calendar-times-o"
+msgstr ""
+
+#: pro/font-icon.php:675
+msgid "calendar-check-o"
+msgstr ""
+
+#: pro/font-icon.php:676
+msgid "industry"
+msgstr ""
+
+#: pro/font-icon.php:677
+msgid "map-pin"
+msgstr ""
+
+#: pro/font-icon.php:678
+msgid "map-signs"
+msgstr ""
+
+#: pro/font-icon.php:679
+msgid "map-o"
+msgstr ""
+
+#: pro/font-icon.php:680
+msgid "map"
+msgstr ""
+
+#: pro/font-icon.php:681
+msgid "commenting"
+msgstr ""
+
+#: pro/font-icon.php:682
+msgid "commenting-o"
+msgstr ""
+
+#: pro/font-icon.php:683
+msgid "houzz"
+msgstr ""
+
+#: pro/font-icon.php:684
+msgid "vimeo"
+msgstr ""
+
+#: pro/font-icon.php:685
+msgid "black-tie"
+msgstr ""
+
+#: pro/font-icon.php:686
+msgid "fonticons"
+msgstr ""
+
+#: pro/font-icon.php:687
+msgid "reddit-alien"
+msgstr ""
+
+#: pro/font-icon.php:688
+msgid "edge"
+msgstr ""
+
+#: pro/font-icon.php:689
+msgid "credit-card-alt"
+msgstr ""
+
+#: pro/font-icon.php:690
+msgid "codiepie"
+msgstr ""
+
+#: pro/font-icon.php:691
+msgid "modx"
+msgstr ""
+
+#: pro/font-icon.php:692
+msgid "fort-awesome"
+msgstr ""
+
+#: pro/font-icon.php:693
+msgid "usb"
+msgstr ""
+
+#: pro/font-icon.php:694
+msgid "product-hunt"
+msgstr ""
+
+#: pro/font-icon.php:695
+msgid "mixcloud"
+msgstr ""
+
+#: pro/font-icon.php:696
+msgid "scribd"
+msgstr ""
+
+#: pro/font-icon.php:697
+msgid "pause-circle"
+msgstr ""
+
+#: pro/font-icon.php:698
+msgid "pause-circle-o"
+msgstr ""
+
+#: pro/font-icon.php:699
+msgid "stop-circle"
+msgstr ""
+
+#: pro/font-icon.php:700
+msgid "stop-circle-o"
+msgstr ""
+
+#: pro/font-icon.php:701
+msgid "shopping-bag"
+msgstr ""
+
+#: pro/font-icon.php:702
+msgid "shopping-basket"
+msgstr ""
+
+#: pro/font-icon.php:703
+msgid "hashtag"
+msgstr ""
+
+#: pro/font-icon.php:704
+msgid "bluetooth"
+msgstr ""
+
+#: pro/font-icon.php:705
+msgid "bluetooth-b"
+msgstr ""
+
+#: pro/font-icon.php:706
+msgid "percent"
+msgstr ""
+
+#: pro/font-icon.php:707
+msgid "gitlab"
+msgstr ""
+
+#: pro/font-icon.php:708
+msgid "wpbeginner"
+msgstr ""
+
+#: pro/font-icon.php:709
+msgid "wpforms"
+msgstr ""
+
+#: pro/font-icon.php:710
+msgid "envira"
+msgstr ""
+
+#: pro/font-icon.php:711
+msgid "universal-access"
+msgstr ""
+
+#: pro/font-icon.php:712
+msgid "wheelchair-alt"
+msgstr ""
+
+#: pro/font-icon.php:713
+msgid "question-circle-o"
+msgstr ""
+
+#: pro/font-icon.php:714
+msgid "blind"
+msgstr ""
+
+#: pro/font-icon.php:715
+msgid "audio-description"
+msgstr ""
+
+#: pro/font-icon.php:716
+msgid "volume-control-phone"
+msgstr ""
+
+#: pro/font-icon.php:717
+msgid "braille"
+msgstr ""
+
+#: pro/font-icon.php:718
+msgid "assistive-listening-systems"
+msgstr ""
+
+#: pro/font-icon.php:719
+msgid "asl-interpreting"
+msgstr ""
+
+#: pro/font-icon.php:720
+msgid "american-sign-language-interpreting"
+msgstr ""
+
+#: pro/font-icon.php:721
+msgid "deafness"
+msgstr ""
+
+#: pro/font-icon.php:722
+msgid "hard-of-hearing"
+msgstr ""
+
+#: pro/font-icon.php:723
+msgid "deaf"
+msgstr ""
+
+#: pro/font-icon.php:724
+msgid "glide"
+msgstr ""
+
+#: pro/font-icon.php:725
+msgid "glide-g"
+msgstr ""
+
+#: pro/font-icon.php:726
+msgid "signing"
+msgstr ""
+
+#: pro/font-icon.php:727
+msgid "sign-language"
+msgstr ""
+
+#: pro/font-icon.php:728
+msgid "low-vision"
+msgstr ""
+
+#: pro/font-icon.php:729
+msgid "viadeo"
+msgstr ""
+
+#: pro/font-icon.php:730
+msgid "viadeo-square"
+msgstr ""
+
+#: pro/font-icon.php:731
+msgid "snapchat"
+msgstr ""
+
+#: pro/font-icon.php:732
+msgid "snapchat-ghost"
+msgstr ""
+
+#: pro/font-icon.php:733
+msgid "snapchat-square"
+msgstr ""
+
+#: pro/font-icon.php:734
+msgid "pied-piper"
+msgstr ""
+
+#: pro/font-icon.php:735
+msgid "first-order"
+msgstr ""
+
+#: pro/font-icon.php:736
+msgid "yoast"
+msgstr ""
+
+#: pro/font-icon.php:737
+msgid "themeisle"
+msgstr ""
+
+#: pro/font-icon.php:738
+msgid "google-plus-circle"
+msgstr ""
+
+#: pro/font-icon.php:739
+msgid "google-plus-official"
+msgstr ""
+
+#: pro/font-icon.php:740
+msgid "font-awesome"
+msgstr ""
+
+#: pro/font-icon.php:741
+msgid "handshake-o"
+msgstr ""
+
+#: pro/font-icon.php:742
+msgid "envelope-open"
+msgstr ""
+
+#: pro/font-icon.php:743
+msgid "envelope-open-o"
+msgstr ""
+
+#: pro/font-icon.php:744
+msgid "linode"
+msgstr ""
+
+#: pro/font-icon.php:745
+msgid "address-book"
+msgstr ""
+
+#: pro/font-icon.php:746
+msgid "address-book-o"
+msgstr ""
+
+#: pro/font-icon.php:747
+msgid "vcard"
+msgstr ""
+
+#: pro/font-icon.php:748
+msgid "address-card"
+msgstr ""
+
+#: pro/font-icon.php:749
+msgid "vcard-o"
+msgstr ""
+
+#: pro/font-icon.php:750
+msgid "address-card-o"
+msgstr ""
+
+#: pro/font-icon.php:751
+msgid "user-circle"
+msgstr ""
+
+#: pro/font-icon.php:752
+msgid "user-circle-o"
+msgstr ""
+
+#: pro/font-icon.php:753
+msgid "user-o"
+msgstr ""
+
+#: pro/font-icon.php:754
+msgid "id-badge"
+msgstr ""
+
+#: pro/font-icon.php:755
+msgid "drivers-license"
+msgstr ""
+
+#: pro/font-icon.php:756
+msgid "id-card"
+msgstr ""
+
+#: pro/font-icon.php:757
+msgid "drivers-license-o"
+msgstr ""
+
+#: pro/font-icon.php:758
+msgid "id-card-o"
+msgstr ""
+
+#: pro/font-icon.php:759
+msgid "quora"
+msgstr ""
+
+#: pro/font-icon.php:760
+msgid "free-code-camp"
+msgstr ""
+
+#: pro/font-icon.php:761
+msgid "telegram"
+msgstr ""
+
+#: pro/font-icon.php:762
+msgid "thermometer-4"
+msgstr ""
+
+#: pro/font-icon.php:763
+msgid "thermometer"
+msgstr ""
+
+#: pro/font-icon.php:764
+msgid "thermometer-full"
+msgstr ""
+
+#: pro/font-icon.php:765
+msgid "thermometer-3"
+msgstr ""
+
+#: pro/font-icon.php:766
+msgid "thermometer-three-quarters"
+msgstr ""
+
+#: pro/font-icon.php:767
+msgid "thermometer-2"
+msgstr ""
+
+#: pro/font-icon.php:768
+msgid "thermometer-half"
+msgstr ""
+
+#: pro/font-icon.php:769
+msgid "thermometer-1"
+msgstr ""
+
+#: pro/font-icon.php:770
+msgid "thermometer-quarter"
+msgstr ""
+
+#: pro/font-icon.php:771
+msgid "thermometer-0"
+msgstr ""
+
+#: pro/font-icon.php:772
+msgid "thermometer-empty"
+msgstr ""
+
+#: pro/font-icon.php:773
+msgid "shower"
+msgstr ""
+
+#: pro/font-icon.php:774
+msgid "bathtub"
+msgstr ""
+
+#: pro/font-icon.php:775
+msgid "bath"
+msgstr ""
+
+#: pro/font-icon.php:776
+msgid "podcast"
+msgstr ""
+
+#: pro/font-icon.php:777
+msgid "window-maximize"
+msgstr ""
+
+#: pro/font-icon.php:778
+msgid "window-minimize"
+msgstr ""
+
+#: pro/font-icon.php:779
+msgid "window-restore"
+msgstr ""
+
+#: pro/font-icon.php:780
+msgid "times-rectangle"
+msgstr ""
+
+#: pro/font-icon.php:781
+msgid "window-close"
+msgstr ""
+
+#: pro/font-icon.php:782
+msgid "times-rectangle-o"
+msgstr ""
+
+#: pro/font-icon.php:783
+msgid "window-close-o"
+msgstr ""
+
+#: pro/font-icon.php:784
+msgid "bandcamp"
+msgstr ""
+
+#: pro/font-icon.php:785
+msgid "grav"
+msgstr ""
+
+#: pro/font-icon.php:786
+msgid "etsy"
+msgstr ""
+
+#: pro/font-icon.php:787
+msgid "imdb"
+msgstr ""
+
+#: pro/font-icon.php:788
+msgid "ravelry"
+msgstr ""
+
+#: pro/font-icon.php:789
+msgid "eercast"
+msgstr ""
+
+#: pro/font-icon.php:790
+msgid "microchip"
+msgstr ""
+
+#: pro/font-icon.php:791
+msgid "snowflake-o"
+msgstr ""
+
+#: pro/font-icon.php:792
+msgid "superpowers"
+msgstr ""
+
+#: pro/font-icon.php:793
+msgid "wpexplorer"
+msgstr ""
+
+#: pro/font-icon.php:794
+msgid "meetup"
+msgstr ""
+
+#: pro/powen-pro.php:38
 msgid "Loading..."
 msgstr ""
 
-#: pro/powen-pro.php:51
+#: pro/powen-pro.php:52
 msgid "Pro Menu"
 msgstr ""
 
-#: pro/powen-pro.php:52
+#: pro/powen-pro.php:53
 msgid "Footer Menu"
 msgstr ""
 
