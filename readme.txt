@@ -136,3 +136,10 @@ GITHUB URL
 ==========
 
 	@Link - https://github.com/mahvash-fatima/powen-lite
+
+== Changelog ==
+
+= 1.7.7 - November 25, 2016 =
+* Maintenance release
+CSS Fixes( Remove unused variables ).
+Add README.md file.
