@@ -143,3 +143,9 @@ GITHUB URL
 * Maintenance release
 CSS Fixes( Remove unused variables ).
 Add README.md file.
+
+== Changelog ==
+
+= 1.7.8 - November 28, 2016 =
+* Maintenance release
+CSS Fixes( Remove list style in comment ).
