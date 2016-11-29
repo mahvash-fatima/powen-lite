@@ -883,6 +883,26 @@ input[type="submit"] {
   display: inline-block;
 }
 
+.page-links > .page-links-title {
+  border: 0;
+  height: auto;
+  margin: 0;
+  padding-right: 0.5rem;
+  width: auto;
+}
+
+.page-links a, .page-links > span {
+  border: 1px solid;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 0.8125rem;
+  height: 1.5rem;
+  line-height: 1.375rem;
+  margin-right: 0.25rem;
+  text-align: center;
+  width: 1.5rem;
+}
+
 .powen-pagination .current, .powen-pagination a {
   border: 0.0625rem solid #cccccc;
   border-radius: 3px;

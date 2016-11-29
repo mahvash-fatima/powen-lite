@@ -32,15 +32,18 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php powen_content(); ?>
-
 		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'powen-lite' ),
-				'after'  => '</div>',
-			) );
-		?>
+		powen_content();
 
+		wp_link_pages( array(
+			'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'powen-lite' ) . '</span>',
+			'after'       => '</div>',
+			'link_before' => '<span>',
+			'link_after'  => '</span>',
+			'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'powen-lite' ) . ' </span>%',
+			'separator'   => '<span class="screen-reader-text">, </span>',
+		) );
+		?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
