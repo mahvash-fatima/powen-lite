@@ -6,6 +6,12 @@
 	}
 }
 
+.comment-list {
+	.children {
+		list-style: none;
+	}
+}
+
 .bypostauthor {
 	display: block;
 }
@@ -45,7 +51,7 @@
 	b a {
 		color: #000000;
 	}
-	img {
+	.avatar {
 		float: left;
 		margin-right: rem-calc(10);
 	}

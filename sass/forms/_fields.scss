@@ -63,10 +63,12 @@ textarea {
 	float: right;
 	position: relative;
 	margin-right: rem-calc(10);
+	margin-left: rem-calc(10);
 	form {
 		position: absolute;
 		top: 0;
 		right: 0;
+		z-index: 1;
 	}
 	input[type="search"] {
 		border: none;
@@ -77,6 +79,16 @@ textarea {
 	}
 	input[type="submit"] {
 		display: none;
+	}
+	.fa-search {
+		z-index: 2;
+		position: absolute;
+		top: rem-calc(5);
+		right: rem-calc(5);
+		cursor: pointer;
+		transition: 0.5s;
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
 	}
 }
 

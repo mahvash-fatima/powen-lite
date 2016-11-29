@@ -4,7 +4,7 @@ Theme URI: http://supernovathemes.com/powen-theme/
 Author: Mahvash Fatima
 Author URI: http://supernovathemes.com
 Description: Powen Lite has been specially designed for blogging websites however due to its clean design and plenty of customization options, it can easily be customized for any purpose.
-Version: 1.7.2
+Version: 1.7.8
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: powen-lite
@@ -421,11 +421,13 @@ textarea {
   float: right;
   position: relative;
   margin-right: 0.625rem;
+  margin-left: 0.625rem;
 }
 .powen-search-box-top form {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 1;
 }
 .powen-search-box-top input[type="search"] {
   border: none;
@@ -436,6 +438,16 @@ textarea {
 }
 .powen-search-box-top input[type="submit"] {
   display: none;
+}
+.powen-search-box-top .fa-search {
+  z-index: 2;
+  position: absolute;
+  top: 0.3125rem;
+  right: 0.3125rem;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
 }
 
 .widget-area input[type="email"],
@@ -966,6 +978,10 @@ input[type="submit"] {
   word-wrap: break-word;
 }
 
+.comment-list .children {
+  list-style: none;
+}
+
 .bypostauthor {
   display: block;
 }
@@ -1003,7 +1019,7 @@ input[type="submit"] {
 .comment-author b a {
   color: #000000;
 }
-.comment-author img {
+.comment-author .avatar {
   float: left;
   margin-right: 0.625rem;
 }
@@ -1337,6 +1353,9 @@ ul, ol {
 .site-title {
   line-height: 2;
 }
+.site-title a:hover {
+  opacity: 0.6;
+}
 
 .entry-header:after,
 .widget-title:after {
@@ -1350,16 +1369,6 @@ ul, ol {
 
 .powen-nav {
   padding: 1.125rem 0;
-}
-
-.fa-search {
-  position: absolute;
-  top: 0.3125rem;
-  right: 0.3125rem;
-  cursor: pointer;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
 }
 
 .article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .error-404, .site-main .post-navigation, .paging-navigation {
@@ -1472,6 +1481,12 @@ ul, ol {
   padding: 0.3125rem;
   display: inline-block;
   color: #aaaaaa;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
 .entry-footer .tags-links {
   display: inline;
