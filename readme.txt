@@ -161,3 +161,4 @@ CSS Fixes( Add style in pagination ).
 = 1.8.0 - November 30, 2016 =
 * Maintenance release
 CSS Fixes( Add style in comment ).
+
