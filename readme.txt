@@ -144,21 +144,19 @@ GITHUB URL
 CSS Fixes( Remove unused variables ).
 Add README.md file.
 
-== Changelog ==
-
 = 1.7.8 - November 28, 2016 =
 * Maintenance release
 CSS Fixes( Remove list style in comment ).
-
-== Changelog ==
 
 = 1.7.9 - November 29, 2016 =
 * Maintenance release
 CSS Fixes( Add style in pagination ).
 
-== Changelog ==
-
 = 1.8.0 - November 30, 2016 =
 * Maintenance release
 CSS Fixes( Add style in comment ).
+
+= 1.8.1 - November 30, 2016 =
+* Maintenance release
+Fix post navigation issue
 
