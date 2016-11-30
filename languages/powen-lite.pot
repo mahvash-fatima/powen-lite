@@ -2,15 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-<<<<<<< HEAD
-"Project-Id-Version: Powen Lite 1.7.2\n"
+"Project-Id-Version: Powen Lite 1.7.8\n"
 "Report-Msgid-Bugs-To: http://supernovathemes.com/powen-theme\n"
-"POT-Creation-Date: 2016-11-29 05:14:19+00:00\n"
-=======
-"Project-Id-Version: Powen Lite 1.7.7\n"
-"Report-Msgid-Bugs-To: http://supernovathemes.com/powen-theme\n"
-"POT-Creation-Date: 2016-11-28 01:04:36+00:00\n"
->>>>>>> master
+"POT-Creation-Date: 2016-11-30 02:58:24+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -412,11 +406,16 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: content-page.php:30 content-single.php:37 content.php:39
+#: content-page.php:31 content-single.php:38 content.php:39
 msgid "Pages:"
 msgstr ""
 
-#: content-page.php:37 inc/template-tags.php:137
+#: content-page.php:35 content-single.php:42 content.php:43
+#: lib/breadcrumb.php:126
+msgid "Page"
+msgstr ""
+
+#: content-page.php:42 inc/template-tags.php:137
 msgid "Edit"
 msgstr ""
 
@@ -1001,10 +1000,6 @@ msgstr ""
 
 #: lib/breadcrumb.php:121
 msgid "Author: "
-msgstr ""
-
-#: lib/breadcrumb.php:126
-msgid "Page"
 msgstr ""
 
 #: lib/breadcrumb.php:131

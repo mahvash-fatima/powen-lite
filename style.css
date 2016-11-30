@@ -222,7 +222,7 @@ big {
 }
 
 .reply {
-  padding: 1.618rem;
+  margin-top: 0.625rem;
 }
 
 /*--------------------------------------------------------------
@@ -978,6 +978,13 @@ input[type="submit"] {
   word-wrap: break-word;
 }
 
+.comment-list article,
+.comment-list .pingback,
+.comment-list .trackback {
+  border-top: 1px solid #f1f1f1;
+  padding: 1.875rem 0;
+}
+
 .comment-list .children {
   list-style: none;
 }
@@ -994,10 +1001,6 @@ input[type="submit"] {
   margin-bottom: 3.125rem;
 }
 
-.comment-body {
-  margin-bottom: 1.25rem;
-  border-bottom: 1px solid #f2f2f2;
-}
 .comment-body img {
   border-radius: 100%;
 }
@@ -1504,7 +1507,6 @@ ul, ol {
   padding: 0;
 }
 .comment-list > .comment {
-  padding: 1.618rem;
   background-color: rgba(255, 255, 255, 0.2);
 }
 

@@ -286,7 +286,6 @@ ul, ol {
 	margin: 0;
 	padding: 0;
 	> .comment {
-		padding: $default_gutter;
 		@include comment();
 	}
 }
