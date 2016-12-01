@@ -159,3 +159,7 @@ CSS Fixes( Add style in comment ).
 = 1.8.1 - November 30, 2016 =
 * Maintenance release
 Fix post navigation issue 
+
+= 1.8.2 - December 01, 2016 =
+* Maintenance release
+CSS Fixes( Add style in gallery ).
