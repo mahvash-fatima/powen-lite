@@ -52,7 +52,7 @@ ul, ol {
 }
 
 .powen-primary-nav, .powen-social-icon{
-    display: inline-block;
+	display: inline-block;
 }
 .powen-main-nav {float: right;}
 .powen-primary-nav i:before, .powen-main-nav i:before, .powen-social-icon i:before {
@@ -72,10 +72,6 @@ ul, ol {
 
 .powen-footer-widgets {
 	overflow: hidden;
-}
-
-.gallery img {
-	margin-bottom: rem-calc(35);
 }
 
 .widget-container {
@@ -105,7 +101,7 @@ ul, ol {
 	padding: rem-calc(15);
 	text-align: center;
 	img{
-	    max-height: 450px;
+		max-height: 450px;
 	}
 }
 
@@ -175,9 +171,9 @@ ul, ol {
 	overflow: hidden;
 	@include main_panel();
 	img {
-	margin: 0 auto;
-	display: block;
-	width: 100%;
+		margin: 0 auto;
+		display: block;
+		width: 100%;
 	}
 }
 
@@ -505,12 +501,12 @@ ul, ol {
 	.two-thirds,
 	.three-quarters,
 	.full-width {
-	    width: 100%;
-	    margin: 0;
+		width: 100%;
+		margin: 0;
 	}
 	/* padding adjustments */
 	.widget-area {
-	    padding: rem-calc(0 0 10 0);
+		padding: rem-calc(0 0 10 0);
 	}
 
 	//Font Size
