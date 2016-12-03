@@ -148,7 +148,7 @@ ul, ol {
 	@include main_panel();
 }
 
-.article-hentry {
+.article-hentry, .page-header {
 	@include sticky_post();
 }
 

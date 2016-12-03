@@ -1387,7 +1387,7 @@ ul, ol {
   background-color: #ffffff;
 }
 
-.article-hentry {
+.article-hentry, .page-header {
   margin: 0 0 1.618rem 0;
 }
 

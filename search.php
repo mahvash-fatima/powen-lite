@@ -13,21 +13,6 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
-			<div class="powen-featured-img">
-				<a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark" >
-				<!-- Featured Images -->
-				<?php if ( has_post_thumbnail() )
-				{
-					if( powen_mod( 'sidebar_position' ) === 'no-sidebar' ){
-						the_post_thumbnail('full');
-					}else{
-						the_post_thumbnail('large');
-					}
-				}
-				?>
-				</a>
-			</div>
-			<div class="article-hentry">
 
 			<header class="page-header">
 				<h2 class="page-title"><?php printf( __( 'Search Results for: %s', 'powen-lite' ), '<span>' . get_search_query() . '</span>' ); ?></h2>
@@ -58,8 +43,6 @@ get_header(); ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php endif; ?>
-
-		</div><!-- .article-hentry -->
 
 		</main><!-- #main -->
 	</section><!-- #primary -->
