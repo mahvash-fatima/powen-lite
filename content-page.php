@@ -20,7 +20,7 @@
 
 	<div class="article-hentry">
 	<header class="entry-header">
-		<?php esc_attr( the_title( '<h2 class="entry-title">', '</h2>' ) ); ?>
+		<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
