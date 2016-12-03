@@ -163,3 +163,8 @@ Fix post navigation issue
 = 1.8.2 - December 01, 2016 =
 * Maintenance release
 CSS Fixes( Add style in gallery ).
+
+= 1.8.3 - December 03, 2016 =
+* Maintenance release
+CSS Fixes( Add style in search page ).
+Remove esc_attr from the_title.
