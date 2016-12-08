@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Powen Lite 1.8.2\n"
+"Project-Id-Version: Powen Lite 1.8.3\n"
 "Report-Msgid-Bugs-To: http://supernovathemes.com/powen-theme\n"
-"POT-Creation-Date: 2016-12-03 02:58:30+00:00\n"
+"POT-Creation-Date: 2016-12-08 19:17:47+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -406,12 +406,13 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: content-page.php:31 content-single.php:38 content.php:39
+#: content-page.php:31 content-search.php:38 content-single.php:38
+#: content.php:39
 msgid "Pages:"
 msgstr ""
 
-#: content-page.php:35 content-single.php:42 content.php:43
-#: lib/breadcrumb.php:126
+#: content-page.php:35 content-search.php:42 content-single.php:42
+#: content.php:43 lib/breadcrumb.php:126
 msgid "Page"
 msgstr ""
 
@@ -1298,3134 +1299,3138 @@ msgid "Google Fonts"
 msgstr ""
 
 #: pro/font-icon.php:12
-msgid "glass"
+msgid "---select---"
 msgstr ""
 
 #: pro/font-icon.php:13
-msgid "music"
+msgid "glass"
 msgstr ""
 
 #: pro/font-icon.php:14
-msgid "search"
+msgid "music"
 msgstr ""
 
 #: pro/font-icon.php:15
-msgid "envelope-o"
+msgid "search"
 msgstr ""
 
 #: pro/font-icon.php:16
-msgid "heart"
+msgid "envelope-o"
 msgstr ""
 
 #: pro/font-icon.php:17
-msgid "star"
+msgid "heart"
 msgstr ""
 
 #: pro/font-icon.php:18
-msgid "star-o"
+msgid "star"
 msgstr ""
 
 #: pro/font-icon.php:19
-msgid "user"
+msgid "star-o"
 msgstr ""
 
 #: pro/font-icon.php:20
-msgid "film"
+msgid "user"
 msgstr ""
 
 #: pro/font-icon.php:21
-msgid "th-large"
+msgid "film"
 msgstr ""
 
 #: pro/font-icon.php:22
-msgid "th"
+msgid "th-large"
 msgstr ""
 
 #: pro/font-icon.php:23
-msgid "th-list"
+msgid "th"
 msgstr ""
 
 #: pro/font-icon.php:24
-msgid "check"
+msgid "th-list"
 msgstr ""
 
 #: pro/font-icon.php:25
-msgid "remove"
+msgid "check"
 msgstr ""
 
 #: pro/font-icon.php:26
-msgid "close"
+msgid "remove"
 msgstr ""
 
 #: pro/font-icon.php:27
-msgid "times"
+msgid "close"
 msgstr ""
 
 #: pro/font-icon.php:28
-msgid "search-plus"
+msgid "times"
 msgstr ""
 
 #: pro/font-icon.php:29
-msgid "search-minus"
+msgid "search-plus"
 msgstr ""
 
 #: pro/font-icon.php:30
-msgid "power-off"
+msgid "search-minus"
 msgstr ""
 
 #: pro/font-icon.php:31
-msgid "signal"
+msgid "power-off"
 msgstr ""
 
 #: pro/font-icon.php:32
-msgid "gear"
+msgid "signal"
 msgstr ""
 
 #: pro/font-icon.php:33
-msgid "cog"
+msgid "gear"
 msgstr ""
 
 #: pro/font-icon.php:34
-msgid "trash-o"
+msgid "cog"
 msgstr ""
 
 #: pro/font-icon.php:35
-msgid "home"
+msgid "trash-o"
 msgstr ""
 
 #: pro/font-icon.php:36
-msgid "file-o"
+msgid "home"
 msgstr ""
 
 #: pro/font-icon.php:37
-msgid "clock-o"
+msgid "file-o"
 msgstr ""
 
 #: pro/font-icon.php:38
-msgid "road"
+msgid "clock-o"
 msgstr ""
 
 #: pro/font-icon.php:39
-msgid "download"
+msgid "road"
 msgstr ""
 
 #: pro/font-icon.php:40
-msgid "arrow-circle-o-down"
+msgid "download"
 msgstr ""
 
 #: pro/font-icon.php:41
-msgid "arrow-circle-o-up"
+msgid "arrow-circle-o-down"
 msgstr ""
 
 #: pro/font-icon.php:42
-msgid "inbox"
+msgid "arrow-circle-o-up"
 msgstr ""
 
 #: pro/font-icon.php:43
-msgid "play-circle-o"
+msgid "inbox"
 msgstr ""
 
 #: pro/font-icon.php:44
-msgid "rotate-right"
+msgid "play-circle-o"
 msgstr ""
 
 #: pro/font-icon.php:45
-msgid "repeat"
+msgid "rotate-right"
 msgstr ""
 
 #: pro/font-icon.php:46
-msgid "refresh"
+msgid "repeat"
 msgstr ""
 
 #: pro/font-icon.php:47
-msgid "list-alt"
+msgid "refresh"
 msgstr ""
 
 #: pro/font-icon.php:48
-msgid "lock"
+msgid "list-alt"
 msgstr ""
 
 #: pro/font-icon.php:49
-msgid "flag"
+msgid "lock"
 msgstr ""
 
 #: pro/font-icon.php:50
-msgid "headphones"
+msgid "flag"
 msgstr ""
 
 #: pro/font-icon.php:51
-msgid "volume-off"
+msgid "headphones"
 msgstr ""
 
 #: pro/font-icon.php:52
-msgid "volume-down"
+msgid "volume-off"
 msgstr ""
 
 #: pro/font-icon.php:53
-msgid "volume-up"
+msgid "volume-down"
 msgstr ""
 
 #: pro/font-icon.php:54
-msgid "qrcode"
+msgid "volume-up"
 msgstr ""
 
 #: pro/font-icon.php:55
-msgid "barcode"
+msgid "qrcode"
 msgstr ""
 
 #: pro/font-icon.php:56
-msgid "tag"
+msgid "barcode"
 msgstr ""
 
 #: pro/font-icon.php:57
-msgid "tags"
+msgid "tag"
 msgstr ""
 
 #: pro/font-icon.php:58
-msgid "book"
+msgid "tags"
 msgstr ""
 
 #: pro/font-icon.php:59
-msgid "bookmark"
+msgid "book"
 msgstr ""
 
 #: pro/font-icon.php:60
-msgid "print"
+msgid "bookmark"
 msgstr ""
 
 #: pro/font-icon.php:61
-msgid "camera"
+msgid "print"
 msgstr ""
 
 #: pro/font-icon.php:62
-msgid "font"
+msgid "camera"
 msgstr ""
 
 #: pro/font-icon.php:63
-msgid "bold"
+msgid "font"
 msgstr ""
 
 #: pro/font-icon.php:64
-msgid "italic"
+msgid "bold"
 msgstr ""
 
 #: pro/font-icon.php:65
-msgid "text-height"
+msgid "italic"
 msgstr ""
 
 #: pro/font-icon.php:66
-msgid "text-width"
+msgid "text-height"
 msgstr ""
 
 #: pro/font-icon.php:67
-msgid "align-left"
+msgid "text-width"
 msgstr ""
 
 #: pro/font-icon.php:68
-msgid "align-center"
+msgid "align-left"
 msgstr ""
 
 #: pro/font-icon.php:69
-msgid "align-right"
+msgid "align-center"
 msgstr ""
 
 #: pro/font-icon.php:70
-msgid "align-justify"
+msgid "align-right"
 msgstr ""
 
 #: pro/font-icon.php:71
-msgid "list"
+msgid "align-justify"
 msgstr ""
 
 #: pro/font-icon.php:72
-msgid "dedent"
+msgid "list"
 msgstr ""
 
 #: pro/font-icon.php:73
-msgid "outdent"
+msgid "dedent"
 msgstr ""
 
 #: pro/font-icon.php:74
-msgid "indent"
+msgid "outdent"
 msgstr ""
 
 #: pro/font-icon.php:75
-msgid "video-camera"
+msgid "indent"
 msgstr ""
 
 #: pro/font-icon.php:76
-msgid "photo"
+msgid "video-camera"
 msgstr ""
 
 #: pro/font-icon.php:77
-msgid "image"
+msgid "photo"
 msgstr ""
 
 #: pro/font-icon.php:78
-msgid "picture-o"
+msgid "image"
 msgstr ""
 
 #: pro/font-icon.php:79
-msgid "pencil"
+msgid "picture-o"
 msgstr ""
 
 #: pro/font-icon.php:80
-msgid "map-marker"
+msgid "pencil"
 msgstr ""
 
 #: pro/font-icon.php:81
-msgid "adjust"
+msgid "map-marker"
 msgstr ""
 
 #: pro/font-icon.php:82
-msgid "tint"
+msgid "adjust"
 msgstr ""
 
 #: pro/font-icon.php:83
-msgid "edit"
+msgid "tint"
 msgstr ""
 
 #: pro/font-icon.php:84
-msgid "pencil-square-o"
+msgid "edit"
 msgstr ""
 
 #: pro/font-icon.php:85
-msgid "share-square-o"
+msgid "pencil-square-o"
 msgstr ""
 
 #: pro/font-icon.php:86
-msgid "check-square-o"
+msgid "share-square-o"
 msgstr ""
 
 #: pro/font-icon.php:87
-msgid "arrows"
+msgid "check-square-o"
 msgstr ""
 
 #: pro/font-icon.php:88
-msgid "step-backward"
+msgid "arrows"
 msgstr ""
 
 #: pro/font-icon.php:89
-msgid "fast-backward"
+msgid "step-backward"
 msgstr ""
 
 #: pro/font-icon.php:90
-msgid "backward"
+msgid "fast-backward"
 msgstr ""
 
 #: pro/font-icon.php:91
-msgid "play"
+msgid "backward"
 msgstr ""
 
 #: pro/font-icon.php:92
-msgid "pause"
+msgid "play"
 msgstr ""
 
 #: pro/font-icon.php:93
-msgid "stop"
+msgid "pause"
 msgstr ""
 
 #: pro/font-icon.php:94
-msgid "forward"
+msgid "stop"
 msgstr ""
 
 #: pro/font-icon.php:95
-msgid "fast-forward"
+msgid "forward"
 msgstr ""
 
 #: pro/font-icon.php:96
-msgid "step-forward"
+msgid "fast-forward"
 msgstr ""
 
 #: pro/font-icon.php:97
-msgid "eject"
+msgid "step-forward"
 msgstr ""
 
 #: pro/font-icon.php:98
-msgid "chevron-left"
+msgid "eject"
 msgstr ""
 
 #: pro/font-icon.php:99
-msgid "chevron-right"
+msgid "chevron-left"
 msgstr ""
 
 #: pro/font-icon.php:100
-msgid "plus-circle"
+msgid "chevron-right"
 msgstr ""
 
 #: pro/font-icon.php:101
-msgid "minus-circle"
+msgid "plus-circle"
 msgstr ""
 
 #: pro/font-icon.php:102
-msgid "times-circle"
+msgid "minus-circle"
 msgstr ""
 
 #: pro/font-icon.php:103
-msgid "check-circle"
+msgid "times-circle"
 msgstr ""
 
 #: pro/font-icon.php:104
-msgid "question-circle"
+msgid "check-circle"
 msgstr ""
 
 #: pro/font-icon.php:105
-msgid "info-circle"
+msgid "question-circle"
 msgstr ""
 
 #: pro/font-icon.php:106
-msgid "crosshairs"
+msgid "info-circle"
 msgstr ""
 
 #: pro/font-icon.php:107
-msgid "times-circle-o"
+msgid "crosshairs"
 msgstr ""
 
 #: pro/font-icon.php:108
-msgid "check-circle-o"
+msgid "times-circle-o"
 msgstr ""
 
 #: pro/font-icon.php:109
-msgid "ban"
+msgid "check-circle-o"
 msgstr ""
 
 #: pro/font-icon.php:110
-msgid "arrow-left"
+msgid "ban"
 msgstr ""
 
 #: pro/font-icon.php:111
-msgid "arrow-right"
+msgid "arrow-left"
 msgstr ""
 
 #: pro/font-icon.php:112
-msgid "arrow-up"
+msgid "arrow-right"
 msgstr ""
 
 #: pro/font-icon.php:113
-msgid "arrow-down"
+msgid "arrow-up"
 msgstr ""
 
 #: pro/font-icon.php:114
-msgid "mail-forward"
+msgid "arrow-down"
 msgstr ""
 
 #: pro/font-icon.php:115
-msgid "share"
+msgid "mail-forward"
 msgstr ""
 
 #: pro/font-icon.php:116
-msgid "expand"
+msgid "share"
 msgstr ""
 
 #: pro/font-icon.php:117
-msgid "compress"
+msgid "expand"
 msgstr ""
 
 #: pro/font-icon.php:118
-msgid "plus"
+msgid "compress"
 msgstr ""
 
 #: pro/font-icon.php:119
-msgid "minus"
+msgid "plus"
 msgstr ""
 
 #: pro/font-icon.php:120
-msgid "asterisk"
+msgid "minus"
 msgstr ""
 
 #: pro/font-icon.php:121
-msgid "exclamation-circle"
+msgid "asterisk"
 msgstr ""
 
 #: pro/font-icon.php:122
-msgid "gift"
+msgid "exclamation-circle"
 msgstr ""
 
 #: pro/font-icon.php:123
-msgid "leaf"
+msgid "gift"
 msgstr ""
 
 #: pro/font-icon.php:124
-msgid "fire"
+msgid "leaf"
 msgstr ""
 
 #: pro/font-icon.php:125
-msgid "eye"
+msgid "fire"
 msgstr ""
 
 #: pro/font-icon.php:126
-msgid "eye-slash"
+msgid "eye"
 msgstr ""
 
 #: pro/font-icon.php:127
-msgid "warning"
+msgid "eye-slash"
 msgstr ""
 
 #: pro/font-icon.php:128
-msgid "exclamation-triangle"
+msgid "warning"
 msgstr ""
 
 #: pro/font-icon.php:129
-msgid "plane"
+msgid "exclamation-triangle"
 msgstr ""
 
 #: pro/font-icon.php:130
-msgid "calendar"
+msgid "plane"
 msgstr ""
 
 #: pro/font-icon.php:131
-msgid "random"
+msgid "calendar"
 msgstr ""
 
 #: pro/font-icon.php:132
-msgid "comment"
+msgid "random"
 msgstr ""
 
 #: pro/font-icon.php:133
-msgid "magnet"
+msgid "comment"
 msgstr ""
 
 #: pro/font-icon.php:134
-msgid "chevron-up"
+msgid "magnet"
 msgstr ""
 
 #: pro/font-icon.php:135
-msgid "chevron-down"
+msgid "chevron-up"
 msgstr ""
 
 #: pro/font-icon.php:136
-msgid "retweet"
+msgid "chevron-down"
 msgstr ""
 
 #: pro/font-icon.php:137
-msgid "shopping-cart"
+msgid "retweet"
 msgstr ""
 
 #: pro/font-icon.php:138
-msgid "folder"
+msgid "shopping-cart"
 msgstr ""
 
 #: pro/font-icon.php:139
-msgid "folder-open"
+msgid "folder"
 msgstr ""
 
 #: pro/font-icon.php:140
-msgid "arrows-v"
+msgid "folder-open"
 msgstr ""
 
 #: pro/font-icon.php:141
-msgid "arrows-h"
+msgid "arrows-v"
 msgstr ""
 
 #: pro/font-icon.php:142
-msgid "bar-chart-o"
+msgid "arrows-h"
 msgstr ""
 
 #: pro/font-icon.php:143
-msgid "bar-chart"
+msgid "bar-chart-o"
 msgstr ""
 
 #: pro/font-icon.php:144
-msgid "twitter-square"
+msgid "bar-chart"
 msgstr ""
 
 #: pro/font-icon.php:145
-msgid "facebook-square"
+msgid "twitter-square"
 msgstr ""
 
 #: pro/font-icon.php:146
-msgid "camera-retro"
+msgid "facebook-square"
 msgstr ""
 
 #: pro/font-icon.php:147
-msgid "key"
+msgid "camera-retro"
 msgstr ""
 
 #: pro/font-icon.php:148
-msgid "gears"
+msgid "key"
 msgstr ""
 
 #: pro/font-icon.php:149
-msgid "cogs"
+msgid "gears"
 msgstr ""
 
 #: pro/font-icon.php:150
-msgid "comments"
+msgid "cogs"
 msgstr ""
 
 #: pro/font-icon.php:151
-msgid "thumbs-o-up"
+msgid "comments"
 msgstr ""
 
 #: pro/font-icon.php:152
-msgid "thumbs-o-down"
+msgid "thumbs-o-up"
 msgstr ""
 
 #: pro/font-icon.php:153
-msgid "star-half"
+msgid "thumbs-o-down"
 msgstr ""
 
 #: pro/font-icon.php:154
-msgid "heart-o"
+msgid "star-half"
 msgstr ""
 
 #: pro/font-icon.php:155
-msgid "sign-out"
+msgid "heart-o"
 msgstr ""
 
 #: pro/font-icon.php:156
-msgid "linkedin-square"
+msgid "sign-out"
 msgstr ""
 
 #: pro/font-icon.php:157
-msgid "thumb-tack"
+msgid "linkedin-square"
 msgstr ""
 
 #: pro/font-icon.php:158
-msgid "external-link"
+msgid "thumb-tack"
 msgstr ""
 
 #: pro/font-icon.php:159
-msgid "sign-in"
+msgid "external-link"
 msgstr ""
 
 #: pro/font-icon.php:160
-msgid "trophy"
+msgid "sign-in"
 msgstr ""
 
 #: pro/font-icon.php:161
-msgid "github-square"
+msgid "trophy"
 msgstr ""
 
 #: pro/font-icon.php:162
-msgid "upload"
+msgid "github-square"
 msgstr ""
 
 #: pro/font-icon.php:163
-msgid "lemon-o"
+msgid "upload"
 msgstr ""
 
 #: pro/font-icon.php:164
-msgid "phone"
+msgid "lemon-o"
 msgstr ""
 
 #: pro/font-icon.php:165
-msgid "square-o"
+msgid "phone"
 msgstr ""
 
 #: pro/font-icon.php:166
-msgid "bookmark-o"
+msgid "square-o"
 msgstr ""
 
 #: pro/font-icon.php:167
-msgid "phone-square"
+msgid "bookmark-o"
 msgstr ""
 
 #: pro/font-icon.php:168
-msgid "twitter"
+msgid "phone-square"
 msgstr ""
 
 #: pro/font-icon.php:169
-msgid "facebook-f"
+msgid "twitter"
 msgstr ""
 
 #: pro/font-icon.php:170
-msgid "facebook"
+msgid "facebook-f"
 msgstr ""
 
 #: pro/font-icon.php:171
-msgid "github"
+msgid "facebook"
 msgstr ""
 
 #: pro/font-icon.php:172
-msgid "unlock"
+msgid "github"
 msgstr ""
 
 #: pro/font-icon.php:173
-msgid "credit-card"
+msgid "unlock"
 msgstr ""
 
 #: pro/font-icon.php:174
-msgid "feed"
+msgid "credit-card"
 msgstr ""
 
 #: pro/font-icon.php:175
-msgid "rss"
+msgid "feed"
 msgstr ""
 
 #: pro/font-icon.php:176
-msgid "hdd-o"
+msgid "rss"
 msgstr ""
 
 #: pro/font-icon.php:177
-msgid "bullhorn"
+msgid "hdd-o"
 msgstr ""
 
 #: pro/font-icon.php:178
-msgid "bell"
+msgid "bullhorn"
 msgstr ""
 
 #: pro/font-icon.php:179
-msgid "certificate"
+msgid "bell"
 msgstr ""
 
 #: pro/font-icon.php:180
-msgid "hand-o-right"
+msgid "certificate"
 msgstr ""
 
 #: pro/font-icon.php:181
-msgid "hand-o-left"
+msgid "hand-o-right"
 msgstr ""
 
 #: pro/font-icon.php:182
-msgid "hand-o-up"
+msgid "hand-o-left"
 msgstr ""
 
 #: pro/font-icon.php:183
-msgid "hand-o-down"
+msgid "hand-o-up"
 msgstr ""
 
 #: pro/font-icon.php:184
-msgid "arrow-circle-left"
+msgid "hand-o-down"
 msgstr ""
 
 #: pro/font-icon.php:185
-msgid "arrow-circle-right"
+msgid "arrow-circle-left"
 msgstr ""
 
 #: pro/font-icon.php:186
-msgid "arrow-circle-up"
+msgid "arrow-circle-right"
 msgstr ""
 
 #: pro/font-icon.php:187
-msgid "arrow-circle-down"
+msgid "arrow-circle-up"
 msgstr ""
 
 #: pro/font-icon.php:188
-msgid "globe"
+msgid "arrow-circle-down"
 msgstr ""
 
 #: pro/font-icon.php:189
-msgid "wrench"
+msgid "globe"
 msgstr ""
 
 #: pro/font-icon.php:190
-msgid "tasks"
+msgid "wrench"
 msgstr ""
 
 #: pro/font-icon.php:191
-msgid "filter"
+msgid "tasks"
 msgstr ""
 
 #: pro/font-icon.php:192
-msgid "briefcase"
+msgid "filter"
 msgstr ""
 
 #: pro/font-icon.php:193
-msgid "arrows-alt"
+msgid "briefcase"
 msgstr ""
 
 #: pro/font-icon.php:194
-msgid "group"
+msgid "arrows-alt"
 msgstr ""
 
 #: pro/font-icon.php:195
-msgid "users"
+msgid "group"
 msgstr ""
 
 #: pro/font-icon.php:196
-msgid "chain"
+msgid "users"
 msgstr ""
 
 #: pro/font-icon.php:197
-msgid "link"
+msgid "chain"
 msgstr ""
 
 #: pro/font-icon.php:198
-msgid "cloud"
+msgid "link"
 msgstr ""
 
 #: pro/font-icon.php:199
-msgid "flask"
+msgid "cloud"
 msgstr ""
 
 #: pro/font-icon.php:200
-msgid "cut"
+msgid "flask"
 msgstr ""
 
 #: pro/font-icon.php:201
-msgid "scissors"
+msgid "cut"
 msgstr ""
 
 #: pro/font-icon.php:202
-msgid "copy"
+msgid "scissors"
 msgstr ""
 
 #: pro/font-icon.php:203
-msgid "files-o"
+msgid "copy"
 msgstr ""
 
 #: pro/font-icon.php:204
-msgid "paperclip"
+msgid "files-o"
 msgstr ""
 
 #: pro/font-icon.php:205
-msgid "save"
+msgid "paperclip"
 msgstr ""
 
 #: pro/font-icon.php:206
-msgid "floppy-o"
+msgid "save"
 msgstr ""
 
 #: pro/font-icon.php:207
-msgid "square"
+msgid "floppy-o"
 msgstr ""
 
 #: pro/font-icon.php:208
-msgid "navicon"
+msgid "square"
 msgstr ""
 
 #: pro/font-icon.php:209
-msgid "reorder"
+msgid "navicon"
 msgstr ""
 
 #: pro/font-icon.php:210
-msgid "bars"
+msgid "reorder"
 msgstr ""
 
 #: pro/font-icon.php:211
-msgid "list-ul"
+msgid "bars"
 msgstr ""
 
 #: pro/font-icon.php:212
-msgid "list-ol"
+msgid "list-ul"
 msgstr ""
 
 #: pro/font-icon.php:213
-msgid "strikethrough"
+msgid "list-ol"
 msgstr ""
 
 #: pro/font-icon.php:214
-msgid "underline"
+msgid "strikethrough"
 msgstr ""
 
 #: pro/font-icon.php:215
-msgid "table"
+msgid "underline"
 msgstr ""
 
 #: pro/font-icon.php:216
-msgid "magic"
+msgid "table"
 msgstr ""
 
 #: pro/font-icon.php:217
-msgid "truck"
+msgid "magic"
 msgstr ""
 
 #: pro/font-icon.php:218
-msgid "pinterest"
+msgid "truck"
 msgstr ""
 
 #: pro/font-icon.php:219
-msgid "pinterest-square"
+msgid "pinterest"
 msgstr ""
 
 #: pro/font-icon.php:220
-msgid "google-plus-square"
+msgid "pinterest-square"
 msgstr ""
 
 #: pro/font-icon.php:221
-msgid "google-plus"
+msgid "google-plus-square"
 msgstr ""
 
 #: pro/font-icon.php:222
-msgid "money"
+msgid "google-plus"
 msgstr ""
 
 #: pro/font-icon.php:223
-msgid "caret-down"
+msgid "money"
 msgstr ""
 
 #: pro/font-icon.php:224
-msgid "caret-up"
+msgid "caret-down"
 msgstr ""
 
 #: pro/font-icon.php:225
-msgid "caret-left"
+msgid "caret-up"
 msgstr ""
 
 #: pro/font-icon.php:226
-msgid "caret-right"
+msgid "caret-left"
 msgstr ""
 
 #: pro/font-icon.php:227
-msgid "columns"
+msgid "caret-right"
 msgstr ""
 
 #: pro/font-icon.php:228
-msgid "unsorted"
+msgid "columns"
 msgstr ""
 
 #: pro/font-icon.php:229
-msgid "sort"
+msgid "unsorted"
 msgstr ""
 
 #: pro/font-icon.php:230
-msgid "sort-down"
+msgid "sort"
 msgstr ""
 
 #: pro/font-icon.php:231
-msgid "sort-desc"
+msgid "sort-down"
 msgstr ""
 
 #: pro/font-icon.php:232
-msgid "sort-up"
+msgid "sort-desc"
 msgstr ""
 
 #: pro/font-icon.php:233
-msgid "sort-asc"
+msgid "sort-up"
 msgstr ""
 
 #: pro/font-icon.php:234
-msgid "envelope"
+msgid "sort-asc"
 msgstr ""
 
 #: pro/font-icon.php:235
-msgid "linkedin"
+msgid "envelope"
 msgstr ""
 
 #: pro/font-icon.php:236
-msgid "rotate-left"
+msgid "linkedin"
 msgstr ""
 
 #: pro/font-icon.php:237
-msgid "undo"
+msgid "rotate-left"
 msgstr ""
 
 #: pro/font-icon.php:238
-msgid "legal"
+msgid "undo"
 msgstr ""
 
 #: pro/font-icon.php:239
-msgid "gavel"
+msgid "legal"
 msgstr ""
 
 #: pro/font-icon.php:240
-msgid "dashboard"
+msgid "gavel"
 msgstr ""
 
 #: pro/font-icon.php:241
-msgid "tachometer"
+msgid "dashboard"
 msgstr ""
 
 #: pro/font-icon.php:242
-msgid "comment-o"
+msgid "tachometer"
 msgstr ""
 
 #: pro/font-icon.php:243
-msgid "comments-o"
+msgid "comment-o"
 msgstr ""
 
 #: pro/font-icon.php:244
-msgid "flash"
+msgid "comments-o"
 msgstr ""
 
 #: pro/font-icon.php:245
-msgid "bolt"
+msgid "flash"
 msgstr ""
 
 #: pro/font-icon.php:246
-msgid "sitemap"
+msgid "bolt"
 msgstr ""
 
 #: pro/font-icon.php:247
-msgid "umbrella"
+msgid "sitemap"
 msgstr ""
 
 #: pro/font-icon.php:248
-msgid "paste"
+msgid "umbrella"
 msgstr ""
 
 #: pro/font-icon.php:249
-msgid "clipboard"
+msgid "paste"
 msgstr ""
 
 #: pro/font-icon.php:250
-msgid "lightbulb-o"
+msgid "clipboard"
 msgstr ""
 
 #: pro/font-icon.php:251
-msgid "exchange"
+msgid "lightbulb-o"
 msgstr ""
 
 #: pro/font-icon.php:252
-msgid "cloud-download"
+msgid "exchange"
 msgstr ""
 
 #: pro/font-icon.php:253
-msgid "cloud-upload"
+msgid "cloud-download"
 msgstr ""
 
 #: pro/font-icon.php:254
-msgid "user-md"
+msgid "cloud-upload"
 msgstr ""
 
 #: pro/font-icon.php:255
-msgid "stethoscope"
+msgid "user-md"
 msgstr ""
 
 #: pro/font-icon.php:256
-msgid "suitcase"
+msgid "stethoscope"
 msgstr ""
 
 #: pro/font-icon.php:257
-msgid "bell-o"
+msgid "suitcase"
 msgstr ""
 
 #: pro/font-icon.php:258
-msgid "coffee"
+msgid "bell-o"
 msgstr ""
 
 #: pro/font-icon.php:259
-msgid "cutlery"
+msgid "coffee"
 msgstr ""
 
 #: pro/font-icon.php:260
-msgid "file-text-o"
+msgid "cutlery"
 msgstr ""
 
 #: pro/font-icon.php:261
-msgid "building-o"
+msgid "file-text-o"
 msgstr ""
 
 #: pro/font-icon.php:262
-msgid "hospital-o"
+msgid "building-o"
 msgstr ""
 
 #: pro/font-icon.php:263
-msgid "ambulance"
+msgid "hospital-o"
 msgstr ""
 
 #: pro/font-icon.php:264
-msgid "medkit"
+msgid "ambulance"
 msgstr ""
 
 #: pro/font-icon.php:265
-msgid "fighter-jet"
+msgid "medkit"
 msgstr ""
 
 #: pro/font-icon.php:266
-msgid "beer"
+msgid "fighter-jet"
 msgstr ""
 
 #: pro/font-icon.php:267
-msgid "h-square"
+msgid "beer"
 msgstr ""
 
 #: pro/font-icon.php:268
-msgid "plus-square"
+msgid "h-square"
 msgstr ""
 
 #: pro/font-icon.php:269
-msgid "angle-double-left"
+msgid "plus-square"
 msgstr ""
 
 #: pro/font-icon.php:270
-msgid "angle-double-right"
+msgid "angle-double-left"
 msgstr ""
 
 #: pro/font-icon.php:271
-msgid "angle-double-up"
+msgid "angle-double-right"
 msgstr ""
 
 #: pro/font-icon.php:272
-msgid "angle-double-down"
+msgid "angle-double-up"
 msgstr ""
 
 #: pro/font-icon.php:273
-msgid "angle-left"
+msgid "angle-double-down"
 msgstr ""
 
 #: pro/font-icon.php:274
-msgid "angle-right"
+msgid "angle-left"
 msgstr ""
 
 #: pro/font-icon.php:275
-msgid "angle-up"
+msgid "angle-right"
 msgstr ""
 
 #: pro/font-icon.php:276
-msgid "angle-down"
+msgid "angle-up"
 msgstr ""
 
 #: pro/font-icon.php:277
-msgid "desktop"
+msgid "angle-down"
 msgstr ""
 
 #: pro/font-icon.php:278
-msgid "laptop"
+msgid "desktop"
 msgstr ""
 
 #: pro/font-icon.php:279
-msgid "tablet"
+msgid "laptop"
 msgstr ""
 
 #: pro/font-icon.php:280
-msgid "mobile-phone"
+msgid "tablet"
 msgstr ""
 
 #: pro/font-icon.php:281
-msgid "mobile"
+msgid "mobile-phone"
 msgstr ""
 
 #: pro/font-icon.php:282
-msgid "circle-o"
+msgid "mobile"
 msgstr ""
 
 #: pro/font-icon.php:283
-msgid "quote-left"
+msgid "circle-o"
 msgstr ""
 
 #: pro/font-icon.php:284
-msgid "quote-right"
+msgid "quote-left"
 msgstr ""
 
 #: pro/font-icon.php:285
-msgid "spinner"
+msgid "quote-right"
 msgstr ""
 
 #: pro/font-icon.php:286
-msgid "circle"
+msgid "spinner"
 msgstr ""
 
 #: pro/font-icon.php:287
-msgid "mail-reply"
+msgid "circle"
 msgstr ""
 
 #: pro/font-icon.php:288
-msgid "reply"
+msgid "mail-reply"
 msgstr ""
 
 #: pro/font-icon.php:289
-msgid "github-alt"
+msgid "reply"
 msgstr ""
 
 #: pro/font-icon.php:290
-msgid "folder-o"
+msgid "github-alt"
 msgstr ""
 
 #: pro/font-icon.php:291
-msgid "folder-open-o"
+msgid "folder-o"
 msgstr ""
 
 #: pro/font-icon.php:292
-msgid "smile-o"
+msgid "folder-open-o"
 msgstr ""
 
 #: pro/font-icon.php:293
-msgid "frown-o"
+msgid "smile-o"
 msgstr ""
 
 #: pro/font-icon.php:294
-msgid "meh-o"
+msgid "frown-o"
 msgstr ""
 
 #: pro/font-icon.php:295
-msgid "gamepad"
+msgid "meh-o"
 msgstr ""
 
 #: pro/font-icon.php:296
-msgid "keyboard-o"
+msgid "gamepad"
 msgstr ""
 
 #: pro/font-icon.php:297
-msgid "flag-o"
+msgid "keyboard-o"
 msgstr ""
 
 #: pro/font-icon.php:298
-msgid "flag-checkered"
+msgid "flag-o"
 msgstr ""
 
 #: pro/font-icon.php:299
-msgid "terminal"
+msgid "flag-checkered"
 msgstr ""
 
 #: pro/font-icon.php:300
-msgid "code"
+msgid "terminal"
 msgstr ""
 
 #: pro/font-icon.php:301
-msgid "mail-reply-all"
+msgid "code"
 msgstr ""
 
 #: pro/font-icon.php:302
-msgid "reply-all"
+msgid "mail-reply-all"
 msgstr ""
 
 #: pro/font-icon.php:303
-msgid "star-half-empty"
+msgid "reply-all"
 msgstr ""
 
 #: pro/font-icon.php:304
-msgid "star-half-full"
+msgid "star-half-empty"
 msgstr ""
 
 #: pro/font-icon.php:305
-msgid "star-half-o"
+msgid "star-half-full"
 msgstr ""
 
 #: pro/font-icon.php:306
-msgid "location-arrow"
+msgid "star-half-o"
 msgstr ""
 
 #: pro/font-icon.php:307
-msgid "crop"
+msgid "location-arrow"
 msgstr ""
 
 #: pro/font-icon.php:308
-msgid "code-fork"
+msgid "crop"
 msgstr ""
 
 #: pro/font-icon.php:309
-msgid "unlink"
+msgid "code-fork"
 msgstr ""
 
 #: pro/font-icon.php:310
-msgid "chain-broken"
+msgid "unlink"
 msgstr ""
 
 #: pro/font-icon.php:311
-msgid "question"
+msgid "chain-broken"
 msgstr ""
 
 #: pro/font-icon.php:312
-msgid "info"
+msgid "question"
 msgstr ""
 
 #: pro/font-icon.php:313
-msgid "exclamation"
+msgid "info"
 msgstr ""
 
 #: pro/font-icon.php:314
-msgid "superscript"
+msgid "exclamation"
 msgstr ""
 
 #: pro/font-icon.php:315
-msgid "subscript"
+msgid "superscript"
 msgstr ""
 
 #: pro/font-icon.php:316
-msgid "eraser"
+msgid "subscript"
 msgstr ""
 
 #: pro/font-icon.php:317
-msgid "puzzle-piece"
+msgid "eraser"
 msgstr ""
 
 #: pro/font-icon.php:318
-msgid "microphone"
+msgid "puzzle-piece"
 msgstr ""
 
 #: pro/font-icon.php:319
-msgid "microphone-slash"
+msgid "microphone"
 msgstr ""
 
 #: pro/font-icon.php:320
-msgid "shield"
+msgid "microphone-slash"
 msgstr ""
 
 #: pro/font-icon.php:321
-msgid "calendar-o"
+msgid "shield"
 msgstr ""
 
 #: pro/font-icon.php:322
-msgid "fire-extinguisher"
+msgid "calendar-o"
 msgstr ""
 
 #: pro/font-icon.php:323
-msgid "rocket"
+msgid "fire-extinguisher"
 msgstr ""
 
 #: pro/font-icon.php:324
-msgid "maxcdn"
+msgid "rocket"
 msgstr ""
 
 #: pro/font-icon.php:325
-msgid "chevron-circle-left"
+msgid "maxcdn"
 msgstr ""
 
 #: pro/font-icon.php:326
-msgid "chevron-circle-right"
+msgid "chevron-circle-left"
 msgstr ""
 
 #: pro/font-icon.php:327
-msgid "chevron-circle-up"
+msgid "chevron-circle-right"
 msgstr ""
 
 #: pro/font-icon.php:328
-msgid "chevron-circle-down"
+msgid "chevron-circle-up"
 msgstr ""
 
 #: pro/font-icon.php:329
-msgid "html5"
+msgid "chevron-circle-down"
 msgstr ""
 
 #: pro/font-icon.php:330
-msgid "css3"
+msgid "html5"
 msgstr ""
 
 #: pro/font-icon.php:331
-msgid "anchor"
+msgid "css3"
 msgstr ""
 
 #: pro/font-icon.php:332
-msgid "unlock-alt"
+msgid "anchor"
 msgstr ""
 
 #: pro/font-icon.php:333
-msgid "bullseye"
+msgid "unlock-alt"
 msgstr ""
 
 #: pro/font-icon.php:334
-msgid "ellipsis-h"
+msgid "bullseye"
 msgstr ""
 
 #: pro/font-icon.php:335
-msgid "ellipsis-v"
+msgid "ellipsis-h"
 msgstr ""
 
 #: pro/font-icon.php:336
-msgid "rss-square"
+msgid "ellipsis-v"
 msgstr ""
 
 #: pro/font-icon.php:337
-msgid "play-circle"
+msgid "rss-square"
 msgstr ""
 
 #: pro/font-icon.php:338
-msgid "ticket"
+msgid "play-circle"
 msgstr ""
 
 #: pro/font-icon.php:339
-msgid "minus-square"
+msgid "ticket"
 msgstr ""
 
 #: pro/font-icon.php:340
-msgid "minus-square-o"
+msgid "minus-square"
 msgstr ""
 
 #: pro/font-icon.php:341
-msgid "level-up"
+msgid "minus-square-o"
 msgstr ""
 
 #: pro/font-icon.php:342
-msgid "level-down"
+msgid "level-up"
 msgstr ""
 
 #: pro/font-icon.php:343
-msgid "check-square"
+msgid "level-down"
 msgstr ""
 
 #: pro/font-icon.php:344
-msgid "pencil-square"
+msgid "check-square"
 msgstr ""
 
 #: pro/font-icon.php:345
-msgid "external-link-square"
+msgid "pencil-square"
 msgstr ""
 
 #: pro/font-icon.php:346
-msgid "share-square"
+msgid "external-link-square"
 msgstr ""
 
 #: pro/font-icon.php:347
-msgid "compass"
+msgid "share-square"
 msgstr ""
 
 #: pro/font-icon.php:348
-msgid "toggle-down"
+msgid "compass"
 msgstr ""
 
 #: pro/font-icon.php:349
-msgid "caret-square-o-down"
+msgid "toggle-down"
 msgstr ""
 
 #: pro/font-icon.php:350
-msgid "toggle-up"
+msgid "caret-square-o-down"
 msgstr ""
 
 #: pro/font-icon.php:351
-msgid "caret-square-o-up"
+msgid "toggle-up"
 msgstr ""
 
 #: pro/font-icon.php:352
-msgid "toggle-right"
+msgid "caret-square-o-up"
 msgstr ""
 
 #: pro/font-icon.php:353
-msgid "caret-square-o-right"
+msgid "toggle-right"
 msgstr ""
 
 #: pro/font-icon.php:354
-msgid "euro"
+msgid "caret-square-o-right"
 msgstr ""
 
 #: pro/font-icon.php:355
-msgid "eur"
+msgid "euro"
 msgstr ""
 
 #: pro/font-icon.php:356
-msgid "gbp"
+msgid "eur"
 msgstr ""
 
 #: pro/font-icon.php:357
-msgid "dollar"
+msgid "gbp"
 msgstr ""
 
 #: pro/font-icon.php:358
-msgid "usd"
+msgid "dollar"
 msgstr ""
 
 #: pro/font-icon.php:359
-msgid "rupee"
+msgid "usd"
 msgstr ""
 
 #: pro/font-icon.php:360
-msgid "inr"
+msgid "rupee"
 msgstr ""
 
 #: pro/font-icon.php:361
-msgid "cny"
+msgid "inr"
 msgstr ""
 
 #: pro/font-icon.php:362
-msgid "rmb"
+msgid "cny"
 msgstr ""
 
 #: pro/font-icon.php:363
-msgid "yen"
+msgid "rmb"
 msgstr ""
 
 #: pro/font-icon.php:364
-msgid "jpy"
+msgid "yen"
 msgstr ""
 
 #: pro/font-icon.php:365
-msgid "ruble"
+msgid "jpy"
 msgstr ""
 
 #: pro/font-icon.php:366
-msgid "rouble"
+msgid "ruble"
 msgstr ""
 
 #: pro/font-icon.php:367
-msgid "rub"
+msgid "rouble"
 msgstr ""
 
 #: pro/font-icon.php:368
-msgid "won"
+msgid "rub"
 msgstr ""
 
 #: pro/font-icon.php:369
-msgid "krw"
+msgid "won"
 msgstr ""
 
 #: pro/font-icon.php:370
-msgid "bitcoin"
+msgid "krw"
 msgstr ""
 
 #: pro/font-icon.php:371
-msgid "btc"
+msgid "bitcoin"
 msgstr ""
 
 #: pro/font-icon.php:372
-msgid "file"
+msgid "btc"
 msgstr ""
 
 #: pro/font-icon.php:373
-msgid "file-text"
+msgid "file"
 msgstr ""
 
 #: pro/font-icon.php:374
-msgid "sort-alpha-asc"
+msgid "file-text"
 msgstr ""
 
 #: pro/font-icon.php:375
-msgid "sort-alpha-desc"
+msgid "sort-alpha-asc"
 msgstr ""
 
 #: pro/font-icon.php:376
-msgid "sort-amount-asc"
+msgid "sort-alpha-desc"
 msgstr ""
 
 #: pro/font-icon.php:377
-msgid "sort-amount-desc"
+msgid "sort-amount-asc"
 msgstr ""
 
 #: pro/font-icon.php:378
-msgid "sort-numeric-asc"
+msgid "sort-amount-desc"
 msgstr ""
 
 #: pro/font-icon.php:379
-msgid "sort-numeric-desc"
+msgid "sort-numeric-asc"
 msgstr ""
 
 #: pro/font-icon.php:380
-msgid "thumbs-up"
+msgid "sort-numeric-desc"
 msgstr ""
 
 #: pro/font-icon.php:381
-msgid "thumbs-down"
+msgid "thumbs-up"
 msgstr ""
 
 #: pro/font-icon.php:382
-msgid "youtube-square"
+msgid "thumbs-down"
 msgstr ""
 
 #: pro/font-icon.php:383
-msgid "youtube"
+msgid "youtube-square"
 msgstr ""
 
 #: pro/font-icon.php:384
-msgid "xing"
+msgid "youtube"
 msgstr ""
 
 #: pro/font-icon.php:385
-msgid "xing-square"
+msgid "xing"
 msgstr ""
 
 #: pro/font-icon.php:386
-msgid "youtube-play"
+msgid "xing-square"
 msgstr ""
 
 #: pro/font-icon.php:387
-msgid "dropbox"
+msgid "youtube-play"
 msgstr ""
 
 #: pro/font-icon.php:388
-msgid "stack-overflow"
+msgid "dropbox"
 msgstr ""
 
 #: pro/font-icon.php:389
-msgid "instagram"
+msgid "stack-overflow"
 msgstr ""
 
 #: pro/font-icon.php:390
-msgid "flickr"
+msgid "instagram"
 msgstr ""
 
 #: pro/font-icon.php:391
-msgid "adn"
+msgid "flickr"
 msgstr ""
 
 #: pro/font-icon.php:392
-msgid "bitbucket"
+msgid "adn"
 msgstr ""
 
 #: pro/font-icon.php:393
-msgid "bitbucket-square"
+msgid "bitbucket"
 msgstr ""
 
 #: pro/font-icon.php:394
-msgid "tumblr"
+msgid "bitbucket-square"
 msgstr ""
 
 #: pro/font-icon.php:395
-msgid "tumblr-square"
+msgid "tumblr"
 msgstr ""
 
 #: pro/font-icon.php:396
-msgid "long-arrow-down"
+msgid "tumblr-square"
 msgstr ""
 
 #: pro/font-icon.php:397
-msgid "long-arrow-up"
+msgid "long-arrow-down"
 msgstr ""
 
 #: pro/font-icon.php:398
-msgid "long-arrow-left"
+msgid "long-arrow-up"
 msgstr ""
 
 #: pro/font-icon.php:399
-msgid "long-arrow-right"
+msgid "long-arrow-left"
 msgstr ""
 
 #: pro/font-icon.php:400
-msgid "apple"
+msgid "long-arrow-right"
 msgstr ""
 
 #: pro/font-icon.php:401
-msgid "windows"
+msgid "apple"
 msgstr ""
 
 #: pro/font-icon.php:402
-msgid "android"
+msgid "windows"
 msgstr ""
 
 #: pro/font-icon.php:403
-msgid "linux"
+msgid "android"
 msgstr ""
 
 #: pro/font-icon.php:404
-msgid "dribbble"
+msgid "linux"
 msgstr ""
 
 #: pro/font-icon.php:405
-msgid "skype"
+msgid "dribbble"
 msgstr ""
 
 #: pro/font-icon.php:406
-msgid "foursquare"
+msgid "skype"
 msgstr ""
 
 #: pro/font-icon.php:407
-msgid "trello"
+msgid "foursquare"
 msgstr ""
 
 #: pro/font-icon.php:408
-msgid "female"
+msgid "trello"
 msgstr ""
 
 #: pro/font-icon.php:409
-msgid "male"
+msgid "female"
 msgstr ""
 
 #: pro/font-icon.php:410
-msgid "gittip"
+msgid "male"
 msgstr ""
 
 #: pro/font-icon.php:411
-msgid "gratipay"
+msgid "gittip"
 msgstr ""
 
 #: pro/font-icon.php:412
-msgid "sun-o"
+msgid "gratipay"
 msgstr ""
 
 #: pro/font-icon.php:413
-msgid "moon-o"
+msgid "sun-o"
 msgstr ""
 
 #: pro/font-icon.php:414
-msgid "archive"
+msgid "moon-o"
 msgstr ""
 
 #: pro/font-icon.php:415
-msgid "bug"
+msgid "archive"
 msgstr ""
 
 #: pro/font-icon.php:416
-msgid "vk"
+msgid "bug"
 msgstr ""
 
 #: pro/font-icon.php:417
-msgid "weibo"
+msgid "vk"
 msgstr ""
 
 #: pro/font-icon.php:418
-msgid "renren"
+msgid "weibo"
 msgstr ""
 
 #: pro/font-icon.php:419
-msgid "pagelines"
+msgid "renren"
 msgstr ""
 
 #: pro/font-icon.php:420
-msgid "stack-exchange"
+msgid "pagelines"
 msgstr ""
 
 #: pro/font-icon.php:421
-msgid "arrow-circle-o-right"
+msgid "stack-exchange"
 msgstr ""
 
 #: pro/font-icon.php:422
-msgid "arrow-circle-o-left"
+msgid "arrow-circle-o-right"
 msgstr ""
 
 #: pro/font-icon.php:423
-msgid "toggle-left"
+msgid "arrow-circle-o-left"
 msgstr ""
 
 #: pro/font-icon.php:424
-msgid "caret-square-o-left"
+msgid "toggle-left"
 msgstr ""
 
 #: pro/font-icon.php:425
-msgid "dot-circle-o"
+msgid "caret-square-o-left"
 msgstr ""
 
 #: pro/font-icon.php:426
-msgid "wheelchair"
+msgid "dot-circle-o"
 msgstr ""
 
 #: pro/font-icon.php:427
-msgid "vimeo-square"
+msgid "wheelchair"
 msgstr ""
 
 #: pro/font-icon.php:428
-msgid "turkish-lira"
+msgid "vimeo-square"
 msgstr ""
 
 #: pro/font-icon.php:429
-msgid "try"
+msgid "turkish-lira"
 msgstr ""
 
 #: pro/font-icon.php:430
-msgid "plus-square-o"
+msgid "try"
 msgstr ""
 
 #: pro/font-icon.php:431
-msgid "space-shuttle"
+msgid "plus-square-o"
 msgstr ""
 
 #: pro/font-icon.php:432
-msgid "slack"
+msgid "space-shuttle"
 msgstr ""
 
 #: pro/font-icon.php:433
-msgid "envelope-square"
+msgid "slack"
 msgstr ""
 
 #: pro/font-icon.php:434
-msgid "wordpress"
+msgid "envelope-square"
 msgstr ""
 
 #: pro/font-icon.php:435
-msgid "openid"
+msgid "wordpress"
 msgstr ""
 
 #: pro/font-icon.php:436
-msgid "institution"
+msgid "openid"
 msgstr ""
 
 #: pro/font-icon.php:437
-msgid "bank"
+msgid "institution"
 msgstr ""
 
 #: pro/font-icon.php:438
-msgid "university"
+msgid "bank"
 msgstr ""
 
 #: pro/font-icon.php:439
-msgid "mortar-board"
+msgid "university"
 msgstr ""
 
 #: pro/font-icon.php:440
-msgid "graduation-cap"
+msgid "mortar-board"
 msgstr ""
 
 #: pro/font-icon.php:441
-msgid "yahoo"
+msgid "graduation-cap"
 msgstr ""
 
 #: pro/font-icon.php:442
-msgid "google"
+msgid "yahoo"
 msgstr ""
 
 #: pro/font-icon.php:443
-msgid "reddit"
+msgid "google"
 msgstr ""
 
 #: pro/font-icon.php:444
-msgid "reddit-square"
+msgid "reddit"
 msgstr ""
 
 #: pro/font-icon.php:445
-msgid "stumbleupon-circle"
+msgid "reddit-square"
 msgstr ""
 
 #: pro/font-icon.php:446
-msgid "stumbleupon"
+msgid "stumbleupon-circle"
 msgstr ""
 
 #: pro/font-icon.php:447
-msgid "delicious"
+msgid "stumbleupon"
 msgstr ""
 
 #: pro/font-icon.php:448
-msgid "digg"
+msgid "delicious"
 msgstr ""
 
 #: pro/font-icon.php:449
-msgid "pied-piper-pp"
+msgid "digg"
 msgstr ""
 
 #: pro/font-icon.php:450
-msgid "pied-piper-alt"
+msgid "pied-piper-pp"
 msgstr ""
 
 #: pro/font-icon.php:451
-msgid "drupal"
+msgid "pied-piper-alt"
 msgstr ""
 
 #: pro/font-icon.php:452
-msgid "joomla"
+msgid "drupal"
 msgstr ""
 
 #: pro/font-icon.php:453
-msgid "language"
+msgid "joomla"
 msgstr ""
 
 #: pro/font-icon.php:454
-msgid "fax"
+msgid "language"
 msgstr ""
 
 #: pro/font-icon.php:455
-msgid "building"
+msgid "fax"
 msgstr ""
 
 #: pro/font-icon.php:456
-msgid "child"
+msgid "building"
 msgstr ""
 
 #: pro/font-icon.php:457
-msgid "paw"
+msgid "child"
 msgstr ""
 
 #: pro/font-icon.php:458
-msgid "spoon"
+msgid "paw"
 msgstr ""
 
 #: pro/font-icon.php:459
-msgid "cube"
+msgid "spoon"
 msgstr ""
 
 #: pro/font-icon.php:460
-msgid "cubes"
+msgid "cube"
 msgstr ""
 
 #: pro/font-icon.php:461
-msgid "behance"
+msgid "cubes"
 msgstr ""
 
 #: pro/font-icon.php:462
-msgid "behance-square"
+msgid "behance"
 msgstr ""
 
 #: pro/font-icon.php:463
-msgid "steam"
+msgid "behance-square"
 msgstr ""
 
 #: pro/font-icon.php:464
-msgid "steam-square"
+msgid "steam"
 msgstr ""
 
 #: pro/font-icon.php:465
-msgid "recycle"
+msgid "steam-square"
 msgstr ""
 
 #: pro/font-icon.php:466
-msgid "automobile"
+msgid "recycle"
 msgstr ""
 
 #: pro/font-icon.php:467
-msgid "car"
+msgid "automobile"
 msgstr ""
 
 #: pro/font-icon.php:468
-msgid "cab"
+msgid "car"
 msgstr ""
 
 #: pro/font-icon.php:469
-msgid "taxi"
+msgid "cab"
 msgstr ""
 
 #: pro/font-icon.php:470
-msgid "tree"
+msgid "taxi"
 msgstr ""
 
 #: pro/font-icon.php:471
-msgid "spotify"
+msgid "tree"
 msgstr ""
 
 #: pro/font-icon.php:472
-msgid "deviantart"
+msgid "spotify"
 msgstr ""
 
 #: pro/font-icon.php:473
-msgid "soundcloud"
+msgid "deviantart"
 msgstr ""
 
 #: pro/font-icon.php:474
-msgid "database"
+msgid "soundcloud"
 msgstr ""
 
 #: pro/font-icon.php:475
-msgid "file-pdf-o"
+msgid "database"
 msgstr ""
 
 #: pro/font-icon.php:476
-msgid "file-word-o"
+msgid "file-pdf-o"
 msgstr ""
 
 #: pro/font-icon.php:477
-msgid "file-excel-o"
+msgid "file-word-o"
 msgstr ""
 
 #: pro/font-icon.php:478
-msgid "file-powerpoint-o"
+msgid "file-excel-o"
 msgstr ""
 
 #: pro/font-icon.php:479
-msgid "file-photo-o"
+msgid "file-powerpoint-o"
 msgstr ""
 
 #: pro/font-icon.php:480
-msgid "file-picture-o"
+msgid "file-photo-o"
 msgstr ""
 
 #: pro/font-icon.php:481
-msgid "file-image-o"
+msgid "file-picture-o"
 msgstr ""
 
 #: pro/font-icon.php:482
-msgid "file-zip-o"
+msgid "file-image-o"
 msgstr ""
 
 #: pro/font-icon.php:483
-msgid "file-archive-o"
+msgid "file-zip-o"
 msgstr ""
 
 #: pro/font-icon.php:484
-msgid "file-sound-o"
+msgid "file-archive-o"
 msgstr ""
 
 #: pro/font-icon.php:485
-msgid "file-audio-o"
+msgid "file-sound-o"
 msgstr ""
 
 #: pro/font-icon.php:486
-msgid "file-movie-o"
+msgid "file-audio-o"
 msgstr ""
 
 #: pro/font-icon.php:487
-msgid "file-video-o"
+msgid "file-movie-o"
 msgstr ""
 
 #: pro/font-icon.php:488
-msgid "file-code-o"
+msgid "file-video-o"
 msgstr ""
 
 #: pro/font-icon.php:489
-msgid "vine"
+msgid "file-code-o"
 msgstr ""
 
 #: pro/font-icon.php:490
-msgid "codepen"
+msgid "vine"
 msgstr ""
 
 #: pro/font-icon.php:491
-msgid "jsfiddle"
+msgid "codepen"
 msgstr ""
 
 #: pro/font-icon.php:492
-msgid "life-buoy"
+msgid "jsfiddle"
 msgstr ""
 
 #: pro/font-icon.php:493
-msgid "life-saver"
+msgid "life-buoy"
 msgstr ""
 
 #: pro/font-icon.php:494
-msgid "support"
+msgid "life-saver"
 msgstr ""
 
 #: pro/font-icon.php:495
-msgid "life-ring"
+msgid "support"
 msgstr ""
 
 #: pro/font-icon.php:496
-msgid "circle-o-notch"
+msgid "life-ring"
 msgstr ""
 
 #: pro/font-icon.php:497
-msgid "ra"
+msgid "circle-o-notch"
 msgstr ""
 
 #: pro/font-icon.php:498
-msgid "resistance"
+msgid "ra"
 msgstr ""
 
 #: pro/font-icon.php:499
-msgid "rebel"
+msgid "resistance"
 msgstr ""
 
 #: pro/font-icon.php:500
-msgid "ge"
+msgid "rebel"
 msgstr ""
 
 #: pro/font-icon.php:501
-msgid "empire"
+msgid "ge"
 msgstr ""
 
 #: pro/font-icon.php:502
-msgid "git-square"
+msgid "empire"
 msgstr ""
 
 #: pro/font-icon.php:503
-msgid "git"
+msgid "git-square"
 msgstr ""
 
 #: pro/font-icon.php:504
-msgid "y-combinator-square"
+msgid "git"
 msgstr ""
 
 #: pro/font-icon.php:505
-msgid "yc-square"
+msgid "y-combinator-square"
 msgstr ""
 
 #: pro/font-icon.php:506
-msgid "hacker-news"
+msgid "yc-square"
 msgstr ""
 
 #: pro/font-icon.php:507
-msgid "tencent-weibo"
+msgid "hacker-news"
 msgstr ""
 
 #: pro/font-icon.php:508
-msgid "qq"
+msgid "tencent-weibo"
 msgstr ""
 
 #: pro/font-icon.php:509
-msgid "wechat"
+msgid "qq"
 msgstr ""
 
 #: pro/font-icon.php:510
-msgid "weixin"
+msgid "wechat"
 msgstr ""
 
 #: pro/font-icon.php:511
-msgid "send"
+msgid "weixin"
 msgstr ""
 
 #: pro/font-icon.php:512
-msgid "paper-plane"
+msgid "send"
 msgstr ""
 
 #: pro/font-icon.php:513
-msgid "send-o"
+msgid "paper-plane"
 msgstr ""
 
 #: pro/font-icon.php:514
-msgid "paper-plane-o"
+msgid "send-o"
 msgstr ""
 
 #: pro/font-icon.php:515
-msgid "history"
+msgid "paper-plane-o"
 msgstr ""
 
 #: pro/font-icon.php:516
-msgid "circle-thin"
+msgid "history"
 msgstr ""
 
 #: pro/font-icon.php:517
-msgid "header"
+msgid "circle-thin"
 msgstr ""
 
 #: pro/font-icon.php:518
-msgid "paragraph"
+msgid "header"
 msgstr ""
 
 #: pro/font-icon.php:519
-msgid "sliders"
+msgid "paragraph"
 msgstr ""
 
 #: pro/font-icon.php:520
-msgid "share-alt"
+msgid "sliders"
 msgstr ""
 
 #: pro/font-icon.php:521
-msgid "share-alt-square"
+msgid "share-alt"
 msgstr ""
 
 #: pro/font-icon.php:522
-msgid "bomb"
+msgid "share-alt-square"
 msgstr ""
 
 #: pro/font-icon.php:523
-msgid "soccer-ball-o"
+msgid "bomb"
 msgstr ""
 
 #: pro/font-icon.php:524
-msgid "futbol-o"
+msgid "soccer-ball-o"
 msgstr ""
 
 #: pro/font-icon.php:525
-msgid "tty"
+msgid "futbol-o"
 msgstr ""
 
 #: pro/font-icon.php:526
-msgid "binoculars"
+msgid "tty"
 msgstr ""
 
 #: pro/font-icon.php:527
-msgid "plug"
+msgid "binoculars"
 msgstr ""
 
 #: pro/font-icon.php:528
-msgid "slideshare"
+msgid "plug"
 msgstr ""
 
 #: pro/font-icon.php:529
-msgid "twitch"
+msgid "slideshare"
 msgstr ""
 
 #: pro/font-icon.php:530
-msgid "yelp"
+msgid "twitch"
 msgstr ""
 
 #: pro/font-icon.php:531
-msgid "newspaper-o"
+msgid "yelp"
 msgstr ""
 
 #: pro/font-icon.php:532
-msgid "wifi"
+msgid "newspaper-o"
 msgstr ""
 
 #: pro/font-icon.php:533
-msgid "calculator"
+msgid "wifi"
 msgstr ""
 
 #: pro/font-icon.php:534
-msgid "paypal"
+msgid "calculator"
 msgstr ""
 
 #: pro/font-icon.php:535
-msgid "google-wallet"
+msgid "paypal"
 msgstr ""
 
 #: pro/font-icon.php:536
-msgid "cc-visa"
+msgid "google-wallet"
 msgstr ""
 
 #: pro/font-icon.php:537
-msgid "cc-mastercard"
+msgid "cc-visa"
 msgstr ""
 
 #: pro/font-icon.php:538
-msgid "cc-discover"
+msgid "cc-mastercard"
 msgstr ""
 
 #: pro/font-icon.php:539
-msgid "cc-amex"
+msgid "cc-discover"
 msgstr ""
 
 #: pro/font-icon.php:540
-msgid "cc-paypal"
+msgid "cc-amex"
 msgstr ""
 
 #: pro/font-icon.php:541
-msgid "cc-stripe"
+msgid "cc-paypal"
 msgstr ""
 
 #: pro/font-icon.php:542
-msgid "bell-slash"
+msgid "cc-stripe"
 msgstr ""
 
 #: pro/font-icon.php:543
-msgid "bell-slash-o"
+msgid "bell-slash"
 msgstr ""
 
 #: pro/font-icon.php:544
-msgid "trash"
+msgid "bell-slash-o"
 msgstr ""
 
 #: pro/font-icon.php:545
-msgid "copyright"
+msgid "trash"
 msgstr ""
 
 #: pro/font-icon.php:546
-msgid "at"
+msgid "copyright"
 msgstr ""
 
 #: pro/font-icon.php:547
-msgid "eyedropper"
+msgid "at"
 msgstr ""
 
 #: pro/font-icon.php:548
-msgid "paint-brush"
+msgid "eyedropper"
 msgstr ""
 
 #: pro/font-icon.php:549
-msgid "birthday-cake"
+msgid "paint-brush"
 msgstr ""
 
 #: pro/font-icon.php:550
-msgid "area-chart"
+msgid "birthday-cake"
 msgstr ""
 
 #: pro/font-icon.php:551
-msgid "pie-chart"
+msgid "area-chart"
 msgstr ""
 
 #: pro/font-icon.php:552
-msgid "line-chart"
+msgid "pie-chart"
 msgstr ""
 
 #: pro/font-icon.php:553
-msgid "lastfm"
+msgid "line-chart"
 msgstr ""
 
 #: pro/font-icon.php:554
-msgid "lastfm-square"
+msgid "lastfm"
 msgstr ""
 
 #: pro/font-icon.php:555
-msgid "toggle-off"
+msgid "lastfm-square"
 msgstr ""
 
 #: pro/font-icon.php:556
-msgid "toggle-on"
+msgid "toggle-off"
 msgstr ""
 
 #: pro/font-icon.php:557
-msgid "bicycle"
+msgid "toggle-on"
 msgstr ""
 
 #: pro/font-icon.php:558
-msgid "bus"
+msgid "bicycle"
 msgstr ""
 
 #: pro/font-icon.php:559
-msgid "ioxhost"
+msgid "bus"
 msgstr ""
 
 #: pro/font-icon.php:560
-msgid "angellist"
+msgid "ioxhost"
 msgstr ""
 
 #: pro/font-icon.php:561
-msgid "cc"
+msgid "angellist"
 msgstr ""
 
 #: pro/font-icon.php:562
-msgid "shekel"
+msgid "cc"
 msgstr ""
 
 #: pro/font-icon.php:563
-msgid "sheqel"
+msgid "shekel"
 msgstr ""
 
 #: pro/font-icon.php:564
-msgid "ils"
+msgid "sheqel"
 msgstr ""
 
 #: pro/font-icon.php:565
-msgid "meanpath"
+msgid "ils"
 msgstr ""
 
 #: pro/font-icon.php:566
-msgid "buysellads"
+msgid "meanpath"
 msgstr ""
 
 #: pro/font-icon.php:567
-msgid "connectdevelop"
+msgid "buysellads"
 msgstr ""
 
 #: pro/font-icon.php:568
-msgid "dashcube"
+msgid "connectdevelop"
 msgstr ""
 
 #: pro/font-icon.php:569
-msgid "forumbee"
+msgid "dashcube"
 msgstr ""
 
 #: pro/font-icon.php:570
-msgid "leanpub"
+msgid "forumbee"
 msgstr ""
 
 #: pro/font-icon.php:571
-msgid "sellsy"
+msgid "leanpub"
 msgstr ""
 
 #: pro/font-icon.php:572
-msgid "shirtsinbulk"
+msgid "sellsy"
 msgstr ""
 
 #: pro/font-icon.php:573
-msgid "simplybuilt"
+msgid "shirtsinbulk"
 msgstr ""
 
 #: pro/font-icon.php:574
-msgid "skyatlas"
+msgid "simplybuilt"
 msgstr ""
 
 #: pro/font-icon.php:575
-msgid "cart-plus"
+msgid "skyatlas"
 msgstr ""
 
 #: pro/font-icon.php:576
-msgid "cart-arrow-down"
+msgid "cart-plus"
 msgstr ""
 
 #: pro/font-icon.php:577
-msgid "diamond"
+msgid "cart-arrow-down"
 msgstr ""
 
 #: pro/font-icon.php:578
-msgid "ship"
+msgid "diamond"
 msgstr ""
 
 #: pro/font-icon.php:579
-msgid "user-secret"
+msgid "ship"
 msgstr ""
 
 #: pro/font-icon.php:580
-msgid "motorcycle"
+msgid "user-secret"
 msgstr ""
 
 #: pro/font-icon.php:581
-msgid "street-view"
+msgid "motorcycle"
 msgstr ""
 
 #: pro/font-icon.php:582
-msgid "heartbeat"
+msgid "street-view"
 msgstr ""
 
 #: pro/font-icon.php:583
-msgid "venus"
+msgid "heartbeat"
 msgstr ""
 
 #: pro/font-icon.php:584
-msgid "mars"
+msgid "venus"
 msgstr ""
 
 #: pro/font-icon.php:585
-msgid "mercury"
+msgid "mars"
 msgstr ""
 
 #: pro/font-icon.php:586
-msgid "intersex"
+msgid "mercury"
 msgstr ""
 
 #: pro/font-icon.php:587
-msgid "transgender"
+msgid "intersex"
 msgstr ""
 
 #: pro/font-icon.php:588
-msgid "transgender-alt"
+msgid "transgender"
 msgstr ""
 
 #: pro/font-icon.php:589
-msgid "venus-double"
+msgid "transgender-alt"
 msgstr ""
 
 #: pro/font-icon.php:590
-msgid "mars-double"
+msgid "venus-double"
 msgstr ""
 
 #: pro/font-icon.php:591
-msgid "venus-mars"
+msgid "mars-double"
 msgstr ""
 
 #: pro/font-icon.php:592
-msgid "mars-stroke"
+msgid "venus-mars"
 msgstr ""
 
 #: pro/font-icon.php:593
-msgid "mars-stroke-v"
+msgid "mars-stroke"
 msgstr ""
 
 #: pro/font-icon.php:594
-msgid "mars-stroke-h"
+msgid "mars-stroke-v"
 msgstr ""
 
 #: pro/font-icon.php:595
-msgid "neuter"
+msgid "mars-stroke-h"
 msgstr ""
 
 #: pro/font-icon.php:596
-msgid "genderless"
+msgid "neuter"
 msgstr ""
 
 #: pro/font-icon.php:597
-msgid "facebook-official"
+msgid "genderless"
 msgstr ""
 
 #: pro/font-icon.php:598
-msgid "pinterest-p"
+msgid "facebook-official"
 msgstr ""
 
 #: pro/font-icon.php:599
-msgid "whatsapp"
+msgid "pinterest-p"
 msgstr ""
 
 #: pro/font-icon.php:600
-msgid "server"
+msgid "whatsapp"
 msgstr ""
 
 #: pro/font-icon.php:601
-msgid "user-plus"
+msgid "server"
 msgstr ""
 
 #: pro/font-icon.php:602
-msgid "user-times"
+msgid "user-plus"
 msgstr ""
 
 #: pro/font-icon.php:603
-msgid "hotel"
+msgid "user-times"
 msgstr ""
 
 #: pro/font-icon.php:604
-msgid "bed"
+msgid "hotel"
 msgstr ""
 
 #: pro/font-icon.php:605
-msgid "viacoin"
+msgid "bed"
 msgstr ""
 
 #: pro/font-icon.php:606
-msgid "train"
+msgid "viacoin"
 msgstr ""
 
 #: pro/font-icon.php:607
-msgid "subway"
+msgid "train"
 msgstr ""
 
 #: pro/font-icon.php:608
-msgid "medium"
+msgid "subway"
 msgstr ""
 
 #: pro/font-icon.php:609
-msgid "yc"
+msgid "medium"
 msgstr ""
 
 #: pro/font-icon.php:610
-msgid "y-combinator"
+msgid "yc"
 msgstr ""
 
 #: pro/font-icon.php:611
-msgid "optin-monster"
+msgid "y-combinator"
 msgstr ""
 
 #: pro/font-icon.php:612
-msgid "opencart"
+msgid "optin-monster"
 msgstr ""
 
 #: pro/font-icon.php:613
-msgid "expeditedssl"
+msgid "opencart"
 msgstr ""
 
 #: pro/font-icon.php:614
-msgid "battery-4"
+msgid "expeditedssl"
 msgstr ""
 
 #: pro/font-icon.php:615
-msgid "battery"
+msgid "battery-4"
 msgstr ""
 
 #: pro/font-icon.php:616
-msgid "battery-full"
+msgid "battery"
 msgstr ""
 
 #: pro/font-icon.php:617
-msgid "battery-3"
+msgid "battery-full"
 msgstr ""
 
 #: pro/font-icon.php:618
-msgid "battery-three-quarters"
+msgid "battery-3"
 msgstr ""
 
 #: pro/font-icon.php:619
-msgid "battery-2"
+msgid "battery-three-quarters"
 msgstr ""
 
 #: pro/font-icon.php:620
-msgid "battery-half"
+msgid "battery-2"
 msgstr ""
 
 #: pro/font-icon.php:621
-msgid "battery-1"
+msgid "battery-half"
 msgstr ""
 
 #: pro/font-icon.php:622
-msgid "battery-quarter"
+msgid "battery-1"
 msgstr ""
 
 #: pro/font-icon.php:623
-msgid "battery-0"
+msgid "battery-quarter"
 msgstr ""
 
 #: pro/font-icon.php:624
-msgid "battery-empty"
+msgid "battery-0"
 msgstr ""
 
 #: pro/font-icon.php:625
-msgid "mouse-pointer"
+msgid "battery-empty"
 msgstr ""
 
 #: pro/font-icon.php:626
-msgid "i-cursor"
+msgid "mouse-pointer"
 msgstr ""
 
 #: pro/font-icon.php:627
-msgid "object-group"
+msgid "i-cursor"
 msgstr ""
 
 #: pro/font-icon.php:628
-msgid "object-ungroup"
+msgid "object-group"
 msgstr ""
 
 #: pro/font-icon.php:629
-msgid "sticky-note"
+msgid "object-ungroup"
 msgstr ""
 
 #: pro/font-icon.php:630
-msgid "sticky-note-o"
+msgid "sticky-note"
 msgstr ""
 
 #: pro/font-icon.php:631
-msgid "cc-jcb"
+msgid "sticky-note-o"
 msgstr ""
 
 #: pro/font-icon.php:632
-msgid "cc-diners-club"
+msgid "cc-jcb"
 msgstr ""
 
 #: pro/font-icon.php:633
-msgid "clone"
+msgid "cc-diners-club"
 msgstr ""
 
 #: pro/font-icon.php:634
-msgid "balance-scale"
+msgid "clone"
 msgstr ""
 
 #: pro/font-icon.php:635
-msgid "hourglass-o"
+msgid "balance-scale"
 msgstr ""
 
 #: pro/font-icon.php:636
-msgid "hourglass-1"
+msgid "hourglass-o"
 msgstr ""
 
 #: pro/font-icon.php:637
-msgid "hourglass-start"
+msgid "hourglass-1"
 msgstr ""
 
 #: pro/font-icon.php:638
-msgid "hourglass-2"
+msgid "hourglass-start"
 msgstr ""
 
 #: pro/font-icon.php:639
-msgid "hourglass-half"
+msgid "hourglass-2"
 msgstr ""
 
 #: pro/font-icon.php:640
-msgid "hourglass-3"
+msgid "hourglass-half"
 msgstr ""
 
 #: pro/font-icon.php:641
-msgid "hourglass-end"
+msgid "hourglass-3"
 msgstr ""
 
 #: pro/font-icon.php:642
-msgid "hourglass"
+msgid "hourglass-end"
 msgstr ""
 
 #: pro/font-icon.php:643
-msgid "hand-grab-o"
+msgid "hourglass"
 msgstr ""
 
 #: pro/font-icon.php:644
-msgid "hand-rock-o"
+msgid "hand-grab-o"
 msgstr ""
 
 #: pro/font-icon.php:645
-msgid "hand-stop-o"
+msgid "hand-rock-o"
 msgstr ""
 
 #: pro/font-icon.php:646
-msgid "hand-paper-o"
+msgid "hand-stop-o"
 msgstr ""
 
 #: pro/font-icon.php:647
-msgid "hand-scissors-o"
+msgid "hand-paper-o"
 msgstr ""
 
 #: pro/font-icon.php:648
-msgid "hand-lizard-o"
+msgid "hand-scissors-o"
 msgstr ""
 
 #: pro/font-icon.php:649
-msgid "hand-spock-o"
+msgid "hand-lizard-o"
 msgstr ""
 
 #: pro/font-icon.php:650
-msgid "hand-pointer-o"
+msgid "hand-spock-o"
 msgstr ""
 
 #: pro/font-icon.php:651
-msgid "hand-peace-o"
+msgid "hand-pointer-o"
 msgstr ""
 
 #: pro/font-icon.php:652
-msgid "trademark"
+msgid "hand-peace-o"
 msgstr ""
 
 #: pro/font-icon.php:653
-msgid "registered"
+msgid "trademark"
 msgstr ""
 
 #: pro/font-icon.php:654
-msgid "creative-commons"
+msgid "registered"
 msgstr ""
 
 #: pro/font-icon.php:655
-msgid "gg"
+msgid "creative-commons"
 msgstr ""
 
 #: pro/font-icon.php:656
-msgid "gg-circle"
+msgid "gg"
 msgstr ""
 
 #: pro/font-icon.php:657
-msgid "tripadvisor"
+msgid "gg-circle"
 msgstr ""
 
 #: pro/font-icon.php:658
-msgid "odnoklassniki"
+msgid "tripadvisor"
 msgstr ""
 
 #: pro/font-icon.php:659
-msgid "odnoklassniki-square"
+msgid "odnoklassniki"
 msgstr ""
 
 #: pro/font-icon.php:660
-msgid "get-pocket"
+msgid "odnoklassniki-square"
 msgstr ""
 
 #: pro/font-icon.php:661
-msgid "wikipedia-w"
+msgid "get-pocket"
 msgstr ""
 
 #: pro/font-icon.php:662
-msgid "safari"
+msgid "wikipedia-w"
 msgstr ""
 
 #: pro/font-icon.php:663
-msgid "chrome"
+msgid "safari"
 msgstr ""
 
 #: pro/font-icon.php:664
-msgid "firefox"
+msgid "chrome"
 msgstr ""
 
 #: pro/font-icon.php:665
-msgid "opera"
+msgid "firefox"
 msgstr ""
 
 #: pro/font-icon.php:666
-msgid "internet-explorer"
+msgid "opera"
 msgstr ""
 
 #: pro/font-icon.php:667
-msgid "tv"
+msgid "internet-explorer"
 msgstr ""
 
 #: pro/font-icon.php:668
-msgid "television"
+msgid "tv"
 msgstr ""
 
 #: pro/font-icon.php:669
-msgid "contao"
+msgid "television"
 msgstr ""
 
 #: pro/font-icon.php:670
-msgid "500px"
+msgid "contao"
 msgstr ""
 
 #: pro/font-icon.php:671
-msgid "amazon"
+msgid "500px"
 msgstr ""
 
 #: pro/font-icon.php:672
-msgid "calendar-plus-o"
+msgid "amazon"
 msgstr ""
 
 #: pro/font-icon.php:673
-msgid "calendar-minus-o"
+msgid "calendar-plus-o"
 msgstr ""
 
 #: pro/font-icon.php:674
-msgid "calendar-times-o"
+msgid "calendar-minus-o"
 msgstr ""
 
 #: pro/font-icon.php:675
-msgid "calendar-check-o"
+msgid "calendar-times-o"
 msgstr ""
 
 #: pro/font-icon.php:676
-msgid "industry"
+msgid "calendar-check-o"
 msgstr ""
 
 #: pro/font-icon.php:677
-msgid "map-pin"
+msgid "industry"
 msgstr ""
 
 #: pro/font-icon.php:678
-msgid "map-signs"
+msgid "map-pin"
 msgstr ""
 
 #: pro/font-icon.php:679
-msgid "map-o"
+msgid "map-signs"
 msgstr ""
 
 #: pro/font-icon.php:680
-msgid "map"
+msgid "map-o"
 msgstr ""
 
 #: pro/font-icon.php:681
-msgid "commenting"
+msgid "map"
 msgstr ""
 
 #: pro/font-icon.php:682
-msgid "commenting-o"
+msgid "commenting"
 msgstr ""
 
 #: pro/font-icon.php:683
-msgid "houzz"
+msgid "commenting-o"
 msgstr ""
 
 #: pro/font-icon.php:684
-msgid "vimeo"
+msgid "houzz"
 msgstr ""
 
 #: pro/font-icon.php:685
-msgid "black-tie"
+msgid "vimeo"
 msgstr ""
 
 #: pro/font-icon.php:686
-msgid "fonticons"
+msgid "black-tie"
 msgstr ""
 
 #: pro/font-icon.php:687
-msgid "reddit-alien"
+msgid "fonticons"
 msgstr ""
 
 #: pro/font-icon.php:688
-msgid "edge"
+msgid "reddit-alien"
 msgstr ""
 
 #: pro/font-icon.php:689
-msgid "credit-card-alt"
+msgid "edge"
 msgstr ""
 
 #: pro/font-icon.php:690
-msgid "codiepie"
+msgid "credit-card-alt"
 msgstr ""
 
 #: pro/font-icon.php:691
-msgid "modx"
+msgid "codiepie"
 msgstr ""
 
 #: pro/font-icon.php:692
-msgid "fort-awesome"
+msgid "modx"
 msgstr ""
 
 #: pro/font-icon.php:693
-msgid "usb"
+msgid "fort-awesome"
 msgstr ""
 
 #: pro/font-icon.php:694
-msgid "product-hunt"
+msgid "usb"
 msgstr ""
 
 #: pro/font-icon.php:695
-msgid "mixcloud"
+msgid "product-hunt"
 msgstr ""
 
 #: pro/font-icon.php:696
-msgid "scribd"
+msgid "mixcloud"
 msgstr ""
 
 #: pro/font-icon.php:697
-msgid "pause-circle"
+msgid "scribd"
 msgstr ""
 
 #: pro/font-icon.php:698
-msgid "pause-circle-o"
+msgid "pause-circle"
 msgstr ""
 
 #: pro/font-icon.php:699
-msgid "stop-circle"
+msgid "pause-circle-o"
 msgstr ""
 
 #: pro/font-icon.php:700
-msgid "stop-circle-o"
+msgid "stop-circle"
 msgstr ""
 
 #: pro/font-icon.php:701
-msgid "shopping-bag"
+msgid "stop-circle-o"
 msgstr ""
 
 #: pro/font-icon.php:702
-msgid "shopping-basket"
+msgid "shopping-bag"
 msgstr ""
 
 #: pro/font-icon.php:703
-msgid "hashtag"
+msgid "shopping-basket"
 msgstr ""
 
 #: pro/font-icon.php:704
-msgid "bluetooth"
+msgid "hashtag"
 msgstr ""
 
 #: pro/font-icon.php:705
-msgid "bluetooth-b"
+msgid "bluetooth"
 msgstr ""
 
 #: pro/font-icon.php:706
-msgid "percent"
+msgid "bluetooth-b"
 msgstr ""
 
 #: pro/font-icon.php:707
-msgid "gitlab"
+msgid "percent"
 msgstr ""
 
 #: pro/font-icon.php:708
-msgid "wpbeginner"
+msgid "gitlab"
 msgstr ""
 
 #: pro/font-icon.php:709
-msgid "wpforms"
+msgid "wpbeginner"
 msgstr ""
 
 #: pro/font-icon.php:710
-msgid "envira"
+msgid "wpforms"
 msgstr ""
 
 #: pro/font-icon.php:711
-msgid "universal-access"
+msgid "envira"
 msgstr ""
 
 #: pro/font-icon.php:712
-msgid "wheelchair-alt"
+msgid "universal-access"
 msgstr ""
 
 #: pro/font-icon.php:713
-msgid "question-circle-o"
+msgid "wheelchair-alt"
 msgstr ""
 
 #: pro/font-icon.php:714
-msgid "blind"
+msgid "question-circle-o"
 msgstr ""
 
 #: pro/font-icon.php:715
-msgid "audio-description"
+msgid "blind"
 msgstr ""
 
 #: pro/font-icon.php:716
-msgid "volume-control-phone"
+msgid "audio-description"
 msgstr ""
 
 #: pro/font-icon.php:717
-msgid "braille"
+msgid "volume-control-phone"
 msgstr ""
 
 #: pro/font-icon.php:718
-msgid "assistive-listening-systems"
+msgid "braille"
 msgstr ""
 
 #: pro/font-icon.php:719
-msgid "asl-interpreting"
+msgid "assistive-listening-systems"
 msgstr ""
 
 #: pro/font-icon.php:720
-msgid "american-sign-language-interpreting"
+msgid "asl-interpreting"
 msgstr ""
 
 #: pro/font-icon.php:721
-msgid "deafness"
+msgid "american-sign-language-interpreting"
 msgstr ""
 
 #: pro/font-icon.php:722
-msgid "hard-of-hearing"
+msgid "deafness"
 msgstr ""
 
 #: pro/font-icon.php:723
-msgid "deaf"
+msgid "hard-of-hearing"
 msgstr ""
 
 #: pro/font-icon.php:724
-msgid "glide"
+msgid "deaf"
 msgstr ""
 
 #: pro/font-icon.php:725
-msgid "glide-g"
+msgid "glide"
 msgstr ""
 
 #: pro/font-icon.php:726
-msgid "signing"
+msgid "glide-g"
 msgstr ""
 
 #: pro/font-icon.php:727
-msgid "sign-language"
+msgid "signing"
 msgstr ""
 
 #: pro/font-icon.php:728
-msgid "low-vision"
+msgid "sign-language"
 msgstr ""
 
 #: pro/font-icon.php:729
-msgid "viadeo"
+msgid "low-vision"
 msgstr ""
 
 #: pro/font-icon.php:730
-msgid "viadeo-square"
+msgid "viadeo"
 msgstr ""
 
 #: pro/font-icon.php:731
-msgid "snapchat"
+msgid "viadeo-square"
 msgstr ""
 
 #: pro/font-icon.php:732
-msgid "snapchat-ghost"
+msgid "snapchat"
 msgstr ""
 
 #: pro/font-icon.php:733
-msgid "snapchat-square"
+msgid "snapchat-ghost"
 msgstr ""
 
 #: pro/font-icon.php:734
-msgid "pied-piper"
+msgid "snapchat-square"
 msgstr ""
 
 #: pro/font-icon.php:735
-msgid "first-order"
+msgid "pied-piper"
 msgstr ""
 
 #: pro/font-icon.php:736
-msgid "yoast"
+msgid "first-order"
 msgstr ""
 
 #: pro/font-icon.php:737
-msgid "themeisle"
+msgid "yoast"
 msgstr ""
 
 #: pro/font-icon.php:738
-msgid "google-plus-circle"
+msgid "themeisle"
 msgstr ""
 
 #: pro/font-icon.php:739
-msgid "google-plus-official"
+msgid "google-plus-circle"
 msgstr ""
 
 #: pro/font-icon.php:740
-msgid "font-awesome"
+msgid "google-plus-official"
 msgstr ""
 
 #: pro/font-icon.php:741
-msgid "handshake-o"
+msgid "font-awesome"
 msgstr ""
 
 #: pro/font-icon.php:742
-msgid "envelope-open"
+msgid "handshake-o"
 msgstr ""
 
 #: pro/font-icon.php:743
-msgid "envelope-open-o"
+msgid "envelope-open"
 msgstr ""
 
 #: pro/font-icon.php:744
-msgid "linode"
+msgid "envelope-open-o"
 msgstr ""
 
 #: pro/font-icon.php:745
-msgid "address-book"
+msgid "linode"
 msgstr ""
 
 #: pro/font-icon.php:746
-msgid "address-book-o"
+msgid "address-book"
 msgstr ""
 
 #: pro/font-icon.php:747
-msgid "vcard"
+msgid "address-book-o"
 msgstr ""
 
 #: pro/font-icon.php:748
-msgid "address-card"
+msgid "vcard"
 msgstr ""
 
 #: pro/font-icon.php:749
-msgid "vcard-o"
+msgid "address-card"
 msgstr ""
 
 #: pro/font-icon.php:750
-msgid "address-card-o"
+msgid "vcard-o"
 msgstr ""
 
 #: pro/font-icon.php:751
-msgid "user-circle"
+msgid "address-card-o"
 msgstr ""
 
 #: pro/font-icon.php:752
-msgid "user-circle-o"
+msgid "user-circle"
 msgstr ""
 
 #: pro/font-icon.php:753
-msgid "user-o"
+msgid "user-circle-o"
 msgstr ""
 
 #: pro/font-icon.php:754
-msgid "id-badge"
+msgid "user-o"
 msgstr ""
 
 #: pro/font-icon.php:755
-msgid "drivers-license"
+msgid "id-badge"
 msgstr ""
 
 #: pro/font-icon.php:756
-msgid "id-card"
+msgid "drivers-license"
 msgstr ""
 
 #: pro/font-icon.php:757
-msgid "drivers-license-o"
+msgid "id-card"
 msgstr ""
 
 #: pro/font-icon.php:758
-msgid "id-card-o"
+msgid "drivers-license-o"
 msgstr ""
 
 #: pro/font-icon.php:759
-msgid "quora"
+msgid "id-card-o"
 msgstr ""
 
 #: pro/font-icon.php:760
-msgid "free-code-camp"
+msgid "quora"
 msgstr ""
 
 #: pro/font-icon.php:761
-msgid "telegram"
+msgid "free-code-camp"
 msgstr ""
 
 #: pro/font-icon.php:762
-msgid "thermometer-4"
+msgid "telegram"
 msgstr ""
 
 #: pro/font-icon.php:763
-msgid "thermometer"
+msgid "thermometer-4"
 msgstr ""
 
 #: pro/font-icon.php:764
-msgid "thermometer-full"
+msgid "thermometer"
 msgstr ""
 
 #: pro/font-icon.php:765
-msgid "thermometer-3"
+msgid "thermometer-full"
 msgstr ""
 
 #: pro/font-icon.php:766
-msgid "thermometer-three-quarters"
+msgid "thermometer-3"
 msgstr ""
 
 #: pro/font-icon.php:767
-msgid "thermometer-2"
+msgid "thermometer-three-quarters"
 msgstr ""
 
 #: pro/font-icon.php:768
-msgid "thermometer-half"
+msgid "thermometer-2"
 msgstr ""
 
 #: pro/font-icon.php:769
-msgid "thermometer-1"
+msgid "thermometer-half"
 msgstr ""
 
 #: pro/font-icon.php:770
-msgid "thermometer-quarter"
+msgid "thermometer-1"
 msgstr ""
 
 #: pro/font-icon.php:771
-msgid "thermometer-0"
+msgid "thermometer-quarter"
 msgstr ""
 
 #: pro/font-icon.php:772
-msgid "thermometer-empty"
+msgid "thermometer-0"
 msgstr ""
 
 #: pro/font-icon.php:773
-msgid "shower"
+msgid "thermometer-empty"
 msgstr ""
 
 #: pro/font-icon.php:774
-msgid "bathtub"
+msgid "shower"
 msgstr ""
 
 #: pro/font-icon.php:775
-msgid "bath"
+msgid "bathtub"
 msgstr ""
 
 #: pro/font-icon.php:776
-msgid "podcast"
+msgid "bath"
 msgstr ""
 
 #: pro/font-icon.php:777
-msgid "window-maximize"
+msgid "podcast"
 msgstr ""
 
 #: pro/font-icon.php:778
-msgid "window-minimize"
+msgid "window-maximize"
 msgstr ""
 
 #: pro/font-icon.php:779
-msgid "window-restore"
+msgid "window-minimize"
 msgstr ""
 
 #: pro/font-icon.php:780
-msgid "times-rectangle"
+msgid "window-restore"
 msgstr ""
 
 #: pro/font-icon.php:781
-msgid "window-close"
+msgid "times-rectangle"
 msgstr ""
 
 #: pro/font-icon.php:782
-msgid "times-rectangle-o"
+msgid "window-close"
 msgstr ""
 
 #: pro/font-icon.php:783
-msgid "window-close-o"
+msgid "times-rectangle-o"
 msgstr ""
 
 #: pro/font-icon.php:784
-msgid "bandcamp"
+msgid "window-close-o"
 msgstr ""
 
 #: pro/font-icon.php:785
-msgid "grav"
+msgid "bandcamp"
 msgstr ""
 
 #: pro/font-icon.php:786
-msgid "etsy"
+msgid "grav"
 msgstr ""
 
 #: pro/font-icon.php:787
-msgid "imdb"
+msgid "etsy"
 msgstr ""
 
 #: pro/font-icon.php:788
-msgid "ravelry"
+msgid "imdb"
 msgstr ""
 
 #: pro/font-icon.php:789
-msgid "eercast"
+msgid "ravelry"
 msgstr ""
 
 #: pro/font-icon.php:790
-msgid "microchip"
+msgid "eercast"
 msgstr ""
 
 #: pro/font-icon.php:791
-msgid "snowflake-o"
+msgid "microchip"
 msgstr ""
 
 #: pro/font-icon.php:792
-msgid "superpowers"
+msgid "snowflake-o"
 msgstr ""
 
 #: pro/font-icon.php:793
-msgid "wpexplorer"
+msgid "superpowers"
 msgstr ""
 
 #: pro/font-icon.php:794
+msgid "wpexplorer"
+msgstr ""
+
+#: pro/font-icon.php:795
 msgid "meetup"
 msgstr ""
 
@@ -4526,7 +4531,7 @@ msgid ""
 "href=\"%5$s\"%6$s>update now</a>."
 msgstr ""
 
-#: search.php:33
+#: search.php:18
 msgid "Search Results for: %s"
 msgstr ""
 

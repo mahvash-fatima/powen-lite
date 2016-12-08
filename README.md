@@ -168,3 +168,7 @@ CSS Fixes( Add style in gallery ).
 * Maintenance release
 CSS Fixes( Add style in search page ).
 Remove esc_attr from the_title.
+
+= 1.8.4 - December 09, 2016 =
+* Maintenance release
+CSS Fixes( Add line height in category links ).

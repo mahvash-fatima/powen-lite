@@ -4,7 +4,7 @@ Theme URI: http://supernovathemes.com/powen-theme/
 Author: Mahvash Fatima
 Author URI: http://supernovathemes.com
 Description: Powen Lite has been specially designed for blogging websites however due to its clean design and plenty of customization options, it can easily be customized for any purpose.
-Version: 1.8.3
+Version: 1.8.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: powen-lite
@@ -1495,10 +1495,10 @@ ul, ol {
   -moz-hyphens: auto;
   hyphens: auto;
 }
-.entry-footer .tags-links {
+.entry-footer .cat-links, .entry-footer .tags-links {
   display: inline;
 }
-.entry-footer .tags-links a {
+.entry-footer .cat-links a, .entry-footer .tags-links a {
   line-height: 2;
 }
 .entry-footer a {
