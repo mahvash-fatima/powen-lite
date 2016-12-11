@@ -172,3 +172,10 @@ Remove esc_attr from the_title.
 = 1.8.4 - December 09, 2016 =
 * Maintenance release
 CSS Fixes( Add line height in category links ).
+
+= 1.8.5 - December 11, 2016 =
+* Maintenance release
+CSS Fixes( Fix body line height,
+Add style in entry footer,
+Add style in comments closed
+).

@@ -245,16 +245,16 @@ ul, ol {
 }
 
 .entry-footer {
-	margin: $post_b_padding 0 $post_b_padding / $phi 0;
-	line-height: 1rem;
+	margin: $post_b_padding 0 0 0;
+	padding: $post_b_padding 0;
+	line-height: $font__line-height-body;
 	text-align: center;
 	font-size: rem-calc(14);
 	span {
-		margin: rem-calc(5);
-		padding: rem-calc(5);
-		display: inline-block;
+		margin-right: rem-calc(10);
 		color: #aaaaaa;
-
+	}
+	.cat-links, .tags-links {
 		-ms-word-break: break-all;
 		word-break: break-all;
 
@@ -265,11 +265,8 @@ ul, ol {
 		-moz-hyphens: auto;
 		hyphens: auto;
 	}
-	.cat-links, .tags-links {
-		display: inline;
-		a {
-			line-height: 2;
-		}
+	.comments-link, .edit-link {
+		white-space: nowrap;
 	}
 	@include entry_footer();
 	a {

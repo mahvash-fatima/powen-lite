@@ -4,7 +4,7 @@ Theme URI: http://supernovathemes.com/powen-theme/
 Author: Mahvash Fatima
 Author URI: http://supernovathemes.com
 Description: Powen Lite has been specially designed for blogging websites however due to its clean design and plenty of customization options, it can easily be customized for any purpose.
-Version: 1.8.4
+Version: 1.8.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: powen-lite
@@ -141,7 +141,7 @@ input,
 select,
 textarea {
   color: #404040;
-  line-height: 1.618rem;
+  line-height: 1.618;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1058,6 +1058,13 @@ input[type="submit"] {
   margin-left: 0.625rem;
 }
 
+.no-comments {
+  border-top: 1px solid #f1f1f1;
+  font-weight: 700;
+  margin: 0;
+  padding-top: 1.875rem;
+}
+
 /*--------------------------------------------------------------
 11.0 Infinite scroll
 --------------------------------------------------------------*/
@@ -1477,17 +1484,18 @@ ul, ol {
 }
 
 .entry-footer {
-  margin: 1.618rem 0 1rem 0;
-  line-height: 1rem;
+  margin: 1.618rem 0 0 0;
+  padding: 1.618rem 0;
+  line-height: 1.618;
   text-align: center;
   font-size: 0.875rem;
   border-top: 0.125rem solid #F8F8F8;
 }
 .entry-footer span {
-  margin: 0.3125rem;
-  padding: 0.3125rem;
-  display: inline-block;
+  margin-right: 0.625rem;
   color: #aaaaaa;
+}
+.entry-footer .cat-links, .entry-footer .tags-links {
   -ms-word-break: break-all;
   word-break: break-all;
   word-break: break-word;
@@ -1495,11 +1503,8 @@ ul, ol {
   -moz-hyphens: auto;
   hyphens: auto;
 }
-.entry-footer .cat-links, .entry-footer .tags-links {
-  display: inline;
-}
-.entry-footer .cat-links a, .entry-footer .tags-links a {
-  line-height: 2;
+.entry-footer .comments-link, .entry-footer .edit-link {
+  white-space: nowrap;
 }
 .entry-footer a {
   color: inherit;
