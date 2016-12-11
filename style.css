@@ -2010,6 +2010,7 @@ blockquote:before {
 .footer-scroll:before {
   content: "\f106";
   font-size: 1.5625rem;
+  line-height: 1;
 }
 
 /*--------------------------------------------------------------
