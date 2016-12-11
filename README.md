@@ -178,5 +178,6 @@ CSS Fixes( Add line height in category links ).
 CSS Fixes( Fix body line height,
 Add style in entry footer,
 Add style in comments closed, 
-Add line height in scroll bar
+Add line height in scroll bar,
+Add style in button
 ).
