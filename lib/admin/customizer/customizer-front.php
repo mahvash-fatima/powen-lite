@@ -244,6 +244,7 @@ class Powen_Customizer_Front extends Powen_Customizer
 			'a:focus',
 			'.fa-search:hover',
 			'.powen-continue-reading:hover:after',
+			'#cancel-comment-reply-link:hover',
 		) );
 
 		//background should change on hover.
