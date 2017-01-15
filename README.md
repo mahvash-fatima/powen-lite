@@ -182,6 +182,6 @@ Add line height in scroll bar,
 Add style in button
 ).
 
-= 1.8.6 - December 28, 2016 =
+= 1.8.6 - January 15, 2017 =
 * Maintenance release
 CSS Fixes( Add cancel reply link color on hover ).
