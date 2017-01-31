@@ -973,6 +973,7 @@ input[type="submit"] {
 .comment-content {
   font-size: 0.875rem;
   color: #757575;
+  margin-top: 0.9375rem;
 }
 .comment-content a {
   word-wrap: break-word;
