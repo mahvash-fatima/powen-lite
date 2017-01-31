@@ -185,3 +185,7 @@ Add style in button
 = 1.8.7 - January 15, 2017 =
 * Maintenance release
 CSS Fixes( Add cancel reply link color on hover ).
+
+= 1.8.8 - January 31, 2017 =
+* Maintenance release
+CSS Fixes( Add margin in comment content ).
