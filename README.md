@@ -193,3 +193,7 @@ CSS Fixes( Add margin in comment content ).
 = 1.8.9 - March 1, 2017 =
 * Maintenance release
 CSS Fixes( Change slider description color ).
+
+= 1.9.0 - March 26, 2017 =
+* Maintenance release
+CSS Fixes( Add font size and text transform in calendar ).
