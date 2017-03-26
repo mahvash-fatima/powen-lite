@@ -75,7 +75,9 @@
         text-decoration: none;
     }
     caption {
-        margin-bottom   : rem-calc(15);
+        margin-bottom   : rem-calc(16);
+        text-transform: uppercase;
+        font-size: rem-calc(18);
     }
     #today {
         border: 1px solid;

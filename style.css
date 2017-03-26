@@ -698,7 +698,9 @@ input[type="submit"] {
   text-decoration: none;
 }
 .widget_calendar caption {
-  margin-bottom: 0.9375rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 1.125rem;
 }
 .widget_calendar #today {
   border: 1px solid;
