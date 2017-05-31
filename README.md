@@ -201,3 +201,7 @@ CSS Fixes( Add font size and text transform in calendar ).
 = 1.9.1 - April 26, 2017 =
 * Maintenance release
 CSS Fixes( Add style in comment area ).
+
+= 1.9.2 - May 31, 2017 =
+* Maintenance release
+CSS Fixes( Add margin in exclamation circle on 404 page ).

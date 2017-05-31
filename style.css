@@ -4,7 +4,7 @@ Theme URI: http://supernovathemes.com/powen-theme/
 Author: Mahvash Fatima
 Author URI: http://supernovathemes.com
 Description: Powen Lite has been specially designed for blogging websites however due to its clean design and plenty of customization options, it can easily be customized for any purpose.
-Version: 1.9.1
+Version: 1.9.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: powen-lite
@@ -1844,7 +1844,7 @@ h6 {
 .error-404 .fa-exclamation-circle {
   font-size: 6.25rem;
   color: #eeeeee;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5625rem;
 }
 
 /*--------------------------------------------------------------
