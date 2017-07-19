@@ -205,3 +205,7 @@ CSS Fixes( Add style in comment area ).
 = 1.9.2 - May 31, 2017 =
 * Maintenance release
 CSS Fixes( Add margin in exclamation circle on 404 page ).
+
+= 1.9.3 - July 19, 2017 =
+* Maintenance release
+CSS Fixes( Add minimum height in 404 page ).
