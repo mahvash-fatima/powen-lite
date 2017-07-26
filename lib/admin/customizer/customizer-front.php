@@ -1,5 +1,13 @@
 <?php
 
+/**
+ * Customizer functionality
+ *
+ * @package powen
+ * @since powen 1.0
+ */
+
+
 class Powen_Customizer_Front extends Powen_Customizer
 {
 	public function __construct()
