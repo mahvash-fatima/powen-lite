@@ -209,3 +209,7 @@ CSS Fixes( Add margin in exclamation circle on 404 page ).
 = 1.9.3 - July 19, 2017 =
 * Maintenance release
 CSS Fixes( Add minimum height in 404 page ).
+
+= 1.9.4 - July 26, 2017 =
+* Maintenance release
+Add comment in customizer-front.php
