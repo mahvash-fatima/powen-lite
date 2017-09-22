@@ -940,6 +940,9 @@ input[type="submit"] {
   text-align: right;
 }
 
+.breadcrumbs .bread-current {
+  color: #000000;
+}
 .breadcrumbs li {
   display: inline-block;
   margin-right: 0.3125rem;
@@ -1655,17 +1658,17 @@ h6 {
 
 @media (max-width: 70.3125rem) {
   .article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
-    padding-left: 2.61792rem;
-    padding-right: 2.61792rem;
+    padding-left: 2.617924rem;
+    padding-right: 2.617924rem;
     padding-top: 1.618rem;
     padding-bottom: 1.618rem;
   }
 
   .post-thumbnail {
     margin-top: 1.618rem;
-    margin-right: -2.61792rem;
+    margin-right: -2.617924rem;
     margin-bottom: 1.618rem;
-    margin-left: -2.61792rem;
+    margin-left: -2.617924rem;
   }
 
   .footer-scroll {

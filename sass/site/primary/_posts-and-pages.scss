@@ -107,10 +107,15 @@
     text-align: right;
 }
 
-.breadcrumbs li{
-    display:inline-block;
-    margin-right: rem-calc(5);
-    padding: rem-calc(5);
+.breadcrumbs {
+	.bread-current {
+		color: #000000;
+	}
+	li{
+		display:inline-block;
+		margin-right: rem-calc(5);
+		padding: rem-calc(5);
+	}
 }
 
 .powen-continue-reading {

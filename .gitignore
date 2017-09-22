@@ -7,7 +7,6 @@ npm-debug.log
 *.sublime-project
 *.sublime-workspace
 pro
-powen-pro
 /nbproject/private/
 *.rb
 *.log
