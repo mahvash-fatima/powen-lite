@@ -216,4 +216,8 @@ Add comment in customizer-front.php
 
 = 1.9.5 - September 22, 2017 =
 * Maintenance release
-CSS Fixes( Add color in bread-current breadcrumbs )
+CSS Fixes( Add color in bread-current breadcrumbs ).
+
+= 1.9.6 - October 13, 2017 =
+* Maintenance release
+CSS Fixes( Add color in comments ).

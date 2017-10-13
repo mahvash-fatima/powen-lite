@@ -224,7 +224,10 @@ ul, ol {
 .comments-link:before,
 .tags-links:before,
 .cat-links:before,
-.byline:before
+.byline:before,
+.comment-metadata time:before,
+.logged-in-as a:first-child:before,
+.logged-in-as a:nth-child(2):before
 {
 	color: #C0C0C0;
 }
