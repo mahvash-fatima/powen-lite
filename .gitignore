@@ -29,6 +29,7 @@ nb-configuration.xml
 npm-debug.log
 node_modules
 .DS_Store
+.ds_store
 .mrgray
 Thumbs.db
 sftp-config.json
