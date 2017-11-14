@@ -190,8 +190,11 @@ ul, ol {
 }
 
 // Centers category headers
-.page-header .page-title {
+.page-header {
+  border-left: 7px solid #000000;
+  .page-title, .taxonomy-description {
 	text-align: center;
+  }
 }
 
 //**** Individual post styling

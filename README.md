@@ -221,3 +221,7 @@ CSS Fixes( Add color in bread-current breadcrumbs ).
 = 1.9.6 - October 13, 2017 =
 * Maintenance release
 CSS Fixes( Add color in comments ).
+
+= 1.9.7 - November 14, 2017 =
+* Maintenance release
+CSS Fixes( Add style in page header ).
