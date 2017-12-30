@@ -672,16 +672,10 @@ input[type="submit"] {
   box-shadow: 0px 0px 0px 1px #f2f2f2;
 }
 
-.widget_rss li {
-  margin-bottom: 0.625rem;
-}
-.widget_rss li a {
-  display: block;
-  font-weight: bold;
-}
-
 .rss-date {
-  display: block;
+  font-weight: 300;
+  font-size: 0.8125rem;
+  color: #aaaaaa;
 }
 
 .rssSummary {
@@ -1889,6 +1883,7 @@ blockquote:before,
 .widget_recent_comments li:before,
 .widget_recent_comments li > a:before,
 .widget_archive li:before,
+.widget_rss li:before,
 .widget_recent_entries li:before,
 .widget_categories li:before,
 .widget_meta li:before,
@@ -1999,7 +1994,7 @@ Write your code here
   display: none;
 }
 
-.widget_archive li:before, .widget_recent_entries li:before, .widget_categories li:before, .widget_meta li:before, .widget_pages li:before, .menu-long-menu-container li:before, .widget_recent_entries li:before {
+.widget_archive li:before, .widget_rss li:before, .widget_recent_entries li:before, .widget_categories li:before, .widget_meta li:before, .widget_pages li:before, .menu-long-menu-container li:before, .widget_recent_entries li:before {
   content: "\f105";
   color: #cccccc;
   padding-right: 0.625rem;

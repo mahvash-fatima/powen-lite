@@ -37,17 +37,10 @@
     box-shadow: 0px 0px 0px 1px #f2f2f2;
 }
 
-.widget_rss {
-    li {
-        margin-bottom: rem-calc(10);
-        a {
-            display: block;
-            font-weight: bold;
-        }
-    }
-}
 .rss-date {
-    display: block;
+  font-weight: 300;
+  font-size: rem-calc(13);
+  color: #aaaaaa;
 }
 .rssSummary {
     padding: rem-calc(10 0);
