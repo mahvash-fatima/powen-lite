@@ -7,7 +7,7 @@
  * @package powen
  */
 ?>
-<div class="article-hentry">
+
 <section class="no-results not-found">
 
 		<header class="page-header">

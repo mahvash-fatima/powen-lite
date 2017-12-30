@@ -120,7 +120,8 @@ ul, ol {
 }
 
 .entry-header:after,
-.widget-title:after
+.widget-title:after,
+.page-header:after
 {
 	background-color: #f2f2f2;
 }
@@ -138,7 +139,7 @@ ul, ol {
 //**** Posts & pages
 
 // (hentry class covers both) plus their internal elements
-.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .error-404, .site-main .post-navigation, .paging-navigation {
+.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation, .page-content {
 	padding-left: $post_l_padding;
 	padding-right: $post_r_padding;
 	padding-bottom: $post_b_padding;
@@ -191,7 +192,6 @@ ul, ol {
 
 // Centers category headers
 .page-header {
-  border-left: 7px solid #000000;
   .page-title, .taxonomy-description {
 	text-align: center;
   }
@@ -579,12 +579,11 @@ ul, ol {
 
 //404 Page
 .error-404 {
-	min-height: rem-calc(550);
-	border-top: 1px solid #f2f2f2;
-	text-align: center;
 	.fa-exclamation-circle {
 		font-size: rem-calc(100);
 		color: #eeeeee;
 		margin-bottom: rem-calc(25);
+		text-align: center;
+		display: block;
 	}
 }

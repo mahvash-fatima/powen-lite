@@ -139,3 +139,14 @@ textarea {
 		}
 	}
 }
+
+.not-found {
+  input[type="search"] {
+	padding: rem-calc(8 0);
+	vertical-align: middle;
+	width: 100%;
+  }
+  input[type="submit"] {
+	display: none;
+  }
+}

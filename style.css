@@ -498,6 +498,15 @@ textarea {
   box-shadow: 0 0 0 1px #999999;
 }
 
+.not-found input[type="search"] {
+  padding: 0.5rem 0;
+  vertical-align: middle;
+  width: 100%;
+}
+.not-found input[type="submit"] {
+  display: none;
+}
+
 /*--------------------------------------------------------------
 5.0 Navigation
 --------------------------------------------------------------*/
@@ -641,7 +650,9 @@ input[type="submit"] {
   margin: 0.9375rem auto 0.9375rem;
 }
 
-.entry-header:after, .widget-title:after {
+.entry-header:after,
+.widget-title:after,
+.page-header:after {
   content: '';
   display: block;
   width: 3.75rem;
@@ -1378,7 +1389,8 @@ ul, ol {
 }
 
 .entry-header:after,
-.widget-title:after {
+.widget-title:after,
+.page-header:after {
   background-color: #f2f2f2;
 }
 
@@ -1391,7 +1403,7 @@ ul, ol {
   padding: 1.125rem 0;
 }
 
-.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .error-404, .site-main .post-navigation, .paging-navigation {
+.article-hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation, .page-content {
   padding-left: 1.618rem;
   padding-right: 1.618rem;
   padding-bottom: 1.618rem;
@@ -1442,9 +1454,6 @@ ul, ol {
   vertical-align: bottom;
 }
 
-.page-header {
-  border-left: 7px solid #000000;
-}
 .page-header .page-title, .page-header .taxonomy-description {
   text-align: center;
 }
@@ -1845,15 +1854,12 @@ h6 {
     font-size: 0.928rem;
   }
 }
-.error-404 {
-  min-height: 34.375rem;
-  border-top: 1px solid #f2f2f2;
-  text-align: center;
-}
 .error-404 .fa-exclamation-circle {
   font-size: 6.25rem;
   color: #eeeeee;
   margin-bottom: 1.5625rem;
+  text-align: center;
+  display: block;
 }
 
 /*--------------------------------------------------------------
