@@ -34,21 +34,31 @@
 }
 
 .widget_tag_cloud a, .widget_powen_social_widget a {
-    box-shadow: 0px 0px 0px 1px #f2f2f2;
+    box-shadow: 0 0 0 1px #f2f2f2;
 }
 
 .widget_rss {
   .rss-date, .rssSummary, cite {
 	font-size: rem-calc(13);
   }
+  cite {
+	font-style: normal;
+  }
 }
 
-.rss-date {
+.widget-title {
+  .rsswidget {
+	text-decoration: none;
+  }
+}
+
+.rss-date, .widget_rss cite {
   font-weight: 300;
   color: #aaaaaa;
+  display: block;
 }
 .rssSummary {
-  padding: rem-calc(10 0);
+  color: #858585
 }
 
 .powen-pagination {
